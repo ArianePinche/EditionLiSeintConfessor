@@ -1,0 +1,1669 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "../entity-Wauchier.dtd">
+<?xml-model href="../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de saint Jérome</title>
+            <author>Wauchier de Denain</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Ariane Pinche</publisher>
+            <date>2017</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc xml:id="A">
+               <msIdentifier>
+                  <country>Paris</country>
+                  <settlement>Bibliothèque nationale de France</settlement>
+                  <idno>fr. 00412</idno>
+               </msIdentifier>
+               <head>
+                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <origDate>1285</origDate>
+                  <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
+                     notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
+                     la base Jonas-IRHT/CNRS (permalink : <ref
+                        target="http://jonas.irht.cnrs.fr/manuscrit/45533"
+                        >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
+                     03/07/2015 </note>
+               </head>
+               <msContents>
+                  <msItemStruct>
+                     <locus>fol.103-fol.170</locus>
+                     <author>Wauchier de Denain</author>
+                     <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                     <incipit>De saint Martin mout doit on doucement et volentiers le bien oïr et
+                        entendre</incipit>
+                     <explicit/>
+                  </msItemStruct>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>parchemin</support>
+                        <extent>
+                           <width unit="mm">330</width>
+                           <height unit="mm">245</height>
+                        </extent>
+                        <foliation>21 Senions, 245 folios</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="46"/>
+                     </layoutDesc>
+                  </objectDesc>
+                  <scriptDesc>
+                     <scriptNote>Caroline</scriptNote>
+                  </scriptDesc>
+               </physDesc>
+               <history>
+                  <origin/>
+                  <provenance>
+                     <p/>
+                     <listBibl>
+                        <bibl>
+                           <author/>
+                           <title/>
+                           <pubPlace/>
+                           <publisher/>
+                           <date/>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="section" matchPattern="(.+).(.+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\']/tei:div[@n=\'$2\'])">
+               <p>This pointer pattern extracts chapter and section</p>
+            </cRefPattern>
+            <cRefPattern n="chapter" matchPattern="(.+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\'])">
+               <p>This pointer pattern extracts chapter.</p>
+            </cRefPattern>
+         </refsDecl>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <projectDesc>
+            <p/>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="honorius" corresp="http://catalogue.bnf.fr/ark:/12148/cb12566387q">
+                  <persName>Honoire</persName>
+                  <birth when="0384">4<hi rend="exp">e</hi> siecle</birth>
+                  <death when="0423">5<hi rend="exp">e</hi> siecle</death>
+                  <note type="biographical">Flavius Honorius, empereur de la partie occidentale de
+                     l'empire romain de 395 à 423.</note>
+               </person>
+               <person xml:id="eusebius">
+                  <persName>Eusebius</persName>
+                  <note type="biographical">Père de <persName ref="#jerome">saint
+                     Jérôme</persName>.</note>
+               </person>
+               <person xml:id="marmorius">
+                  <persName>Marmorius</persName>
+                  <note type="biographical">Sarrazins, propriétaire de <persName ref="#deudone"
+                        >Deudoné</persName>.</note>
+               </person>
+               <person xml:id="deudone">
+                  <persName>Deudoné</persName>
+                  <note type="biographical">Fils de <persName ref="#getron"
+                     >Jechron</persName></note>
+               </person>
+               <person xml:id="apolloine">
+                  <persName>Apolloine</persName>
+                  <note type="biographical">Évêque d'<placeName ref="Excorande"
+                        >Excorande</placeName></note>
+               </person>
+               <person xml:id="eufrosine">
+                  <persName>Eufrosine</persName>
+                  <note type="biographical">femme du pèlerin <persName ref="#getron"
+                        >Jechron</persName></note>
+               </person>
+               <person xml:id="getron">
+                  <persName>Jechron</persName>
+                  <note type="biographical">pèlerin d'<placeName ref="excorande"
+                        >Excorande</placeName></note>
+               </person>
+               <person xml:id="corras">
+                  <persName>Corras</persName>
+                  <birth when="1093">1093</birth>
+                  <death when="1152">1152</death>
+                  <note type="biographical">Conrad III, empereur d'Allemagne</note>
+               </person>
+               <person xml:id="leons">
+                  <persName>Leons</persName>
+                  <note type="biographical">Évêque de <placeName ref="#cupersane"
+                        >Cupersane</placeName></note>
+               </person>
+               <person xml:id="godins">
+                  <persName>Godins</persName>
+                  <note type="biographical">Archevêque d'<placeName ref="#argentane"
+                        >Argentane</placeName></note>
+               </person>
+               <person xml:id="ernols">
+                  <persName>Ernols</persName>
+                  <note type="biographical">Arnulphus, évêque de Butuntum</note>
+               </person>
+               <person xml:id="armenie2">
+                  <persName>Armanie</persName>
+                  <note type="biographical">Jeune fille, personnage de la <hi rend="italic">Vie de
+                           <persName ref="#nicolas">saint Nicolas</persName></hi></note>
+               </person>
+               <person xml:id="alexis">
+                  <persName>Alexis</persName>
+                  <note type="biographical">Alexis 1<ex>er</ex> Commène, empereur de Constantinoples
+                     de 1081 à 1118.</note>
+               </person>
+               <person xml:id="benoit" corresp="http://catalogue.bnf.fr/ark:/12148/cb118911827">
+                  <persName>Benoit (saint)</persName>
+                  <birth when="0480">480</birth>
+                  <death when="0547">547</death>
+                  <note type="biographical">Saint Benoit, patriarche et législateur des moines
+                     d'Occident, fondateur de l'ordre des bénédictins. Abbé du Mont-Cassin, il est
+                     célèbre pour sa règle de vie monastique, la règle de saint Benoit.</note>
+               </person>
+               <person xml:id="jorge">
+                  <persName>George (saint)</persName>
+                  <note type="biographical">Saint George</note>
+               </person>
+               <person xml:id="rodevaldus">
+                  <persName>Rodevaldus</persName>
+                  <note type="biographical">personnage contant parmi les marchands de Bari.</note>
+               </person>
+               <person xml:id="eustache2">
+                  <persName>eustache</persName>
+                  <note type="biographical">personnage contant parmi les marchands de Bari.</note>
+               </person>
+               <person xml:id="lupus">
+                  <persName>Lupus</persName>
+                  <note type="biographical">personnage contant parmi les prêtres qui accompagnent
+                     les marchands de Bari.</note>
+               </person>
+               <person xml:id="grimoaldus">
+                  <persName>Mathius</persName>
+                  <note type="biographical">personnage contant parmi les prêtres qui accompagnent
+                     les marchands de Bari.</note>
+               </person>
+               <person xml:id="mathius">
+                  <persName>Mathius</persName>
+                  <note type="biographical">personnage contant parmi les jeunes gens qui
+                     accompagnent les marchands de Bari.</note>
+               </person>
+               <person xml:id="alexandre">
+                  <persName>Alixandre</persName>
+                  <note type="biographical">personnage contant parmi les jeunes gens qui
+                     accompagnent les marchands de Bari.</note>
+               </person>
+               <person xml:id="lucius">
+                  <persName>Lucius</persName>
+                  <note type="biographical">Empereur romain.</note>
+               </person>
+               <person xml:id="antiocus">
+                  <persName>Antiocus</persName>
+                  <note type="biographical">Antiochus, gouverneur responsable du martyre de
+                        <persName ref="#serge">saint Serge</persName> et <persName ref="#bace">saint
+                        Bace</persName> en 303.</note>
+               </person>
+               <person xml:id="bace" corresp="http://fr.dbpedia.org/page/Bacchus_(saint)">
+                  <persName>Bace (saint)</persName>
+                  <birth when="0200">3<hi rend="exp">e</hi> siecle</birth>
+                  <death when="0303">303</death>
+                  <note type="biographical">Saint Bace (Bacchus), martyr avec <persName ref="#serge"
+                        >saint Serge</persName> en 303.</note>
+               </person>
+               <person xml:id="serge" corresp="http://catalogue.bnf.fr/ark:/12148/cb13561173d">
+                  <persName>Serge (saint)</persName>
+                  <birth when="0200">3<hi rend="exp">e</hi> siecle</birth>
+                  <death when="0303">303</death>
+                  <note type="biographical">Saint Serge, martyr avec <persName ref="#bace">saint
+                        Bace</persName> en 303.</note>
+               </person>
+               <person xml:id="theodore" corresp="http://catalogue.bnf.fr/ark:/12148/cb16725759d">
+                  <persName>Théodore (saint)</persName>
+                  <birth when="0300">4<hi rend="exp">e</hi> siecle</birth>
+                  <death when="0300">4<hi rend="exp">e</hi> siecle</death>
+                  <note type="biographical">Saint Théodore de le Tiron, moine de <placeName
+                        ref="#constantinople">Constantinople</placeName>, martyr du 4.</note>
+               </person>
+               <person xml:id="etienne" corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
+                  <persName>Etiene</persName>
+                  <birth when="0001">?</birth>
+                  <death when="0037">37</death>
+                  <note type="biographical">Saint Etienne, premier martyr chrétien, il fait partie
+                     de la première communaité chrétienne de <placeName ref="#jerusalem"
+                        >Jérusalem</placeName>.</note>
+               </person>
+               <person xml:id="machaire" corresp="http://catalogue.bnf.fr/ark:/12148/cb16725110d">
+                  <persName>Macaire</persName>
+                  <birth when="0200">fin du 3e siècle</birth>
+                  <death when="0334">334</death>
+                  <note type="biographical">Saint Machaire, évêque de <placeName ref="#jerusalem"
+                        >Jérusalem</placeName>, la Vie présente ici une erreur historique en le
+                     faisant pape.</note>
+               </person>
+               <person xml:id="justinien" corresp="http://catalogue.bnf.fr/ark:/12148/cb12055108q">
+                  <persName>Justinien</persName>
+                  <birth when="0482">482</birth>
+                  <death when="0565-11-14">14 novembre 565</death>
+                  <note type="biographical">Justinien 1<hi rend="exp">er</hi>, empereur de
+                        <placeName ref="#constantinople">Constantinople</placeName> de 527 à 565,
+                     cela induit une erreur de datation, due à l'interpolation d'éléments provenant
+                     de la vie de Nicolas de <placeName ref="#syon">Sion</placeName>..</note>
+               </person>
+               <person xml:id="hylarion">
+                  <persName>Hylarion</persName>
+                  <note type="biographical">Clerc qui assiste aux derniers soins mortuaires de
+                        <persName ref="#nicolas">saint Nicolas</persName>.</note>
+               </person>
+               <person xml:id="phelippe">
+                  <persName>Phelippe</persName>
+                  <note type="biographical">Évêque de la cité de <placeName ref="#feliton"
+                        >Feliton</placeName> (Phellos).</note>
+               </person>
+               <person xml:id="archemius">
+                  <persName>Archemius</persName>
+                  <note type="biographical">Artemas, prêtre présent au moment de la mort de
+                        <persName ref="#nicolas">saint Nicolas</persName>.</note>
+               </person>
+               <person xml:id="chemelaus">
+                  <persName>Chemelaus</persName>
+                  <note type="biographical">Hermelaus, prêtre présent au moment de la mort de
+                        <persName ref="#nicolas">saint Nicolas</persName>.</note>
+               </person>
+               <person xml:id="nicolas3">
+                  <persName>Nicolas</persName>
+                  <note type="biographical">Archidiacre, présent au moment de la mort de <persName
+                        ref="#nicolas">saint Nicolas</persName>.</note>
+               </person>
+               <person xml:id="nicolas2">
+                  <persName>Nicolas</persName>
+                  <note type="biographical">personnage de la Vie de <persName ref="#nicolas">saint
+                        Nicolas</persName>, originaire de la ville de <placeName ref="#sivine"
+                        >Sivine</placeName></note>
+               </person>
+               <person xml:id="michel">
+                  <persName>Michel (saint)</persName>
+                  <note type="biographical">Saint Michel, archange</note>
+               </person>
+               <person xml:id="constentin">
+                  <persName>Constentin</persName>
+                  <note type="biographical">Constantin I<hi rend="exp">er</hi>, Empereur de
+                     Rome</note>
+               </person>
+               <person xml:id="ylarien">
+                  <persName>Ylarien</persName>
+                  <note type="biographical">Gardien de la prison des trois princes condamnés à
+                     mort.</note>
+               </person>
+               <person xml:id="albanie">
+                  <persName>Albanies</persName>
+                  <note type="biographical">Alblabius, préfet du prétoire sous Constantin I<hi
+                        rend="exp">er</hi>.</note>
+               </person>
+               <person xml:id="symonide">
+                  <persName>Symonides</persName>
+                  <note type="biographical">Personnage de la vie de saint Martial, haut dignitaire
+                     sous Constantin I<hi rend="exp">er</hi>.</note>
+               </person>
+               <person xml:id="eudoxius">
+                  <persName>Eudoxius</persName>
+                  <note type="biographical">Personnage de la vie de saint Martial, haut dignitaire
+                     sous Constantin I<hi rend="exp">er</hi>.</note>
+               </person>
+               <person xml:id="dyoscurus">
+                  <persName>Dyoscurus</persName>
+                  <note type="biographical">Saint Dioscuride, martyr vers 244.</note>
+               </person>
+               <person xml:id="cressentius">
+                  <persName>Cressentius</persName>
+                  <note type="biographical">Saint Crescent, martyr vers 244.</note>
+               </person>
+               <person xml:id="eustache">
+                  <persName>Eustache</persName>
+                  <note type="biographical">Eustathius, consul impérial sous Constantin 1<hi
+                        rend="exp">er</hi>.</note>
+               </person>
+               <person xml:id="ursus">
+                  <persName>Ursus</persName>
+                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
+                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
+                     condamné à mort par l'empereur.</note>
+               </person>
+               <person xml:id="aquileon">
+                  <persName>Aquileon</persName>
+                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
+                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
+                     condamné à mort par l'empereur.</note>
+               </person>
+               <person xml:id="nepotiens">
+                  <persName>Nepotiens</persName>
+                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
+                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
+                     condamné à mort par l'empereur.</note>
+               </person>
+               <person xml:id="diane">
+                  <persName>Diane</persName>
+                  <note type="biographical">déesse du panthéon latin.</note>
+               </person>
+               <person xml:id="nicolas">
+                  <persName>Nicolas (saint)</persName>
+                  <note type="biographical"/>
+               </person>
+               <person xml:id="charlemagne">
+                  <persName>Charlemagne</persName>
+                  <note type="biographical">Empereur des Francs</note>
+               </person>
+               <person xml:id="prius">
+                  <persName>Prius</persName>
+                  <note type="biographical">saint homme</note>
+               </person>
+               <person xml:id="flavi">
+                  <persName>Flavi</persName>
+                  <note type="biographical">Roi du sud de la France, personnage de la vie de
+                        <persName ref="#gile">saint Gilles</persName></note>
+               </person>
+               <person xml:id="veredemius">
+                  <persName>Veredemius</persName>
+                  <note type="biographical">Ermite, personnage de la vie de <persName ref="#gile"
+                        >saint Gilles</persName></note>
+               </person>
+               <person xml:id="aurelius">
+                  <persName>Aurelius</persName>
+                  <note type="biographical">Archidiacre de <persName ref="#cesaire"
+                        >Césaire</persName>, personnage de la vie de <persName ref="#gile">saint
+                        Gilles</persName></note>
+               </person>
+               <person xml:id="theocrite">
+                  <persName>Theocrite</persName>
+                  <note type="biographical">Veuve, personnage de la vie de <persName ref="#gile"
+                        >saint Gilles</persName></note>
+               </person>
+               <person xml:id="cesaire">
+                  <persName>Césaire</persName>
+                  <note type="biographical">Evêque d'<placeName ref="#arles"
+                     >Arles</placeName></note>
+               </person>
+               <person xml:id="gile">
+                  <persName>Gilles</persName>
+                  <note type="biographical"/>
+               </person>
+               <person xml:id="theodorus">
+                  <persName>Theodorus</persName>
+                  <note type="biographical">Père de <persName ref="#gile">saint
+                     Gilles</persName></note>
+               </person>
+               <person xml:id="pelagie">
+                  <persName>Pelagie</persName>
+                  <note type="biographical">Mère de <persName ref="#gile">saint
+                     Gilles</persName></note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"
+                  xml:id="jeanBaptiste">
+                  <persName>Jean (Baptiste)</persName>
+                  <note type="biographical">Personnage biblique, <surname type="complex">Jean le
+                        Baptiste</surname> fut prédicateur en Judée avant Jésus de Nazareth.</note>
+               </person>
+               <person corresp="http://dbpedia.org/page/Valentinian_II" xml:id="valentinien">
+                  <persName>Valentinien</persName>
+                  <birth when="0371">371</birth>
+                  <death when="0392-05-15">15 mai 392</death>
+                  <note source="http://dbpedia.org/page/Valentinian_II">
+                     <surname type="complex">Valentinien II</surname>, fils de Valentinien Ier, est
+                     empereur romain de 375 à 392.</note>
+               </person>
+               <person xml:id="gallus">
+                  <persName>Gallus</persName>
+                  <note>Personnage de la <hi rend="italic">Des dialogues sur les vertus de saint
+                        Martin</hi>, il aurait été un disciple de saint Martin.</note>
+               </person>
+               <person xml:id="postumien">
+                  <persName>Postumien</persName>
+                  <note>Personnage de la <hi rend="italic">Des dialogues sur les vertus de saint
+                        Martin</hi>, il aurait été un moine explorateur qui a rencontrer les saints
+                     pères du désert.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
+                  xml:id="severus">
+                  <birth when="0363">360</birth>
+                  <death when="0420">420</death>
+                  <persName>Severus</persName>
+                  <note><surname type="complex">Sulpice Sévère</surname>, auteur latin des <hi
+                        rend="italic">Dialogues sur les vertus de saint Martin</hi> et de la <hi
+                        rend="italic">Vie de saint Martin</hi>, il se met en scène comme étant l'un
+                     des trois interlocuteurs des <hi rend="italic">Dialogues sur les vertus de
+                        saint Martin</hi>.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
+                  xml:id="martin">
+                  <persName>Martin (saint)</persName>
+                  <birth when="0316">316</birth>
+                  <death when="0397-11-08">397</death>
+                  <note source="http://dbpedia.org/page/Martin_of_Tours"><surname type="complex"
+                        >Saint Martin de Tours</surname> est né dans en Hongrie dans la colonie
+                     romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il est mort à
+                        <placeName ref="#conde">Candes</placeName> en France le 8 novembre
+                     397.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+                  xml:id="jesus">
+                  <persName>Jésus Christ</persName>
+                  <birth when="0001">0</birth>
+                  <death when="0030">30</death>
+                  <note source="http://dbpedia.org/page/Jesus"><surname type="complex"
+                        >Jésus-Christ</surname> est le nom donné par l'ensemble des chrétiens au
+                     prophète qu'ils considèrent comme le Messie Les chrétiens reconnaissent
+                     Jésus-Christ comme le Messie et le Fils unique de Dieu.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC"
+                  xml:id="maximin">
+                  <persName>Maximin</persName>
+                  <birth when="0383">173</birth>
+                  <death when="0384-08-31">8 août 384</death>
+                  <note type="biographical"><surname type="complex">Magnus Clemens
+                     Maximus</surname>est un officier romain qui à la tête des légions de Bretagne
+                     renversa en 383 l'empereur Gratien, et régna sur l'Occident jusqu'en 388, où il
+                     fut vaincu et tué par les troupes de Théodose.</note>
+               </person>
+               <person xml:id="arborius">
+                  <persName>Arborius</persName>
+                  <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
+                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint Martin,
+                     voir <bibl><author>Sulpice Sévère</author>, <hi rend="italic">Vie de saint
+                           Martin</hi>. Tome II, éd. Jacques Fontaine, Paris Éd du Cerf, 1968,
+                        p.874.</bibl></note>
+               </person>
+               <person xml:id="ithace">
+                  <persName>Itache</persName>
+                  <note type="biographical">Ithacium, evêque d'Ossobona et meneur du parti épiscopal
+                     hostile à Priscillien, voir <bibl><author>Chadwick</author>, <hi rend="italic"
+                           >Priscillian</hi>, p.51-55.</bibl></note>
+               </person>
+               <person xml:id="priscillien">
+                  <persName>Priscillien</persName>
+                  <birth when="0340">340</birth>
+                  <death when="0385">385</death>
+                  <note source="http://data.bnf.fr/14647442/priscillien/" type="biographical">Évêque
+                     d'Avila, hérésiarque, il est le fondateur de la secte priscillianiste. Il fut
+                     banni d'Espagne par un décret de Gratien puis exécuté en 385.</note>
+               </person>
+               <person xml:id="theognitus">
+                  <persName>Theoniste</persName>
+                  <note type="biographical">Évêque gallo-romain, il est le seul parmi les Ithaciens
+                     a avoir rompu avec la faction en condamnant publiquement ses agissements</note>
+               </person>
+               <person xml:id="felix">
+                  <persName>Felices</persName>
+                  <note type="biographical">Évêque</note>
+               </person>
+               <person xml:id="cyprien">
+                  <persName>Cyprien</persName>
+                  <birth when="0200">3e siècle</birth>
+                  <death when="0258">258</death>
+                  <note type="biographical" source="http://data.bnf.fr/11886041/cyprien/">Evêque de
+                     Carthage, martyr, victime des persécutions de l'empereur Valérien
+                     (253-260).</note>
+               </person>
+               <person xml:id="caton">
+                  <persName>Chaton</persName>
+                  <birth when="0095">-95</birth>
+                  <death when="0046">-46</death>
+                  <note source="http://data.bnf.fr/12021757/caton_d_utique/"><surname type="complex"
+                        >Marcus Porcius Cato</surname>, dit Caton d'Utique, homme d'Etat romain, en
+                     63, lors de la conjuration de Catilina, il prit le parti de Cicéron. Lors des
+                     guerres civiles (-49), il se prononça pour <persName ref="#pompee"
+                        >Pompée</persName> et prit les armes contre <persName ref="#cesar"
+                        >César</persName>. Après la défaite de Metellus Scipion à Thapsus le 6 avril
+                     46, Caton, plutôt que de perdre sa liberté, préféra se suicider en se
+                     transperçant de son épée.</note>
+               </person>
+               <person xml:id="cesar">
+                  <persName>Cesar</persName>
+                  <birth when="0100-12-07">12 juillet en 100 av. J-C.</birth>
+                  <death when="0044-03-15">15 mars en 44 av. J-C.</death>
+                  <note type="biographical" source="http://data.bnf.fr/11894764/jules_cesar/"
+                        ><surname type="complex">Caius Iulius Caesar</surname>, général romain, fin
+                     stratège, suite aux guerres civiles (49-45) qu'il remportera, il se fera nommer
+                     dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides de Mars 44.
+                  </note>
+               </person>
+               <person xml:id="pompee">
+                  <persName>Pompeus</persName>
+                  <birth when="0106-09-29">le 29 septembre 106 av. J-C.</birth>
+                  <death when="0048-08-28">le 28 septembre 48 av. J-C.</death>
+                  <note type="biographical" source="http://data.bnf.fr/11938643/pompee/"><surname
+                        type="complex">Cnaeus Pompeius Magnus</surname>, général et homme politique
+                     romain, il s'opposa à <persName ref="#cesar">Jules César</persName> durant les
+                     guerres civiles qu'il perdit lors de la bataille de Pharsale en 48 av. J-C. Il
+                     prit alors la fuite vers l'Égypte où il fut assassiné sur la plage de
+                     Péluse.</note>
+               </person>
+               <person xml:id="lucain">
+                  <persName>Lucan</persName>
+                  <birth when="0039-11-03">le 3 novembre 39</birth>
+                  <death when="0065-04-30">le 28 septembre 65</death>
+                  <note type="biographical" source="http://data.bnf.fr/11913555/lucain/"><surname
+                        type="complex">Marcus Annaeus Lucanus</surname>, célèbre orateur et écrivain
+                     romain, neveu de Sénèque, il composa la <hi rend="italic">Pharsale</hi>, épopée
+                     qui relate la guerre civile qui opposa <persName ref="#pompee"
+                        >Pompée</persName> et <persName ref="#cesar">César</persName> entre 49 et 48
+                     av. J.-C.</note>
+               </person>
+               <person xml:id="origene">
+                  <persName>Origene (sanit)</persName>
+                  <birth when="0185">185</birth>
+                  <death when="0254">254</death>
+                  <note type="biographical" source="http://data.bnf.fr/11918191/origene/">Père de
+                     l'Eglise, considéré comme le fondateur de l'exégèse biblique pour avoir
+                     commenté tous les livres de l'Ancien et du Nouveau Testament. IL est également
+                     connu pour être l'auteur du <hi rend="italic">Traité des principes</hi>
+                     (231).</note>
+               </person>
+               <person xml:id="jerome">
+                  <persName>Jerome (saint)</persName>
+                  <birth when="0345">345</birth>
+                  <death when="0420-09-20">le 20 septembre 420</death>
+                  <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
+                     docteur de l'Eglise, célèbre traducteur de la bible latine. Il est l'un des
+                     principaux opposants aux idées d'<persName ref="#origene"
+                     >Origène</persName>.</note>
+               </person>
+               <person xml:id="belguisun">
+                  <persName>Belguisun</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, il
+                     semble être un ami de Gallus, peut-être un disciple de saint Martin. J.Fontaine
+                     suggère que ce nom pourrait être un cognomen ethnique, voir
+                           <bibl><author>Sulpice Sévère</author>, <hi rend="italic">Gallus,
+                           Dialogues sur les "vertus" de saint Martin</hi>, éd. Jacques Fontaine,
+                        Paris Éd du Cerf, 2006, p.133</bibl></note>
+               </person>
+               <person xml:id="antoine">
+                  <persName>Antoine</persName>
+                  <birth when="0251">251</birth>
+                  <death when="0356">356</death>
+                  <note type="biographical" source="http://data.bnf.fr/11888967/antoine/">
+                     <surname type="complex">Antoine le grand, Antoine d'Egypte ou Antoine
+                        l'Ermite</surname> est considéré comme le fondateur du l'érémitisme
+                     chrétien.</note>
+               </person>
+               <person xml:id="paul">
+                  <persName>Paul</persName>
+                  <birth when="0228">228</birth>
+                  <death when="0341">341</death>
+                  <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
+                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname> est l'une des
+                     figures fondatrices du monachisme, avec <persName ref="#antoine">saint
+                        Antoine</persName>.</note>
+               </person>
+               <person xml:id="jehan">
+                  <persName>Jehan</persName>
+                  <birth when="0360">360</birth>
+                  <death when="0432">432</death>
+                  <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
+                     <surname type="complex">Jean Cassien ou Jean l'ermite</surname> prêtre et
+                     moine, originaire d'Egypte, il établit sa communauté sur l'île de
+                     Chypre.</note>
+               </person>
+               <person xml:id="cyrenense">
+                  <persName>Cyrenense</persName>
+                  <note type="biographical">Nom d'un personnage des <hi rend="italic"
+                     >Dialogues</hi>, vieux prêtre de auquel Postumien prêta sa copie de la <hi
+                        rend="italic">Vie de <persName ref="#martin">saint Martin</persName></hi> de
+                        <persName ref="#severus">Sulpice Sévère</persName>. Son nom n'est pas
+                     indiqué dans la source latine, mais il est fait mention du fait qu'il est
+                     originaire de Cyrénaïque, <hi rend="italic">cyrenensis</hi>. L'attribution de
+                     ce nom au prêtre est peut-être lié à une confusion de <persName ref="#wauchier"
+                        >Wauchier de Denain</persName>.</note>
+               </person>
+               <person xml:id="zacharie">
+                  <persName>Zacharie</persName>
+                  <note type="biographical">Personnage biblique, il serait le père de saint
+                        <persName ref="#jeanBaptiste">Jean le Baptiste</persName>. Trop vieux pour
+                     avoir un enfant, le Seigneur lui Apparais pour lui annoncer la naissance d'un
+                     fils qui serait prophète. Zacharie est alors frappé de stupeur jusqu'à la
+                     naissance de son fils. Il retrouvera la parole pour proclamer que le nom de son
+                     fils est Jean, tel que le Seigneur le lui avait demander.</note>
+               </person>
+               <person xml:id="evanchius">
+                  <persName>Evanchius</persName>
+                  <note>Personnage des <hi rend="italic">Dialogues</hi>, oncle chrétien de <persName
+                        ref="#gallus">Gallus</persName></note>
+               </person>
+               <person xml:id="agnes">
+                  <persName>Agnes</persName>
+                  <birth when="0300">4<hi rend="exp">e</hi> siècle</birth>
+                  <death when="0300">4<hi rend="exp">e</hi> siècle</death>
+                  <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyr
+                     romaine</note>
+               </person>
+               <person xml:id="cecile">
+                  <persName>Cecile</persName>
+                  <birth when="0200">3<hi rend="exp">e</hi> siècle</birth>
+                  <death when="0200">3<hi rend="exp">e</hi> siècle</death>
+                  <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyr
+                     romaine</note>
+               </person>
+               <person xml:id="madeleine">
+                  <persName>Marie Magdalene</persName>
+                  <note type="biographical">Personnage biblique, disciple femme de <persName
+                        ref="#jesus">Jesus-Christ</persName>.</note>
+               </person>
+               <person xml:id="pierre">
+                  <persName>Pere</persName>
+                  <birth>??</birth>
+                  <death when="0064">64</death>
+                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pêcheur de
+                     Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le premier évêque
+                     de Rome</note>
+               </person>
+               <person xml:id="refrigerius">
+                  <persName>Refrigerius</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     prêtre.</note>
+               </person>
+               <person xml:id="eucherius">
+                  <persName>Eucherius</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     consul.</note>
+               </person>
+               <person xml:id="celsus">
+                  <persName>Celsus</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     consul.</note>
+               </person>
+               <person xml:id="valentinien2">
+                  <persName>Valentinien</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, evêque
+                     du temps de <persName ref="#martin">saint Martin</persName>.</note>
+               </person>
+               <person xml:id="victricus">
+                  <persName>Victricus</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, evêque
+                     de Rouen du temps de <persName ref="#martin">saint Martin</persName>.</note>
+               </person>
+               <person xml:id="avicien">
+                  <persName>Avicien</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, comte
+                     de Tours du temps de <persName ref="#martin">saint Martin</persName>.</note>
+               </person>
+               <person xml:id="saturnine">
+                  <persName>Saturnine</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     prêtre.</note>
+               </person>
+               <person xml:id="arpage">
+                  <persName>Arpage</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     prêtre.</note>
+               </person>
+               <person xml:id="agaridut">
+                  <persName>Agaridut</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     gentilhomme, il arrive au monastère où se trouvent <persName ref="#severus"
+                        >Sulpice Sevère</persName>, <persName ref="#postumien">Postumien</persName>
+                     et <persName ref="#gallus">Gallus</persName> avec <persName ref="#refrigerius"
+                        >Refregerius</persName>.</note>
+               </person>
+               <person xml:id="euvangilus">
+                  <persName>Evangilus</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
+                     prêtre.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
+                  xml:id="marie">
+                  <persName>Marie</persName>
+                  <note>Personnage biblique, la <surname type="complex">vierge Marie</surname> est
+                     la mère de Dieu.</note>
+               </person>
+               <person xml:id="jupiter">
+                  <persName>Jupiter</persName>
+                  <note>Dieu romain</note>
+               </person>
+               <person xml:id="mercurius">
+                  <persName>Mercurius</persName>
+                  <note>Dieu romain</note>
+               </person>
+               <person xml:id="marcel">
+                  <persName>Marcel</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, prêtre
+                     d'Amboise.</note>
+               </person>
+               <person xml:id="chaton">
+                  <persName>Chaton</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, diacre
+                     de l'éveque <persName ref="#martin">saint Martin</persName>.</note>
+               </person>
+               <person xml:id="judas">
+                  <persName>Judas</persName>
+                  <note type="biographical">Personnage biblique, apôtre qui trahit le Christ pour le
+                     livrer à Ponce Pilate.</note>
+               </person>
+               <person xml:id="brice">
+                  <persName>Brice</persName>
+                  <death when="0444">444</death>
+                  <note type="biographical"><surname type="complex">Saint Brice de Tours</surname>,
+                     Ordoné évêque de Tours en 397, il est le successeur de saint Martin. Il possède
+                     une mauvaise réputation en raison de son affection pour le luxe et les chevaux
+                     <!-- à terminer avec la vie de saint Brice --></note>
+               </person>
+               <person xml:id="paulin"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC ">
+                  <persName>Paulin</persName>
+                  <birth when="0353">353</birth>
+                  <death when="0431">431</death>
+                  <note type="biographical" source="http://data.bnf.fr/12135745/paulin_de_nola/"
+                        ><surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353,
+                     mort à Nole en 431, est un poète et un ecclésiastique latin contemporain de
+                     saint Augustin et de <persName ref="#martin">Martin de Tours</persName>, qui
+                     l'encouragea dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa
+                     mort.</note>
+               </person>
+               <person xml:id="pomponie">
+                  <persName>Pomponie</persName>
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, ami de
+                        <persName ref="#gallus">Gallus</persName>.</note>
+               </person>
+               <person xml:id="wauchier">
+                  <persName>Gauchier</persName>
+                  <note type="biographical">Wauchier de Denain, auteur du recueil hagriographique
+                        <hi rend="italic">Li seint Confessor</hi></note>
+               </person>
+               <person xml:id="namur">
+                  <persName>Duc de Namur</persName>
+                  <note type="biographical">Philippe de Namur, duc de Namur et comte de Hainault,
+                     mécène de <persName ref="#wauchier">Wauchier de Denain</persName>.</note>
+               </person>
+               <person xml:id="valentin">
+                  <persName>Valentiens</persName>
+                  <note type="biographical">Seigneur de la ville de <placeName ref="#tours"
+                        >Tours</placeName> pendant que <persName ref="#martin">saint
+                        Martin</persName> était évêque.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
+                  xml:id="pannonie">
+                  <placeName>Pannonie</placeName>
+                  <note>Région romaine d'Europe centrale, actuelle Hongrie</note>
+               </place>
+               <place xml:id="dalmasse">
+                  <placeName>Dalmasse</placeName>
+                  <note>région romaine, actuelle Croatie</note>
+               </place>
+               <place xml:id="stridon">
+                  <placeName>Stridon</placeName>
+                  <note>Ville romaine, située entre la <placeName ref="#pannonie"
+                        >Pannonie</placeName> et la <placeName ref="#dalmasse">Dalmatie</placeName>,
+                     où est né <persName ref="#jerome">saint Jérôme</persName></note>
+               </place>
+               <place xml:id="sainteMarie">
+                  <placeName>Seinte Marie de la charité</placeName>
+                  <note>Prieuré clunisien de la Charité-sur-Loire</note>
+               </place>
+               <place xml:id="babylone">
+                  <placeName>Babiloine</placeName>
+                  <note>Babylone (Egypte)</note>
+               </place>
+               <place xml:id="sainteCroix2">
+                  <placeName>Seinte Croiz</placeName>
+                  <note>Église près de <placeName ref="#liege">Liège</placeName></note>
+               </place>
+               <place xml:id="excorande">
+                  <placeName>Excorande</placeName>
+                  <note>Ville où habitait le pélerin <persName ref="#getron">Jechron</persName>. Le
+                     nom est vraisemblement une déformation d'Alexandrette, port du Levant, en arabe
+                        <hi rend="italic">Iskanderou</hi><bibl>WAUCHIER DE DENAIN, <hi rend="italic"
+                           >La vie de Mon Signeur Seint Nicholas le Beneoit confessor</hi>, éd. John
+                        Jay Thompson, Genève, Suisse, Droz, 1999, p.253. </bibl></note>
+               </place>
+               <place xml:id="allemagne">
+                  <placeName>Alemmaigne</placeName>
+                  <note>Allemagne</note>
+               </place>
+               <place xml:id="liege">
+                  <placeName>Liege</placeName>
+                  <note>Ville de Liège</note>
+               </place>
+               <place xml:id="bonivent">
+                  <placeName>Bonivent</placeName>
+                  <note>Bénévent, ville du samnium</note>
+               </place>
+               <place xml:id="escauc">
+                  <placeName>Escauc</placeName>
+                  <note>ville</note>
+               </place>
+               <place xml:id="cupersane">
+                  <placeName>Cupersane</placeName>
+                  <note>Copertino, ville au Sud de <placeName ref="#bar">Bari</placeName></note>
+               </place>
+               <place xml:id="argentane">
+                  <placeName>Argentane</placeName>
+                  <note>Argentanum, ville de Bruttium</note>
+               </place>
+               <place xml:id="veronthene">
+                  <placeName>Veronthene</placeName>
+                  <note>Ville de Butuntum près de <placeName ref="#bar">Bari</placeName></note>
+               </place>
+               <place xml:id="pise">
+                  <placeName>Pise</placeName>
+                  <note>Ville de Pise en Italie</note>
+               </place>
+               <place xml:id="cathapan">
+                  <placeName>Cathapan</placeName>
+                  <note>Lieu de la sépulture de saint Nicolas de Bari</note>
+               </place>
+               <place xml:id="trane">
+                  <placeName>Trane</placeName>
+                  <note>Ville, proche de Bari.</note>
+               </place>
+               <place xml:id="macre">
+                  <placeName>Macre</placeName>
+                  <note>Makri, presqu'île au large de la Lycie</note>
+               </place>
+               <place xml:id="magestre">
+                  <placeName>Magestre</placeName>
+                  <note>Magiste, île au large de la Lycie</note>
+               </place>
+               <place xml:id="cacavius">
+                  <placeName>Cacavius</placeName>
+                  <note>Caccavus, île au large de la Lycie</note>
+               </place>
+               <place xml:id="antioche">
+                  <placeName>Antioche</placeName>
+               </place>
+               <place xml:id="bar">
+                  <placeName>Bar</placeName>
+                  <note>Bari, ville italienne qui se trouve dans les pouilles.</note>
+               </place>
+               <place xml:id="calabre">
+                  <placeName>Calabre</placeName>
+                  <note>La calabre, région d'Italie située à l'extrême sud-ouest de la
+                     péninsule</note>
+               </place>
+               <place xml:id="sebaste">
+                  <placeName>Sebasté</placeName>
+                  <note>Sébastée, ville d'Arménie Mineure</note>
+               </place>
+               <place xml:id="feliton">
+                  <placeName>Feliton</placeName>
+                  <note>Phellos, ville de Lycie</note>
+               </place>
+               <place xml:id="sivine">
+                  <placeName>Sivine</placeName>
+                  <note>Sibinos, ville de Lycie, proche de <placeName ref="#myrre"
+                     >Myre</placeName></note>
+               </place>
+               <place xml:id="syon">
+                  <placeName>Saint-Syon</placeName>
+                  <note>abbaye fondée par <persName ref="#nicolas">saint Nicolas</persName> à
+                        <placeName ref="#myrre">Myre</placeName>, lieu de sa première
+                     sépulture.</note>
+               </place>
+               <place xml:id="necapolie">
+                  <placeName>Necapolie</placeName>
+                  <note>Neapolis, ville de Lycie</note>
+               </place>
+               <place xml:id="crobe">
+                  <placeName>Crobe</placeName>
+                  <note>Domaine de l'archange de <persName ref="#michel">saint
+                     Michel</persName></note>
+               </place>
+               <place xml:id="quaparse">
+                  <placeName>Quaparse</placeName>
+                  <note>Cyparissus, ville de Lycie</note>
+               </place>
+               <place xml:id="lapres">
+                  <placeName>Lapres</placeName>
+                  <note/>
+               </place>
+               <place xml:id="licie">
+                  <placeName>Lisce</placeName>
+                  <note>La lycie, province du sud de l'Asie mineure.</note>
+               </place>
+               <place xml:id="constantinople">
+                  <placeName>Costantinople</placeName>
+                  <note>Constantinople</note>
+               </place>
+
+               <place xml:id="byzance">
+                  <placeName>Vigaute</placeName>
+                  <note>Graphie fautive de Vigante qui désigne Byzance, capitale de la Thrace et du
+                     futur empire romain d'Orient de Constantin à partir de 330.</note>
+               </place>
+               <place xml:id="myrre">
+                  <placeName>Myrre</placeName>
+                  <note>Capitale de Lycie et ville de épiscopale de <persName ref="#nicolas">saint
+                        Nicolas</persName></note>
+               </place>
+               <place xml:id="patre">
+                  <placeName>Patre</placeName>
+                  <note>Patara, ville de Lycie et ville de naissance de <persName ref="#nicolas"
+                        >saint Nicolas</persName></note>
+               </place>
+               <place xml:id="tibre">
+                  <placeName>Toivre</placeName>
+                  <note>Fleuve du Tibre qui traverse Rome.</note>
+               </place>
+               <place xml:id="cabinone">
+                  <placeName>Cabinone</placeName>
+                  <note>Cabinonensem, nom latin de la ville de Cavaillon.</note>
+               </place>
+               <place xml:id="chypre">
+                  <placeName>Chypre</placeName>
+               </place>
+               <place xml:id="sainteCroix">
+                  <placeName>Monastère de Sainte-Croix</placeName>
+               </place>
+               <place xml:id="orleans">
+                  <placeName>Orléans</placeName>
+               </place>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
+                  xml:id="france">
+                  <placeName>France</placeName>
+               </place>
+               <place xml:id="nime">
+                  <placeName>Nemausense</placeName>
+                  <note>Nemausensis, nom latin de la ville de Nîme.</note>
+               </place>
+               <place xml:id="gardone">
+                  <placeName>Gardone</placeName>
+                  <note>Rivière du Gardon</note>
+               </place>
+               <place xml:id="rhone">
+                  <placeName>Rhône</placeName>
+                  <note/>
+               </place>
+               <place xml:id="arles">
+                  <placeName>Arles</placeName>
+                  <note/>
+               </place>
+               <place xml:id="provence">
+                  <placeName>Provence</placeName>
+                  <note/>
+               </place>
+               <place xml:id="caphse">
+                  <placeName>Caphse</placeName>
+                  <note>Lieu inconnu, peut-être issu d'une confusion sur le texte latin (à
+                     terminer)</note>
+               </place>
+               <place xml:id="egypte" corresp="http://data.bnf.fr/15238583/egypte/">
+                  <placeName>Egypte</placeName>
+               </place>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
+                  xml:id="orient">
+                  <placeName>Orient</placeName>
+               </place>
+               <place xml:id="narbone" corresp="http://pleiades.stoa.org/places/981537">
+                  <placeName>Nerbone</placeName>
+                  <location>
+                     <geo>43.184277 3.0030779999999595</geo>
+                  </location>
+               </place>
+               <place xml:id="marseille" corresp="http://pleiades.stoa.org/places/981537">
+                  <placeName>Marselle</placeName>
+                  <location>
+                     <geo>43.296482 5.369779999999992</geo>
+                  </location>
+               </place>
+               <place xml:id="afrique" corresp="http://data.bnf.fr/15323603/afrique/">
+                  <placeName>Aufriqe</placeName>
+               </place>
+               <place xml:id="alexandrie"
+                  corresp="http://pleiades.stoa.org/places/727070/alexandria">
+                  <placeName>Alixandre</placeName>
+                  <location>
+                     <geo>31.2000924 29.91873869999995</geo>
+                  </location>
+               </place>
+               <place xml:id="cyrene">
+                  <placeName>Cyrene</placeName>
+               </place>
+               <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+                  <placeName>Rome</placeName>
+                  <location>
+                     <geo>41.8919300 12.5113300</geo>
+                  </location>
+               </place>
+               <place xml:id="bethleem">
+                  <placeName>Bethleem</placeName>
+               </place>
+               <place xml:id="jerusalem">
+                  <placeName>Jerusalem</placeName>
+               </place>
+               <place xml:id="occident">
+                  <placeName>Occident</placeName>
+               </place>
+               <place xml:id="nil">
+                  <placeName>Nil</placeName>
+               </place>
+               <place xml:id="nitre">
+                  <placeName>Nitre</placeName>
+               </place>
+               <place xml:id="merRouge">
+                  <placeName>roge mer</placeName>
+               </place>
+               <place xml:id="synay">
+                  <placeName>Synay</placeName>
+               </place>
+               <place xml:id="aise">
+                  <placeName>Aise</placeName>
+               </place>
+               <place xml:id="thebes">
+                  <placeName>Thebes</placeName>
+               </place>
+               <place xml:id="inde">
+                  <placeName>Indes</placeName>
+               </place>
+               <place xml:id="syre">
+                  <placeName>Syre</placeName>
+               </place>
+               <place xml:id="ethyopie">
+                  <placeName>Ethyope</placeName>
+               </place>
+               <place xml:id="armenie">
+                  <placeName>Hermenie</placeName>
+               </place>
+               <place xml:id="bosphore">
+                  <placeName>Bosfore</placeName>
+               </place>
+               <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
+                  <placeName>Tours</placeName>
+                  <location>
+                     <geo>47.3833300 0.6833300</geo>
+                  </location>
+               </place>
+               <place xml:id="chartre">
+                  <placeName>Chartre</placeName>
+               </place>
+               <place xml:id="claudiomas">
+                  <placeName>Claudomias</placeName>
+               </place>
+               <place xml:id="treves">
+                  <placeName>Trieve</placeName>
+               </place>
+               <place xml:id="mans">
+                  <placeName>Mans</placeName>
+               </place>
+               <place xml:id="sens">
+                  <placeName>Sens</placeName>
+               </place>
+               <place xml:id="amboise">
+                  <placeName>Embaise</placeName>
+               </place>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
+                  xml:id="touraine">
+                  <placeName>Touraine</placeName>
+               </place>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
+                  xml:id="espagne">
+                  <placeName>Espagne</placeName>
+               </place>
+               <place xml:id="lombardie">
+                  <placeName>Lombardie</placeName>
+               </place>
+               <place xml:id="grece">
+                  <placeName>Grèce</placeName>
+               </place>
+               <place xml:id="carthage">
+                  <placeName>Carthage</placeName>
+               </place>
+               <place xml:id="achaie">
+                  <placeName>Achaïe</placeName>
+               </place>
+               <place xml:id="chorinte">
+                  <placeName>Chorinte</placeName>
+               </place>
+               <place xml:id="athenes">
+                  <placeName>Atheines</placeName>
+               </place>
+               <place xml:id="europe">
+                  <placeName>Europe</placeName>
+               </place>
+               <place xml:id="cholomaide">
+                  <placeName>Cholomaide</placeName>
+               </place>
+               <place xml:id="sezile">
+                  <placeName>Sezile</placeName>
+               </place>
+               <place xml:id="puille">
+                  <placeName>Puille</placeName>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <text n="edition">
+      <body n="urn:cts:froLit:jns915.jns1742.ciham-fro1">
+         <div n="1" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
+            <head>Ci comence la&esp;&u-v;ie de&esp;<choice>
+               <orig>.s'.</orig>
+               <reg>saint</reg>
+            </choice>&esp;<persName ref="#jerome"
+               >&j-maj;erosme</persName></head>
+            <div type="section" n="1">
+               <p><pb facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item" n="157"/><cb
+                     n="a"/><hi rend="rubricated orig">Ci comence la&esp;&u-v;ie de&esp;<choice>
+                        <orig>.s'.</orig>
+                        <reg>saint</reg>
+                     </choice>&esp;<persName ref="#jerome"
+                     >&j-maj;erosme</persName>.</hi>&esp;<lb/><persName ref="#jerome"><hi
+                        rend="decorated-initial">S</hi><choice>
+                        <orig>E</orig>
+                        <reg>e</reg>
+                     </choice>inz Jerosme&sexp-s;</persName>&esp;<lb/>fu&esp;nez
+                     de&esp;hau<lb/>te&esp;lignie&deuxpoints-virg7;d<pc
+                     type="reg">'</pc>&utilde-un;&esp;<lb/>chastel&esp;qi fu&esp;<lb/>apelez
+                     <placeName ref="#stridon">&s-maj;tri<lb/>dons</placeName>&point-virg3;si
+                  esto<lb/>it en la&esp;mar<lb/>che <placeName ref="#dalmasse"
+                     >d<pc type="reg">'</pc>&a-maj;lmasse</placeName>&esp;<lb/>&esperluette-et;de <placeName
+                     ref="#pannonie">&p-maj;anno<lb/>nie</placeName>&point-virg3;mes il&esp;<lb/>est
+                  destruit grant tens a&point-virg4;si come sont plu<lb/>seurs autres &u-v;iles qi
+                  &i-j;a furent de&esp;grant no<lb/>blece.&esp;Li&esp;peres <persName ref="#jerome"
+                     >seint Jerome</persName> eut a&esp;non <persName ref="#eusebius"
+                     >&e-maj;u<lb/>sebius</persName> qi&esp;mout fu preudom
+                  &esperluette-et;sages.&esp;&l-maj;i filz&esp;<lb/>l<pc type="reg">'</pc>ensi&u-v;i
+                  mout bien de science&point-virg4;si com &u-v;oz por<lb/>roiz o&itrem;r
+                  &esperluette-et;entendre.&esp;Qant <persName ref="#jerome">seinz
+                     J﻿eromes</persName>&esp;<lb/>fu&esp;enfes<pc type="reg" ana="subordonnee"
+                     >,</pc> il deguerpi son pere&point-virg4;por&esp;ce q<pc type="reg">'</pc>il
+                  &u-v;oloit&esp;<lb/>ensi&u-v;re la seinte &e-maj;u&u-v;angile.&esp;Il &u-v;int
+                  au&esp;ri&u-v;a<lb/>ge de&esp;la&esp;mer par la&esp;&u-v;olent&eacc; nostre
+                  &s-maj;ignor&point-virg3;si&esp;<lb/>entra en&esp;une nef qi&esp;a&esp;droit cours
+                  le porta&esp;<lb/>a&esp;la&esp;cit&eacc; de <placeName ref="#rome"
+                     >&r-maj;ome</placeName>.&esp;Et qant il&esp;i&esp;fu &u-v;enuz<pc type="reg"
+                     ana="subordonnee">,</pc> il ala&esp;<lb/>au&esp;mostier mon<pc type="orig"
+                     ana="mot">&#160;</pc>signeur <persName ref="#pierre">seint
+                     &p-maj;ere</persName><pc type="orig" ana="coordination"
+                     >:</pc>&esp;&esperluette-et;<persName ref="#paul"
+                     >seint&esp;<lb/>&p-maj;ol</persName><pc type="reg" ana="apposition">,</pc> les
+                  apostres nostre &s-maj;ignor.&esp;&l-maj;a aprist il&esp;<lb/>premiers greu
+                  &esperluette-et;latin par&esp;grant
+                  diligence&esp;<lb/>&esperluette-et;si&esp;ensi&u-v;i la&esp;lo&ypoint; nostre
+                  &s-maj;ignor del tout en&esp;<lb/>tout molt benignement<pc type="orig"
+                     ana="coordination">:</pc>&esp;&esperluette-et;fu ordenez a&esp;<lb/>prestre
+                  &esperluette-et;fez chardonaus en la cit&eacc; de&esp;&r-maj;ome.&esp;<lb/>Et en
+                  sa &i-j;o&u-v;enece fu&esp;il ensigniez &esperluette-et;apris
+                  &esperluette-et;<lb/>doctrinez de&esp;toz les hauz mestres qi i&esp;estoi<lb/>ent
+                  adonc.&esp;Il sot greu &esperluette-et;latin &esperluette-et;ebreu
+                  &esperluette-et;araboi&esp;<lb/>&esperluette-et;caldeu&deuxpoints-virg6;plus c<pc
+                     type="reg">'</pc>on ne porroit conter ne di<lb/>re.&esp;De &r-maj;ome
+                  se&esp;departi il&deuxpoints-virg3;si&esp;s<pc type="reg">'</pc>en ala en
+                     <placeName ref="#jerusalem"
+                  >&j-maj;eru<lb/>salem</placeName>&deuxpoints-point;&l-maj;a&esp;fu&esp;il petit
+                     de&esp;tens<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
+                     >'</pc>en ala&point-virg3;car&esp;il&esp;<lb/>se pensa q<pc type="reg">'</pc>il
+                  &u-v;oudroit &u-v;i&u-v;re en&esp;tel&esp;manie<lb/>re qe s<pc type="reg"
+                  >'</pc>arme ne fust dampnee<pc type="orig" ana="coordination"
+                  >:</pc>&esp;&esperluette-et;estre pres&esp;<lb/>de&esp;la ou&esp;nostre
+                  &s-maj;ires fu couchiez &esperluette-et;le&u-v;ez&deuxpoints-virg3;si&esp;<lb/>
+                  &u-v;int a&esp;l<pc type="reg">'</pc>e&u-v;esqe
+                  de&esp;la&esp;cit&eacc;&point-virg3;si&esp;li requist q<pc type="reg"
+                  >'</pc>il&esp;li&esp;<lb/>donast la&esp;parosse de&esp;l<pc type="reg"
+                  >'</pc>eglisse de&esp;<placeName ref="#bethleem">&b-maj;ethleem</placeName>
+                  por&esp;<lb/>la&esp;estorer une eglisse ou&esp;il pe&utrem;st arrester
+                  toz&esp;<lb/>les &i-j;orz de sa &u-v;ie.&esp;Li&esp;e&u-v;esqes li otroia
+                     molt&esp;<lb/><cb n="b"/><choice>
+                     <orig>B</orig>
+                     <reg>b</reg>
+                  </choice>enignement&point-virg4;si com il ot droit.&esp;Dont&esp;<lb/>fist
+                     <persName ref="#jerome">seinz &j-maj;eromes</persName> une eglisse en
+                     <placeName ref="#bethleem">&b-maj;ethleem</placeName>&esp;<lb/>ou il mist
+                  preudes&esp;omes ensamble o&esp;lui en&esp;<lb/>confrarie qi&esp;&u-v;esquissent
+                  ensamble o&esp;lui de<lb/>souz la&esp;riule des apostres.&esp;La&esp;translata
+                  il&esp;les&esp;<lb/>li&u-v;res ebrieus en&esp;latin<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;&d-maj;aniel<note>Référence au
+                     commentaire que Jérôme fit sur le livre de Daniel. Daniel est un des quatre
+                     grands prophètes du canon de l'Église. Il aurait vécu à Babylone sous les
+                     régnes de Nabuchodonosor, de son fils Balthasar, ainsi que de Darius et de
+                     Cyrus, rois de Perse.</note> de&esp;caldeu&esp;<lb/>en&esp;latin
+                  &esperluette-et;le &u-v;iez testament &esperluette-et;le
+                  no&u-v;el&point-virg4;si&esp;c&otilde-om;&esp;<lb/>nos l<pc type="reg"
+                  >'</pc>a&u-v;ons encore escrit.&esp;Mout fu <persName ref="#jerome"
+                     >seinz&esp;&j-maj;e<lb/>romes</persName> preudom &esperluette-et;de&esp;grant
+                  science &esperluette-et;mout&esp;<lb/>enlumina seinte eglisse&point-virg3;car
+                     il&esp;translata&esp;<lb/>d<pc type="reg">'</pc>ebreu en&esp;latin les&esp;<pc
+                     ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
+                  >.</pc>&esp;prophetes &esperluette-et;le psau<lb/>tier aussint
+                  &esperluette-et;mout mena seinte &u-v;ie.&esp;&n-maj;e&esp;<lb/>porroit estre qe nuz hom racontast toz ses&esp;<lb/>fez<pc
+                     type="reg" ana="coordination">,</pc> car&esp;trop&esp;seroit longue
+                  chose&point-virg3;mes&esp;&i-j;e &u-v;&apos-os;&esp;<lb/>dirai un miracle q<pc
+                     type="reg">'</pc>il a&u-v;int en l<pc type="reg">'</pc>eglisse ou&esp;<lb/>il
+                  arrestoit ensamble o&esp;ses freres<pc type="reg" ana="incise">,</pc> si com&esp;<lb/>&i-j;e&esp;&u-v;os
+                  ai&esp;de&u-v;ant dit<pc type="reg" ana="incise">,</pc> en&esp;<placeName ref="#bethleem">&b-maj;ethleem</placeName>
+                  si&esp;com &i-j;e&esp;<lb/>l<pc type="reg">'</pc>o&itrem;&esp;raconter as
+                  religieus homes qi i&esp;furent&esp;<lb/>&esperluette-et;einsint comence&point-deuxpoints;<lb/></p>
+            </div>
+         </div>
+         <div n="2" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
+            <div type="section" n="1">
+               <p><hi rend="decorated-initial">U</hi><choice>
+                     <orig>N</orig>
+                     <reg>n</reg>
+                  </choice>&#160;&i-j;or a&u-v;int qe<pc type="reg" ana="subordonnee">,</pc> la&esp;ou messires&esp;<lb/><persName ref="#jerome"
+                     >seinz &j-maj;eroimes</persName>
+                  estoit&esp;a&esp;la&esp;le&c-ced;on&esp;<lb/>c<pc type="reg">'</pc>om list de&u-v;ant les freres
+                  si&esp;c&otilde-om;&esp;<lb/>il est&esp;encore costume&deuxpoints-virg4;qe uns
+                  granz lions&esp;<lb/>entra en l<pc type="reg">'</pc>encloistre&point-virg4;la&esp;ou&esp;li frere seoient&esp;<lb/>qi clochoit
+                  a&esp;trois piez por le qart q<pc type="reg">'</pc>il a<lb/>&u-v;oit
+                  malade.&esp;Qant li frere le&esp;&u-v;irent<pc type="reg" ana="subordonnee"
+                  >,</pc>&esp;<lb/>il furent mout espoentez<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;por&esp;la&esp;poor q<pc type="reg"
+                  >'</pc>il&esp;<lb/>en orent<pc type="reg" ana="subordonnee">,</pc> s<pc type="reg"
+                     >'</pc>en&esp;tornerent il li pluiseur en&esp;<lb/>fuies.&esp;<persName ref="#jerome"
+                     >Seinz &j-maj;eroimes</persName> ne&esp;le dota mie&point-virg3;<lb/>einz ala
+                  encontre aussint com se ce fust&esp;<lb/>uns hostes qi&esp;li &u-v;enist por
+                     herbergier<pc type="orig" ana="coordination"
+                  >:</pc>&esp;&esperluette-et;<lb/>li&esp;lions &u-v;int de&u-v;ant lui<pc
+                     type="reg" ana="coordination">,</pc> si&esp;li mostra la&esp;<lb/>plante
+                  de&esp;son&esp;pi&eacc; ou&esp;il a&u-v;oit la&esp;blece&utrem;re.&esp;<lb/>Dont
+                  apela <persName ref="#jerome">seinz &j-maj;eroimes</persName> ses freres<pc
+                     type="reg" ana="coordination">,</pc> si&esp;<lb/>lor &neuf-con;manda q<pc
+                     type="reg">'</pc>il li la&u-v;assent le&esp;pi&eacc; mout&esp;<lb/>docement<pc
+                     type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si quisissent por
+                  quel&esp;chose il&esp;<lb/>clochoit&point-virg3;si&esp;tro&u-v;erent
+                  qe&esp;li&esp;lions estoit bleciez&esp;<lb/>d<pc type="reg">'</pc>un estoc<pc
+                     type="reg" ana="coordination">,</pc> si&esp;estoit li&esp;fuz rem&eacc;s dedenz
+                     la&esp;<lb/>plaie.&esp;<persName ref="#jerome">Seinz &j-maj;eroimes</persName>
+                  li&esp;fist treire &esperluette-et;si&esp;<lb/>l<pc type="reg">'</pc>asouaga
+                  &esperluette-et;gueri en&esp;me&itrem;smes l<pc type="reg"
+                  >'</pc>eure.&esp;Li&esp;<lb/>lions deguerpi tote la maniere
+                     de&esp;sa&esp;fe<lb/>lonie<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;si demora en la meson aussint&esp;<lb/>come une beste
+                  dontee.&esp;Qant ce&esp;&u-v;it <persName ref="#jerome"
+                     >se&itilde-in;z&esp;<lb/>&j-maj;eroimes</persName><pc type="reg"
+                     ana="subordonnee">,</pc> il&esp;parla a&esp;ses
+                  freres&esp;&esperluette-et;si&esp;dist&point-deuxpointsDial;
+                        <said>Bea&apos-us;&esp;<lb/>signor<pc type="reg" ana="apostrophe"
+                        >,</pc> or&esp;esgardez qele oe&u-v;re cis lions&esp;nos&esp;<lb/>porroit
+                     faire qi&esp;a&esp;nostre &s-maj;ignor fust plesans<lb/><pb n="157"
+                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f324.item.zoom"/><cb
+                        n="c"/><choice>
+                        <orig>E</orig>
+                        <reg>e</reg>
+                     </choice>t pourfitable&point-virg3;<choice>
+                        <orig>C</orig>
+                        <reg>c</reg>
+                     </choice>ar<pc type="reg" ana="incise">,</pc>&esp;si com &i-j;e croi<pc type="reg" ana="incise">,</pc>&esp;<choice>
+                        <orig>N</orig>
+                        <reg>n</reg>
+                     </choice>ostre&esp;<lb/>&s-maj;ires qi puissanz estoit de&esp;lui guerir
+                        ne&esp;l<pc type="reg">'</pc>en<lb/>&u-v;oia mie ci tant seulement
+                     por&esp;la garisson&esp;<lb/>de&esp;son pi&eacc;<pc type="orig" ana="subCorr">:</pc>&esp;com por la&esp;demostrance q<pc type="reg"
+                        >'</pc>il nos&esp;<lb/>aidast en&esp;nostre
+                  ser&u-v;ice.</said>&esp;Dont respondirent&esp;<lb/>li frere mout humlement
+                        &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Bea&apos-us;&esp;<lb/>peres<pc
+                        type="reg" ana="apostrophe">,</pc> tu sez bien qe nostre asne
+                     qi&esp;la&esp;busche&esp;<lb/>soloit aporter auroit mestier d<pc type="reg"
+                        >'</pc>une garde&esp;<lb/>qui a&esp;lui fust ententi&u-v;e&point-virg3;car
+                     nos resoign&otilde-on;s&esp;<lb/>mout qe aucune cruele beste
+                     ne&esp;le&esp;de&u-v;ore&esp;<lb/>qi&esp;nos en&esp;face damage.&esp;Et
+                        por&esp;ce<pc type="reg" ana="subordonnee">,</pc>&esp;s<pc type="reg">'</pc>il te plest<pc type="reg"
+                        ana="subordonnee">,</pc>&esp;<lb/>comande a&esp;cest lion q<pc type="reg"
+                        >'</pc>il prenge garde a&esp;cest&esp;<lb/>asne
+                     &esperluette-et;si&esp;le&esp;meint en pasture &esperluette-et;si&esp;le gart
+                     a&esp;l<pc type="reg">'</pc><lb/>aler &esperluette-et;au &u-v;enir en meson&point-virg3;car ce nos
+                     sam<lb/>ble la&esp;miudre chose a&esp;fere.</said>&esp;Einsint le&esp;fist&esp;<lb/>
+                  <persName ref="#jerome">seinz &j-maj;eroimes</persName>&point-virg3;car&esp;il
+                  comanda au lion &qisuscrit-qi;l&esp;<lb/>gardast l<pc type="reg">'</pc>asne par
+                  grant diligense&deuxpoints-point;&et-maj;il&esp;si&esp;<lb/>fist a&esp;guise de&esp;bon
+                     pasteur<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;en quel
+                  c<pc type="reg">'</pc>on&qbarre2;s&esp;<lb/>leu qe li&esp;asnes alast em&esp;pasture<pc type="reg" ana="subordonnee">,</pc> estoit li
+                  li<lb/>ons ensamble o&esp;lui<pc type="orig" ana="coordination"
+                  >:</pc>&esp;&esperluette-et;si&esp;li&esp;fu bons desfender<lb/>res
+                  &esperluette-et;bons aidierres s<pc type="reg">'</pc>il en e&utrem;st
+                  mestier&deuxpoints-virg4;<choice><orig>Q</orig><reg>q</reg></choice>&nasuscrit-an;t&esp;<lb/>li asnes re&u-v;enoit
+                  en&esp;meson por fere s<pc type="reg">'</pc>oe&u-v;re&esp;<lb/>qi &i-j;a l<pc
+                     type="reg">'</pc>a&u-v;oit a&esp;costume mout bien<pc type="reg" ana="subordonnee">,</pc>&esp;&esperluette-et;li
+                  lions&esp;<lb/>ensamble o&esp;lui.&esp;Tant ala einsi la&esp;chose qe&esp;<lb/>li
+                  lions remena son asne en pasture un&esp;<lb/>&i-j;or q<pc type="reg">'</pc>il
+                  a&u-v;oit &i-j;a ceste oe&u-v;re grant piece de<lb/>menee.&esp;Dont a&u-v;int qe
+                  granz talenz de&esp;<lb/>dormir prist au&esp;lion q<pc type="reg">'</pc>il se
+                  coucha &esperluette-et;endormi<pc type="orig" ana="CC">:</pc>&esp;<lb/>mout
+                  fermement si come sa&esp;nature li apor<lb/>toit &esperluette-et;ensignoit.&esp;Si
+                  com li&esp;lions dormoit&esp;<lb/>en&esp;tel maniere&deuxpoints-virg4;il a&u-v;int
+                  qe marcheant&esp;<lb/>passerent par iluec qi por huile acheter s<pc type="reg"
+                     >'</pc>en&esp;<lb/>alerent en <placeName ref="#egypte"
+                  >&e-maj;g&ypoint;pte</placeName>.&esp;Qant il &u-v;irent l<pc type="reg"
+                  >'</pc>asne&esp;<lb/>tout seul en la pasture&esp;&esperluette-et;sanz
+                     garde&deuxpoints-virg4;il&esp;le&esp;<lb/>pristrent<pc type="reg"
+                     ana="coordination">,</pc> si&esp;l<pc type="reg">'</pc>en&esp;menerent par
+                  felenesse&esp;<lb/>co&u-v;oitise.&esp;Apr&eacc;s ce petit d<pc type="reg"
+                  >'</pc>eure s<pc type="reg">'</pc>es&u-v;eilla li&esp;<lb/>lions qi&esp;ne
+                  sa&u-v;oit mot de&esp;son domache.&esp;Et&esp;<lb/>lors comen&c-ced;a a&esp;querre
+                     l<pc type="reg">'</pc>asne qi&esp;li estoit en&esp;<lb/>garde charchiez.&esp;Et
+                  qant il ne&esp;le pot tro&u-v;&apos-er;&esp;<lb/>en la pasture<pc type="reg"
+                     ana="subordonnee">,</pc> il fu mout dolenz &esperluette-et;pleinz
+                  de&esp;<lb/>grant angoisse&point-virg3;si comen&c-ced;a a&esp;aler
+                  une&esp;<lb/>grant piece del &i-j;or amont &esperluette-et;a&u-v;al<pc type="reg"
+                     ana="apposition">,</pc> sus &esperluette-et;<lb/>&i-j;us<pc type="reg"
+                     ana="apposition">,</pc> tot muiant por ce q<pc type="reg">'</pc>il &u-v;oloit
+                  tro&u-v;er&esp;<lb/>la beste q<pc type="reg">'</pc>il a&u-v;oit perdue.&esp;Et
+                  qant il &u-v;it&esp;<lb/>qe&esp;tro&u-v;er ne&esp;la&esp;porroit en&esp;nule
+                     maniere<pc type="orig" ana="coordination">.</pc>&esp;<lb/>&esperluette-et;qu<pc
+                     type="reg">'</pc>il en a&u-v;oit l<pc type="reg">'</pc>esperance
+                  perdue&point-virg4;il &u-v;int&esp;<lb/><cb n="d"/><choice>
+                     <orig>A</orig>
+                     <reg>a</reg>
+                  </choice> la&esp;porte de&esp;l<pc type="reg">'</pc>abe&itrem;e sanz l<pc
+                     type="reg">'</pc>asne<pc type="orig" ana="coordination">:</pc>&esp;<choice>
+                     <orig>E</orig>
+                     <reg>e</reg>
+                  </choice>t arresta&esp;<lb/>defors ne n<pc type="reg">'</pc>osa mie entrer
+                  dedenz por le mes<lb/>fet q<pc type="reg">'</pc>il fet a&u-v;oit<pc type="reg" ana="subordonnee">,</pc> si&esp;com il
+                  soloit entrer&point-virg4;qant&esp;<lb/>il ramenoit l<pc type="reg">'</pc>asne
+                  de&esp;la&esp;pasture.&esp;Qant <persName ref="#jerome"
+                     >se&itilde-in;z&esp;<lb/>Jeroimes</persName>&#160;&esperluette-et;li frere
+                  de&esp;la meson &u-v;irent le&esp;<lb/>lion arrester a&esp;la porte de&esp;l<pc
+                     type="reg">'</pc>abe&itrem;e sanz l<pc type="reg"
+                     >'</pc>asne&esp;<lb/>&esperluette-et;q<pc type="reg">'</pc>il&esp;a&u-v;oit
+                  tant atargi&eacc; q<pc type="reg">'</pc>il n<pc type="reg">'</pc>estoit
+                  re&u-v;e<lb/>nuz a&esp;droite heure&deuxpoints-virg8;si&esp;com il
+                  soloit&point-virg4;il cui<lb/>dierent q<pc type="reg">'</pc>il e&utrem;st ocis lor
+                  asne &esperluette-et;mengi&eacc;&#160;&esperluette-et;por&esp;<lb/>ce&esp;ne li
+                  &u-v;oudrent doner&esp;tel &u-v;iande com il&esp;<lb/>soloient doner<pc type="reg"
+                     ana="coordination">,</pc> einz li&esp;disoient<pc type="reg" ana="DD">:
+                        </pc><said>&v-maj;a&esp;t<pc type="reg">'</pc>en
+                     &esperluette-et;si&esp;<lb/>mengue la partie qi&esp;t<pc type="reg">'</pc>est
+                     remese del asne qe&esp;<lb/>tu as ocis<pc type="reg" ana="coordination">,</pc>
+                     si&esp;raempliz ta&esp;glotonie&point-exclamation;</said>&esp;Et
+                  encore&esp;<lb/>de&itrem;ssent il ce&point-virg4;il ne le sa&u-v;oient mie
+                     certain<lb/>nement<pc type="orig" ana="completive"
+                  >.</pc>&esp;se&esp;li&esp;lions a&u-v;oit fet le&esp;mal qu<pc type="reg"
+                  >'</pc>il&esp;<lb/>sus li metoient.&esp;Et por&esp;ce sa&u-v;oir s<pc type="reg"
+                     >'</pc>esmur&etilde-en;t&esp;<lb/>ne sei qanz des freres<pc type="reg"
+                     ana="coordination">,</pc> si s<pc type="reg">'</pc>en alerent
+                  a&esp;la&esp;<lb/>pasture ou li lions soloit l<pc type="reg">'</pc>asne
+                  mener&point-virg3;si&esp;<lb/>qistrent d<pc type="reg">'</pc>une part
+                     &esperluette-et;d<pc type="reg">'</pc>autre<pc type="reg" ana="subordonnee">,</pc> s<pc type="reg">'</pc>il &i-j;a par
+                  a&u-v;en<lb/>ture tro&u-v;assent aucune enseigne ou au<lb/>cune trace del sanc
+                  de&esp;lor beste&point-virg3;<choice>
+                     <orig>M</orig>
+                     <reg>m</reg>
+                  </choice>es on&qbarre2;s&esp;<lb/>tant ne sorent qerre q<pc type="reg">'</pc>il en
+                  pe&utrem;ssent tro&u-v;er&esp;<lb/>enseignes ne no&u-v;eles.&esp;Dont le
+                  noncierent&esp;<lb/>einsi a&esp;<persName ref="#jerome">seint
+                     &j-maj;eroime</persName>.&esp;Qant il l<pc type="reg">'</pc>o&itrem;<pc
+                     type="reg" ana="subordonnee">,</pc> il par<lb/>la<pc type="reg"
+                     ana="coordination">,</pc> si dist&point-deuxpointsDial;<said>Beaus freres<pc
+                        type="reg" ana="apostrophe">,</pc>&#160;&i-j;e &u-v;oz proi
+                     qe&esp;&u-v;os&esp;<lb/>soffrez em&esp;pes le domache de&esp;l<pc type="reg"
+                        >'</pc>asne<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si
+                     ne&esp;<lb/>leidengiez ne enchaciez cest lion&deuxpoints-virg3;mes
+                     donez&esp;<lb/>lui sa&esp;&u-v;iande tele com il&esp;la&esp;soloit a&u-v;oir<pc
+                        type="orig" ana="coordination">:</pc>&esp;<lb/>&esperluette-et;si&esp;le
+                     norrissiez q<pc type="reg">'</pc>il ne defaille.&esp;Si alez el&esp;<lb/>bois
+                     &esperluette-et;tailliez la buische<pc type="reg" ana="subordonnee">,</pc>
+                     si&esp;com &u-v;os soliez<pc type="reg" ana="coordination">,</pc>&esp;<lb/>si
+                     atelez le lion el leu de&esp;l<pc type="reg">'</pc>asne<pc type="reg"
+                        ana="coordination">,</pc> si&esp;la noz a<lb/>trera.</said>&esp;Einsint le
+                  firent li frere com <persName ref="#jerome"
+                     >seinz&esp;<lb/>&j-maj;eroimes</persName> lor &neuf-con;manda.&esp;Li lions
+                  fu&esp;remis&esp;<lb/>en la&esp;porte<pc type="reg" ana="coordination">,</pc>
+                  si&esp;rot sa grace<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;aloit chascun&esp;<lb/>&i-j;or au bois ensamble
+                  o&esp;un des freres ou&esp;<lb/>ensamble&esp;<pc ana="number">.</pc><seg
+                     type="number">ii</seg><pc ana="number">.</pc>&esp;&esperluette-et;el leu
+                     de&esp;l<pc type="reg">'</pc>asne lor
+                  aportoit&esp;<lb/>&esperluette-et;atreioit busche.&esp;<lb/></p>
+            </div>
+         </div>
+         <div n="3" type="chapter">
+            <div type="section" n="1">
+               <p><hi rend="decorated-initial">E</hi><choice>
+                     <orig>I</orig>
+                     <reg>i</reg>
+                  </choice>nsint esploita par ne sai com<lb/>bien de tens&point-virg4;tant qe&esp;un
+                  &i-j;our&esp;<lb/>&u-v;int q<pc type="reg">'</pc>il ot oe&u-v;re
+                     lessie.&esp;Adont&esp;<lb/>s<pc type="reg">'</pc>esmut par la &u-v;olent&eacc;
+                  nostre &s-maj;ignor si&esp;c&otilde-om;&esp;<lb/>&i-j;e cuit.&esp;&e-maj;ncore
+                  fust il mue beste<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
+                     >'</pc>en ala&esp;<lb/>a&esp;la champaigne por enquerre s<pc type="reg"
+                  >'</pc>il sauroit&esp;<lb/>&i-j;a&esp;par a&u-v;enture no&u-v;eles de&esp;son
+                  compaig<lb/>non.&esp;Dont cercha par toz les angles del&esp;<lb/>bois
+                  &esperluette-et;fosses &esperluette-et;qarrieres &esperluette-et;ala tant q<pc
+                     type="reg">'</pc>il fu<lb/><pb n="158"
+                     facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f325.item.zoom"/><cb n="a"/><choice>
+                     <orig>M</orig>
+                     <reg>m</reg>
+                  </choice>out lassez &esperluette-et;q<pc type="reg">'</pc>il &u-v;int en un haut <choice>
+                     <orig>L</orig>
+                     <reg>l</reg>
+                  </choice>eu&esp;<lb/>qi estoit el&esp;comun chemin.&esp;Qant il fu la
+                  &u-v;e<lb/>nuz mout tra&u-v;eilliez<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;molt angoisseus&esp;<lb/>de&esp;la
+                  &u-v;oie&deuxpoints-virg4;il resgarda si&esp;loing com il onqes&esp;<lb/>pot
+                  en&u-v;iron lui&deuxpoints-virg3;si&esp;&u-v;it homes qi
+                  chameus&esp;<lb/>charchiez amenoient &esperluette-et;de&u-v;ant tote&esp;la
+                  rote&esp;<lb/>&u-v;enoit li asnes<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;por ce q<pc type="reg">'</pc>il estoit trop
+                  loing&esp;<lb/>por lui conoistre&point-virg4;se&esp;mist il a&esp;la&esp;&u-v;oi
+                  encontre.&esp;<lb/>Costume est en&esp;cele region qe qant
+                  marcheant&esp;<lb/>meinent chameus por aporter granz fes<note>troupeau</note>
+                  de&esp;<lb/>lonteignes contrees<pc type="reg" ana="subordonnee">,</pc> q<pc type="reg">'</pc>il ont un asne
+                  qui&esp;<lb/>porte en&esp;son col une corde a&esp;qoi&esp;li chamel
+                  sont&esp;<lb/>liiez&deuxpoints-virg3;si s<pc type="reg">'</pc>en &u-v;et
+                  de&u-v;ant &esperluette-et;li chamel le si&u-v;ent&esp;<lb/>tout soef le&esp;pas
+                  li uns apr&eacc;s l<pc type="reg">'</pc>autre sanz issir&esp;<lb/>
+                     de&esp;&u-v;oie<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;einsint si&u-v;oient ad&eacc;s l<pc type="reg"
+                  >'</pc>asne&esp;li&esp;chamel&esp;<lb/>solonc ceste costume.&esp;Qant li marcheanz
+                  &u-v;i<lb/>rent le&esp;lion &esperluette-et;il&esp;l<pc type="reg"
+                     >'</pc>aproismierent<pc type="reg" ana="subordonnee">,</pc> il orent
+                  grant&esp;<lb/>poor&deuxpoints-point;&l-maj;i&esp;lions reconut l<pc type="reg"
+                     >'</pc>asne<pc type="reg" ana="coordination">,</pc>&esp;si comen&c-ced;a
+                  a&esp;muire&esp;<lb/>mout durement<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;lors&esp;lor corut seure<pc type="reg"
+                     ana="coordination">,</pc> mes&esp;<lb/>il n<pc type="reg"
+                  >'</pc>en&esp;ble&c-ced;a nul<pc type="orig" ana="coordination"
+                  >.</pc>&esp;ne&esp;ne fist mal de&esp;lor cors
+                  ne&esp;<lb/>gre&u-v;ance&deuxpoints-virg3;car li&esp;marcheanz
+                  deguerpirent&esp;<lb/>totes lor choses&point-virg3;si&esp;s<pc type="reg"
+                     >'</pc>en fo&itrem;rent por la
+                  poour&esp;<lb/>de&esp;la&esp;beste q<pc type="reg">'</pc>il &u-v;eoient &u-v;enir
+                  grant &esperluette-et;hisdeuse.&esp;<lb/>Et si&esp;com il s<pc type="reg"
+                     >'</pc>en fuioient<pc type="reg"
+                     ana="subordonnee">,</pc> li&esp;lions mu&i-j;oit
+                  &esperluette-et;si&esp;<lb/>feroit la&esp;terre de&esp;sa keue mout
+                  durement&deuxpoints-point;<lb/>Li chamel qi charchiez estoient erent
+                  molt&esp;<lb/>espoentez.&esp;Lors les acuelli li lions<pc type="reg"
+                     ana="coordination">,</pc> si&esp;les en<lb/>mena de&u-v;ant lui
+                  &esperluette-et;cha&c-ced;a&esp;tant q<pc type="reg">'</pc>il
+                  &u-v;indrent&esp;<lb/>atout l<pc type="reg">'</pc>asne a&esp;l<pc type="reg"
+                     >'</pc>abe&itrem;e.&esp;Qant il &u-v;indrent a&esp;la&esp;<lb/>porte
+                  &esperluette-et;li frere&esp;les &u-v;irent<pc type="reg" ana="subordonnee">,</pc>
+                  il alerent a&esp;s<persName ref="#jerome"
+                     >eint&esp;<lb/>&j-maj;eroime</persName><pc type="reg" ana="coordination">,</pc>
+                  si&esp;li distrent.&esp;Qant il o&itrem; ceste no&u-v;ele<pc type="reg"
+                     ana="subordonnee"
+                  >,</pc>&esp;<lb/>il&esp;issi&esp;fors&point-virg3;si&esp;&neuf-con;manda
+                  a&esp;o&u-v;rir les portes
+                     &esperluette-et;puis&esp;<lb/>si&esp;dist&point-deuxpointsDial;<said>Descharchiez
+                     nos ostes des fes qe&esp;il&esp;<lb/>portent&point-virg3;puis lor donez
+                        a&esp;mengier<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;apr&eacc;s&esp;<lb/>esgarderons qe nostre
+                     &s-maj;ires &u-v;oudra a&esp;nous&esp;<lb/>demostrer&point-virg5;qi si&esp;serf somes<pc type="reg" ana="apposition">,</pc> de&esp;ceste chose
+                     de<lb/>mostrer &esperluette-et;fere.</said>&esp;Li&esp;frere firent ce q<pc
+                     type="reg">'</pc>il &neuf-con;manda&esp;<lb/>&esperluette-et;atornerent mout
+                  bien les chameus &esperluette-et;aai<lb/>sierent<note>contenter, mettre à
+                     l'aide</note>.&esp;Li&esp;lions comen&c-ced;a a&esp;aler molt liement&esp;<lb/>
+                  par tout l<pc type="reg">'</pc>encloistre de&esp;l<pc type="reg"
+                  >'</pc>abe&itrem;e&point-virg3;si se&esp;coucha de<lb/>&u-v;ant chascun
+                  frere&deuxpoints-virg4;aussi com s<pc type="reg">'</pc>il &u-v;ousist di<lb/>re
+                     q<pc type="reg">'</pc>il n<pc type="reg">'</pc>a&u-v;oit mie faite la felonie
+                     c<pc type="reg">'</pc>on li a&u-v;oit&esp;<lb/>sus&esp;mise.&esp;Qant
+                  ce&esp;&u-v;irent li frere<pc type="reg" ana="subordonnee">,</pc> il firent
+                  lor&esp;<lb/>peneance por&esp;la&esp;cruiaut&eacc; del blasme dont
+                     il&esp;<lb/>l<pc type="reg">'</pc>a&u-v;oient ret&eacc;<note>accusé</note>
+                  a&esp;tort&deuxpoints-virg3;car&esp;adont estoient moi<lb/>ne piu
+                     &esperluette-et;doz<pc type="orig" ana="coordination">.</pc>&esp;ne ne sa&u-v;oient
+                  mie tant de<lb/><cb n="b"/>mal&point-virg4;<choice>
+                     <orig>C</orig>
+                     <reg>c</reg>
+                  </choice>ome il se&u-v;ent ores.&esp;<lb/></p>
+               <lg n="1">
+                  <l n="1"><hi rend="decorated-initialblue">C</hi>eus qi or sont het nostre
+                        &s-maj;ire.</l>
+                  <l n="2">Nus n<pc type="reg">'</pc>en&esp;<lb/>porroit conter ne dire<pc
+                        type="orig" ana="COD">.</pc></l>
+                  <l n="3">Lor maus ne lor mal<lb/>a&u-v;entures.</l>
+                  <l n="4">Deu heent &esperluette-et;les &e-maj;scritures<pc type="orig" ana="coordination">.</pc></l>
+                  <l n="5">Et&esp;<lb/>lor ordre mescest del meins<note>Et leur ordre déchoit de plus en plus</note>.</l>
+                  <l n="6">Ja nus preudom&esp;<lb/>n<pc type="reg">'</pc>ert lor compeins<pc type="orig" ana="relative">.</pc></l>
+                  <l n="7">Qi ne s<pc type="reg">'</pc>en plaigne<pc type="reg" ana="apposition">,</pc> c<pc type="reg">'</pc>est&esp;<lb/>la fins.</l>
+                  <l n="8">En&esp;moine a&esp;plus de&esp;larrecins<pc type="orig" ana="subCorr"
+                        >.</pc></l>
+                  <l n="9">Qu<pc type="reg">'</pc>&etilde-en;&esp;<lb/>usurier de fauset&eacc;.</l>
+                  <l n="10">Et se li cuens<note>Philipe de Namur ?</note> la &u-v;erit&eacc;<pc
+                        type="orig" ana="COD">.</pc>&esp;<lb/></l>
+                  <l n="11">Sa&u-v;oit de&esp;lor cuers les felons&point-virg4;</l>
+                  <l n="12">Ja&esp;ne seroit&esp;<lb/>li ans si&esp;lons<pc type="orig"
+                        ana="subCorr">.</pc></l>
+                  <l n="13">Qe por eus fe&itrem;st nule rien&point-virg3;<lb/></l>
+                  <l n="14">Car &i-j;e&esp;li mant<note>verbe mander</note><pc type="reg" ana="incise">,</pc> sel sace bien&point-virg8;</l>
+                  <l n="15">Qe por&esp;lui fe<lb/>roient petit<pc type="orig" ana="coordination"
+                        >.</pc></l>
+                  <l n="16">N<pc type="reg">'</pc>en orissons n<pc type="reg">'</pc>en fet n<pc
+                        type="reg">'</pc>en dit.&esp;</l>
+                  <lb/>
+               </lg>
+            </div>
+         </div>
+         <div n="4" type="chapter">
+            <div type="section" n="1">
+               <p><hi rend="decorated-initial">L</hi><choice>
+                     <orig>I</orig>
+                     <reg>i</reg>
+                  </choice>&esp;frere <persName ref="#jerome">seint &j-maj;eroime</persName>
+                  disoient del&esp;<lb/>lion&esp;:&esp;<said>&v-maj;eez&esp;ici nostre pasteur qe
+                     nos&esp;<lb/>dampnions si cruelment com&esp;<lb/>se&esp;ce fust uns
+                        de&u-v;orrieres<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;nostre &s-maj;ires nos&esp;<lb/>a&esp;demostr&eacc; mout
+                     beau miracle&point-virg4;por ce qu<pc type="reg">'</pc>il&esp;<lb/>fust
+                     de&esp;cest blasme escusez.</said>&esp;<persName ref="#jerome">Seinz
+                     &j-maj;eroimes</persName>&esp;<lb/>qi&esp;bien sa&u-v;oit ce qe
+                  a&esp;a&u-v;enir estoit de&esp;ceste&esp;<lb/>chose dist a&esp;ses
+                     freres&point-deuxpointsDial;<said>Apareilliez qe&esp;&u-v;os&esp;<lb/>aiez
+                     &u-v;iandes a&esp;o&eacc;s ceus qi&esp;&u-v;endront<pc type="reg" ana="subordonnee"
+                        >,</pc> si qu<pc type="reg">'</pc>il&esp;<lb/>soient rece&utrem;z
+                     honorablement&point-virg4;si com l<pc type="reg">'</pc>en&esp;<lb/>doit ostes
+                     rece&u-v;oir.</said>&esp;Il firent einsint com&esp;lor&esp;<lb/>seint pere lor
+                  &neuf-con;mandoit&point-virg3;car&esp;il ne trespassas<lb/>sent mie de&esp;legier
+                  obedience.&esp;Qant tot ce&esp;<lb/>fu&esp;fet
+                  &esperluette-et;atorn&eacc;&point-virg4;uns messages &u-v;int qi lor
+                  dist&esp;<lb/> &esperluette-et;anon&c-ced;a q<pc type="reg">'</pc>il a&u-v;oit
+                  hostes a&esp;la porte qi &u-v;oloi<lb/>ent &u-v;eoir le&esp;pere
+                     de&esp;la&esp;meson.&esp;<persName ref="#jerome">Seinz
+                     &j-maj;eroi<lb/>mes</persName> comanda c<pc type="reg">'</pc>on o&u-v;rist la
+                     porte<pc type="reg" ana="coordination">,</pc> si les&esp;<lb/>lessast l<pc
+                     type="reg">'</pc>en a&esp;lui &u-v;enir.&esp;Cil entrerent
+                     enz&esp;tot&esp;<lb/>honteus<pc type="reg" ana="subordonnee">,</pc> encore
+                  fussent il mand&eacc;.&esp;Et tan<lb/>tost com il &u-v;irent <persName
+                     ref="#jerome">seint &j-maj;eroime</persName><pc type="reg" ana="subordonnee"
+                     >,</pc>&esp;il&esp;li che&itrem;rent&esp;<lb/>as&esp;piez<pc type="reg"
+                     ana="coordination">,</pc> si&esp;li proierent merci &esperluette-et;pardon
+                  del&esp;<lb/>mesfet q<pc type="reg">'</pc>il fet a&u-v;oient.&esp;<persName
+                     ref="#jerome">Seinz &j-maj;eroimes</persName>&esp;<lb/>les redre&c-ced;a
+                  &esperluette-et;si&esp;lor&esp;dist &esperluette-et;amonesta q<pc type="reg"
+                     >'</pc>il&esp;une&esp;<lb/>autre foiz ne fe&itrem;ssent tele
+                  oe&u-v;re&deuxpoints-virg3;mes pre&itrem;s<lb/>sent lor choses &esperluette-et;les
+                  autrui lessassent ne&esp;<lb/>ne les co&u-v;oitassent.&esp;Dont lor fist
+                  rendre&esp;<lb/>lor chameus a&esp;totes lor charges qe&esp;onques&esp;<lb/>riens n<pc
+                     type="reg">'</pc>en fu detrete.&esp;Dont parlerent li&esp;mar<lb/>cheanz tuit
+                  a&esp;une &u-v;oiz<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Beaus&esp;<lb/>
+                        pere<pc type="reg" ana="apostrophe">,</pc> nos te&esp;prions<pc type="orig"
+                        ana="completive">.</pc>&esp;qe&esp;tu&esp;a&esp;o&eacc;s
+                        le&esp;luminaire&esp;<lb/>de&esp;l<pc type="reg">'</pc>eglisse fere
+                     &esperluette-et;a&esp;o&eacc;s les besoignes des fre<lb/>res de&esp;ceste meson<pc
+                        type="orig" ana="segPrep">:</pc>&esp;faciez prendre
+                        la&esp;moi<lb/>ti&eacc;&esp;de&esp;l<pc type="reg">'</pc>uile qe noz chameus
+                     aporterent&point-virg3;<lb/>car nos&esp;sa&u-v;ons bien certeinement
+                        qe&esp;nos&esp;<lb/><pb n="158"
+                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f326.item.zoom"/><cb
+                        n="c"/><choice>
+                        <orig>P</orig>
+                        <reg>p</reg>
+                     </choice>lus alames en&esp;<placeName ref="#egypte"
+                        >&e-maj;g&ypoint;pte</placeName>&esp;<choice>
+                        <orig>P</orig>
+                        <reg>p</reg>
+                     </choice>or nostre utilit&eacc;&esp;<lb/>qe por l<pc type="reg"
+                     >'</pc>utilit&eacc; de&esp;marcheandise.</said>&esp;<persName ref="#jerome"
+                     >Seinz &j-maj;eroi<lb/>mes</persName> lor respondi&esp;&esperluette-et;dist<pc
+                     type="reg" ana="DD"> : </pc><said>&v-maj;os n<pc type="reg">'</pc>a&u-v;ez mie
+                        requis&esp;<lb/>droiture<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;leide chose seroit qe nos qi
+                     de&u-v;ons&esp;<lb/>a&u-v;oir piti&eacc; des genz &esperluette-et;misericorde
+                     &esperluette-et;aidier&esp;<lb/>a&esp;lor besoing &esperluette-et;doner del
+                        nostre<pc type="orig" ana="relative">.</pc>&esp;&u-v;os gre&u-v;issi<lb/>ons
+                     &esperluette-et;pre&itrem;ssons del &u-v;ostre de qoi nos n<pc type="reg"
+                        >'</pc>a&u-v;ons&esp;<lb/>nule soffrete.</said>&esp;Dont respondirent
+                     li&esp;marche&atilde-an;z&esp;<lb/>a&esp;<persName ref="#jerome">seint
+                     &j-maj;eroime</persName><pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Nos ne
+                     menge<lb/>rons ceenz ne&esp;ne prenderons nules de&esp;totes&esp;<lb/>nos
+                        choses&point-virg4;tresq<pc type="reg">'</pc>atant qe &u-v;os&esp;auroiz
+                     &neuf-con;man<lb/>d&eacc;&esp;a&esp;fere ce qe nos &u-v;os
+                     proierons&point-virg5;<choice><orig>C</orig><reg>c</reg></choice>e&esp;est que&esp;<lb/>&u-v;os preigniez la moiti&eacc;
+                        de&esp;l<pc type="reg">'</pc>uile<pc type="orig" ana="relative"
+                     >.</pc>&esp;qe nos cha<lb/>meus ont aportee.&esp;Et&esp;apr&eacc;s &u-v;os
+                     a&u-v;ons nos&esp;<lb/>en&esp;co&u-v;enant &esperluette-et;otroions qe nos
+                     &esperluette-et;nostre oir<pc type="orig" ana="COD">:</pc>&esp;<lb/>donrons
+                     a&esp;&u-v;os &esperluette-et;a&esp;ceus qi&esp;apr&eacc;s &u-v;os
+                     &u-v;endront&esp;<lb/> a&esp;o&eacc;s l<pc type="reg">'</pc>eglisse de&esp;ceste
+                     meson chascun an une&esp;<lb/>mesure d<pc type="reg"
+                  >'</pc>uile.</said>&esp;Lors fist <persName ref="#jerome">seinz
+                     &j-maj;eroimes</persName> aus&itilde-in;t&esp;<lb/>&neuf-con;me a&esp;force
+                  re&c-ced;oi&u-v;re l<pc type="reg">'</pc>uile qe&esp;li marcheans&esp;li&esp;<lb/>
+                  donerent.&esp;Et puis si&esp;mengierent li&esp;marche<lb/>anz
+                  &esperluette-et;reci&u-v;rent la&esp;bene&itrem;&c-ced;on <persName ref="#jerome"
+                     >seint &j-maj;erosme</persName>.&esp;<lb/>&p-maj;uis pristrent lor choses
+                  &esperluette-et;lor chameus<pc type="reg" ana="coordination">,</pc>
+                     si&esp;<lb/>s<pc type="reg">'</pc>en repeirierent en lor contrees.<lb/></p>
+            </div>
+         </div>
+         <div n="5" type="chapter">
+            <div type="section" n="1">
+               <p><hi rend="decorated-initial">C</hi><choice>
+                     <orig>E</orig>
+                     <reg>e</reg>
+                  </choice>ste chose a&u-v;int en la&esp;cit&eacc; de&esp;&b-maj;eth<pc type="orig"
+                     ana="mot">.</pc><lb/>leem&point-virg4;si&esp;com cil de la &u-v;ile
+                  le&esp;racon<lb/>tent.&esp;Bethleem fu la cit&eacc; en qoi&esp;<lb/>nostre
+                     &s-maj;ires<pc type="reg" ana="apposition">,</pc> li&esp;&s-maj;au&u-v;eres
+                  de&esp;tot le monde<pc type="reg" ana="apposition">,</pc> fu&esp;<lb/>nez
+                  de&esp;la&esp;<persName ref="#marie">&v-maj;irge</persName>&deuxpoints-virg4;si&esp;com li prophete l<pc type="reg"
+                     >'</pc>a&u-v;oient&esp;<lb/>de&u-v;ant prononci&eacc;&point-virg4;&esperluette-et;la fu mis en&esp;la
+                  creche.&esp;<lb/>Et adont estoit la&esp;creche aornee &esperluette-et;d<pc
+                     type="reg">'</pc>or &esperluette-et;d<pc type="reg"
+                  >'</pc>ar<lb/>gent&point-virg4;si com <persName ref="#antoine">seinz
+                     &a-maj;ntoines</persName> le raconte&deuxpoints-point;<lb/>Et la ser&u-v;oit
+                     <persName ref="#jerome">seinz &j-maj;eroimes</persName>&#160;&esperluette-et;si
+                  frere par&esp;<lb/>grant de&u-v;otion nuit &esperluette-et;&i-j;or.&esp;Et
+                  ad&eacc;s i&esp;a&u-v;oit&esp;<lb/>luminaire.&esp;La creche estoit en&esp;une
+                     fosse&esp;<lb/>a&esp;l<pc type="reg">'</pc>entree estroite<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;a&esp;cele entree fist
+                  mes<lb/>sires <persName ref="#jerome">seinz &j-maj;eroimes</persName> fere
+                  a&esp;son o&eacc;s une se<lb/>pouture en qoi il fu mis &esperluette-et;ense&u-v;eliz
+                  qant&esp;<lb/>il parti de&esp;cest siecle.&esp;Ce fu as secondes kalen<lb/>des
+                     d<pc type="reg">'</pc>octembre&deuxpoints-point;Et&esp;adonc a&u-v;oit il
+                  aempli&esp;<lb/>nonante anz de son aage.&esp;<persName ref="#honorius"
+                     >&h-maj;onoires</persName> estoit&esp;<lb/>empereres a&esp;<placeName
+                     ref="#rome">Rome</placeName> qui&esp;<pc ana="number">.</pc><seg
+                     type="number">xii</seg><pc ana="number">.</pc>&esp;anz a&u-v;oit&esp;<lb/>tenu
+                  le reigne par le coumandement&esp;<lb/>de &c-maj;elui qui &u-v;it &esperluette-et;reigne
+                  parmenable<lb/>ment.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
