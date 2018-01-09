@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY esp '<pc type="reg">&#160;</pc>'>
+<!ENTITY esperluette-et '<choice><abbr>&#8266;</abbr><expan>et&#160;</expan></choice>'>
+<!ENTITY apostrophe  '<choice><orig>&apos;</orig><reg>ier</reg></choice>'>
+<!ENTITY c-ced  '<choice><orig>c</orig><reg>ç</reg></choice>'>
+<!ENTITY neuf-com '<choice><abbr>&#42863;</abbr><expan>com</expan></choice>'>
+<!ENTITY neuf-con '<choice><abbr>&#42863;</abbr><expan><ex>con</ex></expan></choice>'>
+<!ENTITY apos-s '<choice><abbr>&apos;</abbr><expan><ex>s</ex></expan></choice>'>
+<!ENTITY apos-us '<choice><abbr>&apos;</abbr><expan><ex>us</ex></expan></choice>'>
+<!ENTITY apos-ue '<choice><abbr>&apos;</abbr><expan><ex>ue</ex></expan></choice>'>
+<!ENTITY apos-er '<choice><abbr>&apos;</abbr><expan><ex>er</ex></expan></choice>'>
+<!ENTITY apos-ier '<choice><abbr>&apos;</abbr><expan><ex>ier</ex></expan></choice>'>
+<!ENTITY apos-re '<choice><abbr>&apos;</abbr><expan><ex>re</ex></expan></choice>'>
+<!ENTITY apos-os '<choice><abbr>&apos;</abbr><expan><ex>os</ex></expan></choice>'>
+<!ENTITY atilde-an '<choice><abbr>ā</abbr><expan>a<ex>n</ex></expan></choice>'>
+<!ENTITY atilde-am '<choice><abbr>ā</abbr><expan>a<ex>m</ex></expan></choice>'>
+<!ENTITY aapos-an '<choice><abbr>a&apos;</abbr><expan>a<ex>n</ex></expan></choice>'>
+<!ENTITY assuscrit-as '<choice><abbr>a&#7652;</abbr><expan>a<ex>s</ex></expan></choice>'>
+<!ENTITY bz-bus '<choice><abbr>bƺ</abbr><expan>b<ex>us</ex></expan></choice>'>
+<!ENTITY cisuscrit-cri '<choice><abbr>c&#869;</abbr><expan>c<ex>ri</ex></expan></choice>'>
+<!ENTITY d-nabbre-dominu '<choice><abbr>d&#58844;</abbr><expan>D<ex>omi</ex>n<ex>u</ex></expan></choice>'>
+<!ENTITY d-nabbre-domin '<choice><abbr>d&#58844;</abbr><expan>D<ex>omi</ex>n</expan></choice>'>
+<!ENTITY dom-domin '<choice><abbr>dom</abbr><expan>D<ex>omin</ex></expan></choice>'>
+<!ENTITY desuscrit-de '<choice><abbr>d&#868;</abbr><expan>d<ex>e</ex></expan></choice>'>
+<!ENTITY dsuscrit-d '<choice><abbr>&#7496;</abbr><expan><ex>d</ex></expan></choice>'>
+<!ENTITY dapos-dre '<choice><abbr>d&apos;</abbr><expan>d<ex>re</ex></expan></choice>'>
+<!ENTITY etilde-en '<choice><abbr>ē</abbr><expan>e<ex>n</ex></expan></choice>'>
+<!ENTITY eapos-en '<choice><abbr>e&apos;</abbr><expan>e<ex>n</ex></expan></choice>'>
+<!ENTITY etilde-em '<choice><abbr>ē</abbr><expan>e<ex>m</ex></expan></choice>'>
+<!ENTITY etilde-en '<choice><abbr>ē</abbr><expan>e<ex>n</ex></expan></choice>'>
+<!ENTITY etilde-ez '<choice><abbr>ē</abbr><expan>e<ex>z</ex></expan></choice>'>
+<!ENTITY eacc '<choice><orig>e</orig><reg>é</reg></choice>'>
+<!ENTITY eexp-re '<choice><abbr>&#868;</abbr><expan><ex>r</ex>e</expan></choice>'>
+<!ENTITY etrem '<choice><orig>e</orig><reg>ë</reg></choice>'>
+<!ENTITY itrem '<choice><orig>i</orig><reg>ï</reg></choice>'>
+<!ENTITY iasuscrit-rai '<choice><orig>i&#867;</orig><reg><ex>ra</ex>i</reg></choice>'>
+<!ENTITY i-j '<choice><orig>i</orig><reg>j</reg></choice>'>
+<!ENTITY itilde-in '<choice><abbr>&#297;</abbr><expan>i<ex>n</ex></expan></choice>'>
+<!ENTITY issuscrit-is '<choice><abbr>i&#7652;</abbr><expan>i<ex>s</ex></expan></choice>'>
+<!ENTITY masuscrit-ar '<choice><abbr>m&#867;</abbr><expan>M<ex>ar</ex></expan></choice>' >
+<!ENTITY masuscrit-ma '<choice><abbr>m&#867;</abbr><expan>m<ex>a</ex></expan></choice>' >
+<!ENTITY mbarre-men '<choice><abbr>m&#773;</abbr><expan>m<ex>en</ex></expan></choice>'>
+<!ENTITY mbarre-mer '<choice><abbr>m&#773;</abbr><expan>m<ex>er</ex></expan></choice>'>
+<!ENTITY mtilde-mur '<choice><abbr>m&#771;</abbr><expan>m<ex>ur</ex></expan></choice>'>
+<!ENTITY mlt '<choice><abbr>mlt&apos;</abbr><expan>m<ex>o</ex>lt</expan></choice>'>
+<!ENTITY ñ-non '<choice><abbr>&#241;</abbr><expan>n<ex>on</ex></expan></choice>'>
+<!ENTITY nasuscrit-an '<choice><abbr>n&#867;</abbr><expan><ex>a</ex>n</expan></choice>'>
+<!ENTITY nasuscrit-ran '<choice><abbr>n&#867;</abbr><expan><ex>ra</ex>n</expan></choice>'>
+<!ENTITY nisuscrit-nier '<choice><abbr>n&#869;</abbr><expan>n<ex>ier</ex></expan></choice>'>
+<!ENTITY nssuscrit-ns '<choice><abbr>n&#7652;</abbr><expan>n<ex>s</ex></expan></choice>'>
+<!ENTITY nrsuscrit-nor '<choice><abbr>n&#876;</abbr><expan>n<ex>or</ex></expan></choice>'>
+<!ENTITY oapos-om '<choice><abbr>o&apos;</abbr><expan>o<ex>m</ex></expan></choice>'>
+<!ENTITY oapos-on '<choice><abbr>o&apos;</abbr><expan>o<ex>n</ex></expan></choice>'>
+<!ENTITY otilde-on '<choice><abbr>&#333;</abbr><expan>o<ex>n</ex></expan></choice>'>
+<!ENTITY otilde-om '<choice><abbr>&#333;</abbr><expan>o<ex>m</ex></expan></choice>'>
+<!ENTITY otilde-no '<choice><abbr>&#333;</abbr><expan><ex>n</ex>o</expan></choice>'>
+<!ENTITY p-iusucrit-pri '<choice><abbr>pͥ</abbr><expan>p<ex>ri</ex></expan></choice>'>
+<!ENTITY prsuscrit-pr '<choice><abbr>p&#876;</abbr><expan>p<ex>r</ex></expan></choice>'>
+<!ENTITY pbarre-pre '<choice><abbr>﻿&#42833;</abbr><expan>p<ex>re</ex></expan></choice>'>
+<!ENTITY pbarre-pre2 '<choice><abbr>﻿p&#61450;</abbr><expan>p<ex>re</ex></expan></choice>'>
+<!ENTITY pbarre-pre3 '<choice><abbr>﻿p&#61450;</abbr><expan>p<ex>ré</ex></expan></choice>'>
+<!ENTITY pbarre-par '<choice><abbr>﻿&#42833;</abbr><expan>p<ex>ar</ex></expan></choice>'>
+<!ENTITY pbarre-per '<choice><abbr>﻿&#42833;</abbr><expan>p<ex>er</ex></expan></choice>'>
+<!ENTITY pbarre-pro '<choice><abbr>﻿&#42833;</abbr><expan>p<ex>ro</ex></expan></choice>'>
+<!ENTITY pbarre-pr '<choice><abbr>﻿&#42833;</abbr><expan>p<ex>r</ex></expan></choice>'>
+<!ENTITY qbarre '<choice><abbr>&#xA759;</abbr><expan>q<ex>e</ex></expan></choice>'>
+<!ENTITY qbarre2 '<choice><abbr>&#59009;</abbr><expan>q<ex>e</ex></expan></choice>'>
+<!ENTITY qapos-qe '<choice><abbr>q&apos;</abbr><expan>q<pc type="reg">&apos;</pc><ex>e</ex></expan></choice>'>
+<!ENTITY qz-que '<choice><abbr>qƺ</abbr><expan>q<ex>ue</ex></expan></choice>'>
+<!ENTITY qesuscrit-qe '<choice><abbr>q&#868;</abbr><expan>q<ex>e</ex></expan></choice>'>
+<!ENTITY qisuscrit-qi '<choice><abbr>q&#869;</abbr><expan>q<pc type="reg">&apos;</pc><ex>i</ex></expan></choice>'>
+<!ENTITY qisuscrit-qi2 '<choice><abbr>q&#869;</abbr><expan>q<ex>i</ex></expan></choice>'>
+<!ENTITY resuscrit-re '<choice><abbr>r&#868;</abbr><expan>r<ex>e</ex></expan></choice>'>
+<!ENTITY risuscrit-ri '<choice><abbr>r&#869;</abbr><expan>r<ex>i</ex></expan></choice>'>
+<!ENTITY rboucle-rum '<choice><abbr>&#657;</abbr><expan>r<ex>um</ex></expan></choice>'>
+<!ENTITY t-oexp-tro '<choice><abbr>t&#186;</abbr><expan>t<ex>r</ex>o</expan></choice>'>
+<!ENTITY t-eexp-tre '<choice><abbr>t&#7497;</abbr><expan>t<ex>r</ex>e</expan></choice>'>
+<!ENTITY tususcrit-tur '<choice><abbr>t&#871;</abbr><expan>t<ex>ur</ex></expan></choice>'>
+<!ENTITY ttilde-te '<choice><abbr>&#x1E6B;</abbr><expan>t<ex>e</ex></expan></choice>'>
+<!ENTITY ttilde-ter '<choice><abbr>&#x1E6B;</abbr><expan>t<ex>er</ex></expan></choice>'>
+<!ENTITY s-saint '<choice><abbr>s&apos;</abbr><expan><ex>seint</ex></expan></choice>'>
+<!ENTITY sexp-s '<choice><abbr>&#7652;</abbr><expan><ex>s</ex></expan></choice>'>
+<!ENTITY esexp-es '<choice><abbr>e&#7652;</abbr><expan>e<ex>s</ex></expan></choice>'>
+<!ENTITY utilde-un '<choice><abbr>﻿﻿﻿ū</abbr><expan>u<ex>n</ex></expan></choice>'>
+<!ENTITY utilde-um '<choice><abbr>﻿﻿﻿ū</abbr><expan>u<ex>m</ex></expan></choice>'>
+<!ENTITY spubarre-spiritu '<choice><abbr>﻿﻿﻿spū</abbr><expan>sp<ex>irit</ex>u</expan></choice>'>
+<!ENTITY ubarre-uer '<choice><abbr>﻿﻿﻿ū</abbr><expan>v<ex>er</ex></expan></choice>'>
+<!ENTITY ursuscrit-uer '<choice><abbr>﻿﻿﻿u&#869;</abbr><expan>u<ex>er</ex></expan></choice>'>
+<!ENTITY uesuscrit-vre '<choice><abbr>﻿﻿﻿u&#868;</abbr><expan>v<ex>re</ex></expan></choice>'>
+<!ENTITY u-v '<choice><orig>u</orig><reg>v</reg></choice>'>
+<!ENTITY uisuscrit-vri '<choice><abbr>u&#869;</abbr><expan>v<ex>ri</ex></expan></choice>' >
+<!ENTITY utrem '<choice><orig>u</orig><reg>ü</reg></choice>'>
+<!ENTITY ypoint  '<choice><orig>&#7823;</orig><reg>y</reg></choice>'>
+<!ENTITY ypoint-trem  '<choice><orig>&#7823;</orig><reg>ÿ</reg></choice>'>
+
+<!-- majuscules -->
+<!ENTITY et-maj '<choice><orig>&#8266;</orig><reg>Et&esp;</reg></choice>' >
+<!ENTITY a-maj '<choice><orig>a</orig><reg>A</reg></choice>' >
+<!ENTITY b-maj '<choice><orig>b</orig><reg>B</reg></choice>' >
+<!ENTITY c-maj '<choice><orig>c</orig><reg>C</reg></choice>' >
+<!ENTITY d-maj '<choice><orig>d</orig><reg>D</reg></choice>' >
+<!ENTITY e-maj '<choice><orig>e</orig><reg>E</reg></choice>' >
+<!ENTITY f-maj '<choice><orig>f</orig><reg>F</reg></choice>' >
+<!ENTITY g-maj '<choice><orig>g</orig><reg>G</reg></choice>' >
+<!ENTITY h-maj '<choice><orig>h</orig><reg>H</reg></choice>' >
+<!ENTITY i-maj '<choice><orig>i</orig><reg>I</reg></choice>' >
+<!ENTITY j-maj '<choice><orig>i</orig><reg>J</reg></choice>' >
+<!ENTITY l-maj '<choice><orig>l</orig><reg>L</reg></choice>' >
+<!ENTITY m-maj '<choice><orig>m</orig><reg>M</reg></choice>' >
+<!ENTITY n-maj '<choice><orig>n</orig><reg>N</reg></choice>' >
+<!ENTITY o-maj '<choice><orig>o</orig><reg>O</reg></choice>' >
+<!ENTITY p-maj '<choice><orig>p</orig><reg>P</reg></choice>' >
+<!ENTITY q-maj '<choice><orig>q</orig><reg>Q</reg></choice>' >
+<!ENTITY r-maj '<choice><orig>r</orig><reg>R</reg></choice>' >
+<!ENTITY s-maj '<choice><orig>s</orig><reg>S</reg></choice>' >
+<!ENTITY t-maj '<choice><orig>t</orig><reg>T</reg></choice>' >
+<!ENTITY u-maj '<choice><orig>u</orig><reg>U</reg></choice>' >
+<!ENTITY v-maj '<choice><orig>u</orig><reg>V</reg></choice>' >
+<!ENTITY w-maj '<choice><orig>w</orig><reg>W</reg></choice>' >
+<!ENTITY y-maj '<choice><orig>&#7823;</orig><reg>Y</reg></choice>' >
+<!ENTITY z-maj '<choice><orig>z</orig><reg>Z</reg></choice>' >
+
+<!-- Ponctuation -->
+
+<!--point -->
+<!ENTITY point-virg '<choice><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-pointvirg '<choice><orig>.</orig><reg>;&esp;</reg></choice>' >
+<!ENTITY point-virg1 '<choice ana="balancement"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg2 '<choice ana="apostrophe"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg3 '<choice ana="conjonctionCoordination"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg4 '<choice ana="subordonnée"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg5 '<choice ana="apposition"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg6 '<choice ana="CC"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg7 '<choice ana="enumeration"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg8 '<choice ana="incise"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-virg9 '<choice ana="parataxe"><orig>.</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY point-deuxpointsDial '<choice ana="dialogue"><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
+<!ENTITY point-deuxpoints '<choice><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
+<!ENTITY point-deuxpointsEnum '<choice ana="enumeration"><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
+<!ENTITY point-interrogation '<choice ana="interrogation"><orig>.</orig><reg>&esp;?&esp;</reg></choice>' >
+<!ENTITY point-exclamation '<choice ana="exclamation"><orig>.</orig><reg>&esp;!&esp;</reg></choice>' >
+
+<!-- deux points -->
+<!ENTITY deuxpoints-virg '<choice><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg1 '<choice ana="balancement"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg2 '<choice ana="apostrophe"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg3 '<choice ana="conjonctionCoordination"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg4 '<choice ana="subordonnée"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg5 '<choice ana="apposition"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg6 '<choice ana="CC"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg7 '<choice ana="enumeration"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg8 '<choice ana="incise"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg9 '<choice ana="parataxe"><orig>:</orig><reg>,&esp;</reg></choice>' >
+<!ENTITY deuxpoints-point '<choice><orig>:</orig><reg>.&esp;</reg></choice>' >
+<!ENTITY deuxpoints-pointvirg '<choice><orig>:</orig><reg>;&esp;</reg></choice>' >
+<!ENTITY deuxpoints-exclamation '<choice ana="interrogation"><orig>:</orig><reg>&esp;!&esp;</reg></choice>' >
+<!ENTITY deuxpoints-interrogation '<choice ana="interrogation"><orig>:</orig><reg>&esp;?&esp;</reg></choice>' >
+
+
+ 
+
+
