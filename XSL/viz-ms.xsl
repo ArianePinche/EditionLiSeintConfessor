@@ -4,23 +4,18 @@
     exclude-result-prefixes="xs tei" version="2.0">
 
     <xsl:strip-space elements="*"/>
-    <xsl:output method="text"/>
-    <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
+    <xsl:output method="html"/>
     <xsl:strip-space elements="tei:app"/>     
-    <xsl:template match="/">
-        <xsl:apply-templates/>
-    </xsl:template>
-    
+    <xsl:variable name="adresse">            
+        <xsl:value-of
+            select="tokenize(//tei:body/@n, ':')[last()]"/>
+        <!-- récupération dans l'uri uniquement du nom du document -->
+    </xsl:variable>
 
     <xsl:template match="/">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-        <xsl:variable name="adresse">            
-            <xsl:value-of
-                select="tokenize(//tei:body/@n, ':')[last()]"/>
-            <!-- récupération dans l'uri uniquement du nom du document -->
-        </xsl:variable>
-        <xsl:result-document href="../html/{concat($adresse, '.html')}" format="html">
-        <html>
+        
+  <html>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <title>Recueil des oeuvres hagiographiques de Wauchier de Denain</title>
@@ -64,7 +59,7 @@
                 <hr/>      
             </body>
         </html>
-        </xsl:result-document>   
+           
 
     </xsl:template>
 
