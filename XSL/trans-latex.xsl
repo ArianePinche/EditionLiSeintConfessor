@@ -19,6 +19,8 @@
 \usepackage{setspace}
 \usepackage{lineno}
 \usepackage{color}
+\usepackage{sectsty}
+\paragraphfont{\mdseries\itshape}
 \author{Ariane Pinche}
 \title{Vie de saint Martin}
 \begin{document}
@@ -113,10 +115,10 @@
                 <xsl:value-of select="@n"/>
                 <xsl:text>]}</xsl:text>
             </xsl:when>
-            <xsl:otherwise><xsl:text>&#160;[fol.</xsl:text>
+            <xsl:otherwise><xsl:text>&#160;{\small[fol.</xsl:text>
         <xsl:value-of select="preceding::tei:pb[1]/@n"/>
         <xsl:value-of select="@n"/>
-        <xsl:text>]&#160;</xsl:text></xsl:otherwise>
+        <xsl:text>]}&#160;</xsl:text></xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
@@ -147,17 +149,17 @@
     <xsl:template match="tei:hi[@rend ='rubricated orig']"/>
     <xsl:template match="tei:hi[@rend ='orig']"/>
     
-    <xsl:template match="tei:said[@xml:lang = 'lat']">
+    <xsl:template match="tei:said[@xml:lang = 'lat'] | tei:said[@xml:lang = 'grec']">
         <xsl:text>\textit{</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>}</xsl:text>
     </xsl:template>
-    <xsl:template match="tei:quote[@xml:lang = 'lat']">
+    <xsl:template match="tei:quote[@xml:lang = 'lat'] | tei:quote[@xml:lang = 'grec']">
         <xsl:text>\textit{</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>}</xsl:text>
     </xsl:template>
-    <xsl:template match="tei:seg[@xml:lang = 'lat']">
+    <xsl:template match="tei:seg[@xml:lang = 'lat'] | tei:seg[@xml:lang = 'grec']">
         <xsl:text>\textit{</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>}</xsl:text>

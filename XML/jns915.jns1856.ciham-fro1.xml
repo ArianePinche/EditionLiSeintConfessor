@@ -457,10 +457,18 @@
       <body n="urn:cts:froLit:jns915.jns1856.ciham-fro1" xml:lang="fro">
          <div type="chapter" n="1"
             facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.highres">
-            <div type="section" n="1">
-               <p>
+            <head><choice>
+               <orig>d</orig>
+               <reg>D</reg>
+            </choice>e&esp;<pc type="orig" ana="abreviation">.</pc><persName ref="#martin"
+               >&s-saint;<pc type="orig" ana="abreviation">.</pc>&esp;<choice>
+                  <orig>m</orig>
+                  <reg>M</reg>
+               </choice>artin</persName>
+            </head>
+            <div type="section" n="1"><p>
                   <pb n="103" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.highres"/>
-                  <hi rend="rubricated"><choice>
+                  <hi rend="rubricated orig"><choice>
                         <orig>d</orig>
                         <reg>D</reg>
                      </choice>e&esp;<pc type="orig" ana="abreviation">.</pc><persName ref="#martin"
@@ -468,7 +476,7 @@
                            <orig>m</orig>
                            <reg>M</reg>
                         </choice>artin</persName>
-                  </hi>&esp; <lb/>
+                  </hi><lb/>
                   <hi rend="decorated-initial"><choice>
                         <orig>M</orig>
                         <reg>m</reg>
