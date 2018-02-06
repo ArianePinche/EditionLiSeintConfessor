@@ -28,7 +28,7 @@
             <moduleRef key="tei"/>
             <moduleRef key="corpus" include="particDesc settingDesc"/>
             <moduleRef key="core"
-               include="p hi quote said cit gloss corr choice reg orig date abbr expan ref head note pb lb cb author title publisher citedRange pubPlace bibl listBibl l lg"/>
+               include="p hi quote said cit gloss corr choice reg orig date abbr expan ref head note pb lb cb author title publisher citedRange pubPlace bibl listBibl l lg teiCorpus"/>
             <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
             <elementSpec ident="variantEncoding" mode="change">
                <attList>

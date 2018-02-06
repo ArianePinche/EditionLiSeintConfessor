@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY esp '<pc type="reg">&#160;</pc>'>
 <!ENTITY esperluette-et '<choice><abbr>&#8266;</abbr><expan>et&#160;</expan></choice>'>
-<!ENTITY apostrophe  '<choice><orig>&apos;</orig><reg>ier</reg></choice>'>
+<!ENTITY apostrophe  '<choice><abbr>&apos;</abbr><expan>ier</expan></choice>'>
 <!ENTITY c-ced  '<choice><orig>c</orig><reg>ç</reg></choice>'>
 <!ENTITY neuf-com '<choice><abbr>&#42863;</abbr><expan>com</expan></choice>'>
-<!ENTITY neuf-con '<choice><abbr>&#42863;</abbr><expan><ex>con</ex></expan></choice>'>
+<!ENTITY neuf-con '<choice><abbr>&#42863;</abbr><expan>con</expan></choice>'>
 <!ENTITY apos-s '<choice><abbr>&apos;</abbr><expan><ex>s</ex></expan></choice>'>
 <!ENTITY apos-us '<choice><abbr>&apos;</abbr><expan><ex>us</ex></expan></choice>'>
 <!ENTITY apos-ue '<choice><abbr>&apos;</abbr><expan><ex>ue</ex></expan></choice>'>
@@ -33,7 +33,7 @@
 <!ENTITY eexp-re '<choice><abbr>&#868;</abbr><expan><ex>r</ex>e</expan></choice>'>
 <!ENTITY etrem '<choice><orig>e</orig><reg>ë</reg></choice>'>
 <!ENTITY itrem '<choice><orig>i</orig><reg>ï</reg></choice>'>
-<!ENTITY iasuscrit-rai '<choice><orig>i&#867;</orig><reg><ex>ra</ex>i</reg></choice>'>
+<!ENTITY iasuscrit-rai '<choice><abbr>i&#867;</abbr><expan><ex>ra</ex>i</expan></choice>'>
 <!ENTITY i-j '<choice><orig>i</orig><reg>j</reg></choice>'>
 <!ENTITY itilde-in '<choice><abbr>&#297;</abbr><expan>i<ex>n</ex></expan></choice>'>
 <!ENTITY issuscrit-is '<choice><abbr>i&#7652;</abbr><expan>i<ex>s</ex></expan></choice>'>
@@ -42,7 +42,7 @@
 <!ENTITY mbarre-men '<choice><abbr>m&#773;</abbr><expan>m<ex>en</ex></expan></choice>'>
 <!ENTITY mbarre-mer '<choice><abbr>m&#773;</abbr><expan>m<ex>er</ex></expan></choice>'>
 <!ENTITY mtilde-mur '<choice><abbr>m&#771;</abbr><expan>m<ex>ur</ex></expan></choice>'>
-<!ENTITY mlt '<choice><abbr>mlt&apos;</abbr><expan>m<ex>o</ex>lt</expan></choice>'>
+<!ENTITY mlt '<choice><abbr>mlt&apos;</abbr><expan>mout</expan></choice>'>
 <!ENTITY ñ-non '<choice><abbr>&#241;</abbr><expan>n<ex>on</ex></expan></choice>'>
 <!ENTITY nasuscrit-an '<choice><abbr>n&#867;</abbr><expan><ex>a</ex>n</expan></choice>'>
 <!ENTITY nasuscrit-ran '<choice><abbr>n&#867;</abbr><expan><ex>ra</ex>n</expan></choice>'>
