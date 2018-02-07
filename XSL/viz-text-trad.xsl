@@ -14,7 +14,7 @@
     <xsl:template match="/">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <xsl:variable name="adresse">
-            <xsl:value-of select="tokenize(//tei:text[@n ='edition']/tei:body/@n, ':')[last()]"/>
+            <xsl:value-of select="tokenize(//tei:text[@n = 'edition']/tei:body/@n, ':')[last()]"/>
             <!-- récupération dans l'uri uniquement du nom du document -->
         </xsl:variable>
         <xsl:result-document href="../html/{concat($adresse,'-trad', '.html')}" format="html">
@@ -551,9 +551,9 @@
         <xsl:text> "</xsl:text>
     </xsl:template>
 
-    <xsl:template match="tei:seg[@xml:lang ='lat']">
+    <xsl:template match="tei:seg[@xml:lang = 'lat']">
         <xsl:element name="i">
-                <xsl:apply-templates/>         
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
