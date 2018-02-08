@@ -153,7 +153,7 @@
 <!ENTITY deuxpoints-virg9 '<choice ana="parataxe"><orig>:</orig><reg>,&esp;</reg></choice>' >
 <!ENTITY deuxpoints-point '<choice><orig>:</orig><reg>.&esp;</reg></choice>' >
 <!ENTITY deuxpoints-pointvirg '<choice><orig>:</orig><reg>;&esp;</reg></choice>' >
-<!ENTITY deuxpoints-exclamation '<choice ana="interrogation"><orig>:</orig><reg>&esp;!&esp;</reg></choice>' >
+<!ENTITY deuxpoints-exclamation '<choice ana="exclamation"><orig>:</orig><reg>&esp;!&esp;</reg></choice>' >
 <!ENTITY deuxpoints-interrogation '<choice ana="interrogation"><orig>:</orig><reg>&esp;?&esp;</reg></choice>' >
 
 

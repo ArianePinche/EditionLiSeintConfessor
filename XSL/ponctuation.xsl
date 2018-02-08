@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="3.0">
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
-    <xsl:template match="/tei:TEI">
+    <xsl:template match="/">
         <table>
             <head>Signes supprimés</head>
             <xsl:for-each-group select="//tei:pc[@type = 'orig']" group-by="@ana">
@@ -47,7 +47,6 @@
                             <xsl:value-of select="$count"/>
                         </td>
                     </xsl:for-each-group>
-
                 </tr>
             </xsl:for-each-group>
         </table>
@@ -73,5 +72,29 @@
                 </tr>
             </xsl:for-each-group>
         </table>
+        <!--  
+        <table>
+            <head>Nombres de signes maintenus</head>
+            <xsl:for-each select="//tei:p/text()">
+              <xsl:if test="//tei:p/text()=''">
+              <td>
+                  <xsl:value-of select="."/>
+              </td>
+              </xsl:if>
+      <xsl:value-of select="count(current-group())"/>
+     </xsl:for-each>
+            <xsl:for-each select="tei:p/text()">
+                <xsl:if test=". = ':'"/>
+                <tr>
+                    <td> : </td>
+                    <xsl:variable name="count" select="count(current-group())"/>
+                    <td>
+                        <xsl:value-of select="$count"/>
+                    </td>
+                </tr>
+            </xsl:for-each>
+
+        </table>
     </xsl:template>
+    -->
 </xsl:stylesheet>
