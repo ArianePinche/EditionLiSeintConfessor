@@ -18,7 +18,7 @@
             <idno>jns.915.jns1856.ciham-fro1</idno>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="A">
+            <msDesc xml:id="C1">
                <msIdentifier>
                   <country>Paris</country>
                   <settlement>Bibliothèque nationale de France</settlement>
@@ -79,7 +79,7 @@
                   </provenance>
                </history>
             </msDesc>
-            <msDesc xml:id="B">
+            <msDesc xml:id="C2">
                <msIdentifier>
                   <country>Paris</country>
                   <settlement>Bibliothèque nationale de France</settlement>
@@ -105,7 +105,7 @@
          </refsDecl>
          <variantEncoding method="parallel-segmentation" location="internal"/>
          <projectDesc>
-            <p/>
+            <p>Edition nativement numérique du recueil hagiographique <hi rend="italic">Li Seint Confessor</hi> de Wauchier de Denain</p>
          </projectDesc>
       </encodingDesc>
       <profileDesc>
@@ -819,17 +819,13 @@
                      ana="relative">.</pc>&esp;qi la &u-v;este&utrem;re a&u-v;oit
                   rece&utrem;e&deuxpoints-virg4;<lb/>li so&u-v;int il de&esp;la parole de<pc
                      type="reg">&#160;</pc>l<pc type="reg">&apos;</pc>&e-maj;&u-v;angile q<pc
-                     type="reg">&apos;</pc>&i-maj;l <lb/> a&u-v;oit de&u-v;ant dite&point-deuxpointsDial;<said><cit>
-                        <quote> Ce qe &u-v;os fe&itrem;stes a<lb/>
+                     type="reg">&apos;</pc>&i-maj;l <lb/> a&u-v;oit de&u-v;ant dite&point-deuxpointsDial;<said>Ce qe &u-v;os fe&itrem;stes a<lb/>
                            <pb n="104"
                               facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217.highres"/>
                            <cb n="a"/> un de mes petis po&u-v;res&deuxpoints-virg5; <choice>
                               <orig>L</orig>
                               <reg>l</reg>
-                           </choice>e fe&itrem;stes &u-v;ous a<lb/> moi me&itrem;smes.</quote>
-                        <bibl>Mat.25, 40.<citedRange
-                              target="urn:cts:greekLit:tlg0031.tlg001.perseus-lat1:25.40"/></bibl>
-                     </cit></said>&esp;Et por confermer le tesmo&itilde-in;g&esp;<lb/>de si bone oe&u-v;re&deuxpoints-virg6;<choice>
+                           </choice>e fe&itrem;stes &u-v;ous a<lb/> moi me&itrem;smes.</said><note><ref target="urn:cts:greekLit:tlg0031.tlg001.perseus-lat1:25.40">Mat.25, 40</ref></note>&esp;Et por confermer le tesmo&itilde-in;g&esp;<lb/>de si bone oe&u-v;re&deuxpoints-virg6;<choice>
                      <orig>S</orig>
                      <reg>s</reg>
                   </choice>e deigna &i-maj;l demoustrer a<pc type="reg">&#160;</pc><persName
@@ -1168,12 +1164,11 @@
                      feras&point-virg4;li deables ert<lb/> toz tens encontre toi.</said>&esp;Dont
                   li&esp;respondi <lb/>
                   <persName ref="#martin">seinz &m-maj;artins</persName>&#160;&esperluette-et;si
-                  dist cest &u-v;er del &s-maj;au<lb/>tier&point-deuxpointsDial;<said><cit>
-                        <quote xml:lang="lat">&d-nabbre-dominu;s michi ad&i-j;utoz est<pc type="reg"
-                              >,</pc>&#160;&ñ-non; timebo quid<lb/> faciat michi homo.</quote>
-                        <bibl>Ps.117, 6.<citedRange
-                              target="urn:cts:greekLit:tlg0527.tlg027.perseus-lat1:117.6"/></bibl>
-                     </cit></said> Ce est a&esp;dire nostre &s-maj;i<lb/>res est mes
+                  dist cest &u-v;er del &s-maj;au<lb/>tier&point-deuxpointsDial;<said>
+                        <seg xml:lang="lat">&d-nabbre-dominu;s michi ad&i-j;utoz est<pc type="reg"
+                              >,</pc>&#160;&ñ-non; timebo quid<lb/> faciat michi homo.</seg>
+                     <note><ref target="urn:cts:greekLit:tlg0527.tlg027.perseus-lat1:117.6">Ps.117, 6.</ref></note>
+                     </said> Ce est a&esp;dire nostre &s-maj;i<lb/>res est mes
                   aidieres&deuxpoints-virg1;&i-j;e ne cremirai cho<lb/><pc type="reg">-</pc>
                   <cb n="d"/><pc type="reg">-</pc>se qe nus hom me face. Et meintenant<lb/> s<pc
                      type="reg">&apos;</pc>es&u-v;anui li deables de de&u-v;ant lui. <choice>
