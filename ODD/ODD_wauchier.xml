@@ -113,9 +113,8 @@
                                 scientifique, les droits et les identifiants de l'édition. Le
                                     <gi>SourceDesc</gi> quand à lui contient toutes les informations
                                 nécessaires sur le manuscrit de base, C<hi rend="exp">1</hi><note>Le
-                                    sigle correspond au manuscrit 412 de la Bibliothèque nationale
-                                    de France</note>, ainsi que sur l'ensemble des témoins qui
-                                comportent le texte concerné.</p>
+                                    sigle correspond au manuscrit 412 de la Bibliothèque Nationale
+                                    de France</note>.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <msIdentifier>
                                     <country>Paris</country>
@@ -131,6 +130,21 @@
                                     <explicit/>
                                 </msItemStruct>
                             </egXML>
+                            <p>Le <gi>SourceDesc</gi> permet également de déclarer l'ensemble des
+                                temoins de la tradition et de leur attribuer un identifiant auquel
+                                l'apparat pourra se référer pour identifier les differentes leçons.
+                                Cet identfiant est attribué grâce à l'attribut <att>xml:id</att> de
+                                l'élément <gi>msdesc</gi>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <msDesc xml:id="C1">
+                                        <msIdentifier>
+                                            <country>Paris</country>
+                                            <settlement>Bibliothèque nationale de
+                                                France</settlement>
+                                            <idno>fr. 00412</idno>
+                                        </msIdentifier> [...] </msDesc>
+                                </egXML>
+                            </p>
                         </div4>
                         <div4>
                             <head>L'encoding desc</head>
@@ -373,30 +387,29 @@
                                 <specDesc key="expan"/>
                                 <specDesc key="ex"/>
                             </specList> Ce balisage permet de conserver dans le code des graphies
-                            originales et de les restituer si besoin.</p> 
-                        <p>Pour les régularisations,
-                                elles concernent la plupart du temps l'utilisation des
-                                majuscules. En effet, l’usage des majuscules
-                                dans le manuscrit ne correspond pas à nos usages modernes, mais
-                                semble davantage suivre pour certaines majuscules des normes
-                                ornementales. Ainsi de nombreuses majuscules apparaissent sans
-                                raison syntaxique sur la première ligne d’une colonne. D’autre part,
-                                le scribe semble parfois utiliser les majuscules pour marquer la fin
-                                d’une proposition ou d’un phrase, mais cet emploi n’est pas
-                                systématique. Nous avons donc régularisé leur emploi afin de
-                                faciliter la lecture selon les usages en rigueur pour les textes
-                                médiévaux et rétabli les majuscules de début de
-                                phrase et sur l’ensemble des initiales des noms propres et des noms de lieux.
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples"
-                                ><placeName ref="#france"><choice>
-                                    <orig>f</orig>
-                                    <reg>F</reg>
-                                </choice>rance</placeName>
+                            originales et de les restituer si besoin.</p>
+                        <p>Pour les régularisations, elles concernent la plupart du temps
+                            l'utilisation des majuscules. En effet, l’usage des majuscules dans le
+                            manuscrit ne correspond pas à nos usages modernes, mais semble davantage
+                            suivre pour certaines majuscules des normes ornementales. Ainsi de
+                            nombreuses majuscules apparaissent sans raison syntaxique sur la
+                            première ligne d’une colonne. D’autre part, le scribe semble parfois
+                            utiliser les majuscules pour marquer la fin d’une proposition ou d’un
+                            phrase, mais cet emploi n’est pas systématique. Nous avons donc
+                            régularisé leur emploi afin de faciliter la lecture selon les usages en
+                            rigueur pour les textes médiévaux et rétabli les majuscules de début de
+                            phrase et sur l’ensemble des initiales des noms propres et des noms de
+                            lieux. <egXML xmlns="http://www.tei-c.org/ns/Examples"><placeName
+                                    ref="#france"><choice>
+                                        <orig>f</orig>
+                                        <reg>F</reg>
+                                    </choice>rance</placeName>
                             </egXML>
                         </p>
-                        <p>Le signalement et le développement des abrévations fonctionnent sur le même principe. Les caractères spéciaux des
-                            abréviations sont signalés par le Numerical Character Reference
-                            décimal du signe concerné.<egXML xmlns="http://www.tei-c.org/ns/Examples"
+                        <p>Le signalement et le développement des abrévations fonctionnent sur le
+                            même principe. Les caractères spéciaux des abréviations sont signalés
+                            par le Numerical Character Reference décimal du signe concerné.<egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"
                                         ><choice><abbr>&#42863;</abbr><expan>com</expan></choice>
                             </egXML> Afin d’alléger le code, mais aussi de procéder de manière
                             homogène pour le développement des abréviations, les balises
@@ -458,11 +471,106 @@
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
-                    <p> Les éléments suivants permettent de structurer l'apparat critique <specList>
-                            <specDesc key="app"/>
-                            <specDesc key="rdg"/>
-                        </specList>
-                    </p>
+                    <p>L’édition présente est une édition constituée à partir d’un texte de base qui
+                        est le manuscrit C1. Cette démarche induit de notre part un grand respect du
+                        modèle, afin d’offrir au lecteur le meilleur texte lisible, sans pour autant
+                        prétendre à la reconstitution du texte d’un original perdu. Toutefois, pour
+                        la qualité scientifique de ce travail et pas souci d’exhaustivité, le texte
+                        est accompagné d’un relevé de l’ensemble des variantes sémantiques de la
+                        tradition connue du recueil des <hi>Seint Confessor</hi></p>
+                    <div3>
+                        <head>Les corrections</head>
+                        <p>Le texte du manuscrit C1 est extrêmement peu fautif. Nous ne sommes
+                            intervenus que dans les cas où la leçon proposée rendait le texte
+                            difficilement compréhensible. Les corrections opérées sont dans la
+                            majorité des cas issues d’une leçon présente dans les manuscrits de la
+                            même famille, la plupart C2 du temps sur lequel nous sommes appuyé en
+                            priorité.</p>
+                        <p> Deux types de corrections ont été opérés dans le corpus. Quand le texte
+                            du manuscrit est difficilement compréhensible en raison d'un manque dans
+                            le texte, nous avons ajouté les lettres manquantes dans une balise
+                                <gi>corr</gi> avec un attribut <att>type</att> de valeur
+                                <hi>add</hi>.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">a cel coup en cha<corr
+                                type="add">ça</corr><note>correction d'après le manuscrit 411</note>
+                            il le deable
+                            <!-- exemple à modifier quand la collation sera terminée -->
+                        </egXML>
+                        <p> Quand le texte du manuscrit est difficilement compréhensible en raison
+                            d'un ajout de texte la plupart du temps lié à une faute par dittograpihe
+                            dans le texte, les lettres en trop sont engloblées dans une balise
+                                <gi>corr</gi> avec un attribut <att>type</att> de valeur
+                                <hi>del</hi>.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
+                                >qi</corr><lb/>qi vit le beau liu<note>correction d'après le
+                                manuscrit 411</note>
+                            <!-- exemple à modifier quand la collation sera terminée -->
+                        </egXML>
+                        <p>L'intégralité des corrections opérées sont également signalées dans
+                            l'apparat critique pour renseigner la graphie fautive présente dans le
+                            manuscrit de base. Chaque fois que le texte présente une leçon fautive,
+                            elle apparaîtra en premier dans l'apparat avec pour témoin C1, sigle du
+                            manuscrit 412 de la Bibliothèque Nationale de France. <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <!-- exemple à ajouter quand la collation sera terminée -->
+                            </egXML>
+                        </p>
+                    </div3>
+                    <div3>
+                        <head>Collations des variantes</head>
+                        <p>L’apparat critique a été conçu nativement en XML. La tradition de notre
+                            texte ne possède que trois manuscrits comportant les neuf textes du
+                            recueil qui appartiennent tous à la même famille. Les vingt-trois autres
+                            manuscrits ont été classés par J.J. Thompson huit grandes familles et
+                            sont parcellaires. La plupart d’entre eux ne comportent que six textes,
+                            et le plus souvent les <hi>Dialogues sur les vertus de saint Martin</hi>
+                            en sont absents, texte non négligeable qui occupe treize des
+                            soixante-sept folios du corpus dans le manuscrit C1. C'est pourquoi,
+                            la méthode de la <ref
+                                target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/TC.html#TCAPPS"
+                                >parallel segmentation</ref> a été choisie pour encoder
+                            l'apparat, méthode qui présente l’avantage d’être simple et lisible
+                            directement dans le code, car l’apparat est signalé dans la linéarité du
+                            texte. Elle permet également d’aisément comparer les leçons entre elles,
+                            comme on peut le voir dans l’exemple suivant.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <!-- exemple à ajouter quand la collation sera terminée -->
+                        </egXML>
+                        <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
+                                <specDesc key="app"/>
+                                <specDesc key="lem"/>
+                                <specDesc key="rdg"/>
+                            </specList>. </p>
+                        <p>La balise <gi>lem</gi> permet de délimiter le texte soumis à des
+                            variations et contient toujours le texte édité. Chaque apparat ne peut contenir qu'un élement <hi>lem</hi>. Ce dernier ne possède pas
+                            d'attribut <att>wit</att>, car suivant les principes d'un apparat
+                            critique négatif, tous les manuscrits qui ne sont pas signalés dans
+                            les leçons de l'apparat suivent le texte du lemme. D'ailleurs, il est
+                            toujours possible de calculer automatiquement la liste des manuscrits
+                            présentant le même texte que le lemme, en comparant la liste des
+                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des manuscrits cités
+                            dans les <gi>rdg</gi>. Pour des soucis techniques de visualisation, afin de
+                            générer automatiquement l'apparat de l'édition de référence, l'élément
+                                <gi>lem</gi> peut avoir un attribut <att>type</att> de valeur
+                                <hi>viz</hi> pour indiquer le fait que le lemme doit apparaitre dans
+                            les notes quand ce dernier porte sur plus d'un mot.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <!-- exemple à ajouter quand la collation sera terminée -->
+                        </egXML> 
+                        <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur attribut <att>wit</att> permet de déclarer
+                            le ou les manuscrits proposant le même texte que celui de la variante
+                            concernée.
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <!-- exemple à ajouter quand la collation sera terminée -->
+                            </egXML> </p>                 
+                        <p> Les leçons rejetées, très peu nombreuses, sont toujours signalées dans
+                            le texte avec des corrections. Dans tous ces cas, l'apparat renseigne la leçon fautive de
+                            C1 qui est toujours signalée dans le premier <gi>rdg</gi> de l'apparat.<egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <!-- exemple à ajouter quand la collation sera terminée -->
+                            </egXML>
+                        </p>
+                    </div3>
 
                 </div2>
             </div1>
@@ -472,7 +580,7 @@
                     <moduleRef key="tei"/>
                     <moduleRef key="corpus" include="particDesc settingDesc"/>
                     <moduleRef key="core"
-                        include="p hi said corr choice reg orig date abbr expan ref head note pb lb cb author title publisher citedRange pubPlace bibl listBibl l lg teiCorpus"/>
+                        include="p hi said corr choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
                     <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
                     <elementSpec ident="variantEncoding" mode="change">
                         <attList>
@@ -649,7 +757,13 @@
                             <attDef ident="ana" mode="delete"/>
                             <attDef ident="facs" mode="delete"/>
                             <attDef ident="unit" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="rend" mode="delete"/>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="add"/>
+                                    <valItem ident="del"/>
+                                </valList>
+                            </attDef>
                         </attList>
                     </elementSpec>
                     <elementSpec ident="choice" mode="change">
@@ -707,13 +821,20 @@
                             <attDef ident="unit" mode="delete"/>
                         </attList>
                     </elementSpec>
-
+                    
+                    <classRef key="att.global.facs"/>
+                    <moduleRef key="transcr" include="ex"/>
                     <elementSpec ident="ex" mode="change">
                         <gloss>Développement</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
                             les éléments ajoutés de la forme développée d'une abréviation.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                        </attList>
                     </elementSpec>
-
 
                     <elementSpec ident="pb" mode="change">
                         <gloss>Saut de page</gloss>
@@ -769,6 +890,34 @@
                                     <valItem ident="exp"/>
                                 </valList>
                             </attDef>
+                        </attList>
+                    </elementSpec>
+
+                    <!-- apparat -->
+
+                    <elementSpec ident="app" mode="change">
+                        <gloss>Apparat</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'englober les différentes leçons de la tradition.</desc>
+                    </elementSpec>
+
+                    <elementSpec ident="rdg" mode="change">
+                        <gloss>Leçon</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            de signaler une leçon différente de celle du texte édité.</desc>
+                        <!-- Pensez à faire une restriction, pour qu'on ne puisse que se référer à des identifiants existant -->
+                    </elementSpec>
+
+                    <elementSpec ident="lem" mode="change">
+                        <gloss>Lemme</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            de signaler la leçon choisie dans le texte édité.</desc>
+                        <attList>
+                        <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                            <valItem ident="viz"/>
+                        </valList>
+                        </attDef>
                         </attList>
                     </elementSpec>
 
@@ -946,286 +1095,7 @@
                             <attDef ident="type" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    <!--Checking module dictionaries-->
-                    <classRef key="att.lexicographic"/>
-                    <classRef key="model.entryLike"/>
-                    <classRef key="model.formPart"/>
-                    <classRef key="model.gramPart"/>
-                    <classRef key="model.morphLike"/>
-                    <classRef key="model.ptrLike.form"/>
-                    <classSpec ident="att.lexicographic" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="expand" mode="delete"/>
-                            <attDef ident="norm" mode="delete"/>
-                            <attDef ident="split" mode="delete"/>
-                            <attDef ident="value" mode="delete"/>
-                            <attDef ident="orig" mode="delete"/>
-                            <attDef ident="location" mode="delete"/>
-                            <attDef ident="mergedIn" mode="delete"/>
-                            <attDef ident="opt" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <!--Checking module tagdocs-->
-                    <macroRef key="macro.schemaPattern"/>
-                    <classRef key="att.combinable"/>
-                    <classRef key="att.identified"/>
-                    <classRef key="model.contentPart"/>
-                    <moduleRef key="tagdocs"
-                        include="moduleRef schemaSpec elementSpec content constraint constraintSpec attList attDef valItem valList"/>
-                    <elementSpec ident="moduleRef" mode="change">
-                        <attList>
-                            <attDef ident="prefix" mode="delete"/>
-                            <attDef ident="except" mode="delete"/>
-                            <attDef ident="url" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="schemaSpec" mode="change">
-                        <attList>
-                            <attDef ident="prefix" mode="delete"/>
-                            <attDef ident="targetLang" mode="delete"/>
-                            <attDef ident="docLang" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="elementSpec" mode="change">
-                        <attList>
-                            <attDef ident="prefix" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="change"/>
-                                </valList>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="content" mode="change">
-                        <attList>
-                            <attDef ident="autoPrefix" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="constraint" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="constraintSpec" mode="change">
-                        <attList>
-                            <attDef ident="scheme" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="isoschematron"/>
-                                </valList>
-                            </attDef>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="attList" mode="change">
-                        <attList>
-                            <attDef ident="org" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="attDef" mode="change">
-                        <attList>
-                            <attDef ident="usage" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="req"/>
-                                </valList>
-                            </attDef>
-                            <attDef ident="ns" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="change"/>
-                                </valList>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="valItem" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="valList" mode="change">
-                        <attList>
-                            <attDef ident="type" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="closed"/>
-                                </valList>
-                            </attDef>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="mode" mode="change">
-                                <valList mode="add" type="closed">
-                                    <valItem ident="add"/>
-                                </valList>
-                            </attDef>
-                        </attList>
-                    </elementSpec>
-                    <classSpec ident="att.identified" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="predeclare" mode="delete"/>
-                            <attDef ident="module" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.canonical" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="key" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.dimensions" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="quantity" mode="delete"/>
-                            <attDef ident="extent" mode="delete"/>
-                            <attDef ident="precision" mode="delete"/>
-                            <attDef ident="scope" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.damaged" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="hand" mode="delete"/>
-                            <attDef ident="agent" mode="delete"/>
-                            <attDef ident="degree" mode="delete"/>
-                            <attDef ident="group" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.datable" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="calendar" mode="delete"/>
-                            <attDef ident="period" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.editLike" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="evidence" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.media" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="width" mode="delete"/>
-                            <attDef ident="height" mode="delete"/>
-                            <attDef ident="scale" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.interpLike" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="type" mode="delete"/>
-                            <attDef ident="inst" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.naming" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="role" mode="delete"/>
-                            <attDef ident="nymRef" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.typed" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="subtype" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.pointing" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="targetLang" mode="delete"/>
-                            <attDef ident="evaluate" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.pointing.group" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="domains" mode="delete"/>
-                            <attDef ident="targFunc" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.segLike" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="function" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.timed" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="start" mode="delete"/>
-                            <attDef ident="end" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.transcriptional" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="hand" mode="delete"/>
-                            <attDef ident="status" mode="delete"/>
-                            <attDef ident="cause" mode="delete"/>
-                            <attDef ident="seq" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <classSpec ident="att.personal" type="atts" mode="change">
-                        <attList>
-                            <attDef ident="sort" mode="delete"/>
-                        </attList>
-                    </classSpec>
-                    <!--Checking module core-->
-                    <elementSpec ident="publisher" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="citedRange" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="pubPlace" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="ref" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="bibl" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="default" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="listBibl" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="default" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-
+                    
                     <!--Checking module header-->
                     <classRef key="att.patternReplacement"/>
                     <moduleRef key="header"
@@ -1360,7 +1230,7 @@
                             <attDef ident="facs" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    <!--Checking module verse-->
+  
                     <!--Checking module msdescription-->
                     <moduleRef key="msdescription"
                         include="msDesc height width locus origDate msIdentifier explicit incipit msContents msItemStruct physDesc objectDesc supportDesc support foliation layoutDesc layout scriptDesc history origin provenance"/>
@@ -1539,17 +1409,7 @@
                             <attDef ident="type" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    <!--Checking module transcr-->
-                    <classRef key="att.global.facs"/>
-                    <moduleRef key="transcr" include="ex"/>
-                    <elementSpec ident="ex" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="unit" mode="delete"/>
-                        </attList>
-                    </elementSpec>
+                    
                     <!--Checking module linking-->
                     <classRef key="att.global.linking"/>
                     <moduleRef key="linking" include="seg"/>
@@ -1621,6 +1481,7 @@
                             </attDef>
                         </attList>
                     </elementSpec>
+                    
                     <!--Checking module textstructure-->
                     <moduleRef key="textstructure" include="TEI text body div"/>
                     <elementSpec ident="TEI" mode="change">
