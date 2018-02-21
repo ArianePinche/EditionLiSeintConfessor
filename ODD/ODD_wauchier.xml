@@ -292,42 +292,169 @@
                 </div2>
                 <div2>
                     <head>De l'édition facsimilaire à l'édition normalisée</head>
-                    
                     <p>La réalisation nativement numérique de cette édition nous a permis de créer
                         une édition multifacette qui peut proposer différentes visualisations du
                         texte, une édition fac-similaire et une normalisée.</p>
-                        <div3>
-                            <head>Encodage de la mise en page du manuscrit</head>
-                            <p></p>
-                        </div3>
-                        <div3>
-                          <head>Encodage des graphies d'origine et des normalisations</head>
-                        <p>
-                            Cette
-                        plasticité est rendue possible par l’utilisation des balises :
-                        <specList>
-                            <specDesc key="choice"/>
-                            <specDesc key="orig"/>
-                            <specDesc key="reg"/>
-                            <specDesc key="abbr"/>
-                            <specDesc key="expan"/>
-                            <specDesc key="ex"/>
-                        </specList>
-                          Afin d’alléger le code, mais aussi de procéder de manière homogène pour le développement des
-                            abréviations, les balises <gi>choice</gi> et leur contenu sont dans la
-                            plupart des cas appelés par une entité dans les fichiers XML. La liste
-                            des entités est contenue dans le fichier dtd <hi rend="italic">entity-Wauchier.dtd</hi> du
-                            projet. L'ajout de
-                        l'attribut <att>type</att> de valeur <hi rend="italic"><val>reg</val></hi>
-                        ou <hi rend="italic"><val>orig</val></hi> sur les élements suivants permet de signaler dans l'encodage si le texte
-                        correspond à la transcription originale ou la transcription normalisée :
-                        <specList>
-                            <specDesc key="pc"/>
-                            <specDesc key="hi"/>
-                        </specList>
-                    
-                    </p>
-                        </div3>
+                    <div3>
+                        <head>Encodage de la mise en page du manuscrit</head>
+                        <p>Afin de pouvoir produire à terme une vue fac-similaire de l'édition, des
+                            informations sur la disposition du texte dans C1 en utilisant les
+                            balises suivantes : <specList>
+                                <specDesc key="pb"/>
+                                <specDesc key="cb"/>
+                                <specDesc key="lb"/>
+                            </specList></p>
+                        <p>Chaque saut de page est indiqué avec élément <gi>pb</gi> qui contient,
+                            grâce à l'attribut <att>n</att>, le numéro du folio et, grâce à
+                            l'attribut <att>facs</att>, un lien vers le folio concerné du manuscrit
+                            C1, numérisé sur le site Gallica. L'indication recto ou verso n'est pas
+                            ajoutée, car elle sera donnée par la lettre de la colonne.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="104"
+                                facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres"
+                            /></egXML>
+                        <p>Chaque saut de colonne est indiqué avec l'élément <gi>cb</gi> contient,
+                            grâce à l'attribut <att>n</att>, la lettre de la colonne à suivre, a et
+                            b désignant la première et la deuxième colonne du recto, tandis que c et
+                            d désigne la première et la deuxième colonne du verso.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples"><cb n="a"/></egXML>
+                        <p>Les lettrine, ainsi que les mots rubriqués ont été indiqués grâce à la
+                            balise <gi>hi</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"><hi
+                                    rend="decorated-initial">A</hi>donc</egXML> Ce sont les valeurs
+                            de l'attribut <att>rend</att> qui indiquent le type de décoration
+                            présent dans le manuscrit. Voici la liste des valeurs utilisées dans le
+                            corpus : <list>
+                                <label>rubricated</label>
+                                <item>désigne les lettres écrites à l'encre rouge.</item>
+                                <label>decorated-initial</label>
+                                <item>désigne les lettrines décorées qui ouvrent les chapitres. Nous
+                                    ne les avons pas différenciées des majuscules avec des
+                                    enluminures représentant des personnages.</item>
+                                <label>initialblue</label>
+                                <item>désigne les majuscules bleues qui viennent parfois ouvrir une
+                                    série de vers dans le corpus.</item>
+                            </list>On trouve également dans le corpus des majuscules à l'encre
+                            rouge, mais elles semblent décoratives et ne sont pas des indications de
+                            structuration du texte, c'est pourqoi nous ne les avons pas signalées
+                            dans l'encodage.</p>
+                        <p>Le cas des titres rubriqués est traité de manière un peu différente pour
+                            des problèmes de transformation et afin de structurer plus aisément
+                            l'édition normalisée. Nous indiquons bien dans le texte à l'aide de la
+                            balise <hi>hi</hi> et de la valeur <hi rend="italic">rubricated</hi> de
+                            l'attribut <att>rend</att>, le fait que le titre est en rouge, mais nous
+                            ajoutons également la valeur d'attritbut <hi rend="italic">orig</hi>
+                            pour indiquer que c'est une graphie du manuscrit afin que le texte
+                            rubriqué n'apparaisse dans l'édition normalisé. Toutefois, la rubrique
+                            du manuscrit est copiée comme titre du chapitre dans la balise
+                                <gi>head</gi> qui précède la <gi>div</gi> concernée. <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
+                                <head>Miracles de seint Martin</head>
+                                <div type="section" n="1">
+                                    <p><hi rend="rubricated orig">Miracles de saint <lb/>Mar<pc
+                                                type="orig">.</pc><lb/>tin</hi> [...] </p>
+                                </div>
+                            </egXML> C'est donc le texte de la balise <hi>head</hi> qui apparaitra
+                            dans l'édition normalisé. Nous avons dû opter pour ce système, car il
+                            s'est avéré être le plus simple et juste d'un point de vue sémantique
+                            face à des rubriques qui pouvaient être discontinues sur plusieurs
+                            lignes. Si l'oeil humain parvient très aisément grâce aux couleurs
+                            d'encre différentes à regrouper les mots du titre ensemble, l'opération
+                            devenait beaucoup plus difficile à opérer à l'aide de balise XML.</p>
+                    </div3>
+                    <div3>
+                        <head>Encodage des graphies d'origine et des normalisations</head>
+                        <p>L'un des but de cette édition est de pouvoir proposer une vue
+                            fac-similaire et une vue normalisée du texte et donc de pouvoir aisément
+                            passer de l'une à l'autre. Cette plasticité est rendue possible par
+                            l’utilisation des balises : <specList>
+                                <specDesc key="choice"/>
+                                <specDesc key="orig"/>
+                                <specDesc key="reg"/>
+                                <specDesc key="abbr"/>
+                                <specDesc key="expan"/>
+                                <specDesc key="ex"/>
+                            </specList> Ce balisage permet de conserver dans le code des graphies
+                            originales et de les restituer si besoin.</p> 
+                        <p>Pour les régularisations,
+                                elles concernent la plupart du temps l'utilisation des
+                                majuscules. En effet, l’usage des majuscules
+                                dans le manuscrit ne correspond pas à nos usages modernes, mais
+                                semble davantage suivre pour certaines majuscules des normes
+                                ornementales. Ainsi de nombreuses majuscules apparaissent sans
+                                raison syntaxique sur la première ligne d’une colonne. D’autre part,
+                                le scribe semble parfois utiliser les majuscules pour marquer la fin
+                                d’une proposition ou d’un phrase, mais cet emploi n’est pas
+                                systématique. Nous avons donc régularisé leur emploi afin de
+                                faciliter la lecture selon les usages en rigueur pour les textes
+                                médiévaux et rétabli les majuscules de début de
+                                phrase et sur l’ensemble des initiales des noms propres et des noms de lieux.
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                ><placeName ref="#france"><choice>
+                                    <orig>f</orig>
+                                    <reg>F</reg>
+                                </choice>rance</placeName>
+                            </egXML>
+                        </p>
+                        <p>Le signalement et le développement des abrévations fonctionnent sur le même principe. Les caractères spéciaux des
+                            abréviations sont signalés par le Numerical Character Reference
+                            décimal du signe concerné.<egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                        ><choice><abbr>&#42863;</abbr><expan>com</expan></choice>
+                            </egXML> Afin d’alléger le code, mais aussi de procéder de manière
+                            homogène pour le développement des abréviations, les balises
+                                <gi>choice</gi> et leur contenu sont dans la plupart des cas appelés
+                            par une entité dans les fichiers XML. La liste des entités est contenue
+                            dans le fichier dtd <hi rend="italic"><ref
+                                    target="../entity-Wauchier.dtd">entity-Wauchier.dtd</ref></hi>
+                            du projet.</p>
+                    </div3>
+                    <div3>
+                        <head>Ponctuation originale et ponctuation normalisée</head>
+                        <p>Le texte du manuscrit C1 présente des marques de ponctuation, de nombreux
+                            points simples ou doubles, toutefois l’usage qu’en fait le scribe ne
+                            correspond en rien à l’usage moderne. Ainsi, il peut utiliser ces signes
+                            pour séparer des propositions relatives de leurs antécédents ou pour
+                            séparer des syntagmes au sein même d’une proposition, sans que sa
+                            pratique n’ait rien de systématique dans notre corpus. La ponctuation a
+                            donc dû être normalisé pour faciliter la lecture du texte. Sur toutes
+                            les marques de ponctuations qui ont dûes être modifiées, la balise
+                                <gi>pc</gi> a été ajoutée.</p>
+                        <p> Le corpus présente trois cas de figure.Dans le premier cas, la
+                            ponctuation originale est supprimée dans l'édition normalisée. L'ajout
+                            de l'attribut <att>type</att> de valeur <hi rend="italic"
+                                    ><val>orig</val></hi> sur l'élement <gi>pc</gi> signale que le
+                            signe est issue de la ponctuation du manuscrit et qu'il ne doit pas
+                            apparaitre dans la version normalisée. <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">car <lb/>adonc estoit
+                                costume en <placeName ref="#france"><choice>
+                                        <orig>f</orig>
+                                        <reg>F</reg>
+                                    </choice>rance</placeName><pc type="orig" ana="completive"
+                                    >.</pc> qe li vilein<lb/> de la contree prenoient les ymages de
+                                lor <lb/>deables </egXML></p>
+                        <p> Dans le deuxième cas, le manuscrit ne présente aucun signe de
+                            ponctuation, mais il est nécessaire d'ajouter un signe pour faciliter la
+                            lecture et la compréhension du texte. L'ajout de l'attribut
+                                <att>type</att> de valeur <hi rend="italic"><val>reg</val></hi> sur
+                            l'élement <gi>pc</gi> signale que le signe est une régularisation de
+                            l'éditeur et qu'il ne doit pas apparaitre dans la vue fac-similaire de
+                            l'édition. Cette méthode est également beaucoup utilisée dans le corpus
+                            pour ajouter les apostrophes nécessaires afin de signaler les élisions.
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">l<pc type="reg"
+                                    >'</pc>oneur </egXML></p>
+                        <p> Dans le troisième cas, le manuscrit présente bien un signe de
+                            ponctuation, mais celui-ci ne correspond pas à nos usages modernes.
+                            Ainsi, afin faciliter la lecture et la compréhension du texte, le signe
+                            de ponctuation doit être modifié. Dans ce cas là, nous avons opté pour
+                            la même méthode que pour les régularisations en utilisant la balise
+                                <gi>choice</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"
+                                    ><choice ana="interrogation"><orig>.</orig><reg> ?
+                                    </reg></choice>
+                            </egXML> De même afin d'alléger la syntaxe du fichier XML, ces balises
+                            sont appelés dans le fichier grâce à une entité contenue dans dans le
+                            fichier dtd <hi rend="italic"><ref target="../entity-Wauchier.dtd"
+                                    >entity-Wauchier.dtd</ref></hi> du projet.</p>
+                        <p>Dans les trois cas, l'ajout de l'attribut <att>ana</att> est utilisé pour
+                            signaler la cause du changement de ponctuation.</p>
+                    </div3>
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
@@ -345,7 +472,7 @@
                     <moduleRef key="tei"/>
                     <moduleRef key="corpus" include="particDesc settingDesc"/>
                     <moduleRef key="core"
-                        include="p hi quote said cit gloss corr choice reg orig date abbr expan ref head note pb lb cb author title publisher citedRange pubPlace bibl listBibl l lg teiCorpus"/>
+                        include="p hi said corr choice reg orig date abbr expan ref head note pb lb cb author title publisher citedRange pubPlace bibl listBibl l lg teiCorpus"/>
                     <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
                     <elementSpec ident="variantEncoding" mode="change">
                         <attList>
@@ -511,8 +638,86 @@
                         </attList>
                     </elementSpec>
 
+                    <!-- elements qui permettent la double visualisation du corpus -->
+
+                    <elementSpec ident="corr" mode="change">
+                        <gloss>Correction</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'encoder les corrections apportées au texte</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="choice" mode="change">
+                        <gloss>Choix</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'encoder des alternatives.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="reg" mode="change">
+                        <gloss>Régularisation</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'encoder la forme régularisée.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="orig" mode="change">
+                        <gloss>Original</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'encoder la forme originale du manuscrit.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="abbr" mode="change">
+                        <gloss>Abréviation</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                            la forme originale de l'abréviation dans le manuscrit.</desc>
+                        <attList>
+                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    <elementSpec ident="expan" mode="change">
+                        <gloss>Développement</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                            la forme développée de l'abréviation.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
+                    <elementSpec ident="ex" mode="change">
+                        <gloss>Développement</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contient
+                            les éléments ajoutés de la forme développée d'une abréviation.</desc>
+                    </elementSpec>
+
 
                     <elementSpec ident="pb" mode="change">
+                        <gloss>Saut de page</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -522,6 +727,8 @@
                         </attList>
                     </elementSpec>
                     <elementSpec ident="cb" mode="change">
+                        <gloss>Saut de colonne</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -531,7 +738,20 @@
                         </attList>
                     </elementSpec>
 
+                    <elementSpec ident="lb" mode="change">
+                        <gloss>Saut de ligne</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="type" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+
                     <elementSpec ident="hi" mode="change">
+                        <gloss>Mise en valeur</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -662,66 +882,6 @@
                         </attList>
                     </elementSpec>
 
-                    <!-- elements inchanges -->
-                    <elementSpec ident="quote" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-
-                    <elementSpec ident="cit" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-
-
-                    <elementSpec ident="gloss" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                            <attDef ident="target" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="corr" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="unit" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="choice" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="reg" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="unit" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="orig" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                        </attList>
-                    </elementSpec>
                     <elementSpec ident="date" mode="change">
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
@@ -732,23 +892,10 @@
                             <attDef ident="type" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    <elementSpec ident="abbr" mode="change">
-                        <attList>
-                            <attDef ident="type" mode="delete"/>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
-                    <elementSpec ident="expan" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="unit" mode="delete"/>
-                        </attList>
-                    </elementSpec>
+
+
+                    <!-- element inchanged -->
+
                     <elementSpec ident="ref" mode="change">
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
@@ -779,14 +926,7 @@
                             </attDef>
                         </attList>
                     </elementSpec>
-                    <elementSpec ident="lb" mode="change">
-                        <attList>
-                            <attDef ident="corresp" mode="delete"/>
-                            <attDef ident="ana" mode="delete"/>
-                            <attDef ident="facs" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
-                        </attList>
-                    </elementSpec>
+
                     <elementSpec ident="author" mode="change">
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
@@ -1430,6 +1570,8 @@
                     <classRef key="att.global.analytic"/>
                     <moduleRef key="analysis" include="pc"/>
                     <elementSpec ident="pc" mode="change">
+                        <gloss>Ponctuation</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <attList>
                             <attDef ident="force" mode="delete"/>
                             <attDef ident="unit" mode="delete"/>
