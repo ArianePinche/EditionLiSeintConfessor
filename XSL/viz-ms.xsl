@@ -479,6 +479,8 @@
     </xsl:template>
 
     <!-- fin saut de page et de colonne -->
+    
+   
 
     <!-- éléments à affichier pour la visualisation facsimilaire -->
     <xsl:template match="tei:orig">
@@ -499,25 +501,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-
-    <!-- éléments de mise en page du manuscrit -->
-
-    <xsl:template match="tei:rdg">
-       <xsl:choose>
-           <xsl:when test="@wit='#A'">
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:value-of select="@rend"/>
-                <xsl:text> orig</xsl:text>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-        </xsl:when>
-       <xsl:otherwise/>
-       </xsl:choose>
-    </xsl:template>
-   
-
+    
     <xsl:template match="tei:hi[@rend]">
         <xsl:choose>
             <xsl:when test="./@rend = 'exp'">
@@ -535,51 +519,9 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    
+    
 
-    <xsl:template match="tei:add[@place]">
-
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:value-of select="@place"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-
-    </xsl:template>
-    <xsl:template match="tei:gap[@reason = 'lacuna']">
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:text>lacuna</xsl:text>
-            </xsl:attribute>
-            <xsl:text>            </xsl:text>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:corr">
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:text>corr</xsl:text>
-                <xsl:value-of select="@rend"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:del">
-        <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:text>del </xsl:text>
-                <xsl:value-of select="@rend"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="tei:metamark">
-        <span class="information-hr metamark" title="{@function}">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <!-- fin de éléments de mise en page du manuscrit -->
 
 <!-- finir en créant un variable i + 1 -->
     <!-- rajouter l'xml id à l'apparat pour le pop-up -->
@@ -627,12 +569,23 @@
         </xsl:element>
     </xsl:template>
     <xsl:template match="tei:corr">
-        <xsl:element name="span">
+        <xsl:choose>
+            <xsl:when test="@type='add'">
+            <xsl:element name="span">
             <xsl:attribute name="class">reg</xsl:attribute>
             <xsl:text>[</xsl:text>
             <xsl:apply-templates/>
             <xsl:text>]</xsl:text>
-        </xsl:element>
+            </xsl:element></xsl:when>
+            <xsl:when test="@type='del'">
+                <xsl:element name="span">
+                    <xsl:attribute name="class">orig</xsl:attribute>
+                    <xsl:text>(</xsl:text>
+                    <xsl:apply-templates/>
+                    <xsl:text>)</xsl:text>
+                </xsl:element>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:expan">
         <xsl:element name="span">

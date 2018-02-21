@@ -84,9 +84,13 @@
         <xsl:value-of select="normalize-space(.)"/>
     </xsl:template>
     <xsl:template match="tei:corr">
-        <xsl:text>[</xsl:text>
+        <xsl:choose><xsl:when test="@type='add'"><xsl:text>[</xsl:text>
         <xsl:value-of select="normalize-space(.)"/>
-        <xsl:text>]</xsl:text>
+        <xsl:text>]</xsl:text></xsl:when>
+            <xsl:when test="@type='del'"><xsl:text>(</xsl:text>
+                <xsl:value-of select="normalize-space(.)"/>
+                <xsl:text>)</xsl:text></xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:orig"/>
     <xsl:template match="tei:abbr"/>
