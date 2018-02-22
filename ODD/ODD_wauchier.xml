@@ -24,29 +24,29 @@
         <body>
             <div1>
                 <head>Principes de l'édition numérique</head>
-                <p>Cette d’édition a été effectuée dans le cadre d’une de thèse de doctorat financée
-                    par l’allocation ARC 5 de la région Rhône-Alpes. Le recueil des Seint Confessor
-                    de Wauchier de Denain, texte du XIIIe siècle réunit neuf textes dont huit vies
-                    de saint. Cette œuvre étonnante par sa composition et atypique en raison de la
-                    notoriété de son auteur est à ce jour peu accessible. Seul deux de ces vies ont
-                    été éditées. Pourtant, l’accès à ses sources pourrait faciliter l’étude du
-                    travail du second continuateur du <hi rend="italic">Perceval</hi> Chrétien de
-                    Troyes dont l’œuvre est des plus diverses. En effet ce polygraphe du
+                <p>Cette d’édition a été effectuée dans le cadre d’une thèse de doctorat financée
+                    par l’allocation ARC 5 de la région Rhône-Alpes. Le recueil des <hi>Seint
+                        Confessor</hi> de Wauchier de Denain, texte du XIIIe siècle réunit neuf
+                    textes dont huit vies de saint. Cette œuvre étonnante par sa composition et
+                    atypique en raison de la notoriété de son auteur est à ce jour peu accessible.
+                    Seul deux de ces vies ont été éditées. Pourtant, l’accès à ses sources pourrait
+                    faciliter l’étude du travail du second continuateur du <hi>Perceval</hi> de
+                    Chrétien de Troyes dont l’œuvre est des plus diverses. En effet ce polygraphe du
                     XIIIe siècle s’est aussi bien essayé au genre romanesque, historique
-                    qu’hagiographique1. Afin de permettre une plus large diffusion ces textes encore
-                    très peu connus, voire éclipsés par la Legenda aurea de Jacques de Voragine, il
-                    nous a semblé intéressant d’offrir un accès aux écrits hagiographiques de
-                    Wauchier de Denain grâce à leur mise en ligne.</p>
+                    qu’hagiographique. Afin de permettre une plus large diffusion ces textes encore
+                    très peu connus, voire éclipsés par la <hi>Legenda aurea</hi> de Jacques de
+                    Voragine, il nous a semblé intéressant d’offrir un accès aux écrits
+                    hagiographiques de Wauchier de Denain grâce à leur mise en ligne.</p>
             </div1>
             <div1>
-                <head>Guide d'encodage de l'édition des Seint Confessor de Wauchier de Denain
-                    d'après le manuscrit 412 de la Bibliotheque nationale de France</head>
-                <p>Ce petit guide a pour but d'expliquer de quelle manière a été encoder en XML-TEI
+                <head>Guide d'encodage de l'édition des <hi>Seint Confessor</hi> de Wauchier de
+                    Denain d'après le manuscrit 412 de la BNF</head>
+                <p>Ce petit guide a pour but d'expliquer de quelle manière a été encodée en XML-TEI
                     l'édition et son apparat. Des principes stricts d’encodage ont été déterminés
-                    pour faciliter la transformation des données afin de produire des données
-                    pérennes et interopérables. L’intégrité de l’encodage proposé est donc
-                    intégralement <hi rend="italic">TEI conformant</hi>.L'édition des <hi
-                        rend="italic">Seint Confessor</hi> réunit les neuf textes suivants :<list>
+                    pour produire des données pérennes et interopérables et faciliter leur
+                    transformation. L’intégralité de l’encodage proposé est donc <hi>TEI
+                        conformant</hi>. L'édition des <hi rend="italic">Seint Confessor</hi> réunit
+                    les textes suivants :<list>
                         <item><hi rend="italic">La Vie de saint Martin</hi></item>
                         <item><hi rend="italic">Les Dialogues sur les Vertus de saint
                             Martin</hi></item>
@@ -58,8 +58,8 @@
                         <item><hi rend="italic">La Vie de saint Benoit</hi></item>
                         <item><hi rend="italic">La Vie de saint Alexis</hi></item>
                     </list> Le corpus numérique est constitué de neuf fichiers XML TEI distincts
-                    correspondant chacun à un texte différent du recueil. Ces derniers sont réunis
-                    dans un teiCorpus nommé <hi rend="italic">CorpusLiSeintConfessor.xml</hi>
+                    correspondant chacun à un texte du recueil. Ces derniers sont réunis dans un
+                    teiCorpus nommé <hi rend="italic">CorpusLiSeintConfessor.xml</hi>
                 </p>
                 <div2>
                     <head>Structurer le fichier XML</head>
@@ -72,8 +72,8 @@
                         canonique qui prend la forme d’une URN CTS<note>Uniform Resource Name, nom
                             d’un standard informatique qui permet d’identifier une ressource
                             indépendamment de sa localisation et de son accessibilité par internet,
-                            ce qui permet à cet identifiant d’être pérenne.</note>. Ainsi, cette
-                        édition est aisément citable et archivable grâce au respect de ces normes
+                            ce qui permet à cet identifiant d’être pérenne</note>. Ainsi, cette
+                        édition est aisément citable et archivable grâce au respect de normes
                         internationales.</p>
                     <p>Dans le recueil de Wauchier de Denain, chacune des Vies est encodée dans un
                         fichier XML différent évitant ainsi de faire des fichiers trop longs et de
@@ -81,7 +81,7 @@
                         fichiers de l’édition sont nommés et identifiés de la manière suivante :
                         « urn:cts:froLit:jns915.jns1856.ciham-fro1 ». La première partie de l’URN :
                         « urn:cts » indique à quel système de référence appartient l’URN ; ici, la
-                        norme CTS. « frotLit » signifie que le texte appartient à un corpus des
+                        norme CTS. « froLit » signifie que le texte appartient à un corpus des
                         textes en ancien français. Les éléments précédés de « jns » indiquent les
                         identifiants de l’œuvre dans <ref
                             target="http://jonas.irht.cnrs.fr/intervenant/915">le portail
@@ -92,11 +92,11 @@
                         partie de l’URN désigne l’instance éditrice : « ciham-fro1 », dans ce cas
                         nous avons mis le nom de notre laboratoire de rattachement : <ref
                             target=" http://ciham.ish-lyon.cnrs.fr.">CIHAM</ref>, « fro1 » faisant
-                        référence à un répertoire de texte en ancien français n°1, dans le cas où le
-                        laboratoire du CIHAM adopterait cette norme pour d’autres projets.</p>
+                        référence à un répertoire de textes en ancien français n°1, dans le cas où
+                        le laboratoire du CIHAM adopterait cette norme pour d’autres projets.</p>
                     <div3>
                         <head>Structurer le <hi rend="italic">teiheader</hi></head>
-                        <p>Le teiHeader comporte trois grandes sections : <specList>
+                        <p>Le <hi>teiHeader</hi> comporte trois grandes sections : <specList>
                                 <specDesc key="fileDesc"/>
                                 <specDesc key="encodingDesc"/>
                                 <specDesc key="profileDesc"/>
@@ -108,10 +108,7 @@
                                     <specDesc key="titleStmt"/>
                                     <specDesc key="publicationStmt"/>
                                     <specDesc key="sourceDesc"/>
-                                </specList> Le premier sert à donner des informations sur le titre
-                                du texte et l'auteur et le deuxièmce sur le nom de l'éditeur
-                                scientifique, les droits et les identifiants de l'édition. Le
-                                    <gi>SourceDesc</gi> quand à lui contient toutes les informations
+                                </specList> Le <gi>sourceDesc</gi> contient toutes les informations
                                 nécessaires sur le manuscrit de base, C<hi rend="exp">1</hi><note>Le
                                     sigle correspond au manuscrit 412 de la Bibliothèque Nationale
                                     de France</note>.</p>
@@ -130,12 +127,12 @@
                                     <explicit/>
                                 </msItemStruct>
                             </egXML>
-                            <p>Le <gi>SourceDesc</gi> permet également de déclarer l'ensemble des
-                                temoins de la tradition et de leur attribuer un identifiant auquel
-                                l'apparat pourra se référer pour identifier les differentes leçons.
-                                Cet identfiant est attribué grâce à l'attribut <att>xml:id</att> de
-                                l'élément <gi>msdesc</gi>
-                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>Il permet également de déclarer l'ensemble des temoins de la
+                                tradition et de leur attribuer un identifiant auquel l'apparat
+                                pourra se référer pour identifier les differentes leçons. Cet
+                                identfiant est attribué grâce à l'attribut <att>xml:id</att> de
+                                l'élément <gi>msDesc</gi>. <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
                                     <msDesc xml:id="C1">
                                         <msIdentifier>
                                             <country>Paris</country>
@@ -147,7 +144,7 @@
                             </p>
                         </div4>
                         <div4>
-                            <head>L'encoding desc</head>
+                            <head>L'encodingDesc</head>
                             <p>L'<gi>encodingDesc</gi> permet de donner des informations sur
                                 l'encodage du fichier XML. Dans notre cas, il a permis de déclarer
                                 la méthode choisie pour constituer l'apparat critique. <egXML
@@ -167,9 +164,9 @@
                                     Nemo</hi><note>Thibault Clérice, « <ref
                                         target="http://capitains.github.io/conferences/2015/09/18/capitains-poster-at-grenobles-conference–humanites-numeriques--lexemple-de-lantiquite/"
                                         >Capitains Poster at Grenoble’s conference Humanites
-                                        Numeriques : L’exemple de l’antiquité</ref> »</note>,
-                                programme qui permet de générer une interface utilisateur à partir
-                                d’un fichier XML utilisant les normes CTS</p>
+                                        Numeriques : L’exemple de l’antiquité</ref> »</note> qui
+                                permet de générer une interface utilisateur à partir d’un fichier
+                                XML utilisant les normes CTS.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <refsDecl n="CTS">
                                     <cRefPattern n="section" matchPattern="(.+).(.+)"
@@ -191,11 +188,11 @@
                                 apparitions du lieu ou du personnage dans la Vie. Cette méthode
                                 permet de générer automatique à partir des fichiers XML les index
                                 des noms de lieux et des noms propres.</p>
-                            <p>Les notices de noms de personnage contiennent un renvoi vers la
-                                notice BnF du personnage concernée quand elle existe, le nom du
-                                personnage et une courte notice explicative. Si le personnage est un
-                                personnage historique, ses dates de naissance et de mort sont
-                                spécifiées quand cela est possible. </p>
+                            <p>Les notices de nom de personnage contiennent un renvoi vers la notice
+                                BnF du personnage concerné quand elle existe, le nom du personnage
+                                et une courte notice explicative. Si le personnage est un personnage
+                                historique, ses dates de naissance et de mort sont spécifiées quand
+                                cela est possible. </p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <person
                                     corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
@@ -214,10 +211,10 @@
                                         Martins</persName> [...] </text>
                             </egXML>
                             <p>Les notices de noms de lieux contiennent un renvoi vers une notice
-                                pleiades1 quand le lieu est identifié et répertorié dans la base, le
-                                nom du lieu, une courte notice explicative si nécessaire et quand le
-                                lieu est identifié ses coordonnées afin de pouvoir à terme faire une
-                                carte des lieux cités dans le corpus.</p>
+                                pleiades quand le lieu est identifié et répertorié dans la base, le
+                                nom du lieu, une courte notice explicative si nécessaire et, quand
+                                le lieu est une ville identifiée, ses coordonnées afin de pouvoir à
+                                terme faire une carte des lieux cités dans le corpus.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <place corresp="http://pleiades.stoa.org/places/423025"
                                     xml:id="rome">
@@ -254,7 +251,7 @@
                             de deux niveaux. La <gi>div</gi> parent possède un attribut
                                 <att>type</att> de valeur <hi rend="italic"><val>chapter</val></hi>
                             qui correspond à un paragraphe de notre édition. Si le texte présente un
-                            titre rubriqué, alors on le fera apparaitre dans l'édition dans un
+                            titre rubriqué, alors on le fera apparaître dans l'édition dans un
                             élément <gi>head</gi>, enfant de la <gi>div</gi> de premier niveau. La
                                 <gi>div</gi> de niveau 2 possède un attribut <att>type</att> de
                             valeur <hi rend="italic"><val>section</val></hi> qui correspond à un
@@ -291,7 +288,7 @@
                             </div>
                         </egXML>
 
-                        <p>L’intégralité des dialogues sont englobés dans une balise
+                        <p>L’intégralité des dialogues est englobée dans une balise
                             <gi>said</gi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"> si dist a l'ymage :
                                 <said>Certes je t'arderai a flambe, se tu ne me rens mes
@@ -308,10 +305,10 @@
                     <head>De l'édition facsimilaire à l'édition normalisée</head>
                     <p>La réalisation nativement numérique de cette édition nous a permis de créer
                         une édition multifacette qui peut proposer différentes visualisations du
-                        texte, une édition fac-similaire et une normalisée.</p>
+                        texte, une édition facsimilaire et une normalisée.</p>
                     <div3>
                         <head>Encodage de la mise en page du manuscrit</head>
-                        <p>Afin de pouvoir produire à terme une vue fac-similaire de l'édition, des
+                        <p>Afin de pouvoir produire à terme une vue facsimilaire de l'édition, des
                             informations sur la disposition du texte dans C1 en utilisant les
                             balises suivantes : <specList>
                                 <specDesc key="pb"/>
@@ -326,12 +323,13 @@
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="104"
                                 facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres"
                             /></egXML>
-                        <p>Chaque saut de colonne est indiqué avec l'élément <gi>cb</gi> contient,
-                            grâce à l'attribut <att>n</att>, la lettre de la colonne à suivre, a et
-                            b désignant la première et la deuxième colonne du recto, tandis que c et
-                            d désigne la première et la deuxième colonne du verso.</p>
+                        <p>Chaque saut de colonne est indiqué avec l'élément <gi>cb</gi> et
+                            contient, grâce à l'attribut <att>n</att>, la lettre de la colonne à
+                            suivre, a et b désignant la première et la deuxième colonne du recto,
+                            tandis que c et d désigne la première et la deuxième colonne du
+                            verso.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"><cb n="a"/></egXML>
-                        <p>Les lettrine, ainsi que les mots rubriqués ont été indiqués grâce à la
+                        <p>Les lettrines, ainsi que les mots rubriqués ont été indiqués grâce à la
                             balise <gi>hi</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"><hi
                                     rend="decorated-initial">A</hi>donc</egXML> Ce sont les valeurs
                             de l'attribut <att>rend</att> qui indiquent le type de décoration
@@ -340,15 +338,14 @@
                                 <label>rubricated</label>
                                 <item>désigne les lettres écrites à l'encre rouge.</item>
                                 <label>decorated-initial</label>
-                                <item>désigne les lettrines décorées qui ouvrent les chapitres. Nous
-                                    ne les avons pas différenciées des majuscules avec des
-                                    enluminures représentant des personnages.</item>
+                                <item>désigne les lettrines décorées qui ouvrent les
+                                    chapitres.</item>
                                 <label>initialblue</label>
                                 <item>désigne les majuscules bleues qui viennent parfois ouvrir une
                                     série de vers dans le corpus.</item>
                             </list>On trouve également dans le corpus des majuscules à l'encre
                             rouge, mais elles semblent décoratives et ne sont pas des indications de
-                            structuration du texte, c'est pourqoi nous ne les avons pas signalées
+                            structuration du texte, c'est pourquoi nous ne les avons pas signalées
                             dans l'encodage.</p>
                         <p>Le cas des titres rubriqués est traité de manière un peu différente pour
                             des problèmes de transformation et afin de structurer plus aisément
@@ -357,7 +354,7 @@
                             l'attribut <att>rend</att>, le fait que le titre est en rouge, mais nous
                             ajoutons également la valeur d'attritbut <hi rend="italic">orig</hi>
                             pour indiquer que c'est une graphie du manuscrit afin que le texte
-                            rubriqué n'apparaisse dans l'édition normalisé. Toutefois, la rubrique
+                            rubriqué n'apparaisse dans l'édition normalisée. Toutefois, la rubrique
                             du manuscrit est copiée comme titre du chapitre dans la balise
                                 <gi>head</gi> qui précède la <gi>div</gi> concernée. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
@@ -366,8 +363,8 @@
                                     <p><hi rend="rubricated orig">Miracles de saint <lb/>Mar<pc
                                                 type="orig">.</pc><lb/>tin</hi> [...] </p>
                                 </div>
-                            </egXML> C'est donc le texte de la balise <hi>head</hi> qui apparaitra
-                            dans l'édition normalisé. Nous avons dû opter pour ce système, car il
+                            </egXML> C'est donc le texte de la balise <hi>head</hi> qui apparaîtra
+                            dans l'édition normalisée. Nous avons dû opter pour ce système, car il
                             s'est avéré être le plus simple et juste d'un point de vue sémantique
                             face à des rubriques qui pouvaient être discontinues sur plusieurs
                             lignes. Si l'oeil humain parvient très aisément grâce aux couleurs
@@ -376,8 +373,8 @@
                     </div3>
                     <div3>
                         <head>Encodage des graphies d'origine et des normalisations</head>
-                        <p>L'un des but de cette édition est de pouvoir proposer une vue
-                            fac-similaire et une vue normalisée du texte et donc de pouvoir aisément
+                        <p>L'un des buts de cette édition est de pouvoir proposer une vue
+                            facsimilaire et une vue normalisée du texte et donc de pouvoir aisément
                             passer de l'une à l'autre. Cette plasticité est rendue possible par
                             l’utilisation des balises : <specList>
                                 <specDesc key="choice"/>
@@ -388,19 +385,11 @@
                                 <specDesc key="ex"/>
                             </specList> Ce balisage permet de conserver dans le code des graphies
                             originales et de les restituer si besoin.</p>
-                        <p>Pour les régularisations, elles concernent la plupart du temps
-                            l'utilisation des majuscules. En effet, l’usage des majuscules dans le
-                            manuscrit ne correspond pas à nos usages modernes, mais semble davantage
-                            suivre pour certaines majuscules des normes ornementales. Ainsi de
-                            nombreuses majuscules apparaissent sans raison syntaxique sur la
-                            première ligne d’une colonne. D’autre part, le scribe semble parfois
-                            utiliser les majuscules pour marquer la fin d’une proposition ou d’un
-                            phrase, mais cet emploi n’est pas systématique. Nous avons donc
-                            régularisé leur emploi afin de faciliter la lecture selon les usages en
-                            rigueur pour les textes médiévaux et rétabli les majuscules de début de
-                            phrase et sur l’ensemble des initiales des noms propres et des noms de
-                            lieux. <egXML xmlns="http://www.tei-c.org/ns/Examples"><placeName
-                                    ref="#france"><choice>
+                        <p>Les régularisations concernent les espaces entre les mots, la graphie
+                            des u/v et des i/j, l'ajout de signes diacritiques (accents et trémas) et enfin l'utilisation des majuscules dont l'usage dans le manuscrit ne correspond pas à nos usages modernes.
+                            Nous avons donc régularisé leurs emplois selon les usages en rigueur
+                            pour l'édition des textes médiévaux afin de faciliter la lecture. <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"><placeName ref="#france"><choice>
                                         <orig>f</orig>
                                         <reg>F</reg>
                                     </choice>rance</placeName>
@@ -408,7 +397,7 @@
                         </p>
                         <p>Le signalement et le développement des abrévations fonctionnent sur le
                             même principe. Les caractères spéciaux des abréviations sont signalés
-                            par le Numerical Character Reference décimal du signe concerné.<egXML
+                            par le <hi>Numerical Character Reference Decimal</hi> du signe concerné.<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples"
                                         ><choice><abbr>&#42863;</abbr><expan>com</expan></choice>
                             </egXML> Afin d’alléger le code, mais aussi de procéder de manière
@@ -421,21 +410,21 @@
                     </div3>
                     <div3>
                         <head>Ponctuation originale et ponctuation normalisée</head>
-                        <p>Le texte du manuscrit C1 présente des marques de ponctuation, de nombreux
+                        <p>Le texte du manuscrit C1 présente des marques de ponctuation,
                             points simples ou doubles, toutefois l’usage qu’en fait le scribe ne
                             correspond en rien à l’usage moderne. Ainsi, il peut utiliser ces signes
                             pour séparer des propositions relatives de leurs antécédents ou pour
                             séparer des syntagmes au sein même d’une proposition, sans que sa
                             pratique n’ait rien de systématique dans notre corpus. La ponctuation a
-                            donc dû être normalisé pour faciliter la lecture du texte. Sur toutes
-                            les marques de ponctuations qui ont dûes être modifiées, la balise
+                            donc dû être normalisée pour faciliter la lecture du texte. Sur toutes
+                            les marques de ponctuations qui ont dû être modifiées, la balise
                                 <gi>pc</gi> a été ajoutée.</p>
-                        <p> Le corpus présente trois cas de figure.Dans le premier cas, la
+                        <p> Le corpus présente trois cas de figure. Dans le premier cas, la
                             ponctuation originale est supprimée dans l'édition normalisée. L'ajout
                             de l'attribut <att>type</att> de valeur <hi rend="italic"
-                                    ><val>orig</val></hi> sur l'élement <gi>pc</gi> signale que le
-                            signe est issue de la ponctuation du manuscrit et qu'il ne doit pas
-                            apparaitre dans la version normalisée. <egXML
+                                    ><val>orig</val></hi> sur l'élément <gi>pc</gi> signale que le
+                            signe est issu de la ponctuation du manuscrit et qu'il ne doit pas
+                            apparaître dans la version normalisée. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">car <lb/>adonc estoit
                                 costume en <placeName ref="#france"><choice>
                                         <orig>f</orig>
@@ -447,8 +436,8 @@
                             ponctuation, mais il est nécessaire d'ajouter un signe pour faciliter la
                             lecture et la compréhension du texte. L'ajout de l'attribut
                                 <att>type</att> de valeur <hi rend="italic"><val>reg</val></hi> sur
-                            l'élement <gi>pc</gi> signale que le signe est une régularisation de
-                            l'éditeur et qu'il ne doit pas apparaitre dans la vue fac-similaire de
+                            l'élément <gi>pc</gi> signale que le signe est une régularisation de
+                            l'éditeur et qu'il ne doit pas apparaître dans la vue facsimilaire de
                             l'édition. Cette méthode est également beaucoup utilisée dans le corpus
                             pour ajouter les apostrophes nécessaires afin de signaler les élisions.
                                 <egXML xmlns="http://www.tei-c.org/ns/Examples">l<pc type="reg"
@@ -456,13 +445,13 @@
                         <p> Dans le troisième cas, le manuscrit présente bien un signe de
                             ponctuation, mais celui-ci ne correspond pas à nos usages modernes.
                             Ainsi, afin faciliter la lecture et la compréhension du texte, le signe
-                            de ponctuation doit être modifié. Dans ce cas là, nous avons opté pour
+                            de ponctuation doit être modifié. Dans ce cas-là, nous avons opté pour
                             la même méthode que pour les régularisations en utilisant la balise
                                 <gi>choice</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"
                                     ><choice ana="interrogation"><orig>.</orig><reg> ?
                                     </reg></choice>
                             </egXML> De même afin d'alléger la syntaxe du fichier XML, ces balises
-                            sont appelés dans le fichier grâce à une entité contenue dans dans le
+                            sont appelées dans le fichier grâce à une entité contenue dans le
                             fichier dtd <hi rend="italic"><ref target="../entity-Wauchier.dtd"
                                     >entity-Wauchier.dtd</ref></hi> du projet.</p>
                         <p>Dans les trois cas, l'ajout de l'attribut <att>ana</att> est utilisé pour
@@ -471,22 +460,22 @@
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
-                    <p>L’édition présente est une édition constituée à partir d’un texte de base qui
+                    <p>L’édition présente est un texte constitué à partir d’un texte de base qui
                         est le manuscrit C1. Cette démarche induit de notre part un grand respect du
-                        modèle, afin d’offrir au lecteur le meilleur texte lisible, sans pour autant
+                        modèle, sans pour autant
                         prétendre à la reconstitution du texte d’un original perdu. Toutefois, pour
-                        la qualité scientifique de ce travail et pas souci d’exhaustivité, le texte
+                        la qualité scientifique de ce travail et par souci d’exhaustivité, le texte
                         est accompagné d’un relevé de l’ensemble des variantes sémantiques de la
-                        tradition connue du recueil des <hi>Seint Confessor</hi></p>
+                        tradition connue du recueil des <hi>Seint Confessor</hi>.</p>
                     <div3>
                         <head>Les corrections</head>
                         <p>Le texte du manuscrit C1 est extrêmement peu fautif. Nous ne sommes
                             intervenus que dans les cas où la leçon proposée rendait le texte
                             difficilement compréhensible. Les corrections opérées sont dans la
                             majorité des cas issues d’une leçon présente dans les manuscrits de la
-                            même famille, la plupart C2 du temps sur lequel nous sommes appuyé en
+                            même famille, la plupart du temps C2 sur lequel nous sommes appuyés en
                             priorité.</p>
-                        <p> Deux types de corrections ont été opérés dans le corpus. Quand le texte
+                        <p>Deux types de corrections ont été opérés dans le corpus. Quand le texte
                             du manuscrit est difficilement compréhensible en raison d'un manque dans
                             le texte, nous avons ajouté les lettres manquantes dans une balise
                                 <gi>corr</gi> avec un attribut <att>type</att> de valeur
@@ -497,8 +486,8 @@
                             <!-- exemple à modifier quand la collation sera terminée -->
                         </egXML>
                         <p> Quand le texte du manuscrit est difficilement compréhensible en raison
-                            d'un ajout de texte la plupart du temps lié à une faute par dittograpihe
-                            dans le texte, les lettres en trop sont engloblées dans une balise
+                            d'un ajout de texte, la plupart du temps lié à une faute par dittograpihe
+                            dans le texte, les lettres en trop sont englobées dans une balise
                                 <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>del</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
@@ -506,7 +495,7 @@
                                 manuscrit 411</note>
                             <!-- exemple à modifier quand la collation sera terminée -->
                         </egXML>
-                        <p>L'intégralité des corrections opérées sont également signalées dans
+                        <p>L'intégralité des corrections opérées est également signalée dans
                             l'apparat critique pour renseigner la graphie fautive présente dans le
                             manuscrit de base. Chaque fois que le texte présente une leçon fautive,
                             elle apparaîtra en premier dans l'apparat avec pour témoin C1, sigle du
@@ -525,14 +514,14 @@
                             sont parcellaires. La plupart d’entre eux ne comportent que six textes,
                             et le plus souvent les <hi>Dialogues sur les vertus de saint Martin</hi>
                             en sont absents, texte non négligeable qui occupe treize des
-                            soixante-sept folios du corpus dans le manuscrit C1. C'est pourquoi,
-                            la méthode de la <ref
+                            soixante-sept folios du corpus dans le manuscrit C1. C'est pourquoi, la
+                            méthode de la <ref
                                 target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/TC.html#TCAPPS"
-                                >parallel segmentation</ref> a été choisie pour encoder
-                            l'apparat, méthode qui présente l’avantage d’être simple et lisible
-                            directement dans le code, car l’apparat est signalé dans la linéarité du
-                            texte. Elle permet également d’aisément comparer les leçons entre elles,
-                            comme on peut le voir dans l’exemple suivant.</p>
+                                >parallel segmentation</ref> a été choisie pour encoder l'apparat,
+                            méthode qui présente l’avantage d’être simple et lisible directement
+                            dans le code, car l’apparat est signalé dans la linéarité du texte. Elle
+                            permet également d’aisément comparer les leçons entre elles, comme on
+                            peut le voir dans l’exemple suivant.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <!-- exemple à ajouter quand la collation sera terminée -->
                         </egXML>
@@ -542,30 +531,31 @@
                                 <specDesc key="rdg"/>
                             </specList>. </p>
                         <p>La balise <gi>lem</gi> permet de délimiter le texte soumis à des
-                            variations et contient toujours le texte édité. Chaque apparat ne peut contenir qu'un élement <hi>lem</hi>. Ce dernier ne possède pas
+                            variations et contient toujours le texte édité. Chaque apparat ne peut
+                            contenir qu'un élément <hi>lem</hi>. Ce dernier ne possède pas
                             d'attribut <att>wit</att>, car suivant les principes d'un apparat
-                            critique négatif, tous les manuscrits qui ne sont pas signalés dans
-                            les leçons de l'apparat suivent le texte du lemme. D'ailleurs, il est
+                            critique négatif, tous les manuscrits qui ne sont pas signalés dans les
+                            leçons de l'apparat suivent le texte du lemme. D'ailleurs, il est
                             toujours possible de calculer automatiquement la liste des manuscrits
                             présentant le même texte que le lemme, en comparant la liste des
-                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des manuscrits cités
-                            dans les <gi>rdg</gi>. Pour des soucis techniques de visualisation, afin de
-                            générer automatiquement l'apparat de l'édition de référence, l'élément
-                                <gi>lem</gi> peut avoir un attribut <att>type</att> de valeur
-                                <hi>viz</hi> pour indiquer le fait que le lemme doit apparaitre dans
-                            les notes quand ce dernier porte sur plus d'un mot.</p>
+                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
+                            manuscrits cités dans les <gi>rdg</gi>. Pour des soucis techniques de
+                            visualisation, afin de générer automatiquement l'apparat de l'édition de
+                            référence, l'élément <gi>lem</gi> peut avoir un attribut <att>type</att>
+                            de valeur <hi>viz</hi> pour indiquer le fait que le lemme doit
+                            apparaître dans les notes quand ce dernier porte sur plus d'un mot.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <!-- exemple à ajouter quand la collation sera terminée -->
-                        </egXML> 
-                        <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur attribut <att>wit</att> permet de déclarer
-                            le ou les manuscrits proposant le même texte que celui de la variante
-                            concernée.
-                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        </egXML>
+                        <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur
+                            attribut <att>wit</att> permet de déclarer le ou les manuscrits
+                            proposant le même texte que celui de la variante concernée. <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples">
                                 <!-- exemple à ajouter quand la collation sera terminée -->
-                            </egXML> </p>                 
+                            </egXML>
+                        </p>
                         <p> Les leçons rejetées, très peu nombreuses, sont toujours signalées dans
-                            le texte avec des corrections. Dans tous ces cas, l'apparat renseigne la leçon fautive de
-                            C1 qui est toujours signalée dans le premier <gi>rdg</gi> de l'apparat.<egXML
+                            le texte avec des corrections.<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <!-- exemple à ajouter quand la collation sera terminée -->
                             </egXML>
@@ -724,7 +714,7 @@
                     <elementSpec ident="lg" mode="change">
                         <gloss>Ensemble de vers</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
-                            de regrouper entre-eux des vers</desc>
+                            de regrouper entre eux des vers.</desc>
                         <constraintSpec ident="lgNumber" scheme="isoschematron">
                             <constraint>
                                 <s:rule context="tei:lg[@n]">
@@ -821,7 +811,7 @@
                             <attDef ident="unit" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    
+
                     <classRef key="att.global.facs"/>
                     <moduleRef key="transcr" include="ex"/>
                     <elementSpec ident="ex" mode="change">
@@ -913,11 +903,11 @@
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
                             de signaler la leçon choisie dans le texte édité.</desc>
                         <attList>
-                        <attDef ident="type" mode="change">
-                        <valList mode="add" type="closed">
-                            <valItem ident="viz"/>
-                        </valList>
-                        </attDef>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="viz"/>
+                                </valList>
+                            </attDef>
                         </attList>
                     </elementSpec>
 
@@ -1095,7 +1085,7 @@
                             <attDef ident="type" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    
+
                     <!--Checking module header-->
                     <classRef key="att.patternReplacement"/>
                     <moduleRef key="header"
@@ -1167,7 +1157,7 @@
                     <elementSpec ident="sourceDesc" mode="change">
                         <gloss>Description des Sources</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">donne
-                            des informations sur les manuscrits collationés.</desc>
+                            des informations sur les manuscrits collationnés.</desc>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -1230,7 +1220,7 @@
                             <attDef ident="facs" mode="delete"/>
                         </attList>
                     </elementSpec>
-  
+
                     <!--Checking module msdescription-->
                     <moduleRef key="msdescription"
                         include="msDesc height width locus origDate msIdentifier explicit incipit msContents msItemStruct physDesc objectDesc supportDesc support foliation layoutDesc layout scriptDesc history origin provenance"/>
@@ -1409,7 +1399,7 @@
                             <attDef ident="type" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    
+
                     <!--Checking module linking-->
                     <classRef key="att.global.linking"/>
                     <moduleRef key="linking" include="seg"/>
@@ -1481,7 +1471,7 @@
                             </attDef>
                         </attList>
                     </elementSpec>
-                    
+
                     <!--Checking module textstructure-->
                     <moduleRef key="textstructure" include="TEI text body div"/>
                     <elementSpec ident="TEI" mode="change">
