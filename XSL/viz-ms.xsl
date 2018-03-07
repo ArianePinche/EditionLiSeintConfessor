@@ -378,7 +378,7 @@
         <div class="modal fade" tabindex="-1" role="dialog" id="app">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h4 class="modal-title" id="myModalLabel">Apparatus</h4>
+                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h4 class="modal-title" id="myModalLabel">Apparat</h4>
                     </div>
                     <div class="modal-body"></div>
                 </div>
@@ -520,16 +520,17 @@
         </xsl:choose>
     </xsl:template>
     
-    
-
+    <xsl:template match="tei:rdg"/>
+        
 
 <!-- finir en créant un variable i + 1 -->
     <!-- rajouter l'xml id à l'apparat pour le pop-up -->
     <!-- fin éléments à afficher pour la visualisation facsimilaire -->
+    
     <!-- éléments à afficher pour la visualisation normalisée -->
     <xsl:template match="tei:lem">
                 <xsl:element name="a">
-                        <xsl:if test="@wit != '#A'">
+                        <xsl:if test="@wit != '#C1'">
                     <xsl:attribute name="class">
                         <xsl:text>reg</xsl:text>
                     </xsl:attribute>
@@ -543,24 +544,21 @@
                         <xsl:attribute name="class">app</xsl:attribute>
                         <xsl:element name="ul">
                             <xsl:attribute name="class">list-unstyled</xsl:attribute>
+                            <xsl:element name="li">
+                                <xsl:apply-templates/><xsl:text>&#160;</xsl:text><xsl:if test="./@wit"><xsl:value-of select="replace(./@wit, '#', '')"/></xsl:if><xsl:text> ]</xsl:text>
+                            </xsl:element>
                     <xsl:for-each
                         select="parent::tei:app/tei:rdg">
-                        <xsl:element name="li">
-                        <xsl:choose>
-                            <xsl:when test="@wit='#A'">
-                                <xsl:text>corr.</xsl:text>
-                                <xsl:value-of select="@type | ."/> d'après ms. <xsl:value-of select="replace(parent::tei:app/tei:lem/@wit, '#', '')"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="."/><xsl:text> [ </xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:element name="li">                        
+                                <xsl:value-of select="."/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:element>
                     </xsl:for-each>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
     </xsl:template>
+    
+    
     
     <xsl:template match="tei:reg">
         <xsl:element name="span">

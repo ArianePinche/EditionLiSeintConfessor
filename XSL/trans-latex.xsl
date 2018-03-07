@@ -194,46 +194,21 @@
     <xsl:template match="tei:rdgGrp">
         <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:lem">
+    <xsl:template match="tei:lem[@type='viz']">
         <xsl:text>
             \edtext{\\</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>}{</xsl:text>
     </xsl:template>
 
-    <xsl:template match="tei:rdgGrp[@type = 'orthographic']/tei:rdg">
+    <xsl:template match="tei:rdg">
         <xsl:text> \lemma{</xsl:text>
-        <xsl:value-of select="normalize-space(.)"/>
-        <xsl:text>}\Afootnote{\textit{</xsl:text>
-        <xsl:value-of select="replace(@wit, '#', '')"/>
-        <xsl:text>}}</xsl:text>
-    </xsl:template>
-
-    <xsl:template match="tei:rdg[@type = 'omission']">
-        <xsl:text>
-            \lemma{omission</xsl:text>
-        <xsl:text>}\Afootnote{\textit{</xsl:text>
-        <xsl:value-of select="replace(@wit, '#', '')"/>
-        <xsl:text>}}</xsl:text>
-    </xsl:template>
-
-    <xsl:template match="tei:rdgGrp[@type = 'translation']/tei:rdg">
-        <xsl:text>
-            \lemma{</xsl:text>
         <xsl:apply-templates/>
-        <xsl:text>}\Bfootnote{\textit{</xsl:text>
+        <xsl:text>}\Afootnote{\textit{</xsl:text>
         <xsl:value-of select="replace(@wit, '#', '')"/>
         <xsl:text>}}</xsl:text>
     </xsl:template>
 
-    <xsl:template match="tei:rdg[@type = 'translation']">
-        <xsl:text>
-            \lemma{</xsl:text>
-        <xsl:value-of select="normalize-space(.)"/>
-        <xsl:text>}\Bfootnote{\textit{</xsl:text>
-        <xsl:value-of select="replace(@wit, '#', '')"/>
-        <xsl:text>}}</xsl:text>
-    </xsl:template>
 
 
 
