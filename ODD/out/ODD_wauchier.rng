@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-02-21T17:39:34Z. .
+Schema generated from ODD source 2018-03-08T15:44:19Z. .
 TEI Edition: Version 2.8.0. Last updated on
 	6th April 2015, revision 13197
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -2702,7 +2702,7 @@ Licensing, etc.]</a:documentation>
    </define>
    <define name="lg">
       <element name="lg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Ensemble de vers) permet de regrouper entre-eux des vers [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Ensemble de vers) permet de regrouper entre eux des vers. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -3798,7 +3798,7 @@ Licensing, etc.]</a:documentation>
    </define>
    <define name="sourceDesc">
       <element name="sourceDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description des Sources) donne des informations sur les manuscrits collationés. [2.2.7. The Source Description]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Description des Sources) donne des informations sur les manuscrits collationnés. [2.2.7. The Source Description]</a:documentation>
          <choice>
             <oneOrMore>
                <ref name="model.pLike"/>
@@ -5173,6 +5173,16 @@ Licensing, etc.]</a:documentation>
    </define>
    <define name="att.textCritical.attributes">
       <ref name="att.source.attributes"/>
+      <ref name="att.textCritical.attribute.cause"/>
+   </define>
+   <define name="att.textCritical.attribute.cause">
+      <optional>
+         <attribute name="cause">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the cause for the variant reading, according to any appropriate typology of possible origins.
+Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion; 4] haplography; 5] dittography; 6] falseEmendation</a:documentation>
+            <ref name="data.enumerated"/>
+         </attribute>
+      </optional>
    </define>
    <define name="model.rdgLike">
       <choice>

@@ -1522,7 +1522,7 @@
                     <classSpec ident="att.textCritical" type="atts" mode="change">
                         <attList>
                             <attDef ident="type" mode="delete"/>
-                            <attDef ident="cause" mode="delete"/>
+                          
                             <attDef ident="varSeq" mode="delete"/>
                             <attDef ident="hand" mode="delete"/>
                         </attList>

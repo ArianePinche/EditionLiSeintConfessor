@@ -20,13 +20,21 @@
 \usepackage{lineno}
 \usepackage{color}
 \usepackage{sectsty}
+\usepackage{reledmac}
 \paragraphfont{\mdseries\itshape}
 \author{Ariane Pinche}
-\title{Vie de saint Martin}
+\title{}
 \begin{document}
-\begin{spacing}{1.5}         
-        </xsl:text>
-        <xsl:apply-templates/> \end{spacing} \end{document} </xsl:template>
+
+
+\modulolinenumbers[5]
+\begin{spacing}{1,5}
+
+</xsl:text>
+<xsl:apply-templates/> 
+\end{spacing}
+\end{document} 
+</xsl:template>
     <xsl:template match="tei:teiHeader"/>
     <xsl:variable name="title">
         <xsl:copy-of select="//tei:titleStmt/tei:title"/>
@@ -54,8 +62,8 @@
     <xsl:template match="tei:div/tei:div">
         <xsl:text>
 \subparagraph*{}
-\begin{linenumbers}
-\modulolinenumbers[5]
+\beginnumbering
+\pstart
 </xsl:text>
 
         <xsl:if test="./@n = '1'">
@@ -64,10 +72,10 @@
         </xsl:if>
         <xsl:apply-templates/>
         <xsl:text>
-\end{linenumbers}
+\pend
+\endnumbering
 </xsl:text>
     </xsl:template>
-
     <xsl:template match="tei:div/tei:div/tei:p">
         <xsl:apply-templates/>
     </xsl:template>
@@ -188,28 +196,40 @@
     <!-- fin mise en page -->
 
     <xsl:template match="tei:app">
-        <xsl:apply-templates/>
-        <xsl:text>}</xsl:text>
-    </xsl:template>
-    <xsl:template match="tei:rdgGrp">
-        <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:lem[@type='viz']">
-        <xsl:text>
-            \edtext{\\</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>}{</xsl:text>
-    </xsl:template>
+        <xsl:for-each select="tei:lem">
+        <xsl:choose>
+            <xsl:when test="tei:hi[@rend='rubricated orig']">    
+                <xsl:text>\edtext{</xsl:text>          
+                <xsl:apply-templates select="tei:hi/child::node()"/>
+                <xsl:text>}</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>\edtext{</xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>}</xsl:text>
+            </xsl:otherwise>        
+        </xsl:choose>
+        </xsl:for-each>
+        <xsl:text>{\Afootnote{</xsl:text> 
+        <xsl:variable name="last" select="tei:rdg[last()]"/>
+        <xsl:for-each select="tei:rdg">            
+            <xsl:apply-templates/>
+            <xsl:if test="./@cause">
+                <xsl:text>&#160;\textit{</xsl:text>
+                <xsl:value-of select="./@cause"/>
+                <xsl:text>}</xsl:text>
+            </xsl:if>
+            <xsl:text>&#160;\textit{</xsl:text>
+            <xsl:value-of select="replace(@wit, '#', '')"/>
+            <xsl:text>}</xsl:text>
+            <xsl:if test=". !=($last)">
+                <xsl:text>,</xsl:text>
+            </xsl:if>
+            <xsl:text>&#160;</xsl:text>
+        </xsl:for-each>
 
-    <xsl:template match="tei:rdg">
-        <xsl:text> \lemma{</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>}\Afootnote{\textit{</xsl:text>
-        <xsl:value-of select="replace(@wit, '#', '')"/>
         <xsl:text>}}</xsl:text>
     </xsl:template>
-
-
-
-
+   
+  
 </xsl:stylesheet>
