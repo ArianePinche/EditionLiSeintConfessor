@@ -20,15 +20,26 @@
 \usepackage{lineno}
 \usepackage{color}
 \usepackage{sectsty}
+\usepackage{fancyhdr}
 \usepackage{reledmac}
 \paragraphfont{\mdseries\itshape}
 \author{Ariane Pinche}
 \title{}
+
 \begin{document}
-
-
+\pagestyle{fancy}
+\rhead{\thepage}
+\cfoot{}
+\Xmaxhnotes{.33\textheight}.
+\renewcommand{\footfudgefiddle}{68}
+\Xbeforenotes[A]{10pt}
+\Xafterrule[A]{5pt}
+\Xnotefontsize[A]{\scriptsize}
+\Xarrangement[A]{paragraph}
+\Xparafootsep{$\parallel$~}
 \modulolinenumbers[5]
 \begin{spacing}{1,5}
+
 
 </xsl:text>
 <xsl:apply-templates/> 
@@ -220,12 +231,29 @@
                 <xsl:text>}</xsl:text>
             </xsl:if>
             <xsl:text>&#160;\textit{</xsl:text>
-            <xsl:value-of select="replace(@wit, '#', '')"/>
+            <xsl:for-each select="tokenize(./@wit, '\s+')">
+                <xsl:variable name="witTok">
+                <xsl:value-of select="replace(.,'#', '')"/>
+            </xsl:variable>
+            <xsl:variable name="witLet">
+                <xsl:value-of select="replace($witTok,'\d+', '')"/>
+            </xsl:variable>
+            <xsl:variable name="witNum">
+                <xsl:value-of select="replace($witTok,'\D+', '')"/>
+            </xsl:variable>
+            <xsl:value-of select="$witLet"/>
+            <xsl:text>\up{</xsl:text>
+            <xsl:value-of select="$witNum"/>
             <xsl:text>}</xsl:text>
+                <xsl:if test=". !=($last)">
+                    <xsl:text>&#160;</xsl:text>
+                </xsl:if>
+            </xsl:for-each>            
             <xsl:if test=". !=($last)">
                 <xsl:text>,</xsl:text>
             </xsl:if>
             <xsl:text>&#160;</xsl:text>
+            <xsl:text>}</xsl:text>
         </xsl:for-each>
 
         <xsl:text>}}</xsl:text>
