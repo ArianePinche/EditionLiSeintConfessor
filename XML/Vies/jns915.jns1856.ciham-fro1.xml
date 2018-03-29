@@ -90,6 +90,17 @@
                   <origDate>14e siècle</origDate>
                </head>
             </msDesc>
+            <msDesc xml:id="C3">
+               <msIdentifier>
+                  <country>London</country>
+                  <settlement>British Library</settlement>
+                  <idno>Royal 20.D.VI</idno>
+               </msIdentifier>
+               <head>
+                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <origDate>1240-1255 </origDate>
+               </head>
+            </msDesc>
             <msDesc xml:id="G1">
                <msIdentifier>
                   <country>Bruxelles</country>
@@ -485,6 +496,7 @@
                                  <reg>M</reg>
                               </choice>artin</persName></hi>
                      </lem>
+                     <rdg wit="#C2">Ci commence la vie de monseigneur seint Martin</rdg>
                      <rdg wit="#C2">Ci commence la vie de monseigneur seint Martin</rdg>
                      <rdg wit="#C3">Ci comence la vie seint Martin</rdg>
                      <rdg wit="#G1" cause="om."/>
@@ -973,7 +985,7 @@
                      <rdg wit="#G1">lui</rdg>
                   </app>. Dont <app>
                      <lem>le &neuf-con;mencierent a<pc type="reg">&#160;</pc>es<lb/>charnir</lem>
-                     <rdg wit="C2">conmencierent a lui escharnir</rdg>
+                     <rdg wit="#C2">conmencierent a lui escharnir</rdg>
                      <rdg wit="#G1">le conmencierent a gaber</rdg>
                   </app> cil qi en&u-v;iron lui estoient&point-virg4;por ce <lb/> qe <app>
                      <lem>l<pc type="reg">'</pc>afuble&utrem;re ert<pc type="reg"
@@ -1002,9 +1014,10 @@
                   </app>&#160;<app>
                      <lem>n<pc type="reg">&apos;</pc>a&u-v;oient onqes</lem>
                      <rdg wit="#G1">onqes n'avoient</rdg>
-                  </app> po&u-v;res re&u-v;estuz&deuxpoints-virg4; <lb/><app>
+                  </app> po&u-v;res re&u-v;estuz&deuxpoints-virg4; <lb/>
+                  <app>
                      <lem>qe bien pe&utrem;ssent a&u-v;oir fait</lem>
-                     <rdg>qui bien le poïssent faire</rdg>
+                     <rdg wit="#G1">qui bien le poïssent faire</rdg>
                   </app> sanz eus&esp;<lb/><app>
                      <lem>desnue<choice>
                            <orig>R</orig>

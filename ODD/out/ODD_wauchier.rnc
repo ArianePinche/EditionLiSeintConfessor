@@ -6,7 +6,7 @@ namespace s = "http://purl.oclc.org/dsdl/schematron"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2018-02-21T17:39:42Z. .
+# Schema generated from ODD source 2018-03-21T17:31:54Z. .
 # TEI Edition: Version 2.8.0. Last updated on
 #	6th April 2015, revision 13197
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -1509,7 +1509,7 @@ l =
   }
 lg =
   
-  ## (Ensemble de vers) permet de regrouper entre-eux des vers [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]
+  ## (Ensemble de vers) permet de regrouper entre eux des vers. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]
   element lg {
     ((model.divTop | model.global)*,
      (model.lLike | model.stageLike | model.labelLike | lg),
@@ -1681,8 +1681,53 @@ rdg =
      | model.global
      | model.rdgPart)*,
     att.global.attributes,
-    att.textCritical.attributes,
-    att.witnessed.attributes,
+    att.source.attribute.source,
+    
+    ## classifies the cause for the variant reading, according to any appropriate typology of possible origins.
+    attribute cause {
+      
+      ## (Omission) signale les manuscrits où le texte du lemme est omis.
+      "om."
+    }?,
+    
+    ## (witness or witnesses) contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading.
+    attribute wit {
+      list { data.pointer+ }
+    }
+    >> sch:pattern [
+         id = "oddbyexample-rdg-wit-witDecl-constraint-7"
+         "\x{a}" ~
+         "            "
+         s:rule [
+           context = "tei:rdg"
+           "\x{a}" ~
+           "                                        "
+           s:let [ name = "ref" value = "tokenize(@wit,' ')" ]
+           "\x{a}" ~
+           "                                        "
+           s:assert [
+             test =
+               "//tei:msDesc[@xml:id = substring-after($ref, '#')] and starts-with($ref, '#')"
+             " the value of #wit is not declared |"
+             s:value-of [ select = "$ref" ]
+             "| "
+           ]
+           "\x{a}" ~
+           "                                        "
+           s:assert [
+             test =
+               "@wit/text()!=preceding-sibling::tei:rdg/@wit/text() | following-sibling::tei:rdg/@wit/text()"
+             "\x{a}" ~
+             "                                             the value of #wit |"
+             s:value-of [ select = "@wit" ]
+             "| is in another reading for this passage"
+           ]
+           "\x{a}" ~
+           "                                    "
+         ]
+         "\x{a}" ~
+         "         "
+       ],
     empty
   }
 variantEncoding =
@@ -1717,7 +1762,7 @@ variantEncoding =
     }
     >> sch:pattern [
          id =
-           "oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-7"
+           "oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-8"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -1854,7 +1899,7 @@ persName =
   element persName {
     macro.phraseSeq
     >> sch:pattern [
-         id = "oddbyexample-persName-PersRef-constraint-8"
+         id = "oddbyexample-persName-PersRef-constraint-9"
          "\x{a}" ~
          "            "
          s:rule [
@@ -1925,7 +1970,7 @@ placeName =
   element placeName {
     macro.phraseSeq
     >> sch:pattern [
-         id = "oddbyexample-placeName-PlaceRef-constraint-9"
+         id = "oddbyexample-placeName-PlaceRef-constraint-10"
          "\x{a}" ~
          "            "
          s:rule [
@@ -2350,7 +2395,7 @@ licence =
   }
 sourceDesc =
   
-  ## (Description des Sources) donne des informations sur les manuscrits collationés. [2.2.7. The Source Description]
+  ## (Description des Sources) donne des informations sur les manuscrits collationnés. [2.2.7. The Source Description]
   element sourceDesc {
     (model.pLike+
      | (model.biblLike | model.sourceDescPart | model.listLike)+),
@@ -3224,7 +3269,7 @@ body =
           ((model.divLike | model.divGenLike), model.global*)*)),
       (model.divBottom, model.global*)*)?)
     >> sch:pattern [
-         id = "oddbyexample-div-divNumber-constraint-10"
+         id = "oddbyexample-div-divNumber-constraint-11"
          "\x{a}" ~
          "            "
          s:rule [
@@ -3243,7 +3288,7 @@ body =
          "         "
        ]
     >> sch:pattern [
-         id = "oddbyexample-div-divChapter-constraint-11"
+         id = "oddbyexample-div-divChapter-constraint-12"
          "\x{a}" ~
          "            "
          s:rule [
@@ -3262,7 +3307,7 @@ body =
          "         "
        ]
     >> sch:pattern [
-         id = "oddbyexample-div-divSection-constraint-12"
+         id = "oddbyexample-div-divSection-constraint-13"
          "\x{a}" ~
          "            "
          s:rule [
@@ -3347,7 +3392,13 @@ model.persNamePart_sequence = surname
 model.persNamePart_sequenceOptional = surname?
 model.persNamePart_sequenceOptionalRepeatable = surname*
 model.persNamePart_sequenceRepeatable = surname+
-att.textCritical.attributes = att.source.attributes
+att.textCritical.attributes =
+  att.source.attributes, att.textCritical.attribute.cause
+att.textCritical.attribute.cause =
+  
+  ## classifies the cause for the variant reading, according to any appropriate typology of possible origins.
+  ## Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion; 4] haplography; 5] dittography; 6] falseEmendation
+  attribute cause { data.enumerated }?
 model.rdgLike = rdg
 model.rdgPart = notAllowed
 start = TEI

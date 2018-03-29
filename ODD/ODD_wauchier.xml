@@ -385,10 +385,12 @@
                                 <specDesc key="ex"/>
                             </specList> Ce balisage permet de conserver dans le code des graphies
                             originales et de les restituer si besoin.</p>
-                        <p>Les régularisations concernent les espaces entre les mots, la graphie
-                            des u/v et des i/j, l'ajout de signes diacritiques (accents et trémas) et enfin l'utilisation des majuscules dont l'usage dans le manuscrit ne correspond pas à nos usages modernes.
-                            Nous avons donc régularisé leurs emplois selon les usages en rigueur
-                            pour l'édition des textes médiévaux afin de faciliter la lecture. <egXML
+                        <p>Les régularisations concernent les espaces entre les mots, la graphie des
+                            u/v et des i/j, l'ajout de signes diacritiques (accents et trémas) et
+                            enfin l'utilisation des majuscules dont l'usage dans le manuscrit ne
+                            correspond pas à nos usages modernes. Nous avons donc régularisé leurs
+                            emplois selon les usages en rigueur pour l'édition des textes médiévaux
+                            afin de faciliter la lecture. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples"><placeName ref="#france"><choice>
                                         <orig>f</orig>
                                         <reg>F</reg>
@@ -397,8 +399,8 @@
                         </p>
                         <p>Le signalement et le développement des abrévations fonctionnent sur le
                             même principe. Les caractères spéciaux des abréviations sont signalés
-                            par le <hi>Numerical Character Reference Decimal</hi> du signe concerné.<egXML
-                                xmlns="http://www.tei-c.org/ns/Examples"
+                            par le <hi>Numerical Character Reference Decimal</hi> du signe
+                                concerné.<egXML xmlns="http://www.tei-c.org/ns/Examples"
                                         ><choice><abbr>&#42863;</abbr><expan>com</expan></choice>
                             </egXML> Afin d’alléger le code, mais aussi de procéder de manière
                             homogène pour le développement des abréviations, les balises
@@ -410,15 +412,15 @@
                     </div3>
                     <div3>
                         <head>Ponctuation originale et ponctuation normalisée</head>
-                        <p>Le texte du manuscrit C1 présente des marques de ponctuation,
-                            points simples ou doubles, toutefois l’usage qu’en fait le scribe ne
-                            correspond en rien à l’usage moderne. Ainsi, il peut utiliser ces signes
-                            pour séparer des propositions relatives de leurs antécédents ou pour
-                            séparer des syntagmes au sein même d’une proposition, sans que sa
-                            pratique n’ait rien de systématique dans notre corpus. La ponctuation a
-                            donc dû être normalisée pour faciliter la lecture du texte. Sur toutes
-                            les marques de ponctuations qui ont dû être modifiées, la balise
-                                <gi>pc</gi> a été ajoutée.</p>
+                        <p>Le texte du manuscrit C1 présente des marques de ponctuation, points
+                            simples ou doubles, toutefois l’usage qu’en fait le scribe ne correspond
+                            en rien à l’usage moderne. Ainsi, il peut utiliser ces signes pour
+                            séparer des propositions relatives de leurs antécédents ou pour séparer
+                            des syntagmes au sein même d’une proposition, sans que sa pratique n’ait
+                            rien de systématique dans notre corpus. La ponctuation a donc dû être
+                            normalisée pour faciliter la lecture du texte. Sur toutes les marques de
+                            ponctuations qui ont dû être modifiées, la balise <gi>pc</gi> a été
+                            ajoutée.</p>
                         <p> Le corpus présente trois cas de figure. Dans le premier cas, la
                             ponctuation originale est supprimée dans l'édition normalisée. L'ajout
                             de l'attribut <att>type</att> de valeur <hi rend="italic"
@@ -460,13 +462,13 @@
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
-                    <p>L’édition présente est un texte constitué à partir d’un texte de base qui
-                        est le manuscrit C1. Cette démarche induit de notre part un grand respect du
-                        modèle, sans pour autant
-                        prétendre à la reconstitution du texte d’un original perdu. Toutefois, pour
-                        la qualité scientifique de ce travail et par souci d’exhaustivité, le texte
-                        est accompagné d’un relevé de l’ensemble des variantes sémantiques de la
-                        tradition connue du recueil des <hi>Seint Confessor</hi>.</p>
+                    <p>L’édition présente est un texte constitué à partir d’un texte de base qui est
+                        le manuscrit C1. Cette démarche induit de notre part un grand respect du
+                        modèle, sans pour autant prétendre à la reconstitution du texte d’un
+                        original perdu. Toutefois, pour la qualité scientifique de ce travail et par
+                        souci d’exhaustivité, le texte est accompagné d’un relevé de l’ensemble des
+                        variantes sémantiques de la tradition connue du recueil des <hi>Seint
+                            Confessor</hi>.</p>
                     <div3>
                         <head>Les corrections</head>
                         <p>Le texte du manuscrit C1 est extrêmement peu fautif. Nous ne sommes
@@ -486,9 +488,9 @@
                             <!-- exemple à modifier quand la collation sera terminée -->
                         </egXML>
                         <p> Quand le texte du manuscrit est difficilement compréhensible en raison
-                            d'un ajout de texte, la plupart du temps lié à une faute par dittograpihe
-                            dans le texte, les lettres en trop sont englobées dans une balise
-                                <gi>corr</gi> avec un attribut <att>type</att> de valeur
+                            d'un ajout de texte, la plupart du temps lié à une faute par
+                            dittograpihe dans le texte, les lettres en trop sont englobées dans une
+                            balise <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>del</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
                                 >qi</corr><lb/>qi vit le beau liu<note>correction d'après le
@@ -896,6 +898,38 @@
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
                             de signaler une leçon différente de celle du texte édité.</desc>
                         <!-- Pensez à faire une restriction, pour qu'on ne puisse que se référer à des identifiants existant -->
+                        <attList>
+                            <attDef ident="wit" mode="change" usage="req">
+                                <constraintSpec ident="witDecl" scheme="isoschematron">
+                                    <constraint>
+                                        <!-- Attention ne prend en compte que le premier témoin déclaré -->
+                                        <s:rule context="tei:rdg[@wit]">
+                                            <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
+                                            <s:assert
+                                                test="//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"
+                                                > the value of @wit is not declared </s:assert>
+                                        </s:rule>
+                                        <!--  empêcher qu'un mêm manuscrit soit cité deux fois
+                                        <s:rule context="tei:rdg[@wit]">
+                                            <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
+                                            <s:asset test="not(preceding-sibling::tei:rdg[@wit=$ref1] | following-sibling::tei:rdg[@wit=$ref1])">the value of @wit is alreadey declared</s:asset>
+                                        </s:rule>
+                                        -->
+                                    </constraint>
+                                </constraintSpec>
+                            </attDef>
+                            <attDef ident="cause" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="om.">
+                                        <gloss>Omission</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les manuscrits où le texte du lemme est
+                                            omis.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
+                        </attList>
                     </elementSpec>
 
                     <elementSpec ident="lem" mode="change">
@@ -1522,7 +1556,7 @@
                     <classSpec ident="att.textCritical" type="atts" mode="change">
                         <attList>
                             <attDef ident="type" mode="delete"/>
-                          
+
                             <attDef ident="varSeq" mode="delete"/>
                             <attDef ident="hand" mode="delete"/>
                         </attList>

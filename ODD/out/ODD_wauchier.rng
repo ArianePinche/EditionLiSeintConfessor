@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2018-03-08T15:44:19Z. .
+Schema generated from ODD source 2018-03-21T18:28:18Z. .
 TEI Edition: Version 2.8.0. Last updated on
 	6th April 2015, revision 13197
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -2975,8 +2975,34 @@ Licensing, etc.]</a:documentation>
             </choice>
          </zeroOrMore>
          <ref name="att.global.attributes"/>
-         <ref name="att.textCritical.attributes"/>
-         <ref name="att.witnessed.attributes"/>
+         <ref name="att.source.attribute.source"/>
+         <optional>
+            <attribute name="cause">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the cause for the variant reading, according to any appropriate typology of possible origins.</a:documentation>
+               <choice>
+                  <value>om.</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Omission) signale les manuscrits où le texte du lemme est omis.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <attribute name="wit">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(witness or witnesses) contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <ref name="data.pointer"/>
+               </oneOrMore>
+            </list>
+         </attribute>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="oddbyexample-rdg-wit-witDecl-constraint-7">
+            <s:rule xmlns="http://www.tei-c.org/ns/1.0"
+                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                    context="tei:rdg[@wit]">
+                                            <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
+                                            <s:assert test="//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"> the value of @wit is not declared </s:assert>
+                                        </s:rule>
+         </pattern>
          <empty/>
       </element>
    </define>
@@ -3010,7 +3036,7 @@ Licensing, etc.]</a:documentation>
             </choice>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-7">
+                  id="oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-8">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -3206,7 +3232,7 @@ Licensing, etc.]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-persName-PersRef-constraint-8">
+                  id="oddbyexample-persName-PersRef-constraint-9">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3263,7 +3289,7 @@ Licensing, etc.]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an absolute or relative place name. [13.2.3. Place Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-placeName-PlaceRef-constraint-9">
+                  id="oddbyexample-placeName-PlaceRef-constraint-10">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5024,7 +5050,7 @@ Licensing, etc.]</a:documentation>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divNumber-constraint-10">
+                  id="oddbyexample-div-divNumber-constraint-11">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5033,7 +5059,7 @@ Licensing, etc.]</a:documentation>
                                 </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divChapter-constraint-11">
+                  id="oddbyexample-div-divChapter-constraint-12">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5043,7 +5069,7 @@ Licensing, etc.]</a:documentation>
                                 </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divSection-constraint-12">
+                  id="oddbyexample-div-divSection-constraint-13">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"

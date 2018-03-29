@@ -4,21 +4,25 @@
     exclude-result-prefixes="xs tei" version="2.0">
 
     <xsl:strip-space elements="*"/>
-    <xsl:output method="html"/>
-    <xsl:strip-space elements="tei:app"/>     
-    <xsl:variable name="adresse">            
-        <xsl:value-of
-            select="tokenize(//tei:body/@n, ':')[last()]"/>
-        <!-- récupération dans l'uri uniquement du nom du document -->
-    </xsl:variable>
-
-    <xsl:template match="/">
+    <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>   
+    
+<xsl:template match="tei:TEI">  
+        <xsl:variable name="witfile">
+            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml',''), '/')[last()]"/>
+            <!-- récupération du nom du fichier courant -->
+        </xsl:variable>
+        <xsl:result-document href="../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}" method="html">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-        
+            <xsl:variable name="adresse">            
+                <xsl:value-of
+                    select="tokenize(tei:body/@n, ':')[last()]"/>
+                <!-- récupération dans l'uri uniquement du nom du document -->
+            </xsl:variable>
+            
   <html>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-                <title>Recueil des oeuvres hagiographiques de Wauchier de Denain</title>
+                <title><xsl:value-of select="tei:title"/></title>
                 <link rel="stylesheet" href="../css/bootstrap.min.css"/>
                 <link rel="stylesheet" type="text/css" href="../css/theme.css"/>
                 <script src="../js/jquery.min.js"/>
@@ -40,7 +44,7 @@
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
                                     <xsl:value-of
-                                        select="concat($adresse, '-trad', '.html')"/>
+                                        select="concat($witfile, '-trad', '.html')"/>
                                 </xsl:attribute>
                                 Texte avec traduction
                             </xsl:element>
@@ -52,31 +56,29 @@
                     </ul>
 
                     <div class="tab-content">
-                        <xsl:apply-templates select="//tei:teiHeader"/>
-                        <xsl:apply-templates select="//tei:body"/>
+                        <xsl:apply-templates select=".//tei:teiHeader"/>
+                        <xsl:apply-templates select=".//tei:body"/>
                     </div>
                 </div>
                 <hr/>      
             </body>
         </html>
            
-
+        </xsl:result-document>
+        
     </xsl:template>
 
     <!-- Header start -->
     <xsl:template match="tei:fileDesc">
         <h1>
-            <xsl:apply-templates select="//tei:titleStmt"/>
+            <xsl:apply-templates select=".//tei:titleStmt"/>
         </h1>
-        <xsl:apply-templates select="//tei:sourceDesc"/>
+        <xsl:apply-templates select=".//tei:sourceDesc"/>
     </xsl:template>
 
-    <xsl:template match="//tei:titleStmt">
+    <xsl:template match="tei:titleStmt">
         <xsl:copy-of select="tei:title"/>
     </xsl:template>
-    <xsl:variable name="title">
-        <xsl:copy-of select="//tei:titleStmt/tei:title"/>
-    </xsl:variable>
 
     <xsl:template match="tei:teiHeader">
         <article id="notice" class="tab-pane container">
@@ -126,7 +128,7 @@
         <br/>
     </xsl:template>
 
-    <xsl:template match="/tei:header/tei:title">
+    <xsl:template match="tei:header/tei:title">
         <br/>
         <b>
             <xsl:value-of select="."/>
@@ -356,7 +358,7 @@
 
                 <div class="col-md-7" id="contenu">
                     <xsl:element name="h1">
-                        <xsl:value-of select="$title"/>
+                        <xsl:value-of select="./ancestor::tei:TEI//tei:titleStmt/tei:title"/>
                     </xsl:element>
                     <xsl:apply-templates/>
                 </div>
@@ -369,7 +371,7 @@
                 <hr class="information-hr" title="notes de bas de page"/>
                 <div class="col-md-7 col-md-push-2">
                     <ul class="list-unstyled">
-                        <xsl:apply-templates select="//tei:text//tei:witDetail"
+                        <xsl:apply-templates select=".//tei:text//tei:witDetail"
                             mode="notesbasdepage"/>
                     </ul>
                 </div>
@@ -550,7 +552,7 @@
                     <xsl:for-each
                         select="parent::tei:app/tei:rdg">
                         <xsl:element name="li">                        
-                                <xsl:value-of select="."/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
+                                <xsl:value-of select=".|@cause"/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:element>
                     </xsl:for-each>
                         </xsl:element>
