@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="xs tei" version="2.0">
+    exclude-result-prefixes="xs tei" version="3.0">
 
     <xsl:strip-space elements="*"/>
     <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>   
@@ -11,7 +11,7 @@
             <xsl:value-of select="tokenize(replace(base-uri(.), '.xml',''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
-        <xsl:result-document href="../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}" method="html">
+    <xsl:result-document href="../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}" method="html">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
             <xsl:variable name="adresse">            
                 <xsl:value-of
@@ -455,10 +455,14 @@
                     <xsl:attribute name="href">
                         <xsl:value-of select="preceding::tei:pb[1]/@facs"/>
                     </xsl:attribute>
+                    <xsl:attribute name="target">
+                        <xsl:text>_blank</xsl:text>
+                    </xsl:attribute>
                     <xsl:text>&#160;[ fol. </xsl:text>
                     <xsl:value-of select="preceding::tei:pb[1]/@n"/>
                     <xsl:value-of select="@n"/>
                     <xsl:text>]&#160;</xsl:text>
+                   
                 </xsl:element>
             </xsl:element>
         </span>
@@ -467,6 +471,9 @@
     <xsl:template match="tei:pb">
         <hr class="information-hr orig" title="Folio {@n}" a="{@facs}"/>
         <a href="{@facs}" class="orig col-md-1 col-md-offset-10">
+            <xsl:attribute name="target">
+                <xsl:text>_blank</xsl:text>
+            </xsl:attribute>
             <xsl:text>[fol.</xsl:text>
             <xsl:value-of select="@n"/>
             <xsl:if test="following::tei:cb[1]/@n='a'">
@@ -549,12 +556,14 @@
                             <xsl:element name="li">
                                 <xsl:apply-templates/><xsl:text>&#160;</xsl:text><xsl:if test="./@wit"><xsl:value-of select="replace(./@wit, '#', '')"/></xsl:if><xsl:text> ]</xsl:text>
                             </xsl:element>
+                       <!-- Ne fonctionne pas
                     <xsl:for-each
                         select="parent::tei:app/tei:rdg">
                         <xsl:element name="li">                        
-                                <xsl:value-of select=".|@cause"/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
+                                <xsl:value-of select="tei:rdg"/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:element>
                     </xsl:for-each>
+                     -->
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
