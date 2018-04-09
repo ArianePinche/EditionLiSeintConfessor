@@ -586,60 +586,59 @@
 
 
     <xsl:template match="tei:app">
-        <xsl:element name="a">
-            <xsl:attribute name="class">
-                <xsl:text>linkapp </xsl:text>
-                <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>                
-            </xsl:attribute>
-            <xsl:attribute name="data-toggle">
-                <xsl:text>modal</xsl:text>
-            </xsl:attribute>
-            <xsl:attribute name="data-target">#app</xsl:attribute>
-            <xsl:apply-templates/>
-            <xsl:element name="div">
-                <xsl:attribute name="class">app</xsl:attribute>
-                <xsl:element name="ul">
-                    <xsl:attribute name="class">list-unstyled</xsl:attribute>
-                    <xsl:element name="li">
-                        <xsl:apply-templates
-                            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr"/>
-                        <xsl:text>&#160;</xsl:text>
-                        <xsl:if test="./@wit">
-                            <xsl:value-of select="replace(./@wit, '#', '')"/>
-                        </xsl:if>
-                        <xsl:text> ]</xsl:text>
-                    </xsl:element>
-                    <xsl:for-each select="child::tei:rdg">
-                        <xsl:element name="li">
-                            <xsl:apply-templates/>
-                            <xsl:if test="./@cause">
-                                <xsl:element name="i">
-                                <xsl:value-of select="./@cause"/>
-                                </xsl:element>
-                            </xsl:if>
-                            <xsl:text>&#160;</xsl:text>
-                            <xsl:for-each select="tokenize(./@wit, '\s+')">
-                                <xsl:variable name="witTok">
-                                    <xsl:value-of select="replace(., '#', '')"/>
-                                </xsl:variable>
-                                <xsl:variable name="witLet">
-                                    <xsl:value-of select="replace($witTok, '\d+', '')"/>
-                                </xsl:variable>
-                                <xsl:variable name="witNum">
-                                    <xsl:value-of select="replace($witTok, '\D+', '')"/>
-                                </xsl:variable>
-                                <xsl:value-of select="$witLet"/>
-                                <xsl:element name="sup">
-                                <xsl:value-of select="$witNum"/>
-                                </xsl:element>
-                            </xsl:for-each>
+        <!-- chercher une solution pour les apparats imbriqués -->
+                <xsl:element name="span">
+                    <xsl:attribute name="class">
+                        <xsl:text>linkapp </xsl:text>
+                        <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>                
+                    </xsl:attribute>
+                    <xsl:attribute name="data-toggle">
+                        <xsl:text>modal</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="data-target">#app</xsl:attribute>
+                    <xsl:apply-templates select="./tei:lem"/>
+                    <xsl:element name="div">
+                        <xsl:attribute name="class">app</xsl:attribute>
+                        <xsl:element name="ul">
+                            <xsl:attribute name="class">list-unstyled</xsl:attribute>
+                            <xsl:element name="li">
+                                <xsl:apply-templates
+                                    select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr "/>
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:if test="./@wit">
+                                    <xsl:value-of select="replace(./@wit, '#', '')"/>
+                                </xsl:if>
+                                <xsl:text> ]</xsl:text>
                             </xsl:element>
-                    </xsl:for-each>
+                            <xsl:for-each select="child::tei:rdg">
+                                <xsl:element name="li">
+                                    <xsl:apply-templates/>
+                                    <xsl:if test="./@cause">
+                                        <xsl:element name="i">
+                                            <xsl:value-of select="./@cause"/>
+                                        </xsl:element>
+                                    </xsl:if>
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:for-each select="tokenize(./@wit, '\s+')">
+                                        <xsl:variable name="witTok">
+                                            <xsl:value-of select="replace(., '#', '')"/>
+                                        </xsl:variable>
+                                        <xsl:variable name="witLet">
+                                            <xsl:value-of select="replace($witTok, '\d+', '')"/>
+                                        </xsl:variable>
+                                        <xsl:variable name="witNum">
+                                            <xsl:value-of select="replace($witTok, '\D+', '')"/>
+                                        </xsl:variable>
+                                        <xsl:value-of select="$witLet"/>
+                                        <xsl:element name="sup">
+                                            <xsl:value-of select="$witNum"/>
+                                        </xsl:element>
+                                    </xsl:for-each>
+                                </xsl:element>
+                            </xsl:for-each></xsl:element>
+                    </xsl:element>
                 </xsl:element>
-            </xsl:element>
-        </xsl:element>
     </xsl:template>
-
 
     <!-- éléments à afficher pour la visualisation normalisée -->
     <xsl:template match="tei:reg">
