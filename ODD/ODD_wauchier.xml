@@ -503,7 +503,10 @@
                             elle apparaîtra en premier dans l'apparat avec pour témoin C1, sigle du
                             manuscrit 412 de la Bibliothèque Nationale de France. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
-                                <!-- exemple à ajouter quand la collation sera terminée -->
+                                <app>
+                                    <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
+                                    <rdg wit="#C1">escriptures</rdg>
+                                </app>
                             </egXML>
                         </p>
                     </div3>
@@ -516,7 +519,8 @@
                             sont parcellaires. La plupart d’entre eux ne comportent que six textes,
                             et le plus souvent les <hi>Dialogues sur les vertus de saint Martin</hi>
                             en sont absents, texte non négligeable qui occupe treize des
-                            soixante-sept folios du corpus dans le manuscrit C1. C'est pourquoi, la
+                            soixante-sept folios du corpus dans le manuscrit C1.</p>
+                        <p>la
                             méthode de la <ref
                                 target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/TC.html#TCAPPS"
                                 >parallel segmentation</ref> a été choisie pour encoder l'apparat,
@@ -524,9 +528,12 @@
                             dans le code, car l’apparat est signalé dans la linéarité du texte. Elle
                             permet également d’aisément comparer les leçons entre elles, comme on
                             peut le voir dans l’exemple suivant.</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <!-- exemple à ajouter quand la collation sera terminée -->
-                        </egXML>
+                        <p>L'apparat suit les prescriptions de constitution d'un apparat critique négatif. Toutefois, il est
+                            toujours possible restituer les données d'un apparat critique positif en calculant automatiquement la liste des manuscrits
+                            présentant le même texte que le lemme, en comparant la liste des
+                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
+                            manuscrits cités dans les <gi>rdg</gi></p>
+     
                         <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
                                 <specDesc key="app"/>
                                 <specDesc key="lem"/>
@@ -534,32 +541,34 @@
                             </specList>. </p>
                         <p>La balise <gi>lem</gi> permet de délimiter le texte soumis à des
                             variations et contient toujours le texte édité. Chaque apparat ne peut
-                            contenir qu'un élément <hi>lem</hi>. Ce dernier ne possède pas
-                            d'attribut <att>wit</att>, car suivant les principes d'un apparat
-                            critique négatif, tous les manuscrits qui ne sont pas signalés dans les
-                            leçons de l'apparat suivent le texte du lemme. D'ailleurs, il est
-                            toujours possible de calculer automatiquement la liste des manuscrits
-                            présentant le même texte que le lemme, en comparant la liste des
-                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
-                            manuscrits cités dans les <gi>rdg</gi>. Pour des soucis techniques de
-                            visualisation, afin de générer automatiquement l'apparat de l'édition de
-                            référence, l'élément <gi>lem</gi> peut avoir un attribut <att>type</att>
-                            de valeur <hi>viz</hi> pour indiquer le fait que le lemme doit
-                            apparaître dans les notes quand ce dernier porte sur plus d'un mot.</p>
+                            contenir qu'un élément <hi>lem</hi>. Ce dernier possède un attribut <att>wit</att> qui sera utilisé si jamais le lemme est issu d'un autre témoin que le manuscrit C1.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                            <!-- exemple à ajouter quand la collation sera terminée -->
+                            <app>
+                                <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
+                                <rdg wit="#C1">escriptures</rdg>
+                            </app>
                         </egXML>
                         <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur
                             attribut <att>wit</att> permet de déclarer le ou les manuscrits
                             proposant le même texte que celui de la variante concernée. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
-                                <!-- exemple à ajouter quand la collation sera terminée -->
+                                <app>
+                                    <lem wit="#C1">
+                                        De seint Martin
+                                    </lem>
+                                    <rdg wit="#C2">Ci commence la vie de monseigneur seint Martin</rdg>
+                                    <rdg wit="#C3">Ci comence la vie seint Martin</rdg>
+                                    <rdg wit="#G1" cause="om."/>
+                                </app>
                             </egXML>
                         </p>
                         <p> Les leçons rejetées, très peu nombreuses, sont toujours signalées dans
                             le texte avec des corrections.<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
-                                <!-- exemple à ajouter quand la collation sera terminée -->
+                                <app>
+                                    <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
+                                    <rdg wit="#C1">escriptures</rdg>
+                                </app>
                             </egXML>
                         </p>
                     </div3>
