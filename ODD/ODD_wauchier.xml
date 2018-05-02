@@ -23,22 +23,6 @@
     <text>
         <body>
             <div1>
-                <head>Principes de l'édition numérique</head>
-                <p>Cette d’édition a été effectuée dans le cadre d’une thèse de doctorat financée
-                    par l’allocation ARC 5 de la région Rhône-Alpes. Le recueil des <hi>Seint
-                        Confessor</hi> de Wauchier de Denain, texte du XIIIe siècle réunit neuf
-                    textes dont huit vies de saint. Cette œuvre étonnante par sa composition et
-                    atypique en raison de la notoriété de son auteur est à ce jour peu accessible.
-                    Seul deux de ces vies ont été éditées. Pourtant, l’accès à ses sources pourrait
-                    faciliter l’étude du travail du second continuateur du <hi>Perceval</hi> de
-                    Chrétien de Troyes dont l’œuvre est des plus diverses. En effet ce polygraphe du
-                    XIIIe siècle s’est aussi bien essayé au genre romanesque, historique
-                    qu’hagiographique. Afin de permettre une plus large diffusion ces textes encore
-                    très peu connus, voire éclipsés par la <hi>Legenda aurea</hi> de Jacques de
-                    Voragine, il nous a semblé intéressant d’offrir un accès aux écrits
-                    hagiographiques de Wauchier de Denain grâce à leur mise en ligne.</p>
-            </div1>
-            <div1>
                 <head>Guide d'encodage de l'édition des <hi>Seint Confessor</hi> de Wauchier de
                     Denain d'après le manuscrit 412 de la BNF</head>
                 <p>Ce petit guide a pour but d'expliquer de quelle manière a été encodée en XML-TEI
@@ -289,12 +273,13 @@
                         </egXML>
 
                         <p>Enfin, l’intégralité des parties dialoguées est englobée dans une balise
-                                <gi>said</gi> avec un attribut <att>who</att> quand l’interlocuteur est un
-                            personnage nommé dans le récit. La valeur de l’attribut est alors un
-                            pointeur qui renvoie vers la notice du personnage dans le <gi>teiHeader</gi>.</p>
-                        <egXML xmlns="http://www.tei-c.org/ns/Examples"> si dist a l'ymage :
-                                <said who="#martin">Certes je t'arderai a flambe, se tu ne me rens mes
-                                choses.</said>
+                                <gi>said</gi> avec un attribut <att>who</att> quand l’interlocuteur
+                            est un personnage nommé dans le récit. La valeur de l’attribut est alors
+                            un pointeur qui renvoie vers la notice du personnage dans le
+                                <gi>teiHeader</gi>.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">Seinz Beneoiz lor dist :
+                                <said who="#benoit">Proions nostre Signor qe vos puissiez ve<lb/>oir
+                                celui qi cest moine en meine.</said>
                         </egXML>
                         <p>Les élements du texte dans une langue étrangère, latin ou grec dans notre
                             cas, sont signalés à l'aide de l'élément <gi>seg</gi> et de son attribut
@@ -513,28 +498,34 @@
                         </p>
                     </div3>
                     <div3>
-                        <head>Collations des variantes</head>
-                        <p>L’apparat critique a été conçu nativement en XML. La tradition de notre
-                            texte ne possède que trois manuscrits comportant les neuf textes du
-                            recueil qui appartiennent tous à la même famille. Les vingt-trois autres
-                            manuscrits ont été classés par J.J. Thompson huit grandes familles et
-                            sont parcellaires. La plupart d’entre eux ne comportent que six textes,
-                            et le plus souvent les <hi>Dialogues sur les vertus de saint Martin</hi>
-                            en sont absents, texte non négligeable qui occupe treize des
-                            soixante-sept folios du corpus dans le manuscrit C1.</p>
-                        <p>la méthode de la <ref
+                        <head>Collations des variantes et mise en place de l'apparat critique</head>
+                        <p>L’apparat critique a été conçu nativement en XML. La méthode de la <ref
                                 target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/TC.html#TCAPPS"
                                 >parallel segmentation</ref> a été choisie pour encoder l'apparat,
                             méthode qui présente l’avantage d’être simple et lisible directement
                             dans le code, car l’apparat est signalé dans la linéarité du texte. Elle
                             permet également d’aisément comparer les leçons entre elles, comme on
                             peut le voir dans l’exemple suivant.</p>
-                        <p>L'apparat suit les prescriptions de constitution d'un apparat critique
-                            négatif. Toutefois, il est toujours possible restituer les données d'un
-                            apparat critique positif en calculant automatiquement la liste des
-                            manuscrits présentant le même texte que le lemme, en comparant la liste
-                            des manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
-                            manuscrits cités dans les <gi>rdg</gi></p>
+                        <p>Cette édition fait apparaître dans l’apparat une hiérarchie entre deux
+                            types de variantes textuelles de la tradition : le lemme et les leçons.
+                            Le lemme correspond au texte édité, la plupart du temps équivalent au
+                            texte de C1, lui donnant dans l’édition la primauté sur les autres
+                            leçons. Ainsi cette édition ne propose pas de parcourir le texte de tous
+                            les témoins, mais donne à lire les différentes leçons présentes dans la
+                            tradition, à titre indicatif comme d’autres réalisations textuelles
+                            existantes du légendier de Wauchier de Denain. Les particularités de
+                            mise en page ou graphiques des manuscrits originaux, comme la présence
+                            de lettrines ou d’abréviations, n’ont donc pas été signalées
+                            contrairement au texte du lemme.</p>
+                        <p>L'apparat de l'édition suit les prescriptions d'un apparat négatif.
+                            L'apparat ne présente que les leçons avec un texte
+                            sémantiquement différent du lemme. Chaque leçon est rattachée au
+                            manuscrit dont elle est issue par un identifiant qui renvoie dans le
+                            document XML à sa notice. Cette méthode permet toutefois de rétablir, à tout
+                            moment, les indications nécessaires à l’établissement d’un apparat
+                            positif par comparaison entre les sigles de manuscrits cités pour les
+                            leçons divergentes et la liste des manuscrits collationnés présente dans
+                            le teiHeader du document XML.</p>
 
                         <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
                                 <specDesc key="app"/>
@@ -543,9 +534,7 @@
                             </specList>. </p>
                         <p>La balise <gi>lem</gi> permet de délimiter le texte soumis à des
                             variations et contient toujours le texte édité. Chaque apparat ne peut
-                            contenir qu'un élément <hi>lem</hi>. Ce dernier possède un attribut
-                                <att>wit</att> qui sera utilisé si jamais le lemme est issu d'un
-                            autre témoin que le manuscrit C1.</p>
+                            contenir qu'un élément <hi>lem</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <app>
                                 <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
@@ -554,7 +543,10 @@
                         </egXML>
                         <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur
                             attribut <att>wit</att> permet de déclarer le ou les manuscrits
-                            proposant le même texte que celui de la variante concernée. <egXML
+                            proposant le même texte que celui de la variante concernée.Quand un
+                            manuscrit présente une omission à l’emplacement où devrait se trouve le
+                            lemme, le manque est signalé par un <att>cause</att> de valeur
+                                <hi>om.</hi> pour omission.<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
                                     <lem wit="#C1"> De seint Martin </lem>
@@ -566,10 +558,12 @@
                             </egXML>
                         </p>
                         <p> Les leçons rejetées, très peu nombreuses, sont toujours signalées dans
-                            le texte avec des corrections.<egXML
+                            le texte comme des corrections ou des suppressions. La graphie fautive
+                            présente dans C1 est alors présenté dans l'apparat comme une leçon qui
+                            apparaît toujours en tête des variantes<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
-                                    <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
+                                    <lem><corr type="add">es</corr> escriptures</lem>
                                     <rdg wit="#C1">escriptures</rdg>
                                 </app>
                             </egXML>
