@@ -45,6 +45,7 @@
 \Xbeforenotes[A]{10pt}
 \Xafterrule[A]{5pt}
 \Xnotefontsize[A]{\scriptsize}
+\Xnotenumfont[A]{\bfseries}
 \Xarrangement[A]{paragraph}
 \Xparafootsep{$\parallel$~}
 \lineation{page}

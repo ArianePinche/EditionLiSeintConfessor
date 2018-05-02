@@ -288,10 +288,12 @@
                             </div>
                         </egXML>
 
-                        <p>L’intégralité des dialogues est englobée dans une balise
-                            <gi>said</gi>.</p>
+                        <p>Enfin, l’intégralité des parties dialoguées est englobée dans une balise
+                                <gi>said</gi> avec un attribut <att>who</att> quand l’interlocuteur est un
+                            personnage nommé dans le récit. La valeur de l’attribut est alors un
+                            pointeur qui renvoie vers la notice du personnage dans le <gi>teiHeader</gi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"> si dist a l'ymage :
-                                <said>Certes je t'arderai a flambe, se tu ne me rens mes
+                                <said who="#martin">Certes je t'arderai a flambe, se tu ne me rens mes
                                 choses.</said>
                         </egXML>
                         <p>Les élements du texte dans une langue étrangère, latin ou grec dans notre
@@ -520,20 +522,20 @@
                             et le plus souvent les <hi>Dialogues sur les vertus de saint Martin</hi>
                             en sont absents, texte non négligeable qui occupe treize des
                             soixante-sept folios du corpus dans le manuscrit C1.</p>
-                        <p>la
-                            méthode de la <ref
+                        <p>la méthode de la <ref
                                 target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/TC.html#TCAPPS"
                                 >parallel segmentation</ref> a été choisie pour encoder l'apparat,
                             méthode qui présente l’avantage d’être simple et lisible directement
                             dans le code, car l’apparat est signalé dans la linéarité du texte. Elle
                             permet également d’aisément comparer les leçons entre elles, comme on
                             peut le voir dans l’exemple suivant.</p>
-                        <p>L'apparat suit les prescriptions de constitution d'un apparat critique négatif. Toutefois, il est
-                            toujours possible restituer les données d'un apparat critique positif en calculant automatiquement la liste des manuscrits
-                            présentant le même texte que le lemme, en comparant la liste des
-                            manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
+                        <p>L'apparat suit les prescriptions de constitution d'un apparat critique
+                            négatif. Toutefois, il est toujours possible restituer les données d'un
+                            apparat critique positif en calculant automatiquement la liste des
+                            manuscrits présentant le même texte que le lemme, en comparant la liste
+                            des manuscrits déclarés dans le <gi>sourceDesc</gi> et la liste des
                             manuscrits cités dans les <gi>rdg</gi></p>
-     
+
                         <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
                                 <specDesc key="app"/>
                                 <specDesc key="lem"/>
@@ -541,7 +543,9 @@
                             </specList>. </p>
                         <p>La balise <gi>lem</gi> permet de délimiter le texte soumis à des
                             variations et contient toujours le texte édité. Chaque apparat ne peut
-                            contenir qu'un élément <hi>lem</hi>. Ce dernier possède un attribut <att>wit</att> qui sera utilisé si jamais le lemme est issu d'un autre témoin que le manuscrit C1.</p>
+                            contenir qu'un élément <hi>lem</hi>. Ce dernier possède un attribut
+                                <att>wit</att> qui sera utilisé si jamais le lemme est issu d'un
+                            autre témoin que le manuscrit C1.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                             <app>
                                 <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
@@ -553,10 +557,9 @@
                             proposant le même texte que celui de la variante concernée. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
-                                    <lem wit="#C1">
-                                        De seint Martin
-                                    </lem>
-                                    <rdg wit="#C2">Ci commence la vie de monseigneur seint Martin</rdg>
+                                    <lem wit="#C1"> De seint Martin </lem>
+                                    <rdg wit="#C2">Ci commence la vie de monseigneur seint
+                                        Martin</rdg>
                                     <rdg wit="#C3">Ci comence la vie seint Martin</rdg>
                                     <rdg wit="#G1" cause="om."/>
                                 </app>
