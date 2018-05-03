@@ -26,8 +26,8 @@
                 <head>Guide d'encodage de l'édition des <hi>Seint Confessor</hi> de Wauchier de
                     Denain d'après le manuscrit 412 de la BNF</head>
                 <p>Ce petit guide a pour but d'expliquer de quelle manière a été encodée en XML-TEI
-                    l'édition et son apparat. Des principes stricts d’encodage ont été déterminés
-                    pour produire des données pérennes et interopérables et faciliter leur
+                    l'édition. Des principes stricts d’encodage ont été déterminés
+                    pour produire des données pérennes, interopérables et pour faciliter leur
                     transformation. L’intégralité de l’encodage proposé est donc <hi>TEI
                         conformant</hi>. L'édition des <hi rend="italic">Seint Confessor</hi> réunit
                     les textes suivants :<list>
@@ -48,8 +48,9 @@
                 <div2>
                     <head>Structurer le fichier XML</head>
                     <p>La structuration des textes contenus dans les fichiers XML suit les
-                        recommandations du service CTS, Canonical Text System (développé pour le
-                            <ref target="http://www.homermultitext.org/hmt-doc/cite/texts/cts.html."
+                        recommandations du service CTS, <hi>Canonical Text System</hi> (développé
+                        pour le <ref
+                            target="http://www.homermultitext.org/hmt-doc/cite/texts/cts.html."
                             >Homer Multitext Project</ref> grâce à Christopher Blackwell et Neel
                         Smith). Ce système permet de mettre en place un ensemble de services basés
                         sur l’identification des textes ou de leurs fragments grâce à une référence
@@ -61,7 +62,7 @@
                         internationales.</p>
                     <p>Dans le recueil de Wauchier de Denain, chacune des Vies est encodée dans un
                         fichier XML différent évitant ainsi de faire des fichiers trop longs et de
-                        bien séparer chacun des travaux tout en respectant la norme CTS. Ainsi les
+                        bien séparer chacun des travaux tout en respectant la norme CTS. Les
                         fichiers de l’édition sont nommés et identifiés de la manière suivante :
                         « urn:cts:froLit:jns915.jns1856.ciham-fro1 ». La première partie de l’URN :
                         « urn:cts » indique à quel système de référence appartient l’URN ; ici, la
@@ -72,15 +73,15 @@
                             Jonas</ref> développé par l’IRHT qui rassemble des répertoires de textes
                         et manuscrits médiévaux en langue d’oc et d’oïl, « 915 » est l’identifiant
                         de l’auteur Wauchier de Denain sur le portail, tandis que 1856 désigne
-                        l’œuvre, dans ce cas, la Vie de saint Martin de Tours. Enfin la dernière
-                        partie de l’URN désigne l’instance éditrice : « ciham-fro1 », dans ce cas
-                        nous avons mis le nom de notre laboratoire de rattachement : <ref
+                        l’œuvre, dans ce cas, la <hi>Vie de saint Martin de Tours</hi>. Enfin la
+                        dernière partie de l’URN désigne l’instance éditrice : « ciham-fro1 », dans
+                        ce cas nous avons mis le nom de notre laboratoire de rattachement : <ref
                             target=" http://ciham.ish-lyon.cnrs.fr.">CIHAM</ref>, « fro1 » faisant
                         référence à un répertoire de textes en ancien français n°1, dans le cas où
                         le laboratoire du CIHAM adopterait cette norme pour d’autres projets.</p>
                     <div3>
                         <head>Structurer le <hi rend="italic">teiheader</hi></head>
-                        <p>Le <hi>teiHeader</hi> comporte trois grandes sections : <specList>
+                        <p>Le <gi>teiHeader</gi> comporte trois grandes sections : <specList>
                                 <specDesc key="fileDesc"/>
                                 <specDesc key="encodingDesc"/>
                                 <specDesc key="profileDesc"/>
@@ -170,8 +171,8 @@
                                 personnage et de lieux apparaissant dans le fichier. Chacune des
                                 notices possède un identifiant vers lequel vient pointer chacune des
                                 apparitions du lieu ou du personnage dans la Vie. Cette méthode
-                                permet de générer automatique à partir des fichiers XML les index
-                                des noms de lieux et des noms propres.</p>
+                                permet de générer automatiquement à partir des fichiers XML les
+                                index des noms de lieux et des noms propres.</p>
                             <p>Les notices de nom de personnage contiennent un renvoi vers la notice
                                 BnF du personnage concerné quand elle existe, le nom du personnage
                                 et une courte notice explicative. Si le personnage est un personnage
@@ -227,9 +228,9 @@
                                 ><val>edition</val></hi> pour signaler que le texte encodé est le
                             texte de l'édition et afin de le différencier, le cas échéant, du
                             fichier contenant la traduction. <gi>text</gi> englobe l'élément
-                                <gi>body</gi> qui possèdent deux attributs. Le premier,
+                                <gi>body</gi> qui possède deux attributs. Le premier,
                             <att>n</att>, permet de spécifier l'URN CTS, tandis que le second,
-                                <att>xml:lang</att>, indique la langue majoritaire du corpus, ici
+                                <att>xml:lang</att>, indique la langue majoritaire du corpus, ici,
                             l'ancien français signifié par la valeur <hi rend="italic"
                                     ><val>fro</val></hi>. Le <gi>body</gi> présente des <gi>div</gi>
                             de deux niveaux. La <gi>div</gi> parent possède un attribut
@@ -296,8 +297,8 @@
                     <div3>
                         <head>Encodage de la mise en page du manuscrit</head>
                         <p>Afin de pouvoir produire à terme une vue facsimilaire de l'édition, des
-                            informations sur la disposition du texte dans C1 en utilisant les
-                            balises suivantes : <specList>
+                            informations sur la disposition du texte dans C1 ont été encodées en
+                            utilisant les balises suivantes : <specList>
                                 <specDesc key="pb"/>
                                 <specDesc key="cb"/>
                                 <specDesc key="lb"/>
@@ -331,18 +332,18 @@
                                 <item>désigne les majuscules bleues qui viennent parfois ouvrir une
                                     série de vers dans le corpus.</item>
                             </list>On trouve également dans le corpus des majuscules à l'encre
-                            rouge, mais elles semblent décoratives et ne sont pas des indications de
-                            structuration du texte, c'est pourquoi nous ne les avons pas signalées
-                            dans l'encodage.</p>
+                            rouge, mais elles semblent décoratives et ne donnent pas d'indications
+                            de structuration du texte, c'est pourquoi nous ne les avons pas
+                            signalées dans l'encodage.</p>
                         <p>Le cas des titres rubriqués est traité de manière un peu différente pour
                             des problèmes de transformation et afin de structurer plus aisément
-                            l'édition normalisée. Nous indiquons bien dans le texte à l'aide de la
+                            l'édition normalisée. Nous indiquons dans le texte, à l'aide de la
                             balise <hi>hi</hi> et de la valeur <hi rend="italic">rubricated</hi> de
                             l'attribut <att>rend</att>, le fait que le titre est en rouge, mais nous
                             ajoutons également la valeur d'attritbut <hi rend="italic">orig</hi>
                             pour indiquer que c'est une graphie du manuscrit afin que le texte
-                            rubriqué n'apparaisse dans l'édition normalisée. Toutefois, la rubrique
-                            du manuscrit est copiée comme titre du chapitre dans la balise
+                            rubriqué n'apparaisse pas dans l'édition normalisée. Toutefois, la
+                            rubrique du manuscrit est copiée comme titre du chapitre dans la balise
                                 <gi>head</gi> qui précède la <gi>div</gi> concernée. <egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <head>Miracles de seint Martin</head>
@@ -449,13 +450,19 @@
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
-                    <p>L’édition présente est un texte constitué à partir d’un texte de base qui est
-                        le manuscrit C1. Cette démarche induit de notre part un grand respect du
-                        modèle, sans pour autant prétendre à la reconstitution du texte d’un
-                        original perdu. Toutefois, pour la qualité scientifique de ce travail et par
-                        souci d’exhaustivité, le texte est accompagné d’un relevé de l’ensemble des
-                        variantes sémantiques de la tradition connue du recueil des <hi>Seint
-                            Confessor</hi>.</p>
+                    <p>Cette édition est un texte constitué à partir d’un texte de base qui est le
+                        manuscrit C1. Cette démarche induit de notre part un grand respect du
+                        modèle, sans prétendre à la reconstitution du texte d’un original perdu.
+                        Cette édition propose un apparat critique afin de montrer les lieux de
+                        variance entre les différents témoins de la tradition et rendre compte de la
+                        modularité du texte au Moyen Âge. L’intégralité du corpus est accompagnée du
+                        relevé des variantes qui apparaissent dans les manuscrits de la famille C.
+                        En raison des grandes différences qui peuvent apparaître entre les leçons
+                        des différentes familles de manuscrits, mais aussi par manque de temps,
+                        seule l’édition de la Vie de saint Martin présente une vision complète de la
+                        tradition dont nous avons collationné les variantes de la famille C, ainsi
+                        que les variantes d’un représentant de chacune des sept autres familles de
+                        manuscrits qui comportent une version de la Vie.</p>
                     <div3>
                         <head>Les corrections</head>
                         <p>Le texte du manuscrit C1 est extrêmement peu fautif. Nous ne sommes
@@ -470,25 +477,20 @@
                                 <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>add</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">a cel coup en cha<corr
-                                type="add">ça</corr><note>correction d'après le manuscrit 411</note>
-                            il le deable
-                            <!-- exemple à modifier quand la collation sera terminée -->
-                        </egXML>
+                                type="add">ça</corr>
+                            il le deable 
+                       </egXML>
                         <p> Quand le texte du manuscrit est difficilement compréhensible en raison
                             d'un ajout de texte, la plupart du temps lié à une faute par
                             dittograpihe dans le texte, les lettres en trop sont englobées dans une
                             balise <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>del</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
-                                >qi</corr><lb/>qi vit le beau liu<note>correction d'après le
-                                manuscrit 411</note>
-                            <!-- exemple à modifier quand la collation sera terminée -->
+                                >qi</corr><lb/>qi vit le beau liu
                         </egXML>
                         <p>L'intégralité des corrections opérées est également signalée dans
                             l'apparat critique pour renseigner la graphie fautive présente dans le
-                            manuscrit de base. Chaque fois que le texte présente une leçon fautive,
-                            elle apparaîtra en premier dans l'apparat avec pour témoin C1, sigle du
-                            manuscrit 412 de la Bibliothèque Nationale de France. <egXML
+                            manuscrit de base.<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
                                     <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
@@ -518,14 +520,14 @@
                             de lettrines ou d’abréviations, n’ont donc pas été signalées
                             contrairement au texte du lemme.</p>
                         <p>L'apparat de l'édition suit les prescriptions d'un apparat négatif.
-                            L'apparat ne présente que les leçons avec un texte
-                            sémantiquement différent du lemme. Chaque leçon est rattachée au
-                            manuscrit dont elle est issue par un identifiant qui renvoie dans le
-                            document XML à sa notice. Cette méthode permet toutefois de rétablir, à tout
-                            moment, les indications nécessaires à l’établissement d’un apparat
-                            positif par comparaison entre les sigles de manuscrits cités pour les
-                            leçons divergentes et la liste des manuscrits collationnés présente dans
-                            le teiHeader du document XML.</p>
+                            L'apparat ne présente que les leçons avec un texte sémantiquement
+                            différent du lemme. Chaque leçon est rattachée au manuscrit dont elle
+                            est issue par un identifiant qui renvoie dans le document XML à sa
+                            notice. Cette méthode permet toutefois de rétablir, à tout moment, les
+                            indications nécessaires à l’établissement d’un apparat positif par
+                            comparaison entre les sigles de manuscrits cités pour les leçons
+                            divergentes et la liste des manuscrits collationnés présente dans le
+                            teiHeader du document XML.</p>
 
                         <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
                                 <specDesc key="app"/>
