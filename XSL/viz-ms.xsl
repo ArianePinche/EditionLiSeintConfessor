@@ -4,68 +4,74 @@
     exclude-result-prefixes="xs tei" version="3.0">
 
     <xsl:strip-space elements="*"/>
-    <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>   
-    
-<xsl:template match="tei:TEI">  
+    <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
+
+    <xsl:template match="tei:TEI">
         <xsl:variable name="witfile">
-            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml',''), '/')[last()]"/>
+            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
-    <xsl:result-document href="../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}" method="html">
-        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-            <xsl:variable name="adresse">            
-                <xsl:value-of
-                    select="tokenize(tei:body/@n, ':')[last()]"/>
+        <xsl:result-document href="../../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}"
+            method="html" indent="yes">
+            <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+            <xsl:variable name="adresse">
+                <xsl:value-of select="tokenize(tei:body/@n, ':')[last()]"/>
                 <!-- récupération dans l'uri uniquement du nom du document -->
             </xsl:variable>
-            
-  <html>
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-                <title><xsl:value-of select="tei:title"/></title>
-                <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-                <link rel="stylesheet" type="text/css" href="../css/theme.css"/>
-                <script src="../js/jquery.min.js"/>
-                <script src="../js/bootstrap.min.js"/>
-                <script src="../js/normalisation.js"/>
-            </head>
-            <body>
-                <div class="Notice">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active">
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of
-                                        select="concat($adresse,'.html')"/>
-                                </xsl:attribute>
-                                Edition
-                            </xsl:element></li>
-                        <li role="presentation" >
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of
-                                        select="concat($witfile, '-trad', '.html')"/>
-                                </xsl:attribute>
-                                Texte avec traduction
-                            </xsl:element>
-                        </li>   
-                        <li role="presentation"><li role="presentation">
-                            <a data-toggle="tab" href="#notice">
-                                Notice
-                            </a></li></li>
-                    </ul>
 
-                    <div class="tab-content">
-                        <xsl:apply-templates select=".//tei:teiHeader"/>
-                        <xsl:apply-templates select=".//tei:body"/>
+            <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                    <title>
+                        <xsl:value-of select="tei:title"/>
+                    </title>
+                    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+                    <link rel="stylesheet" type="text/css" href="../css/theme.css"/>
+                    <script src="../js/jquery.min.js"/>
+                    <script src="../js/bootstrap.min.js"/>
+                    <script src="../js/normalisation.js"/>
+                    <script src="../js/jquery.apparatus.min.js"/>
+                    <script type="text/javascript">
+                    /* activation des légendes */
+                    $(document).ready(function() {
+                        $(".activation").apparatus({"target": ".linkapp"});
+                    });
+                    </script>
+                </head>
+                <body>
+                    <div class="Notice">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="concat($adresse, '.html')"/>
+                                    </xsl:attribute> Edition </xsl:element>
+                            </li>
+                            <li role="presentation">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="concat($witfile, '-trad', '.html')"/>
+                                    </xsl:attribute> Texte avec traduction </xsl:element>
+                            </li>
+                            <li role="presentation">
+                                <li role="presentation">
+                                    <a data-toggle="tab" href="#notice"> Notice </a>
+                                </li>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <xsl:apply-templates select=".//tei:teiHeader"/>
+                            <xsl:apply-templates select=".//tei:body"/>
+                        </div>
+                        
                     </div>
-                </div>
-                <hr/>      
-            </body>
-        </html>
-           
+                    <hr/>
+                </body>
+            </html>
+
         </xsl:result-document>
-        
+
     </xsl:template>
 
     <!-- Header start -->
@@ -322,7 +328,7 @@
                 <div class="col-md-2">
                     <!-- mise en place d'un système de navigation -->
                     <!-- boutons pour choisir une vue facsimilaire ou normalisée -->
-                  <div class="affix">
+                    <div class="affix">
                         <aside class="text-left">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-success" id="fac"
@@ -348,8 +354,9 @@
                                     </xsl:element>
                                 </li>
                             </xsl:for-each>
-                        </ul></div>
-                    
+                        </ul>
+                    </div>
+
                 </div>
 
                 <!-- fin elements de la barre de navigation dans le texte -->
@@ -361,8 +368,46 @@
                         <xsl:value-of select="./ancestor::tei:TEI//tei:titleStmt/tei:title"/>
                     </xsl:element>
                     <xsl:apply-templates/>
+                    
+                    </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <xsl:element name="h4">Sélection des temoins</xsl:element>
+                    <xsl:for-each select="./ancestor::tei:TEI//tei:msDesc">
+                        <div class="checkbox">                           
+                            <label>
+                                <xsl:element name="input">
+                                    <xsl:attribute name="class">
+                                        <xsl:text>activation activation-legende</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="type">
+                                        <xsl:text>checkbox</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="data-target">
+                                        <xsl:text>.</xsl:text><xsl:value-of select="./@xml:id"/>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="data-category">
+                                        <xsl:text>activation-legende</xsl:text>
+                                    </xsl:attribute>
+                                </xsl:element>
+                                <xsl:variable name="xmlidTok">
+                                    <xsl:value-of select="replace(./@xml:id, '#', '')"/>
+                                </xsl:variable>
+                                <xsl:variable name="xmlidLet">
+                                    <xsl:value-of select="replace($xmlidTok, '\d+', '')"/>
+                                </xsl:variable>
+                                <xsl:variable name="xmlidNum">
+                                    <xsl:value-of select="replace($xmlidTok, '\D+', '')"/>      
+                                </xsl:variable>
+                                <xsl:value-of select="$xmlidLet"/>    
+                                <xsl:element name="sup">
+                                    <xsl:value-of select="$xmlidNum"/>
+                                </xsl:element>                           
+                            </label>
+                        </div>
+                    </xsl:for-each>
                 </div>
             </section>
+           
 
             <!-- fin de mise en place d'un système de navigation -->
 
@@ -380,9 +425,12 @@
         <div class="modal fade" tabindex="-1" role="dialog" id="app">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h4 class="modal-title" id="myModalLabel">Apparat</h4>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                            >x</button>
+                        <h4 class="modal-title" id="myModalLabel">Apparat</h4>
                     </div>
-                    <div class="modal-body"></div>
+                    <div class="modal-body"/>
                 </div>
             </div>
         </div>
@@ -392,10 +440,10 @@
         <xsl:element name="div">
             <xsl:call-template name="id"/>
             <xsl:if test="./tei:head">
-                <xsl:element name="h2"> 
+                <xsl:element name="h2">
                     <xsl:attribute name="class">reg</xsl:attribute>
                     <xsl:apply-templates select="./tei:head"/>
-                    <xsl:text>&#160;</xsl:text> 
+                    <xsl:text>&#160;</xsl:text>
                 </xsl:element>
             </xsl:if>
             <xsl:element name="div">
@@ -403,7 +451,7 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-   
+
     <xsl:template match="tei:l">
         <xsl:element name="li">
             <xsl:attribute name="n">
@@ -425,10 +473,10 @@
     <xsl:template match="tei:p">
         <xsl:element name="div">
             <xsl:attribute name="class">row</xsl:attribute>
-            <xsl:if test="parent::tei:div[@n='1']">
+            <xsl:if test="parent::tei:div[@n = '1']">
                 <xsl:element name="span">
                     <xsl:attribute name="class">reg</xsl:attribute>
-                    <xsl:value-of select="./ancestor::tei:div[@type ='chapter']/@n"/>
+                    <xsl:value-of select="./ancestor::tei:div[@type = 'chapter']/@n"/>
                     <xsl:text>.&#160;</xsl:text>
                 </xsl:element>
             </xsl:if>
@@ -462,7 +510,7 @@
                     <xsl:value-of select="preceding::tei:pb[1]/@n"/>
                     <xsl:value-of select="@n"/>
                     <xsl:text>]&#160;</xsl:text>
-                   
+
                 </xsl:element>
             </xsl:element>
         </span>
@@ -476,10 +524,10 @@
             </xsl:attribute>
             <xsl:text>[fol.</xsl:text>
             <xsl:value-of select="@n"/>
-            <xsl:if test="following::tei:cb[1]/@n='a'">
+            <xsl:if test="following::tei:cb[1]/@n = 'a'">
                 <xsl:text>r</xsl:text>
             </xsl:if>
-            <xsl:if test="following::tei:cb[1]/@n='c'">
+            <xsl:if test="following::tei:cb[1]/@n = 'c'">
                 <xsl:text>v</xsl:text>
             </xsl:if>
             <xsl:text>]</xsl:text>
@@ -488,8 +536,8 @@
     </xsl:template>
 
     <!-- fin saut de page et de colonne -->
-    
-   
+
+
 
     <!-- éléments à affichier pour la visualisation facsimilaire -->
     <xsl:template match="tei:orig">
@@ -510,7 +558,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    
+
     <xsl:template match="tei:hi[@rend]">
         <xsl:choose>
             <xsl:when test="./@rend = 'exp'">
@@ -528,49 +576,71 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template match="tei:rdg"/>
-        
 
-<!-- finir en créant un variable i + 1 -->
+    <xsl:template match="tei:rdg"/>
+
+
+    <!-- finir en créant un variable i + 1 -->
     <!-- rajouter l'xml id à l'apparat pour le pop-up -->
     <!-- fin éléments à afficher pour la visualisation facsimilaire -->
-    
-    <!-- éléments à afficher pour la visualisation normalisée -->
-    <xsl:template match="tei:lem">
-                <xsl:element name="a">
-                        <xsl:if test="@wit != '#C1'">
+
+
+    <xsl:template match="tei:app">
+        <!-- chercher une solution pour les apparats imbriqués -->
+                <xsl:element name="span">
                     <xsl:attribute name="class">
-                        <xsl:text>reg</xsl:text>
+                        <xsl:text>linkapp </xsl:text>
+                        <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>                
                     </xsl:attribute>
-                        </xsl:if>
                     <xsl:attribute name="data-toggle">
                         <xsl:text>modal</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="data-target">#app</xsl:attribute>
-                    <xsl:apply-templates/>
+                    <xsl:apply-templates select="./tei:lem"/>
                     <xsl:element name="div">
                         <xsl:attribute name="class">app</xsl:attribute>
                         <xsl:element name="ul">
                             <xsl:attribute name="class">list-unstyled</xsl:attribute>
                             <xsl:element name="li">
-                                <xsl:apply-templates/><xsl:text>&#160;</xsl:text><xsl:if test="./@wit"><xsl:value-of select="replace(./@wit, '#', '')"/></xsl:if><xsl:text> ]</xsl:text>
+                                <xsl:apply-templates
+                                    select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr "/>
+                                <xsl:text>&#160;</xsl:text>
+                                <xsl:if test="./@wit">
+                                    <xsl:value-of select="replace(./@wit, '#', '')"/>
+                                </xsl:if>
+                                <xsl:text> ]</xsl:text>
                             </xsl:element>
-                       <!-- Ne fonctionne pas
-                    <xsl:for-each
-                        select="parent::tei:app/tei:rdg">
-                        <xsl:element name="li">                        
-                                <xsl:value-of select="tei:rdg"/><xsl:text>&#160;</xsl:text><xsl:value-of select="replace(./@wit, '#', '')"/>
-                        </xsl:element>
-                    </xsl:for-each>
-                     -->
-                        </xsl:element>
+                            <xsl:for-each select="child::tei:rdg">
+                                <xsl:element name="li">
+                                    <xsl:apply-templates/>
+                                    <xsl:if test="./@cause">
+                                        <xsl:element name="i">
+                                            <xsl:value-of select="./@cause"/>
+                                        </xsl:element>
+                                    </xsl:if>
+                                    <xsl:text>&#160;</xsl:text>
+                                    <xsl:for-each select="tokenize(./@wit, '\s+')">
+                                        <xsl:variable name="witTok">
+                                            <xsl:value-of select="replace(., '#', '')"/>
+                                        </xsl:variable>
+                                        <xsl:variable name="witLet">
+                                            <xsl:value-of select="replace($witTok, '\d+', '')"/>
+                                        </xsl:variable>
+                                        <xsl:variable name="witNum">
+                                            <xsl:value-of select="replace($witTok, '\D+', '')"/>
+                                        </xsl:variable>
+                                        <xsl:value-of select="$witLet"/>
+                                        <xsl:element name="sup">
+                                            <xsl:value-of select="$witNum"/>
+                                        </xsl:element>
+                                    </xsl:for-each>
+                                </xsl:element>
+                            </xsl:for-each></xsl:element>
                     </xsl:element>
                 </xsl:element>
     </xsl:template>
-    
-    
-    
+
+    <!-- éléments à afficher pour la visualisation normalisée -->
     <xsl:template match="tei:reg">
         <xsl:element name="span">
             <xsl:attribute name="class">reg</xsl:attribute>
@@ -579,14 +649,15 @@
     </xsl:template>
     <xsl:template match="tei:corr">
         <xsl:choose>
-            <xsl:when test="@type='add'">
-            <xsl:element name="span">
-            <xsl:attribute name="class">reg</xsl:attribute>
-            <xsl:text>[</xsl:text>
-            <xsl:apply-templates/>
-            <xsl:text>]</xsl:text>
-            </xsl:element></xsl:when>
-            <xsl:when test="@type='del'">
+            <xsl:when test="@type = 'add'">
+                <xsl:element name="span">
+                    <xsl:attribute name="class">reg</xsl:attribute>
+                    <xsl:text>[</xsl:text>
+                    <xsl:apply-templates/>
+                    <xsl:text>]</xsl:text>
+                </xsl:element>
+            </xsl:when>
+            <xsl:when test="@type = 'del'">
                 <xsl:element name="span">
                     <xsl:attribute name="class">orig</xsl:attribute>
                     <xsl:text>(</xsl:text>
@@ -645,8 +716,8 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    
- 
+
+
     <!-- fin éléments à affichier pour la visualisation normalisée -->
 
     <!-- Footer starts -->

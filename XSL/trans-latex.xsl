@@ -6,12 +6,17 @@
     <!-- enlève les espaces de l'element cité / balise nécessaire pour le traitement LaTeX-->
     <xsl:strip-space elements="*"/>
     <xsl:output method="text" encoding="UTF-8"/>
-    <xsl:template match="/">
-        <xsl:variable name="title">
-            <xsl:copy-of select="//tei:titleStmt/tei:title"/>
+    <xsl:template match="tei:TEI">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
+            <!-- récupération du nom du fichier courant -->
         </xsl:variable>
-        <xsl:text>
-\documentclass[12pt,a4paper]{report}
+        <xsl:result-document href="../../../../Dropbox/these/corpus/latex/{concat($witfile,'.tex')}">
+            <xsl:variable name="title">
+                <xsl:value-of select=".//tei:titleStmt/tei:title"/>
+            </xsl:variable>
+            <xsl:text>
+\documentclass[12pt,a4paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -33,34 +38,32 @@
 \pagestyle{fancy}
 \fancyhead[LE,RO]{ \thepage}
 \fancyhead[RE, LO]{\textsc{</xsl:text><xsl:value-of
-            select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
+                select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
 \fancyfoot[C]{}
-
 \Xmaxhnotes{.33\textheight}.
 \renewcommand{\footfudgefiddle}{68}
 \Xbeforenotes[A]{10pt}
 \Xafterrule[A]{5pt}
 \Xnotefontsize[A]{\scriptsize}
+\Xnotenumfont[A]{\bfseries}
 \Xarrangement[A]{paragraph}
 \Xparafootsep{$\parallel$~}
-\modulolinenumbers[5]
+\lineation{page}
+\linenummargin{outer}
 \begin{spacing}{1,5}
 </xsl:text>
-        <xsl:apply-templates/> \end{spacing} \end{document} </xsl:template>
+            <xsl:apply-templates/> \end{spacing} \end{document} </xsl:result-document>
+    </xsl:template>
     <xsl:template match="tei:teiHeader"/>
-    <xsl:variable name="title">
-        <xsl:copy-of select="//tei:titleStmt/tei:title"/>
-    </xsl:variable>
-
-
     <xsl:template match="tei:text">
         <xsl:text>
 \section*{
         </xsl:text>
-        <xsl:value-of select="$title"/>
+        <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
         <xsl:text>}</xsl:text>
-
+\beginnumbering
         <xsl:apply-templates/>
+\endnumbering
     </xsl:template>
     <xsl:template match="tei:div">
         <xsl:text>\paragraph*{</xsl:text>
@@ -74,7 +77,7 @@
     <xsl:template match="tei:div/tei:div">
         <xsl:text>
 \subparagraph*{}
-\beginnumbering
+
 \pstart
 </xsl:text>
 
@@ -85,8 +88,9 @@
         <xsl:apply-templates/>
         <xsl:text>
 \pend
-\endnumbering
+
 </xsl:text>
+
     </xsl:template>
     <xsl:template match="tei:div/tei:div/tei:p">
         <xsl:apply-templates/>
