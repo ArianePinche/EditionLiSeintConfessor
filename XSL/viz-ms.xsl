@@ -587,6 +587,10 @@
 
     <xsl:template match="tei:app">
         <!-- chercher une solution pour les apparats imbriqués -->
+        <xsl:variable name="renvoiNote">
+            <xsl:number count="tei:app" level="any" from="tei:text"/>
+        </xsl:variable>
+        <xsl:apply-templates select="./tei:lem"/>
                 <xsl:element name="span">
                     <xsl:attribute name="class">
                         <xsl:text>linkapp </xsl:text>
@@ -596,7 +600,9 @@
                         <xsl:text>modal</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="data-target">#app</xsl:attribute>
-                    <xsl:apply-templates select="./tei:lem"/>
+                    <xsl:text>[</xsl:text>
+                    <xsl:value-of select="$renvoiNote"/>
+                    <xsl:text>]</xsl:text>
                     <xsl:element name="div">
                         <xsl:attribute name="class">app</xsl:attribute>
                         <xsl:element name="ul">
