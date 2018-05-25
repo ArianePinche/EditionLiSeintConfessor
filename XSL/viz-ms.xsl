@@ -363,14 +363,14 @@
                 <!-- fin ce barre de navigation dans le texte -->
 
 
-                <div class="col-md-7" id="contenu">
+                <div class="col-md-6" id="contenu">
                     <xsl:element name="h1">
                         <xsl:value-of select="./ancestor::tei:TEI//tei:titleStmt/tei:title"/>
                     </xsl:element>
                     <xsl:apply-templates/>
                     
                     </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-3 col-md-offset-1">
                     <xsl:element name="h4">Sélection des temoins</xsl:element>
                     <xsl:for-each select="./ancestor::tei:TEI//tei:msDesc">
                         <div class="checkbox">                           
@@ -405,6 +405,7 @@
                             </label>
                         </div>
                     </xsl:for-each>
+                    <div id="note-container"></div>
                 </div>
             </section>
            
@@ -425,12 +426,9 @@
         <div class="modal fade" tabindex="-1" role="dialog" id="app">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
-                            >x</button>
-                        <h4 class="modal-title" id="myModalLabel">Apparat</h4>
+                    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h4 class="modal-title" id="myModalLabel">Apparat</h4>
                     </div>
-                    <div class="modal-body"/>
+                    <div class="modal-body"></div>
                 </div>
             </div>
         </div>
@@ -597,12 +595,12 @@
                         <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>                
                     </xsl:attribute>
                     <xsl:attribute name="data-toggle">
-                        <xsl:text>modal</xsl:text>
+                        <xsl:text>note</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="data-target">#app</xsl:attribute>
-                    <xsl:text>[</xsl:text>
+                    <xsl:element name="sup"><xsl:text>[</xsl:text>
                     <xsl:value-of select="$renvoiNote"/>
-                    <xsl:text>]</xsl:text>
+                    <xsl:text>]</xsl:text></xsl:element>
                     <xsl:element name="div">
                         <xsl:attribute name="class">app</xsl:attribute>
                         <xsl:element name="ul">
@@ -625,7 +623,9 @@
                                         </xsl:element>
                                     </xsl:if>
                                     <xsl:text>&#160;</xsl:text>
-                                    <xsl:for-each select="tokenize(./@wit, '\s+')">
+                                    <xsl:element name="span">
+                                        <xsl:attribute name="class">wit</xsl:attribute>
+                                        <xsl:for-each select="tokenize(./@wit, '\s+')">
                                         <xsl:variable name="witTok">
                                             <xsl:value-of select="replace(., '#', '')"/>
                                         </xsl:variable>
@@ -638,8 +638,10 @@
                                         <xsl:value-of select="$witLet"/>
                                         <xsl:element name="sup">
                                             <xsl:value-of select="$witNum"/>
-                                        </xsl:element>
+                                            <xsl:text> </xsl:text>
+                                        </xsl:element>                                  
                                     </xsl:for-each>
+                                    </xsl:element>
                                 </xsl:element>
                             </xsl:for-each></xsl:element>
                     </xsl:element>
