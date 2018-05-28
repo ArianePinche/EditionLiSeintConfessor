@@ -26,11 +26,10 @@
                 <head>Guide d'encodage de l'édition des <hi>Seint Confessor</hi> de Wauchier de
                     Denain d'après le manuscrit 412 de la BNF</head>
                 <p>Ce petit guide a pour but d'expliquer de quelle manière a été encodée en XML-TEI
-                    l'édition. Des principes stricts d’encodage ont été déterminés
-                    pour produire des données pérennes, interopérables et pour faciliter leur
-                    transformation. L’intégralité de l’encodage proposé est donc <hi>TEI
-                        conformant</hi>. L'édition des <hi rend="italic">Seint Confessor</hi> réunit
-                    les textes suivants :<list>
+                    l'édition. Des principes stricts d’encodage ont été déterminés pour produire des
+                    données pérennes, interopérables et pour faciliter leur transformation.
+                    L’intégralité de l’encodage proposé est donc <hi>TEI conformant</hi>. L'édition
+                    des <hi rend="italic">Seint Confessor</hi> réunit les textes suivants :<list>
                         <item><hi rend="italic">La Vie de saint Martin</hi></item>
                         <item><hi rend="italic">Les Dialogues sur les Vertus de saint
                             Martin</hi></item>
@@ -228,9 +227,9 @@
                                 ><val>edition</val></hi> pour signaler que le texte encodé est le
                             texte de l'édition et afin de le différencier, le cas échéant, du
                             fichier contenant la traduction. <gi>text</gi> englobe l'élément
-                                <gi>body</gi> qui possède deux attributs. Le premier,
-                            <att>n</att>, permet de spécifier l'URN CTS, tandis que le second,
-                                <att>xml:lang</att>, indique la langue majoritaire du corpus, ici,
+                                <gi>body</gi> qui possède deux attributs. Le premier, <att>n</att>,
+                            permet de spécifier l'URN CTS, tandis que le second,
+                            <att>xml:lang</att>, indique la langue majoritaire du corpus, ici,
                             l'ancien français signifié par la valeur <hi rend="italic"
                                     ><val>fro</val></hi>. Le <gi>body</gi> présente des <gi>div</gi>
                             de deux niveaux. La <gi>div</gi> parent possède un attribut
@@ -470,28 +469,46 @@
                             difficilement compréhensible. Les corrections opérées sont dans la
                             majorité des cas issues d’une leçon présente dans les manuscrits de la
                             même famille, la plupart du temps C2 sur lequel nous sommes appuyés en
-                            priorité.</p>
-                        <p>Deux types de corrections ont été opérés dans le corpus. Quand le texte
+                            priorité. Elles ont été encodées grâce aux balises suivantes : <specList>
+                                <specDesc key="choice"/>
+                                <specDesc key="sic"/>
+                                <specDesc key="corr"/>
+                            </specList>
+                        </p>
+                        <p>Trois types de corrections ont été opérés dans le corpus. Quand le texte
                             du manuscrit est difficilement compréhensible en raison d'un manque dans
                             le texte, nous avons ajouté les lettres manquantes dans une balise
                                 <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>add</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">a cel coup en cha<corr
-                                type="add">ça</corr>
-                            il le deable 
-                       </egXML>
+                                type="add">ça</corr> il le deable </egXML>
                         <p> Quand le texte du manuscrit est difficilement compréhensible en raison
                             d'un ajout de texte, la plupart du temps lié à une faute par
                             dittograpihe dans le texte, les lettres en trop sont englobées dans une
                             balise <gi>corr</gi> avec un attribut <att>type</att> de valeur
                                 <hi>del</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
-                                >qi</corr><lb/>qi vit le beau liu
+                                >qi</corr><lb/>qi vit le beau liu </egXML>
+                        <p> Enfin, quand le texte présente une erreur ponctuelle dans le
+                            texte qui demande le recours à un autre témoin pour remplacer la graphie
+                            "fautive" de C1, nous avons utilisé le doublet <gi>sic</gi>
+                            et <gi>corr</gi> englobé dans une balise <gi>choice</gi>. Ainsi la vue
+                            facsimilaire présentera la graphie originale du manuscrit, tandis que la
+                            vue normalisée donnera la version corrigé du texte avec entre crochets les
+                            endroits substitués par une leçon alternative issue de C2 ou C3.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                              <app>
+                                  <lem wit="#C2 #C3">adjuto
+                                      <choice>
+                                          <sic>z</sic>
+                                          <corr type="add">r</corr>
+                                      </choice>
+                                  </lem>
+                                  <rdg wit="#C1">adjutoz</rdg></app>
                         </egXML>
                         <p>L'intégralité des corrections opérées est également signalée dans
                             l'apparat critique pour renseigner la graphie fautive présente dans le
-                            manuscrit de base.<egXML
-                                xmlns="http://www.tei-c.org/ns/Examples">
+                            manuscrit de base.<egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
                                     <lem wit="#C2 #C3"><corr type="add">es</corr> escriptures</lem>
                                     <rdg wit="#C1">escriptures</rdg>
@@ -580,7 +597,7 @@
                     <moduleRef key="tei"/>
                     <moduleRef key="corpus" include="particDesc settingDesc"/>
                     <moduleRef key="core"
-                        include="p hi said corr choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
+                        include="del p hi said corr sic choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
                     <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
                     <elementSpec ident="variantEncoding" mode="change">
                         <attList>
@@ -751,7 +768,7 @@
                     <elementSpec ident="corr" mode="change">
                         <gloss>Correction</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
-                            d'encoder les corrections apportées au texte</desc>
+                            de signaler les corrections apportées au texte</desc>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -766,6 +783,25 @@
                             </attDef>
                         </attList>
                     </elementSpec>
+                    
+                    <elementSpec ident="del" mode="change">
+                        <gloss>Suppression</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            de signaler les endroits supprimés par le copiste</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                            <attDef ident="unit" mode="delete"/>
+                            <attDef ident="rend" mode="delete"/>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="exponctué"/>
+                                </valList>
+                            </attDef>
+                        </attList>
+                    </elementSpec>
+                    
                     <elementSpec ident="choice" mode="change">
                         <gloss>Choix</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
@@ -791,6 +827,17 @@
                         <gloss>Original</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
                             d'encoder la forme originale du manuscrit.</desc>
+                        <attList>
+                            <attDef ident="corresp" mode="delete"/>
+                            <attDef ident="ana" mode="delete"/>
+                            <attDef ident="facs" mode="delete"/>
+                        </attList>
+                    </elementSpec>
+                    
+                    <elementSpec ident="sic" mode="change">
+                        <gloss>Graphie originale mais fautive</gloss>
+                        <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
+                            d'encoder la forme originale du manuscrit tout en signalant que cette dernière est fautive</desc>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
