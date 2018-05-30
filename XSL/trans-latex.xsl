@@ -26,6 +26,7 @@
 \usepackage{lettrine}
 \usepackage{setspace}
 \usepackage{lineno}
+\usepackage{ulem}
 \usepackage{color}
 \usepackage{sectsty}
 \usepackage{fancyhdr}
@@ -121,8 +122,14 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    <xsl:template match="tei:del">
+        \dotuline{<xsl:apply-templates/>}
+    </xsl:template>
+    
     <xsl:template match="tei:orig"/>
     <xsl:template match="tei:abbr"/>
+    <xsl:template match="tei:sic"/>
+    
     <xsl:template match="tei:pc">
         <xsl:choose>
             <xsl:when test="@type = 'orig'"/>

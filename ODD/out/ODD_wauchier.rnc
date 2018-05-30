@@ -6,7 +6,7 @@ namespace s = "http://purl.oclc.org/dsdl/schematron"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2018-03-21T17:31:54Z. .
+# Schema generated from ODD source 2018-05-28T15:23:03Z. .
 # TEI Edition: Version 2.8.0. Last updated on
 #	6th April 2015, revision 13197
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -630,6 +630,31 @@ sch:pattern [
   "\x{a}" ~
   "   "
 ]
+att.transcriptional.attribute.hand =
+  
+  ## indicates the hand of the agent which made the intervention.
+  attribute hand { data.pointer }?
+att.transcriptional.attribute.status =
+  
+  ## indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.
+  ## Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] excessEnd; 5] shortStart; 6] shortEnd; 7] partial; 8] unremarkable
+  [ a:defaultValue = "unremarkable" ]
+  attribute status { data.enumerated }?
+att.transcriptional.attribute.cause =
+  
+  ## documents the presumed cause for the intervention.
+  attribute cause {
+    
+    ## repeated for the purpose of fixation
+    "fix"
+    | 
+      ## repeated to clarify a previously illegible or badly written text or mark
+      "unclear"
+  }?
+att.transcriptional.attribute.seq =
+  
+  ## (sequence) assigns a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.
+  attribute seq { data.count }?
 model.nameLike.agent = persName
 model.nameLike.agent_alternation = persName
 model.nameLike.agent_sequence = persName
@@ -683,14 +708,16 @@ model.pPart.editorial_sequenceOptional = choice?, abbr?, expan?, ex?
 model.pPart.editorial_sequenceOptionalRepeatable =
   choice*, abbr*, expan*, ex*
 model.pPart.editorial_sequenceRepeatable = choice+, abbr+, expan+, ex+
-model.pPart.transcriptional = corr | reg | orig | app
-model.pPart.transcriptional_alternation = corr | reg | orig | app
-model.pPart.transcriptional_sequence = corr, reg, orig, app
-model.pPart.transcriptional_sequenceOptional = corr?, reg?, orig?, app?
+model.pPart.transcriptional = sic | corr | reg | orig | del | app
+model.pPart.transcriptional_alternation =
+  sic | corr | reg | orig | del | app
+model.pPart.transcriptional_sequence = sic, corr, reg, orig, del, app
+model.pPart.transcriptional_sequenceOptional =
+  sic?, corr?, reg?, orig?, del?, app?
 model.pPart.transcriptional_sequenceOptionalRepeatable =
-  corr*, reg*, orig*, app*
+  sic*, corr*, reg*, orig*, del*, app*
 model.pPart.transcriptional_sequenceRepeatable =
-  corr+, reg+, orig+, app+
+  sic+, corr+, reg+, orig+, del+, app+
 model.pPart.edit = model.pPart.editorial | model.pPart.transcriptional
 model.ptrLike = ref
 model.lPart = notAllowed
@@ -797,7 +824,7 @@ model.divTopPart = model.headLike
 model.divTop = model.divWrapper | model.divTopPart
 model.divBottomPart = notAllowed
 model.divBottom = model.divWrapper | model.divBottomPart
-model.choicePart = corr | reg | orig | abbr | expan | ex | seg
+model.choicePart = sic | corr | reg | orig | abbr | expan | ex | seg
 model.imprintPart = publisher | pubPlace
 model.physDescPart_sequenceOptional = objectDesc?, scriptDesc?
 model.addressLike = notAllowed
@@ -1011,9 +1038,28 @@ said =
     [ a:defaultValue = "true" ] attribute direct { data.xTruthValue }?,
     empty
   }
+sic =
+  
+  ## (Graphie originale mais fautive) permet d'encoder la forme originale du manuscrit tout en signalant que cette dernière est fautive [3.4.1. Apparent Errors]
+  element sic {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.rend,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.change.attribute.change,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.source.attributes,
+    empty
+  }
 corr =
   
-  ## (Correction) permet d'encoder les corrections apportées au texte [3.4.1. Apparent Errors]
+  ## (Correction) permet de signaler les corrections apportées au texte [3.4.1. Apparent Errors]
   element corr {
     macro.paraContent,
     att.global.attribute.xmlid,
@@ -1120,6 +1166,47 @@ orig =
     att.global.responsibility.attribute.cert,
     att.global.responsibility.attribute.resp,
     att.source.attributes,
+    empty
+  }
+del =
+  
+  ## (Suppression) permet de signaler les endroits supprimés par le copiste [3.4.3. Additions, Deletions, and Omissions]
+  element del {
+    macro.paraContent,
+    att.global.attribute.xmlid,
+    att.global.attribute.n,
+    att.global.attribute.xmllang,
+    att.global.attribute.xmlbase,
+    att.global.attribute.xmlspace,
+    att.global.rendition.attribute.style,
+    att.global.rendition.attribute.rendition,
+    att.global.change.attribute.change,
+    att.global.responsibility.attribute.cert,
+    att.global.responsibility.attribute.resp,
+    att.transcriptional.attribute.hand,
+    att.transcriptional.attribute.status,
+    att.transcriptional.attribute.cause,
+    att.transcriptional.attribute.seq,
+    att.editLike.attribute.evidence,
+    att.editLike.attribute.instant,
+    att.dimensions.attribute.quantity,
+    att.dimensions.attribute.extent,
+    att.dimensions.attribute.precision,
+    att.dimensions.attribute.scope,
+    att.ranging.attribute.atLeast,
+    att.ranging.attribute.atMost,
+    att.ranging.attribute.min,
+    att.ranging.attribute.max,
+    att.ranging.attribute.confidence,
+    att.source.attribute.source,
+    att.typed.attribute.subtype,
+    
+    ## characterizes the element in some sense, using any convenient classification scheme or typology.
+    attribute type {
+      
+      ##
+      "exponctué"
+    }?,
     empty
   }
 date =
@@ -1699,31 +1786,19 @@ rdg =
          "\x{a}" ~
          "            "
          s:rule [
-           context = "tei:rdg"
+           context = "tei:rdg[@wit]"
            "\x{a}" ~
-           "                                        "
-           s:let [ name = "ref" value = "tokenize(@wit,' ')" ]
+           "                                            "
+           s:let [ name = "ref1" value = "tokenize(@wit,' ')[1]" ]
            "\x{a}" ~
-           "                                        "
+           "                                            "
            s:assert [
              test =
-               "//tei:msDesc[@xml:id = substring-after($ref, '#')] and starts-with($ref, '#')"
-             " the value of #wit is not declared |"
-             s:value-of [ select = "$ref" ]
-             "| "
+               "//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"
+             " the value of @wit is not declared "
            ]
            "\x{a}" ~
            "                                        "
-           s:assert [
-             test =
-               "@wit/text()!=preceding-sibling::tei:rdg/@wit/text() | following-sibling::tei:rdg/@wit/text()"
-             "\x{a}" ~
-             "                                             the value of #wit |"
-             s:value-of [ select = "@wit" ]
-             "| is in another reading for this passage"
-           ]
-           "\x{a}" ~
-           "                                    "
          ]
          "\x{a}" ~
          "         "

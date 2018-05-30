@@ -25,7 +25,7 @@
                   <idno>fr. 00412</idno>
                </msIdentifier>
                <head>
-                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <title>De seint Martin</title>
                   <origDate>1285</origDate>
                   <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
                      notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
@@ -36,48 +36,13 @@
                </head>
                <msContents>
                   <msItemStruct>
-                     <locus>fol.103-fol.170</locus>
-                     <author>Wauchier de Denain</author>
-                     <title>Oeuvres hagiographiques 'Li Seint Confessor' de Wauchier de
-                        Denain</title>
-                     <incipit>De saint &m-maj;artin mout doit on doucement et volentiers le bien
-                        o&itrem;r etentendre</incipit>
-                     <explicit/>
+                     <locus>fol.103-fol.114</locus>
+                     <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
+                        entendre</incipit>
+                     <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des
+                        siecles. Amen.</explicit>
                   </msItemStruct>
                </msContents>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>parchemin</support>
-                        <extent>
-                           <width unit="mm">330</width>
-                           <height unit="mm">245</height>
-                        </extent>
-                        <foliation>21 Senions, 245 folios</foliation>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="2" writtenLines="46"/>
-                     </layoutDesc>
-                  </objectDesc>
-                  <scriptDesc>
-                     <scriptNote>Caroline</scriptNote>
-                  </scriptDesc>
-               </physDesc>
-               <history>
-                  <origin/>
-                  <provenance>
-                     <p/>
-                     <listBibl>
-                        <bibl>
-                           <author/>
-                           <title/>
-                           <pubPlace/>
-                           <publisher/>
-                           <date/>
-                        </bibl>
-                     </listBibl>
-                  </provenance>
-               </history>
             </msDesc>
             <msDesc xml:id="C2">
                <msIdentifier>
@@ -480,11 +445,10 @@
    </teiHeader>
    <text n="edition">
       <body n="urn:cts:froLit:jns915.jns1856.ciham-fro1" xml:lang="fro">
-         <div type="chapter" n="1"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.highres">
+         <div type="chapter" n="1" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215">
             <div type="section" n="1">
                <p>
-                  <pb n="103" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.highres"/>
+                  <pb n="103" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215"/>
                   <app>
                      <lem><hi rend="rubricated">
                            <choice>
@@ -618,7 +582,7 @@
             </div>
          </div>
          <div type="chapter" n="2"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216.highres"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f215, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:2">
             <!-- Vie de saint Martin de Sulpice Sévère, II,1 -->
             <div n="1" type="section">
@@ -635,7 +599,10 @@
                            </choice>annone</placeName></lem>
                      <rdg wit="#G1">en la cit&eacc; de Pannonie</rdg>
                   </app><pc type="reg" ana="apposition">,</pc> d<pc type="reg">&apos;</pc>un
-                  chastiel&esp;<lb/>qi <app><lem><placeName ref="#sabarie">&y-maj;sabbarie</placeName></lem><rdg wit="#G1">Ysapharie</rdg></app>&esp;<app>
+                  chastiel&esp;<lb/>qi <app>
+                     <lem><placeName ref="#sabarie">&y-maj;sabbarie</placeName></lem>
+                     <rdg wit="#G1">Ysapharie</rdg>
+                  </app>&esp;<app>
                      <lem>a&u-v;oit non</lem>
                      <rdg wit="#G1">estoit apelez</rdg>
                   </app>&deuxpoints-point;<lb/>&s-maj;i fu de haute lignie <app>
@@ -655,9 +622,11 @@
                   >&#160;</pc>sein<lb/>te glisse<pc type="orig" ana="segPrep"
                      >:</pc>&esp;maugr&eacc;&#160;son<pc type="reg">&#160;</pc>pere
                      &esperluette-et;sa<pc type="reg">&#160;</pc>mere qi&esp;<lb/>paien estoient. Et
-                  qant il &u-v;int <app><lem>en</lem><rdg wit="#G1">a</rdg></app> l<pc type="reg">&apos;</pc>aage&esp;<lb/>de&esp;<pc
-                     ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
-                  >.</pc>&esp;anz&deuxpoints-virg4;il <app>
+                  qant il &u-v;int <app>
+                     <lem>en</lem>
+                     <rdg wit="#G1">a</rdg>
+                  </app> l<pc type="reg">&apos;</pc>aage&esp;<lb/>de&esp;<pc ana="number">.</pc><seg
+                     type="number">xii</seg><pc ana="number">.</pc>&esp;anz&deuxpoints-virg4;il <app>
                      <lem>co&u-v;oita molt</lem>
                      <rdg wit="#G1">conmença</rdg>
                   </app> a<pc type="reg">&#160;</pc>mener &u-v;ie<lb/> solitaire
@@ -685,7 +654,7 @@
                      <rdg wit="#G1">Et nequedent il fu molt entendanz a sainte eglise et pourpensa
                         tres s'enfance ce qu'il aempli durement</rdg>
                   </app> qant il &u-v;int en&esp;<lb/>
-                  <pb n="103" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216.highres"/>
+                  <pb n="103" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216"/>
                   <cb n="c"/>plus grant aage.&esp;<app>
                      <lem>Et</lem>
                      <rdg wit="#G1" cause="om."/>
@@ -713,7 +682,10 @@
                      </choice>artins</persName>&esp;<pc ana="number">.</pc><seg type="number"
                      >xv</seg><pc ana="number">.</pc>&esp;anz&point-virg3;si<pc type="reg"
                      >&#160;</pc>s<pc type="reg">&apos;</pc>en&esp;<lb/>ala a<pc type="reg"
-                     >&#160;</pc><app><lem>la</lem><rdg wit="#G1" cause="om."/></app> court por<pc type="reg">&#160;</pc>estre che&u-v;aliers <app>
+                     >&#160;</pc><app>
+                     <lem>la</lem>
+                     <rdg wit="#G1" cause="om."/>
+                  </app> court por<pc type="reg">&#160;</pc>estre che&u-v;aliers <app>
                      <lem>&esperluette-et;ensam<lb/>ble o<pc type="reg">&#160;</pc>soi</lem>
                      <rdg wit="#G1">atout</rdg>
                   </app> un ser&i-j;ant qi le ser&u-v;oit tant seu<lb/>lement.&esp;<app>
@@ -872,8 +844,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="3"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217.highres"
+         <div type="chapter" n="3" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f216"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:3">
             <!-- Vie de saint Martin de Sulpice Sévère, II,2 -->
             <div type="section" n="1">
@@ -928,7 +899,8 @@
                      <rdg wit="#G1">a demander et a requerre</rdg>
                   </app> q<pc type="reg">&apos;</pc>il <app>
                      <lem wit="#G1"><corr type="add">li</corr></lem>
-                     <rdg wit="#C1 #C3">lor</rdg> <!-- vérifier C2 -->
+                     <rdg wit="#C1 #C3">lor</rdg>
+                     <!-- vérifier C2 -->
                   </app> fe&itrem;ssent bien por <choice>
                      <orig>d</orig>
                      <reg>D</reg>
@@ -978,9 +950,13 @@
                      <lem>as po&u-v;res</lem>
                      <rdg wit="#G1" cause="om."/>
                   </app>&#160;&esperluette-et;de&pbarre-par;ties.&esp;Lors prist li se&itilde-in;z
-                  <lb/> che&u-v;aliers <app><lem>l<pc type="reg">&apos;</pc>espee</lem><rdg wit="#G1">s'espee</rdg></app> q<pc type="reg"
-                  >&apos;</pc>il a&u-v;oit chainte&deuxpoints-virg3;si&esp;<app><lem>en</lem><rdg wit="#G1" cause="om."/></app>&esp;<lb/> trencha son
-                  mantel <app>
+                  <lb/> che&u-v;aliers <app>
+                     <lem>l<pc type="reg">&apos;</pc>espee</lem>
+                     <rdg wit="#G1">s'espee</rdg>
+                  </app> q<pc type="reg">&apos;</pc>il a&u-v;oit chainte&deuxpoints-virg3;si&esp;<app>
+                     <lem>en</lem>
+                     <rdg wit="#G1" cause="om."/>
+                  </app>&esp;<lb/> trencha son mantel <app>
                      <lem>&pbarre-par;<pc type="reg">&#160;</pc>mi</lem>
                      <rdg wit="#G1">parmi le milieu</rdg>
                   </app>&point-virg3;si en dona <app>
@@ -1004,7 +980,10 @@
                      <lem>l<pc type="reg">'</pc>afuble&utrem;re ert<pc type="reg"
                         >&#160;</pc>laide</lem>
                      <rdg wit="#G1">afublé estoit laidement</rdg>
-                  </app>&#160;<app><lem>de</lem><rdg wit="#G1">pour</rdg></app> ce q<pc type="reg">&apos;</pc><app>
+                  </app>&#160;<app>
+                     <lem>de</lem>
+                     <rdg wit="#G1">pour</rdg>
+                  </app> ce q<pc type="reg">&apos;</pc><app>
                      <lem>ele</lem>
                      <rdg wit="#G1">sa vesteüre</rdg>
                   </app> estoit&esp;<lb/>trenchie<pc type="orig" ana="coordination">:</pc>&esp;<choice>
@@ -1040,7 +1019,9 @@
                      <rdg wit="#G1">esnuer</rdg>
                   </app>.<lb/></p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div n="4" type="chapter" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:3">
+            <div type="section" n="1">
                <p><hi rend="decorated-initial">Q</hi>uant <app>
                      <lem>ce</lem>
                      <rdg wit="#G1" cause="om."/>
@@ -1103,8 +1084,8 @@
                      <orig>e</orig>
                      <reg>é</reg>
                   </choice> des angeles<pc type="orig">:</pc> qi en&u-v;iron lui
-                     estoi<lb/>ent&point-deuxpointsDial;<said who="#jesus">Martins qi encore n<pc type="reg"
-                        >&apos;</pc>est baptisiez <lb/> m<pc type="reg">&apos;</pc>a <app>
+                     estoi<lb/>ent&point-deuxpointsDial;<said who="#jesus">Martins qi encore n<pc
+                        type="reg">&apos;</pc>est baptisiez <lb/> m<pc type="reg">&apos;</pc>a <app>
                         <lem>co&u-v;ert</lem>
                         <rdg wit="#G1">recouvert</rdg>
                      </app> de ceste &u-v;este&utrem;re.</said> Et la ou <lb/> nostre <choice>
@@ -1121,8 +1102,9 @@
                   &u-v;este&utrem;re a&u-v;oit rece&utrem;e&deuxpoints-virg4;<lb/>li so&u-v;int il
                   de&esp;la parole de<pc type="reg">&#160;</pc>l<pc type="reg"
                   >&apos;</pc>&e-maj;&u-v;angile q<pc type="reg">&apos;</pc>&i-maj;l <lb/> a&u-v;oit
-                  de&u-v;ant dite&point-deuxpointsDial;<said who="#jesus">Ce qe &u-v;os fe&itrem;stes a<lb/>
-                     <pb n="104" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217.highres"/>
+                  de&u-v;ant dite&point-deuxpointsDial;<said who="#jesus">Ce qe &u-v;os
+                     fe&itrem;stes a<lb/>
+                     <pb n="104" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217"/>
                      <cb n="a"/> un de mes petis po&u-v;res&deuxpoints-virg5;<app>
                         <lem><choice>
                               <orig>C</orig>
@@ -1192,8 +1174,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="4"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217.highres"
+
+         <div type="chapter" n="5" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:4, urn:cts:latinLit:stoa0270.stoa002.opp-lat2:5">
             <!-- Vie de saint Martin de Sulpice Sévère, II,3 et 4 -->
             <div type="section" n="1">
@@ -1229,12 +1211,16 @@
                         <orig>u</orig>
                         <reg>V</reg>
                      </choice>angione</placeName>
-                  <lb/> estoit apelee&deuxpoints-point;&s-maj;i &neuf-con;men&c-ced;a a<pc
-                     type="reg">&#160;</pc>douner &esperluette-et;a de&pbarre-par;<lb/>tir souz
-                  &esperluette-et;li&u-v;roisons as che&u-v;aliers<pc type="orig" ana="coordination"
-                     >:</pc>&esp;&esperluette-et;si les&esp;<lb/>fist semondre tout &pbarre-par;tout
-                  la ou il estoi&etilde-en;t&deuxpoints-virg4;<lb/>si com il estoit
-                  costume&deuxpoints-virg4; <choice>
+                  <lb/> estoit apelee&deuxpoints-point;&s-maj;i &neuf-con;men&c-ced;a <app>
+                     <lem>a<pc type="reg">&#160;</pc>douner &esperluette-et;a
+                        de&pbarre-par;<lb/>tir</lem>
+                     <rdg wit="#C2">a departir et a donner</rdg>
+                  </app> souz &esperluette-et;li&u-v;roisons as che&u-v;aliers<pc type="orig"
+                     ana="coordination">:</pc>&esp;&esperluette-et;si les&esp;<lb/>fist semondre
+                  tout &pbarre-par;tout la ou il estoi&etilde-en;t&deuxpoints-virg4;<lb/>si com il <app>
+                     <lem>estoit costume</lem>
+                     <rdg wit="#C2">estoit a costume</rdg>
+                  </app>&deuxpoints-virg4;<choice>
                      <orig>T</orig>
                      <reg>t</reg>
                   </choice>ant qe <persName ref="#martin">seinz <choice>
@@ -1246,15 +1232,22 @@
                      <reg>A</reg>
                   </choice>donc &u-v;it li<pc type="reg">&#160;</pc>seinz hom qe li tenz estoit
                   &u-v;e<lb/>nuz co&u-v;egnables de<pc type="reg">&#160;</pc>lessier<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;de deguer<lb/>pir l<pc type="reg"
-                     >&apos;</pc>oe&u-v;re de<pc type="reg">&#160;</pc>la<pc type="reg"
-                  >&#160;</pc>terriene che&u-v;alerie. Ne li&esp;<lb/>sembloit mie qe reson fust
-                     ne<pc type="reg">&#160;</pc>droiture de&esp;<lb/> prendre souz ne
-                  despenses&point-virg4;puis qe deser&u-v;ir&esp;<lb/> ne les &u-v;oloit. Lors se<pc
-                     type="reg">&#160;</pc>trest li seinz hom a<pc type="reg">&#160;</pc>l<pc
-                     type="reg">&apos;</pc><lb/>em&pbarre-per;eor &esperluette-et;si li
-                     dist&point-deuxpointsDial;<said who="#martin">Je t<pc type="reg">&apos;</pc>ai ser&u-v;i
-                        tresc<pc type="reg">'</pc>a ore &pbarre-par;&esp;<lb/>ma che&u-v;alerie&deuxpoints-point;<choice>
+                     ana="coordination">.</pc>&esp;<app>
+                     <lem>&esperluette-et;de deguer<lb/>pir</lem>
+                     <rdg wit="#C2">et de guerpir</rdg>
+                  </app> l<pc type="reg">&apos;</pc>oe&u-v;re de<pc type="reg">&#160;</pc>la<pc
+                     type="reg">&#160;</pc>terriene che&u-v;alerie. Ne li&esp;<lb/>sembloit mie qe
+                  reson fust ne<pc type="reg">&#160;</pc>droiture de&esp;<lb/> prendre souz <app>
+                     <lem>ne</lem>
+                     <rdg wit="#C2">et</rdg>
+                  </app> despenses&point-virg4;puis qe deser&u-v;ir&esp;<lb/> ne les &u-v;oloit.
+                  Lors se<pc type="reg">&#160;</pc><app>
+                     <lem>trest</lem>
+                     <rdg wit="#C2">retrest</rdg>
+                  </app> li seinz hom a<pc type="reg">&#160;</pc>l<pc type="reg"
+                  >&apos;</pc><lb/>em&pbarre-per;eor &esperluette-et;si li
+                     dist&point-deuxpointsDial;<said who="#martin">Je t<pc type="reg">&apos;</pc>ai
+                     ser&u-v;i tresc<pc type="reg">'</pc>a ore &pbarre-par;&esp;<lb/>ma che&u-v;alerie&deuxpoints-point;<choice>
                         <orig>o</orig>
                         <reg>O</reg>
                      </choice>r sueffre qe &i-j;e soie che&u-v;a<lb/>liers nostre &s-maj;igneur <choice>
@@ -1288,10 +1281,10 @@
                         <orig>m</orig>
                         <reg>M</reg>
                      </choice>artins</persName> a<pc type="reg">&#160;</pc>l<pc type="reg"
-                     >&apos;</pc>empereror&esp;:&esp;<said who="#martin">Se l<pc type="reg">&apos;</pc>on dist qe
-                     ce&esp;<lb/> soit&esp;por paor&esp;<pc type="orig" ana="completive">:</pc>
-                     qe&esp;&i-j;e la che&u-v;alerie deguer<lb/>pisse &esperluette-et;non mie por
-                     foi qe &i-j;e aie en&u-v;ers <lb/> nostre <choice>
+                     >&apos;</pc>empereror&esp;:&esp;<said who="#martin">Se l<pc type="reg"
+                        >&apos;</pc>on dist qe ce&esp;<lb/> soit&esp;por paor&esp;<pc type="orig"
+                        ana="completive">:</pc> qe&esp;&i-j;e la che&u-v;alerie deguer<lb/>pisse
+                     &esperluette-et;non mie por foi qe &i-j;e aie en&u-v;ers <lb/> nostre <choice>
                         <orig>s</orig>
                         <reg>S</reg>
                      </choice>ignor&deuxpoints-virg4;&i-j;e serai demein de&u-v;ant<pc type="orig"
@@ -1314,7 +1307,9 @@
                      plus espes<lb/>ses assemblees.</said>&esp;<lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div type="chapter" n="6">
+            <div type="section" n="1">
                <p>
                   <hi rend="decorated-initial">L</hi>i em&pbarre-per;eres<pc type="reg"
                      ana="subordonnee">,</pc> qant il&esp;o&itrem;&esp;ce&point-virg4;si
@@ -1325,17 +1320,25 @@
                      >&apos;</pc>em&pbarre-per;eor en&u-v;oier&etilde-en;t<lb/> a&esp;lui messages
                   del pais<pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;si misent
                   eus&esp;<lb/>&esperluette-et;totes lor choses en&esp;sa&esp;francise. Et
-                  qi&esp;est&esp;<lb/>cil qi&esp;doute qe&esp;ce&esp;ne fust &pbarre-par;
-                  la&esp;&u-v;olent&eacc;&#160;no<lb/>stre &s-maj;ignor<pc type="orig"
-                     ana="coordination">.</pc>&esp;qi ne &u-v;oloit mie qe li seinz hom&esp;<lb/>
-                  alast desarmez en&esp;la&esp;bataille&point-interrogation;Et encore&esp;<lb/>soit
-                  plus nostre <choice>
+                  qi&esp;est&esp;<lb/>cil qi&esp;doute qe&esp;<app>
+                     <lem>ce&esp;ne fust</lem>
+                     <rdg wit="#C2">ce ne fust mie</rdg>
+                  </app>&#160;&pbarre-par; la&esp;<app>
+                     <lem>&u-v;olent&eacc;</lem>
+                     <rdg wit="#C2">vertu</rdg>
+                  </app>&#160;no<lb/>stre &s-maj;ignor<pc type="orig" ana="coordination"
+                  >.</pc>&esp;qi ne &u-v;oloit mie qe li seinz hom&esp;<lb/> alast desarmez <app>
+                     <lem>en</lem>
+                     <rdg wit="#C2">a</rdg>
+                  </app>&esp;la&esp;bataille&point-interrogation;Et encore&esp;<lb/>soit plus nostre <choice>
                      <orig>s</orig>
                      <reg>S</reg>
                   </choice>ires puissanz de garder&esp;<lb/> son che&u-v;alier entre les espees
                   &esperluette-et;les armes&esp;<lb/>de ses anemis&point-virg1;il &u-v;out
-                  qe&esp;la&esp;pes fust ensi<lb/> faite.&esp;De&esp;la se de&pbarre-par;ti
-                     <persName ref="#martin">seinz <choice>
+                  qe&esp;la&esp;pes fust <app>
+                     <lem>ensi<lb/> faite</lem>
+                     <rdg wit="#C2">einsint <del type="exponctué">fu</del> fete</rdg>
+                  </app>.&esp;De&esp;la se de&pbarre-par;ti <persName ref="#martin">seinz <choice>
                         <orig>m</orig>
                         <reg>M</reg>
                      </choice>artins</persName> qant<lb/> il&esp;ot deguerpi
@@ -1376,8 +1379,8 @@
                   erranment et<lb/> sanz demorance.<lb/></p>
             </div>
          </div>
-         <div type="chapter" n="5"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres"
+         <div type="chapter" n="7"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f217, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:5">
             <div type="section" n="1">
                <p>
@@ -1400,33 +1403,39 @@
                         <orig>m</orig>
                         <reg>M</reg>
                      </choice>on<lb/><pc type="reg">-</pc><pb n="104"
-                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres"/><cb
-                        n="c"/><pc type="reg">-</pc>giu</placeName>&point-virg4; <choice>
+                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218"/><cb n="c"/><pc
+                        type="reg">-</pc>giu</placeName>&point-virg4; <choice>
                      <orig>L</orig>
                      <reg>l</reg>
                   </choice>arron &esperluette-et;robeor qi gaitoient <choice>
                      <orig>L</orig>
                      <reg>l</reg>
-                  </choice>es<lb/> trespassanz li corurent seure. Qant&esp;il &u-v;in<lb/>drent
-                  a&esp;lui&deuxpoints-virg4;si hau&c-ced;a li uns une coignie<pc type="orig"
-                     ana="relative">:</pc>&esp;<lb/>q<pc type="reg">&apos;</pc>il&esp;le vout ferir
-                  el chief.&esp;Mes li autres sal<lb/>li a&u-v;ant&point-virg3;si prist son
-                  compaignon &esperluette-et;seisi&esp;<lb/>&pbarre-par;mi les
-                  braz&deuxpoints-virg3;si ne lessa mie le coup desc&etilde-en;<lb/>dre sor le seint
-                  home&deuxpoints-virg3;ainz li lierent les&esp;<lb/>meinz derriere le
-                  dos&point-virg3;si le comanderent&esp;<lb/>a&esp;l<pc type="reg">&apos;</pc>un
-                     d<pc type="reg">'</pc>eus a&esp;garder &esperluette-et;a&esp;tenir.&esp;Et cil
-                     l<pc type="reg">&apos;</pc>en<lb/>mena en&esp;un liu trestorn&eacc;&#160;ensus
-                  de&esp;la &u-v;oie<pc type="orig" ana="coordination"
-                  >.</pc>&esp;<lb/>&esperluette-et;puis si li &neuf-con;men&c-ced;a a&esp;demander
-                  qi il estoit&esp;<lb/>&esperluette-et;de quel creance. <persName ref="#martin"
-                     >Seinz <choice>
-                        <orig>m</orig>
-                        <reg>M</reg>
-                     </choice>artins</persName> li&esp;resp&otilde-on;<lb/>di q<pc type="reg"
-                     >&apos;</pc>il&esp;estoit crestiens. Et cil li demanda&esp;<lb/>s<pc type="reg"
-                     >&apos;</pc>il a&u-v;oit poor &esperluette-et;s<pc type="reg">&apos;</pc>il ert
-                  en grant dotance.&esp;<lb/>
+                  </choice>es<lb/>
+                  <app>
+                     <lem>trespassanz li</lem>
+                     <rdg wit="#C2">trespassanz et li</rdg>
+                  </app> corurent seure. Qant&esp;il &u-v;in<lb/>drent a&esp;lui&deuxpoints-virg4;si
+                  hau&c-ced;a li uns une coignie<pc type="orig" ana="relative">:</pc>&esp;<lb/>q<pc
+                     type="reg">&apos;</pc>il&esp;le vout ferir el chief.&esp;Mes li autres
+                  sal<lb/>li a&u-v;ant&point-virg3;si prist son compaignon
+                  &esperluette-et;seisi&esp;<lb/>&pbarre-par;mi les braz&deuxpoints-virg3;si ne
+                  lessa mie le coup desc&etilde-en;<lb/>dre sor le seint home&deuxpoints-virg3;ainz
+                  li lierent les&esp;<lb/>meinz derriere le dos&point-virg3;si le
+                     comanderent&esp;<lb/>a&esp;l<pc type="reg">&apos;</pc>un d<pc type="reg"
+                  >'</pc>eus a&esp;garder &esperluette-et;a&esp;tenir.&esp;Et cil l<pc type="reg"
+                     >&apos;</pc>en<lb/>mena en&esp;un liu trestorn&eacc;&#160;ensus de&esp;la
+                     &u-v;oie<pc type="orig" ana="coordination">.</pc>&esp;<lb/>&esperluette-et;puis
+                  si li &neuf-con;men&c-ced;a a&esp;demander qi il
+                  estoit&esp;<lb/>&esperluette-et;de quel creance. <app>
+                     <lem><persName ref="#martin">Seinz <choice>
+                              <orig>m</orig>
+                              <reg>M</reg>
+                           </choice>artins</persName> li&esp;resp&otilde-on;<lb/>di q<pc type="reg"
+                           >&apos;</pc>il&esp;estoit crestiens. Et cil li demanda&esp;<lb/>s<pc
+                           type="reg">&apos;</pc>il a&u-v;oit poor &esperluette-et;s<pc type="reg"
+                           >&apos;</pc>il ert en grant dotance.</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;<lb/>
                   <persName ref="#martin">Seinz <choice>
                         <orig>m</orig>
                         <reg>M</reg>
@@ -1460,20 +1469,21 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="6"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres"
+         <div type="chapter" n="8" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:6">
             <!-- Vie de saint Martin de Sulpice Sévère, III, 2 -->
             <div type="section" n="1">
                <p>
-                  <hi rend="decorated-initial">L</hi>ors ramena il <persName ref="#martin">seint <choice>
-                        <orig>m</orig>
-                        <reg>M</reg>
-                     </choice>artin</persName> a<lb/> droite &u-v;oie<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;si le con&u-v;oia
-                  g&nasuscrit-ran;t<lb/> piece<pc type="orig" ana="coordination"
-                  >:</pc>&esp;&esperluette-et;molt li pria q<pc type="reg">&apos;</pc>il orast<lb/>
-                  por lui a&esp;nostre <choice>
+                  <hi rend="decorated-initial">L</hi>ors ramena il <app>
+                     <lem><persName ref="#martin">seint <choice>
+                              <orig>m</orig>
+                              <reg>M</reg>
+                           </choice>artin</persName></lem>
+                     <rdg wit="#C2">seint <del type="exponctué">seint</del> Martin</rdg>
+                  </app> a<lb/> droite &u-v;oie<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;si le con&u-v;oia g&nasuscrit-ran;t<lb/> piece<pc
+                     type="orig" ana="coordination">:</pc>&esp;&esperluette-et;molt li pria q<pc
+                     type="reg">&apos;</pc>il orast<lb/> por lui a&esp;nostre <choice>
                      <orig>s</orig>
                      <reg>S</reg>
                   </choice>ignor. Apr&eacc;s ce se de&pbarre-par;ti<lb/> de <persName ref="#martin"
@@ -1481,26 +1491,39 @@
                   seinte&esp;<lb/>&u-v;ie &esperluette-et;molt religieuse. Adont s<pc type="reg"
                      >&apos;</pc>en ala <lb/>
                   <persName ref="#martin">seinz &m-maj;artins</persName> tote sa&esp;&u-v;oie tant
-                     q<pc type="reg"
-                  >&apos;</pc>il&esp;ot&esp;<lb/>trespass&eacc;&#160;la&esp;cit&eacc;&#160;
-                     de&esp;<placeName ref="#milan">&m-maj;elans</placeName>. Et dont encon<lb/>tra
-                  il en son chemin le deable en samblan<lb/>ce d<pc type="reg">&apos;</pc>ome<pc
-                     type="orig" ana="relative">.</pc>&esp;qi li demanda ou il aloit. <persName
-                     ref="#martin">Seinz&esp; <lb/>&m-maj;artins</persName> li&esp;respondi q<pc
-                     type="reg">&apos;</pc>il aloit la ou la &u-v;o<lb/>lentez nostre &s-maj;ignor
-                  estoit. Li deables li dist<lb/><pc type="reg" ana="DD"> :
-                     </pc><said>&e-maj;n&esp;quel c<pc type="reg">'</pc>onqes liu ou tu
-                     iras&deuxpoints-virg3;ne quel&esp;<lb/>c<pc type="reg">'</pc>onqes chose qe tu
-                     feras&point-virg4;li deables ert<lb/> toz tens encontre toi.</said>&esp;Dont
-                  li&esp;respondi <lb/>
+                     q<pc type="reg">&apos;</pc>il&esp;ot&esp;<lb/><app>
+                     <lem>trespass&eacc;</lem>
+                     <rdg wit="#C2">passé</rdg>
+                  </app>&#160;la&esp;cit&eacc;&#160; de&esp;<placeName ref="#milan"
+                     >&m-maj;elans</placeName>. Et dont encon<lb/>tra il en son chemin le deable en
+                  samblan<lb/>ce d<pc type="reg">&apos;</pc>ome<pc type="orig" ana="relative"
+                  >.</pc>&esp;qi li demanda ou il aloit. <persName ref="#martin">Seinz&esp;
+                     <lb/>&m-maj;artins</persName> li&esp;respondi q<pc type="reg">&apos;</pc>il
+                  aloit la ou la &u-v;o<lb/>lentez nostre &s-maj;ignor estoit. Li deables li
+                     dist<lb/><pc type="reg" ana="DD"> : </pc><said>&e-maj;n&esp;quel c<pc
+                        type="reg">'</pc>onqes liu <app>
+                        <lem>ou</lem>
+                        <rdg wit="#C2" cause="om."/>
+                     </app> tu iras&deuxpoints-virg3;ne quel&esp;<lb/>c<pc type="reg">'</pc>onqes
+                     chose qe tu feras&point-virg4;li deables ert<lb/> toz tens encontre
+                  toi.</said>&esp;Dont li&esp;respondi <lb/>
                   <persName ref="#martin">seinz &m-maj;artins</persName>&#160;&esperluette-et;si
                   dist cest &u-v;er del &s-maj;au<lb/>tier&point-deuxpointsDial;<said who="#martin">
-                     <seg xml:lang="lat">&d-nabbre-dominu;s michi ad&i-j;utoz est<pc type="reg"
-                           >,</pc>&#160;&ñ-non; timebo quid<lb/> faciat michi homo.</seg>
+                     <seg xml:lang="lat">&d-nabbre-dominu;s michi <app>
+                           <lem wit="#C2 #C3">ad&i-j;uto<choice>
+                                 <sic>z</sic>
+                                 <corr type="add">r</corr>
+                              </choice></lem>
+                           <rdg wit="#C1">adjutoz</rdg>
+                        </app> est<pc type="reg">,</pc>&#160;&ñ-non; timebo quid<lb/> faciat michi
+                        homo.</seg>
                      <note><ref target="urn:cts:greekLit:tlg0527.tlg027.perseus-lat1:117.6">Ps.117,
                            6.</ref></note>
                   </said> Ce est a&esp;dire nostre &s-maj;i<lb/>res est mes
-                  aidieres&deuxpoints-virg1;&i-j;e ne cremirai cho<lb/><pc type="reg">-</pc>
+                  aidieres&deuxpoints-virg1;&i-j;e ne <app>
+                     <lem>cremirai</lem>
+                     <rdg wit="#C2">criembre</rdg>
+                  </app> cho<lb/><pc type="reg">-</pc>
                   <cb n="d"/><pc type="reg">-</pc>se qe nus hom me face. Et meintenant<lb/> s<pc
                      type="reg">&apos;</pc>es&u-v;anui li deables de de&u-v;ant lui. <choice>
                      <orig>l</orig>
@@ -1511,16 +1534,21 @@
                   >.</pc>&esp;&esperluette-et;a&esp;la&esp;&u-v;raie creance del seint<lb/>
                   baptesme. Et cest desirrier a&u-v;oit il&esp;e&utrem;&esp;<lb/>mout longement
                   en&esp;sa pensee &esperluette-et;pluisors<lb/> autres torna il a&esp;sau&u-v;ement
-                  de&esp;lor ames&esp;<lb/>&pbarre-par;&esp;son example. Mes apr&eacc;s
-                  ce&esp;&u-v;int la mal<lb/>&u-v;ese secce d<pc type="reg">&apos;</pc>erisie<pc
-                     type="orig" ana="relative">.</pc>&esp;qi pres fu espandue
-                  &pbarre-par;&esp;<lb/>tout le monde<pc type="orig" ana="relative">:</pc>&esp;<choice>
+                  de&esp;lor ames&esp;<lb/>&pbarre-par;&esp;son example. Mes <app>
+                     <lem>apr&eacc;s ce&esp;&u-v;int</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> la mal<lb/>&u-v;ese secce d<pc type="reg">&apos;</pc>erisie<pc type="orig"
+                     ana="relative">.</pc>&esp;qi pres fu espandue &pbarre-par;&esp;<lb/>tout le
+                     monde<pc type="orig" ana="relative">:</pc>&esp;<choice>
                      <orig>D</orig>
                      <reg>d</reg>
-                  </choice>ont <persName ref="#arius"><choice>
-                        <orig>a</orig>
-                        <reg>A</reg>
-                     </choice>rrius</persName> li escomeniez&esp;<lb/>fu
+                  </choice>ont <app>
+                     <lem><persName ref="#arius"><choice>
+                              <orig>a</orig>
+                              <reg>A</reg>
+                           </choice>rrius</persName></lem>
+                     <rdg wit="#C2">Arriens</rdg>
+                  </app> li escomeniez&esp;<lb/>fu
                      chi&eacc;s&#160;&esperluette-et;mestre&deuxpoints-point;<persName ref="#martin"
                      >Seinz &m-maj;artins</persName> li preu<lb/>dom se combatoit trestoz seus
                   contre les<lb/> prestres<pc type="orig">.</pc>&esp;&esperluette-et;contre les
@@ -1538,15 +1566,17 @@
                      <choice>
                         <orig>&#7823;</orig>
                         <reg>Y</reg>
-                     </choice>laire</persName> q<pc type="reg">&apos;</pc>il a&u-v;oit
-                  est&eacc;&#160; mout troblez<pc type="orig" ana="segPrep">.</pc> par<lb/> les
-                  herites qi&esp;la mal&u-v;ese lo&ypoint; ensi&u-v;oient<pc type="reg"
+                     </choice>laire</persName> q<pc type="reg">&apos;</pc><app>
+                     <lem>il a&u-v;oit</lem>
+                     <rdg wit="#C2">il a avoit</rdg>
+                  </app> est&eacc;&#160; mout troblez<pc type="orig" ana="segPrep">.</pc> par<lb/>
+                  les herites qi&esp;la mal&u-v;ese lo&ypoint; ensi&u-v;oient<pc type="reg"
                      ana="finPhrase">.</pc><lb/>
                </p>
             </div>
          </div>
-         <div type="chapter" n="7"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219.highres"
+         <div type="chapter" n="9"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f218, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:7">
             <!-- Vie de saint Martin de Sulpice Sévère, III, 3 -->
             <div type="section" n="1">
@@ -1561,10 +1591,12 @@
                      ref="#poitiers"><choice>
                         <orig>p</orig>
                         <reg>P</reg>
-                     </choice>oi<lb/>tiers</placeName><pc type="orig" ana="CC"
-                  >.</pc>&esp;fist&esp;il une ceaille pour&esp;<lb/> arrester<pc type="orig"
-                     ana="coordination">:</pc>&esp; &esperluette-et;por mener seinte &u-v;ie.&esp;Et
-                  la &u-v;&itilde-in;t&esp;<lb/>uns hom ensamble o&esp;lui qi presigniez <lb/>
+                     </choice>oi<lb/>tiers</placeName><pc type="orig" ana="CC">.</pc>&esp;fist&esp;<app>
+                     <lem>il</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> une ceaille pour&esp;<lb/> arrester<pc type="orig" ana="coordination"
+                     >:</pc>&esp; &esperluette-et;por mener seinte &u-v;ie.&esp;Et la
+                  &u-v;&itilde-in;t&esp;<lb/>uns hom ensamble o&esp;lui qi presigniez <lb/>
                      estoit<pc type="orig" ana="coordination">.</pc>&esp;ne n<pc type="reg"
                      >&apos;</pc>a&u-v;oit encore rece&utrem; baptesme. <lb/> &s-maj;i demora entor
                   lui&point-virg4;por ce q<pc type="reg">&apos;</pc>il &u-v;oloit estre <lb/>
@@ -1581,7 +1613,10 @@
                      ana="subordonnee">,</pc> il <lb/> tro&u-v;a le cors de celui
                   morz&point-virg3;si ert soudai<lb/>nement morz q<pc type="reg">&apos;</pc>il n<pc
                      type="reg">&apos;</pc>a&u-v;oit mie rece&utrem;&esp; <lb/>baptesme. Li cors
-                  estoit mis enmi la <lb/> cheaille<pc type="orig" ana="coordination"
+                  estoit mis <app>
+                     <lem>enmi</lem>
+                     <rdg wit="#C2">en</rdg>
+                  </app> la <lb/> cheaille<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;li frere estoient en&u-v;iron qi <lb/> le&esp;service
                   fesoient tot em&esp;plorant&point-virg3;car <lb/> bien sachiez q<pc type="reg"
                      >&apos;</pc>il i&esp;a&u-v;oit seinz homes &esperluette-et;pro<lb/>domes
@@ -1592,7 +1627,7 @@
                   &esperluette-et;lor bon pere. Qant li&esp;seinz&esp; <lb/>hom &u-v;it celui
                   qi&esp;morz estoit en&esp;tele ma<lb/>niere&deuxpoints-virg4;il fu mout
                   dolenz&point-virg3;si &neuf-con;men&c-ced;a a&esp;plo<pc type="reg">-</pc><lb/>
-                  <pb n="105" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219.highres"/>
+                  <pb n="105" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219"/>
                   <cb n="a"/><pc type="reg">-</pc>rer&point-virg4;<choice>
                      <orig>P</orig>
                      <reg>p</reg>
@@ -1617,26 +1652,37 @@
                   molt tost dedenz la&esp;<lb/>ceaille&point-virg3;si esgarderent a&esp;grant
                   mer&u-v;eille&esp;<lb/>celui qe il &u-v;eoient &u-v;i&u-v;re<pc type="orig"
                      ana="relative">.</pc>&esp;cui il a&u-v;oient&esp;<lb/>lessi&eacc;&#160;n<pc
-                     type="reg">&apos;</pc>a&u-v;oit se pou non de&u-v;ant sans&esp;&u-v;ie. <lb/>
+                     type="reg">&apos;</pc>a&u-v;oit se pou non <app>
+                     <lem>de&u-v;ant</lem>
+                     <rdg wit="#C2">de tens</rdg>
+                  </app> sans&esp;&u-v;ie. <lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div n="10" type="chapter">
+            <div type="section" n="1">
                <p>
                   <hi rend="decorated-initial">A</hi><choice>
                      <orig>I</orig>
                      <reg>i</reg>
-                  </choice>nsi rot cil &u-v;ie par la proiere de&esp;<lb/>
+                  </choice>nsi <app>
+                     <lem>rot</lem>
+                     <rdg wit="#C2">ot</rdg>
+                  </app> cil &u-v;ie par la proiere de&esp;<lb/>
                   <persName ref="#martin">seint &m-maj;artin</persName><pc type="orig"
                      ana="coordination">:</pc>&esp; &esperluette-et;fu resuscitez
                   &esperluette-et;<lb/>apr&eacc;s fu baptizi&eacc;s en me&itrem;smes&esp;<lb/>l<pc
                      type="reg">&apos;</pc>eure<pc type="orig"
                   >.</pc>&esp;&esperluette-et;&esp;&u-v;esqui grant tenz &esperluette-et;mena seinte
-                  <lb/>&u-v;ie. Et ce fu de <persName ref="#martin">seint &m-maj;artin</persName>
-                  li&esp;premerains&esp;<lb/> miracles.&esp;Apr&eacc;s ce n<pc type="reg"
-                     >&apos;</pc>ot mie lonc tens&point-virg4;si c&otilde-om;&esp;<lb/>li seinz hom
-                  trespassoit un &i-j;our<pc type="orig" ana="segPrep">.</pc>&esp;par
-                  de&u-v;ant&esp;<lb/>la meson d<pc type="reg">&apos;</pc>un riche home
-                  &esperluette-et;preudome solonc&esp;<lb/>le siecle qi&esp;<persName ref="#lupicin"><choice>
+                  <lb/>&u-v;ie. Et ce fu <app>
+                     <lem>de <persName ref="#martin">seint &m-maj;artin</persName>
+                        li&esp;premerains&esp;<lb/> miracles</lem>
+                     <rdg wit="#C2">le premier miracle seint Martin</rdg>
+                  </app>.&esp;Apr&eacc;s ce n<pc type="reg">&apos;</pc>ot mie lonc
+                  tens&point-virg4;si c&otilde-om;&esp;<lb/>li seinz hom trespassoit un &i-j;our<pc
+                     type="orig" ana="segPrep">.</pc>&esp;par de&u-v;ant&esp;<lb/>la meson d<pc
+                     type="reg">&apos;</pc>un riche home &esperluette-et;preudome solonc&esp;<lb/>le
+                  siecle qi&esp;<persName ref="#lupicin"><choice>
                         <orig>l</orig>
                         <reg>L</reg>
                      </choice>upecines</persName> estoit apelez par non&point-virg4; <lb/>il
@@ -1645,8 +1691,11 @@
                   i&esp;demenoient&deuxpoints-point;Il i&esp;torna<pc type="reg" ana="coordination"
                      >,</pc> si deman<lb/>da qe ce pooit estre&deuxpoints-virg3;
                      &esperluette-et;l<pc type="reg">&apos;</pc>en li dist &esperluette-et;conta
-                  qe&esp;<lb/>uns ser&i-j;anz si estoit estranglez a&esp;un laz <lb/> d<pc
-                     type="reg">&apos;</pc>une corde<pc type="orig" ana="coordination"
+                  qe&esp;<lb/>uns ser&i-j;anz <app>
+                     <lem>si estoit</lem>
+                     <rdg wit="#C2">s'estoit</rdg>
+                  </app> estranglez a&esp;un laz <lb/> d<pc type="reg">&apos;</pc>une corde<pc
+                     type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;tolue&esp;la&esp;&u-v;ie. Qant ce o&itrem;&esp;li
                   se&itilde-in;z&esp;<lb/>hom&point-virg4;il&esp;ala en&esp;la meson ou li&esp;cors
                   gisoit morz&deuxpoints-point;<lb/>Lors fist issir toz cels qi en l<pc type="reg"
@@ -1662,8 +1711,8 @@
                   la&esp;<lb/>estoient&esp;ausint.<lb/></p>
             </div>
          </div>
-         <div type="chapter" n="8"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220.highres"
+         <div type="chapter" n="11"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f219, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:9-10">
             <!-- Vie de saint Martin de Sulpice Sévère, IV, 1-2 -->
             <div type="section" n="1" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:9">
@@ -1682,9 +1731,12 @@
                      <reg>t</reg>
                   </choice>ant q&apos-ue;&esp;<lb/>uns bor&i-j;ois de&esp;la&esp;cit&eacc;&#160;qi
                   molt estoit prodom&esp;<lb/>&esperluette-et;sages&deuxpoints-virg5; <persName
-                     ref="#rurtius">Rurtius</persName> a&u-v;oit non&deuxpoints-virg5;&u-v;int
-                  a&esp;lui &esperluette-et;<lb/>si s<pc type="reg">&apos;</pc>a&i-j;enoilla
-                  en&esp;sa presence&deuxpoints-virg3;si li proia molt&esp;<lb/>
+                     ref="#rurtius">Rurtius</persName>&#160;
+                  <app>
+                     <lem>a&u-v;oit non</lem>
+                     <rdg wit="#C2">avoit a non</rdg>
+                  </app>&deuxpoints-virg5;&u-v;int a&esp;lui &esperluette-et;<lb/>si s<pc type="reg"
+                     >&apos;</pc>a&i-j;enoilla en&esp;sa presence&deuxpoints-virg3;si li proia molt&esp;<lb/>
                   <cb n="b"/>
                   <choice>
                      <orig>D</orig>
@@ -1728,8 +1780,10 @@
                   &esperluette-et;de&esp;<lb/> po&u-v;re persone. Mes li pueples qi ce o<lb/>oit
                   &esperluette-et;entendoit les blasmoit por ce qu<pc type="reg"
                   >&apos;</pc>il&esp;<lb/>despisoient le seint home<pc type="orig" ana="relative"
-                     >.</pc>&esp;por cui amor&esp;<lb/>nostre &s-maj;ires a&u-v;oit &i-j;a fait
-                  meint miracle&esp;<lb/>ne&esp;ne lut as&esp;e&u-v;esqes autre chose
+                     >.</pc>&esp;por cui amor&esp;<lb/>nostre &s-maj;ires <app>
+                     <lem>a&u-v;oit &i-j;a fait</lem>
+                     <rdg wit="#C2">ja fet avoit</rdg>
+                  </app> meint miracle&esp;<lb/>ne&esp;ne lut as&esp;e&u-v;esqes autre chose
                   faire&esp;<lb/>qe&esp;ce qe li pueples &u-v;out. Donc fu&esp;ordenez <lb/>
                   a&esp;e&u-v;esqe en&esp;la cit&eacc;&#160;de&esp;<placeName ref="#tours"><choice>
                         <orig>t</orig>
@@ -1738,15 +1792,22 @@
                   <choice>
                      <orig>n</orig>
                      <reg>N</reg>
-                  </choice>e onqes por la seignorie qi&esp;li estoit cre&utrem;e<pc type="orig"
-                     ana="relative">.</pc>&esp;<lb/>ne s<pc type="reg">&apos;</pc>en orguelli
-                  en&esp;nule chose&deuxpoints-virg3;ains a&u-v;oit&esp;<lb/>cele me&itrem;smes
-                  humilit&eacc;&#160;qe&esp;il de&u-v;ant a&u-v;oit&esp;<lb/>e&utrem;e en son
-                     cuer<pc ana="coordination" type="orig">.</pc>&esp;ne&esp;ne chan&i-j;a sa
-                     &u-v;este&utrem;re<pc type="orig" ana="coordination"
-                  >.</pc>&esp;<lb/>&esperluette-et;en&esp;abit de&esp;moigne meintenoit il l<pc
-                     type="reg">&apos;</pc>e&u-v;es<lb/>chi&eacc;. Et por la&esp;grant presse
-                  &esperluette-et;por les granz&esp;<lb/>torbes des genz qi a&esp;lui
+                  </choice>e onqes por la seignorie qi&esp;<app>
+                     <lem>li</lem>
+                     <rdg wit="#C2">en lui</rdg>
+                  </app> estoit cre&utrem;e<pc type="orig" ana="relative">.</pc>&esp;<lb/>ne s<pc
+                     type="reg">&apos;</pc>en orguelli en&esp;nule chose&deuxpoints-virg3;ains
+                  a&u-v;oit&esp;<lb/>cele me&itrem;smes humilit&eacc;&#160;qe&esp;il de&u-v;ant
+                  a&u-v;oit&esp;<lb/>e&utrem;e en son cuer<pc ana="coordination" type="orig"
+                  >.</pc>&esp;ne&esp;ne chan&i-j;a sa &u-v;este&utrem;re<pc type="orig"
+                     ana="coordination">.</pc>&esp;<lb/>&esperluette-et;<app>
+                     <lem>en&esp;abit</lem>
+                     <rdg wit="#C2">en l'abit</rdg>
+                  </app> de&esp;moigne meintenoit <app>
+                     <lem>il</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> l<pc type="reg">&apos;</pc>e&u-v;es<lb/>chi&eacc;. Et por la&esp;grant
+                  presse &esperluette-et;por les granz&esp;<lb/>torbes des genz qi a&esp;lui
                      &u-v;enoient<pc type="orig" ana="relative">.</pc>&esp;fist il&esp;<lb/>un
                   mostier &esperluette-et;un habitacle a&esp;son o&eacc;s<pc type="orig"
                      ana="segPrep">:</pc>&esp;por&esp;<lb/>demorer ensus
@@ -1756,89 +1817,120 @@
                      ana="coordination" type="orig">.</pc>&esp;ne&esp;autre
                      leu&esp;<lb/>a&u-v;oir<pc type="orig" ana="segPrep">.</pc>&esp;por mener
                   &u-v;ie solitaire&point-virg3;car d<pc type="reg">&apos;</pc>une&esp;<lb/>part
-                  estoient les hautes montaignes de&esp;<lb/>la roche na&itrem;&u-v;e<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;de l<pc type="reg"
-                  >&apos;</pc>autre part de&u-v;ers <lb/>la plaigne estoit la ri&u-v;iere de
-                     <placeName ref="#loire"><choice>
-                        <orig>l</orig>
-                        <reg>L</reg>
-                     </choice>oire</placeName> qui&esp;<lb/>le leu a&u-v;oit enclos d<pc type="reg"
-                     >&apos;</pc>une part &esperluette-et;d<pc type="reg">&apos;</pc>autre&esp;<lb/>
-                     tresq<pc type="reg">&apos;</pc>a la montaigne&deuxpoints-virg3;<choice>
+                  estoient les <app>
+                     <lem>hautes montaignes</lem>
+                     <rdg wit="#C2">montaignes hautes</rdg>
+                  </app> de&esp;<lb/>la roche na&itrem;&u-v;e<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;de l<pc type="reg">&apos;</pc>autre part de&u-v;ers
+                  <lb/>la plaigne estoit la ri&u-v;iere de <app>
+                     <lem><placeName ref="#loire"><choice>
+                              <orig>l</orig>
+                              <reg>L</reg>
+                           </choice>oire</placeName></lem>
+                     <rdg wit="#C2">Laire</rdg>
+                  </app> qui&esp;<lb/>le leu a&u-v;oit enclos d<pc type="reg">&apos;</pc>une part
+                     &esperluette-et;d<pc type="reg">&apos;</pc>autre&esp;<lb/> tresq<pc type="reg"
+                     >&apos;</pc>a la montaigne&deuxpoints-virg3;<choice>
                      <orig>N</orig>
                      <reg>n</reg>
                   </choice>e&esp;n<pc type="reg">'</pc>i pooit l<pc type="reg"
                   >&apos;</pc>en&esp;<lb/> aler ne aprochier&esp;<pc type="orig" ana="segPrep"
-                     >.</pc>&esp;fors qe d<pc type="reg">&apos;</pc>une &pbarre-par;t d<pc
+                     >.</pc>&esp;fors <app><lem>qe</lem><rdg wit="#C2" cause="om."/></app> d<pc type="reg">&apos;</pc>une &pbarre-par;t d<pc
                      type="reg"
                   >&apos;</pc>une&esp;<lb/>&u-v;oie&deuxpoints-virg5;&esperluette-et;cele &u-v;oie
-                  me&itrem;smes estoit &mlt; es&t-oexp-tro;ite.<lb/>
+                  me&itrem;smes estoit <app>
+                     <lem>&mlt;</lem>
+                     <rdg wit="#C2">molt forment</rdg>
+                  </app> es&t-oexp-tro;ite.<lb/>
                </p>
             </div>
-            <div type="section" n="2" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:10">
+         </div>
+         <div n="12" type="chapter">
+            <div type="section" n="1" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:10">
                <p><hi rend="decorated-initial">L</hi>a a&u-v;oit fet <persName ref="#martin">seinz
-                     &m-maj;artins</persName> li&esp;se&itilde-in;z<lb/> hom une mesoncele de bois et<lb/>
-                  <pb n="105" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220.highres"/>
+                     &m-maj;artins</persName> li&esp;se&itilde-in;z<lb/> hom une <app>
+                     <lem>mesoncele</lem>
+                     <rdg wit="#C2">meson tele</rdg>
+                  </app> de bois et<lb/>
+                  <pb n="105" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220"/>
                   <cb n="c"/> nient <choice>
                      <orig>D</orig>
                      <reg>d</reg>
                   </choice><pc type="reg">'</pc>autre chose&deuxpoints-point;Li&esp;pluiseur
                   de&esp;ses&esp;<lb/>freres qi deciple estoient a&esp;lui<pc type="orig"
-                     ana="coordination">:</pc>&esp;&esperluette-et;qi&esp;l<pc type="reg"
-                  >'</pc>amoi<lb/>ent &esperluette-et;sa&esp;doctrine<pc type="orig" ana="relative"
-                     >:</pc>&esp;a&u-v;oient fetes lor mai<lb/>sonceles<pc type="orig"
-                  >.</pc>&esp;&esperluette-et;lor habitations en&u-v;iron le <lb/> seint home sor la
-                     montaigne<pc type="orig" ana="relative">.</pc>&esp;qi
-                  che&utrem;e&esp;<lb/>estoit.&esp;Li seinz hom a&u-v;oit&esp;<pc ana="number"
-                     >.</pc><seg type="number">iiii</seg><pc ana="number">.</pc>&esp;freres
-                  qi&esp;<lb/>estoient
-                  enseigni&eacc;&#160;&esperluette-et;doctrin&eacc;&#160;de&esp;par son&esp;<lb/>example&point-virg3;<choice>
+                     ana="coordination">:</pc>&esp;&esperluette-et;qi&esp;<app>
+                     <lem>l<pc type="reg">'</pc>amoi<lb/>ent</lem>
+                     <rdg wit="#C2">l'enmoient</rdg>
+                  </app>&#160;&esperluette-et;sa&esp;doctrine<pc type="orig" ana="relative"
+                  >:</pc>&esp;a&u-v;oient fetes <app>
+                     <lem>lor</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> mai<lb/>sonceles<pc type="orig">.</pc>&esp;&esperluette-et;lor habitations
+                  en&u-v;iron le <lb/> seint home sor la montaigne<pc type="orig" ana="relative"
+                     >.</pc>&esp;qi che&utrem;e&esp;<lb/>estoit.&esp;Li seinz hom a&u-v;oit&esp;<pc
+                     ana="number">.</pc><seg type="number">iiii</seg><pc ana="number"
+                  >.</pc>&esp;freres qi&esp;<lb/>estoient enseigni&eacc;&#160;&esperluette-et;<app>
+                     <lem>doctrin&eacc;</lem>
+                     <rdg wit="#C2">endoctriné</rdg>
+                  </app>&#160;de&esp;par son&esp;<lb/>example&point-virg3;<choice>
                      <orig>N</orig>
                      <reg>n</reg>
                   </choice>e nus n<pc type="reg">'</pc>i a&u-v;oit proprietet&deuxpoints-virg3;<lb/>
-                  einz estoient en communit&eacc;&#160;mises to<lb/>tes lor choses&point-virg3; <choice>
+                  einz estoient en communit&eacc;&#160;mises <app>
+                     <lem>to<lb/>tes</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> lor choses&point-virg3; <choice>
                      <orig>N</orig>
                      <reg>n</reg>
                   </choice>e&esp;il ne &u-v;endoient ne&esp;n<pc type="reg">'</pc>a<lb/>chatoient si
                   com il font ore pluisor moi<lb/>ne<choice>
                      <orig>:</orig>
                      <reg>,&esp;</reg>
-                  </choice> ne&esp;ne se tra&u-v;eilloient en nule ma<lb/>niere fors seulement d<pc
-                     type="reg">'</pc>escritures<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;a<lb/> cele oe&u-v;re s<pc type="reg">'</pc>estoient
-                  mis li &i-j;o&u-v;encel<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;&esp;<lb/>li&esp;ancien erent en abstinence par
-                  le&esp;<lb/> &neuf-con;mant de lor seint pere<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;si erent ad&eacc;s&esp;<lb/>en orissons en&u-v;ers
-                  nostre &s-maj;ignor &esperluette-et;en <lb/> proieres. Et petit issoit onqes nus
-                  de sa <lb/> ceaille s<pc type="reg">'</pc>il ne s<pc type="reg">'</pc>assembloient
-                     au&esp;mostier<pc type="orig" ana="segPrep">.</pc>&esp;<lb/>por feire lor
-                  orissons ensamble.&esp;Tuit ma<lb/>noient ensamble qant l<pc type="reg">'</pc>eure
-                  estoit &u-v;enue&point-virg4;<lb/>apr&eacc;s ce qu<pc type="reg">'</pc>il
-                  a&u-v;oient geun&eacc;&point-virg4;n<pc type="reg">'</pc>i a&u-v;oit ce<lb/>lui qi
-                  de &u-v;in i&esp;gostast onqes&deuxpoints-virg4;s<pc type="reg"
+                  </choice> ne&esp;ne se tra&u-v;eilloient en nule ma<lb/>niere <app>
+                     <lem>fors seulement d<pc type="reg">'</pc>escritures</lem>
+                     <rdg wit="#C2">fors par escriptures seulement</rdg>
+                  </app><pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;a<lb/> cele
+                  oe&u-v;re s<pc type="reg">'</pc>estoient mis li &i-j;o&u-v;encel<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;&esp;<lb/>li&esp;ancien erent en
+                  abstinence par le&esp;<lb/> &neuf-con;mant de lor seint pere<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;si erent ad&eacc;s&esp;<lb/>en
+                  orissons en&u-v;ers nostre &s-maj;ignor &esperluette-et;en <lb/> proieres. Et
+                  petit issoit onqes nus de sa <lb/> ceaille s<pc type="reg">'</pc>il ne s<pc
+                     type="reg">'</pc>assembloient au&esp;mostier<pc type="orig" ana="segPrep"
+                     >.</pc>&esp;<lb/>por feire lor orissons ensamble.&esp;Tuit ma<lb/>noient
+                  ensamble qant l<pc type="reg">'</pc>eure estoit
+                  &u-v;enue&point-virg4;<lb/>apr&eacc;s ce qu<pc type="reg">'</pc>il a&u-v;oient
+                     geun&eacc;&point-virg4;n<pc type="reg">'</pc>i a&u-v;oit ce<lb/>lui qi de
+                  &u-v;in i&esp;gostast onqes&deuxpoints-virg4;s<pc type="reg"
                   >'</pc>enfermetez&esp;<lb/>ne le destreignoit ou trop granz maladie.&esp;<lb/>Tuit
-                  estoient &u-v;estuz de &u-v;este&utrem;res faites <lb/> de&esp;poil
-                     de&esp;chamel<pc type="orig" ana="relative">:</pc>&esp;qi mout estoient
+                  estoient &u-v;estuz de &u-v;este&utrem;res faites <lb/> de&esp;<app>
+                     <lem>poil</lem>
+                     <rdg wit="#C2">soie</rdg>
+                  </app> de&esp;chamel<pc type="orig" ana="relative">:</pc>&esp;qi mout estoient
                   as<lb/>pres &esperluette-et;dures. Et com plus estoient
                   soe&u-v;es&esp;<lb/>&esperluette-et;moles tant erent eles entr<pc type="reg"
-                     >'</pc>eus plus &u-v;i&apos-us;&esp;<lb/>tenues. Si a&u-v;oit ensamble o eus
-                  mout&esp;<lb/>de hauz homes qi molt e&utrem;ssent bien al&esp;<lb/>siecle lor
-                     &u-v;olentez<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;lor
-                  deliz d<pc type="reg">'</pc>endroit lor <lb/>cors<pc type="orig" ana="relative"
-                     >:</pc> qi estoient a cele
+                     >'</pc>eus <app>
+                     <lem>plus</lem>
+                     <rdg wit="#C2">por plus</rdg>
+                  </app>&#160;&u-v;i&apos-us;&esp;<lb/>tenues. Si a&u-v;oit ensamble o eus
+                  mout&esp;<lb/>de hauz homes qi molt <app>
+                     <lem>e&utrem;ssent</lem>
+                     <rdg wit="#C2">feïssent</rdg>
+                  </app> bien al&esp;<lb/>siecle lor &u-v;olentez<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;lor deliz d<pc type="reg">'</pc>endroit lor
+                     <lb/>cors<pc type="orig" ana="relative">:</pc> qi estoient a cele
                   humilit&eacc;&#160;&esperluette-et;a&esp;cele&esp;<lb/>pacience &u-v;enu<pc
                      type="orig" ana="segPrep">:</pc>&esp;por l<pc type="reg">'</pc>amor nostre
                   &s-maj;ignor&esp;<lb/> conqerre. Et&esp;apr&eacc;s&esp;ce furent
-                  li&esp;pluiseur&esp;<lb/>des e&u-v;esqes par&esp;pluiseurs leus
+                  li&esp;pluiseur&esp;<lb/><app><lem>des</lem><rdg wit="#C2">d'eus</rdg></app> e&u-v;esqes <app><lem>par&esp;pluiseurs leus
                   &esperluette-et;seins&esp;<lb/>homes.&esp;Et qele citez fust ce qi ne
-                  co&u-v;oitast&esp;<lb/>a&esp;a&u-v;oir e&u-v;esqe des clers mon signeur&esp;<pc
+                  co&u-v;oitast&esp;<lb/>a&esp;a&u-v;oir e&u-v;esqe</lem><rdg wit="#C2" cause="om."/></app> des clers mon<pc type="orig" ana="mot">&#160;</pc>signeur&esp;<pc
                      type="orig" ana="abreviation">.</pc><persName ref="#martin">&s-saint;<pc
                         type="orig" ana="abreviation">.</pc>&esp;<lb/> &m-maj;artin</persName> qi en
                   son mostier estoient&deuxpoints-interrogation; Mon <lb/> essient qe ce ne fust ne
                   citez ne eglisse ou <lb/> l<pc type="reg">'</pc>en e&utrem;st talent de&esp;bien
                      fere<pc type="orig" ana="subCorr">.</pc>&esp;tel &u-v;ie
-                  com&esp;<lb/>il&esp;menoient cil qi ensamble mon signeur <lb/>
+                  com&esp;<lb/>il&esp;menoient cil qi ensamble mon<pc type="orig" ana="mot">&#160;</pc>signeur <lb/>
                   <persName ref="#martin">seint &m-maj;artin</persName> estoient en
                   compaignie&deuxpoints-virg4;<lb/>com &i-j;e voz
                   ai&esp;dite&deuxpoints-virg8;&esperluette-et;tout &pbarre-par;&esp;l<pc type="reg"
@@ -1864,7 +1956,7 @@
                      <orig>C</orig>
                      <reg>c</reg>
                   </choice>ar par les seig<lb/>nors qi poest&eacc;&#160;ont
-                     &esperluette-et;signorie<pc type="orig" ana="segPrep">:</pc>&esp;empire li
+                     &esperluette-et;signorie<pc type="orig" ana="segPrep">:</pc>&esp;empire <app><lem>li</lem><rdg wit="#C2">toz les</rdg></app>
                   siecles&esp;<lb/>&esperluette-et;&u-v;a a&esp;honte&point-virg3;<lg n="1">
                      <l n="1"><choice>
                            <orig>c</orig>
@@ -1917,10 +2009,13 @@
                      <l n="17">Ne&esp;qui ne cuident &i-j;a finir<pc type="orig" ana="coordination"
                            >.</pc>&esp;</l>
                      <lb/>
-                     <l n="18">Ne&esp;de cest siecle departir.&esp;</l>
+                     <l n="18">Ne&esp;de <app><lem>cest</lem><rdg wit="#C2">ce</rdg></app> siecle departir.&esp;</l>
                      <lb/>
                   </lg>
-                  <hi rend="decorated-initial">A</hi>&esp;ce ne p&etilde-en;soient mie
+               </p>
+            </div>
+            <div n="2" type="section">
+               <p><hi rend="decorated-initial">A</hi>&esp;ce ne p&etilde-en;soient mie
                   li&esp;deciple <persName ref="#martin">seint <lb/>&m-maj;artin</persName><choice>
                      <orig>:</orig>
                      <reg>,&esp;</reg>
@@ -1952,8 +2047,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="9"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221.highres"
+         <div type="chapter" n="13"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:11">
             <!-- Vie de saint Martin de Sulpice Sévère, IV, 3. -->
             <head>Miracles de seint Martin</head>
@@ -1980,7 +2075,7 @@
                   por <lb/> ce i&esp;a&u-v;oient il&esp;fait une egl&ypoint;se molt
                   bele&esp;&esperluette-et;<lb/>mout bien atornee&deuxpoints-virg4;q<pc type="reg"
                      >'</pc>il cuidoient q<pc type="reg">'</pc>il fust&esp;<lb/>
-                  <pb n="106" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221.highres"/>
+                  <pb n="106" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221"/>
                   <cb n="a"/><choice>
                      <orig>M</orig>
                      <reg>m</reg>
@@ -2007,7 +2102,9 @@
                   mart&ypoint;re ne sa&u-v;oient&esp;il nu<lb/>le chose.<lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div n="14" type="chapter">
+            <div type="section" n="1">
                <p>
                   <hi rend="decorated-initial">Q</hi><choice>
                      <orig>U</orig>
@@ -2062,8 +2159,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="10"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220.highres"
+         <div type="chapter" n="15" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f220"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:12">
             <!-- Vie de saint Martin de Sulpice Sévère, V, 1 -->
             <head>Si com <persName ref="#martin">seinz &m-maj;artins</persName> resuscita un
@@ -2137,8 +2233,8 @@
                <lb/>
             </div>
          </div>
-         <div type="chapter" n="11"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f222.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223.highres"
+         <div type="chapter" n="16"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f221, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f222, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:13">
             <!-- Vie de saint Martin de Sulpice Sévère, V, 2 -->
             <head>Un autre miracle</head>
@@ -2153,7 +2249,7 @@
                      <reg>,&esp;</reg>
                   </choice>la&esp;ou li paien aoroient<pc type="orig"
                   >.</pc>&esp;<lb/>&esperluette-et;faisoient a&esp;lor dex sacrefice&apos-s;&point-virg3;<lb/>
-                  <pb n="106" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f222.highres"/>
+                  <pb n="106" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f222"/>
                   <cb n="c"/><choice>
                      <orig>C</orig>
                      <reg>c</reg>
@@ -2311,7 +2407,7 @@
                      type="reg">'</pc>es<lb/>toit nus leus en&esp;la&esp;terre ou&esp;il e&utrem;st
                   chastel <lb/> ne &u-v;ile<pc type="orig" ana="relative">.</pc> q<pc type="reg"
                      >'</pc>il n<pc type="reg">'</pc>i fe&itrem;st mostier ou egl&ypoint;se la&esp;ou<lb/>
-                  <pb n="107" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223.highres"/>
+                  <pb n="107" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223"/>
                   <cb n="a"/> cil de&esp;la&esp;contree <choice>
                      <orig>F</orig>
                      <reg>f</reg>
@@ -2322,8 +2418,7 @@
                      type="orig">.</pc>&esp;&esperluette-et;<lb/> a&esp;&u-v;raie creance.&esp;</p>
             </div>
          </div>
-         <div type="chapter" n="12"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223.highres"
+         <div type="chapter" n="17" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:14">
             <!-- Vie de saint Martin de Sulpice Sévère, V, 3 -->
             <head>Si com il ardi&esp;<choice>
@@ -2378,7 +2473,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="13">
+         <div type="chapter" n="18">
             <head>Si com il abati <choice>
                   <orig>•I•</orig>
                   <reg>un</reg>
@@ -2466,8 +2561,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="14"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224.highres"
+         <div type="chapter" n="19"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f223, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:15">
             <!-- Vie de saint Martin de Sulpice Sévère, V, 4 -->
             <div type="section" n="1">
@@ -2501,15 +2596,14 @@
                   &esperluette-et;maumis. Et&esp;si com il gisoit&esp;<lb/>en&esp;tel
                   maniere&point-virg4; il proia au&esp;seint home &pbarre-par;&esp;<lb/>la
                   &u-v;olent&eacc;&#160; de&esp;nostre &s-maj;ignor &pbarre-par;don &esperluette-et;a&itrem;de.<lb/>
-                  <pb n="107" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224.highres"/>
+                  <pb n="107" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224"/>
                   <cb n="c"/> Et par ceste chose fu&esp;il con&u-v;ertis a&esp;foi <lb/> et
                   a&esp;creance.<lb/>
                </p>
             </div>
          </div>
 
-         <div type="chapter" n="15"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224.highres"
+         <div type="chapter" n="20" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:15">
             <head>Un autre miracle</head>
             <div type="section" n="1">
@@ -2558,8 +2652,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="16"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224.highres"
+         <div type="chapter" n="21" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:16">
             <!-- Vie de saint Martin de Sulpice Sévère, VI, 1 -->
             <div type="section" n="1">
@@ -2643,8 +2736,8 @@
                   fu assemblez dist &esperluette-et;tiesmo<lb/>igne.&esp;</p>
             </div>
          </div>
-         <div type="chapter" n="17"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres"
+         <div type="chapter" n="22"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f224, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat:17">
             <!-- Vie de saint Martin de Sulpice Sévère, VI, 2 -->
             <head>Si com il deli&u-v;ra le&esp;ser&i-j;ant au &neuf-con;selle</head>
@@ -2671,7 +2764,7 @@
                      <reg>un</reg>
                   </choice>&esp;<lb/>ser&i-j;ant en sa meson<pc type="orig" ana="relative"
                   >:</pc>&esp;a&esp;cui li <lb/>
-                  <pb n="108" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres"/>
+                  <pb n="108" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225"/>
                   <cb n="a"/>
                   <choice>
                      <orig>D</orig>
@@ -2737,8 +2830,7 @@
                <lb/>
             </div>
          </div>
-         <div type="chapter" n="18"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres"
+         <div type="chapter" n="23" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat:17">
             <head>Si&esp;com il cha&c-ced;a le deable hors d<pc type="reg">'</pc>une
                mes&otilde-on;</head>
@@ -2825,7 +2917,7 @@
                </p>
             </div>
          </div>
-         <div n="19" type="chapter">
+         <div n="24" type="chapter">
             <head>Uns miracles de <persName ref="#martin">seint &m-maj;artin</persName></head>
             <div type="section" n="1">
                <p><hi rend="rubricated orig">Uns miracles de <persName ref="#martin">seint
@@ -2862,7 +2954,7 @@
                      &m-maj;artins</persName> comanda au deable&esp;<lb/>q<pc type="reg">'</pc>il
                   tost tenist sa&esp;&u-v;oie<pc type="orig" ana="coordination">:</pc>&esp;ne&esp;ne
                   se mellast&esp;<lb/><pb n="108"
-                     facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226.highres"/><cb n="c"
+                     facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226"/><cb n="c"
                   /><lb/>plus de&esp;tel afere<pc type="reg" ana="finPhrase">.</pc> Lors s<pc
                      type="reg">'</pc>en de&pbarre-par;ti le deables<pc type="orig"
                      ana="coordination">:</pc>&esp;<lb/>&esperluette-et;li&esp;pueples
@@ -2874,8 +2966,8 @@
                <lb/>
             </div>
          </div>
-         <div type="chapter" n="20"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226.highres">
+         <div type="chapter" n="25"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226">
             <!-- Vie de saint Martin de Sulpice Sévère, VI, 3 -->
             <head>Uns autres miracle&sexp-s;</head>
             <div type="section" n="1" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:18">
@@ -2933,10 +3025,9 @@
                <lb/>
             </div>
          </div>
-         <div n="21" type="chapter">
+         <div n="26" type="chapter">
             <head>Uns autres miracles</head>
-            <div type="section" n="1"
-               facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres"
+            <div type="section" n="1" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225"
                corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:19.1-2">
                <p><hi rend="rubricated orig">Uns autres mira&esp;</hi><lb/><hi
                      rend="decorated-initial">U</hi>ne autre foiz a&u-v;int<hi
@@ -2985,10 +3076,9 @@
                   &pbarre-par;&esp;lui sacree &esperluette-et;bene&itrem;e.&esp;<lb/></p>
             </div>
          </div>
-         <div n="22" type="chapter">
+         <div n="27" type="chapter">
             <head>Si com il rendi&esp;a&esp;un&esp;home s&otilde-on; oel&esp;</head>
-            <div type="section" n="1"
-               facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226.highres"
+            <div type="section" n="1" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226"
                corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:19.3">
                <p><hi rend="rubricated orig">Si com il rendi&esp;</hi><lb/><hi
                      rend="decorated-initial">A</hi>pr&eacc;s ce&esp;&u-v;int au <hi
@@ -3022,8 +3112,8 @@
                </p>
             </div>
          </div>
-         <div n="23" type="chapter"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227.highres">
+         <div n="28" type="chapter"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227">
             <head>Si com il che&itrem; dou che&u-v;al</head>
             <div type="section" n="1" corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:19.4">
                <p><hi rend="decorated-initial">A</hi>donc<hi rend="rubricated orig">si com il
@@ -3042,7 +3132,7 @@
                   a&esp;lui&deuxpoints-virg3;si&esp;li la&u-v;a&esp;<lb/>ses plaies
                   &esperluette-et;si&esp;li oinst del seint oigne&mbarre-men;t&esp;<lb/>toz ses
                   membres qi bleci&eacc;&#160;estoient.&esp;Einsi&esp;<lb/>
-                  <pb n="109" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227.highres"/>
+                  <pb n="109" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227"/>
                   <cb n="a"/>ot li seinz hom sant&eacc;&#160;rece&utrem;e lendemein<pc type="orig"
                      ana="coordination">:</pc>&esp;&esperluette-et;<lb/>si sembloit qu<pc type="reg"
                      >'</pc>il n<pc type="reg">'</pc>e&utrem;st e&utrem; ne doleur
@@ -3055,8 +3145,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="24"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226.highres"
+         <div type="chapter" n="29"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f225, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f226"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:20, ">
             <!-- Vie de saint Martin de Sulpice Sévère, VI, 3 -->
             <div type="section" n="1">
@@ -3228,7 +3318,7 @@
                      a&esp;l<pc type="reg">'</pc>em&pbarre-per;eor &esperluette-et;a&esp;toz cels qi
                   en<lb/>&u-v;iron lui estoient<pc type="orig" ana="coordination">.</pc>&esp;
                   &esperluette-et;molt en&esp;demenerent&esp;<lb/>
-                  <pb n="109" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f228.highres"/>
+                  <pb n="109" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f228"/>
                   <cb n="c"/>
                   <choice>
                      <orig>G</orig>
@@ -3322,8 +3412,8 @@
             </div>
          </div>
 
-         <div type="chapter" n="25"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f228.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229.highres"
+         <div type="chapter" n="30"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f227, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f228, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:21, urn:cts:latinLit:stoa0270.stoa002.opp-lat2:22">
             <!-- Vie de saint Martin de Sulpice Sévère, VII, 2 -->
             <div type="section" n="1">
@@ -3397,7 +3487,7 @@
                   qe&esp;il&esp;<lb/>me&utrem;ssent por celui qerre.
                   <!-- Vie de saint Martin de Sulpice Sévère, VII, 3 --> Et por ce s<pc type="reg"
                      >'</pc>en<lb/>tremetoit li&esp;deables de&esp;lui engignier&esp;en&esp;<lb/>
-                  <pb n="110" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229.highres"/>
+                  <pb n="110" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229"/>
                   <cb n="a"/>
                   <choice>
                      <orig>M</orig>
@@ -3477,10 +3567,10 @@
                      <orig>T</orig>
                      <reg>t</reg>
                   </choice>ant q<pc type="reg">'</pc>il a&u-v;int&esp;<lb/>une foiz q<pc type="reg"
-                     >'</pc>il dist a&esp;l<pc type="reg">'</pc>anemi&point-deuxpointsDial;<said who="#martin"> O
-                     tu chetis <pc type="reg">!</pc>&#160;&s-maj;e&esp;<lb/>tu me&itrem;smes
-                     te&esp;delessoies de&esp;tes males oe<lb/>&u-v;res qe tu t<pc type="reg"
-                     >'</pc>en repentisses&deuxpoints-virg4;encore ai &esp;&i-j;e
+                     >'</pc>il dist a&esp;l<pc type="reg">'</pc>anemi&point-deuxpointsDial;<said
+                     who="#martin"> O tu chetis <pc type="reg">!</pc>&#160;&s-maj;e&esp;<lb/>tu
+                     me&itrem;smes te&esp;delessoies de&esp;tes males oe<lb/>&u-v;res qe tu t<pc
+                        type="reg">'</pc>en repentisses&deuxpoints-virg4;encore ai &esp;&i-j;e
                      t&atilde-an;t&esp;<lb/>de fiance en&esp;nostre &s-maj;ignor<pc type="orig"
                         ana="completive">:</pc>&esp;qe&esp;tu auroies&esp;<lb/>au &i-j;or del
                      &j-maj;ugement encore soit il&esp;proceins&esp;<lb/>
@@ -3498,8 +3588,8 @@
                   poor&esp;<lb/>ne&esp;doutance.&esp;<lb/></p>
             </div>
          </div>
-         <div type="chapter" n="26"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230.highres"
+         <div type="chapter" n="31"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f229, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:23-24.1-3">
             <!-- Vie de saint Martin de Sulpice Sévère, VII, 4 -->
             <div type="section" n="1">
@@ -3571,7 +3661,7 @@
                      >.</pc>&esp;ne pot on<lb/>ques estre menez a&esp;ce qu<pc type="reg"
                   >'</pc>il&esp;le&esp;&u-v;ousist croi<corr type="add">re</corr><pc type="reg"
                      ana="finPhrase">.</pc>&esp;<lb/>
-                  <pb n="110" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230.highres"/>
+                  <pb n="110" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230"/>
                   <cb n="c"/>Quant <persName ref="#anatolius"><choice>
                         <orig>a</orig>
                         <reg>A</reg>
@@ -3591,11 +3681,12 @@
                         <orig>c</orig>
                         <reg>C</reg>
                      </choice>larus</persName> l<pc type="reg"
-                     >'</pc>o&itrem;&#160;&esperluette-et;entendi&point-deuxpointsDial;<said who="#anatolius">En
-                     ceste&esp;<lb/>nuit me donra nostre &s-maj;ires une tres&esp;blan<lb/>che
-                        &u-v;este&utrem;re<pc type="orig" ana="relative">:</pc> qi del ciel sera
-                     aportee &esperluette-et;tra<lb/>mise&point-virg3;&esperluette-et;cele aurai
-                     &i-j;e de&u-v;ant &u-v;oz &u-v;estue<pc type="orig" ana="coordination"
+                     >'</pc>o&itrem;&#160;&esperluette-et;entendi&point-deuxpointsDial;<said
+                     who="#anatolius">En ceste&esp;<lb/>nuit me donra nostre &s-maj;ires une
+                     tres&esp;blan<lb/>che &u-v;este&utrem;re<pc type="orig" ana="relative">:</pc>
+                     qi del ciel sera aportee
+                     &esperluette-et;tra<lb/>mise&point-virg3;&esperluette-et;cele aurai &i-j;e
+                     de&u-v;ant &u-v;oz &u-v;estue<pc type="orig" ana="coordination"
                      >:</pc>&esp;<lb/>&esperluette-et;par&esp;ce sauroiz &u-v;os
                         &esperluette-et;conisteroiz<pc type="orig" ana="completive">:</pc>&esp;qe
                         c<pc type="reg">'</pc>est&esp;<lb/>par la&esp;&u-v;ertu de <choice>
@@ -3745,8 +3836,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="27"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231.highres"
+         <div type="chapter" n="32"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f230, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231"
             corresp="urn:cts:latinLit:stoa0270.stoa002.opp-lat2:24.4-8">
             <!-- Vie de saint Martin de Sulpice Sévère, VII, 5 -->
             <div type="section" n="1">
@@ -3774,7 +3865,7 @@
                      &esperluette-et;de&esp;li&eacc;<pc type="orig" ana="subCorr">:</pc>&esp;si q<pc
                      type="reg">'</pc>il sembloit meins&esp;<lb/>estre deable qe autre
                   chose.&esp;Qant <persName ref="#martin">seinz&esp;<lb/>
-                     <pb n="111" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231.highres"/>
+                     <pb n="111" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231"/>
                      <cb n="a"/> &m-maj;artins</persName> le&esp;&u-v;it premiers<pc type="reg"
                      >,</pc> il <choice>
                      <orig>F</orig>
@@ -3815,16 +3906,16 @@
                      <orig>e</orig>
                      <reg>E</reg>
                   </choice>s<lb/>&pbarre-per;it<pc type="orig" ana="completive">:</pc>&esp;qe ce
-                  estoit li deables&point-virg3;si respondi<pc type="reg"> :
-                     </pc><said who="#martin">&n-maj;os<lb/>tre &s-maj;ires <persName ref="#jesus"><choice>
-                        <orig>i</orig>
-                        <reg>J</reg>
-                     </choice>esu&esp;<choice>
-                        <orig>c</orig>
-                        <reg>C</reg>
-                     </choice>rist</persName> n<pc type="reg">'</pc>a&u-v;oit mie dit q<pc type="reg">'</pc>il
-                     de&utrem;st&esp;<lb/>&u-v;enir en terre &u-v;estuz de porpre
-                     &esperluette-et;corone en&esp;<lb/>son chief resplendissant.&esp;<choice>
+                  estoit li deables&point-virg3;si respondi<pc type="reg"> : </pc><said
+                     who="#martin">&n-maj;os<lb/>tre &s-maj;ires <persName ref="#jesus"><choice>
+                           <orig>i</orig>
+                           <reg>J</reg>
+                        </choice>esu&esp;<choice>
+                           <orig>c</orig>
+                           <reg>C</reg>
+                        </choice>rist</persName> n<pc type="reg">'</pc>a&u-v;oit mie dit q<pc
+                        type="reg">'</pc>il de&utrem;st&esp;<lb/>&u-v;enir en terre &u-v;estuz de
+                     porpre &esperluette-et;corone en&esp;<lb/>son chief resplendissant.&esp;<choice>
                         <abbr>&#8266;</abbr>
                         <expan><ex>Et</ex></expan>
                      </choice>&esp;&i-j;e ne croi mie&esp;<lb/>qe <choice>
@@ -3912,8 +4003,8 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="28"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232.highres">
+         <div type="chapter" n="33"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232">
             <!-- Vie de saint Martin de Sulpice Sévère, IX, 2 / Epistula 1 à Eusèbe -->
             <div n="1" type="section">
                <p><hi rend="decorated-initial">U</hi>n &i-j;our a&u-v;int qe&esp;li seinz hom
@@ -3955,7 +4046,7 @@
                   >.</pc>&esp;&esperluette-et;li&esp;seinz hom se coucha deseur&esp;<lb/>la&esp;nue
                   terre&point-virg4;por ce&esp;q<pc type="reg">'</pc>il estoit lassez
                   de&esp;la&esp;<lb/>&u-v;oie. Et qant &u-v;int a&esp;mienuit&point-virg4;li feus&esp;<lb/>
-                  <pb n="111" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232.highres"/>
+                  <pb n="111" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232"/>
                   <cb n="c"/> esprist el fuerre&deuxpoints-virg3;<choice>
                      <orig>S</orig>
                      <reg>s</reg>
@@ -4029,8 +4120,8 @@
                   mes&esp;&pbarre-par;oles.<lb/></p>
             </div>
          </div>
-         <div type="chapter" n="29"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f233.highres">
+         <div type="chapter" n="34"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f233">
             <!-- Vie de saint Martin de Sulpice Sévère, XI, 1 / Epistula 3 à Bassula -->
             <div type="section" n="1">
                <p><persName ref="#martin"><hi rend="decorated-initial">S</hi><choice>
@@ -4081,7 +4172,8 @@
                   >.</pc>&esp;&esperluette-et;cha&c-ced;oient&deuxpoints-pointvirg;qant il
                   les&esp;<lb/>ataignoient&point-virg3;si les de&u-v;oroient
                   &esperluette-et;men&i-j;oi<lb/>ent.&esp;Dont arresta li seinz hom
-                  &esperluette-et;si dist a&esp;<lb/>ses deciples&point-deuxpointsDial;<said who="#martin">O<choice>
+                  &esperluette-et;si dist a&esp;<lb/>ses deciples&point-deuxpointsDial;<said
+                     who="#martin">O<choice>
                         <orig>R</orig>
                         <reg>r</reg>
                      </choice>&#160;poez &u-v;eoir&deuxpoints-virg5;c<pc type="reg">'</pc>est
@@ -4122,7 +4214,10 @@
                   puissance.&esp;<lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div type="chapter" n="35">
+            <!-- Vie de saint Martin de Sulpice Sévère, XI, 1 / Epistula 3 à Bassula -->
+            <div type="section" n="1">
                <p><hi rend="decorated-initial">A</hi><choice>
                      <orig>P</orig>
                      <reg>p</reg>
@@ -4130,7 +4225,7 @@
                   el&esp;cha<lb/>stel&esp;ou&esp;il&esp;aler de&u-v;oit<pc type="orig"
                      ana="coordination">:</pc>&esp; &esperluette-et;la&esp;demora&esp;<lb/>il tant
                      q<pc type="reg">'</pc>il ot remise la pes entre&esp;<lb/>
-                  <pb n="112" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f233.highres"/>
+                  <pb n="112" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f233"/>
                   <cb n="a"/>
                   <choice>
                      <orig>L</orig>
@@ -4149,7 +4244,7 @@
                      a&esp;demener<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;<lb/>se plaignoient a&esp;hautes &u-v;oiz<pc
                      type="orig" ana="coordination">.</pc>&esp;
-                     &esperluette-et;si&esp;disoient&point-deuxpointsDial;<lb/><said>Peres<pc
+                        &esperluette-et;si&esp;disoient&point-deuxpointsDial;<lb/><said>Peres<pc
                         type="reg">,</pc> por qoi nos deguerpiz
                      tu&deuxpoints-interrogation;A&esp;cui nos&esp;<lb/>leiras tu qi si somes
                      desconfortez &esperluette-et;descon<lb/>seilliez&deuxpoints-interrogation;Saces
@@ -4180,11 +4275,11 @@
                      <reg>s</reg>
                   </choice>i dist&point-deuxpointsDial;<lb/></p>
             </div>
-            <div type="section" n="3">
+            <div type="section" n="2">
                <p>
-                  <said who="#martin"><hi rend="decorated-initial">B</hi>iaus &s-maj;ire &d-maj;ex<pc type="reg"
-                        >,</pc> se&esp;&i-j;e sui encore<pc type="orig" ana="attribut"
-                     >.</pc>&esp;&esp;<lb/>besoignables a&esp;ton
+                  <said who="#martin"><hi rend="decorated-initial">B</hi>iaus &s-maj;ire
+                        &d-maj;ex<pc type="reg">,</pc> se&esp;&i-j;e sui encore<pc type="orig"
+                        ana="attribut">.</pc>&esp;&esp;<lb/>besoignables a&esp;ton
                      pueple&point-virg4;&i-j;e&esp;<lb/>ne refuse mie a&esp;sosfrir le&esp;tra&u-v;ail&esp;<lb/>ne&esp;la&esp;paine&point-virg3;<choice>
                         <orig>M</orig>
                         <reg>m</reg>
@@ -4250,15 +4345,17 @@
                      >'</pc>il&esp;<lb/>doit aler a&esp;nostre &s-maj;eignor.</said><lb/>
                </p>
             </div>
-            <div type="section" n="4">
+         </div>
+         <div n="36" type="chapter">
+            <div type="section" n="1">
                <p><hi rend="decorated-initial">Q</hi><choice>
                      <orig>U</orig>
                      <reg>u</reg>
                   </choice>ant li seinz hom lor ot ce dit&point-virg4;il&esp;<lb/>resgarda
                   de&i-j;oste soi&deuxpoints-virg3;si&esp;&u-v;it ester&esp;le&esp;<lb/>diable<pc
                      type="orig" ana="coordination">.</pc>&esp;et il li dist tantost com
-                     il&esp;<lb/>l<pc type="reg">'</pc>ot a&pbarre-per;ce&utrem;&esp;:&esp;<said who="#martin"> Qe
-                     fes tu ci<pc type="reg" ana="apposition">,</pc> cruel
+                     il&esp;<lb/>l<pc type="reg">'</pc>ot a&pbarre-per;ce&utrem;&esp;:&esp;<said
+                     who="#martin"> Qe fes tu ci<pc type="reg" ana="apposition">,</pc> cruel
                      beste&deuxpoints-interrogation;Tu ne tro<lb/>&u-v;eras en&esp;moi nule chose
                      dont tu me puis<lb/>ses feire nuisance&deuxpoints-virg3;einz me rece&u-v;era li
                      se&itilde-in;z&esp;<lb/>seint <persName ref="#abraham"><choice>
@@ -4300,12 +4397,11 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="30"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234.highres"
+         <div type="chapter" n="37" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234"
             corresp="urn:cts:latinLit:stoa0143.stoa001.1.46">
             <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
             <div type="section" n="1">
-               <p><pb n="112" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234.highres"/>
+               <p><pb n="112" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234"/>
                   <cb n="c"/><hi rend="decorated-initial">A</hi>donc a&u-v;oit li <choice>
                      <orig>S</orig>
                      <reg>s</reg>
@@ -4389,7 +4485,10 @@
                      a&u-v;oir le&esp;<lb/>cors sanz &u-v;ie tant seulement.</said><lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div n="38" type="chapter">
+            <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
+            <div type="section" n="1">
                <p><hi rend="decorated-initial">A</hi>&esp;ce respondirent cil de&esp;<placeName
                      ref="#tours"><choice>
                         <orig>t</orig>
@@ -4477,7 +4576,10 @@
                   i&esp;estoient&esp;<lb/>assambl&eacc;&deuxpoints-point;<lb/>
                </p>
             </div>
-            <div type="section" n="3">
+         </div>
+         <div n="39" type="chapter">
+            <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
+            <div type="section" n="1">
                <p><hi rend="decorated-initial">Q</hi>uant cil de <placeName ref="#tours"><choice>
                         <orig>t</orig>
                         <reg>T</reg>
@@ -4544,7 +4646,7 @@
                      <reg>D</reg>
                   </choice>eu fere. Et costume estoit adonc<pc type="orig" ana="completive"
                   >.</pc>&esp;qe se li&esp;<lb/>
-                  <pb n="113" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235.highres"/>
+                  <pb n="113" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235"/>
                   <cb n="a"/>
                   <choice>
                      <orig>P</orig>
@@ -4591,8 +4693,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="31"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235.highres"
+         <div type="chapter" n="40" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235"
             corresp="urn:cts:latinLit:stoa0143.stoa002.1.4">
             <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 4. -->
             <div n="1" type="section">
@@ -4667,10 +4768,11 @@
                   &esperluette-et;la&esp;&i-j;oie estoit&esp;<lb/>
                   <cb n="b"/> si granz&deuxpoints-point;<persName ref="#severus">Seins
                      &s-maj;e&u-v;rins</persName> respondi &esperluette-et;si&esp;dist&point-deuxpointsDial;<lb/>
-                  <said who="#sevrin"> Ore entent &esperluette-et;&i-j;e&esp;le&esp;te dirai.&esp;<persName
-                        ref="#martin">Seinz &m-maj;artins</persName><pc type="reg"
-                     >,</pc>&esp;<lb/>mes chiers compeins<pc type="reg" ana="apposition">,</pc> l<pc
-                        type="reg">'</pc>arce&u-v;esqes de&esp;<placeName ref="#tours"><choice>
+                  <said who="#sevrin"> Ore entent &esperluette-et;&i-j;e&esp;le&esp;te
+                        dirai.&esp;<persName ref="#martin">Seinz &m-maj;artins</persName><pc
+                        type="reg">,</pc>&esp;<lb/>mes chiers compeins<pc type="reg"
+                        ana="apposition">,</pc> l<pc type="reg">'</pc>arce&u-v;esqes
+                        de&esp;<placeName ref="#tours"><choice>
                            <orig>t</orig>
                            <reg>T</reg>
                         </choice>ors</placeName><pc type="orig" ana="sujet">.</pc>&esp;<lb/>est
@@ -4705,7 +4807,9 @@
                   &esperluette-et;confuz &esperluette-et;tristres.&esp;<lb/>
                </p>
             </div>
-            <div type="section" n="2">
+         </div>
+         <div n="41" type="chapter">
+            <div type="section" n="1">
                <p><persName ref="#severus"><hi rend="decorated-initial">S</hi>einz
                      &s-maj;e&u-v;rins</persName> li&esp;arce&u-v;esqes nota&esp;<lb/>le tens
                      &esperluette-et;l<pc type="reg">'</pc>eure<pc type="orig" ana="relative"
@@ -4736,8 +4840,8 @@
             </div>
          </div>
 
-         <div type="chapter" n="32"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236.highres"
+         <div type="chapter" n="42"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236"
             corresp="urn:cts:latinLit:stoa0143.stoa002.1.5">
             <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 5. -->
             <div n="1" type="section">
@@ -4774,7 +4878,7 @@
                         <reg>A</reg>
                      </choice>mbroses</persName> s<pc type="reg">'</pc>estoit endormis<pc
                      type="orig" ana="subCorr">:</pc>&esp;si qu<pc type="reg">'</pc>il&esp;<lb/>
-                  <pb n="113" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236.highres"/>
+                  <pb n="113" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236"/>
                   <cb n="c"/> tenoit son chief <choice>
                      <orig>A</orig>
                      <reg>a</reg>
@@ -4796,7 +4900,8 @@
                      demorance.</said>&esp;<persName ref="#ambroise">Seinz <choice>
                         <orig>a</orig>
                         <reg>A</reg>
-                     </choice>mbroses</persName> lor respon<lb/>di&point-deuxpointsDial;<said who="#ambroise"><choice>
+                     </choice>mbroses</persName> lor respon<lb/>di&point-deuxpointsDial;<said
+                     who="#ambroise"><choice>
                         <orig>n</orig>
                         <reg>N</reg>
                      </choice>e&esp;&u-v;oz corrociez mie
@@ -4829,7 +4934,7 @@
                </p>
             </div>
          </div>
-         <div type="chapter" n="33">
+         <div type="chapter" n="43">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">M</hi>out estoit cil preudom<pc type="orig"
                   >:</pc>&esp;&esperluette-et;seinz hom&esp;<lb/>&esperluette-et;bene&utrem;rez
@@ -4862,8 +4967,8 @@
                   puiss&otilde-on;s&esp;<lb/>&pbarre-par;&u-v;enir.&esp;Amen.&esp;</p>
             </div>
          </div>
-         <div type="chapter" n="34"
-            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236.highres, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f237.highres"
+         <div type="chapter" n="44"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f237"
             corresp="urn:cts:latinLit:stoa0143.stoa002.1.6">
             <head>Ci &neuf-con;mence la&esp;translati&otilde-on;&esp;<lb/>del cors <persName
                   ref="#martin">seint &m-maj;artin</persName> E&u-v;esque</head>
@@ -4961,7 +5066,7 @@
                   </choice>i i&esp;mistrent toz les meins por&esp;<lb/>remo&u-v;oir le
                   &esperluette-et;por le&u-v;er le<pc type="reg" ana="coordination">,</pc>
                   mes&esp;il ne porent.&esp;<lb/>
-                  <pb n="114" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f237.highres"/>
+                  <pb n="114" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f237"/>
                   <cb n="a"/> Quant il &u-v;irent ce<pc type="reg" ana="coordination">,</pc>&esp;<choice>
                      <orig>S</orig>
                      <reg>s</reg>
@@ -4979,7 +5084,8 @@
                   qi&esp;il estoit<pc type="orig" ana="coordination"
                   >:</pc>&esp;<lb/>&esperluette-et;il lor dist q<pc type="reg">'</pc>il estoit uns
                      abbes<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;puis si
-                  &pbarre-par;la&esp;<lb/>&esperluette-et;lor dist&point-deuxpointsDial;<said who="#martin"><choice>
+                  &pbarre-par;la&esp;<lb/>&esperluette-et;lor dist&point-deuxpointsDial;<said
+                     who="#martin"><choice>
                         <orig>p</orig>
                         <reg>P</reg>
                      </choice>or qoi atargiez &u-v;os<pc type="orig" ana="coordination"
