@@ -312,7 +312,7 @@
                 <xsl:for-each select="ancestor::tei:TEI//tei:body//tei:placeName">
                     <xsl:if test="replace(@ref, '#', '') = $id">
                         <xsl:value-of
-                            select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg']/text()"/>
+                            select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() "/>
                         <xsl:text> </xsl:text>
                         <xsl:text>§</xsl:text>
                         <xsl:value-of select="ancestor::tei:div[@type='chapter']/@n"/>
