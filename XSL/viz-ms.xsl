@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs tei" version="3.0">
-    <xsl:strip-space elements="*"/>
+    <xsl:strip-space elements="div p seg"/>
     <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
 
     <xsl:template match="tei:TEI">
@@ -53,20 +53,20 @@
                                         <xsl:value-of select="concat($witfile, '.html')"/>
                                     </xsl:attribute> Edition </xsl:element>
                             </li>
-                            
+
                             <li role="presentation">
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#indexPers">Index des noms de
                                         personnages</a>
                                 </li>
                             </li>
-                            
+
                             <li role="presentation">
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#indexLieu">Index des noms de
                                         lieux</a>
                                 </li>
-                            </li>                            
+                            </li>
                             <li role="presentation">
                                 <xsl:element name="a">
                                     <xsl:attribute name="href">
@@ -246,26 +246,45 @@
             <xsl:apply-templates/>
         </article>
     </xsl:template>
-    <xsl:template match="tei:person">
-        <xsl:for-each select="." >
-            <xsl:sort order="descending" select="tei:persName"/>
-        <xsl:element name="dt">
-            <xsl:value-of select="tei:persName"/>
-            <xsl:if test="tei:birth">
-                <xsl:text> (</xsl:text>
-                <xsl:value-of select="tei:birth"/>
-                <xsl:text>-</xsl:text>
-                <xsl:value-of select="tei:death"/>
-                <xsl:text>)</xsl:text>
-            </xsl:if>
-            <xsl:text> : </xsl:text>
-        </xsl:element>
-        <xsl:element name="dd">
-            <xsl:value-of select="tei:note"/>
-        </xsl:element>
-        <xsl:element name="br"/>
-          
+    <xsl:template match="tei:listPerson">
+        <xsl:for-each select="tei:person">
+            <xsl:sort order="ascending" select="tei:persName"/>
+            <xsl:variable name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:variable>
+            <xsl:element name="dt">
+                <xsl:value-of select="tei:persName"/>
+                <xsl:if test="tei:birth">
+                    <xsl:text> (</xsl:text>
+                    <xsl:value-of select="tei:birth"/>
+                    <xsl:text>-</xsl:text>
+                    <xsl:value-of select="tei:death"/>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+                <xsl:text> - nombre d'apparitions : </xsl:text>
+                <xsl:value-of
+                    select="count(ancestor::tei:TEI//tei:body//tei:persName[replace(@ref, '#', '') = $id])"/>
+            </xsl:element>
+            <xsl:element name="dd"><xsl:value-of select="tei:note"/></xsl:element>
+            <xsl:element name="dd">
+                <xsl:element name="em">
+                    <xsl:for-each select="ancestor::tei:TEI//tei:body//tei:persName">
+                        <xsl:if test="replace(@ref, '#', '') = $id">
+                            <xsl:value-of
+                                select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg']/text()"/>
+                        <xsl:text> </xsl:text>
+                            <xsl:text>§</xsl:text>
+                            <xsl:value-of select="ancestor::tei:div[@type='chapter']/@n"/>
+                            <xsl:text>.</xsl:text>
+                            <xsl:value-of select="ancestor::tei:div[@type='section']/@n"/>
+                            <xsl:if test="not(position()=last())"><xsl:text> - </xsl:text></xsl:if>
+                        </xsl:if>  
+                </xsl:for-each>                
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="br"/>
         </xsl:for-each>
+        
     </xsl:template>
 
     <!-- Index des noms de lieux -->
@@ -276,14 +295,33 @@
     </xsl:template>
 
     <xsl:template match="tei:place">
+        <xsl:variable name="id">
+            <xsl:value-of select="@xml:id"/>
+        </xsl:variable>
         <xsl:element name="dt">
             <xsl:value-of select="tei:placeName"/>
-            <xsl:if test="tei:note">
-                <xsl:text> : </xsl:text>
-            </xsl:if>
+            <xsl:text> - nombre d'apparitions : </xsl:text>
+            <xsl:value-of
+                select="count(ancestor::tei:TEI//tei:body//tei:placeName[replace(@ref, '#', '') = $id])"/>
         </xsl:element>
         <xsl:element name="dd">
             <xsl:value-of select="tei:note"/>
+        </xsl:element>
+        <xsl:element name="dd">
+            <xsl:element name="em">
+                <xsl:for-each select="ancestor::tei:TEI//tei:body//tei:placeName">
+                    <xsl:if test="replace(@ref, '#', '') = $id">
+                        <xsl:value-of
+                            select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg']/text()"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:text>§</xsl:text>
+                        <xsl:value-of select="ancestor::tei:div[@type='chapter']/@n"/>
+                        <xsl:text>.</xsl:text>
+                        <xsl:value-of select="ancestor::tei:div[@type='section']/@n"/>
+                        <xsl:if test="not(position()=last())"><xsl:text> - </xsl:text></xsl:if>
+                    </xsl:if>  
+                </xsl:for-each>                
+            </xsl:element>
         </xsl:element>
         <xsl:element name="br"/>
     </xsl:template>
@@ -588,7 +626,7 @@
                     <xsl:attribute name="class">list-unstyled</xsl:attribute>
                     <xsl:element name="li">
                         <xsl:value-of
-                            select="./tei:lem/text() | ./tei:lem/tei:hi/text() |./tei:lem/descendant::tei:persName/text() | ./tei:lem/descendant::tei:placeName/text() | ./tei:lem/descendant::tei:pc[@type != 'orig']/text() | ./tei:lem/descendant::tei:reg/text() |./tei:lem/descendant::tei:expan/text() | ./tei:lem/descendant::tei:ex/text() | ./tei:lem/descendant::tei:corr/text() " ></xsl:value-of>
+                            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/descendant::tei:persName/text() | ./tei:lem/descendant::tei:placeName/text() | ./tei:lem/descendant::tei:pc[@type != 'orig']/text() | ./tei:lem/descendant::tei:reg/text() | ./tei:lem/descendant::tei:expan/text() | ./tei:lem/descendant::tei:ex/text() | ./tei:lem/descendant::tei:corr/text()"/>
                         <xsl:if test="./@wit">
                             <xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:if>
@@ -628,8 +666,8 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
-    
-    <xsl:template match="tei:del[@type='exponctué']">
+
+    <xsl:template match="tei:del[@type = 'exponctué']">
         <xsl:element name="span">
             <xsl:attribute name="class">exponc</xsl:attribute>
             <xsl:apply-templates/>
