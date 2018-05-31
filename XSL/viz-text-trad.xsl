@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:xi="http://www.w3.org/2001/XInclude" exclude-result-prefixes="xs tei xi" version="2.0">
+    xmlns:xi="http://www.w3.org/2001/XInclude" exclude-result-prefixes="xs tei xi" version="3.0">
 
     <xsl:strip-space elements="*"/>
     <xsl:output method="text"/>
@@ -17,7 +17,7 @@
             <xsl:value-of select="tokenize(//tei:text[@n ='edition']/tei:body/@n, ':')[last()]"/>
             <!-- récupération dans l'uri uniquement du nom du document -->
         </xsl:variable>
-        <xsl:result-document href="../html/{concat($adresse,'-trad', '.html')}" format="html">
+        <xsl:result-document href="../../../../Dropbox/these/corpus/html/{concat($adresse,'-trad', '.html')}" format="html">
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -66,28 +66,56 @@
                 <body>
                     <div class="Notice">
                         <ul class="nav nav-tabs">
-                            <li role="presentation">
-                                <xsl:element name="a">
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="concat($adresse, '.html')"/>
-                                    </xsl:attribute> Edition </xsl:element>
-                            </li>
-                            <li role="presentation" class="active">
-                                <xsl:element name="a">
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="concat($adresse, '-trad', '.html')"/>
-                                    </xsl:attribute> Texte avec traduction </xsl:element>
-                            </li>
-                            <li role="presentation">
-                                <a data-toggle="tab" href="#notice"> Notice </a>
-                            </li>
+                            <ul class="nav nav-tabs">
+                                
+                                <li role="presentation">
+                                    <li role="presentation">
+                                        <a data-toggle="tab" href="#notice">Notice </a>
+                                    </li>
+                                </li>
+                                
+                                <li role="presentation" class="active">
+                                    <xsl:element name="a" >
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="concat($adresse, '-trad', '.html')"/>
+                                        </xsl:attribute> Texte avec traduction </xsl:element>
+                                </li>
+                                
+                                <li role="presentation">
+                                    <xsl:element name="a">
+                                        <xsl:attribute name="href">
+                                            <xsl:value-of select="concat($adresse, '.html')"/>
+                                        </xsl:attribute> Edition </xsl:element>
+                                </li>
+                                
+                                <li role="presentation">
+                                    <li role="presentation">
+                                        <a data-toggle="tab" href="#indexPers">Index des noms de
+                                            personnages</a>
+                                    </li>
+                                </li>
+                                
+                                <li role="presentation">
+                                    <li role="presentation">
+                                        <a data-toggle="tab" href="#indexLieu">Index des noms de
+                                            lieux</a>
+                                    </li>
+                                </li>                            
+                               
+                                
+                            </ul>
                         </ul>
                         <div class="tab-content">
-                            <article id="notice" class="tab-pane container">
-                                <xsl:apply-templates
-                                    select="//tei:text[@n = 'edition']/preceding-sibling::tei:teiHeader"
-                                />
-                            </article>
+                            
+                                <article id="notice" class="tab-pane container">
+ 
+                                        <xsl:call-template name="titre" />
+                                        <xsl:call-template name="edition"/>
+                                        <xsl:element name="br"/>
+                                        <xsl:call-template name="sourceDesc"/>
+                                    
+                                </article>
+                            
                             <article id="text" class="tab-pane active">
                                 <section class="row">
                                     <div class="col-md-2">
@@ -167,252 +195,87 @@
         </xsl:result-document>
     </xsl:template>
 
-    <!-- Header start -->
-    <xsl:template match="tei:fileDesc">
+    <!-- notice -->
+    
+    
+    <xsl:template name="titre">
         <h1>
-            <xsl:apply-templates select="//tei:titleStmt"/>
+            <xsl:text>Édition de la </xsl:text>
+            <xsl:value-of select="//tei:teiHeader[@n='edition']//tei:titleStmt/tei:title"/>
+            <xsl:element name="br"/>
+            <xsl:text>de </xsl:text>
+            <xsl:value-of select="//tei:teiHeader[@n='edition']//tei:titleStmt/tei:author"/>
         </h1>
-        <xsl:apply-templates select="//tei:sourceDesc"/>
-    </xsl:template>
-
-    <xsl:template match="//tei:titleStmt">
-        <xsl:copy-of select="tei:title"/>
-    </xsl:template>
-
-
-    <xsl:template match="tei:teiHeader">
-        <article id="notice" class="tab-pane container">
-            <xsl:apply-templates/>
-        </article>
-    </xsl:template>
-
-    <xsl:template match="tei:sourceDesc">
-        <h2>Notice du manuscrit</h2>
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="tei:ref">
-        <xsl:element name="a">
-            <xsl:attribute name="href">
-                <xsl:value-of select="./@target"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="tei:encodingDesc">
-        <aside>
-            <h3>Principes de édition l'édition électronique</h3>
-            <p>
-                <xsl:apply-templates/>
-            </p>
-        </aside>
-    </xsl:template>
-
-    <xsl:template match="tei:encodingDesc//tei:p/tei:lb">
+        <br/>
         <br/>
     </xsl:template>
-
-    <xsl:template match="tei:msIdentifier">
+    
+    <xsl:template name="edition">
+        <xsl:text>Édition établie par </xsl:text>
+        <xsl:value-of select="//tei:teiHeader[@n='edition']//tei:publicationStmt/tei:publisher"/>
+        <xsl:element name="br"/>
+        <xsl:text>Le texte est disponibles sous licence </xsl:text>
+        <xsl:value-of select="//tei:teiHeader[@n='edition']//tei:publicationStmt/tei:availability/tei:licence"/>
+        <xsl:element name="br"/>
+        <xsl:value-of select="//tei:teiHeader[@n='edition']//tei:publicationStmt/tei:date"/>
+    </xsl:template>
+    
+    <xsl:template name="sourceDesc">
+        <xsl:apply-templates select="//tei:teiHeader[@n='edition']//tei:sourceDesc/tei:msDesc[1]"/>
+    </xsl:template>
+    
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:msIdentifier">
         <br/> Identifiant du manuscrit : <em>
             <xsl:value-of select="./*" separator=", "/>
         </em>
         <br/>
     </xsl:template>
-
-
-    <xsl:template match="tei:origDate">
-        <br/> Date : <em>
-            <xsl:value-of select="."/>
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:note">
+        <br/>
+        <xsl:apply-templates/>
+        <br/>
+    </xsl:template>
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:head/tei:title">
+        <br/>
+        <xsl:text>Titre : </xsl:text>
+        <em>
+            <xsl:apply-templates/>
         </em>
         <br/>
     </xsl:template>
-
-    <xsl:template match="/tei:header/tei:title">
+    
+    
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:origDate">
+        <br/> Date : <xsl:value-of select="."/>
         <br/>
-        <b>
-            <xsl:value-of select="."/>
-        </b>
+    </xsl:template>
+    
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:msItemStruct/tei:locus">
         <br/>
-
+        <b>folios : </b><xsl:value-of select="."/>, lien vers le manuscrit : <xsl:element name="a">
+            <xsl:attribute name="href"><xsl:value-of
+                select="ancestor::tei:TEI//tei:body/descendant::tei:pb[1]/@facs"
+            /></xsl:attribute>
+            <xsl:value-of select="ancestor::tei:TEI//tei:body/descendant::tei:pb[1]/@facs"
+            /></xsl:element>
+        <br/>
     </xsl:template>
-
-    <xsl:template match="tei:msContents">
-        <section>
-            <h3>Contenu</h3>
+    
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:msItemStruct/tei:incipit">
+        <b>Incipit : </b>
+        <em>
             <xsl:apply-templates/>
-        </section>
+        </em>
+        <br/>
     </xsl:template>
-
-    <xsl:template match="/tei:msContents/tei:msItemStruct">
-        <div class="itemStruct">
+    <xsl:template match="//tei:teiHeader[@n='edition']//tei:msItemStruct/tei:explicit">
+        <b>Explicit : </b>
+        <em>
             <xsl:apply-templates/>
-        </div>
+        </em>
     </xsl:template>
-
-    <xsl:template match="tei:msItemStruct/tei:title">
-        <h4>
-            <xsl:value-of select="."/>
-        </h4>
-    </xsl:template>
-    <xsl:template match="tei:msItemStruct/tei:locus">
-        <b>folios :</b>
-        <blockquote title="locus">
-            <xsl:value-of select="."/>
-        </blockquote>
-    </xsl:template>
-    <xsl:template match="tei:msItemStruct/tei:author">
-        <b>auteur :</b>
-        <blockquote title="author">
-            <xsl:value-of select="."/>
-        </blockquote>
-    </xsl:template>
-    <xsl:template match="tei:msItemStruct/tei:incipit">
-        <b>Incipit :</b>
-        <blockquote title="incipit">
-            <xsl:value-of select="."/>
-        </blockquote>
-    </xsl:template>
-    <xsl:template match="tei:msItemStruct/tei:explicit">
-        <b>explicit :</b>
-        <blockquote title="explicit">
-            <xsl:value-of select="."/>
-        </blockquote>
-    </xsl:template>
-    <xsl:template match="tei:physDesc">
-        <section>
-            <h3>Description physique</h3>
-            <xsl:apply-templates/>
-        </section>
-    </xsl:template>
-    <xsl:template match="tei:objectDesc">
-        <div class="objectDesc">
-            <h4>Objet</h4>
-            <dl>
-                <xsl:apply-templates/>
-            </dl>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:supportDesc/tei:support">
-        <dt>Support</dt>
-        <dd>
-            <xsl:value-of select="."/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:supportDesc/tei:extent/tei:height">
-        <dt>Hauteur</dt>
-        <dd><xsl:value-of select="."/> mm</dd>
-    </xsl:template>
-    <xsl:template match="tei:supportDesc/tei:extent/tei:width">
-        <dt>Largeur</dt>
-        <dd><xsl:value-of select="."/> mm</dd>
-    </xsl:template>
-
-    <xsl:template match="tei:supportDesc/tei:foliation">
-        <dt>Foliation</dt>
-        <dd>
-            <xsl:value-of select="."/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:supportDesc/tei:condition">
-        <dt>Etat physique du manuscrit :</dt>
-        <dd>
-            <xsl:value-of select="."/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:supportDesc/tei:layoutDesc">
-        <dt>Mise en page</dt>
-        <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:layoutDesc/tei:layout">
-        <dt>Nombre de colonnes par page : </dt>
-        <dd>
-            <xsl:value-of select="@columns"/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:layoutDesc/tei:layout">
-        <dt>Nombre de lignes par page : </dt>
-        <dd>
-            <xsl:value-of select="@writtenLines"/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:handDesc/tei:handNote">
-        <dt>Mains du manuscrit</dt>
-        <dd>
-            <xsl:value-of select="."/>
-        </dd>
-    </xsl:template>
-    <xsl:template match="tei:scriptDesc">
-        <div class="scriptDesc">
-            <h4>Ecriture</h4>
-            <p>
-                <xsl:value-of select="."/>
-            </p>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:decoDesc">
-        <div class="decoDesc">
-            <h4>Décoration</h4>
-            <p>
-                <xsl:value-of select="."/>
-            </p>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:history">
-        <section>
-            <h3>Histoire</h3>
-            <xsl:apply-templates/>
-        </section>
-    </xsl:template>
-    <xsl:template match="tei:history/tei:origin">
-        <h5>Origine</h5>
-        <p>
-            <xsl:value-of select="."/>
-        </p>
-    </xsl:template>
-    <xsl:template match="tei:history/tei:provenance">
-        <h5>Provenance</h5>
-        <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:provenance/tei:list">
-        <p>
-            <xsl:value-of select="tei:item"/>
-        </p>
-    </xsl:template>
-
-    <xsl:template match="tei:listBibl">
-        <section>
-            <h3>bibliographie</h3>
-            <xsl:apply-templates/>
-        </section>
-    </xsl:template>
-
-    <xsl:template match="tei:bibl">
-        <xsl:for-each select="tei:author">
-            <xsl:apply-templates/>
-        </xsl:for-each>
-        <xsl:for-each select="tei:bibl/tei:title">
-            <xsl:text>, </xsl:text>
-            <i>
-                <xsl:value-of select="."/>
-            </i>
-            <xsl:text>, </xsl:text>
-
-        </xsl:for-each>
-        <xsl:for-each select="tei:bibl/tei:pubPlace">
-            <xsl:value-of select="."/>
-        </xsl:for-each>
-        <xsl:for-each select="tei:bibl/tei:publisher">
-            <xsl:text> : </xsl:text>
-            <xsl:value-of select="."/>
-            <xsl:text>, </xsl:text>
-        </xsl:for-each>
-        <xsl:for-each select="tei:bibl/tei:date">
-            <xsl:value-of select="."/>
-            <xsl:text>.</xsl:text>
-        </xsl:for-each>
-    </xsl:template>
-    <!-- Header ends -->
+    
+    <!-- fin notice -->
 
 
 
@@ -493,16 +356,14 @@
     <xsl:template match="tei:orig"/>
     <xsl:template match="tei:abbr"/>
     <xsl:template match="tei:lb"/>
+    <xsl:template match="tei:rdg"/>
     <xsl:template match="tei:pc[@type = 'orig']"/>
 
     <!-- éléments de mise en page du manuscrit -->
 
-    <xsl:template match="tei:rdg[@rend]">
+    <xsl:template match="tei:app">
         <xsl:element name="span">
-            <xsl:attribute name="class">
-                <xsl:value-of select="@rend"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
+           <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 

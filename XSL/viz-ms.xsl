@@ -50,26 +50,28 @@
                             <li role="presentation" class="active">
                                 <xsl:element name="a">
                                     <xsl:attribute name="href">
-                                        <xsl:value-of select="concat($adresse, '.html')"/>
+                                        <xsl:value-of select="concat($witfile, '.html')"/>
                                     </xsl:attribute> Edition </xsl:element>
                             </li>
-                            <li role="presentation">
-                                <xsl:element name="a">
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="concat($witfile, '-trad', '.html')"/>
-                                    </xsl:attribute> Texte avec traduction </xsl:element>
-                            </li>
+                            
                             <li role="presentation">
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#indexPers">Index des noms de
                                         personnages</a>
                                 </li>
                             </li>
+                            
                             <li role="presentation">
                                 <li role="presentation">
                                     <a data-toggle="tab" href="#indexLieu">Index des noms de
                                         lieux</a>
                                 </li>
+                            </li>                            
+                            <li role="presentation">
+                                <xsl:element name="a">
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="concat($witfile, '-trad', '.html')"/>
+                                    </xsl:attribute> Texte avec traduction </xsl:element>
                             </li>
 
                         </ul>
@@ -137,6 +139,7 @@
     </xsl:template>
     <xsl:template match="tei:head/tei:title">
         <br/>
+        <xsl:text>Titre : </xsl:text>
         <em>
             <xsl:apply-templates/>
         </em>
@@ -244,6 +247,8 @@
         </article>
     </xsl:template>
     <xsl:template match="tei:person">
+        <xsl:for-each select="." >
+            <xsl:sort order="descending" select="tei:persName"/>
         <xsl:element name="dt">
             <xsl:value-of select="tei:persName"/>
             <xsl:if test="tei:birth">
@@ -259,6 +264,8 @@
             <xsl:value-of select="tei:note"/>
         </xsl:element>
         <xsl:element name="br"/>
+          
+        </xsl:for-each>
     </xsl:template>
 
     <!-- Index des noms de lieux -->
