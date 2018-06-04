@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="xs tei" version="3.0">
-    <xsl:strip-space elements="div p seg"/>
+    exclude-result-prefixes="xs tei" version="3.0" xmlns:my="LOCALHOST" >
+    <xsl:strip-space elements="div p seg" />
+    <xsl:function name="my:no-accent">
+        <xsl:param name="string" />
+        <xsl:value-of select="translate($string,'áàâäéèêëíìîïóòôöúùûü','aaaaeeeeiiiioooouuuu')"/>
+    </xsl:function>
+    <xsl:function name="my:regularize">
+        <xsl:param name="node" />
+        <xsl:variable name="var" select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type='reg' and not(text()='-')])"/>
+        <xsl:value-of select="replace(string-join($var), '\s+', ' ')"/>
+    </xsl:function>
     <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
 
     <xsl:template match="tei:TEI">
@@ -10,7 +19,7 @@
             <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
-        <xsl:result-document href="../../../../Dropbox/these/corpus/html/{concat($witfile,'.html')}"
+        <xsl:result-document href="/Users/arianepinche/Dropbox/these/corpus/html/{concat($witfile,'.html')}"
             method="html" indent="yes">
             <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
             <xsl:variable name="adresse">
@@ -248,7 +257,7 @@
     </xsl:template>
     <xsl:template match="tei:listPerson">
         <xsl:for-each select="tei:person">
-            <xsl:sort order="ascending" select="tei:persName"/>
+            <xsl:sort order="ascending" select="my:no-accent(tei:persName)"/>
             <xsl:variable name="id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:variable>
@@ -263,30 +272,38 @@
                 </xsl:if>
                 <xsl:text> - nombre d'apparitions : </xsl:text>
                 <xsl:value-of
-                    select="count(ancestor::tei:TEI//tei:body//tei:persName[replace(@ref, '#', '') = $id])"/>
+                    select="count(ancestor::tei:TEI//tei:body//tei:persName[@ref= '#'||$id])"/>
             </xsl:element>
             <xsl:element name="dd"><xsl:value-of select="tei:note"/></xsl:element>
             <xsl:element name="dd">
-                <xsl:element name="em">
-                    <xsl:for-each select="ancestor::tei:TEI//tei:body//tei:persName">
-                        <xsl:if test="replace(@ref, '#', '') = $id">
-                            <xsl:value-of
-                                select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg']/text()"/>
-                        <xsl:text> </xsl:text>
-                            <xsl:text>§</xsl:text>
-                            <xsl:value-of select="ancestor::tei:div[@type='chapter']/@n"/>
-                            <xsl:text>.</xsl:text>
-                            <xsl:value-of select="ancestor::tei:div[@type='section']/@n"/>
-                            <xsl:if test="not(position()=last())"><xsl:text> - </xsl:text></xsl:if>
-                        </xsl:if>  
-                </xsl:for-each>                
+                <xsl:element name="ul">
+                    <xsl:attribute name="class">list-occurences</xsl:attribute>
+                    <xsl:for-each-group select="//tei:body//tei:persName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                        <xsl:element name="li">
+                            <xsl:apply-templates mode="reg" select="current()"/>
+                            <xsl:text> :</xsl:text>
+                            <xsl:for-each-group select="current-group()/ancestor::tei:div[@type='chapter']" group-by="@n">
+                                <xsl:element name="li">
+                                    <xsl:attribute name="class">par</xsl:attribute>
+                                    <xsl:text> §</xsl:text>
+                            <xsl:value-of select="@n"/>
+                                </xsl:element>
+                            </xsl:for-each-group>
+                        </xsl:element>
+                    </xsl:for-each-group>
                 </xsl:element>
             </xsl:element>
             <xsl:element name="br"/>
         </xsl:for-each>
         
     </xsl:template>
-
+    
+    <xsl:template match="tei:persName|tei:placeName" mode="reg">
+        <xsl:value-of
+            select="my:regularize(.)"/>
+    </xsl:template>
+    
+    
     <!-- Index des noms de lieux -->
     <xsl:template match="tei:settingDesc">
         <article id="indexLieu" class="tab-pane container">
@@ -302,30 +319,33 @@
             <xsl:value-of select="tei:placeName"/>
             <xsl:text> - nombre d'apparitions : </xsl:text>
             <xsl:value-of
-                select="count(ancestor::tei:TEI//tei:body//tei:placeName[replace(@ref, '#', '') = $id])"/>
+                select="count(ancestor::tei:TEI//tei:body//tei:placeName[@ref = '#'||$id])"/>
         </xsl:element>
         <xsl:element name="dd">
             <xsl:value-of select="tei:note"/>
         </xsl:element>
         <xsl:element name="dd">
-            <xsl:element name="em">
-                <xsl:for-each select="ancestor::tei:TEI//tei:body//tei:placeName">
-                    <xsl:if test="replace(@ref, '#', '') = $id">
-                        <xsl:value-of
-                            select="text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() "/>
-                        <xsl:text> </xsl:text>
-                        <xsl:text>§</xsl:text>
-                        <xsl:value-of select="ancestor::tei:div[@type='chapter']/@n"/>
-                        <xsl:text>.</xsl:text>
-                        <xsl:value-of select="ancestor::tei:div[@type='section']/@n"/>
-                        <xsl:if test="not(position()=last())"><xsl:text> - </xsl:text></xsl:if>
-                    </xsl:if>  
-                </xsl:for-each>                
+            <xsl:element name="ul">
+                <xsl:attribute name="class">list-occurences</xsl:attribute>
+                <xsl:for-each-group select="//tei:body//tei:placeName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                    <xsl:element name="li">
+                        <xsl:apply-templates mode="reg" select="current()"/>
+                        <xsl:text> :</xsl:text>
+                        <xsl:for-each-group select="current-group()/ancestor::tei:div[@type='chapter']" group-by="@n">
+                            <xsl:element name="li">
+                                <xsl:attribute name="class">par</xsl:attribute>
+                                <xsl:text> §</xsl:text>
+                                <xsl:value-of select="@n"/>
+                            </xsl:element>
+                        </xsl:for-each-group>
+                    </xsl:element>
+                </xsl:for-each-group>
             </xsl:element>
         </xsl:element>
         <xsl:element name="br"/>
     </xsl:template>
 
+    
     <xsl:template match="tei:location"/>
 
 

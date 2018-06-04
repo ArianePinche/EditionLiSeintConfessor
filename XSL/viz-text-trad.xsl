@@ -17,7 +17,7 @@
             <xsl:value-of select="tokenize(//tei:text[@n ='edition']/tei:body/@n, ':')[last()]"/>
             <!-- récupération dans l'uri uniquement du nom du document -->
         </xsl:variable>
-        <xsl:result-document href="../../../../Dropbox/these/corpus/html/{concat($adresse,'-trad', '.html')}" format="html">
+        <xsl:result-document href="Users/arianepinche/Dropbox/these/corpus/html/{concat($adresse,'-trad', '.html')}" format="html">
             <html>
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -66,9 +66,7 @@
                 <body>
                     <div class="Notice">
                         <ul class="nav nav-tabs">
-                            <ul class="nav nav-tabs">
-                                
-                                <li role="presentation">
+                             <li role="presentation">
                                     <li role="presentation">
                                         <a data-toggle="tab" href="#notice">Notice </a>
                                     </li>
@@ -103,7 +101,7 @@
                                 </li>                            
                                
                                 
-                            </ul>
+                            
                         </ul>
                         <div class="tab-content">
                             
