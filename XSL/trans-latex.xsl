@@ -11,7 +11,7 @@
             <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
-        <xsl:result-document href="../../../../Dropbox/these/corpus/latex/{concat($witfile,'.tex')}">
+        <xsl:result-document href="/Users/arianepinche//Dropbox/these/corpus/latex/{concat($witfile,'.tex')}">
             <xsl:variable name="title">
                 <xsl:value-of select=".//tei:titleStmt/tei:title"/>
             </xsl:variable>
@@ -67,11 +67,7 @@
 \endnumbering
     </xsl:template>
     <xsl:template match="tei:div">
-        <xsl:text>\paragraph*{</xsl:text>
-        <xsl:if test="tei:head">
-            <xsl:apply-templates select="tei:head"/>
-        </xsl:if>
-        <xsl:text>}</xsl:text>
+        <xsl:text>\paragraph*{}</xsl:text>
         <xsl:apply-templates select="./tei:div"/>
     </xsl:template>
 
@@ -79,9 +75,15 @@
         <xsl:text>
 \subparagraph*{}
 
-\pstart
 </xsl:text>
-
+        <xsl:if test="./@n='1'">
+            <xsl:text>\pstart
+            \textit{</xsl:text>
+<xsl:apply-templates select="./preceding-sibling::tei:head"/>
+            <xsl:text>}</xsl:text>
+\pend
+        </xsl:if>
+ \pstart
         <xsl:if test="./@n = '1'">
             <xsl:value-of select="parent::tei:div/@n"/>
             <xsl:text>. </xsl:text>
@@ -91,8 +93,7 @@
 \pend
 
 </xsl:text>
-
-    </xsl:template>
+</xsl:template>
     <xsl:template match="tei:div/tei:div/tei:p">
         <xsl:apply-templates/>
     </xsl:template>
