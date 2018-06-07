@@ -34,8 +34,8 @@
                      <locus>fol.103-fol.170</locus>
                      <author>Wauchier de Denain</author>
                      <title>De seint Martin</title>
-                     <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr
-                        et entendre</incipit>
+                     <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
+                        entendre</incipit>
                      <explicit>A cele joie deveroit chascuns hom penser tout adés et entendre et la
                         nos doinst parvenir nostre Sires Jesu Criz qi vit et regne parmenablement
                         par tout le siecle des siecles sanz fin. Amen.</explicit>
@@ -86,12 +86,12 @@
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC" xml:id="abraham">
                   <persName>Abraham</persName>
                   <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
-                     des religions juives, chrétienne et musulmane.</note>
+                     des religions juive, chrétienne et musulmane.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agabaron">
                   <persName>Agabaron</persName>
                   <note type="biographical">Roi de la ville d'<placeName ref="#magine"
-                        >Édesse</placeName> (Magine)</note>
+                        >Édesse</placeName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agapites">
                   <persName>Agapites</persName>
@@ -101,10 +101,10 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agaridut">
                   <persName>Agaridut</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     gentilhomme, il arrive au monastère où se trouvent <persName ref="#severus"
-                        >Sulpice Sevère</persName>, <persName ref="#postumien">Postumien</persName>
-                     et <persName ref="#gallus">Gallus</persName> avec <persName ref="#refrigerius"
+                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, il
+                     arrive au monastère où se trouvent <persName ref="#severus">Sulpice
+                        Sevère</persName>, <persName ref="#postumien">Postumien</persName> et
+                        <persName ref="#gallus">Gallus</persName> avec <persName ref="#refrigerius"
                         >Refregerius</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aglaise">
@@ -117,10 +117,10 @@
                         Alexis</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agnes">
-                  <persName>Agnes</persName>
+                  <persName>Agnes (sainte)</persName>
                   <birth when="0300">4<hi rend="exp">e</hi> siècle</birth>
                   <death when="0300">4<hi rend="exp">e</hi> siècle</death>
-                  <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyr
+                  <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyre
                      romaine</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="albanie">
@@ -145,13 +145,13 @@
                   <note type="biographical">personnage contant parmi les jeunes gens qui
                      accompagnent les marchands de Bari.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC" xml:id="ambroise">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
                   <birth when="0340">340</birth>
                   <death when="0397">397</death>
                   <persName>Ambrose</persName>
-                  <note type="biographical">
-                     <surname type="complex">Saint Ambroise</surname>, évêque de Milan, est père et
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
+                     <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et
                      docteur de l'Église latine. Il est le maître à penser de <persName
                         ref="#martin">saint Martin</persName>.</note>
                </person>
@@ -200,10 +200,7 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arborius">
                   <persName>Arborius</persName>
                   <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
-                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint Martin,
-                     voir <bibl>
-                        <author>Sulpice Sévère</author>, <hi rend="italic">Vie de saint Martin</hi>.
-                        Tome II, éd. Jacques Fontaine, Paris Éd du Cerf, 1968, p.874.</bibl>
+                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint Martin.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archade">
@@ -260,40 +257,34 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
                   <persName>Aurelius</persName>
                   <note type="biographical">Archidiacre de <persName ref="#cesaire"
-                        >Césaire</persName>, personnage de la vie de <persName ref="#gile">saint
-                        Gilles</persName>
-                  </note>
+                        >Césaire</persName>, évêque d'Arles.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="austriclinien">
                   <persName>Austriclinien</persName>
-                  <note type="biographical"/>
+                  <note type="biographical">Discipline de saint Martial de Limoges, il fait parti de
+                     la suite qui l'accompagne pendant son voyage à Rome.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="avicien">
                   <persName>Avicien</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, comte
-                     de Tours du temps de <persName ref="#martin">saint Martin</persName>.</note>
+                  <note type="biographical">Comte de Tours.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="bace"
                   corresp="http://fr.dbpedia.org/page/Bacchus_(saint)">
                   <persName>Bace (saint)</persName>
                   <birth when="0200">3<hi rend="exp">e</hi> siecle</birth>
                   <death when="0303">303</death>
-                  <note type="biographical">Saint Bace (Bacchus), martyr avec <persName ref="#serge"
-                        >saint Serge</persName> en 303.</note>
+                  <note type="biographical">Saint martyrisé avec <persName ref="#serge">saint
+                        Serge</persName> en 303.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="belguisun">
                   <persName>Belguisun</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, il
-                     semble être un ami de Gallus, peut-être un disciple de saint Martin. J.Fontaine
-                     suggère que ce nom pourrait être un cognomen ethnique, voir <bibl>
-                        <author>Sulpice Sévère</author>, <hi rend="italic">Gallus, Dialogues sur les
-                           "vertus" de saint Martin</hi>, éd. Jacques Fontaine, Paris Éd du Cerf,
-                        2006, p.133</bibl>
+                  <note type="biographical">Ami de Gallus, peut-être un disciple de saint Martin.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoite">
                   <persName>Beneoite</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges.</note>
+                  <note type="biographical">Comtesse de la cité de Bordeaux, femme du comte
+                        <persName ref="#soybre">Soybre</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benjamin">
                   <persName>Benjamin</persName>
@@ -307,14 +298,13 @@
                   <death when="0547">547</death>
                   <note type="biographical">Saint Benoit, patriarche et législateur des moines
                      d'Occident, fondateur de l'ordre des bénédictins. Abbé du Mont-Cassin, il est
-                     célèbre pour sa règle de vie monastique, la règle de saint Benoit.</note>
+                     célèbre pour sa règle de vie monastique, dite "la règle de saint
+                     Benoit".</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="blidin">
                   <persName>Blidin</persName>
                   <note type="biographical">Compagnon du roi <persName ref="#thotila"
-                        >Totila</persName>, Personnage de la Vie de <persName ref="#benoit">Saint
-                        Benoit</persName>
-                  </note>
+                        >Totila</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="boniface">
                   <persName>Boniface (saint)</persName>
@@ -331,20 +321,19 @@
                   <note type="biographical">
                      <surname type="complex">Saint Brice de Tours</surname>, Ordoné évêque de Tours
                      en 397, il est le successeur de saint Martin. Il possède une mauvaise
-                     réputation en raison de son affection pour le luxe et les chevaux
-                     <!-- à terminer avec la vie de saint Brice --></note>
+                     réputation en raison de son affection pour le luxe.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cecile">
                   <persName>Cecile</persName>
                   <birth when="0200">3<hi rend="exp">e</hi> siècle</birth>
                   <death when="0200">3<hi rend="exp">e</hi> siècle</death>
-                  <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyr
+                  <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyre
                      romaine</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="celsus">
                   <persName>Celsus</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     consul.</note>
+                  <note type="biographical">consul qui assiste à la dernière partie du dialogue sur
+                     les vertus de saint Martin.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cesar">
                   <persName>Cesar</persName>
@@ -352,14 +341,19 @@
                   <death when="0044-03-15">15 mars en 44 av. J-C.</death>
                   <note type="biographical" source="http://data.bnf.fr/11894764/jules_cesar/">
                      <surname type="complex">Caius Iulius Caesar</surname>, général romain, fin
-                     stratège, suite aux guerres civiles (49-45) qu'il remportera, il se fera nommer
-                     dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides de Mars 44.
-                  </note>
+                     stratège, suite aux guerres civiles romaines (49-45) qu'il remporte, il se fait
+                     nommer dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides de
+                     Mars 44. </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="charlemagne">
                   <persName>Charlemagne</persName>
-                  <note type="biographical">Empereur des Francs</note>
+                  <birth when="0742">742</birth>
+                  <death when="0814">814</death>
+                  <note type="biographical" source="http://data.bnf.fr/fr/11940325/charlemagne/">Roi
+                     des Francs de 768 à 814, puis empereur d'Occident suite à son sacre en
+                     800.</note>
                </person>
+               <!-- fin -->
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="caton">
                   <persName>Chaton</persName>
                   <birth when="0095">-95</birth>
