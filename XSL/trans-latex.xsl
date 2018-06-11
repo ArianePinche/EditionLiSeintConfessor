@@ -78,7 +78,7 @@
 </xsl:text>
         <xsl:if test="./@n='1'">
             <xsl:text>\pstart
-            \textit{</xsl:text>
+            \noindent\textit{</xsl:text>
 <xsl:apply-templates select="./preceding-sibling::tei:head"/>
             <xsl:text>}</xsl:text>
 \pend
