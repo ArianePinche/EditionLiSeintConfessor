@@ -46,10 +46,24 @@
             \fancyhead[LE,RO]{ \thepage}
             \fancyhead[RE, LO]{\textsc{Index}}
             \renewcommand{\headrule}{} \fancyfoot[C]{}
+            ﻿ \setlength{\parindent}{-1em}
             
-            \chapter*{Index des noms propres}
+            ﻿\chapter*{Index}           
+            ﻿ ﻿\paragraph*{}
+            Cet index a pour objectif de permettre l'identification des noms propreset des toponymes  qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs formes relevées dans le texte. Ainsi pour un nom donné on trouvera successivement :
+            \begin{list}{-}{}
+            \item En petites capitales, la forme qui sert de base au regroupement, forme (au cas régime) la plus représentée dans le texte ou la plus aisée pour le classement. Ainsi, les noms de saint sont classés sous la forme de leur prénom uniquement, leur titre apparaissant à la suite entre parenthèses;  
+            \subitem Exemple : \textsc{Martin (saint)}
+            \item En romain, apparaissent par ordre alphabétique les autres formes du même nom relevées dans le texte ;
+            \item Ces formes sont suivies de la référence à la Vie du saint et du ou des chapitres où elles apparaissent. La vie de saint est signalée par le prénom du saint  entre crochets
+            \subitem Exemple : [Martin] 
+            \item En italiques est donnée l'identification du personnage et du nom de lieu. 
+            \end{list}
+            
+            \section*{Index des noms propres}
             <xsl:call-template name="NomPropre"/>
-            \chapter*{Index des toponymes}
+            \newpage
+            \section*{Index des toponymes}
             <xsl:call-template name="NomLieu"/>
             \end{document}    
             
@@ -75,16 +89,23 @@
             <xsl:for-each-group
                 select="//tei:body//tei:persName[@ref = '#' || $id and not(ancestor::tei:head)]"
                 group-by="my:regularize(.)">
+                <xsl:sort order="ascending" select="current-grouping-key()"/>
                 <xsl:text> </xsl:text>
-               <xsl:if test="current-grouping-key() != $persName "><xsl:apply-templates mode="reg" select="current()"/>
+               <xsl:if test="current-grouping-key() != $persName ">
+                   <xsl:apply-templates mode="reg" select="current()"/>
+                   <xsl:text>: </xsl:text>
                 </xsl:if>
                 <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
+                    <xsl:text> </xsl:text>
                     <xsl:call-template name="NomVie"/>
                     <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
                         group-by="@n">
                         <xsl:text> </xsl:text>
                         <xsl:value-of select="@n"/>
-                        <xsl:text>, </xsl:text>
+                        <xsl:choose>    
+                            <xsl:when test="current-group()/ancestor::tei:div[@type='chapter'][last()]"><xsl:text>; </xsl:text></xsl:when>
+                            <xsl:otherwise>, </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:for-each-group>
                 </xsl:for-each-group>
             </xsl:for-each-group>
@@ -100,14 +121,17 @@
             <xsl:variable name="placeName">
                 <xsl:value-of select="tei:placeName"/>
             </xsl:variable>
-            \textsc{<xsl:value-of select="tei:placeName"/>}<xsl:for-each-group
+            \textsc{<xsl:value-of select="tei:placeName"/>}<xsl:text>, </xsl:text><xsl:for-each-group
                 select="//tei:body//tei:placeName[@ref = '#' || $id and not(ancestor::tei:head)]"
                 group-by="my:regularize(.)">
+                <xsl:sort order="ascending" select="current-grouping-key()"/>
                 <xsl:text> </xsl:text>
                 <xsl:if test="current-grouping-key() != $placeName ">
                     <xsl:apply-templates mode="reg" select="current()"/>
+                    <xsl:text>: </xsl:text>
                 </xsl:if>
                 <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
+                    <xsl:text> </xsl:text>
                     <xsl:call-template name="NomVie"/>
                     <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
                         group-by="@n">
@@ -128,31 +152,31 @@
     <xsl:template name="NomVie">
         <xsl:choose>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1856.ciham-fro1'">
-                <xsl:text> \textit{S. Martin} : </xsl:text>
+                <xsl:text>[Martin]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1743.ciham-fro1'">
-                <xsl:text> \textit{S. Brice} : </xsl:text>
+                <xsl:text>[Brice]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1742.ciham-fro1'">
-                <xsl:text> \textit{S. Jérôme} : </xsl:text>
+                <xsl:text>[Jérôme]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1744.ciham-fro1'">
-                <xsl:text> \textit{S. Benoit} : </xsl:text>
+                <xsl:text>[Benoit]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1761.ciham-fro1'">
-                <xsl:text> \textit{S. Marcel} : </xsl:text>
+                <xsl:text>[Marcel]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns1994.ciham-fro1'">
-                <xsl:text> \textit{S. Alexis} : </xsl:text>
+                <xsl:text>[Alexis]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns2000.ciham-fro1'">
-                <xsl:text> \textit{S. Gilles} : </xsl:text>
+                <xsl:text>[Gilles]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns2114.ciham-fro1'">
-                <xsl:text> \textit{S. Nicolas} : </xsl:text>
+                <xsl:text>[Nicolas]</xsl:text>
             </xsl:when>
             <xsl:when test="ancestor::tei:body/@n = 'urn:cts:froLit:jns915.jns2117.ciham-fro1'">
-                <xsl:text> \textit{Dialogues} : </xsl:text>
+                <xsl:text>[Dialogues]</xsl:text>
             </xsl:when>
         </xsl:choose> 
 </xsl:template>
