@@ -59,11 +59,14 @@
             \subitem Exemple : [Martin] 
             \item En italiques est donnée l'identification du personnage et du nom de lieu. 
             \end{list}
-            
+            \begin{center}
             \section*{Index des noms propres}
+            \end{center}
             <xsl:call-template name="NomPropre"/>
             \newpage
+            \begin{center}
             \section*{Index des toponymes}
+            \end{center}
             <xsl:call-template name="NomLieu"/>
             \end{document}    
             
@@ -134,7 +137,6 @@
                     <xsl:text>: </xsl:text>
                 </xsl:if>
                 <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
-                    <xsl:sort select="ancestor::tei:TEI/@n"/>
                     <xsl:text> </xsl:text>
                     <xsl:call-template name="NomVie"/>
                     <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
