@@ -76,7 +76,7 @@
 \subparagraph*{}
 
 </xsl:text>
-        <xsl:if test="./@n='1'">
+        <xsl:if test="./preceding-sibling::tei:head">
             <xsl:text>\pstart
             \noindent\textit{</xsl:text>
 <xsl:apply-templates select="./preceding-sibling::tei:head"/>
@@ -112,7 +112,7 @@
     <xsl:template match="tei:corr">
         <xsl:choose>
             <xsl:when test="@type = 'add'">
-                <xsl:text>[</xsl:text>
+                <xsl:if test="ancestor::tei:l"><xsl:text>\relax </xsl:text></xsl:if><xsl:text>[</xsl:text>
                 <xsl:value-of select="normalize-space(.)"/>
                 <xsl:text>]</xsl:text>
             </xsl:when>
@@ -241,7 +241,7 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr"/>
+            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr[@type='del'] | ./tei:lem/tei:corr[@type='add']/text()"/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">
