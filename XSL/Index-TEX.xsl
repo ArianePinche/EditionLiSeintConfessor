@@ -103,7 +103,7 @@
                         <xsl:text> </xsl:text>
                         <xsl:value-of select="@n"/>
                         <xsl:choose>    
-                            <xsl:when test="current-group()/ancestor::tei:div[@type='chapter'][last()]"><xsl:text>; </xsl:text></xsl:when>
+                            <xsl:when test="position() = last()"><xsl:text>; </xsl:text></xsl:when>
                             <xsl:otherwise>, </xsl:otherwise>
                         </xsl:choose>
                     </xsl:for-each-group>
@@ -125,21 +125,51 @@
                 select="//tei:body//tei:placeName[@ref = '#' || $id and not(ancestor::tei:head)]"
                 group-by="my:regularize(.)">
                 <xsl:sort order="ascending" select="current-grouping-key()"/>
+                <xsl:variable name="ref">
+                    <xsl:value-of select="replace(@ref, '#', '')"/>
+                </xsl:variable>
                 <xsl:text> </xsl:text>
                 <xsl:if test="current-grouping-key() != $placeName ">
                     <xsl:apply-templates mode="reg" select="current()"/>
                     <xsl:text>: </xsl:text>
                 </xsl:if>
                 <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
+                    <xsl:sort select="ancestor::tei:TEI/@n"/>
                     <xsl:text> </xsl:text>
                     <xsl:call-template name="NomVie"/>
                     <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
                         group-by="@n">
                         <xsl:text> </xsl:text>
                         <xsl:value-of select="@n"/>
-                        <xsl:text>, </xsl:text>
+                            <xsl:choose>    
+                                <xsl:when test="position() = last()">
+                                    <xsl:choose>
+                                        <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note "><xsl:text>; </xsl:text></xsl:when>
+                                        <xsl:otherwise/>
+                                    </xsl:choose>
+                                </xsl:when>
+                            <xsl:otherwise>, </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:for-each-group>
+                    <xsl:choose>    
+                        <xsl:when test="position() != last()">
+                            <xsl:choose>
+                                <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note"/>
+                                <xsl:otherwise><xsl:text>; </xsl:text></xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
                 </xsl:for-each-group>
+                <xsl:choose>    
+                    <xsl:when test="position() != last()">
+                        <xsl:choose>
+                            <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note"/>
+                            <xsl:otherwise><xsl:text>; </xsl:text></xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
             </xsl:for-each-group>
             \textit{<xsl:apply-templates select="tei:note"/>}\\
         </xsl:for-each>
