@@ -92,21 +92,17 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agabaron">
                   <persName>Agabaron</persName>
                   <note type="biographical">Roi de la ville d'<placeName ref="#magine"
-                        >Édesse</placeName></note>
+                        >Édesse</placeName>, actuellement Urfa en Turquie.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agapites">
                   <persName>Agapites</persName>
                   <note type="biographical">Sous-diacre de <persName ref="#benoit">Saint
-                        Benoit</persName>
+                        Benoit</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agaridut">
                   <persName>Agaridut</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, il
-                     arrive au monastère où se trouvent <persName ref="#severus">Sulpice
-                        Sevère</persName>, <persName ref="#postumien">Postumien</persName> et
-                        <persName ref="#gallus">Gallus</persName> avec <persName ref="#refrigerius"
-                        >Refregerius</persName>.</note>
+                  <note type="biographical">Honnête homme, témoin de l'adoucissement des moeurs cruelles d'Avicien.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aglaise">
                   <persName>Aglaïs</persName>
@@ -116,8 +112,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agnes">
                   <persName>Agnes (sainte)</persName>
-                  <birth when="0300">4<hi rend="exp">e</hi> siècle</birth>
-                  <death when="0300">4<hi rend="exp">e</hi> siècle</death>
+                  <death when="0300">4<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyre
                      romaine</note>
                </person>
@@ -1645,7 +1640,7 @@
                   <placeName>Magine</placeName>
                   <location>
                      <geo>37.9120893333, 40.2303073333 </geo>
-                     <note>Édesse, ville de Mésopotamie</note>
+                     <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie</note>
                   </location>
                </place>
                <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="mans">

@@ -50,13 +50,13 @@
             
             ﻿\chapter*{Index}           
             ﻿ ﻿\paragraph*{}
-            Cet index a pour objectif de permettre l'identification des noms propreset des toponymes  qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs formes relevées dans le texte. Ainsi pour un nom donné on trouvera successivement :
+            Cet index a pour objectif de permettre l'identification des noms propres et des toponymes  qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs formes relevées dans le texte. Ainsi pour un nom donné on trouvera successivement :
             \begin{list}{-}{}
-            \item En petites capitales, la forme qui sert de base au regroupement, forme (au cas régime) la plus représentée dans le texte ou la plus aisée pour le classement. Ainsi, les noms de saint sont classés sous la forme de leur prénom uniquement, leur titre apparaissant à la suite entre parenthèses;  
-            \subitem Exemple : \textsc{Martin (saint)}
+            \item En petites capitales, la forme qui sert de base au regroupement, forme (au cas régime) la plus représentée dans le texte ou la plus aisée pour le classement. Ainsi, les noms de saint sont classés sous la forme de leur prénom uniquement, leur titre apparaissant à la suite entre parenthèses.  
+            \subitem Exemple : \textsc{Martin (saint)};
             \item En romain, apparaissent par ordre alphabétique les autres formes du même nom relevées dans le texte ;
-            \item Ces formes sont suivies de la référence à la Vie du saint et du ou des chapitres où elles apparaissent. La vie de saint est signalée par le prénom du saint  entre crochets
-            \subitem Exemple : [Martin] 
+            \item Ces formes sont suivies de la référence à la Vie du saint et du ou des chapitres où elles apparaissent. La vie de saint est signalée par le prénom du saint  entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og dialogues \fg{}  entre crochets.
+            \subitem Exemple : [Martin]; 
             \item En italiques est donnée l'identification du personnage et du nom de lieu. 
             \end{list}
             \begin{center}
@@ -82,11 +82,11 @@
             <xsl:variable name="persName">
                 <xsl:value-of select="tei:persName"/>
             </xsl:variable>
-            \textsc{<xsl:value-of select="tei:persName"/>}<xsl:if test="tei:birth">
-                <xsl:text> (</xsl:text>
-                <xsl:value-of select="tei:birth"/>
-                <xsl:text>-</xsl:text>
-                <xsl:value-of select="tei:death"/>
+            \textsc{<xsl:value-of select="tei:persName"/>}<xsl:if test="tei:death">
+                <xsl:text> (</xsl:text><xsl:if test="tei:birth">
+                <xsl:apply-templates select="tei:birth"/>
+                <xsl:text>-</xsl:text></xsl:if>
+                <xsl:apply-templates select="tei:death"/>
                 <xsl:text>)</xsl:text>
             </xsl:if>,
             <xsl:for-each-group
@@ -212,5 +212,12 @@
             </xsl:when>
         </xsl:choose> 
 </xsl:template>
+
+<xsl:template match="//tei:ex">
+    <xsl:text>\up{</xsl:text>
+    <xsl:value-of select="."/>
+    <xsl:text>}</xsl:text>
+</xsl:template>
+
 
 </xsl:stylesheet>
