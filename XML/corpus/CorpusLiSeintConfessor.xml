@@ -118,12 +118,13 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="albanie">
                   <persName>Albanies</persName>
-                  <note type="biographical">Alblabius, préfet du prétoire sous Constantin I<hi
-                        rend="exp">er</hi>.</note>
+                  <note type="biographical">Albanus, préfet du prétoire sous Constantin I<ex>er</ex>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="alexis">
                   <persName>Alexis</persName>
-                  <note type="biographical">Alexis 1<ex>er</ex> Commène, empereur de Constantinoples
+                  <birth when="1057">1057</birth>
+                  <death when="1118">1118</death>
+                  <note type="biographical" source="http://data.bnf.fr/ark:/12148/cb13514583h">Alexis I<ex>er</ex> Comnène, empereur de Constantinople
                      de 1081 à 1118.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="saintalexis">
@@ -131,17 +132,17 @@
                   <birth when="0300">4<ex>e</ex> siècle</birth>
                   <death when="0416">416</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15651786n">
-                     saint du V<ex>e</ex> siècle d'origine romaine.</note>
+                     saint d'origine romaine.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="alexandre">
                   <persName>Alixandre</persName>
                   <note type="biographical">personnage contant parmi les jeunes gens qui
-                     accompagnent les marchands de Bari.</note>
+                     accompagnent les marchands de Bari qui veulent récupérer le corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
                   <birth when="0340">340</birth>
                   <death when="0397">397</death>
-                  <persName>Ambrose</persName>
+                  <persName>Ambrose (saint)</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
                      <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et
@@ -150,20 +151,18 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="anatolius">
                   <persName>Anatolius</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, Anatolius est un nom que portent souvent les esclaves
-                     orientaux. </note>
+                  <note type="biographical">Jeune homme diabolique qui intègre une communauté religieuse dirigée par <persName ref="#martin">saint Martin</persName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="andrius">
                   <persName>Andrius</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges, prêtre
+                  <note type="biographical">Prêtre
                      paien de la cité de <placeName ref="#limoges">Limoges</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="antiocus">
                   <persName>Antiocus</persName>
                   <note type="biographical">Antiochus, gouverneur responsable du martyre de
                         <persName ref="#serge">saint Serge</persName> et <persName ref="#bace">saint
-                        Bace</persName> en 303.</note>
+                        Bace</persName> en 303 à Rosafa en Syrie.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="antoine">
                   <persName>Antoine</persName>
@@ -182,14 +181,14 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="appollin">
                   <persName>Appollin</persName>
-                  <note type="biographical">Dieu romain</note>
+                  <note type="biographical">Dieu romain.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aquileon">
                   <persName>Aquileon</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
-                     condamné à mort par l'empereur.</note>
+                  <note type="biographical">Officier impérial envoyé en mission secrète et qui sera
+                     condamné à mort par l'empereur Constantin I<ex>er</ex></note>
                </person>
+               <!-- fin -->
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arborius">
                   <persName>Arborius</persName>
                   <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
@@ -235,7 +234,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="armense">
                   <persName>Armense</persName>
-                  <note type="biographical">Evêque de Tours, sucesseur de Justinien</note>
+                  <note type="biographical">Evêque de Tours, sucesseur de Justinien.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arpage">
                   <persName>Arpage</persName>
@@ -249,7 +248,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
                   <persName>Aurelius</persName>
-                  <note type="biographical">Archidiacre de <persName ref="#cesaire"
+                  <note type="biographical">Archidiacre de saint <persName ref="#cesaire"
                         >Césaire</persName>, évêque d'Arles.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="austriclinien">
@@ -266,8 +265,8 @@
                   <persName>Bace (saint)</persName>
                   <birth when="0200">3<hi rend="exp">e</hi> siecle</birth>
                   <death when="0303">303</death>
-                  <note type="biographical">Saint martyrisé avec <persName ref="#serge">saint
-                        Serge</persName> en 303.</note>
+                  <note type="biographical">Saint Bacchus martyrisé avec <persName ref="#serge">saint
+                     Serge</persName> en 303 à Rosafa en Syrie.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="belguisun">
                   <persName>Belguisun</persName>
