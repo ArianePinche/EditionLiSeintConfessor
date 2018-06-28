@@ -129,7 +129,6 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="saintalexis">
                   <persName>Alexis (saint)</persName>
-                  <birth when="0300">4<ex>e</ex> siècle</birth>
                   <death when="0416">416</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15651786n">
                      saint d'origine romaine.</note>
@@ -156,7 +155,7 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="andrius">
                   <persName>Andrius</persName>
                   <note type="biographical">Prêtre
-                     paien de la cité de <placeName ref="#limoges">Limoges</placeName>.</note>
+                     paien de la cité de <placeName ref="#limoges">Limoges</placeName>, converti à la fois avec <persName ref="#aurelien">Aurelien</persName> à la foi chrétienne par <persName ref="#marcel">saint Marcel</persName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="antiocus">
                   <persName>Antiocus</persName>
@@ -185,20 +184,18 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aquileon">
                   <persName>Aquileon</persName>
-                  <note type="biographical">Officier impérial envoyé en mission secrète et qui sera
-                     condamné à mort par l'empereur Constantin I<ex>er</ex></note>
+                  <note type="biographical">Officier impérial envoyé en mission secrète avec <persName ref="#nepotiens">Nepotien</persName> et <persName ref="#ursus">Ursus</persName> pour punir la contrée de <placeName ref="#licie">Lycie</placeName>.</note>
                </person>
-               <!-- fin -->
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arborius">
                   <persName>Arborius</persName>
                   <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
-                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint Martin.
+                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de <persName ref="#saintMartin">saint Martin</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archade">
                   <persName>Archade</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges, conte
-                     de Poitiers.</note>
+                  <note type="biographical">Comte
+                     de Poitiers, père de <persName ref="#hydebres">Hyldebert</persName> qui fut ressuscité par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archades">
                   <persName>Archades</persName>
@@ -211,7 +208,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archemius">
                   <persName>Archemius</persName>
-                  <note type="biographical">Artemas, prêtre présent au moment de la mort de
+                  <note type="biographical">Prêtre présent, avec <persName ref="#chemelaus">Chemelaus</persName>, au moment de la mort de
                         <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
@@ -221,75 +218,67 @@
                   <death when="0336">336</death>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC">Arius, prêtre
-                     d'Alexandrie, est le fondateur de l'une des plus importantes hérésies
+                     d'<placeName ref="#alexandrie">Alexandrie</placeName>, est le fondateur de l'une des plus importantes hérésies
                      christologiques, l'arianisme. Il sera excommunié et déclaré hérésiarque en 325
                      lors du concile de Nicée.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="armenie2">
                   <persName>Armanie</persName>
-                  <note type="biographical">Jeune fille, personnage de la <hi rend="italic">Vie de
-                           <persName ref="#nicolas">saint Nicolas</persName>
-                     </hi>
-                  </note>
+                  <note type="biographical">Jeune fille.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="armense">
                   <persName>Armense</persName>
-                  <note type="biographical">Evêque de Tours, sucesseur de Justinien.</note>
+                  <note type="biographical">Evêque de <placeName ref="#tours">Tours</placeName>, sucesseur de <persName ref="#justinien">Justinien</persName> et de <persName ref="#brice">saint Brice</persName>, d'après Grégoire de Tours.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arpage">
                   <persName>Arpage</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
+                  <note type="biographical">Prêtre, témoin du miracle de la fiole d'huile de la femme d'<persName ref="#avicien">Avicien</persName>, suite à la bénédiction de <persName ref="#martin">saint Martin</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelien">
                   <persName>Aurelien</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges, prêtre
-                     paien de la cité de <placeName ref="#limoges">Limoges</placeName>.</note>
+                  <note type="biographical">Prêtre
+                     paien de la cité de <placeName ref="#limoges">Limoges</placeName>, converti à la fois avec <persName ref="#andrius">Andrius</persName> à la foi chrétienne par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
                   <persName>Aurelius</persName>
-                  <note type="biographical">Archidiacre de saint <persName ref="#cesaire"
-                        >Césaire</persName>, évêque d'Arles.</note>
+                  <note type="biographical">Archidiacre de <persName ref="#cesaire">saint Césaire</persName>, évêque d'<placeName ref="#arles">Arles</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="austriclinien">
                   <persName>Austriclinien</persName>
-                  <note type="biographical">Discipline de saint Martial de Limoges, il fait parti de
+                  <note type="biographical">Discipline de <persName ref="#marcel">saint Marcel</persName>, il fait parti de
                      la suite qui l'accompagne pendant son voyage à Rome.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="avicien">
                   <persName>Avicien</persName>
                   <note type="biographical">Comte de Tours.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="bace"
-                  corresp="http://fr.dbpedia.org/page/Bacchus_(saint)">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="bace">
                   <persName>Bace (saint)</persName>
-                  <birth when="0200">3<hi rend="exp">e</hi> siecle</birth>
                   <death when="0303">303</death>
-                  <note type="biographical">Saint Bacchus martyrisé avec <persName ref="#serge">saint
+                  <note type="biographical" source="http://fr.dbpedia.org/page/Bacchus_(saint)">Saint Bacchus martyrisé avec <persName ref="#serge">saint
                      Serge</persName> en 303 à Rosafa en Syrie.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="belguisun">
                   <persName>Belguisun</persName>
-                  <note type="biographical">Ami de Gallus, peut-être un disciple de saint Martin.
+                  <note type="biographical">Ami de <persName ref="#gallus">Gallus</persName>, peut-être un disciple de <persName ref="#martin">saint Martin</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoite">
                   <persName>Beneoite</persName>
-                  <note type="biographical">Comtesse de la cité de Bordeaux, femme du comte
+                  <note type="biographical">Comtesse de la cité de <placeName ref="#bordeaux">Bordeaux</placeName>, femme du comte
                         <persName ref="#soybre">Soybre</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benjamin">
                   <persName>Benjamin</persName>
-                  <note type="biographical">Personnage de l'ancien Testament, fils cadet de Jacob et
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q460763">Personnage de l'ancien Testament, fils cadet de Jacob et
                      Rebbeca.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoit"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb118911827">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoit">
                   <persName>Benoit (saint)</persName>
                   <birth when="0480">480</birth>
                   <death when="0547">547</death>
-                  <note type="biographical">Saint Benoit, patriarche et législateur des moines
-                     d'Occident, fondateur de l'ordre des bénédictins. Abbé du Mont-Cassin, il est
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb118911827">Saint Benoit, patriarche et législateur des moines
+                     d'Occident, fondateur de l'ordre des bénédictins. Abbé du <placeName ref="#cassin">Mont-Cassin</placeName>, il est
                      célèbre pour sa règle de vie monastique, dite "la règle de saint
                      Benoit".</note>
                </person>
@@ -300,40 +289,38 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="boniface">
                   <persName>Boniface (saint)</persName>
-                  <birth when="0300">4<ex>e</ex> siècle</birth>
                   <death when="0300">4<ex>e</ex> siècle</death>
                   <note type="biographical">Selon certaines tradition, il aurait été
                      l'esclave-intendant d'<persName ref="#aglaise">Aglaïs</persName> et aurait mené
-                     une vie de débauche avant de se convertir au christianisme. Il serait mort en
+                     une vie de débauche avant de se convertir au christianisme et de mourir en
                      martyr.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="brice">
                   <persName>Brice</persName>
+                  <birth when="0377">377</birth>
                   <death when="0444">444</death>
-                  <note type="biographical">
-                     <surname type="complex">Saint Brice de Tours</surname>, Ordoné évêque de Tours
-                     en 397, il est le successeur de saint Martin. Il possède une mauvaise
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q913528">
+                     <surname type="complex">Saint Brice de Tours</surname>, ordoné évêque de Tours
+                     en 397, successeur de <persName ref="#martin">saint Martin</persName>, il possède une mauvaise
                      réputation en raison de son affection pour le luxe.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cecile">
                   <persName>Cecile</persName>
-                  <birth when="0200">3<hi rend="exp">e</hi> siècle</birth>
                   <death when="0200">3<hi rend="exp">e</hi> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyre
-                     romaine</note>
+                     romaine.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="celsus">
                   <persName>Celsus</persName>
-                  <note type="biographical">consul qui assiste à la dernière partie du dialogue sur
-                     les vertus de saint Martin.</note>
+                  <note type="biographical">Consul, seul personnage avec <persName ref="#eucherius">Eucherius</persName>à pouvoir écouter la dernière partie des <hi rend="italic">Dialogues sur
+                     les vertus de saint Martin</hi>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cesar">
                   <persName>Cesar</persName>
-                  <birth when="0100-12-07">12 juillet en 100 av. J-C.</birth>
-                  <death when="0044-03-15">15 mars en 44 av. J-C.</death>
+                  <birth when="0100-12-07">100 av. J-C.</birth>
+                  <death when="0044-03-15">44 av. J-C.</death>
                   <note type="biographical" source="http://data.bnf.fr/11894764/jules_cesar/">
-                     <surname type="complex">Caius Iulius Caesar</surname>, général romain, fin
-                     stratège, suite aux guerres civiles romaines (49-45) qu'il remporte, il se fait
+                     <surname type="complex">Caius Iulius Caesar</surname>, général romain, il se fait
                      nommer dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides de
                      Mars 44. </note>
                </person>
@@ -345,80 +332,66 @@
                      des Francs de 768 à 814, puis empereur d'Occident suite à son sacre en
                      800.</note>
                </person>
-               <!-- fin -->
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="caton">
                   <persName>Chaton</persName>
                   <birth when="0095">-95</birth>
                   <death when="0046">-46</death>
                   <note source="http://data.bnf.fr/12021757/caton_d_utique/">
                      <surname type="complex">Marcus Porcius Cato</surname>, dit Caton d'Utique,
-                     homme d'Etat romain, en 63, lors de la conjuration de Catilina, il prit le
-                     parti de Cicéron. Lors des guerres civiles (-49), il se prononça pour <persName
-                        ref="#pompee">Pompée</persName> et prit les armes contre <persName
-                        ref="#cesar">César</persName>. Après la défaite de Metellus Scipion à
-                     Thapsus le 6 avril 46, Caton, plutôt que de perdre sa liberté, préféra se
-                     suicider en se transperçant de son épée.</note>
+                     homme d'État romain.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="chaton">
                   <persName>Chaton</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, diacre
-                     de l'éveque <persName ref="#martin">saint Martin</persName>.</note>
+                  <note type="biographical">Diacre
+                     de l'évêque <persName ref="#martin">saint Martin</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="chemelaus">
                   <persName>Chemelaus</persName>
-                  <note type="biographical">Hermelaus, prêtre présent au moment de la mort de
-                        <persName ref="#nicolas">saint Nicolas</persName>.</note>
+                  <note type="biographical">Prêtre présent, avec <persName ref="#archemius">Archemius</persName>, au moment de la mort de
+                     <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="chotila"
                   corresp="https://www.wikidata.org/wiki/Q159707">
                   <persName>Chotila</persName>
-                  <birth when="0500"/>
                   <death when="0552">552</death>
                   <note type="biographical">Totila, roi ostrogoths, élu roi d'Italie en 541</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="clarus">
                   <persName>Clarus</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, Clarus a très probablement existé. Paulin de Nole fait allusion
-                     à lui dans trois poèmes (epist. 2, 5, epist. 32, 6). Il est possible qu’il ait
-                     été pour Martin une sorte de maître des novices, voir <bibl>
-                        <author>Sulpice Sévère</author>, <hi rend="italic">Vie de saint Martin. Tome
-                           III</hi>, éd. Jacques Fontaine, Paris Les Ed du Cerf, 1969, p.994.</bibl>
+                  <note type="biographical">Jeune disciple de <persName rend="#martin">saint Martin</persName>.
                   </note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cleopha">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cleopha" >
                   <persName>Cleopha</persName>
-                  <note type="biographical"/>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q711072">Jeune disciple de <persName ref="#jesus">Jésus</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="constentin">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="constentin" >
                   <persName>Constentin</persName>
-                  <note type="biographical">Constantin I<hi rend="exp">er</hi>, Empereur de
-                     Rome</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12182910j">Constantin I<hi rend="exp">er</hi>, empereur de
+                     Rome.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="constentin2">
                   <persName>Constentin</persName>
-                  <note type="biographical">Successeur de saint Benoit à la tête du monestère de
-                     Mont-Cassin</note>
+                  <note type="biographical">Successeur de <persName ref="#benoit">saint Benoit</persName> à la tête du monastère de
+                     <placeName ref="#cassin">Mont-Cassin</placeName></note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="corras">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="corras" >
                   <persName>Corras</persName>
                   <birth when="1093">1093</birth>
                   <death when="1152">1152</death>
-                  <note type="biographical">Conrad III, empereur d'Allemagne</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15100807n">Conrad III, empereur d'Allemagne</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="costance">
                   <persName>Costance</persName>
-                  <note type="biographical">Évêque d'<placeName ref="#aquin">Aquino</placeName>,
-                     Personnage de la Vie de <persName ref="#benoit">Saint Benoit</persName>
+                  <note type="biographical">Évêque d'<placeName ref="#aquin">Aquino</placeName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cressentius">
                   <persName>Cressentius</persName>
-                  <note type="biographical">Saint Crescent, martyr vers 244.</note>
+                  <note type="biographical">Saint Crescent, martyr vers 244 avec <persName ref="#dyoscurus">saint Dioscoride</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cyprien">
                   <persName>Cyprien</persName>
-                  <birth when="0200">3e siècle</birth>
                   <death when="0258">258</death>
                   <note type="biographical" source="http://data.bnf.fr/11886041/cyprien/">Evêque de
                      Carthage, martyr, victime des persécutions de l'empereur Valérien
@@ -426,8 +399,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cyrenense">
                   <persName>Cyrenense</persName>
-                  <note type="biographical">Nom d'un personnage des <hi rend="italic"
-                     >Dialogues</hi>, vieux prêtre de auquel Postumien prêta sa copie de la <hi
+                  <note type="biographical">Vieux prêtre auquel Postumien prêta sa copie de la <hi
                         rend="italic">Vie de <persName ref="#martin">saint Martin</persName>
                      </hi> de <persName ref="#severus">Sulpice Sévère</persName>. Son nom n'est pas
                      indiqué dans la source latine, mais il est fait mention du fait qu'il est
@@ -437,18 +409,18 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cesaire">
                   <persName>Césaire</persName>
-                  <note type="biographical">Evêque d'<placeName ref="#arles">Arles</placeName>
+                  <birth when="0470">470</birth>
+                  <death when="0542">542</death>
+                  <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb118947651">Saint césaire d'<placeName ref="#arles">Arles</placeName>, évêque.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="deudone2">
                   <persName>Deudonnez</persName>
-                  <note type="biographical">Abbé, personnage de la Vie de <persName ref="#benoit"
-                        >Saint Benoit</persName>
-                  </note>
+                  <note type="biographical">Abbé du moine <persName ref="#romein">Romain</persName> qui apporte des vivres à saint Benoit pendant sa retraite érémitique.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="deudone">
                   <persName>Deudoné</persName>
-                  <note type="biographical">Fils de <persName ref="#getron">Jechron</persName>
+                  <note type="biographical">Fils de <persName ref="#getron">Jechron</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="diane">
@@ -457,12 +429,14 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="namur">
                   <persName>Duc de Namur</persName>
-                  <note type="biographical">Philippe de Namur, duc de Namur et comte de Hainault,
+                  <birth when="1174">1174</birth>
+                  <death when="1212">1212</death>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q646297">Philippe 1<ex>er</ex> de Namur, duc de Namur et comte de Hainault,
                      mécène de <persName ref="#wauchier">Wauchier de Denain</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="dyoscurus">
                   <persName>Dyoscurus</persName>
-                  <note type="biographical">Saint Dioscuride, martyr vers 244.</note>
+                  <note type="biographical">Saint Dioscoride, martyr vers 244 avec <persName ref="#crescent">saint Crescent</persName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="elisabet">
                   <persName>Elisabeth</persName>
@@ -472,43 +446,39 @@
                      </surname>
                   </note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC" xml:id="elie">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="elie">
                   <persName>Elye</persName>
-                  <note type="biographical">Personnage biblique, il est considéré comme un prophète
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC">Personnage biblique, il est considéré comme un prophète
                      majeur des religions abrahamiques.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="engigniere">
                   <persName>Engigniere de Mil</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges,
-                     démon.</note>
+                  <note type="biographical">Démon aquatique avec <persName ref="#nuiton">Nuiton</persName> et <persName ref="#risoaudus">Risoaudus</persName>, responsables de la noyade d'<persName ref="#hydebres">Hyldebert</persName> qui sera ressuscité par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ernols">
                   <persName>Ernols</persName>
-                  <note type="biographical">Arnulphus, évêque de Butuntum</note>
+                  <note type="biographical">Arnulphus, évêque de Butuntum.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ernou">
                   <persName>Ernou</persName>
-                  <note type="biographical">Personnage de la vie de saint Martial, comte de
-                     Tours</note>
+                  <note type="biographical">Comte de
+                     Tours.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="etienne"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
                   <persName>Etiene</persName>
-                  <birth when="0001">?</birth>
                   <death when="0037">37</death>
                   <note type="biographical">Saint Etienne, premier martyr chrétien, il fait partie
                      de la première communaité chrétienne de <placeName ref="#jerusalem"
                         >Jérusalem</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="etienneDuc">
-                  <persName>Etievene</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges.</note>
+                  <persName>Etiene</persName>
+                  <note type="biographical">Étienne, duc, il fera tuer <persName ref="#valerie">sainte Valérie</persName> pour avoir refusé de se marier avec lui, avant de se répentir et de se convertir à la foi chrétienne sous le patronage de <persName ref="#marcel">saint Marcel</persName> de Limoges.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eucherius">
                   <persName>Eucherius</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     consul.</note>
+                  <note type="biographical">Consul, seul personnage avec le consul <persName ref="#celsus">Celsus</persName>, à pouvoir écouter la deuxième partie des <hi rend="italic">Dialogues sur les vertus de saint Martin</hi>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eudoxius">
                   <persName>Eudoxius</persName>
@@ -522,8 +492,8 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eufrosine">
                   <persName>Eufrosine</persName>
-                  <note type="biographical">femme du pèlerin <persName ref="#getron"
-                        >Jechron</persName>
+                  <note type="biographical">Femme du marchand et pèlerin <persName ref="#getron"
+                        >Jechron</persName>, mère de <persName ref="#deudone">Deudoné</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eusebius">
@@ -533,58 +503,50 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eustache">
                   <persName>Eustache</persName>
-                  <note type="biographical">Evêque de Tours, sucesseur de Brice</note>
+                  <note type="biographical">Evêque de Tours, sucesseur de Brice.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="evanchius">
                   <persName>Evanchius</persName>
-                  <note>Personnage des <hi rend="italic">Dialogues</hi>, oncle chrétien de <persName
+                  <note>Oncle chrétien de <persName
                         ref="#gallus">Gallus</persName>
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="euvangilus">
                   <persName>Evangilus</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
+                  <note type="biographical">Prêtre, témoin d'un miracle de <persName ref="#martin">saint Martin</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="evitius">
                   <persName>Evitus</persName>
                   <note type="biographical">Noble qui envoia son fils <persName ref="#maurum"
-                        >Maurum</persName> auprès de saint Benoit.</note>
+                        >Maurum</persName> auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="felix">
                   <persName>Felices</persName>
-                  <note type="biographical">Évêque</note>
+                  <note type="biographical">Évêque, nommé pendant le séjour de <persName ref="#martin">saint Martin</persName> à <placeName ref="#treves">Trèves</placeName> auprès de l'empereur <persName ref="#maximin">Maximin</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="flavi">
                   <persName>Flavi</persName>
-                  <note type="biographical">Roi du sud de la France, personnage de la vie de
-                        <persName ref="#gile">saint Gilles</persName>
-                  </note>
+                  <note type="biographical">Roi du sud de la France dont les troupes partent à la poursuite de la biche de <persName ref="#gile">saint Gilles</persName> lors d'une partie de chasse.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="florentin">
                   <persName>Florentin</persName>
-                  <note type="biographical">Prêtre, personnage de la Vie de <persName ref="#benoit"
-                        >Saint Benoit</persName>
-                  </note>
+                  <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gallus">
                   <persName>Gallus</persName>
-                  <note>Personnage de la <hi rend="italic">Des dialogues sur les vertus de saint
-                        Martin</hi>, il aurait été un disciple de saint Martin.</note>
+                  <note>Disciple de saint Martin.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="wauchier">
                   <persName>Gauchier</persName>
                   <note type="biographical">Wauchier de Denain, auteur du recueil hagriographique
-                        <hi rend="italic">Li seint Confessor</hi>
+                        <hi rend="italic">Li seint Confessor</hi>.
                   </note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jorge">
-                  <persName>George (saint)</persName>
-                  <note type="biographical">Saint George</note>
-               </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gile">
-                  <persName>Gilles</persName>
-                  <note type="biographical"/>
+                  <persName>Gile (saint)</persName>
+                  <birth when="0640">640</birth>
+                  <death when="0710">710</death>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint Giles l'ermite, il quitte Athène et sa Grèce natale pour s'établir dans le Sud de la France dans la région du Gard.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="godins">
                   <persName>Godins</persName>
@@ -594,55 +556,50 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gotus">
                   <persName>Gotus</persName>
-                  <note type="biographical">Personnage de la Vie de <persName ref="#benoit">Saint
-                        Benoit</persName>
+                  <note type="biographical"> Moine de la confrérie de <persName ref="#benoit">saint Benoit</persName>, pauvre d'esprit.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC" xml:id="gratien">
                   <persName>Gratien</persName>
-                  <birth when="0200">IIIe siècle</birth>
                   <death when="0301">301</death>
-                  <note type="biographical">Premier évêque de <placeName ref="#tours"
+                  <note type="biographical">Gatien de Tours, premier évêque de <placeName ref="#tours"
                         >Tours</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gregoire2"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11886472r">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gregoire2">
                   <persName>Gregoire</persName>
                   <birth when="0540">540</birth>
                   <death when="0604">604</death>
-                  <note type="biographical">Grégoire le grand, pape de Rome de 590 à 604, auteur des
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11886472r">Grégoire le grand, pape de Rome de 590 à 604, auteur des
                         <hi rend="italic">Dialogues</hi> dont la <hi rend="italic">Vie de <persName
                            ref="#benoit">saint Benoit</persName>
                      </hi> fait partie.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gregoire"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11905825m">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gregoire">
                   <persName>Grégoire</persName>
                   <birth when="0538">538</birth>
                   <death when="0594">594</death>
-                  <note type="biographical">Saint Grégoire de <placeName ref="#tours"
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11905825m">Grégoire de <placeName ref="#tours"
                         >Tours</placeName>, historien et hagiographe, évêque de Tours de 573 à sa
                      mort.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC" xml:id="hilaire">
+                 xml:id="hilaire">
                   <persName>Hilaire</persName>
                   <birth when="0315">315</birth>
                   <death when="0367">367</death>
-                  <note type="biographical">
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
                      <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers,
-                     écrivain latin chrétien. Théologien du IVe siècle, il fut un grand défenseur de
+                     écrivain latin chrétien. Théologien du <seg type="number">iv</seg><ex>e</ex> siècle, il fut un grand défenseur de
                      l'orthodoxie nicéenne face à l'arianisme. Saint Martin le rejoignit en 356 et
                      devint alors son élève.</note>
 
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="honorius"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12566387q">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="honorius">
                   <persName>Honoire</persName>
                   <birth when="0384">4<hi rend="exp">e</hi> siecle</birth>
                   <death when="0423">5<hi rend="exp">e</hi> siecle</death>
-                  <note type="biographical">Flavius Honorius, empereur de la partie occidentale de
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12566387q">Flavius Honorius, empereur de la partie occidentale de
                      l'empire romain de 395 à 423.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="honores">
@@ -652,8 +609,8 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="hydebres">
                   <persName>Hydebres</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges, fils
-                     d'Archade, conte de Poitiers.</note>
+                  <note type="biographical">Hyldebert, fils
+                     d'<persName ref="#archade">Archade</persName>, conte de Poitiers. Il est ressuscité par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="hylarion">
                   <persName>Hylarion</persName>
@@ -663,22 +620,18 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ithace">
                   <persName>Itache</persName>
                   <note type="biographical">Ithacium, evêque d'Ossobona et meneur du parti épiscopal
-                     hostile à Priscillien, voir <bibl>
-                        <author>Chadwick</author>, <hi rend="italic">Priscillian</hi>,
-                        p.51-55.</bibl>
-                  </note>
+                     hostile à <persName ref="#priscillien">Priscillien</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"
                   xml:id="jeanBaptiste">
                   <persName>Jean (Baptiste)</persName>
-                  <note type="biographical">Personnage biblique, <surname type="complex">Jean le
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">Personnage biblique, <surname type="complex">Jean le
                         Baptiste</surname> fut prédicateur en Judée avant Jésus de Nazareth.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="getron">
                   <persName>Jechron</persName>
-                  <note type="biographical">pèlerin d'<placeName ref="excorande"
-                        >Excorande</placeName>
+                  <note type="biographical">Marchand et pèlerin d'<placeName ref="excorande"
+                        >Excorande</placeName>, mari d'<persName ref="#eufrosine">Eufrosine</persName> et père de <persName ref="#deudone">Deudoné</persName>.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jehan">
@@ -687,13 +640,13 @@
                   <death when="0432">432</death>
                   <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
                      <surname type="complex">Jean Cassien ou Jean l'ermite</surname> prêtre et
-                     moine, originaire d'Egypte, il établit sa communauté sur l'île de
+                     moine, originaire d'<placeName ref="#egypte">Egypte</placeName>, il établit sa communauté sur l'île de
                      Chypre.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jerome">
                   <persName>Jerome (saint)</persName>
                   <birth when="0345">345</birth>
-                  <death when="0420-09-20">le 20 septembre 420</death>
+                  <death when="0420-09-20">420</death>
                   <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
                      docteur de l'Eglise, célèbre traducteur de la bible latine. Il est l'un des
                      principaux opposants aux idées d'<persName ref="#origene"
@@ -701,19 +654,19 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="job">
                   <persName>Job</persName>
-                  <note type="biographical">Personnage biblique</note>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q179962">Personnage biblique, archétype du juste éprouvé par le diable.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="david">
-                  <persName>Job</persName>
-                  <note type="biographical">Personnage biblique</note>
+                  <persName>David</persName>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb14569207z">Personnage biblique, roi des Hébreux et fils de Salomon.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="joseph">
                   <persName>Joseph</persName>
-                  <note type="biographical">Jospeh d'Arimatie</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb13572684w">Jospeh d'Arimathie, il aurait récupéré dans une coupe le sang du <persName ref="#jesus">Christ</persName> sur la croix.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="judas">
                   <persName>Judas</persName>
-                  <note type="biographical">Personnage biblique, apôtre qui trahit le Christ pour le
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb16604390m">Judas Iscariote, personnage biblique, apôtre qui trahit le Christ pour le
                      livrer à Ponce Pilate.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
@@ -729,25 +682,25 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jupiter">
                   <persName>Jupiter</persName>
-                  <note type="biographical">Dieu romain</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120421559">Dieu romain</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="justinien">
                   <persName>Justinien</persName>
-                  <note type="biographical">Evêque de Tours</note>
+                  <note type="biographical">Evêque de Tours, successeur de <persName ref="#brice">saint Brice</persName> suite à son exil.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
                   <persName>Jésus Christ</persName>
                   <birth when="0001">0</birth>
-                  <death when="0030">30</death>
-                  <note type="biographical" source="http://dbpedia.org/page/Jesus">
+                  <death when="0030">33</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
                      <surname type="complex">Jésus-Christ</surname> est le nom donné par l'ensemble
-                     des chrétiens au prophète qu'ils considèrent comme le Messie Les chrétiens
-                     reconnaissent Jésus-Christ comme le Messie et le Fils unique de Dieu.</note>
+                     des chrétiens au prophète qu'ils considèrent comme le Messie. Les chrétiens
+                     reconnaissent Jésus-Christ comme le fils unique de Dieu.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lazare">
                   <persName>Lazare</persName>
-                  <note type="biographical"/>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12421301z">Personnage de l'Évangile, ressuscité par <persName ref="#jesus">Jésus-Christ</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="leons">
                   <persName>Leons</persName>
@@ -756,7 +709,6 @@
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lidoire">
-                  <birth when="0300">IVe siècle</birth>
                   <death when="0371">371</death>
                   <persName>Lidoire</persName>
                   <note type="biographical">Lidoire (en latin Litorius) fut ordonné second évêque de
@@ -765,9 +717,9 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lucain">
                   <persName>Lucan</persName>
-                  <birth when="0039-11-03">le 3 novembre 39</birth>
-                  <death when="0065-04-30">le 28 septembre 65</death>
-                  <note type="biographical" source="http://data.bnf.fr/11913555/lucain/">
+                  <birth when="0039-11-03">39</birth>
+                  <death when="0065-04-30">65</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11913555f">
                      <surname type="complex">Marcus Annaeus Lucanus</surname>, célèbre orateur et
                      écrivain romain, neveu de Sénèque, il composa la <hi rend="italic"
                         >Pharsale</hi>, épopée qui relate la guerre civile qui opposa <persName
@@ -776,123 +728,119 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lucius">
                   <persName>Lucius</persName>
-                  <note type="biographical">Empereur romain.</note>
+                  <birth when="0263">263</birth>
+                  <death when="0325">325</death>
+                  <note type="biographical">Flavius Galerius Valerius Licinianus Licinius, empereur d'Orient de 308 à 324.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lupicin">
                   <persName>Lupicin</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, homme important de la ville de <placeName ref="#poitiers"
+                  <note type="biographical">Homme important de la ville de <placeName ref="#poitiers"
                         >Poitiers</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lupus">
                   <persName>Lupus</persName>
                   <note type="biographical">personnage contant parmi les prêtres qui accompagnent
-                     les marchands de Bari.</note>
+                     les marchands de Bari pour récupérer le corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="machaire"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb16725110d">
                   <persName>Macaire</persName>
-                  <birth when="0200">fin du 3e siècle</birth>
                   <death when="0334">334</death>
-                  <note type="biographical">Saint Machaire, évêque de <placeName ref="#jerusalem"
-                        >Jérusalem</placeName>, la Vie présente ici une erreur historique en le
-                     faisant pape.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb16725110d">Saint Macaire, évêque de <placeName ref="#jerusalem"
+                        >Jérusalem</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcel">
                   <persName>Marcel</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, prêtre
-                     d'Amboise.</note>
+                  <birth>3<ex>e</ex> siècle</birth>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12520934h">Saint Marcel ou saint Martial de Limoges, evêque de Limoges au <seg type="number">iii</seg><ex>e</ex> siècle, il est assimilé aux apôtres du Christ dans la <hi rend="italic">Vita prolixior</hi> d'Adémar de Chabannes au <seg type="number">x</seg><ex>e</ex> siècle.</note> 
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcelPere">
                   <persName>Marcel</persName>
                   <note type="biographical">Père de <surname type="complex">
                         <persName ref="#marcel">Saint Marcel</persName> de <placeName ref="#limoges"
-                           >Limoges</placeName>
+                           >Limoges</placeName>.
                      </surname>
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcelConsul">
-                  <persName>Marcel, consul romain</persName>
+                  <persName>Marcel, consul romai, il accueille dans sa maison <persName ref="#pierre">saint Pierre</persName> et sa suite à lors arrivée à <placeName ref="#rome">Rome</placeName>.</persName>
                   <note type="biographical"/>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
-                  <persName>Marie</persName>
-                  <note type="biographical">Personnage biblique, la <surname type="complex">vierge
-                        Marie</surname> est la mère de Dieu.</note>
+                  <persName>Marie (sainte Vierge)</persName>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581">Personnage biblique, <surname type="complex">vierge
+                        Marie</surname>, mère de Dieu.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="madeleine">
-                  <persName>Marie Magdalene</persName>
-                  <note type="biographical">Personnage biblique, disciple femme de <persName
-                        ref="#jesus">Jesus-Christ</persName>.</note>
+                  <persName>Marie Magdalene (sainte)</persName>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120479609">Marie-Madeleine, personnage biblique, disciple de <persName
+                        ref="#jesus">Jésus-Christ</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marmorius">
                   <persName>Marmorius</persName>
-                  <note type="biographical">Sarrazins, propriétaire de <persName ref="#deudone"
-                        >Deudoné</persName>.</note>
+                  <note type="biographical">Sarrazin, propriétaire de <persName ref="#deudone"
+                        >Deudoné</persName> après sa capture.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0"
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC" xml:id="martin">
                   <persName>Martin (saint)</persName>
                   <birth when="0316">316</birth>
                   <death when="0397-11-08">397</death>
-                  <note type="biographical" source="http://dbpedia.org/page/Martin_of_Tours">
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
                      <surname type="complex">Saint Martin de Tours</surname> est né dans en Hongrie
                      dans la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en
                      316. Il est mort à <placeName ref="#conde">Candes</placeName> en France le 8
                      novembre 397.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="grimoaldus">
-                  <persName>Mathius</persName>
-                  <note type="biographical">personnage contant parmi les prêtres qui accompagnent
-                     les marchands de Bari.</note>
+                  <persName>Grimoaldus</persName>
+                  <note type="biographical">Personnage contant parmi les prêtres qui accompagnent
+                     les marchands de Bari pour récupérer le corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="mathius">
                   <persName>Mathius</persName>
-                  <note type="biographical">personnage contant parmi les jeunes gens qui
+                  <note type="biographical">Personnage contant parmi les jeunes gens qui
                      accompagnent les marchands de Bari.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="maurum">
                   <persName>Maurum</persName>
                   <note type="biographical">Fils d'<persName ref="#evitius">Evitius</persName>
-                     envoié auprès de saint Benoit.</note>
+                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC" xml:id="maximin">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="maximin">
                   <persName>Maximin</persName>
                   <birth when="0383">173</birth>
-                  <death when="0384-08-31">8 août 384</death>
-                  <note type="biographical">
+                  <death when="0384-08-31">384</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC">
                      <surname type="complex">Magnus Clemens Maximus</surname>est un officier romain
-                     qui à la tête des légions de Bretagne renversa en 383 l'empereur Gratien, et
+                     qui à la tête des légions de Bretagne renversa en 383 l'<persName ref="#gratien">empereur Gatien</persName>, et
                      régna sur l'Occident jusqu'en 388, où il fut vaincu et tué par les troupes de
                      Théodose.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
                   <persName>Mercurius</persName>
-                  <note type="biographical">Dieu romain</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11937106h">Dieu romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC" xml:id="michel">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="michel">
                   <persName>Michel</persName>
-                  <note type="biographical" source="http://fr.dbpedia.org/page/Michel_(archange)"
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC"
                      >Personnage biblique, Michel est un archange et un saint chrétien, saint patron
                      du catholicisme. Il est principalement représenté en chevalier ailé qui
                      terrasse le Diable.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="minerve">
                   <persName>Minerve</persName>
-                  <note type="biographical">Déesse romaine</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11968395c">Déesse romaine</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nepotiens">
                   <persName>Nepotiens</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
-                     condamné à mort par l'empereur.</note>
+                  <note type="biographical">Officier impérial envoyé en mission secrète avec <persName ref="#ursus">Ursus</persName> et <persName ref="#aquileon">Aquileon</persName> pour punir la contrée de <placeName ref="#licie">Lycie</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nerva">
                   <persName>Nerva</persName>
-                  <note type="biographical"/>
+                  <!-- vérifié vie de saint Martial si lien ac l'empereur Nerva -->
+                  <note type="biographical">Haut dignitaire romain, proche de l'empereur <persName ref="#neron">Néron</persName> dont le fils est ressuscité par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas3">
                   <persName>Nicolas</persName>
@@ -901,33 +849,34 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas2">
                   <persName>Nicolas</persName>
-                  <note type="biographical">personnage de la Vie de <persName ref="#nicolas">saint
-                        Nicolas</persName>, originaire de la ville de <placeName ref="#sivine"
-                        >Sivine</placeName>
+                  <note type="biographical">Homme originaire de la ville de <placeName ref="#sivine"
+                        >Sivine</placeName>, il apporte un malade devant saint Nicolas afin qu'il le guérisse.
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas">
                   <persName>Nicolas (saint)</persName>
-                  <note type="biographical"/>
+                  <birth>3<ex>e</ex> siècle</birth>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11961190d">Saint Nicolas, évêque de Myre.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nuiton">
                   <persName>Nuiton</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges,
-                     démon.</note>
+                  <note type="biographical">Démon aquatique avec <persName ref="#engigniere">Engigniere de Mil</persName> et <persName ref="#risoaudus">Risoaudus</persName>, responsables de la noyade d'<persName ref="#hydebres">Hyldebert</persName> qui sera ressuscité par <persName ref="#marcel">saint Marcel</persName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="neron">
                   <persName>Néron</persName>
-                  <note type="biographical"/>
+                  <birth when="0037-12-15">37</birth>
+                  <death when="0068-06-09">68</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11936625x">
+                     Empereur de <placeName ref="#rome">Rome</placeName> de 54 à 68, il est connu pour avoir persécuté les chrétiens et, notamment avoir fait crucifié <persName ref="#pierre">saint Pierre</persName>.
+                  </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="origene">
-                  <persName>Origene (sanit)</persName>
+                  <persName>Origene (saint)</persName>
                   <birth when="0185">185</birth>
                   <death when="0254">254</death>
                   <note type="biographical" source="http://data.bnf.fr/11918191/origene/">Père de
                      l'Eglise, considéré comme le fondateur de l'exégèse biblique pour avoir
-                     commenté tous les livres de l'Ancien et du Nouveau Testament. IL est également
-                     connu pour être l'auteur du <hi rend="italic">Traité des principes</hi>
-                     (231).</note>
+                     commenté tous les livres de l'Ancien et du Nouveau Testament.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="paul">
                   <persName>Paul</persName>
@@ -938,12 +887,11 @@
                      figures fondatrices du monachisme, avec <persName ref="#antoine">saint
                         Antoine</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="paulin"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC ">
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="paulin">
                   <persName>Paulin</persName>
                   <birth when="0353">353</birth>
                   <death when="0431">431</death>
-                  <note type="biographical">
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC">
                      <surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353, mort
                      à Nole en 431, est un poète et un ecclésiastique latin contemporain de saint
                      Augustin et de <persName ref="#martin">Martin de Tours</persName>, qui
@@ -952,7 +900,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pelagie">
                   <persName>Pelagie</persName>
-                  <note type="biographical">Mère de <persName ref="#gile">saint Gilles</persName>
+                  <note type="biographical">Mère de <persName ref="#gile">saint Giles</persName>
                   </note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pelerins">
@@ -962,18 +910,15 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pierre">
                   <persName>Pere</persName>
-                  <birth>??</birth>
                   <death when="0064">64</death>
                   <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pêcheur de
                      Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le premier évêque
-                     de Rome</note>
+                     de <placeName ref="#rome">Rome</placeName></note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC" xml:id="perpetuus">
-                  <birth when="0400">Ve siècle</birth>
+               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="perpetuus">
                   <death when="0490">490</death>
                   <persName>Perpetuus</persName>
-                  <note type="biographical">sixième évêque de <placeName ref="#tours"
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC">Successeur de <persName ref="#martin">saint Martin</persName>, sixième évêque de <placeName ref="#tours"
                         >Tours</placeName>
                   </note>
                </person>
@@ -985,18 +930,17 @@
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="placidum">
                   <persName>Placidum</persName>
                   <note type="biographical">Fils d'<persName ref="#theralius">Theralius</persName>
-                     envoié auprès de saint Benoit.</note>
+                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
+               <!-- fin -->
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pompeien">
                   <persName>Pompeien</persName>
-                  <note type="biographical">Abbé, personnage de la Vie de <persName ref="#benoit"
-                        >Saint Benoit</persName>
-                  </note>
+                  <note type="biographical">Abbé</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pompee">
                   <persName>Pompeus</persName>
-                  <birth when="0106-09-29">le 29 septembre 106 av. J-C.</birth>
-                  <death when="0048-08-28">le 28 septembre 48 av. J-C.</death>
+                  <birth when="0106-09-29">-106</birth>
+                  <death when="0048-08-28">48</death>
                   <note type="biographical" source="http://data.bnf.fr/11938643/pompee/">
                      <surname type="complex">Cnaeus Pompeius Magnus</surname>, général et homme
                      politique romain, il s'opposa à <persName ref="#cesar">Jules César</persName>
@@ -1041,8 +985,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="risoaudus">
                   <persName>Risoaudus</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de Limoges,
-                     démon.</note>
+                  <note type="biographical">Démon aquatique avec <persName ref="#nuiton">Nuiton</persName> et <persName ref="#engigniere">Engigniere de Mil</persName>, responsables de la noyade d'<persName ref="#hydebres">Hyldebert</persName> qui sera ressuscité par <persName ref="#marcel">saint Marcel</persName></note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="rodevaldus">
                   <persName>Rodevaldus</persName>
@@ -1197,9 +1140,7 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ursus">
                   <persName>Ursus</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Nicolas</hi>, officier impérial envoyé en mission secrète et qui sera
-                     condamné à mort par l'empereur.</note>
+                  <note type="biographical">Officier impérial envoyé en mission secrète avec <persName ref="#aquileon">Aquileon</persName> et <persName ref="#nepotiens">Nepotien</persName> pour punir la contrée de <placeName ref="#licie">Lycie</placeName>.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valentin">
                   <persName>Valentiens</persName>
@@ -1230,9 +1171,8 @@
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valerie">
                   <persName>Valerie</persName>
-                  <note type="biographical">Personnage de la Vie de saint Martial de <placeName
-                        ref="#limoges">Limoges</placeName>, jeune fille d'origine noble, elle est la
-                     fille de <persName ref="#suzanne">Suzanne</persName>.</note>
+                  <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb136122287">Jeune fille d'origine noble, convertie à la foi chrétienne par <persName ref="#marcel">saint Marcel</persName>. Elle est la
+                     fille de <persName ref="#suzanne">Suzanne</persName>, promise en mariage au <persName ref="#etienneDuc">duc Étienne</persName> qui la fera décapiter pour avoir refusé de devenir son épouse.</note>
                </person>
                <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="venus">
                   <persName>Venus</persName>

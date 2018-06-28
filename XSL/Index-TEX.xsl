@@ -83,9 +83,8 @@
                 <xsl:value-of select="tei:persName"/>
             </xsl:variable>
             \textsc{<xsl:value-of select="tei:persName"/>}<xsl:if test="tei:death">
-                <xsl:text> (</xsl:text><xsl:if test="tei:birth">
-                <xsl:apply-templates select="tei:birth"/>
-                <xsl:text>-</xsl:text></xsl:if>
+                <xsl:text> (</xsl:text><xsl:choose><xsl:when test="tei:birth"><xsl:apply-templates select="tei:birth"/>
+                       <xsl:text>-</xsl:text></xsl:when><xsl:otherwise><xsl:if test="tei:death/@when">†</xsl:if></xsl:otherwise></xsl:choose>
                 <xsl:apply-templates select="tei:death"/>
                 <xsl:text>)</xsl:text>
             </xsl:if>,
