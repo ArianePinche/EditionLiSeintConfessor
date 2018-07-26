@@ -71,17 +71,17 @@
         <xsl:apply-templates select="./tei:div"/>
     </xsl:template>
 
-    <xsl:template match="tei:div/tei:div">
+    <xsl:template match="tei:div[@type='section']">
         <xsl:text>
 \subparagraph*{}
 
 </xsl:text>
         <xsl:if test="./preceding-sibling::tei:head">
-            <xsl:text>\pstart
+            <xsl:if test="./@n='1'"><xsl:text>\pstart
             \noindent\textit{</xsl:text>
-<xsl:apply-templates select="./preceding-sibling::tei:head"/>
+            <xsl:apply-templates select="./preceding-sibling::tei:head"/>
             <xsl:text>}</xsl:text>
-\pend
+                    \pend</xsl:if>
         </xsl:if>
  \pstart
         <xsl:if test="./@n = '1'">
