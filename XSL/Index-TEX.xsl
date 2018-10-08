@@ -57,7 +57,7 @@
             \item En romain, apparaissent par ordre alphabétique les autres formes du même nom relevées dans le texte ;
             \item Ces formes sont suivies de la référence à la Vie du saint et du ou des chapitres où elles apparaissent. La vie de saint est signalée par le prénom du saint  entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og dialogues \fg{}  entre crochets.
             \subitem Exemple : [Martin]; 
-            \item En italiques est donnée l'identification du personnage et du nom de lieu. 
+            \item En italique est donnée l'identification du personnage et du nom de lieu. 
             \end{list}
             \begin{center}
             \section*{Index des noms propres}
@@ -71,6 +71,17 @@
             \end{document}    
             
         </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="tei:ex">
+        <xsl:text>\up{</xsl:text>
+        <xsl:value-of select="."/>
+        <xsl:text>}</xsl:text>
+    </xsl:template>
+    <xsl:template match="tei:seg[@type = 'number']">
+        <xsl:text>\textsc{</xsl:text>
+        <xsl:copy-of select="."/>
+        <xsl:text>}</xsl:text>
     </xsl:template>
 
     <xsl:template name="NomPropre">
@@ -87,7 +98,7 @@
                        <xsl:text>-</xsl:text></xsl:when><xsl:otherwise><xsl:if test="tei:death/@when">†</xsl:if></xsl:otherwise></xsl:choose>
                 <xsl:apply-templates select="tei:death"/>
                 <xsl:text>)</xsl:text>
-            </xsl:if>,
+            </xsl:if> :
             <xsl:for-each-group
                 select="//tei:body//tei:persName[@ref = '#' || $id and not(ancestor::tei:head)]"
                 group-by="my:regularize(.)">
@@ -95,7 +106,7 @@
                 <xsl:text> </xsl:text>
                <xsl:if test="current-grouping-key() != $persName ">
                    <xsl:apply-templates mode="reg" select="current()"/>
-                   <xsl:text>: </xsl:text>
+                   <xsl:text> : </xsl:text>
                 </xsl:if>
                 <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
                     <xsl:text> </xsl:text>
@@ -212,11 +223,6 @@
         </xsl:choose> 
 </xsl:template>
 
-<xsl:template match="//tei:ex">
-    <xsl:text>\up{</xsl:text>
-    <xsl:value-of select="."/>
-    <xsl:text>}</xsl:text>
-</xsl:template>
 
 
 </xsl:stylesheet>

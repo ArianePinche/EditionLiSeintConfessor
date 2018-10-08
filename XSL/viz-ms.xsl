@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs tei" version="3.0" xmlns:my="LOCALHOST" >
-    <xsl:strip-space elements="div p seg" />
+    <xsl:strip-space elements="*" />
     <xsl:function name="my:no-accent">
         <xsl:param name="string" />
         <xsl:value-of select="translate($string,'áàâäéèêëíìîïóòôöúùûü','aaaaeeeeiiiioooouuuu')"/>
