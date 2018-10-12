@@ -415,6 +415,7 @@
                   <location>
                      <geo>50.9333300 6.9500000</geo>
                   </location>
+                  <note></note>
                </place>
                <place corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
                   <placeName>Sabarie</placeName>
@@ -428,6 +429,11 @@
                <place corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
                   <placeName>Mongiu</placeName>
                   <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
+               </place>
+               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="enfer">
+                  <placeName>Enfer</placeName>
+                  <note>Lieu où sont envoyées les âmes de pêcheurs dans la religion chrétienne.</note>
+                  <!-- lieu à rajouter dans la vie de saint Martin -->
                </place>
             </listPlace>
          </settingDesc>
@@ -536,7 +542,7 @@
                   </app><pc type="orig" ana="subCorr">.</pc>&esp;<app>
                      <lem>q<pc type="reg">&apos;</pc>il les enmeine</lem>
                      <rdg wit="#C3 #G1">qui les enmeine</rdg>
-                  </app> en&esp;<lb/>infer <app>
+                  </app> en&esp;<lb/><placeName ref="#enfer">infer</placeName> <app>
                      <lem>le<pc type="reg">&#160;</pc>grant chemin plenier</lem>
                      <rdg wit="#G1">le grant chemin plenier et la grant voie batue</rdg>
                   </app>&deuxpoints-point;&d-maj;e<pc type="reg">&#160;</pc>ce se&esp;<lb/><app>
@@ -5081,13 +5087,13 @@
                   hom fu morz<pc type="reg" ana="incise">,</pc>&esp;<lb/>si com &i-j;e &u-v;oz ai
                   cont&eacc;&point-virg6;aloit <persName ref="#severus">seinz
                      &s-maj;e&u-v;rins</persName> en<lb/>tor le&esp;cuer de l<pc type="reg"
-                  >'</pc>egl&ypoint;se seint <placeName ref="#saint-pierre-de-cologne"><choice>
+                  >'</pc>egl&ypoint;se seint <choice>
                         <orig>p</orig>
                         <reg>P</reg>
                      </choice>ierre de <choice>
                         <orig>c</orig>
                         <reg>C</reg>
-                     </choice>oloigne</placeName>&esp;<lb/>disant ses orissons apr&eacc;s matines<pc
+                     </choice>oloigne&esp;<lb/>disant ses orissons apr&eacc;s matines<pc
                      type="orig" ana="coordination">:</pc>&esp;&esperluette-et;de ses&esp;<lb/>clers
                   grant &pbarre-par;tie ensamble o&esp;lui.&esp;Si com il&esp;<lb/>aloit einsi com
                   &i-j;e &u-v;os di&deuxpoints-virg4;il o&itrem; droit a&esp;cele ore&esp;<lb/>qe
