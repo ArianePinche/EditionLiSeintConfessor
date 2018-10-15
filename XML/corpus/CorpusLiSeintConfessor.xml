@@ -83,45 +83,45 @@
       <profileDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
          <particDesc>
             <listPerson>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC" xml:id="abraham">
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC"
+                  xml:id="abraham">
                   <persName>Abraham</persName>
                   <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
                      des religions juive, chrétienne et musulmane.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agabaron">
+               <person xml:id="agabaron">
                   <persName>Agabaron</persName>
                   <note type="biographical">Roi de la ville d'<placeName ref="#magine"
                         >Édesse</placeName>, actuellement Urfa en Turquie.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agapites">
+               <person xml:id="agapites">
                   <persName>Agapites</persName>
                   <note type="biographical">Sous-diacre de <persName ref="#benoit">Saint
                         Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agaridut">
-                  <persName>Agaridut</persName>
+               <person xml:id="agaridut">
+                  <persName>Agariduz</persName>
                   <note type="biographical">Honnête homme, témoin de l'adoucissement des moeurs
                      cruelles d'Avicien.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aglaise">
+               <person xml:id="aglaise">
                   <persName>Aglaïs</persName>
                   <note type="biographical">Femme d'<persName ref="#eufamianus"
                         >Eufamianus</persName> et mère de <persName ref="#saintalexis">saint
                         Alexis</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="agnes">
-                  <persName>Agnes (sainte)</persName>
+               <person xml:id="agnes">
+                  <persName>Agniés (sainte)</persName>
                   <death when="0300">4<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyre
                      romaine.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="albanie">
+               <person xml:id="albanie">
                   <persName>Albanies</persName>
                   <note type="biographical">Albanus, préfet du prétoire sous Constantin <seg
                         type="number">i</seg><ex>er</ex>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="alexis">
+               <person xml:id="alexis">
                   <persName>Alexis</persName>
                   <birth when="1057">1057</birth>
                   <death when="1118">1118</death>
@@ -129,19 +129,18 @@
                      >Alexis <seg type="number">i</seg><ex>er</ex> Comnène, empereur de
                      Constantinople de 1081 à 1118.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="saintalexis">
+               <person xml:id="saintalexis">
                   <persName>Alexis (saint)</persName>
                   <death when="0416">416</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15651786n"
                      >saint d'origine romaine.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="alexandre">
+               <person xml:id="alexandre">
                   <persName>Alixandre</persName>
-                  <note type="biographical">personnage contant parmi les jeunes gens qui
-                     accompagnent les marchands de Bari qui veulent récupérer le corps de <persName
-                        ref="#nicolas">saint Nicolas</persName>.</note>
+                  <note type="biographical">Jeune homme qui accompagne les marchands de Bari à la
+                     recherche du corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
+               <person xml:id="ambroise">
                   <birth when="0340">340</birth>
                   <death when="0397">397</death>
                   <persName>Ambrose (saint)</persName>
@@ -151,25 +150,25 @@
                      docteur de l'Église latine. Il est le maître à penser de <persName
                         ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="anatolius">
+               <person xml:id="anatolius">
                   <persName>Anatolius</persName>
                   <note type="biographical">Jeune homme diabolique qui intègre une communauté
                      religieuse dirigée par <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="andrius">
-                  <persName>Andrius</persName>
+               <person xml:id="andrius">
+                  <persName>Andriu</persName>
                   <note type="biographical">Prêtre paien de la cité de <placeName ref="#limoges"
                         >Limoges</placeName>, converti à la fois avec <persName ref="#aurelien"
                         >Aurelien</persName> à la foi chrétienne par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="antiocus">
+               <person xml:id="antiocus">
                   <persName>Antiocus</persName>
                   <note type="biographical">Antiochus, gouverneur responsable du martyre de
                         <persName ref="#serge">saint Serge</persName> et <persName ref="#bace">saint
                         Bace</persName> en 303 à Rosafa en Syrie.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="antoine">
+               <person xml:id="antoine">
                   <persName>Antoine</persName>
                   <birth when="0251">251</birth>
                   <death when="0356">356</death>
@@ -178,36 +177,36 @@
                         l'Ermite</surname>, considéré comme le fondateur du l'érémitisme
                      chrétien.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="apolloine">
-                  <persName>Apolloine</persName>
+               <person xml:id="apolloine">
+                  <persName>Apollin</persName>
                   <note type="biographical">Évêque d'<placeName ref="Excorande"
-                        >Excorande</placeName> .</note>
+                        >Excorande</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="appollin">
+               <person xml:id="appollin">
                   <persName>Appollin</persName>
                   <note type="biographical">Dieu du panthéon romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aquileon">
+               <person xml:id="aquileon">
                   <persName>Aquileon</persName>
                   <note type="biographical">Officier impérial envoyé en mission secrète avec
                         <persName ref="#nepotiens">Nepotien</persName> et <persName ref="#ursus"
-                        >Ursus</persName> pour punir la contrée de <placeName ref="#licie"
+                        >Ursum</persName> pour punir la contrée de <placeName ref="#licie"
                         >Lycie</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arborius">
+               <person xml:id="arborius">
                   <persName>Arborius</persName>
                   <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
                      puis préfet de Rome en 380, il aurait été l’un des protecteurs de <persName
                         ref="#saintMartin">saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archade">
+               <person xml:id="archade">
                   <persName>Archade</persName>
                   <note type="biographical">Comte de Poitiers, père de <persName ref="#hydebres"
                         >Hyldebert</persName> qui fut ressuscité par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archades">
-                  <persName>Archades</persName>
+               <person xml:id="archades">
+                  <persName>Archadies</persName>
                   <birth when="0377">377</birth>
                   <death when="0408">408</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12356604g">
@@ -215,15 +214,15 @@
                         d'<placeName ref="#orient">Orient</placeName> de 395 à 408, frère de
                         <persName ref="#honorius">Honorius Flavius</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="archemius">
+               <person xml:id="archemius">
                   <persName>Archemius</persName>
                   <note type="biographical">Prêtre présent, avec <persName ref="#chemelaus"
                         >Chemelaus</persName>, au moment de la mort de <persName ref="#nicolas"
                         >saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC" xml:id="arius">
-                  <persName>Arius</persName>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
+                  xml:id="arius">
+                  <persName>Arrius</persName>
                   <birth when="0256">256</birth>
                   <death when="0336">336</death>
                   <note type="biographical"
@@ -232,71 +231,70 @@
                      des plus importantes hérésies christologiques, l'arianisme. Il est excommunié
                      et déclaré hérésiarque en 325 lors du concile de Nicée.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="armenie2">
+               <person xml:id="armenie2">
                   <persName>Armanie</persName>
                   <note type="biographical">Jeune fille.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="armense">
+               <person xml:id="armense">
                   <persName>Armense</persName>
                   <note type="biographical">Évêque de <placeName ref="#tours">Tours</placeName>,
                      sucesseur de <persName ref="#justinien">Justinien</persName> et de <persName
                         ref="#brice">saint Brice</persName>, d'après Grégoire de Tours.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="arpage">
+               <person xml:id="arpage">
                   <persName>Arpage</persName>
                   <note type="biographical">Prêtre, témoin du miracle de la fiole d'huile de la
                      femme d'<persName ref="#avicien">Avicien</persName>, suite à la bénédiction de
                         <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelien">
+               <person xml:id="aurelien">
                   <persName>Aurelien</persName>
                   <note type="biographical">Prêtre paien de la cité de <placeName ref="#limoges"
                         >Limoges</placeName>, converti avec <persName ref="#andrius"
                         >Andrius</persName> à la foi chrétienne par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
+               <person xml:id="aurelius">
                   <persName>Aurelius</persName>
                   <note type="biographical">Archidiacre de <persName ref="#cesaire">saint
                         Césaire</persName>, évêque d'<placeName ref="#arles"
                      >Arles</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="austriclinien">
-                  <persName>Austriclinien</persName>
+               <person xml:id="austriclinien">
+                  <persName>Austricliniens</persName>
                   <note type="biographical">Discipline de <persName ref="#marcel">saint
-                        Marcel</persName>, il fait parti de sa suite pendant son voyage à
-                     Rome.</note>
+                        Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="avicien">
+               <person xml:id="avicien">
                   <persName>Avicien</persName>
                   <note type="biographical">Comte de Tours.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="bace">
+               <person xml:id="bace">
                   <persName>Bace (saint)</persName>
                   <death when="0303">303</death>
                   <note type="biographical" source="http://fr.dbpedia.org/page/Bacchus_(saint)"
                      >Saint Bacchus martyrisé avec <persName ref="#serge">saint Serge</persName> en
                      303 à Rosafa en Syrie.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="belguisun">
-                  <persName>Belguisun</persName>
+               <person xml:id="belguisun">
+                  <persName>Belguisuns</persName>
                   <note type="biographical">Ami de <persName ref="#gallus">Gallus</persName>,
                      probablement disciple de <persName ref="#martin">saint Martin</persName>.
                      .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoite">
+               <person xml:id="benoite">
                   <persName>Beneoite</persName>
                   <note type="biographical">Comtesse de la cité de <placeName ref="#bordeaux"
                         >Bordeaux</placeName>, femme du comte <persName ref="#soybre"
                         >Soybre</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benjamin">
+               <person xml:id="benjamin">
                   <persName>Benjamin</persName>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q460763"
                      >Personnage de l'ancien Testament, fils cadet de Jacob et Rebbeca.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="benoit">
-                  <persName>Benoit (saint)</persName>
+               <person xml:id="benoit">
+                  <persName>Beneoit (saint)</persName>
                   <birth when="0480">480</birth>
                   <death when="0547">547</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb118911827"
@@ -305,151 +303,151 @@
                         >Mont-Cassin</placeName>, il est célèbre pour sa règle de vie monastique,
                      dite « la règle de saint Benoit ».</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="blidin">
+               <person xml:id="blidin">
                   <persName>Blidin</persName>
                   <note type="biographical">Compagnon du roi <persName ref="#thotila"
                         >Totila</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="boniface">
+               <person xml:id="boniface">
                   <persName>Boniface (saint)</persName>
                   <death>3<ex>e</ex> siècle</death>
                   <note type="biographical">Possiblement saint Boniface de Tharse, martyr chrétien.
                      Son nom apparait pour désigner l'église dans laquelle saint Alexis se marie et
                      où il est enterré.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="brice">
+               <person xml:id="brice">
                   <persName>Brice</persName>
                   <birth when="0377">377</birth>
                   <death when="0444">444</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q913528">
                      <surname type="complex">Saint Brice de Tours</surname>, ordoné évêque de Tours
-                     en 397, successeur de <persName ref="#martin">saint Martin</persName>, il
-                     possède une mauvaise réputation en raison de son affection pour le luxe.</note>
+                     en 397, successeur de <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cecile">
+               <person xml:id="cecile">
                   <persName>Cecile</persName>
                   <death when="0200">3<hi rend="exp">e</hi> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyre
                      romaine.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="celsus">
-                  <persName>Celsus</persName>
-                  <note type="biographical">Consul, seul personnage extérieur au dialogue avec
+               <person xml:id="celsus">
+                  <persName>Celsum</persName>
+                  <note type="biographical">Consul, seul personnage extérieur avec
                         <persName ref="#eucherius">Eucherius</persName> à pouvoir écouter la
                      dernière partie des <hi rend="italic">Dialogues sur les vertus de saint
                         Martin</hi>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cesar">
+               <person xml:id="cesar">
                   <persName>Cesar</persName>
                   <birth when="0100-12-07">100 av. J-C.</birth>
                   <death when="0044-03-15">44 av. J-C.</death>
                   <note type="biographical" source="http://data.bnf.fr/11894764/jules_cesar/">
                      <surname type="complex">Caius Iulius Caesar</surname>, général romain, il se
-                     fait nommer dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides
+                     fait nommer dictateur de Rome à vie avant d'être assassiné par Brutus aux Ides
                      de Mars 44.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cesaire">
-                  <persName>Césaire</persName>
+               <person xml:id="cesaire">
+                  <persName>Cesaires</persName>
                   <birth when="0470">470</birth>
                   <death when="0542">542</death>
                   <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb118947651"
                      >Saint Césaire d'<placeName ref="#arles">Arles</placeName>, évêque.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="charlemagne">
-                  <persName>Charlemagne</persName>
+               <person xml:id="charlemagne">
+                  <persName>Charlemeine</persName>
                   <birth when="0742">742</birth>
                   <death when="0814">814</death>
-                  <note type="biographical" source="http://data.bnf.fr/fr/11940325/charlemagne/">Roi
-                     des Francs dès 768, puis empereur d'Occident à partir de 800.</note>
+                  <note type="biographical" source="http://data.bnf.fr/fr/11940325/charlemagne/"
+                     >Charlemagne, roi des Francs dès 768, puis empereur d'Occident à partir de
+                     800.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="caton">
-                  <persName>Chaton</persName>
+               <person xml:id="caton">
+                  <persName>Chatons</persName>
                   <birth when="0095">95 av. J-C.</birth>
                   <death when="0046">46 av. J-C.</death>
                   <note source="http://data.bnf.fr/12021757/caton_d_utique/">
                      <surname type="complex">Marcus Porcius Cato</surname>, dit Caton d'Utique,
                      homme d'État romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="chaton">
-                  <persName>Chaton</persName>
+               <person xml:id="chaton">
+                  <persName>Chatons</persName>
                   <note type="biographical">Diacre de l'évêque <persName ref="#martin">saint
                         Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="chemelaus">
+               <person xml:id="chemelaus">
                   <persName>Chemelaus</persName>
                   <note type="biographical">Prêtre présent, avec <persName ref="#archemius"
                         >Archemius</persName>, au moment de la mort de <persName ref="#nicolas"
                         >saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="clarus">
+               <person xml:id="clarus">
                   <persName>Clarus</persName>
                   <note type="biographical">Jeune disciple de <persName rend="#martin">saint
                         Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cleopha">
+               <person xml:id="cleopha">
                   <persName>Cleopha</persName>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q711072">Jeune
                      disciple de <persName ref="#jesus">Jésus</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="constentin">
-                  <persName>Constentin</persName>
+               <person xml:id="constentin">
+                  <persName>Costentin</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12182910j"
                      >Constantin <seg type="number">i</seg><ex>er</ex>, empereur de Rome.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="constentin2">
-                  <persName>Constentin</persName>
+               <person xml:id="constentin2">
+                  <persName>Costentin</persName>
                   <note type="biographical">Successeur de <persName ref="#benoit">saint
                         Benoit</persName> à la tête du monastère de <placeName ref="#cassin"
                         >Mont-Cassin</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="corras">
+               <person xml:id="corras">
                   <persName>Corras</persName>
                   <birth when="1093">1093</birth>
                   <death when="1152">1152</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15100807n"
                      >Conrad <seg type="number">iii</seg>, empereur d'Allemagne.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="costance">
-                  <persName>Costance</persName>
+               <person xml:id="costance">
+                  <persName>Costances</persName>
                   <note type="biographical">Évêque d'<placeName ref="#aquin">Aquino</placeName>.
                      .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cressentius">
-                  <persName>Cressentius</persName>
+               <person xml:id="cressentius">
+                  <persName>Cressencii</persName>
                   <note type="biographical">Saint Crescent, martyr vers 244 avec <persName
                         ref="#dyoscurus">saint Dioscoride</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cyprien">
+               <person xml:id="cyprien">
                   <persName>Cyprien</persName>
                   <death when="0258">258</death>
                   <note type="biographical" source="http://data.bnf.fr/11886041/cyprien/">Evêque de
                      Carthage, martyr, victime des persécutions de l'empereur Valérien
                      (253-260).</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="cyrenense">
-                  <persName>Cyrenense</persName>
+               <person xml:id="cyrenense">
+                  <persName>Cyrenenses</persName>
                   <note type="biographical">Vieux prêtre.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="david">
+               <person xml:id="david">
                   <persName>David</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb14569207z"
                      >Personnage biblique, roi des Hébreux et fils de Salomon.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="deudone2">
-                  <persName>Deudonnez</persName>
+               <person xml:id="deudone2">
+                  <persName>Deudonez</persName>
                   <note type="biographical">Abbé du moine <persName ref="#romein"
                      >Romain</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="deudone">
-                  <persName>Deudoné</persName>
-                  <note type="biographical">Fils de <persName ref="#getron">Jechron</persName>.
-                     .</note>
+               <person xml:id="deudone">
+                  <persName>Deudonez</persName>
+                  <note type="biographical">Fils de <persName ref="#getron"
+                     >Getron</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="diane">
-                  <persName>Diane</persName>
-                  <note type="biographical">Déesse du panthéon latin.</note>
+               <person xml:id="diane">
+                  <persName>Dyane</persName>
+                  <note type="biographical">Diane, déesse du panthéon latin.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="namur">
+               <person xml:id="namur">
                   <persName>Duc de Namur</persName>
                   <birth when="1174">1174</birth>
                   <death when="1212">1212</death>
@@ -458,174 +456,170 @@
                      Hainault, mécène de <persName ref="#wauchier">Wauchier de
                      Denain</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="dyoscurus">
-                  <persName>Dyoscurus</persName>
+               <person xml:id="dyoscurus">
+                  <persName>Dyoscuri</persName>
                   <death when="0244">244</death>
                   <note type="biographical">Saint Dioscoride, martyr avec <persName ref="#crescent"
                         >saint Crescent</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="elisabet">
-                  <persName>Elisabeth</persName>
-                  <note type="biographical">Mère de <surname type="complex">
+               <person xml:id="elisabet">
+                  <persName>Elyzabez</persName>
+                  <note type="biographical">Elisabeth, mère de <surname type="complex">
                         <persName ref="#marcel">Saint Marcel</persName> de <placeName ref="#limoges"
                            >Limoges</placeName>
                      </surname> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="elie">
+               <person xml:id="elie">
                   <persName>Elye</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC">Personnage
                      biblique, il est considéré comme un prophète majeur des religions
                      abrahamiques.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="engigniere">
-                  <persName>Engigniere de Mil</persName>
-                  <note type="biographical">Démon aquatique responsable avec <persName ref="#nuiton"
-                        >Nuiton</persName> et <persName ref="#risoaudus">Risoaudus</persName> de la
-                     noyade d'<persName ref="#hydebres">Hyldebert</persName> ressuscité par
-                        <persName ref="#marcel">saint Marcel</persName>.</note>
+               <person xml:id="engigniere">
+                  <persName>Engignieres</persName>
+                  <note type="biographical">Engigniere de Mil, démon aquatique responsable avec
+                        <persName ref="#nuiton">Nuiton</persName> et <persName ref="#risoaudus"
+                        >Risoaudus</persName> de la noyade d'<persName ref="#hydebres"
+                        >Hyldebert</persName> ressuscité par <persName ref="#marcel">saint
+                        Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ernols">
+               <person xml:id="ernols">
                   <persName>Ernols</persName>
                   <note type="biographical">Arnulphus, évêque de Butuntum.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ernou">
-                  <persName>Ernou</persName>
+               <person xml:id="ernou">
+                  <persName>Ernous</persName>
                   <note type="biographical">Comte de Tours.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="etienne"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
-                  <persName>Etiene</persName>
+               <person xml:id="etienne" corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
+                  <persName>Estiene</persName>
                   <death when="0037">37</death>
-                  <note type="biographical">Saint Etienne, premier martyr chrétien, il fait partie
+                  <note type="biographical">Saint Étienne, premier martyr chrétien, il fait partie
                      de la première communauté chrétienne de <placeName ref="#jerusalem"
                         >Jérusalem</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="etienneDuc">
-                  <persName>Etiene</persName>
+               <person xml:id="etienneDuc">
+                  <persName>Estienes</persName>
                   <note type="biographical">Étienne, duc, il ordonne l'excécution de <persName
                         ref="#valerie">sainte Valérie</persName> pour avoir refusé de se marier avec
                      lui, avant de se répentir et de se convertir à la foi chrétienne sous le
                      patronage de <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eucherius">
-                  <persName>Eucherius</persName>
+               <person xml:id="eucherius">
+                  <persName>Eucherium</persName>
                   <note type="biographical">Consul, seul personnage avec le consul <persName
                         ref="#celsus">Celsus</persName>, à pouvoir écouter la deuxième partie des
                         <hi rend="italic">Dialogues sur les vertus de saint Martin</hi>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eudoxius">
+               <person xml:id="eudoxius">
                   <persName>Eudoxius</persName>
-                  <note type="biographical">Personnage de la vie de saint Martial, haut dignitaire
+                  <note type="biographical">Haut dignitaire
                      sous Constantin <seg type="number">i</seg><ex>er</ex>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eufamianus">
-                  <persName>Eufamianus</persName>
+               <person xml:id="eufamianus">
+                  <persName>Eufemianus</persName>
                   <note type="biographical">Personnage important de la cité de Rome, père de
                         <persName ref="#saintalexis">saint Alexis</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eufrosine">
+               <person xml:id="eufrosine">
                   <persName>Eufrosine</persName>
                   <note type="biographical">Femme du marchand et pèlerin <persName ref="#getron"
-                        >Jechron</persName>, mère de <persName ref="#deudone">Deudoné</persName>.
-                     .</note>
+                        >Jechron</persName>, mère de <persName ref="#deudone">Deudonez</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eusebius">
+               <person xml:id="eusebius">
                   <persName>Eusebius</persName>
                   <note type="biographical">Père de <persName ref="#jerome">saint
                      Jérôme</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="eustache">
-                  <persName>Eustache</persName>
+               <person xml:id="eustache">
+                  <persName>Eustochies</persName>
                   <note type="biographical">Evêque de Tours, sucesseur de Brice.</note>
                </person>
                <person xml:id="eustache3">
-                  <persName>Eustache</persName>
+                  <persName>Eustaces</persName>
                   <note type="biographical">Eustathius, consul impérial de <placeName ref="#licie"
                         >Lycie</placeName> sous Constantin <seg type="number">i</seg><ex>er</ex>, il
                      est à l'origine de la condamnation à mort des trois officiers de l'empereur :
                         <persName ref="#nepotiens">Nepotiens</persName>, <persName ref="#ursus"
-                        >Ursus</persName> et <persName ref="#aquileon">Aquileon</persName>.</note>
+                        >Ursum</persName> et <persName ref="#aquileon">Aquileon</persName>.</note>
                </person>
                <person xml:id="eustache2">
                   <persName>Eustache</persName>
                   <note type="biographical">Marchand de Bari.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="evanchius">
-                  <persName>Evanchius</persName>
+               <person xml:id="evanchius">
+                  <persName>Evagius</persName>
                   <note>Oncle chrétien de <persName ref="#gallus">Gallus</persName> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="euvangilus">
+               <person xml:id="euvangilus">
                   <persName>Evangilus</persName>
                   <note type="biographical">Prêtre, témoin d'un miracle de <persName ref="#martin"
                         >saint Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="evitius">
-                  <persName>Evitus</persName>
-                  <note type="biographical">Noble, père de<persName ref="#maurum"
+               <person xml:id="evitius">
+                  <persName>Evitius</persName>
+                  <note type="biographical">Noble, père de <persName ref="#maurum"
                      >Maurum</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="felix">
+               <person xml:id="felix">
                   <persName>Felices</persName>
                   <note type="biographical">Évêque, nommé pendant le séjour de <persName
                         ref="#martin">saint Martin</persName> à <placeName ref="#treves"
-                        >Trèves</placeName> auprès de l'empereur <persName ref="#maximin"
-                        >Maximin</persName>.</note>
+                        >Trèves</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="flavi">
-                  <persName>Flavi</persName>
+               <person xml:id="flavi">
+                  <persName>Flavius</persName>
                   <note type="biographical">Roi du sud de la France dont les troupes partent à la
                      poursuite de la biche de <persName ref="#gile">saint Gilles</persName> lors
                      d'une partie de chasse.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="florentin">
-                  <persName>Florentin</persName>
+               <person xml:id="florentin">
+                  <persName>Florences</persName>
                   <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain
                      empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gallus">
-                  <persName>Gallus</persName>
-                  <note>Disciple de saint Martin.</note>
+               <person xml:id="gallus">
+                  <persName>Gallum</persName>
+                  <note>Gallus, disciple de saint Martin.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="wauchier">
-                  <persName>Gauchier</persName>
+               <person xml:id="wauchier">
+                  <persName>Gauchiers</persName>
                   <note type="biographical">Wauchier de Denain, auteur du recueil hagriographique
                         <hi rend="italic">Li seint Confessor</hi>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="germein"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
+               <person xml:id="germein" corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
                   <persName>Germein (saint)</persName>
                   <death when="0541">541</death>
                   <note type="biographical">Saint Germain de Capoue, Evêque de Capoue en Italie, ami
                      de <persName ref="#benoit">Saint Benoît</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gile">
+               <person xml:id="gile">
                   <persName>Gile (saint)</persName>
                   <birth when="0640">640</birth>
                   <death when="0710">710</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint
-                     Giles l'ermite, il quitte Athène et sa Grèce natale pour s'établir dans le Sud
-                     de la France dans la région du Gard.</note>
+                     Giles l'ermite.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="godins">
+               <person xml:id="godins">
                   <persName>Godins</persName>
                   <note type="biographical">Archevêque d'<placeName ref="#argentane"
                         >Argentane</placeName> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gotus">
+               <person xml:id="gotus">
                   <persName>Gotus</persName>
                   <note type="biographical"> Moine de la confrérie de <persName ref="#benoit">saint
                         Benoit</persName>, pauvre d'esprit.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC" xml:id="gratien">
-                  <persName>Gratien</persName>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC"
+                  xml:id="gratien">
+                  <persName>Gracien</persName>
                   <death when="0301">301</death>
                   <note type="biographical">Gatien de Tours, premier évêque de <placeName
                         ref="#tours">Tours</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="gregoire">
-                  <persName>Gregoire</persName>
+               <person xml:id="gregoire">
+                  <persName>Gregoires</persName>
                   <birth when="0540">540</birth>
                   <death when="0604">604</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11886472r"
@@ -633,13 +627,13 @@
                         >Dialogues</hi> dont est issue la <hi rend="italic">Vie de <persName
                            ref="#benoit">saint Benoit</persName></hi>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="grimoaldus">
+               <person xml:id="grimoaldus">
                   <persName>Grimoaldus</persName>
-                  <note type="biographical">prêtre qui accompagne les marchands de Bari pour
+                  <note type="biographical">Prêtre qui accompagne les marchands de Bari pour
                      récupérer le corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="hilaire">
-                  <persName>Hilaire</persName>
+               <person xml:id="hilaire">
+                  <persName>Ylaire</persName>
                   <birth when="0315">315</birth>
                   <death when="0367">367</death>
                   <note type="biographical"
@@ -649,50 +643,48 @@
                      siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à l'arianisme.
                      Saint Martin le rejoignit en 356 et devint alors son élève.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="honorius">
-                  <persName>Honoire</persName>
+               <person xml:id="honorius">
+                  <persName>Honoires</persName>
                   <birth when="0384">384</birth>
                   <death when="0423">423</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12566387q"
                      >Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395
                      à 423.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="honores">
+               <person xml:id="honores">
                   <persName>Honores</persName>
-                  <note type="biographical">Abbé du monastère où saint Benoit rentra dans les ordres
-                     à l'époque de Grégoire de Tours.</note>
+                  <note type="biographical">Abbé du monastère où saint Benoit rentra dans les ordres.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="hydebres">
-                  <persName>Hydebres</persName>
+               <person xml:id="hydebres">
+                  <persName>Hyldebert</persName>
                   <note type="biographical">Hyldebert, fils d'<persName ref="#archade"
-                        >Archade</persName>, conte de Poitiers. Il est ressuscité par <persName
-                        ref="#marcel">saint Marcel</persName>.</note>
+                        >Archade</persName>, conte de Poitiers.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="hylarion">
-                  <persName>Hylarion</persName>
+               <person xml:id="hylarion">
+                  <persName>Hylarions</persName>
                   <note type="biographical">Clerc qui assiste aux derniers soins mortuaires de
                         <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ithace">
-                  <persName>Itache</persName>
+               <person xml:id="ithace">
+                  <persName>Ytace</persName>
                   <note type="biographical">Ithacium, evêque d'Ossobona et meneur du parti épiscopal
                      hostile à <persName ref="#priscillien">Priscillien</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
-                  <persName>Jean (Baptiste)</persName>
+               <person xml:id="jeanBaptiste">
+                  <persName>Jehan (Baptiste)</persName>
                   <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">Personnage
-                     biblique, <surname type="complex">Jean le Baptiste</surname>, prédicateur en
-                     Judée.</note>
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"><surname
+                        type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
+                     en Judée.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="getron">
-                  <persName>Jechron</persName>
+               <person xml:id="getron">
+                  <persName>Getron</persName>
                   <note type="biographical">Marchand et pèlerin d'<placeName ref="excorande"
                         >Excorande</placeName>, mari d'<persName ref="#eufrosine"
                         >Eufrosine</persName> et père de <persName ref="#deudone"
-                     >Deudoné</persName>.</note>
+                     >Deudonez</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jehan">
+               <person xml:id="jehan">
                   <persName>Jehan</persName>
                   <birth when="0360">360</birth>
                   <death when="0432">432</death>
@@ -701,7 +693,7 @@
                      moine, originaire d'<placeName ref="#egypte">Egypte</placeName>, il établit sa
                      communauté sur l'île de Chypre.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jerome">
+               <person xml:id="jerome">
                   <persName>Jerome (saint)</persName>
                   <birth when="0345">345</birth>
                   <death when="0420-09-20">420</death>
@@ -710,26 +702,26 @@
                      principaux opposants aux idées d'<persName ref="#origene"
                      >Origène</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="job">
+               <person xml:id="job">
                   <persName>Job</persName>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q179962"
                      >Personnage biblique, archétype du juste éprouvé par le diable.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="joseph">
+               <person xml:id="joseph">
                   <persName>Joseph</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb13572684w"
                      >Jospeh d'Arimathie, il aurait récupéré dans une coupe le sang du <persName
                         ref="#jesus">Christ</persName> sur la croix.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="judas">
+               <person xml:id="judas">
                   <persName>Judas</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb16604390m"
                      >Judas Iscariote, personnage biblique, apôtre qui trahit le Christ pour le
                      livrer à Ponce Pilate.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC" xml:id="julien">
-                  <persName>Julien</persName>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC"
+                  xml:id="julien">
+                  <persName>Juliens</persName>
                   <birth when="0331">331</birth>
                   <death when="0363">363</death>
                   <note type="biographical"
@@ -738,46 +730,45 @@
                      l’Apostat par la tradition chrétienne. Il doit son surnom à sa volonté de
                      rétablir le polythéisme dans l’Empire romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="jupiter">
+               <person xml:id="jupiter">
                   <persName>Jupiter</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120421559"
                      >Dieu du panthéon romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="justinien">
-                  <persName>Justinien</persName>
+               <person xml:id="justinien">
+                  <persName>Justien</persName>
                   <note type="biographical">Evêque de Tours, successeur de <persName ref="#brice"
                         >saint Brice</persName> suite à son exil.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
-                  <persName>Jésus Christ</persName>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+                  xml:id="jesus">
+                  <persName>Jesu Crist</persName>
                   <birth when="0001">0</birth>
                   <death when="0030">33</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-                     <surname type="complex">Jésus-Christ</surname> est le nom donné par l'ensemble
-                     des chrétiens au prophète qu'ils considèrent comme le Messie. Les chrétiens
-                     reconnaissent Jésus-Christ comme le fils unique de Dieu.</note>
+                     <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
+                     reconnaissent comme le fils unique de Dieu.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lazare">
-                  <persName>Lazare</persName>
+               <person xml:id="lazare">
+                  <persName>Lazarum</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12421301z"
-                     >Personnage de l'Évangile, ressuscité par <persName ref="#jesus"
+                     >Lazare, personnage de l'Évangile, ressuscité par <persName ref="#jesus"
                         >Jésus-Christ</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="leons">
+               <person xml:id="leons">
                   <persName>Leons</persName>
                   <note type="biographical">Évêque de <placeName ref="#cupersane"
                         >Cupersane</placeName> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lidoire">
+               <person xml:id="lidoire">
                   <death when="0371">371</death>
-                  <persName>Lidoire</persName>
-                  <note type="biographical">Lidoire (en latin Litorius) fut ordonné second évêque de
-                        <placeName ref="#tours">Tours</placeName> en 338, il est le prédecesseur de
-                        <persName ref="#martin">saint Martin</persName>.</note>
+                  <persName>Lidorius</persName>
+                  <note type="biographical">Lidoire (en latin Litorius), prédecesseur de <persName
+                        ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName
+                        ref="#tours">Tours</placeName> en 338.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lucain">
-                  <persName>Lucan</persName>
+               <person xml:id="lucain">
+                  <persName>Lucans</persName>
                   <birth when="0039-11-03">39</birth>
                   <death when="0065-04-30">65</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11913555f">
@@ -787,70 +778,69 @@
                         ref="#pompee">Pompée</persName> et <persName ref="#cesar">César</persName>
                      entre 49 et 48 av. J.-C.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lucius">
+               <person xml:id="lucius">
                   <persName>Lucius</persName>
                   <birth when="0263">263</birth>
                   <death when="0325">325</death>
                   <note type="biographical">Flavius Galerius Valerius Licinianus Licinius, empereur
                      d'Orient de 308 à 324.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lupicin">
+               <person xml:id="lupicin">
                   <persName>Lupicin</persName>
                   <note type="biographical">Homme important de la ville de <placeName
                         ref="#poitiers">Poitiers</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="lupus">
+               <person xml:id="lupus">
                   <persName>Lupus</persName>
                   <note type="biographical">Prêtre qui accompagne les marchands de Bari pour
                      récupérer le corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="machaire"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb16725110d">
-                  <persName>Macaire</persName>
+               <person xml:id="machaire" corresp="http://catalogue.bnf.fr/ark:/12148/cb16725110d">
+                  <persName>Machaires</persName>
                   <death when="0334">334</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb16725110d"
                      >Saint Macaire, évêque de <placeName ref="#jerusalem"
                      >Jérusalem</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcel">
+               <person xml:id="marcel">
                   <persName>Marcel</persName>
                   <birth>3<ex>e</ex> siècle</birth>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12520934h"
                      >Saint Marcel ou saint Martial de Limoges, evêque de Limoges au <seg
                         type="number">iii</seg><ex>e</ex> siècle.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcelPere">
-                  <persName>Marcel</persName>
+               <person xml:id="marcelPere">
+                  <persName>Marceaus</persName>
                   <note type="biographical">Père de <surname type="complex">
                         <persName ref="#marcel">Saint Marcel</persName> de <placeName ref="#limoges"
                            >Limoges</placeName></surname>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marcelConsul">
+               <person xml:id="marcelConsul">
                   <persName>Marcel</persName>
                   <note type="biographical">Consul romain, il accueille dans sa maison <persName
                         ref="#pierre">saint Pierre</persName> et sa suite à lors arrivée à
                         <placeName ref="#rome">Rome</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
+                  xml:id="marie">
                   <persName>Marie (sainte Vierge)</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
                      >Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
                      Dieu.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="madeleine">
+               <person xml:id="madeleine">
                   <persName>Marie Magdalene (sainte)</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120479609"
                      >Personnage biblique, Marie-Madeleine, disciple de <persName ref="#jesus"
                         >Jésus-Christ</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="marmorius">
+               <person xml:id="marmorius">
                   <persName>Marmorius</persName>
                   <note type="biographical">Sarrazin, propriétaire de <persName ref="#deudone"
-                        >Deudoné</persName> après sa capture.</note>
+                        >Deudonez</persName> après sa capture.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC" xml:id="martin">
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
+                  xml:id="martin">
                   <persName>Martin (saint)</persName>
                   <birth when="0316">316</birth>
                   <death when="0397-11-08">397</death>
@@ -860,74 +850,73 @@
                      est mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
                      397.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="mathius">
+               <person xml:id="mathius">
                   <persName>Mathius</persName>
                   <note type="biographical">Jeune homme qui accompagne les marchands de Bari.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="maurum">
-                  <persName>Maurum</persName>
+               <person xml:id="maurum">
+                  <persName>Mauru</persName>
                   <note type="biographical">Fils d'<persName ref="#evitius">Evitius</persName>
                      envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="maximin">
-                  <persName>Maximin</persName>
+               <person xml:id="maximin">
+                  <persName>Maximien</persName>
                   <birth when="0383">173</birth>
                   <death when="0384-08-31">384</death>
                   <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC">
-                     <surname type="complex">Magnus Clemens Maximus</surname>, officier romain à la
-                     tête des légions de Bretagne qui renversèrent en 383 l'<persName ref="#gratien"
-                        >empereur Gatien</persName>. Il régna sur l'Occident jusqu'en 388, où il fut
-                     vaincu et tué par les troupes de Théodose.</note>
+                     source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC">Maximin,
+                        <surname type="complex">Magnus Clemens Maximus</surname>, officier romain à
+                     la tête des légions de Bretagne qui renversèrent en 383 l'<persName
+                        ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en
+                     388, où il fut vaincu et tué par les troupes de Théodose.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
-                  <persName>Mercurius</persName>
+               <person xml:id="mercurius">
+                  <persName>Mercurie</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11937106h"
-                     >Dieu du panthéon romain.</note>
+                     >Mercure, dieu du panthéon latin.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="michel">
+               <person xml:id="michel">
                   <persName>Michel</persName>
                   <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC">Personnage
-                     biblique, Michel est un archange et un saint chrétien. Il est principalement
-                     représenté en chevalier ailé qui terrasse le Diable.</note>
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC">Saint Michel,
+                     archange.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="minerve">
+               <person xml:id="minerve">
                   <persName>Minerve</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11968395c"
                      >Déesse du panthéon latin.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nepotiens">
+               <person xml:id="nepotiens">
                   <persName>Nepotiens</persName>
                   <note type="biographical">Officier impérial envoyé en mission secrète avec
-                        <persName ref="#ursus">Ursus</persName> et <persName ref="#aquileon"
+                        <persName ref="#ursus">Ursum</persName> et <persName ref="#aquileon"
                         >Aquileon</persName> pour punir la contrée de <placeName ref="#licie"
                         >Lycie</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nerva">
+               <person xml:id="nerva">
                   <persName>Nerva</persName>
                   <note type="biographical">Haut dignitaire romain, proche de l'empereur <persName
                         ref="#neron">Néron</persName> dont le fils est ressuscité par <persName
                         ref="#marcel">saint Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas3">
+               <person xml:id="nicolas3">
                   <persName>Nicolas</persName>
                   <note type="biographical">Archidiacre, présent au moment de la mort de <persName
                         ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas2">
-                  <persName>Nicolas</persName>
+               <person xml:id="nicolas2">
+                  <persName>Nicholas</persName>
                   <note type="biographical">Homme originaire de la ville de <placeName ref="#sivine"
                         >Sivine</placeName>, il apporte un malade devant saint Nicolas afin qu'il le
                      guérisse.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicolas">
-                  <persName>Nicolas (saint)</persName>
+               <person xml:id="nicolas">
+                  <persName>Nicholas (saint)</persName>
                   <death when="0400">3<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11961190d"
                      >Saint Nicolas, évêque de Myre.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="nuiton">
+               <person xml:id="nuiton">
                   <persName>Nuiton</persName>
                   <note type="biographical">Démon aquatique responsable avec <persName
                         ref="#engigniere">Engigniere de Mil</persName> et <persName ref="#risoaudus"
@@ -935,16 +924,16 @@
                         >Hyldebert</persName> qui sera ressuscité par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="neron">
-                  <persName>Néron</persName>
+               <person xml:id="neron">
+                  <persName>Noirons</persName>
                   <birth when="0037-12-15">37</birth>
                   <death when="0068-06-09">68</death>
-                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11936625x">
-                     Empereur de <placeName ref="#rome">Rome</placeName> de 54 à 68, il est connu
-                     pour avoir persécuté les chrétiens et, notamment avoir fait crucifié <persName
-                        ref="#pierre">saint Pierre</persName>.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11936625x"
+                     >Néron, empereur de <placeName ref="#rome">Rome</placeName> de 54 à 68, il est
+                     connu pour avoir persécuté les chrétiens et, notamment avoir fait crucifié
+                        <persName ref="#pierre">saint Pierre</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="origene">
+               <person xml:id="origene">
                   <persName>Origene (saint)</persName>
                   <birth when="0185">185</birth>
                   <death when="0254">254</death>
@@ -952,16 +941,16 @@
                      l'Eglise, considéré comme le fondateur de l'exégèse biblique pour avoir
                      commenté tous les livres de l'Ancien et du Nouveau Testament.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="paul">
-                  <persName>Paul</persName>
+               <person xml:id="paul">
+                  <persName>Pol</persName>
                   <birth when="0228">228</birth>
                   <death when="0341">341</death>
                   <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname> est l'une des
-                     figures fondatrices du monachisme avec <persName ref="#antoine">saint
-                        Antoine</persName>.</note>
+                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
+                     fondatrice du monachisme avec <persName ref="#antoine">saint
+                     Antoine</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="paulin">
+               <person xml:id="paulin">
                   <persName>Paulin</persName>
                   <birth when="0353">353</birth>
                   <death when="0431">431</death>
@@ -969,28 +958,27 @@
                      source="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC">
                      <surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353, mort
                      à Nole en 431, est un poète et un ecclésiastique latin contemporain de saint
-                     Augustin et de <persName ref="#martin">Martin de Tours</persName>, qui
+                     Augustin et de <persName ref="#martin">Martin de Tours</persName> qui
                      l'encouragea dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa
                      mort.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pelagie">
+               <person xml:id="pelagie">
                   <persName>Pelagie</persName>
-                  <note type="biographical">Mère de <persName ref="#gile">saint Giles</persName>
+                  <note type="biographical">Mère de <persName ref="#gile">saint Gilles</persName>
                      .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pelerins">
+               <person xml:id="pelerins">
                   <persName>Pelerins</persName>
-                  <note type="biographical">Moine de <persName ref="#benoit">Saint Benoit</persName>
-                     .</note>
+                  <note type="biographical">Moine de <persName ref="#benoit">Saint Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pierre">
+               <person xml:id="pierre">
                   <persName>Pere</persName>
                   <death when="0064">64</death>
                   <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pierre,
                      pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
                      premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="perpetuus">
+               <person xml:id="perpetuus">
                   <death when="0490">490</death>
                   <persName>Perpetuus</persName>
                   <note type="biographical"
@@ -998,21 +986,21 @@
                         <persName ref="#martin">saint Martin</persName>, sixième évêque de
                         <placeName ref="#tours">Tours</placeName> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="phelippe">
-                  <persName>Phelippe</persName>
+               <person xml:id="phelippe">
+                  <persName>Phelippes</persName>
                   <note type="biographical">Évêque de la cité de <placeName ref="#feliton"
                         >Feliton</placeName> (Phellos).</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="placidum">
-                  <persName>Placidum</persName>
+               <person xml:id="placidum">
+                  <persName>Placidus</persName>
                   <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName>
                      envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pompeien">
-                  <persName>Pompeien</persName>
+               <person xml:id="pompeien">
+                  <persName>Pompeiens</persName>
                   <note type="biographical">Abbé.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pompee">
+               <person xml:id="pompee">
                   <persName>Pompeus</persName>
                   <birth when="0106-09-29">-106</birth>
                   <death when="0048-08-28">48</death>
@@ -1023,16 +1011,16 @@
                      av. J-C. Il prit alors la fuite vers l'Égypte où il fut assassiné sur la plage
                      de Péluse.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="pomponie">
+               <person xml:id="pomponie">
                   <persName>Pomponie</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, ami de
+                  <note type="biographical">Ami de
                         <persName ref="#gallus">Gallus</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="postumien">
+               <person xml:id="postumien">
                   <persName>Postumien</persName>
                   <note>Moine explorateur qui a rencontré les saints pères du désert.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="priscillien">
+               <person xml:id="priscillien">
                   <persName>Priscillien</persName>
                   <birth when="0340">340</birth>
                   <death when="0385">385</death>
@@ -1040,177 +1028,168 @@
                      d'Avila, hérésiarque, il est le fondateur de la secte priscillianiste. Il fut
                      banni d'Espagne par un décret de Gratien, puis exécuté en 385.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="prius">
-                  <persName>Prius</persName>
+               <person xml:id="prius">
+                  <persName>Priu</persName>
                   <note type="biographical">Saint homme.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="refrigerius">
+               <person xml:id="refrigerius">
                   <persName>Refrigerius</persName>
                   <note type="biographical">Prêtre.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ringo">
-                  <persName>Ringos</persName>
+               <person xml:id="ringo">
+                  <persName>Ringoz</persName>
                   <note type="biographical">Serviteur du roi <persName ref="#thotila"
                         >Totila</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="risoaudus">
+               <person xml:id="risoaudus">
                   <persName>Risoaudus</persName>
                   <note type="biographical">Démon aquatique responsable avec <persName ref="#nuiton"
                         >Nuiton</persName> et <persName ref="#engigniere">Engigniere de
                         Mil</persName> de la noyade d'<persName ref="#hydebres">Hyldebert</persName>
                      qui sera ressuscité par <persName ref="#marcel">saint Marcel</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="rodevaldus">
+               <person xml:id="rodevaldus">
                   <persName>Rodevaldus</persName>
                   <note type="biographical">Marchands de Bari.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="romein">
-                  <persName>Romein</persName>
-                  <note type="biographical">Moine.</note>
+               <person xml:id="romein">
+                  <persName>Romeins</persName>
+                  <note type="biographical">Moine, apporte des vivres à saint Benoit pendant sa retraite.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="rudich">
-                  <persName>Rudich</persName>
+               <person xml:id="rudich">
+                  <persName>Rudrich</persName>
                   <note type="biographical">Compagnon du roi <persName ref="#thotila"
                         >Totila</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="rufus">
+               <person xml:id="rufus">
                   <persName>Rufus</persName>
-                  <note type="biographical">Évêque d'Espagne qui crut en un faux prophète.</note>
+                  <note type="biographical">Évêque d'Espagne.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="rurtius">
+               <person xml:id="rurtius">
                   <persName>Rurtius</persName>
                   <note type="biographical">Homme important de la ville de <placeName ref="#tours"
                         >Tours</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="saturnine">
-                  <persName>Saturnine</persName>
+               <person xml:id="saturnine">
+                  <persName>Saturnines</persName>
                   <note type="biographical">Prêtre, disciple de <persName ref="#martin">saint
                         Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="scolastica">
+               <person xml:id="scolastica">
                   <persName>Scolastica</persName>
                   <note type="biographical">Nonne, amie de <persName ref="#benoit">saint
                         Benoit</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="serge"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb13561173d">
+               <person xml:id="serge" corresp="http://catalogue.bnf.fr/ark:/12148/cb13561173d">
                   <persName>Serge (saint)</persName>
                   <death when="0303">303</death>
                   <note type="biographical">Martyr avec <persName ref="#bace">saint Bace</persName>
                      en 303.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="sernandu">
-                  <persName>Sernandu</persName>
+               <person xml:id="sernandu">
+                  <persName>Sernanduz</persName>
                   <note type="biographical">Abbé, témoin avec <persName ref="#benoit">saint
                         Benoit</persName> de l'ascension de l'âme de <persName ref="germein">saint
                         Germain de Chaples</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
+               <person corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
                   <persName>Severin (saint)</persName>
                   <death when="0403">403</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
-                     <surname type="complex">Saint Séverin de Cologne</surname>, évêque de cologne
-                     au à la fin du <seg type="number">iv</seg><ex>e</ex> siècle.</note>
+                     <surname type="complex">Saint Séverin de Cologne</surname>, évêque de cologne à la fin du <seg type="number">iv</seg><ex>e</ex> siècle.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC" xml:id="severus">
-                  <persName>Severus</persName>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
+                  xml:id="severus">
+                  <persName>Severum</persName>
                   <birth when="0363">363</birth>
                   <death when="0420">420</death>
                   <note type="biographical">
-                     <surname type="complex">Sulpice Sévère</surname>, avocat aquitain, il devint
-                     prêtre et s'attacha à saint Martin. Il est l'auteur d'une Chronique universelle
+                     <surname type="complex">Sulpice Sévère</surname>, avocat aquitain et disciple saint Martin. Il est l'auteur d'une Chronique universelle
                      (403), de la <hi rend="italic">Vita Martini</hi> (397) et des <hi rend="italic"
                         >Dialogues</hi> (404).</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="simplices">
+               <person xml:id="simplices">
                   <persName>Simplices</persName>
                   <note type="biographical">Troisième successeur de saint Benoit à la tête du
-                     monestère de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
+                     monastère de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="soybre">
-                  <persName>Soybre</persName>
+               <person xml:id="soybre">
+                  <persName>Soybres</persName>
                   <note type="biographical">Comte de Bordeaux et mari de la comtesse <persName
-                        ref="#beneoite">Beneoite</persName>. Il est touché de paralyzie et guéri
-                     grâce à saint Marcel.</note>
+                        ref="#beneoite">Beneoite</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="suzanne">
-                  <persName>Suzanne</persName>
-                  <note type="biographical">Dame noble, elle héberge saint Martial lors de son
-                     arrivée à <placeName ref="#limoges">Limoges</placeName>.</note>
+               <person xml:id="suzanne">
+                  <persName>Susane</persName>
+                  <note type="biographical">Dame noble, mère de Valérie.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="symonide">
+               <person xml:id="symonide">
                   <persName>Symonides</persName>
                   <note type="biographical">Haut dignitaire de <placeName ref="#licie"
                         >Lycie</placeName> sous Constantin <seg type="number">i</seg><ex>er</ex>,
                      accusé par le consul <persName ref="#eus">Eustache</persName> de l'avoir
                      corrompu afin qu'il condamne à mort trois émissaires de l'empereur : <persName
                         ref="#nepotiens">Nepotiens</persName>, <persName ref="#ursus"
-                        >Ursus</persName> et <persName ref="#aquileon">Aquileon</persName>.</note>
+                        >Ursum</persName> et <persName ref="#aquileon">Aquileon</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="thedrades">
+               <person xml:id="thedrades">
                   <persName>Thedrades</persName>
                   <note type="biographical">Consul de la cité de Trèves.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theocrite">
-                  <persName>Theocrite</persName>
-                  <note type="biographical">Veuve d'<placeName ref="#arles">Arles</placeName> dont
+               <person xml:id="theocrite">
+                  <persName>Teocrite</persName>
+                  <note type="biographical">Veuve dont
                      la fille est guérie par <persName ref="#gile">saint Gilles</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theodorus">
+               <person xml:id="theodorus">
                   <persName>Theodorus</persName>
                   <note type="biographical">Père de <persName ref="#gile">saint Gilles</persName>.
                      .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theognitus">
+               <person xml:id="theognitus">
                   <persName>Theoniste</persName>
                   <note type="biographical">Évêque gallo-romain, seul Ithacien a avoir rompu avec la
                      faction en condamnant publiquement leurs agissements.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theoprobus">
+               <person xml:id="theoprobus">
                   <persName>Theoprobus</persName>
                   <note type="biographical">Homme noble, ami de saint Benoit.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="thomas">
+               <person xml:id="thomas">
                   <persName>Thomas</persName>
                   <death when="0072">72</death>
                   <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb131792525"
                      >Apôtre du Christ.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="thotila"
-                  corresp="https://www.wikidata.org/wiki/Q159707">
+               <person xml:id="thotila" corresp="https://www.wikidata.org/wiki/Q159707">
                   <persName>Thotila</persName>
                   <death when="0552">552</death>
                   <note type="biographical">Totila, roi ostrogoth, élu roi d'Italie en 541.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theodore"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb16725759d">
-                  <persName>Théodore (saint)</persName>
+               <person xml:id="theodore" corresp="http://catalogue.bnf.fr/ark:/12148/cb16725759d">
+                  <persName>Theodore (saint)</persName>
                   <death when="0300">4<hi rend="exp">e</hi> siecle</death>
                   <note type="biographical">Saint Théodore de Tiron, moine de <placeName
                         ref="#constantinople">Constantinople</placeName>, martyr du 4<ex>e</ex>
                      siècle.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="theralius">
-                  <persName>Théralius</persName>
-                  <note type="biographical">Noble qui envoie son fils <persName ref="#maurum"
-                        >Placidum</persName> auprès de saint Benoit.</note>
+               <person xml:id="theralius">
+                  <persName>Theralius</persName>
+                  <note type="biographical">Noble, père de Placidum.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ursus">
-                  <persName>Ursus</persName>
+               <person xml:id="ursus">
+                  <persName>Ursum</persName>
                   <note type="biographical">Officier impérial envoyé en mission secrète avec
                         <persName ref="#aquileon">Aquileon</persName> et <persName ref="#nepotiens"
                         >Nepotien</persName> pour punir la contrée de <placeName ref="#licie"
                         >Lycie</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valentin">
+               <person xml:id="valentin">
                   <persName>Valentiens</persName>
                   <note type="biographical">Seigneur de la ville de <placeName ref="#tours"
                         >Tours</placeName> du temps de <persName ref="#martin">saint
                         Martin</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valentinien">
+               <person xml:id="valentinien">
                   <persName>Valentinien</persName>
                   <birth when="0371">371</birth>
                   <death when="0392-05-15">392</death>
@@ -1219,44 +1198,42 @@
                      de Valentinien <seg type="number">i</seg><ex>er</ex>, empereur romain de 375 à
                      392.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valentinien2">
-                  <persName>Valentinien</persName>
+               <person xml:id="valentinien2">
+                  <persName>Valentiniens</persName>
                   <note type="biographical">Évêque.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valentinien3">
+               <person xml:id="valentinien3">
                   <persName>Valentinien</persName>
                   <note type="biographical">Abbé du monastère de <placeName ref="#latran"
                         >Latran</placeName>, puis moine du monastère du <placeName ref="cassin">mont
                         Cassin</placeName> .</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="valerie">
+               <person xml:id="valerie">
                   <persName>Valerie</persName>
                   <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb136122287"
-                     >Jeune fille d'origine noble, convertie à la foi chrétienne par <persName
-                        ref="#marcel">saint Marcel</persName>. Elle est la fille de <persName
-                        ref="#suzanne">Suzanne</persName>, promise en mariage au <persName
-                        ref="#etienneDuc">duc Étienne</persName> qui la fait décapiter pour avoir
-                     refusé de devenir son épouse.</note>
+                     >Jeune fille d'origine noble, fille de <persName
+                        ref="#suzanne">Susane</persName>, promise en mariage au <persName
+                        ref="#etienneDuc">duc Étienne</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="venus">
+               <person xml:id="venus">
                   <persName>Venus</persName>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q47652">Déesse du
                      panthéon latin.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="veredemius">
-                  <persName>Veredemius</persName>
+               <person xml:id="veredemius">
+                  <persName>Veredemium</persName>
                   <note type="biographical">Ermite qui partage pour un temps la retraite de
                         <persName ref="#gile">saint Gilles</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="vespasien">
-                  <persName>Vespasien</persName>
+               <person xml:id="vespasien">
+                  <persName>Vaspasiens</persName>
                   <birth when="0009-11-17">9</birth>
                   <death when="0079-06-23">76</death>
                   <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb14480609t"
-                        ><surname type="complex">Titus Flavius Vespasianus</surname>, empereur
-                     romain.</note>
+                     >Vespasien, <surname type="complex">Titus Flavius Vespasianus</surname>,
+                     empereur romain.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="victricus">
+               <person xml:id="victricus">
                   <persName>Victricus</persName>
                   <birth when="0330">330</birth>
                   <death when="0409">409</death>
@@ -1264,459 +1241,435 @@
                      source="https://catalogue.bnf.fr/ark:/12148/cb11995595t.public">Évêque de
                      Rouen.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="vult">
+               <person xml:id="vult">
                   <persName>Vult</persName>
                   <note type="biographical">Compagnon du roi <persName ref="#thotila"
                         >Totila</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ylarates">
+               <person xml:id="ylarates">
                   <persName>Ylarates</persName>
                   <note type="biographical">Convers du <placeName ref="#cassin">mont
                         Cassin</placeName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="ylarien">
-                  <persName>Ylarien</persName>
+               <person xml:id="ylarien">
+                  <persName>Ylariens</persName>
                   <note type="biographical">Gardien de la prison des trois officiers de l'empereur
                         (<persName ref="#nepotiens">Nepotiens</persName>, <persName ref="#ursus"
-                        >Ursus</persName> et <persName ref="#aquileon">Aquileon</persName>)
+                        >Ursum</persName> et <persName ref="#aquileon">Aquileon</persName>)
                      condamnés à mort.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="zacharie">
+               <person xml:id="zacharie">
                   <persName>Zacharie</persName>
                   <note type="biographical"
                      source="http://fr.dbpedia.org/page/Zacharie_(père_de_Jean_le_Baptiste)"
                      >Personnage biblique, il serait le père de saint <persName ref="#jeanBaptiste"
-                        >Jean le Baptiste</persName>. Trop vieux pour avoir un enfant, le Seigneur
-                     lui annonce la naissance d'un fils. Zacharie est alors frappé de stupeur
-                     jusqu'à la naissance de son fils. Il retrouve la parole pour proclamer que le
-                     nom de son fils est Jean, tel que le Seigneur le lui avait demander.</note>
+                        >Jean le Baptiste</persName>.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="zacheus">
+               <person xml:id="zacheus">
                   <persName>Zacheus</persName>
                   <death>1<ex>er</ex> siècle</death>
                   <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb144299176"
                      >Zachée, personnage biblique, disciple de Jésus Christ.</note>
                </person>
-               <person xmlns="http://www.tei-c.org/ns/1.0" xml:id="zalla">
+               <person xml:id="zalla">
                   <persName>Zalla</persName>
-                  <note type="biographical">Homme de mauvaise réputation et cruel envers les
-                     paysans.</note>
+                  <note type="biographical">Envoyé du roi dans la région du Mont Cassin, homme cruel.</note>
                </person>
-
             </listPerson>
          </particDesc>
          <settingDesc>
             <listPlace>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="achaie"
-                  corresp="http://data.bnf.fr/fr/12002636/achaie__grece_/">
+               <place xml:id="achaie" corresp="http://data.bnf.fr/fr/12002636/achaie__grece_/">
                   <placeName>Achaïe</placeName>
-                  <note>Région de la Grèce antique, située nord-ouest de la péninsule du
+                  <note>Région de la Grèce antique, située au Nord-Ouest de la péninsule du
                      Péloponnèse.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="adagedonc">
+               <place xml:id="adagedonc">
                   <placeName>Adagedonc</placeName>
                   <note>château.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="aise"
-                  corresp="http://data.bnf.fr/fr/15368858/asie_occidentale/">
+               <place xml:id="aise" corresp="http://data.bnf.fr/fr/15368858/asie_occidentale/">
                   <placeName>Aise</placeName>
-                  <note>Asie.</note>
+                  <note>Asie mineure.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="allemagne"
-                  corresp="http://data.bnf.fr/fr/15299664/allemagne/">
+               <place xml:id="allemagne" corresp="http://data.bnf.fr/fr/15299664/allemagne/">
                   <placeName>Alemmaigne</placeName>
                   <note>Allemagne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="alexandrie"
+               <place xml:id="alexandrie"
                   corresp="http://pleiades.stoa.org/places/727070/alexandria">
-                  <placeName>Alixandre</placeName>
+                  <placeName>Alexandre</placeName>
                   <location>
                      <geo>31.2000924 29.91873869999995</geo>
                   </location>
                   <note>Alexandrie, ville d'Égypte.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
+               <place corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
                   <placeName>Amiens</placeName>
                   <location>
                      <geo>49.8936075, 2.297948</geo>
                   </location>
                   <note>Ville du Nord de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="anjou"
+               <place xml:id="anjou"
                   corresp="http://data.bnf.fr/fr/15325845/province_d__anjou__france_/">
-                  <placeName>Anjou</placeName>
+                  <placeName>Anjo</placeName>
                   <note>Région du Nord-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="anse">
+               <place xml:id="anse">
                   <placeName>Anse</placeName>
                   <note>château.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="antioche"
-                  corresp="https://pleiades.stoa.org/places/658381">
-                  <placeName>Antioche</placeName>
+               <place xml:id="antioche" corresp="https://pleiades.stoa.org/places/658381">
+                  <placeName>Anthioche</placeName>
                   <location>
                      <geo>36.2225515, 36.183214</geo>
                   </location>
-                  <note>Capitale de la province romaine de Syrie, en actuelle Turquie.</note>
+                  <note>Antioche, capitale de la province romaine de Syrie, en actuelle
+                     Turquie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
-                  <placeName>Aquilée</placeName>
+               <place corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
+                  <placeName>Aquilee</placeName>
                   <location>
                      <geo>45.7692106667, 13.3688636667</geo>
                   </location>
                   <note>Ville du Nord-Est de l'Italie, près de la Slovénie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="aquin"
-                  corresp="https://pleiades.stoa.org/places/432695">
+               <place xml:id="aquin" corresp="https://pleiades.stoa.org/places/432695">
                   <placeName>Aquinense</placeName>
                   <location>
                      <geo>41.4407, 13.7</geo>
                   </location>
                   <note>Aquino, ville italienne du Latium.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="aquitaine"
+               <place xml:id="aquitaine"
                   corresp="http://data.bnf.fr/fr/15376861/province_d__aquitaine__empire_romain_/">
-                  <placeName>Aquitaine</placeName>
-                  <note>Région du Sud-Ouest de la France</note>
+                  <placeName>Aqitaine</placeName>
+                  <note>Aquitaine, région du Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="https://pleiades.stoa.org/places/456035" xml:id="argentane">
+               <place corresp="https://pleiades.stoa.org/places/456035" xml:id="argentane">
                   <placeName>Argentane</placeName>
                   <note>Argentanum, ville de Bruttium dans le Sud de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="arles"
-                  corresp="https://pleiades.stoa.org/places/148217">
-                  <placeName>Arles</placeName>
+               <place xml:id="arles" corresp="https://pleiades.stoa.org/places/148217">
+                  <placeName>Arle</placeName>
                   <location>
                      <geo>43.677616, 4.630799</geo>
                   </location>
-                  <note>Ville du Sud de la France.</note>
+                  <note>Arles, ville du Sud de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="aspre">
+               <place xml:id="aspre">
                   <placeName>Aspre</placeName>
                   <note>Port d'Aspre, lieu qui marque l'une des frontières du royaume du duc
                      Etienne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="athenes"
-                  corresp="https://pleiades.stoa.org/places/579885">
+               <place xml:id="athenes" corresp="https://pleiades.stoa.org/places/579885">
                   <placeName>Atheines</placeName>
                   <location>
                      <geo>37.9751203779, 23.7271979517</geo>
                   </location>
-                  <note>Athènes, capitale de la Grèce</note>
+                  <note>Athènes, capitale de la Grèce.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="afrique"
-                  corresp="http://data.bnf.fr/15323603/afrique/">
+               <place xml:id="afrique" corresp="http://data.bnf.fr/15323603/afrique/">
                   <placeName>Aufriqe</placeName>
-                  <note>Afrique</note>
+                  <note>Afrique.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="auvergne"
+               <place xml:id="auvergne"
                   corresp="http://data.bnf.fr/fr/15289184/region_auvergne__france__1955-2016_/">
                   <placeName>Auvergne</placeName>
                   <note>Région du Centre de la France</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="babylone"
-                  corresp="https://pleiades.stoa.org/places/727082">
+               <place xml:id="babylone" corresp="https://pleiades.stoa.org/places/727082">
                   <placeName>Babiloine</placeName>
                   <location>
                      <geo>30.005783, 31.2301075</geo>
                   </location>
                   <note>Babylone, ville d'Egypte, actuelle Caire.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bar"
-                  corresp="https://pleiades.stoa.org/places/442500">
+               <place xml:id="bar" corresp="https://pleiades.stoa.org/places/442500">
                   <placeName>Bar</placeName>
                   <location>
                      <geo>41.129222, 16.870331</geo>
                   </location>
-                  <note>Bari, ville italienne des pouilles au Sud de l'Italie.</note>
+                  <note>Bari, ville italienne des Pouilles au Sud de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bethleem"
-                  corresp="https://pleiades.stoa.org/places/687856">
+               <place xml:id="bethleem" corresp="https://pleiades.stoa.org/places/687856">
                   <placeName>Bethleem</placeName>
                   <location>
                      <geo>31.712291, 35.202123</geo>
                   </location>
                   <note>Bethléem, ville de Cisjordanie, lieu de naissance présumé du Christ.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bonivent"
-                  corresp="https://pleiades.stoa.org/places/432721">
+               <place xml:id="bonivent" corresp="https://pleiades.stoa.org/places/432721">
                   <placeName>Bonivent</placeName>
                   <location>
                      <geo>41.130437, 14.781161</geo>
                   </location>
                   <note>Bénévent, ville de Campagnie dans l'Italie méridionale.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bordeaux"
-                  corresp="https://pleiades.stoa.org/places/138248">
+               <place xml:id="bordeaux" corresp="https://pleiades.stoa.org/places/138248">
                   <placeName>Bordeaus</placeName>
                   <location>
                      <geo>44.837205, -0.576533</geo>
                   </location>
                   <note>Bordeaux, ville du Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bosphore"
+               <place xml:id="bosphore"
                   corresp="http://data.bnf.fr/fr/15239983/detroit_du_bosphore__turquie_/">
                   <placeName>Bosfore</placeName>
                   <note>Détroit qui relie la mer Noire et la mer de Marmara.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="bethanie"
-                  corresp="http://data.bnf.fr/fr/15304950/bethanie__namibie_/">
-                  <placeName>Béthanie</placeName>
-                  <note>Région du Sud de l'Afrique, correspond à l'actuelle Namibie</note>
+               <place xml:id="bethanie" corresp="http://data.bnf.fr/fr/15304950/bethanie__namibie_/">
+                  <placeName>Bethanie</placeName>
+                  <note>Béthanie, région du Sud de l'Afrique, correspond à l'actuelle Namibie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cabinone"
-                  corresp="https://pleiades.stoa.org/places/148027">
+               <place xml:id="cabinone" corresp="https://pleiades.stoa.org/places/148027">
                   <placeName>Cabinone</placeName>
                   <location>
                      <geo>43.829885, 5.034166</geo>
                   </location>
                   <note>Cavaillon, ville du Sud-Ouest de la France.</note>
                   <!-- Attribution peu sûre, hésitation avec chabanais -->
-                  <bibl>
-                     GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
-                        publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
-                        Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. 
-                  </bibl>
+                  <bibl> GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
+                     publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
+                     Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. </bibl>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cacavius">
+               <place xml:id="cacavius">
                   <placeName>Cacavius</placeName>
                   <note>Île non-identifiée au large de la Lycie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="calabre">
+               <place xml:id="calabre">
                   <placeName>Calabre</placeName>
                   <note>La calabre, région d'Italie située à l'extrême sud-ouest de la
                      péninsule.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="calitone">
+               <place xml:id="calitone">
                   <placeName>Calitone</placeName>
-                  <note>Ville inconnue.</note>
+                  <note>Ville proche de Tours, non-identifiée.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
-                  <placeName>Candes</placeName>
+               <place corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
+                  <placeName>Conde</placeName>
                   <location>
                      <geo>47.210797, 0.074696</geo>
                   </location>
-                  <note>Actuelle Candes-Saint-Martin, située dans le Val de Loire</note>
+                  <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="caphse">
+               <place xml:id="caphse">
                   <placeName>Caphse</placeName>
-                  <note>Lieu inconnu, peut-être issu d'une confusion sur le texte latin (à
-                     terminer).</note>
+                  <note>Île de méditerranée non-identifiée.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="carthage" corresp="https://pleiades.stoa.org/places/314921">
+               <place xml:id="carthage" corresp="https://pleiades.stoa.org/places/314921">
                   <location>
                      <geo>36.8500325, 10.318</geo>
                   </location>
-                  <placeName>Carthage</placeName>
+                  <placeName>Cartage</placeName>
                   <note>Carthage, ville de Tunisie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cathapan">
+               <place xml:id="cathapan">
                   <placeName>Cathapan</placeName>
                   <note>Lieu de la sépulture de saint Nicolas à Bari.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="chaples"
-                  corresp="https://pleiades.stoa.org/places/432754">
+               <place xml:id="chaples" corresp="https://pleiades.stoa.org/places/432754">
                   <placeName>Chaples</placeName>
                   <location>
                      <geo>41.0860925, 14.250207</geo>
                   </location>
                   <note>Capoue, ville italienne de Campanie.</note>
                </place>
-               
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="chartre" corresp="https://pleiades.stoa.org/places/108778">
-                  <placeName>Chartre</placeName>
+               <place xml:id="chartre" corresp="https://pleiades.stoa.org/places/108778">
+                  <placeName>Chartres</placeName>
                   <location>
                      <geo>48.445658, 1.4856175</geo>
                   </location>
                   <note>Chartres, Ville du Centre de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cholomaide" corresp="https://pleiades.stoa.org/places/39409">
+               <place xml:id="cholomaide" corresp="https://pleiades.stoa.org/places/39409">
                   <placeName>Cholomaide</placeName>
-                  <location><geo>18.222236, 38.184316</geo></location>
-                  <note>Port de Ptolemaïs, issue d'une déformation du mot latin "Ptolemaidis".</note>
+                  <location>
+                     <geo>18.222236, 38.184316</geo>
+                  </location>
+                  <note>Port de Ptolemaïs, issue d'une déformation du mot latin
+                     "Ptolemaidis".</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="chorinte" corresp="https://pleiades.stoa.org/places/570182">
+               <place xml:id="chorinte" corresp="https://pleiades.stoa.org/places/570182">
                   <placeName>Chorinte</placeName>
-                  <location><geo>37.8980016198, 22.8999795422</geo></location>
+                  <location>
+                     <geo>37.8980016198, 22.8999795422</geo>
+                  </location>
                   <note>Corinthe, ville portuaire de Grêce.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cilicie" corresp="http://data.bnf.fr/fr/11942420/cilicie__turquie_/">
+               <place xml:id="cilicie" corresp="http://data.bnf.fr/fr/11942420/cilicie__turquie_/">
                   <placeName>Cilicie, province romaine située aujourd'hui en Turquie.</placeName>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
-                  <placeName>Cologne</placeName>
+               <place corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
+                  <placeName>Coloigne</placeName>
                   <location>
                      <geo>50.9333300 6.9500000</geo>
                   </location>
-                  <note>Ville de Cologne, située en Allemagne de l'Ouest</note>
+                  <note>Ville de Cologne, située en Allemagne de l'Ouest.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="constantinople" corresp="https://pleiades.stoa.org/places/520998">
-                  <placeName>Costantinople</placeName>
+               <place xml:id="constantinople" corresp="https://pleiades.stoa.org/places/520998">
+                  <placeName>Costantinoble</placeName>
                   <location>
                      <geo>41.0077908096, 28.9612916083</geo>
                   </location>
-                  <note>Constantinople, ancienne capitale de l'empire romain d'Orient, puis de l'empire Byzantin.</note>
+                  <note>Constantinople, ancienne capitale de l'empire romain d'Orient, puis de
+                     l'empire Byzantin.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="crobe">
+               <place xml:id="crobe">
                   <placeName>Crobe</placeName>
-                  <note>Maison de l'archange de <persName ref="#michel">saint Michel</persName>
-                     .</note>
+                  <note>Maison de l'archange de <persName ref="#michel">saint Michel</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cupersane" corresp="https://catalogue.bnf.fr/ark:/12148/cb12154953p">
+               <place xml:id="cupersane" corresp="https://catalogue.bnf.fr/ark:/12148/cb12154953p">
                   <placeName>Cupersane</placeName>
-                  <note>Copertino, ville d'Italie, située au Sud de <placeName ref="#bar">Bari</placeName>.</note>
+                  <note>Copertino, ville d'Italie, située au Sud de <placeName ref="#bar"
+                        >Bari</placeName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cyrene" corresp="https://pleiades.stoa.org/places/981517">
+               <place xml:id="cyrene" corresp="https://pleiades.stoa.org/places/981517">
                   <location>
                      <geo>35.0627201667, 24.9469437222</geo>
                   </location>
                   <placeName>Cyrène, ville située en actuelle Lybie.</placeName>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="dalmasse" corresp="http://data.bnf.fr/fr/15367120/dalmatie__province_romaine__33_av__j_c_-_/">
+               <place xml:id="dalmasse"
+                  corresp="http://data.bnf.fr/fr/15367120/dalmatie__province_romaine__33_av__j_c_-_/">
                   <placeName>Dalmasse</placeName>
                   <note>Dalmatie, région romaine, actuelle Croatie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="effide">
+               <place xml:id="effide">
                   <placeName>Effide</placeName>
-                  <note>Monastère proche de Rome où séjournent <persName ref="#pierre">saint Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
+                  <note>Monastère proche de Rome où séjournent <persName ref="#pierre">saint
+                        Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
                   <!-- A vérifer dans les dialogues II de saint Grégoire -->
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="egypte"
-                  corresp="http://data.bnf.fr/15238583/egypte/">
+               <place xml:id="egypte" corresp="http://data.bnf.fr/15238583/egypte/">
                   <placeName>Egypte</placeName>
                   <note>Égypte, pays d'Afrique du Nord</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="amboise" corresp="http://data.bnf.fr/fr/15257555/amboise__indre-et-loire__france_/">
+               <place xml:id="amboise"
+                  corresp="http://data.bnf.fr/fr/15257555/amboise__indre-et-loire__france_/">
                   <placeName>Embaise</placeName>
-                  <note>Amboise, "Ambatiensem" en latin, ville située dans le centre de la France.</note>
+                  <note>Amboise, "Ambatiensem" en latin, ville située dans le centre de la
+                     France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="enfer" corresp="https://catalogue.bnf.fr/ark:/12148/cb119519478">
-                  <placeName>Enfer</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion chrétienne.</note>
-                  <!-- lieu à rajouter dans la vie de saint Martin -->
+               <place xml:id="enfer" corresp="https://catalogue.bnf.fr/ark:/12148/cb119519478">
+                  <placeName>Infer</placeName>
+                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
+                     chrétienne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="escauc">
+               <place xml:id="escauc">
                   <placeName>Escauc</placeName>
                   <note>ville non-identifiée.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC" xml:id="espagne">
-                  <placeName>Espagne</placeName>
-                  <note>Pays d'Europe du Sud.</note>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
+                  xml:id="espagne">
+                  <placeName>Espaigne</placeName>
+                  <note>Espagne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="espire">
+               <place xml:id="espire">
                   <placeName>Espire</placeName>
                   <note>Mont d'espire, désigne les Pyrennées.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="ethyopie" corresp="http://data.bnf.fr/fr/15238602/ethiopie/">
+               <place xml:id="ethyopie" corresp="http://data.bnf.fr/fr/15238602/ethiopie/">
                   <placeName>Ethyope</placeName>
                   <note>Éthyopie, pays d'Afrique de l'Est.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="europe">
-                  <placeName>Europe</placeName>
+               <place xml:id="europe">
+                  <placeName>Europe.</placeName>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="excorande">
+               <place xml:id="excorande">
                   <placeName>Excorande</placeName>
-                  <note>Ville où habitait le pélerin <persName ref="#getron">Jechron</persName>. Le
-                     nom est vraisemblement une déformation d'Alexandrette, port du Levant, en arabe
-                        <hi rend="italic">Iskanderou</hi>
-                     <bibl>WAUCHIER DE DENAIN, <hi rend="italic">La vie de Mon Signeur Seint
-                           Nicholas le Beneoit confessor</hi>, éd. John Jay Thompson, Genève,
-                        Suisse, Droz, 1999, p.253. </bibl> .</note>
+                  <note>Ville où habitait le pélerin <persName ref="#getron"
+                     >Getron</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="feliton" corresp="https://pleiades.stoa.org/places/639052">
+               <place xml:id="feliton" corresp="https://pleiades.stoa.org/places/639052">
                   <placeName>Feliton</placeName>
                   <location>
                      <geo>36.2424333333, 29.6650776667</geo>
                   </location>
                   <note>Phellos, ville de Lycie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
+                  xml:id="france">
                   <placeName>France</placeName>
+                  <note>France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="gardone">
+               <place xml:id="gardone">
                   <placeName>Gardone</placeName>
-                  <note>Rivière du Gardon.</note>
+                  <note>Gardon, rivière française.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="garone">
+               <place xml:id="garone">
                   <placeName>Garone</placeName>
-                  <note>Fleuve de la Garonne.</note>
+                  <note>Garonne, fleuve français.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="garre">
+               <place xml:id="garre">
                   <placeName>Garre</placeName>
-                  <note>rivière du Gard.</note>
+                  <note>Gard, Rivière française.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="gascogne">
-                  <placeName>Gascogne</placeName>
+               <place xml:id="gascogne">
+                  <placeName>Gascoigne</placeName>
                   <note>Gascogne, région du Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="grece" corresp="http://data.bnf.fr/fr/15238445/grece/">
+               <place xml:id="grece" corresp="http://data.bnf.fr/fr/15238445/grece/">
                   <placeName>Grece</placeName>
                   <note>Grèce, pays du Sud de l'Europe</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="armenie" corresp="http://data.bnf.fr/fr/15342592/armenie/">
-                  <placeName>Hermenie</placeName>
+               <place xml:id="armenie" corresp="http://data.bnf.fr/fr/15342592/armenie/">
+                  <placeName>Armenee</placeName>
                   <note>Arménie, pays situé à la frontière entre l'Europe et l'Asie Mineure.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="inde" corresp="http://data.bnf.fr/fr/15323041/indes_orientales/">
+               <place xml:id="inde" corresp="http://data.bnf.fr/fr/15323041/indes_orientales/">
                   <placeName>Inde</placeName>
-                  <note>Les Indes, le terme semble désigner les territoires d'Asie du Sud-Ouest.</note>
+                  <note>Les Indes, désigne les territoires d'Asie du Sud-Ouest.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="jerusalem" corresp="https://pleiades.stoa.org/places/687928">
+               <place xml:id="jerusalem" corresp="https://pleiades.stoa.org/places/687928">
                   <placeName>Jerusalem</placeName>
                   <location>
                      <geo>31.776679, 35.234156</geo>
                   </location>
-                  <note>Ville de Jérusalem, située en  actuelle Israël.</note>
+                  <note>Ville de Jérusalem, située en actuelle Israël.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="jogonse">
+               <place xml:id="jogonse">
                   <placeName>Jogonse</placeName>
                   <note>Château.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="lapres">
+               <place xml:id="lapres">
                   <placeName>Lapres</placeName>
-                  <note>Château</note>
+                  <note>Château.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="https://pleiades.stoa.org/places/825912337" xml:id="latran">
+               <place corresp="https://pleiades.stoa.org/places/825912337" xml:id="latran">
                   <placeName>Latran</placeName>
                   <location>
                      <geo>41.885906, 12.506156</geo>
                   </location>
                   <note>Site religieux de Rome qui réunit, entre autres, la basilique de
-                     Saint-Jean-de-Latran et le palais du Latran, leiu de séjour principal des papes entre
-                     le IV<ex>e</ex> et le XIV<ex>e</ex> siècle.</note>
+                     Saint-Jean-de-Latran et le palais du Latran, lieu de séjour principal des papes
+                     entre le IV<ex>e</ex> et le XIV<ex>e</ex> siècle.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="laudesse"
-                  corresp="https://pleiades.stoa.org/places/668290">
+               <place xml:id="laudesse" corresp="https://pleiades.stoa.org/places/668290">
                   <placeName>Laudesse</placeName>
                   <location>
                      <geo>35.51892275, 35.7766297</geo>
                   </location>
                   <note>Laodicée, ville de Syrie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="liege" corresp="http://data.bnf.fr/fr/15238922/liege__liege__belgique_/">
+               <place xml:id="liege"
+                  corresp="http://data.bnf.fr/fr/15238922/liege__liege__belgique_/">
                   <placeName>Liege</placeName>
                   <note>Ville de Liège située en Wallonie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="limoges" corresp="https://pleiades.stoa.org/places/138203">
+               <place xml:id="limoges" corresp="https://pleiades.stoa.org/places/138203">
                   <placeName>Limoges</placeName>
                   <location>
                      <geo>45.8285425, 1.2643925 </geo>
                   </location>
-                  <note>Limoges, ville du Sud-Ouest de la France</note>
+                  <note>Limoges, ville du Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="licie" corresp="http://data.bnf.fr/fr/11945575/lycie__turquie_/">
+               <place xml:id="licie" corresp="http://data.bnf.fr/fr/11945575/lycie__turquie_/">
                   <placeName>Lisce</placeName>
                   <note>Lycie, province du sud de l'Asie mineure.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="lodun" corresp="https://pleiades.stoa.org/places/138414">
+               <place xml:id="lodun" corresp="https://pleiades.stoa.org/places/138414">
                   <placeName>Lodun</placeName>
                   <location>
                      <geo>47.5, 0.5</geo>
@@ -1724,133 +1677,127 @@
                   <note>Ancien vicus de Laudiacum, mentioné dans le texte de Grégoire de Tours,
                      actuelle ville de Montlouis-sur-Loire.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
                   <placeName>Loire</placeName>
-                  <note>Fleuvre français.</note>
+                  <note>Fleuve français.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
+                  xml:id="lombardie">
                   <placeName>Lombardie</placeName>
-                  <note>Région du nord de l'Italie</note>
+                  <note>Région du Nord de l'Italie</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="macre" corresp="https://pleiades.stoa.org/places/599781">
+               <place xml:id="macre" corresp="https://pleiades.stoa.org/places/599781">
                   <placeName>Macre</placeName>
-                  <location><geo>38.25, 26.75 </geo></location>
+                  <location>
+                     <geo>38.25, 26.75 </geo>
+                  </location>
                   <note>Makri, presqu'île au large de la Lycie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="magestre">
+               <place xml:id="magestre">
                   <placeName>Magestre</placeName>
                   <note>Magiste, île au large de la Lycie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="magine" corresp="https://pleiades.stoa.org/places/658457">
+               <place xml:id="magine" corresp="https://pleiades.stoa.org/places/658457">
                   <placeName>Magine</placeName>
                   <location>
                      <geo>37.1625575, 38.781432</geo>
-                     <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
                   </location>
+                  <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="mans" corresp="https://pleiades.stoa.org/places/109236">
+               <place xml:id="mans" corresp="https://pleiades.stoa.org/places/109236">
                   <location>
                      <geo>48.0071603333, 0.198493333333</geo>
                   </location>
                   <placeName>Mans</placeName>
                   <note>Ville du Mans, située dans le Nord-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="marseille"
-                  corresp="http://pleiades.stoa.org/places/981537">
+               <place xml:id="marseille" corresp="http://pleiades.stoa.org/places/981537">
                   <placeName>Marselle</placeName>
                   <location>
                      <geo>43.296482 5.369779999999992</geo>
                   </location>
                   <note>Marseille, ville située dans le Sud de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="meine">
+               <place xml:id="meine" corresp="https://catalogue.bnf.fr/ark:/12148/cb11979028v">
                   <placeName>Meine</placeName>
-                  <note>Province française du Maine dont le chef-lieu est la ville du Mans.</note>
+                  <note>Province française du Maine.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
-                  <placeName>Milan</placeName>
+               <place corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
+                  <placeName>Melan</placeName>
                   <location>
                      <geo>45.463746, 9.18806</geo>
                   </location>
+                  <note>Milan, ville du Nord de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
+               <place corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
                   <placeName>Mongiu</placeName>
                   <location>
                      <geo>45.75, 7.25</geo>
                   </location>
                   <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="https://pleiades.stoa.org/places/432764" xml:id="cassin">
-                  <placeName>Mont Cassin</placeName>
+               <place corresp="https://pleiades.stoa.org/places/432764" xml:id="cassin">
+                  <placeName>Montcassin</placeName>
                   <location>
                      <geo>41.492907, 13.830583</geo>
                   </location>
-                  <note>Mont Cassin, situé dans le latium en Italie. Vers 530, <persName
-                        ref="#benoit">saint Benoit</persName> y fonda son abbaye et y rédigea la
-                     règle de saint Benoit.</note>
+                  <note>Mont Cassin, situé dans le latium en Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="morteigne" corresp="https://catalogue.bnf.fr/ark:/12148/cb14632858c">
-                  <placeName>Morteigne</placeName>
-                  <note>Mortagne sur Gironde, ville du Sud-Ouest de la France.</note>
+               <place xml:id="morteigne" corresp="https://catalogue.bnf.fr/ark:/12148/cb14632858c">
+                  <placeName>Mortaigne</placeName>
+                  <note>Mortagne-sur-Gironde, ville du Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="myrre" corresp="https://pleiades.stoa.org/places/639005">
-                  <placeName>Myrre</placeName>
+               <place xml:id="myrre" corresp="https://pleiades.stoa.org/places/639005">
+                  <placeName>Myerre</placeName>
                   <location>
                      <geo>36.2562953333, 29.9873656667</geo>
                   </location>
-                  <note>Myre, capitale de Lycie et ville de épiscopale de <persName ref="#nicolas">saint
-                        Nicolas</persName> .</note>
+                  <note>Myre, capitale de Lycie et ville épiscopale de <persName ref="#nicolas"
+                        >saint Nicolas</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="navare" corresp="http://data.bnf.fr/fr/12326228/navarre__royaume__--_1234-1284__maison_de_champagne_/">
-                  <placeName>Navarre</placeName>
+               <place xml:id="navare"
+                  corresp="http://data.bnf.fr/fr/12326228/navarre__royaume__--_1234-1284__maison_de_champagne_/">
+                  <placeName>Navare</placeName>
                   <note>Royaume de Navarre, situé au Nord de l'Espagne actuelle.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="necapolie">
+               <place xml:id="necapolie">
                   <placeName>Necapolie</placeName>
                   <note>Neapolis, ville de Lycie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="nime" corresp="https://pleiades.stoa.org/places/148142">
+               <place xml:id="nime" corresp="https://pleiades.stoa.org/places/148142">
                   <placeName>Nemausense</placeName>
                   <location>
                      <geo>43.8431497874, 4.3541755708</geo>
                   </location>
-                  <note>Nemausensis, nom latin de la ville de Nîme.</note>
+                  <note>Nemausensis, nom latin de la ville de Nîmes.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="narbone"
-                  corresp="http://pleiades.stoa.org/places/981537">
+               <place xml:id="narbone" corresp="http://pleiades.stoa.org/places/981537">
                   <placeName>Nerbone</placeName>
                   <location>
                      <geo>43.184277 3.0030779999999595</geo>
                   </location>
                   <note>Ville de Narbonne, située dans le Sud-Ouest de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="nil" corresp="http://data.bnf.fr/fr/15307479/delta_du_nil__egypte_/">
+               <place xml:id="nil" corresp="http://data.bnf.fr/fr/15307479/delta_du_nil__egypte_/">
                   <placeName>Nil</placeName>
                   <note>Fleuve d'Égypte.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="nicee"
-                  corresp="https://pleiades.stoa.org/places/511268">
+               <place xml:id="nicee" corresp="https://pleiades.stoa.org/places/511268">
                   <placeName>Niqué</placeName>
                   <location>
                      <geo>40.4285312, 29.715356</geo>
                   </location>
                   <note>Nicée, Actuelle Iznik en Turquie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="nitre">
+               <place xml:id="nitre">
                   <placeName>Nitre</placeName>
                   <!-- a vérfier ac le texte latin -->
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="normandie" corresp="https://catalogue.bnf.fr/ark:/12148/cb121012519">
-                  <placeName>Normandie</placeName>
-                  <note>Province du Nord-Est de la France</note>
+               <place xml:id="normandie" corresp="https://catalogue.bnf.fr/ark:/12148/cb121012519">
+                  <placeName>Normendie</placeName>
+                  <note>Normandie, province du Nord-Est de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="https://pleiades.stoa.org/places/413229" xml:id="nurse">
+               <place corresp="https://pleiades.stoa.org/places/413229" xml:id="nurse">
                   <placeName>Nurse</placeName>
                   <location>
                      <geo>42.794246, 13.096435</geo>
@@ -1858,281 +1805,268 @@
                   <note>Nursie, ville d'Italie. Lieu de naissance de <persName ref="#benoit">saint
                         Benoit</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="occident">
+               <place xml:id="occident">
                   <placeName>Occident</placeName>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
+                  xml:id="orient">
                   <placeName>Orient</placeName>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="orleans" corresp="https://pleiades.stoa.org/places/138281">
-                  <placeName>Orléans</placeName>
+               <place xml:id="orleans" corresp="https://pleiades.stoa.org/places/138281">
+                  <placeName>Orliens</placeName>
                   <location>
                      <geo>47.9007265, 1.9068675</geo>
                   </location>
-                  <note>Ville du centre de la France</note>
+                  <note>Orléans, ville du centre de la France</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC" xml:id="pannonie">
-                  <placeName>Pannonie</placeName>
-                  <note>Pannonie, province romaine del'europe centrale au sud du Danube.</note>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
+                  xml:id="pannonie">
+                  <placeName>Pannone</placeName>
+                  <note>Pannonie, province romaine de l'Europe centrale au sud du Danube.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="paradis">
+               <place xml:id="paradis" corresp="https://catalogue.bnf.fr/ark:/12148/cb12651084m">
                   <placeName>Paradis</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes pures dans la religion chrétienne.</note>
+                  <note>Lieu où sont envoyées après la mort les âmes pures dans la religion
+                     chrétienne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
+               <place corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
                   <placeName>Paris</placeName>
                   <location>
                      <geo>48.8534100 2.3488000</geo>
                   </location>
                   <note>Ville française.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="patre" corresp="https://pleiades.stoa.org/places/857264">
-                  <placeName>Patre</placeName>
+               <place xml:id="patre" corresp="https://pleiades.stoa.org/places/857264">
+                  <placeName>Patere</placeName>
                   <location>
                      <geo>40.543937, 39.648355</geo>
                   </location>
                   <note>Patara, ville de Lycie et ville de naissance de <persName ref="#nicolas"
                         >saint Nicolas</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="pise" corresp="https://pleiades.stoa.org/places/403253 ">
+               <place xml:id="pise" corresp="https://pleiades.stoa.org/places/403253 ">
                   <placeName>Pise</placeName>
                   <location>
                      <geo>43.72083015, 10.40093495</geo>
                   </location>
                   <note>Ville de Pise en Italie, située dans la Toscane.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
+               <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
                   <placeName>Poitiers</placeName>
                   <location>
                      <geo>46.5833300 0.3333300</geo>
                   </location>
                   <note>Ville située dans le Centre-Est de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
-                  <placeName>Poitou</placeName>
-                  <note>Province française de l'Ouest.</note>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC"
+                  xml:id="poitou">
+                  <placeName>Poito</placeName>
+                  <note>Poitou, province française de l'Ouest.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="provence">
+               <place xml:id="provence" corresp="http://data.bnf.fr/fr/15366292/royaume_de_provence__1032-1481_/">
                   <placeName>Provence</placeName>
                   <note>Province du Sud de la France</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="puille" corresp="https://catalogue.bnf.fr/ark:/12148/cb12037604s">
+               <place xml:id="puille" corresp="https://catalogue.bnf.fr/ark:/12148/cb12037604s">
                   <placeName>Puille</placeName>
                   <note>Les Pouilles, province du Sud de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="purgatoire">
+               <place xml:id="purgatoire" corresp="https://catalogue.bnf.fr/ark:/12148/cb119634018">
                   <placeName>Purgatoire</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion chrétienne.</note>
+                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
+                     chrétienne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="quaparse">
+               <place xml:id="quaparse">
                   <placeName>Quaparse</placeName>
                   <note>Cyparissus, ville de Lycie.</note>
                   <!-- A vérifier dans la Vie latine -->
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="rhone" corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
-                  <placeName>Rhône</placeName>
-                  <note>Fleuve de France</note>
+               <place xml:id="rhone" corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
+                  <placeName>Rosne</placeName>
+                  <note>Rhône, fleuve de France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+               <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
                   <placeName>Rome</placeName>
                   <location>
                      <geo>41.891775, 12.486137</geo>
                   </location>
                   <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
-                  <placeName>Sabarie</placeName>
+               <place corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
+                  <placeName>Ysabbarie</placeName>
                   <location>
                      <geo>41.254974, -5.71091</geo>
                   </location>
-                  <note>Szombathely, ville de Hongrie, ancienne colonie romaine du nom de Sabaria où
-                     saint Martin serait né en 316 et où Septime Sévère fut proclamé empereur. Cette
-                     place militaire essentielle fut converti très tôt au christianisme.</note>
+                  <note>Sabarie, actuelle Szombathely, ville de Hongrie, ancienne colonie romaine du
+                     nom de Sabaria où saint Martin serait né.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11963308d/PUBLIC"
-                  xml:id="saint-pierre-de-cologne">
-                  <placeName>Saint-Pierre-de-Cologne</placeName>
-                  <location>
-                     <geo>50.9333300 6.9500000</geo>
-                  </location>
-                  <note>Cathédrale de Saint-Pierre à Cologne</note>
-               </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="syon">
-                  <placeName>Saint-Syon</placeName>
-                  <note>abbaye fondée par <persName ref="#nicolas">saint Nicolas</persName> à
+               <place xml:id="syon">
+                  <placeName>Seinte Syon</placeName>
+                  <note>Abbaye fondée par <persName ref="#nicolas">saint Nicolas</persName> à
                         <placeName ref="#myrre">Myre</placeName>, lieu de sa première
                      sépulture.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sebaste" corresp="https://pleiades.stoa.org/places/629075">
+               <place xml:id="sebaste" corresp="https://pleiades.stoa.org/places/629075">
                   <placeName>Sebasté</placeName>
                   <location>
                      <geo>39.7490195, 37.016607</geo>
                   </location>
-                  <note>Sébastée, ville de la province romaine d'Arménie mineure, en actuelle Turquie.</note>
+                  <note>Sébastée, ville de la province romaine d'Arménie mineure, en actuelle
+                     Turquie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sainteMarie">
+               <place xml:id="sainteMarie">
                   <placeName>Seinte Marie de la charité</placeName>
                   <note>Prieuré clunisien de la Charité-sur-Loire.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sens" corresp="https://pleiades.stoa.org/places/108729">
-                  <placeName>Sens</placeName>
+               <place xml:id="sens" corresp="https://pleiades.stoa.org/places/108729">
+                  <placeName>Senz</placeName>
                   <location>
                      <geo>48.1978885, 3.2855855</geo>
                   </location>
-                  <note>Ville du centre de la France.</note>
+                  <note>Sens, ville du centre de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sezile" corresp="https://pleiades.stoa.org/places/981549">
+               <place xml:id="sezile" corresp="https://pleiades.stoa.org/places/981549">
                   <placeName>Sezile</placeName>
                   <location>
                      <geo>37.751645425, 14.6747958 </geo>
                   </location>
                   <note>Sicile, île au large de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sivine">
+               <place xml:id="sivine">
                   <placeName>Sivine</placeName>
-                  <note>Sibinos, ville de Lycie, proche de <placeName ref="#myrre">Myre</placeName>.</note>
+                  <note>Sibinos, ville de Lycie, proche de <placeName ref="#myrre"
+                     >Myre</placeName>.</note>
                   <!-- A vérifier dans le texte latin -->
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="stridon">
-                  <placeName>Stridon</placeName>
+               <place xml:id="stridon">
+                  <placeName>Stridons</placeName>
                   <note>Ville romaine, située entre la <placeName ref="#pannonie"
-                        >Pannonie</placeName> et la <placeName ref="#dalmasse">Dalmatie</placeName>,
-                     où est né <persName ref="#jerome">saint Jérôme</persName>.</note>
+                        >Pannonie</placeName> et la <placeName ref="#dalmasse">Dalmatie</placeName>.
+                     Lieu de naîssance de <persName ref="#jerome">saint Jérôme</persName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sublacus"
-                  corresp="https://pleiades.stoa.org/places/423078">
+               <place xml:id="sublacus" corresp="https://pleiades.stoa.org/places/423078">
                   <placeName>Sublacus</placeName>
                   <location>
                      <geo>41.926211, 13.094892</geo>
                   </location>
                   <note>Sublaqueum, ville italienne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="sicile"
-                  corresp="https://pleiades.stoa.org/places/981549">
+               <place xml:id="sicile" corresp="https://pleiades.stoa.org/places/981549">
                   <placeName>Sulie</placeName>
                   <location>
                      <geo>37.751645425, 14.6747958 </geo>
                   </location>
                   <note>Sicile, île au large de l'Italie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="synay" corresp="https://pleiades.stoa.org/places/746815">
-                  <placeName>Synay</placeName>
+               <place xml:id="synay" corresp="https://pleiades.stoa.org/places/746815">
+                  <placeName>Synaÿ</placeName>
                   <location>
                      <geo>28.58771, 33.921682</geo>
                   </location>
-                  <note>Mont Sinaï, lieu important de la tradition biblique où Moïse reçut les dix Commandements.</note>
+                  <note>Mont Sinaï, lieu important de la tradition biblique où Moïse reçut les dix
+                     Commandements.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="syre">
+               <place xml:id="syre">
                   <placeName>Syre</placeName>
                   <note>Syrie, province romaine.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tamisse">
+               <place xml:id="tamisse">
                   <placeName>Tamisse</placeName>
                   <note>Ville non-identifiée.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="teracenence"
-                  corresp="http://www.geonames.org/3165762/terracina.html">
-                  <placeName>Teracenence</placeName>
+               <place xml:id="teracenence" corresp="http://www.geonames.org/3165762/terracina.html">
+                  <placeName>Teracenense</placeName>
                   <location>
                      <geo>41.2241, 13.2495</geo>
                   </location>
                   <note>Terracine, ville italienne du Latium.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tarse"
-                  corresp="https://pleiades.stoa.org/places/511429">
-                  <placeName>Tharce</placeName>
+               <place xml:id="tarse" corresp="https://pleiades.stoa.org/places/511429">
+                  <placeName>Tharse</placeName>
                   <location>
                      <geo>40.75, 30.25</geo>
                   </location>
                   <note>Tarse, ville de <placeName ref="#cilicie">Cilicie</placeName> en actuelle
                      Turquie.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="thebes" corresp="https://pleiades.stoa.org/places/786017">
+               <place xml:id="thebes" corresp="https://pleiades.stoa.org/places/786017">
                   <placeName>Thebes</placeName>
                   <location>
                      <geo>25.6760290667, 32.6339435</geo>
                   </location>
-                  <note>Thèbes, ville d'Egypte</note>
+                  <note>Thèbes, ville d'Égypte</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tibre" corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
+               <place xml:id="tibre"
+                  corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
                   <placeName>Toivre</placeName>
-                  <note>Fleuve du Tibre qui traverse Rome.</note>
+                  <note>Tibre, fleuve italien.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC" xml:id="touraine">
-                  <placeName>Touraine</placeName>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
+                  xml:id="touraine">
+                  <placeName>Toraine</placeName>
                   <note>Touraine, province du centre de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
-                  <placeName>Tours</placeName>
+               <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
+                  <placeName>Tors</placeName>
                   <location>
                      <geo>47.3925295, 0.691471</geo>
                   </location>
                   <note>Tours, ville du centre de la France.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="trane" corresp="http://data.bnf.fr/fr/15324984/trani__pouilles__italie_/">
+               <place xml:id="trane"
+                  corresp="http://data.bnf.fr/fr/15324984/trani__pouilles__italie_/">
                   <placeName>Trane</placeName>
                   <note>Trani, ville italienne, proche de Bari.</note>
                </place>
                <place xml:id="treves" corresp="https://pleiades.stoa.org/places/109390">
-                  <placeName>Trieve</placeName>
+                  <placeName>Trieves</placeName>
                   <location>
                      <geo>49.7536618698 6.39714245326 </geo>
                   </location>
                   <note>Trèves, ville du Sud-Ouest de l'Allemagne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tulle" corresp="http://www.geonames.org/2971482/tulle.html">
+               <place xml:id="tulle" corresp="http://www.geonames.org/2971482/tulle.html">
                   <placeName>Tulle</placeName>
                   <location>
                      <geo>45.27001, 1.77309</geo>
                   </location>
                   <note>Tulle, ville du Sud-Ouest de la France, proche de Limoges.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
+               <place corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
                   <placeName>Vangione</placeName>
                   <location>
                      <geo>49.997518, 8.268828</geo>
                   </location>
-                  <note>Ville située en actuelle Allemgne.</note>
+                  <note>Ville située en actuelle Allemagne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="vercelles" corresp="https://pleiades.stoa.org/places/383815">
-                  <placeName>Vercelles</placeName>
+               <place xml:id="vercelles" corresp="https://pleiades.stoa.org/places/383815">
+                  <placeName>Verziaus</placeName>
                   <location>
                      <geo>45.321094, 8.426374</geo>
                   </location>
-                  <note>ville de la Gaule Transpadane, située près du lac de Côme.</note>
+                  <note>Vercelles, ville de la Gaule Transpadane, située près du lac de Côme.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="veronthene" corresp="https://pleiades.stoa.org/places/442511">
+               <place xml:id="veronthene" corresp="https://pleiades.stoa.org/places/442511">
                   <placeName>Veronthene</placeName>
                   <location>
                      <geo>41.108479, 16.691435</geo>
                   </location>
                   <note>Ville de Butuntum près de <placeName ref="#bar">Bari</placeName>.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0"
-                  xml:id="vienne" corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
+               <place xml:id="vienne"
+                  corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
                   <placeName>Viane</placeName>
                   <note>Vienne, rivière française du bassin de la Loire.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="byzance" corresp="https://pleiades.stoa.org/places/77402394">
+               <place xml:id="byzance" corresp="https://pleiades.stoa.org/places/77402394">
                   <placeName>Vigaute</placeName>
                   <location>
                      <geo>41.25, 28.75</geo>
                   </location>
-                  <note>Graphie fautive de Vigante qui désigne Byzance, capitale de la Thrace et du
-                     futur empire romain d'Orient de Constantin à partir de 330, actuelle Istanbul.</note>
+                  <note>Graphie fautive de Vigante qui désigne Byzance, capitale de la Thrace, puis
+                     de l'empire romain d'Orient, actuelle Istanbul.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="merRouge">
+               <place xml:id="merRouge" corresp="https://catalogue.bnf.fr/ark:/12148/cb11964378t">
                   <placeName>Roge mer</placeName>
                   <note>Mer rouge, mer qui sépare l'Afrique du Nord et le Moyen Orient.</note>
                </place>
