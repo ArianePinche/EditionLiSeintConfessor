@@ -28,7 +28,7 @@
                      la base Jonas-IRHT/CNRS (permalink : <ref
                         target="http://jonas.irht.cnrs.fr/manuscrit/45533"
                         >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
-                     21/04/2018 .</note>
+                     21/04/2018.</note>
                </head>
                <msContents>
                   <msItemStruct>
@@ -1476,17 +1476,14 @@
                   <note>Cavaillon, ville du Sud-Ouest de la France.</note>
                   <!-- Attribution peu sûre, hésitation avec chabanais -->
                   <bibl>
-                     <note>GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
+                     GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
                         publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
-                        Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. </note>
+                        Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. 
                   </bibl>
                </place>
                <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="cacavius">
                   <placeName>Cacavius</placeName>
-                  <note>Caccavus, île au large de la Lycie.</note>
-                  <bibl>WAUCHIER DE DENAIN, La vie de Mon Signeur Seint Nicholas le Beneoit confessor, éd. John Jay Thompson, Genève, Suisse, Droz, 1999.
-                  </bibl>
-                  <!-- Non vérifié -->
+                  <note>Île non-identifiée au large de la Lycie.</note>
                </place>
                <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="calabre">
                   <placeName>Calabre</placeName>
@@ -1678,7 +1675,6 @@
                   </location>
                   <note>Ville de Jérusalem, située en  actuelle Israël.</note>
                </place>
-               <!-- fin relecture -->
                <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="jogonse">
                   <placeName>Jogonse</placeName>
                   <note>Château.</note>
@@ -2094,8 +2090,12 @@
                   </location>
                   <note>Trèves, ville du Sud-Ouest de l'Allemagne.</note>
                </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tulle">
+               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="tulle" corresp="http://www.geonames.org/2971482/tulle.html">
                   <placeName>Tulle</placeName>
+                  <location>
+                     <geo>45.27001, 1.77309</geo>
+                  </location>
+                  <note>Tulle, ville du Sud-Ouest de la France, proche de Limoges.</note>
                </place>
                <place xmlns="http://www.tei-c.org/ns/1.0"
                   corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
