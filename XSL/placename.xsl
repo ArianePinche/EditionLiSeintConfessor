@@ -5,12 +5,12 @@
 
     <xsl:function name="fn2:generateXPath" as="xs:string*">
         <xsl:param name="pNode" as="node()"/>
-
         <xsl:for-each select="$pNode/ancestor::*">
             <xsl:value-of select="concat('tei:', local-name())"/>
         </xsl:for-each>
         <xsl:value-of select="concat('tei:', local-name($pNode))"/>
     </xsl:function>
+    
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     <xsl:template match="/">
         <TEI xmlns="http://www.tei-c.org/ns/1.0">
