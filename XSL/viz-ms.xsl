@@ -255,19 +255,23 @@
             <xsl:apply-templates/>
         </article>
     </xsl:template>
-    <xsl:template match="tei:listPerson">
-        <xsl:for-each select="tei:person">
-            <xsl:sort order="ascending" select="my:no-accent(tei:persName)"/>
+    <xsl:template match="tei:person">
             <xsl:variable name="id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:variable>
             <xsl:element name="dt">
                 <xsl:value-of select="tei:persName"/>
-                <xsl:if test="tei:birth">
+                <xsl:if test="tei:death">
                     <xsl:text> (</xsl:text>
-                    <xsl:value-of select="tei:birth"/>
-                    <xsl:text>-</xsl:text>
-                    <xsl:value-of select="tei:death"/>
+                    <xsl:choose>
+                        <xsl:when test="tei:birth">
+                            <xsl:apply-templates select="tei:birth"/>
+                        <xsl:text>-</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:if test="tei:death/@when">†</xsl:if></xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:apply-templates select="tei:death"/>
                     <xsl:text>)</xsl:text>
                 </xsl:if>
                 <xsl:text> - nombre d'apparitions : </xsl:text>
@@ -294,7 +298,6 @@
                 </xsl:element>
             </xsl:element>
             <xsl:element name="br"/>
-        </xsl:for-each>
         
     </xsl:template>
     

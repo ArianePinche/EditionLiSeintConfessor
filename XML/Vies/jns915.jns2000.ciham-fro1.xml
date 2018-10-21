@@ -96,631 +96,193 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <listPerson>
-               <person xml:id="charlemagne">
-                  <persName>Charlemagne</persName>
-                  <note type="biographical">Emepreur des Francs</note>
-               </person>
-               <person xml:id="prius">
-                  <persName>Prius</persName>
-                  <note type="biographical">saint Privat, evêque de Mende au 3<ex>e</ex> siècle. Son
-                     culte était populaire dans le Sud de la France.</note>
-               </person>
-               <person xml:id="flavi">
-                  <persName>Flavius</persName>
-                  <note type="biographical">Roi du sud de la France, personnage de la vie de
-                        <persName ref="#gile">saint Gilles</persName></note>
-               </person>
-               <person xml:id="veredemius" corresp="http://catalogue.bnf.fr/ark:/12148/cb16248307b">
-                  <persName>Veredemius</persName>
-                  <birth when="0363">640</birth>
-                  <death when="0420">720</death>
-                  <note type="biographical">Vérédème, ermite.</note>
-               </person>
-               <person xml:id="aurelius">
-                  <persName>Aurelius</persName>
-                  <note type="biographical">Archidiacre de <persName ref="#cesaire"
-                        >Césaire</persName>, personnage de la vie de <persName ref="#gile">saint
-                        Gilles</persName></note>
-               </person>
-               <person xml:id="theocrite">
-                  <persName>Teocrite</persName>
-                  <note type="biographical">Veuve, personnage de la vie de <persName ref="#gile"
-                        >saint Gilles</persName></note>
-               </person>
-               <person xml:id="cesaire">
-                  <persName>Césaire</persName>
-                  <note type="biographical">Evêque d'<placeName ref="#arles"
-                     >Arles</placeName></note>
-               </person>
-               <person xml:id="gile">
-                  <persName>Gilles</persName>
-                  <note type="biographical"/>
-               </person>
-               <person xml:id="theodorus">
-                  <persName>Theodorus</persName>
-                  <note type="biographical">Père de <persName ref="#gile">saint
-                     Gilles</persName></note>
-               </person>
-               <person xml:id="pelagie">
-                  <persName>Pelagie</persName>
-                  <note type="biographical">Mère de <persName ref="#gile">saint
-                     Gilles</persName></note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"
-                  xml:id="jeanBaptiste">
-                  <persName>Jean (Baptiste)</persName>
-                  <note type="biographical">Personnage biblique, <surname type="complex">Jean le
-                        Baptiste</surname> fut prédicateur en Judée avant Jésus de Nazareth.</note>
-               </person>
-               <person corresp="http://dbpedia.org/page/Valentinian_II" xml:id="valentinien">
-                  <persName>Valentinien</persName>
-                  <birth when="0371">371</birth>
-                  <death when="0392-05-15">15 mai 392</death>
-                  <note source="http://dbpedia.org/page/Valentinian_II">
-                     <surname type="complex">Valentinien II</surname>, fils de Valentinien Ier, est
-                     empereur romain de 375 à 392.</note>
-               </person>
-               <person xml:id="gallus">
-                  <persName>Gallus</persName>
-                  <note>Personnage de la <hi rend="italic">Des dialogues sur les vertus de saint
-                        Martin</hi>, il aurait été un disciple de saint Martin.</note>
-               </person>
-               <person xml:id="postumien">
-                  <persName>Postumien</persName>
-                  <note>Personnage de la <hi rend="italic">Des dialogues sur les vertus de saint
-                        Martin</hi>, il aurait été un moine explorateur qui a rencontrer les saints
-                     pères du désert.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
-                  xml:id="severus">
-                  <birth when="0363">360</birth>
-                  <death when="0420">420</death>
-                  <persName>Severus</persName>
-                  <note><surname type="complex">Sulpice Sévère</surname>, auteur latin des <hi
-                        rend="italic">Dialogues sur les vertus de saint Martin</hi> et de la <hi
-                        rend="italic">Vie de saint Martin</hi>, il se met en scène comme étant l'un
-                     des trois interlocuteurs des <hi rend="italic">Dialogues sur les vertus de
-                        saint Martin</hi>.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
-                  xml:id="martin">
-                  <persName>Martin (saint)</persName>
-                  <birth when="0316">316</birth>
-                  <death when="0397-11-08">397</death>
-                  <note source="http://dbpedia.org/page/Martin_of_Tours"><surname type="complex"
-                        >Saint Martin de Tours</surname> est né dans en Hongrie dans la colonie
-                     romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il est mort à
-                        <placeName ref="#conde">Candes</placeName> en France le 8 novembre
-                     397.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-                  xml:id="jesus">
-                  <persName>Jésus Christ</persName>
-                  <birth when="0001">0</birth>
-                  <death when="0030">30</death>
-                  <note source="http://dbpedia.org/page/Jesus"><surname type="complex"
-                        >Jésus-Christ</surname> est le nom donné par l'ensemble des chrétiens au
-                     prophète qu'ils considèrent comme le Messie Les chrétiens reconnaissent
-                     Jésus-Christ comme le Messie et le Fils unique de Dieu.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC"
-                  xml:id="maximin">
-                  <persName>Maximin</persName>
-                  <birth when="0383">173</birth>
-                  <death when="0384-08-31">8 août 384</death>
-                  <note type="biographical"><surname type="complex">Magnus Clemens
-                     Maximus</surname>est un officier romain qui à la tête des légions de Bretagne
-                     renversa en 383 l'empereur Gratien, et régna sur l'Occident jusqu'en 388, où il
-                     fut vaincu et tué par les troupes de Théodose.</note>
-               </person>
-               <person xml:id="arborius">
-                  <persName>Arborius</persName>
-                  <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
-                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint Martin,
-                     voir <bibl><author>Sulpice Sévère</author>, <hi rend="italic">Vie de saint
-                           Martin</hi>. Tome II, éd. Jacques Fontaine, Paris Éd du Cerf, 1968,
-                        p.874.</bibl></note>
-               </person>
-               <person xml:id="ithace">
-                  <persName>Itache</persName>
-                  <note type="biographical">Ithacium, evêque d'Ossobona et meneur du parti épiscopal
-                     hostile à Priscillien, voir <bibl><author>Chadwick</author>, <hi rend="italic"
-                           >Priscillian</hi>, p.51-55.</bibl></note>
-               </person>
-               <person xml:id="priscillien">
-                  <persName>Priscillien</persName>
-                  <birth when="0340">340</birth>
-                  <death when="0385">385</death>
-                  <note source="http://data.bnf.fr/14647442/priscillien/" type="biographical">Évêque
-                     d'Avila, hérésiarque, il est le fondateur de la secte priscillianiste. Il fut
-                     banni d'Espagne par un décret de Gratien puis exécuté en 385.</note>
-               </person>
-               <person xml:id="theognitus">
-                  <persName>Theoniste</persName>
-                  <note type="biographical">Évêque gallo-romain, il est le seul parmi les Ithaciens
-                     a avoir rompu avec la faction en condamnant publiquement ses agissements</note>
-               </person>
-               <person xml:id="felix">
-                  <persName>Felices</persName>
-                  <note type="biographical">Évêque</note>
-               </person>
-               <person xml:id="cyprien">
-                  <persName>Cyprien</persName>
-                  <birth when="0200">3e siècle</birth>
-                  <death when="0258">258</death>
-                  <note type="biographical" source="http://data.bnf.fr/11886041/cyprien/">Evêque de
-                     Carthage, martyr, victime des persécutions de l'empereur Valérien
-                     (253-260).</note>
-               </person>
-               <person xml:id="caton">
-                  <persName>Chaton</persName>
-                  <birth when="0095">-95</birth>
-                  <death when="0046">-46</death>
-                  <note source="http://data.bnf.fr/12021757/caton_d_utique/"><surname type="complex"
-                        >Marcus Porcius Cato</surname>, dit Caton d'Utique, homme d'Etat romain, en
-                     63, lors de la conjuration de Catilina, il prit le parti de Cicéron. Lors des
-                     guerres civiles (-49), il se prononça pour <persName ref="#pompee"
-                        >Pompée</persName> et prit les armes contre <persName ref="#cesar"
-                        >César</persName>. Après la défaite de Metellus Scipion à Thapsus le 6 avril
-                     46, Caton, plutôt que de perdre sa liberté, préféra se suicider en se
-                     transperçant de son épée.</note>
-               </person>
-               <person xml:id="cesar">
-                  <persName>Cesar</persName>
-                  <birth when="0100-12-07">12 juillet en 100 av. J-C.</birth>
-                  <death when="0044-03-15">15 mars en 44 av. J-C.</death>
-                  <note type="biographical" source="http://data.bnf.fr/11894764/jules_cesar/"
-                        ><surname type="complex">Caius Iulius Caesar</surname>, général romain, fin
-                     stratège, suite aux guerres civiles (49-45) qu'il remportera, il se fera nommer
-                     dictateur à vie de Rome avant d'être assassiné par Brutus aux Ides de Mars 44.
-                  </note>
-               </person>
-               <person xml:id="pompee">
-                  <persName>Pompeus</persName>
-                  <birth when="0106-09-29">le 29 septembre 106 av. J-C.</birth>
-                  <death when="0048-08-28">le 28 septembre 48 av. J-C.</death>
-                  <note type="biographical" source="http://data.bnf.fr/11938643/pompee/"><surname
-                        type="complex">Cnaeus Pompeius Magnus</surname>, général et homme politique
-                     romain, il s'opposa à <persName ref="#cesar">Jules César</persName> durant les
-                     guerres civiles qu'il perdit lors de la bataille de Pharsale en 48 av. J-C. Il
-                     prit alors la fuite vers l'Égypte où il fut assassiné sur la plage de
-                     Péluse.</note>
-               </person>
-               <person xml:id="lucain">
-                  <persName>Lucan</persName>
-                  <birth when="0039-11-03">le 3 novembre 39</birth>
-                  <death when="0065-04-30">le 28 septembre 65</death>
-                  <note type="biographical" source="http://data.bnf.fr/11913555/lucain/"><surname
-                        type="complex">Marcus Annaeus Lucanus</surname>, célèbre orateur et écrivain
-                     romain, neveu de Sénèque, il composa la <hi rend="italic">Pharsale</hi>, épopée
-                     qui relate la guerre civile qui opposa <persName ref="#pompee"
-                        >Pompée</persName> et <persName ref="#cesar">César</persName> entre 49 et 48
-                     av. J.-C.</note>
-               </person>
-               <person xml:id="origene">
-                  <persName>Origene (sanit)</persName>
-                  <birth when="0185">185</birth>
-                  <death when="0254">254</death>
-                  <note type="biographical" source="http://data.bnf.fr/11918191/origene/">Père de
-                     l'Eglise, considéré comme le fondateur de l'exégèse biblique pour avoir
-                     commenté tous les livres de l'Ancien et du Nouveau Testament. IL est également
-                     connu pour être l'auteur du <hi rend="italic">Traité des principes</hi>
-                     (231).</note>
-               </person>
-               <person xml:id="jerome">
-                  <persName>Jerome (saint)</persName>
-                  <birth when="0345">345</birth>
-                  <death when="0420-09-20">le 20 septembre 420</death>
-                  <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
-                     docteur de l'Eglise, célèbre traducteur de la bible latine. Il est l'un des
-                     principaux opposants aux idées d'<persName ref="#origene"
-                     >Origène</persName>.</note>
-               </person>
-               <person xml:id="belguisun">
-                  <persName>Belguisun</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, il
-                     semble être un ami de Gallus, peut-être un disciple de saint Martin. J.Fontaine
-                     suggère que ce nom pourrait être un cognomen ethnique, voir
-                           <bibl><author>Sulpice Sévère</author>, <hi rend="italic">Gallus,
-                           Dialogues sur les "vertus" de saint Martin</hi>, éd. Jacques Fontaine,
-                        Paris Éd du Cerf, 2006, p.133</bibl></note>
-               </person>
-               <person xml:id="antoine">
-                  <persName>Antoine</persName>
-                  <birth when="0251">251</birth>
-                  <death when="0356">356</death>
-                  <note type="biographical" source="http://data.bnf.fr/11888967/antoine/">
-                     <surname type="complex">Antoine le grand, Antoine d'Egypte ou Antoine
-                        l'Ermite</surname> est considéré comme le fondateur du l'érémitisme
-                     chrétien.</note>
-               </person>
-               <person xml:id="paul">
-                  <persName>Paul</persName>
-                  <birth when="0228">228</birth>
-                  <death when="0341">341</death>
-                  <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname> est l'une des
-                     figures fondatrices du monachisme, avec <persName ref="#antoine">saint
-                        Antoine</persName>.</note>
-               </person>
-               <person xml:id="jehan">
-                  <persName>Jehan</persName>
-                  <birth when="0360">360</birth>
-                  <death when="0432">432</death>
-                  <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
-                     <surname type="complex">Jean Cassien ou Jean l'ermite</surname> prêtre et
-                     moine, originaire d'Egypte, il établit sa communauté sur l'île de
-                     Chypre.</note>
-               </person>
-               <person xml:id="cyrenense">
-                  <persName>Cyrenense</persName>
-                  <note type="biographical">Nom d'un personnage des <hi rend="italic"
-                     >Dialogues</hi>, vieux prêtre de auquel Postumien prêta sa copie de la <hi
-                        rend="italic">Vie de <persName ref="#martin">saint Martin</persName></hi> de
-                        <persName ref="#severus">Sulpice Sévère</persName>. Son nom n'est pas
-                     indiqué dans la source latine, mais il est fait mention du fait qu'il est
-                     originaire de Cyrénaïque, <hi rend="italic">cyrenensis</hi>. L'attribution de
-                     ce nom au prêtre est peut-être lié à une confusion de <persName ref="#wauchier"
-                        >Wauchier de Denain</persName>.</note>
-               </person>
-               <person xml:id="zacharie">
-                  <persName>Zacharie</persName>
-                  <note type="biographical">Personnage biblique, il serait le père de saint
-                        <persName ref="#jeanBaptiste">Jean le Baptiste</persName>. Trop vieux pour
-                     avoir un enfant, le Seigneur lui Apparais pour lui annoncer la naissance d'un
-                     fils qui serait prophète. Zacharie est alors frappé de stupeur jusqu'à la
-                     naissance de son fils. Il retrouvera la parole pour proclamer que le nom de son
-                     fils est Jean, tel que le Seigneur le lui avait demander.</note>
-               </person>
-               <person xml:id="evanchius">
-                  <persName>Evanchius</persName>
-                  <note>Personnage des <hi rend="italic">Dialogues</hi>, oncle chrétien de <persName
-                        ref="#gallus">Gallus</persName></note>
-               </person>
-               <person xml:id="agnes">
-                  <persName>Agnes</persName>
-                  <birth when="0300">4<hi rend="exp">e</hi> siècle</birth>
-                  <death when="0300">4<hi rend="exp">e</hi> siècle</death>
-                  <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyr
-                     romaine</note>
-               </person>
-               <person xml:id="cecile">
-                  <persName>Cecile</persName>
-                  <birth when="0200">3<hi rend="exp">e</hi> siècle</birth>
-                  <death when="0200">3<hi rend="exp">e</hi> siècle</death>
-                  <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyr
-                     romaine</note>
-               </person>
-               <person xml:id="madeleine">
-                  <persName>Marie Magdalene</persName>
-                  <note type="biographical">Personnage biblique, disciple femme de <persName
-                        ref="#jesus">Jesus-Christ</persName>.</note>
-               </person>
-               <person xml:id="pierre">
-                  <persName>Pere</persName>
-                  <birth>??</birth>
-                  <death when="0064">64</death>
-                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pêcheur de
-                     Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le premier évêque
-                     de Rome</note>
-               </person>
-               <person xml:id="refrigerius">
-                  <persName>Refrigerius</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
-               </person>
-               <person xml:id="eucherius">
-                  <persName>Eucherius</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     consul.</note>
-               </person>
-               <person xml:id="celsus">
-                  <persName>Celsus</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     consul.</note>
-               </person>
-               <person xml:id="valentinien2">
-                  <persName>Valentinien</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, evêque
-                     du temps de <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person xml:id="victricus">
-                  <persName>Victricus</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, evêque
-                     de Rouen du temps de <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person xml:id="avicien">
-                  <persName>Avicien</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, comte
-                     de Tours du temps de <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person xml:id="saturnine">
-                  <persName>Saturnine</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
-               </person>
-               <person xml:id="arpage">
-                  <persName>Arpage</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
-               </person>
-               <person xml:id="agaridut">
-                  <persName>Agaridut</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     gentilhomme, il arrive au monastère où se trouvent <persName ref="#severus"
-                        >Sulpice Sevère</persName>, <persName ref="#postumien">Postumien</persName>
-                     et <persName ref="#gallus">Gallus</persName> avec <persName ref="#refrigerius"
-                        >Refregerius</persName>.</note>
-               </person>
-               <person xml:id="euvangilus">
-                  <persName>Evangilus</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>,
-                     prêtre.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
-                  xml:id="marie">
-                  <persName>Marie</persName>
-                  <note>Personnage biblique, la <surname type="complex">vierge Marie</surname> est
-                     la mère de Dieu.</note>
-               </person>
-               <person xml:id="jupiter">
-                  <persName>Jupiter</persName>
-                  <note>Dieu romain</note>
-               </person>
-               <person xml:id="mercurius">
-                  <persName>Mercurius</persName>
-                  <note>Dieu romain</note>
-               </person>
-               <person xml:id="marcel">
-                  <persName>Marcel</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, prêtre
-                     d'Amboise.</note>
-               </person>
-               <person xml:id="chaton">
-                  <persName>Chaton</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, diacre
-                     de l'éveque <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person xml:id="judas">
-                  <persName>Judas</persName>
-                  <note type="biographical">Personnage biblique, apôtre qui trahit le Christ pour le
-                     livrer à Ponce Pilate.</note>
-               </person>
-               <person xml:id="brice">
-                  <persName>Brice</persName>
-                  <death when="0444">444</death>
-                  <note type="biographical"><surname type="complex">Saint Brice de Tours</surname>,
-                     Ordoné évêque de Tours en 397, il est le successeur de saint Martin. Il possède
-                     une mauvaise réputation en raison de son affection pour le luxe et les chevaux
-                     <!-- à terminer avec la vie de saint Brice --></note>
-               </person>
-               <person xml:id="paulin"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC ">
-                  <persName>Paulin</persName>
-                  <birth when="0353">353</birth>
-                  <death when="0431">431</death>
-                  <note type="biographical" source="http://data.bnf.fr/12135745/paulin_de_nola/"
-                        ><surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353,
-                     mort à Nole en 431, est un poète et un ecclésiastique latin contemporain de
-                     saint Augustin et de <persName ref="#martin">Martin de Tours</persName>, qui
-                     l'encouragea dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa
-                     mort.</note>
-               </person>
-               <person xml:id="pomponie">
-                  <persName>Pomponie</persName>
-                  <note type="biographical">Personnage des <hi rend="italic">Dialogues</hi>, ami de
-                        <persName ref="#gallus">Gallus</persName>.</note>
-               </person>
-               <person xml:id="wauchier">
-                  <persName>Gauchier</persName>
-                  <note type="biographical">Wauchier de Denain, auteur du recueil hagriographique
-                        <hi rend="italic">Li seint Confessor</hi></note>
-               </person>
-               <person xml:id="namur">
-                  <persName>Duc de Namur</persName>
-                  <note type="biographical">Philippe de Namur, duc de Namur et comte de Hainault,
-                     mécène de <persName ref="#wauchier">Wauchier de Denain</persName>.</note>
-               </person>
-               <person xml:id="valentin">
-                  <persName>Valentiens</persName>
-                  <note type="biographical">Seigneur de la ville de <placeName ref="#tours"
-                        >Tours</placeName> pendant que <persName ref="#martin">saint
-                        Martin</persName> était évêque.</note>
-               </person>
-            </listPerson>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
+               <persName>Aurelius</persName>
+               <note type="biographical">Archidiacre de <persName ref="#cesaire">saint
+                  Césaire</persName>, évêque d'<placeName ref="#arles">Arles</placeName>.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="cesaire">
+               <persName>Cesaires</persName>
+               <birth when="0470">470</birth>
+               <death when="0542">542</death>
+               <note type="biographical"
+                  source=" http://catalogue.bnf.fr/ark:/12148/cb118947651">Saint Césaire d'<placeName ref="#arles">Arles</placeName>, évêque.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="charlemagne">
+               <persName>Charlemeine</persName>
+               <birth when="0742">742</birth>
+               <death when="0814">814</death>
+               <note type="biographical"
+                  source="http://data.bnf.fr/fr/11940325/charlemagne/">Charlemagne, roi des Francs dès 768, puis empereur d'Occident à partir de
+                  800.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="flavi">
+               <persName>Flavius</persName>
+               <note type="biographical">Roi du sud de la France dont les troupes partent à la
+                  poursuite de la biche de <persName ref="#gile">saint Gilles</persName> lors
+                  d'une partie de chasse.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gile">
+               <persName>Gile (saint)</persName>
+               <birth when="0640">640</birth>
+               <death when="0710">710</death>
+               <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint
+                  Giles l'ermite.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+               corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+               xml:id="jesus">
+               <persName>Jesu Crist</persName>
+               <birth when="0001">0</birth>
+               <death when="0030">33</death>
+               <note type="biographical"
+                  source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                  <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
+                  reconnaissent comme le fils unique de Dieu.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
+               <persName>Pol</persName>
+               <birth when="0228">228</birth>
+               <death when="0341">341</death>
+               <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
+                  <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
+                  fondatrice du monachisme avec <persName ref="#antoine">saint
+                     Antoine</persName>.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pelagie">
+               <persName>Pelagie</persName>
+               <note type="biographical">Mère de <persName ref="#gile">saint Gilles</persName>
+                  .</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
+               <persName>Pere</persName>
+               <death when="0064">64</death>
+               <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pierre,
+                  pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
+                  premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="prius">
+               <persName>Priu</persName>
+               <note type="biographical">Saint homme.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theocrite">
+               <persName>Teocrite</persName>
+               <note type="biographical">Veuve dont
+                  la fille est guérie par <persName ref="#gile">saint Gilles</persName>.</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theodorus">
+               <persName>Theodorus</persName>
+               <note type="biographical">Père de <persName ref="#gile">saint Gilles</persName>.
+                  .</note>
+            </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="veredemius">
+               <persName>Veredemium</persName>
+               <note type="biographical">Ermite qui partage pour un temps la retraite de
+                  <persName ref="#gile">saint Gilles</persName>.</note>
+            </person>
          </particDesc>
          <settingDesc>
-            <listPlace>
-               <place xml:id="tibre">
-                  <placeName>Toivre</placeName>
-                  <note>Fleuve du Tibre qui traverse Rome.</note>
-               </place>
-               <place xml:id="cabinone">
-                  <placeName>Cabinone</placeName>
-                  <note>Cabinonensem, nom latin de la ville de Cavaillon.</note>
-               </place>
-               <place xml:id="chypre">
-                  <placeName>Chypre</placeName>
-               </place>
-               <place xml:id="sainteCroix">
-                  <placeName>Monastère de Sainte-Croix</placeName>
-               </place>
-               <place xml:id="orleans">
-                  <placeName>Orléans</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
-                  xml:id="france">
-                  <placeName>France</placeName>
-               </place>
-               <place xml:id="nime">
-                  <placeName>Nemausense</placeName>
-                  <note>Nemausensis, nom latin de la ville de Nîmes.</note>
-               </place>
-               <place xml:id="gardone">
-                  <placeName>Gardone</placeName>
-                  <note>Rivière du Gardon</note>
-               </place>
-               <place xml:id="rhone">
-                  <placeName>Rhône</placeName>
-                  <note/>
-               </place>
-               <place xml:id="arles">
-                  <placeName>Arles</placeName>
-                  <note/>
-               </place>
-               <place xml:id="provence">
-                  <placeName>Provence</placeName>
-                  <note/>
-               </place>
-               <place xml:id="caphse">
-                  <placeName>Caphse</placeName>
-                  <note>Lieu inconnu, peut-être issu d'une confusion sur le texte latin (à
-                     terminer)</note>
-               </place>
-               <place xml:id="egypte" corresp="http://data.bnf.fr/15238583/egypte/">
-                  <placeName>Egypte</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
-                  xml:id="orient">
-                  <placeName>Orient</placeName>
-               </place>
-               <place xml:id="narbone" corresp="http://pleiades.stoa.org/places/981537">
-                  <placeName>Nerbone</placeName>
-                  <location>
-                     <geo>43.184277 3.0030779999999595</geo>
-                  </location>
-               </place>
-               <place xml:id="marseille" corresp="http://pleiades.stoa.org/places/981537">
-                  <placeName>Marselle</placeName>
-                  <location>
-                     <geo>43.296482 5.369779999999992</geo>
-                  </location>
-               </place>
-               <place xml:id="afrique" corresp="http://data.bnf.fr/15323603/afrique/">
-                  <placeName>Aufriqe</placeName>
-               </place>
-               <place xml:id="alexandrie"
-                  corresp="http://pleiades.stoa.org/places/727070/alexandria">
-                  <placeName>Alixandre</placeName>
-                  <location>
-                     <geo>31.2000924 29.91873869999995</geo>
-                  </location>
-               </place>
-               <place xml:id="cyrene">
-                  <placeName>Cyrene</placeName>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-                  <placeName>Rome</placeName>
-                  <location>
-                     <geo>41.8919300 12.5113300</geo>
-                  </location>
-               </place>
-               <place xml:id="bethleem">
-                  <placeName>Bethleem</placeName>
-               </place>
-               <place xml:id="jerusalem">
-                  <placeName>Jerusalem</placeName>
-               </place>
-               <place xml:id="occident">
-                  <placeName>Occident</placeName>
-               </place>
-               <place xml:id="nil">
-                  <placeName>Nil</placeName>
-               </place>
-               <place xml:id="nitre">
-                  <placeName>Nitre</placeName>
-               </place>
-               <place xml:id="merRouge">
-                  <placeName>roge mer</placeName>
-               </place>
-               <place xml:id="synay">
-                  <placeName>Synay</placeName>
-               </place>
-               <place xml:id="aise">
-                  <placeName>Aise</placeName>
-               </place>
-               <place xml:id="thebes">
-                  <placeName>Thebes</placeName>
-               </place>
-               <place xml:id="inde">
-                  <placeName>Indes</placeName>
-               </place>
-               <place xml:id="syre">
-                  <placeName>Syre</placeName>
-               </place>
-               <place xml:id="ethyopie">
-                  <placeName>Ethyope</placeName>
-               </place>
-               <place xml:id="armenie">
-                  <placeName>Hermenie</placeName>
-               </place>
-               <place xml:id="bosphore">
-                  <placeName>Bosfore</placeName>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
-                  <placeName>Tours</placeName>
-                  <location>
-                     <geo>47.3833300 0.6833300</geo>
-                  </location>
-               </place>
-               <place xml:id="chartre">
-                  <placeName>Chartre</placeName>
-               </place>
-               <place xml:id="claudiomas">
-                  <placeName>Claudomias</placeName>
-               </place>
-               <place xml:id="treves">
-                  <placeName>Trieve</placeName>
-               </place>
-               <place xml:id="mans">
-                  <placeName>Mans</placeName>
-               </place>
-               <place xml:id="sens">
-                  <placeName>Sens</placeName>
-               </place>
-               <place xml:id="amboise">
-                  <placeName>Embaise</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
-                  xml:id="touraine">
-                  <placeName>Touraine</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
-                  xml:id="espagne">
-                  <placeName>Espagne</placeName>
-               </place>
-               <place xml:id="lombardie">
-                  <placeName>Lombardie</placeName>
-               </place>
-               <place xml:id="grece">
-                  <placeName>Grèce</placeName>
-               </place>
-               <place xml:id="carthage">
-                  <placeName>Carthage</placeName>
-               </place>
-               <place xml:id="achaie">
-                  <placeName>Achaïe</placeName>
-               </place>
-               <place xml:id="chorinte">
-                  <placeName>Chorinte</placeName>
-               </place>
-               <place xml:id="athenes">
-                  <placeName>Atheines</placeName>
-               </place>
-               <place xml:id="europe">
-                  <placeName>Europe</placeName>
-               </place>
-               <place xml:id="cholomaide">
-                  <placeName>Cholomaide</placeName>
-               </place>
-               <place xml:id="sezile">
-                  <placeName>Sezile</placeName>
-               </place>
-               <place xml:id="puille">
-                  <placeName>Puille</placeName>
-               </place>
-            </listPlace>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="arles"
+               corresp="https://pleiades.stoa.org/places/148217">
+               <placeName>Arle</placeName>
+               <location>
+                  <geo>43.677616, 4.630799</geo>
+               </location>
+               <note>Arles, ville du Sud de la France.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="athenes"
+               corresp="https://pleiades.stoa.org/places/579885">
+               <placeName>Atheines</placeName>
+               <location>
+                  <geo>37.9751203779, 23.7271979517</geo>
+               </location>
+               <note>Athènes, capitale de la Grèce.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="cabinone"
+               corresp="https://pleiades.stoa.org/places/148027">
+               <placeName>Cabinone</placeName>
+               <location>
+                  <geo>43.829885, 5.034166</geo>
+               </location>
+               <note>Cavaillon, ville du Sud-Ouest de la France.</note>
+               <!-- Attribution peu sûre, hésitation avec chabanais -->
+               <bibl> GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
+                  publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
+                  Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. </bibl>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
+               xml:id="france">
+               <placeName>France</placeName>
+               <note>France.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gardone">
+               <placeName>Gardone</placeName>
+               <note>Gardon, rivière française.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="grece"
+               corresp="http://data.bnf.fr/fr/15238445/grece/">
+               <placeName>Grece</placeName>
+               <note>Grèce, pays du Sud de l'Europe</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="marseille"
+               corresp="http://pleiades.stoa.org/places/981537">
+               <placeName>Marselle</placeName>
+               <location>
+                  <geo>43.296482 5.369779999999992</geo>
+               </location>
+               <note>Marseille, ville située dans le Sud de la France.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="nime"
+               corresp="https://pleiades.stoa.org/places/148142">
+               <placeName>Nemausense</placeName>
+               <location>
+                  <geo>43.8431497874, 4.3541755708</geo>
+               </location>
+               <note>Nemausensis, nom latin de la ville de Nîmes.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="orleans"
+               corresp="https://pleiades.stoa.org/places/138281">
+               <placeName>Orliens</placeName>
+               <location>
+                  <geo>47.9007265, 1.9068675</geo>
+               </location>
+               <note>Orléans, ville du centre de la France</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="provence"
+               corresp="http://data.bnf.fr/fr/15366292/royaume_de_provence__1032-1481_/">
+               <placeName>Provence</placeName>
+               <note>Province du Sud de la France</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="rhone"
+               corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
+               <placeName>Rosne</placeName>
+               <note>Rhône, fleuve de France.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               corresp="http://pleiades.stoa.org/places/423025"
+               xml:id="rome">
+               <placeName>Rome</placeName>
+               <location>
+                  <geo>41.891775, 12.486137</geo>
+               </location>
+               <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
+            </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               xml:id="tibre"
+               corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
+               <placeName>Toivre</placeName>
+               <note>Tibre, fleuve italien.</note>
+            </place>
          </settingDesc>
       </profileDesc>
    </teiHeader>

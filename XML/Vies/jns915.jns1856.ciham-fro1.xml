@@ -98,344 +98,400 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <listPerson>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
-                  xml:id="martin">
-                  <persName>Martin (saint)</persName>
-                  <birth when="0316">316</birth>
-                  <death when="0397-11-08">397</death>
-                  <note type="biographical" source="http://dbpedia.org/page/Martin_of_Tours"
-                        ><surname type="complex">Saint Martin de Tours</surname> est né dans en
-                     Hongrie dans la colonie romaine de <placeName ref="#sabarie"
-                        >Sabaria</placeName> en 316. Il est mort à <placeName ref="#conde"
-                        >Candes</placeName> en France le 8 novembre 397.</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC"
+                    xml:id="abraham">
+                  <persName>Abraham</persName>
+                  <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
+                     des religions juive, chrétienne et musulmane.</note>
                </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-                  xml:id="jesus">
-                  <persName>Jésus Christ</persName>
-                  <birth when="0001">0</birth>
-                  <death when="0030">30</death>
-                  <note type="biographical" source="http://dbpedia.org/page/Jesus"><surname
-                        type="complex">Jésus-Christ</surname> est le nom donné par l'ensemble des
-                     chrétiens au prophète qu'ils considèrent comme le Messie et le fils unique de
-                     Dieu.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC"
-                  xml:id="julien">
-                  <persName>Julien</persName>
-                  <birth when="0331">331</birth>
-                  <death when="0363">363</death>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
+                  <birth when="0340">340</birth>
+                  <death when="0397">397</death>
+                  <persName>Ambrose (saint)</persName>
                   <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC"><surname
-                        type="complex">Flavius Claudius Julianus</surname>, nommé Julien l’Apostat
-                     par la tradition chrétienne. Il doit son surnom à sa volonté de rétablir le
-                     polythéisme dans l’Empire romain.</note>
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
+                     <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et
+                     docteur de l'Église latine. Il est le maître à penser de <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC"
-                  xml:id="hilaire">
-                  <persName><persName ref="#hilaire">Hilaire</persName></persName>
-                  <birth when="0315">315</birth>
-                  <death when="0367">367</death>
-                  <note type="biographical"><surname type="complex"><persName ref="#hilaire"
-                           >Hilaire</persName> de Poitiers</surname>, évêque de Poitiers, écrivain
-                     latin chrétien. Théologien du IVe siècle, il fut un grand défenseur de
-                     l'orthodoxie nicéenne face à l'arianisme. Saint Martin le rejoignit en 356 et
-                     devint alors son élève.</note>
-
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="anatolius">
+                  <persName>Anatolius</persName>
+                  <note type="biographical">Jeune homme diabolique qui intègre une communauté
+                     religieuse dirigée par <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
-                  xml:id="arius">
-                  <persName>Arius</persName>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="arborius">
+                  <persName>Arborius</persName>
+                  <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
+                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de <persName ref="#saintMartin">saint Martin</persName>.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
+                    xml:id="arius">
+                  <persName>Arrius</persName>
                   <birth when="0256">256</birth>
                   <death when="0336">336</death>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC">Arius, prêtre
-                     d'Alexandrie, est le fondateur de l'une des plus importantes hérésies
-                     christologiques, l'arianisme. Il sera excommunié et déclaré hérésiarque en 325
-                     lors du concile de Nicée.</note>
+                        d'<placeName ref="#alexandrie">Alexandrie</placeName>, fondateur de l'une
+                     des plus importantes hérésies christologiques, l'arianisme. Il est excommunié
+                     et déclaré hérésiarque en 325 lors du concile de Nicée.</note>
                </person>
-               <person xml:id="lupicin">
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="clarus">
+                  <persName>Clarus</persName>
+                  <note type="biographical">Jeune disciple de <persName rend="#martin">saint
+                        Martin</persName>.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="elie">
+                  <persName>Elye</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC">Personnage
+                     biblique, il est considéré comme un prophète majeur des religions
+                     abrahamiques.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC"
+                    xml:id="gratien">
+                  <persName>Gracien</persName>
+                  <death when="0301">301</death>
+                  <note type="biographical">Gatien de Tours, premier évêque de <placeName ref="#tours">Tours</placeName>.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="hilaire">
+                  <persName>Ylaire</persName>
+                  <birth when="0315">315</birth>
+                  <death when="0367">367</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
+                     <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers,
+                     écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
+                  <ex>e</ex>
+                     siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à l'arianisme.
+                     Saint Martin le rejoignit en 356 et devint alors son élève.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
+                  <persName>Jehan (Baptiste)</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
+                  <surname type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
+                     en Judée.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+                    xml:id="jesus">
+                  <persName>Jesu Crist</persName>
+                  <birth when="0001">0</birth>
+                  <death when="0030">33</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                     <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
+                     reconnaissent comme le fils unique de Dieu.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC"
+                    xml:id="julien">
+                  <persName>Juliens</persName>
+                  <birth when="0331">331</birth>
+                  <death when="0363">363</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC">
+                     <surname type="complex">Flavius Claudius Julianus</surname>, nommé Julien
+                     l’Apostat par la tradition chrétienne. Il doit son surnom à sa volonté de
+                     rétablir le polythéisme dans l’Empire romain.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jupiter">
+                  <persName>Jupiter</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb120421559">Dieu du panthéon romain.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lidoire">
+                  <death when="0371">371</death>
+                  <persName>Lidorius</persName>
+                  <note type="biographical">Lidoire (en latin Litorius), prédecesseur de <persName ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName ref="#tours">Tours</placeName> en 338.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lupicin">
                   <persName>Lupicin</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, homme important de la ville de <placeName ref="#poitiers"
-                        >Poitiers</placeName>.</note>
+                  <note type="biographical">Homme important de la ville de <placeName ref="#poitiers">Poitiers</placeName>.</note>
                </person>
-               <person xml:id="rurtius">
-                  <persName>Rurtius</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, homme important de la ville de <placeName ref="#tours"
-                        >Tours</placeName>.</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
+                    xml:id="martin">
+                  <persName>Martin (saint)</persName>
+                  <birth when="0316">316</birth>
+                  <death when="0397-11-08">397</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
+                     <surname type="complex">Saint Martin de Tours</surname> est né en Hongrie dans
+                     la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il
+                     est mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
+                     397.</note>
                </person>
-               <person xml:id="thedrades">
-                  <persName>Thedrades</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, consul de la cité de Trèves.</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="maximin">
+                  <persName>Maximien</persName>
+                  <birth when="0383">173</birth>
+                  <death when="0384-08-31">384</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC">Maximin,
+                        <surname type="complex">Magnus Clemens Maximus</surname>, officier romain à
+                     la tête des légions de Bretagne qui renversèrent en 383 l'<persName ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en
+                     388, où il fut vaincu et tué par les troupes de Théodose.</note>
                </person>
-               <person xml:id="arborius">
-                  <persName>Arborius</persName>
-                  <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
-                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de saint
-                     Martin.</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
+                  <persName>Mercurie</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11937106h">Mercure, dieu du panthéon latin.</note>
                </person>
-               <person xml:id="paulin"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC ">
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="michel">
+                  <persName>Michel</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC">Saint Michel,
+                     archange.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="minerve">
+                  <persName>Minerve</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11968395c">Déesse du panthéon latin.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paulin">
                   <persName>Paulin</persName>
                   <birth when="0353">353</birth>
                   <death when="0431">431</death>
-                  <note type="biographical"><surname type="complex">Paulin de Nole</surname>, né à
-                     Bordeaux vers 353, mort à Nole en 431, est un poète et un ecclésiastique latin
-                     contemporain de saint Augustin et de <persName ref="#martin">Martin de
-                        Tours</persName>, qui l'encouragea dans sa vocation religieuse. Il a été
-                     évêque de Nole de 409 à sa mort.</note>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC">
+                     <surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353, mort
+                     à Nole en 431, est un poète et un ecclésiastique latin contemporain de saint
+                     Augustin et de <persName ref="#martin">Martin de Tours</persName> qui
+                     l'encouragea dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa
+                     mort.</note>
                </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC"
-                  xml:id="maximin">
-                  <persName>Maximin</persName>
-                  <birth when="0383">173</birth>
-                  <death when="0384-08-31">8 août 384</death>
-                  <note type="biographical"><surname type="complex">Magnus Clemens
-                     Maximus</surname>est un officier romain qui à la tête des légions de Bretagne
-                     renversa en 383 l'empereur Gratien, et régna sur l'Occident jusqu'en 388, où il
-                     fut vaincu et tué par les troupes de Théodose.</note>
-               </person>
-               <person corresp="http://dbpedia.org/page/Valentinian_II" xml:id="valentinien">
-                  <persName>Valentinien</persName>
-                  <birth when="0371">371</birth>
-                  <death when="0392-05-15">15 mai 392</death>
-                  <note type="biographical" source="http://dbpedia.org/page/Valentinian_II">
-                     <surname type="complex">Valentinien II</surname>, fils de Valentinien Ier, est
-                     empereur romain de 375 à 392. </note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
-                  xml:id="severus">
-                  <persName>Severus</persName>
-                  <birth when="0363">363</birth>
-                  <death when="0420">420</death>
-                  <note type="biographical"><surname type="complex">Sulpice Sévère</surname>, avocat
-                     aquitain, il devint prêtre et s'attacha à saint Martin. Il est l'auteur d'une
-                     Chronique universelle (403), de la <hi rend="italic">Vita Martini</hi> (397) et
-                     des <hi rend="italic">Dialogues</hi> (404)</note>
-               </person>
-               <person corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
-                  <persName>Severin</persName>
-                  <note type="biographical"><surname type="complex">Saint Séverin de
-                        Cologne</surname>, évêque de cologne au à la fin du IVe siècle.</note>
-               </person>
-               <person xml:id="clarus">
-                  <persName>Clarus</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, Clarus a très probablement existé. Paulin de Nole fait allusion
-                     à lui dans trois poèmes (epist. 2, 5, epist. 32, 6). Il est possible qu’il ait
-                     été pour Martin une sorte de maître des novices</note>
-               </person>
-               <person xml:id="anatolius">
-                  <persName>Anatolius</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, Anatolius est un nom que portent souvent les esclaves
-                     orientaux. </note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC" xml:id="elie">
-                  <persName>Elye</persName>
-                  <note type="biographical">Personnage biblique, il est considéré comme un prophète
-                     majeur des religions abrahamiques.</note>
-               </person>
-               <person xml:id="rufus">
-                  <persName>Rufus</persName>
-                  <note type="biographical">Personnage de la <hi rend="italic">Vie de saint
-                        Martin</hi>, évêque d'Espagne qui crut en un faux prophète.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"
-                  xml:id="jeanBaptiste">
-                  <persName>Jean (Baptiste)</persName>
-                  <note type="biographical">Personnage biblique, <surname type="complex">Jean le
-                        Baptiste</surname> fut prédicateur en Judée avant Jésus de Nazareth.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC"
-                  xml:id="abraham">
-                  <persName>Abraham</persName>
-                  <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
-                     des religions juives, chrétienne et musulmane.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC"
-                  xml:id="gratien">
-                  <persName>Gratien</persName>
-                  <birth when="0200">IIIe siècle</birth>
-                  <death when="0301">301</death>
-                  <note type="biographical">Premier évêque de <placeName ref="#tours"
-                        >Tours</placeName>.</note>
-               </person>
-               <person xml:id="lidoire">
-                  <birth when="0300">IVe siècle</birth>
-                  <death when="0371">371</death>
-                  <persName>Lidoire</persName>
-                  <note type="biographical">Lidoire (en latin Litorius) fut ordonné second évêque de
-                        <placeName ref="#tours">Tours</placeName> en 338, il est le prédecesseur de
-                        <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC"
-                  xml:id="ambroise">
-                  <birth when="0340">340</birth>
-                  <death when="0397">397</death>
-                  <persName>Ambrose</persName>
-                  <note type="biographical"><surname type="complex">Saint Ambroise</surname>, évêque
-                     de Milan, est père et docteur de l'Église latine. Il est le maître à penser de
-                        <persName ref="#martin">saint Martin</persName>.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC"
-                  xml:id="michel">
-                  <persName>Michel</persName>
-                  <note type="biographical" source="http://fr.dbpedia.org/page/Michel_(archange)"
-                     >Personnage biblique, Michel est un archange et un saint chrétien, saint patron
-                     du catholicisme. Il est principalement représenté en chevalier ailé qui
-                     terrasse le Diable.</note>
-               </person>
-               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC"
-                  xml:id="perpetuus">
-                  <birth when="0400">Ve siècle</birth>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="perpetuus">
                   <death when="0490">490</death>
                   <persName>Perpetuus</persName>
-                  <note type="biographical">sixième évêque de <placeName ref="#tours"
-                        >Tours</placeName></note>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC">Successeur de
+                        <persName ref="#martin">saint Martin</persName>, sixième évêque de
+                        <placeName ref="#tours">Tours</placeName> .</note>
                </person>
-               <person xml:id="jupiter">
-                  <persName>Jupiter</persName>
-                  <note type="biographical">Dieu romain</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rufus">
+                  <persName>Rufus</persName>
+                  <note type="biographical">Évêque d'Espagne.</note>
                </person>
-               <person xml:id="mercurius">
-                  <persName>Mercurius</persName>
-                  <note type="biographical">Dieu romain</note>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rurtius">
+                  <persName>Rurtius</persName>
+                  <note type="biographical">Homme important de la ville de <placeName ref="#tours">Tours</placeName>.</note>
                </person>
-               <person xml:id="venus">
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne"
+                    xml:id="sevrin">
+                  <persName>Severin (saint)</persName>
+                  <death when="0403">403</death>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
+                     <surname type="complex">Saint Séverin de Cologne</surname>, évêque de cologne à la fin du <seg type="number">iv</seg>
+                  <ex>e</ex> siècle.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
+                    xml:id="severus">
+                  <persName>Severum</persName>
+                  <birth when="0363">363</birth>
+                  <death when="0420">420</death>
+                  <note type="biographical">
+                     <surname type="complex">Sulpice Sévère</surname>, avocat aquitain et disciple saint Martin. Il est l'auteur d'une Chronique universelle
+                     (403), de la <hi rend="italic">Vita Martini</hi> (397) et des <hi rend="italic">Dialogues</hi> (404).</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="thedrades">
+                  <persName>Thedrades</persName>
+                  <note type="biographical">Consul de la cité de Trèves.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valentinien">
+                  <persName>Valentinien</persName>
+                  <birth when="0371">371</birth>
+                  <death when="0392-05-15">392</death>
+                  <note type="biographical" source="http://dbpedia.org/page/Valentinian_II">
+                     <surname type="complex">Valentinien <seg type="number">ii</seg>
+                  </surname>, fils
+                     de Valentinien <seg type="number">i</seg>
+                  <ex>er</ex>, empereur romain de 375 à
+                     392.</note>
+               </person>
+            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="venus">
                   <persName>Venus</persName>
-                  <note type="biographical">Déesse romaine</note>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q47652">Déesse du
+                     panthéon latin.</note>
                </person>
-               <person xml:id="minerve">
-                  <persName>Minerve</persName>
-                  <note type="biographical">Déesse romaine</note>
-               </person>
-            </listPerson>
          </particDesc>
          <settingDesc>
-            <listPlace>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
-                  xml:id="france">
-                  <placeName>France</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
-                  xml:id="pannonie">
-                  <placeName>Pannonie</placeName>
-                  <note>Région romaine d'Europe centrale, actuelle Hongrie</note>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-                  <placeName>Rome</placeName>
-                  <location>
-                     <geo>41.8919300 12.5113300</geo>
-                  </location>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/109321"
+                   xml:id="amiens">
                   <placeName>Amiens</placeName>
-
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
-                  <placeName>Poitiers</placeName>
                   <location>
-                     <geo>46.5833300 0.3333300</geo>
+                     <geo>49.8936075, 2.297948</geo>
                   </location>
+                  <note>Ville du Nord de la France.</note>
                </place>
-               <place corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
-                  <placeName>Milan</placeName>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="https://pleiades.stoa.org/places/187290 "
+                   xml:id="aquile">
+                  <placeName>Aquilee</placeName>
                   <location>
-                     <geo>46.5833300 0.3333300</geo>
+                     <geo>45.7692106667, 13.3688636667</geo>
                   </location>
+                  <note>Ville du Nord-Est de l'Italie, près de la Slovénie.</note>
                </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
-                  xml:id="lombardie">
-                  <placeName>Lombardie</placeName>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
-                  <placeName>Tours</placeName>
-                  <location>
-                     <geo>47.3833300 0.6833300</geo>
-                  </location>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
-                  <placeName>Loire</placeName>
-               </place>
-               <place xml:id="calitone">
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="calitone">
                   <placeName>Calitone</placeName>
-                  <note>Ville inconnue</note>
+                  <note>Ville proche de Tours, non-identifiée.</note>
                </place>
-               <place corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/138305"
+                   xml:id="conde">
+                  <placeName>Conde</placeName>
+                  <location>
+                     <geo>47.210797, 0.074696</geo>
+                  </location>
+                  <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/108751"
+                   xml:id="cologne">
+                  <placeName>Coloigne</placeName>
+                  <location>
+                     <geo>50.9333300 6.9500000</geo>
+                  </location>
+                  <note>Ville de Cologne, située en Allemagne de l'Ouest.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   xml:id="enfer"
+                   corresp="https://catalogue.bnf.fr/ark:/12148/cb119519478">
+                  <placeName>Infer</placeName>
+                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
+                     chrétienne.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
+                   xml:id="espagne">
+                  <placeName>Espaigne</placeName>
+                  <note>Espagne.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
+                   xml:id="france">
+                  <placeName>France</placeName>
+                  <note>France.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC"
+                   xml:id="loire">
+                  <placeName>Loire</placeName>
+                  <note>Fleuve français.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
+                   xml:id="lombardie">
+                  <placeName>Lombardie</placeName>
+                  <note>Région du Nord de l'Italie</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/383706"
+                   xml:id="milan">
+                  <placeName>Melan</placeName>
+                  <location>
+                     <geo>45.463746, 9.18806</geo>
+                  </location>
+                  <note>Milan, ville du Nord de l'Italie.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/167932"
+                   xml:id="saint-bernard">
+                  <placeName>Mongiu</placeName>
+                  <location>
+                     <geo>45.75, 7.25</geo>
+                  </location>
+                  <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
+                   xml:id="orient">
+                  <placeName>Orient</placeName>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
+                   xml:id="pannonie">
+                  <placeName>Pannone</placeName>
+                  <note>Pannonie, province romaine de l'Europe centrale au sud du Danube.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/109126"
+                   xml:id="paris">
                   <placeName>Paris</placeName>
                   <location>
                      <geo>48.8534100 2.3488000</geo>
                   </location>
+                  <note>Ville française.</note>
                </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942645s/PUBLIC"
-                  xml:id="aquile">
-                  <placeName>Aquilée</placeName>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/138656"
+                   xml:id="poitiers">
+                  <placeName>Poitiers</placeName>
+                  <location>
+                     <geo>46.5833300 0.3333300</geo>
+                  </location>
+                  <note>Ville située dans le Centre-Est de la France.</note>
                </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
-                  xml:id="espagne">
-                  <placeName>Espagne</placeName>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC"
+                   xml:id="poitou">
+                  <placeName>Poito</placeName>
+                  <note>Poitou, province française de l'Ouest.</note>
                </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
-                  xml:id="orient">
-                  <placeName>Orient</placeName>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/423025"
+                   xml:id="rome">
+                  <placeName>Rome</placeName>
+                  <location>
+                     <geo>41.891775, 12.486137</geo>
+                  </location>
+                  <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
                </place>
-               <place corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/236666"
+                   xml:id="sabarie">
+                  <placeName>Ysabbarie</placeName>
+                  <location>
+                     <geo>41.254974, -5.71091</geo>
+                  </location>
+                  <note>Sabarie, actuelle Szombathely, ville de Hongrie, ancienne colonie romaine du
+                     nom de Sabaria où saint Martin serait né.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
+                   xml:id="touraine">
+                  <placeName>Toraine</placeName>
+                  <note>Touraine, province du centre de la France.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/138255"
+                   xml:id="tours">
+                  <placeName>Tors</placeName>
+                  <location>
+                     <geo>47.3925295, 0.691471</geo>
+                  </location>
+                  <note>Tours, ville du centre de la France.</note>
+               </place>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   corresp="http://pleiades.stoa.org/places/109410"
+                   xml:id="vangione">
                   <placeName>Vangione</placeName>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
-                  <placeName>Candes</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC"
-                  xml:id="poitou">
-                  <placeName>Poitou</placeName>
-               </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
-                  xml:id="touraine">
-                  <placeName>Touraine</placeName>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/128460" xml:id="vienne">
-                  <placeName>Vienne</placeName>
                   <location>
-                     <geo>48.2084900 16.3720800 </geo>
+                     <geo>49.997518, 8.268828</geo>
                   </location>
+                  <note>Ville située en actuelle Allemagne.</note>
                </place>
-               <place corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
-                  <placeName>Cologne</placeName>
-                  <location>
-                     <geo>50.9333300 6.9500000</geo>
-                  </location>
+            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                   xml:id="vienne"
+                   corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
+                  <placeName>Viane</placeName>
+                  <note>Vienne, rivière française du bassin de la Loire.</note>
                </place>
-               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11963308d/PUBLIC"
-                  xml:id="saint-pierre-de-cologne">
-                  <placeName>Saint-Pierre-de-Cologne</placeName>
-                  <location>
-                     <geo>50.9333300 6.9500000</geo>
-                  </location>
-                  <note></note>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
-                  <placeName>Sabarie</placeName>
-                  <location>
-                     <geo>47.2308800 16.6215500</geo>
-                  </location>
-                  <note>Szombathely, ville de Hongrie, ancienne colonie romaine du nom de Sabaria où
-                     saint Martin serait né en 316 et où Septime Sévère fut proclamé empereur. Cette
-                     place militaire essentielle fut converti très tôt au christianisme.</note>
-               </place>
-               <place corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
-                  <placeName>Mongiu</placeName>
-                  <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
-               </place>
-               <place xmlns="http://www.tei-c.org/ns/1.0" xml:id="enfer">
-                  <placeName>Enfer</placeName>
-                  <note>Lieu où sont envoyées les âmes de pêcheurs dans la religion chrétienne.</note>
-                  <!-- lieu à rajouter dans la vie de saint Martin -->
-               </place>
-            </listPlace>
          </settingDesc>
       </profileDesc>
    </teiHeader>
@@ -5559,7 +5615,7 @@
                   </choice>i &u-v;it &esperluette-et;regne par tos&esp;<lb/>les siecles <app><lem>des siecles</lem><rdg wit="#C2">des siecles sanz fin</rdg></app>.&esp;Ame<choice>
                      <orig>N</orig>
                      <reg>n</reg>
-                  </choice>.&esp;<lb/>
+                  </choice>.<lb/>
                </p>
             </div>
          </div>
