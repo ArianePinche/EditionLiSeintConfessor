@@ -282,7 +282,7 @@
             <xsl:element name="dd">
                 <xsl:element name="ul">
                     <xsl:attribute name="class">list-occurences</xsl:attribute>
-                    <xsl:for-each-group select="//tei:body//tei:persName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                    <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:persName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
                         <xsl:element name="li">
                             <xsl:apply-templates mode="reg" select="current()"/>
                             <xsl:text> :</xsl:text>
@@ -330,7 +330,7 @@
         <xsl:element name="dd">
             <xsl:element name="ul">
                 <xsl:attribute name="class">list-occurences</xsl:attribute>
-                <xsl:for-each-group select="//tei:body//tei:placeName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:placeName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
                     <xsl:element name="li">
                         <xsl:apply-templates mode="reg" select="current()"/>
                         <xsl:text> :</xsl:text>
