@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:my="LOCALHOST">
    <teiHeader>
       <fileDesc>
@@ -279,11 +279,7 @@
                      <reg>,<pc type="reg"> </pc>
                      </reg>
                   </choice>si
-                  esto<lb/>it en la<pc type="reg"> </pc>mar<lb/>che <placeName ref="#dalmasse">d<pc type="reg">'</pc>
-                     <choice>
-                        <orig>a</orig>
-                        <reg>A</reg>
-                     </choice>lmasse</placeName>
+                  esto<lb/>it en la<pc type="reg"> </pc>mar<lb/>che <placeName ref="#dalmasse">&d-maj;almasse</placeName>
                   <pc type="reg"> </pc>
                   <lb/>
                   <choice>

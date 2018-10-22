@@ -86,13 +86,12 @@
                <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC"
                   xml:id="abraham">
                   <persName>Abraham</persName>
-                  <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
+                  <note type="biographical">Personnage biblique, fondateur
                      des religions juive, chrétienne et musulmane.</note>
                </person>
                <person xml:id="agabaron">
                   <persName>Agabaron</persName>
-                  <note type="biographical">Roi de la ville d'<placeName ref="#magine"
-                        >Édesse</placeName>, actuellement Urfa en Turquie.</note>
+                  <note type="biographical">Roi de la ville d'Édesse.</note>
                </person>
                <person xml:id="agapites">
                   <persName>Agapites</persName>
@@ -111,7 +110,7 @@
                         Alexis</persName>.</note>
                </person>
                <person xml:id="agnes">
-                  <persName>Agniés (sainte)</persName>
+                  <persName>Agniés</persName>
                   <death when="0300">4<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/11958468/agnes/">Martyre
                      romaine.</note>
@@ -130,7 +129,7 @@
                      Constantinople de 1081 à 1118.</note>
                </person>
                <person xml:id="saintalexis">
-                  <persName>Alexis (saint)</persName>
+                  <persName>Alexis</persName>
                   <death when="0416">416</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15651786n"
                      >saint d'origine romaine.</note>
@@ -140,10 +139,15 @@
                   <note type="biographical">Jeune homme qui accompagne les marchands de Bari à la
                      recherche du corps de <persName ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
+               <person xml:id="alpinien">
+                  <persName>Alpinien</persName>
+                  <note type="biographical">Discipline de <persName ref="#marcel">saint
+                     Marcel</persName>.</note>
+               </person>
                <person xml:id="ambroise">
                   <birth when="0340">340</birth>
                   <death when="0397">397</death>
-                  <persName>Ambrose (saint)</persName>
+                  <persName>Ambrose</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
                      <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et
@@ -158,7 +162,7 @@
                <person xml:id="andrius">
                   <persName>Andriu</persName>
                   <note type="biographical">Prêtre paien de la cité de <placeName ref="#limoges"
-                        >Limoges</placeName>, converti à la fois avec <persName ref="#aurelien"
+                        >Limoges</placeName>, converti avec <persName ref="#aurelien"
                         >Aurelien</persName> à la foi chrétienne par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
                </person>
@@ -169,7 +173,7 @@
                         Bace</persName> en 303 à Rosafa en Syrie.</note>
                </person>
                <person xml:id="antoine">
-                  <persName>Antoine</persName>
+                  <persName>Antoines</persName>
                   <birth when="0251">251</birth>
                   <death when="0356">356</death>
                   <note type="biographical" source="http://data.bnf.fr/11888967/antoine/">
@@ -239,17 +243,15 @@
                   <persName>Armense</persName>
                   <note type="biographical">Évêque de <placeName ref="#tours">Tours</placeName>,
                      sucesseur de <persName ref="#justinien">Justinien</persName> et de <persName
-                        ref="#brice">saint Brice</persName>, d'après Grégoire de Tours.</note>
+                        ref="#brice">saint Brice</persName>.</note>
                </person>
                <person xml:id="arpage">
                   <persName>Arpage</persName>
-                  <note type="biographical">Prêtre, témoin du miracle de la fiole d'huile de la
-                     femme d'<persName ref="#avicien">Avicien</persName>, suite à la bénédiction de
-                        <persName ref="#martin">saint Martin</persName>.</note>
+                  <note type="biographical">Prêtre.</note>
                </person>
                <person xml:id="aurelien">
                   <persName>Aurelien</persName>
-                  <note type="biographical">Prêtre paien de la cité de <placeName ref="#limoges"
+                  <note type="biographical">Prêtre païen de la cité de <placeName ref="#limoges"
                         >Limoges</placeName>, converti avec <persName ref="#andrius"
                         >Andrius</persName> à la foi chrétienne par <persName ref="#marcel">saint
                         Marcel</persName>.</note>
@@ -270,7 +272,7 @@
                   <note type="biographical">Comte de Tours.</note>
                </person>
                <person xml:id="bace">
-                  <persName>Bace (saint)</persName>
+                  <persName>Bace</persName>
                   <death when="0303">303</death>
                   <note type="biographical" source="http://fr.dbpedia.org/page/Bacchus_(saint)"
                      >Saint Bacchus martyrisé avec <persName ref="#serge">saint Serge</persName> en
@@ -294,7 +296,7 @@
                      >Personnage de l'ancien Testament, fils cadet de Jacob et Rebbeca.</note>
                </person>
                <person xml:id="benoit">
-                  <persName>Beneoit (saint)</persName>
+                  <persName>Beneoit</persName>
                   <birth when="0480">480</birth>
                   <death when="0547">547</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb118911827"
@@ -309,7 +311,7 @@
                         >Totila</persName>.</note>
                </person>
                <person xml:id="boniface">
-                  <persName>Boniface (saint)</persName>
+                  <persName>Boniface</persName>
                   <death>3<ex>e</ex> siècle</death>
                   <note type="biographical">Possiblement saint Boniface de Tharse, martyr chrétien.
                      Son nom apparait pour désigner l'église dans laquelle saint Alexis se marie et
@@ -325,7 +327,7 @@
                </person>
                <person xml:id="cecile">
                   <persName>Cecile</persName>
-                  <death when="0200">3<hi rend="exp">e</hi> siècle</death>
+                  <death when="0200">3<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://data.bnf.fr/13181544/cecile/">Martyre
                      romaine.</note>
                </person>
@@ -457,7 +459,7 @@
                      Denain</persName>.</note>
                </person>
                <person xml:id="dyoscurus">
-                  <persName>Dyoscuri</persName>
+                  <persName>Dyoscori</persName>
                   <death when="0244">244</death>
                   <note type="biographical">Saint Dioscoride, martyr avec <persName ref="#crescent"
                         >saint Crescent</persName>.</note>
@@ -525,7 +527,7 @@
                <person xml:id="eufrosine">
                   <persName>Eufrosine</persName>
                   <note type="biographical">Femme du marchand et pèlerin <persName ref="#getron"
-                        >Jechron</persName>, mère de <persName ref="#deudone">Deudonez</persName>.</note>
+                        >Getron</persName>, mère de <persName ref="#deudone">Deudonez</persName>.</note>
                </person>
                <person xml:id="eusebius">
                   <persName>Eusebius</persName>
@@ -545,15 +547,15 @@
                         >Ursum</persName> et <persName ref="#aquileon">Aquileon</persName>.</note>
                </person>
                <person xml:id="eustache2">
-                  <persName>Eustache</persName>
+                  <persName>Eustaces</persName>
                   <note type="biographical">Marchand de Bari.</note>
                </person>
                <person xml:id="evanchius">
-                  <persName>Evagius</persName>
+                  <persName>Evachius</persName>
                   <note>Oncle chrétien de <persName ref="#gallus">Gallus</persName> .</note>
                </person>
                <person xml:id="euvangilus">
-                  <persName>Evangilus</persName>
+                  <persName>Evagius</persName>
                   <note type="biographical">Prêtre, témoin d'un miracle de <persName ref="#martin"
                         >saint Martin</persName>.</note>
                </person>
@@ -580,8 +582,8 @@
                      empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
                <person xml:id="gallus">
-                  <persName>Gallum</persName>
-                  <note>Gallus, disciple de saint Martin.</note>
+                  <persName>Gallus</persName>
+                  <note>Disciple de saint Martin.</note>
                </person>
                <person xml:id="wauchier">
                   <persName>Gauchiers</persName>
@@ -589,13 +591,13 @@
                         <hi rend="italic">Li seint Confessor</hi>.</note>
                </person>
                <person xml:id="germein" corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
-                  <persName>Germein (saint)</persName>
+                  <persName>Germein</persName>
                   <death when="0541">541</death>
                   <note type="biographical">Saint Germain de Capoue, Evêque de Capoue en Italie, ami
                      de <persName ref="#benoit">Saint Benoît</persName>.</note>
                </person>
                <person xml:id="gile">
-                  <persName>Gile (saint)</persName>
+                  <persName>Gilles</persName>
                   <birth when="0640">640</birth>
                   <death when="0710">710</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint
@@ -615,7 +617,7 @@
                   xml:id="gratien">
                   <persName>Gracien</persName>
                   <death when="0301">301</death>
-                  <note type="biographical">Gatien de Tours, premier évêque de <placeName
+                  <note type="biographical">Gratien de Tours, premier évêque de <placeName
                         ref="#tours">Tours</placeName>.</note>
                </person>
                <person xml:id="gregoire">
@@ -670,13 +672,6 @@
                   <note type="biographical">Ithacium, evêque d'Ossobona et meneur du parti épiscopal
                      hostile à <persName ref="#priscillien">Priscillien</persName>.</note>
                </person>
-               <person xml:id="jeanBaptiste">
-                  <persName>Jehan (Baptiste)</persName>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"><surname
-                        type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
-                     en Judée.</note>
-               </person>
                <person xml:id="getron">
                   <persName>Getron</persName>
                   <note type="biographical">Marchand et pèlerin d'<placeName ref="excorande"
@@ -693,8 +688,15 @@
                      moine, originaire d'<placeName ref="#egypte">Egypte</placeName>, il établit sa
                      communauté sur l'île de Chypre.</note>
                </person>
+               <person xml:id="jeanBaptiste">
+                  <persName>Jehan Baptiste</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC"><surname
+                        type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
+                     en Judée.</note>
+               </person>
                <person xml:id="jerome">
-                  <persName>Jerome (saint)</persName>
+                  <persName>Jeroime</persName>
                   <birth when="0345">345</birth>
                   <death when="0420-09-20">420</death>
                   <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
@@ -786,7 +788,7 @@
                      d'Orient de 308 à 324.</note>
                </person>
                <person xml:id="lupicin">
-                  <persName>Lupicin</persName>
+                  <persName>Lupecines</persName>
                   <note type="biographical">Homme important de la ville de <placeName
                         ref="#poitiers">Poitiers</placeName>.</note>
                </person>
@@ -818,18 +820,18 @@
                <person xml:id="marcelConsul">
                   <persName>Marcel</persName>
                   <note type="biographical">Consul romain, il accueille dans sa maison <persName
-                        ref="#pierre">saint Pierre</persName> et sa suite à lors arrivée à
+                        ref="#pierre">saint Pierre</persName> et sa suite à leur arrivée à
                         <placeName ref="#rome">Rome</placeName>.</note>
                </person>
                <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
                   xml:id="marie">
-                  <persName>Marie (sainte Vierge)</persName>
+                  <persName>Marie</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
                      >Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
                      Dieu.</note>
                </person>
                <person xml:id="madeleine">
-                  <persName>Marie Magdalene (sainte)</persName>
+                  <persName>Marie Magdalene</persName>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120479609"
                      >Personnage biblique, Marie-Madeleine, disciple de <persName ref="#jesus"
                         >Jésus-Christ</persName>.</note>
@@ -841,13 +843,13 @@
                </person>
                <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
                   xml:id="martin">
-                  <persName>Martin (saint)</persName>
+                  <persName>Martin</persName>
                   <birth when="0316">316</birth>
                   <death when="0397-11-08">397</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-                     <surname type="complex">Saint Martin de Tours</surname> est né en Hongrie dans
-                     la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il
-                     est mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
+                     <surname type="complex">Saint Martin de Tours</surname>, né en Hongrie dans
+                     la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316 et
+                     mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
                      397.</note>
                </person>
                <person xml:id="mathius">
@@ -855,9 +857,8 @@
                   <note type="biographical">Jeune homme qui accompagne les marchands de Bari.</note>
                </person>
                <person xml:id="maurum">
-                  <persName>Mauru</persName>
-                  <note type="biographical">Fils d'<persName ref="#evitius">Evitius</persName>
-                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
+                  <persName>Maurum</persName>
+                  <note type="biographical">Disciple de <persName ref="#benoit">saint Benoit</persName> et fils d'<persName ref="#evitius">Evitius</persName>.</note>
                </person>
                <person xml:id="maximin">
                   <persName>Maximien</persName>
@@ -876,7 +877,7 @@
                      >Mercure, dieu du panthéon latin.</note>
                </person>
                <person xml:id="michel">
-                  <persName>Michel</persName>
+                  <persName>Michiel</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC">Saint Michel,
                      archange.</note>
@@ -900,7 +901,7 @@
                         ref="#marcel">saint Marcel</persName>.</note>
                </person>
                <person xml:id="nicolas3">
-                  <persName>Nicolas</persName>
+                  <persName>Nicholas</persName>
                   <note type="biographical">Archidiacre, présent au moment de la mort de <persName
                         ref="#nicolas">saint Nicolas</persName>.</note>
                </person>
@@ -911,7 +912,7 @@
                      guérisse.</note>
                </person>
                <person xml:id="nicolas">
-                  <persName>Nicholas (saint)</persName>
+                  <persName>Nicholas</persName>
                   <death when="0400">3<ex>e</ex> siècle</death>
                   <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11961190d"
                      >Saint Nicolas, évêque de Myre.</note>
@@ -934,7 +935,7 @@
                         <persName ref="#pierre">saint Pierre</persName>.</note>
                </person>
                <person xml:id="origene">
-                  <persName>Origene (saint)</persName>
+                  <persName>Origene</persName>
                   <birth when="0185">185</birth>
                   <death when="0254">254</death>
                   <note type="biographical" source="http://data.bnf.fr/11918191/origene/">Père de
@@ -974,7 +975,7 @@
                <person xml:id="pierre">
                   <persName>Pere</persName>
                   <death when="0064">64</death>
-                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pierre,
+                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de Rome,
                      pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
                      premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
                </person>
@@ -994,7 +995,7 @@
                <person xml:id="placidum">
                   <persName>Placidus</persName>
                   <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName>
-                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
+                     et disciple de <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
                <person xml:id="pompeien">
                   <persName>Pompeiens</persName>
@@ -1054,7 +1055,7 @@
                </person>
                <person xml:id="romein">
                   <persName>Romeins</persName>
-                  <note type="biographical">Moine, apporte des vivres à saint Benoit pendant sa retraite.</note>
+                  <note type="biographical">Moine qui apporte des vivres à saint Benoit pendant sa retraite.</note>
                </person>
                <person xml:id="rudich">
                   <persName>Rudrich</persName>
@@ -1081,7 +1082,7 @@
                         Benoit</persName>.</note>
                </person>
                <person xml:id="serge" corresp="http://catalogue.bnf.fr/ark:/12148/cb13561173d">
-                  <persName>Serge (saint)</persName>
+                  <persName>Serge</persName>
                   <death when="0303">303</death>
                   <note type="biographical">Martyr avec <persName ref="#bace">saint Bace</persName>
                      en 303.</note>
@@ -1093,14 +1094,14 @@
                         Germain de Chaples</persName>.</note>
                </person>
                <person corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
-                  <persName>Severin (saint)</persName>
+                  <persName>Severins</persName>
                   <death when="0403">403</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
                      <surname type="complex">Saint Séverin de Cologne</surname>, évêque de cologne à la fin du <seg type="number">iv</seg><ex>e</ex> siècle.</note>
                </person>
                <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
                   xml:id="severus">
-                  <persName>Severum</persName>
+                  <persName>Severus</persName>
                   <birth when="0363">363</birth>
                   <death when="0420">420</death>
                   <note type="biographical">
@@ -1166,8 +1167,8 @@
                   <note type="biographical">Totila, roi ostrogoth, élu roi d'Italie en 541.</note>
                </person>
                <person xml:id="theodore" corresp="http://catalogue.bnf.fr/ark:/12148/cb16725759d">
-                  <persName>Theodore (saint)</persName>
-                  <death when="0300">4<hi rend="exp">e</hi> siecle</death>
+                  <persName>Theodore</persName>
+                  <death when="0300">4<ex>e</ex> siecle</death>
                   <note type="biographical">Saint Théodore de Tiron, moine de <placeName
                         ref="#constantinople">Constantinople</placeName>, martyr du 4<ex>e</ex>
                      siècle.</note>
@@ -1203,7 +1204,7 @@
                   <note type="biographical">Évêque.</note>
                </person>
                <person xml:id="valentinien3">
-                  <persName>Valentinien</persName>
+                  <persName>Valentiniens</persName>
                   <note type="biographical">Abbé du monastère de <placeName ref="#latran"
                         >Latran</placeName>, puis moine du monastère du <placeName ref="cassin">mont
                         Cassin</placeName> .</note>
@@ -1248,8 +1249,7 @@
                </person>
                <person xml:id="ylarates">
                   <persName>Ylarates</persName>
-                  <note type="biographical">Convers du <placeName ref="#cassin">mont
-                        Cassin</placeName>.</note>
+                  <note type="biographical">Convers de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
                </person>
                <person xml:id="ylarien">
                   <persName>Ylariens</persName>
@@ -1262,7 +1262,7 @@
                   <persName>Zacharie</persName>
                   <note type="biographical"
                      source="http://fr.dbpedia.org/page/Zacharie_(père_de_Jean_le_Baptiste)"
-                     >Personnage biblique, il serait le père de saint <persName ref="#jeanBaptiste"
+                     >Personnage biblique, père de saint <persName ref="#jeanBaptiste"
                         >Jean le Baptiste</persName>.</note>
                </person>
                <person xml:id="zacheus">
@@ -1273,7 +1273,7 @@
                </person>
                <person xml:id="zalla">
                   <persName>Zalla</persName>
-                  <note type="biographical">Envoyé du roi dans la région du Mont Cassin, homme cruel.</note>
+                  <note type="biographical">Envoyé du roi dans la région de Mont-Cassin.</note>
                </person>
             </listPerson>
          </particDesc>
@@ -1298,7 +1298,7 @@
                </place>
                <place xml:id="alexandrie"
                   corresp="http://pleiades.stoa.org/places/727070/alexandria">
-                  <placeName>Alexandre</placeName>
+                  <placeName>Alixandre</placeName>
                   <location>
                      <geo>31.2000924 29.91873869999995</geo>
                   </location>
@@ -1321,11 +1321,11 @@
                   <note>château.</note>
                </place>
                <place xml:id="antioche" corresp="https://pleiades.stoa.org/places/658381">
-                  <placeName>Anthioche</placeName>
+                  <placeName>Antioche</placeName>
                   <location>
                      <geo>36.2225515, 36.183214</geo>
                   </location>
-                  <note>Antioche, capitale de la province romaine de Syrie, en actuelle
+                  <note>Capitale de la province romaine de Syrie, en actuelle
                      Turquie.</note>
                </place>
                <place corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
@@ -1481,7 +1481,7 @@
                   <location>
                      <geo>48.445658, 1.4856175</geo>
                   </location>
-                  <note>Chartres, Ville du Centre de la France.</note>
+                  <note>Chartres, ville du Centre de la France.</note>
                </place>
                <place xml:id="cholomaide" corresp="https://pleiades.stoa.org/places/39409">
                   <placeName>Cholomaide</placeName>
@@ -1502,6 +1502,16 @@
                   <placeName>Cilicie</placeName>
                   <note>Province romaine située aujourd'hui en Turquie.</note>
                </place>
+               <place xml:id="claudiomas" corresp="https://pleiades.stoa.org/places/138299">
+                  <placeName>Claudiomas</placeName>
+                  <location>
+                     <geo>46.941585 1.232804</geo>
+                  </location>
+                  <note>Cité romaine dont le nom est formé sur le nom de l'empereur Claude et
+                     du terme Gaulois "magus" qui désigne "le marche, le champ, la plaine".
+                     Située dans l'Indre, il s'agit de l'actuelle commune de
+                     CLion-Sur-Indre.</note>
+               </place>
                <place corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
                   <placeName>Coloigne</placeName>
                   <location>
@@ -1519,7 +1529,7 @@
                </place>
                <place xml:id="crobe">
                   <placeName>Crobe</placeName>
-                  <note>Maison de l'archange de <persName ref="#michel">saint Michel</persName>.</note>
+                  <note>Maison de l'archange <persName ref="#michel">saint Michel</persName>.</note>
                </place>
                <place xml:id="cupersane" corresp="https://catalogue.bnf.fr/ark:/12148/cb12154953p">
                   <placeName>Cupersane</placeName>
@@ -1553,11 +1563,6 @@
                   <placeName>Embaise</placeName>
                   <note>Amboise, "Ambatiensem" en latin, ville située dans le centre de la
                      France.</note>
-               </place>
-               <place xml:id="enfer" corresp="https://catalogue.bnf.fr/ark:/12148/cb119519478">
-                  <placeName>Infer</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
-                     chrétienne.</note>
                </place>
                <place xml:id="escauc">
                   <placeName>Escauc</placeName>
@@ -1606,7 +1611,7 @@
                </place>
                <place xml:id="garre">
                   <placeName>Garre</placeName>
-                  <note>Gard, Rivière française.</note>
+                  <note>Gard, rivière française.</note>
                </place>
                <place xml:id="gascogne">
                   <placeName>Gascoigne</placeName>
@@ -1661,7 +1666,7 @@
                   <note>Ville de Liège située en Wallonie.</note>
                </place>
                <place xml:id="limoges" corresp="https://pleiades.stoa.org/places/138203">
-                  <placeName>Limoges</placeName>
+                  <placeName>Lymoges</placeName>
                   <location>
                      <geo>45.8285425, 1.2643925 </geo>
                   </location>
@@ -1706,6 +1711,13 @@
                   </location>
                   <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
                </place>
+               <place xml:id="edesse" corresp="https://pleiades.stoa.org/places/658457">
+                  <placeName>Edesse</placeName>
+                  <location>
+                     <geo>37.1625575, 38.781432</geo>
+                  </location>
+                  <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
+               </place>
                <place xml:id="mans" corresp="https://pleiades.stoa.org/places/109236">
                   <location>
                      <geo>48.0071603333, 0.198493333333</geo>
@@ -1743,7 +1755,7 @@
                   <location>
                      <geo>41.492907, 13.830583</geo>
                   </location>
-                  <note>Mont Cassin, situé dans le latium en Italie.</note>
+                  <note>Mont Cassin, situé dans le latium en Italie, désigne également Mont-Cassin, monastère établi par saint Benoît.</note>
                </place>
                <place xml:id="morteigne" corresp="https://catalogue.bnf.fr/ark:/12148/cb14632858c">
                   <placeName>Mortaigne</placeName>
@@ -1793,7 +1805,7 @@
                </place>
                <place xml:id="nitre">
                   <placeName>Nitre</placeName>
-                  <!-- a vérfier ac le texte latin -->
+                  <note>Ville non-identifiée.</note>
                </place>
                <place xml:id="normandie" corresp="https://catalogue.bnf.fr/ark:/12148/cb121012519">
                   <placeName>Normendie</placeName>
@@ -1824,12 +1836,7 @@
                <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
                   xml:id="pannonie">
                   <placeName>Pannone</placeName>
-                  <note>Pannonie, province romaine de l'Europe centrale au sud du Danube.</note>
-               </place>
-               <place xml:id="paradis" corresp="https://catalogue.bnf.fr/ark:/12148/cb12651084m">
-                  <placeName>Paradis</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes pures dans la religion
-                     chrétienne.</note>
+                  <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du Danube.</note>
                </place>
                <place corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
                   <placeName>Paris</placeName>
@@ -1851,7 +1858,7 @@
                   <location>
                      <geo>43.72083015, 10.40093495</geo>
                   </location>
-                  <note>Ville de Pise en Italie, située dans la Toscane.</note>
+                  <note>Ville italienne, située dans la Toscane.</note>
                </place>
                <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
                   <placeName>Poitiers</placeName>
@@ -1872,11 +1879,6 @@
                <place xml:id="puille" corresp="https://catalogue.bnf.fr/ark:/12148/cb12037604s">
                   <placeName>Puille</placeName>
                   <note>Les Pouilles, province du Sud de l'Italie.</note>
-               </place>
-               <place xml:id="purgatoire" corresp="https://catalogue.bnf.fr/ark:/12148/cb119634018">
-                  <placeName>Purgatoire</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
-                     chrétienne.</note>
                </place>
                <place xml:id="quaparse">
                   <placeName>Quaparse</placeName>
@@ -1917,7 +1919,7 @@
                      Turquie.</note>
                </place>
                <place xml:id="sainteMarie">
-                  <placeName>Seinte Marie de la charité</placeName>
+                  <placeName>Seinte Marie de la Charité</placeName>
                   <note>Prieuré clunisien de la Charité-sur-Loire.</note>
                </place>
                <place xml:id="sens" corresp="https://pleiades.stoa.org/places/108729">
@@ -1999,7 +2001,7 @@
                   <location>
                      <geo>25.6760290667, 32.6339435</geo>
                   </location>
-                  <note>Thèbes, ville d'Égypte</note>
+                  <note>Thèbes, ville d'Égypte.</note>
                </place>
                <place xml:id="tibre"
                   corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
@@ -2072,8 +2074,8 @@
                      de l'empire romain d'Orient, actuelle Istanbul.</note>
                </place>
                <place xml:id="merRouge" corresp="https://catalogue.bnf.fr/ark:/12148/cb11964378t">
-                  <placeName>Roge mer</placeName>
-                  <note>Mer rouge, mer qui sépare l'Afrique du Nord et le Moyen Orient.</note>
+                  <placeName>Roge Mer</placeName>
+                  <note>Mer Rouge, mer qui sépare l'Afrique du Nord et le Moyen Orient.</note>
                </place>
             </listPlace>
          </settingDesc>

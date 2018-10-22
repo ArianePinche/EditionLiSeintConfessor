@@ -98,6 +98,11 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
+            <person xml:id="alpinien">
+               <persName>Alpinien</persName>
+               <note type="biographical">Discipline de <persName ref="#marcel">saint
+                  Marcel</persName>.</note>
+            </person>
             <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="andrius">
                   <persName>Andriu</persName>
                   <note type="biographical">Prêtre paien de la cité de <placeName ref="#limoges">Limoges</placeName>, converti à la fois avec <persName ref="#aurelien">Aurelien</persName> à la foi chrétienne par <persName ref="#marcel">saint
@@ -1634,8 +1639,8 @@
                   </choice><pc type="reg">'</pc>&ypoint;mage&esp;de&esp;<lb/><persName
                      ref="#jupiter">&j-maj;upiter</persName>&#160;&esperluette-et;de <persName
                      ref="#mercurius">&m-maj;ercurie</persName>&#160;
-                     &esperluette-et;de&esp;&d-maj;<persName ref="#diane"
-                  >&ypoint;ane</persName>&#160; &esperluette-et;de&esp;<persName ref="#venus"
+                     &esperluette-et;de&esp;<persName ref="#diane"
+                        >&d-maj;&ypoint;ane</persName>&#160; &esperluette-et;de&esp;<persName ref="#venus"
                      >&v-maj;e<lb/>nus</persName>&deuxpoints-point;&c-maj;eles fist il totes
                   defroiscier &esperluette-et;destrui<lb/>re<pc type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;le temple depecier &esperluette-et;abatre.&esp;Et
@@ -2315,8 +2320,8 @@
                      </choice>&esp;estes&esp;<lb/>apelez &esperluette-et;par qieus
                   nons.</said>&esp;&l-maj;i uns respondi
                      &esperluette-et;si&esp;<lb/>dist&point-deuxpointsDial;<said who="#engigniere">&esp;Je&esp;sui
-                     apelez <persName ref="#engigniere">&e-maj;ngignieres de
-                     &m-maj;il</persName>.</said>&esp;&l-maj;i seinz&esp;<lb/>e&u-v;esqes
+                        apelez <persName ref="#engigniere">&e-maj;ngignieres</persName>  de
+                        &m-maj;il.</said>&esp;&l-maj;i seinz&esp;<lb/>e&u-v;esqes
                      dist&esp;:&esp;<said who="#marcel">&esp;&p-maj;or coi es tu einsint
                      apelez&point-interrogation;</said>&esp;Li&esp;<lb/>deables
                      respondi&esp;:&esp;<said who="#engigniere">&esp;&p-maj;or&esp;ce qe &i-j;<pc type="reg">'</pc>ai
@@ -2627,7 +2632,7 @@
                      <orig>D</orig>
                      <reg>d</reg>
                   </choice>onc s<pc type="reg">'</pc>en alerent tuit ensam<lb/>ble au&esp;mostier
-                  <persName ref="#etienne">&m-maj;onsigneur&esp;<lb/>&s-maj;eint &e-maj;stiene</persName>
+                  &m-maj;onsigneur&esp;<lb/><persName ref="#etienne">&s-maj;eint &e-maj;stiene</persName>
                   le&esp;premerein mar<lb/>t&ypoint;r&deuxpoints-point;&l-maj;a&esp;chanta <persName
                      ref="#marcel">seinz &m-maj;arceaus</persName>
                   la&esp;messe&esp;&pbarre-par;&esp;<lb/>grant de&u-v;otion<pc type="orig"

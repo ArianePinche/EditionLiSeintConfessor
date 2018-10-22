@@ -94,117 +94,107 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="agabaron">
+            <person xml:id="agabaron">
                <persName>Agabaron</persName>
-               <note type="biographical">Roi de la ville d'<placeName ref="#magine">Édesse</placeName>, actuellement Urfa en Turquie.</note>
+               <note type="biographical">Roi de la ville d'<placeName ref="#magine"
+                     >Édesse</placeName>, actuellement Urfa en Turquie.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aglaise">
+            <person xml:id="aglaise">
                <persName>Aglaïs</persName>
-               <note type="biographical">Femme d'<persName ref="#eufamianus">Eufamianus</persName> et mère de <persName ref="#saintalexis">saint
-                  Alexis</persName>.</note>
+               <note type="biographical">Femme d'<persName ref="#eufamianus">Eufamianus</persName>
+                  et mère de <persName ref="#saintalexis">saint Alexis</persName>.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="saintalexis">
+            <person xml:id="saintalexis">
                <persName>Alexis (saint)</persName>
                <death when="0416">416</death>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb15651786n">saint d'origine romaine.</note>
+               <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb15651786n"
+                  >saint d'origine romaine.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="archades">
+            <person xml:id="archades">
                <persName>Archadies</persName>
                <birth when="0377">377</birth>
                <death when="0408">408</death>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb12356604g">
-                  <surname type="complex">Flavius Arcadius</surname>, empereur romain
-                  d'<placeName ref="#orient">Orient</placeName> de 395 à 408, frère de
-                  <persName ref="#honorius">Honorius Flavius</persName>.</note>
+               <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12356604g">
+                  <surname type="complex">Flavius Arcadius</surname>, empereur romain d'<placeName
+                     ref="#orient">Orient</placeName> de 395 à 408, frère de <persName
+                     ref="#honorius">Honorius Flavius</persName>.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="boniface">
+            <person xml:id="boniface">
                <persName>Boniface (saint)</persName>
                <death>3<ex>e</ex> siècle</death>
-               <note type="biographical">Possiblement saint Boniface de Tharse, martyr chrétien.
-                  Son nom apparait pour désigner l'église dans laquelle saint Alexis se marie et
-                  où il est enterré.</note>
+               <note type="biographical">Possiblement saint Boniface de Tharse, martyr chrétien. Son
+                  nom apparait pour désigner l'église dans laquelle saint Alexis se marie et où il
+                  est enterré.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="eufamianus">
+            <person xml:id="eufamianus">
                <persName>Eufemianus</persName>
-               <note type="biographical">Personnage important de la cité de Rome, père de
-                  <persName ref="#saintalexis">saint Alexis</persName>.</note>
+               <note type="biographical">Personnage important de la cité de Rome, père de <persName
+                     ref="#saintalexis">saint Alexis</persName>.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="honorius">
+            <person xml:id="honorius">
                <persName>Honoires</persName>
                <birth when="0384">384</birth>
                <death when="0423">423</death>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb12566387q">Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395
-                  à 423.</note>
+               <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12566387q"
+                  >Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395 à
+                  423.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-               xml:id="jesus">
+            <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
                <persName>Jesu Crist</persName>
                <birth when="0001">0</birth>
                <death when="0030">33</death>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+               <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
                   <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
                   reconnaissent comme le fils unique de Dieu.</note>
             </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
-               xml:id="marie">
+            <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
                <persName>Marie (sainte Vierge)</persName>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb119503581">Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
+               <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
+                  >Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
                   Dieu.</note>
             </person>
          </particDesc>
          <settingDesc>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="chaples"
-               corresp="https://pleiades.stoa.org/places/432754">
+            <place xml:id="chaples" corresp="https://pleiades.stoa.org/places/432754">
                <placeName>Chaples</placeName>
                <location>
                   <geo>41.0860925, 14.250207</geo>
                </location>
                <note>Capoue, ville italienne de Campanie.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="cilicie"
-               corresp="http://data.bnf.fr/fr/11942420/cilicie__turquie_/">
+            <place xml:id="cilicie" corresp="http://data.bnf.fr/fr/11942420/cilicie__turquie_/">
                <placeName>Cilicie</placeName>
                <note>Province romaine située aujourd'hui en Turquie.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="laudesse"
-               corresp="https://pleiades.stoa.org/places/668290">
+            <place xml:id="edesse" corresp="https://pleiades.stoa.org/places/658457">
+               <placeName>Edesse</placeName>
+               <location>
+                  <geo>37.1625575, 38.781432</geo>
+               </location>
+               <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
+            </place>
+            <place xml:id="laudesse" corresp="https://pleiades.stoa.org/places/668290">
                <placeName>Laudesse</placeName>
                <location>
                   <geo>35.51892275, 35.7766297</geo>
                </location>
                <note>Laodicée, ville de Syrie.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="magine"
-               corresp="https://pleiades.stoa.org/places/658457">
+            <place xml:id="magine" corresp="https://pleiades.stoa.org/places/658457">
                <placeName>Magine</placeName>
                <location>
                   <geo>37.1625575, 38.781432</geo>
                </location>
                <note>Édesse, ville de Mésopotamie et acutelle Urfa en Turquie.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://pleiades.stoa.org/places/423025"
-               xml:id="rome">
+            <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
                <placeName>Rome</placeName>
                <location>
                   <geo>41.891775, 12.486137</geo>
                </location>
                <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="tarse"
-               corresp="https://pleiades.stoa.org/places/511429">
+            <place xml:id="tarse" corresp="https://pleiades.stoa.org/places/511429">
                <placeName>Tharse</placeName>
                <location>
                   <geo>40.75, 30.25</geo>
@@ -212,8 +202,7 @@
                <note>Tarse, ville de <placeName ref="#cilicie">Cilicie</placeName> en actuelle
                   Turquie.</note>
             </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="tibre"
+            <place xml:id="tibre"
                corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
                <placeName>Toivre</placeName>
                <note>Tibre, fleuve italien.</note>
@@ -224,8 +213,8 @@
    <text n="edition">
       <body n="urn:cts:froLit:jns915.jns1994.ciham-fro1">
          <div type="chapter" n="1">
-            <head>Ici coumence la&esp;<lb/>&u-v;ie monsigneur
-                  <persName ref="#saintalexis">seint &a-maj;lexis</persName>.</head>
+            <head>Ici coumence la&esp;<lb/>&u-v;ie monsigneur <persName ref="#saintalexis">seint
+                  &a-maj;lexis</persName>.</head>
             <div type="section" n="1">
                <p><pb n="167" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f344.item.zoom"
                      /><cb n="c"/><hi rend="rubricated orig">Ici coumence la&esp;<lb/>&u-v;ie mon
@@ -284,9 +273,9 @@
                   a us &esperluette-et;en costume &esperluette-et;chas<lb/>cuns fesoit ses orissons
                   a&esp;nostre &s-maj;ignor <persName ref="#jesus">&j-maj;e<lb/>su
                      &c-maj;rist</persName>&#160;&esperluette-et;si
-                     disoit&point-deuxpointsDial;<said who="#aglaise">Beaus &s-maj;ire &d-maj;ex<pc type="reg"
-                        ana="apostrophe">,</pc> so&u-v;iegne&esp;<lb/>toi de&esp;moi qe &i-j;e sui
-                        t<pc type="reg">'</pc>ancele &esperluette-et;si&esp;me done
+                     disoit&point-deuxpointsDial;<said who="#aglaise">Beaus &s-maj;ire &d-maj;ex<pc
+                        type="reg" ana="apostrophe">,</pc> so&u-v;iegne&esp;<lb/>toi de&esp;moi qe
+                     &i-j;e sui t<pc type="reg">'</pc>ancele &esperluette-et;si&esp;me done
                      tel&esp;<lb/>fruit de&esp;mon mari<pc type="orig" ana="relative"
                      >:</pc>&esp;qi&esp;puist conforter m<pc type="reg">'</pc>a<lb/>me
                      &esperluette-et;mon cors.</said>&esp;Tel &u-v;ie<pc type="reg"
@@ -296,8 +285,8 @@
                      ref="#aglaise">&a-maj;gla&itrem;s</persName><pc type="reg" ana="apposition"
                      >,</pc> la bone&esp;<lb/>dame sa feme&point-virg5;ne n<pc type="reg"
                   >'</pc>estoient mie despareil&esp;<lb/>en lor oe&u-v;res&deuxpoints-virg3;car se
-                  li uns fesoit bien<pc type="reg" ana="subordonnee">,</pc> li au<lb/>tres se &u-v;oloit assez plus pener de&esp;bien
-                  fere.&esp;<lb/></p>
+                  li uns fesoit bien<pc type="reg" ana="subordonnee">,</pc> li au<lb/>tres se
+                  &u-v;oloit assez plus pener de&esp;bien fere.&esp;<lb/></p>
             </div>
          </div>
          <div n="2" type="chapter">
@@ -350,14 +339,14 @@
                   </choice>u<pc type="reg">'</pc>il fu sages &esperluette-et;entendans de&esp;tote
                      chose&point-virg4;<persName ref="#eufamianus">Eu<lb/>femianus</persName> apela
                   sa feme<pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;si li
-                     dist&esp;<pc type="reg" ana="DD">:</pc>&#160;<said who="#eufamianus">&d-maj;onons fe<lb/>me
-                     a&esp;nostre fil&deuxpoints-virg3;si acroistra nostre
-                  lignie.</said>&esp;Q&nasuscrit-an;t&esp;<lb/>la&esp;dame o&itrem; la&esp;parole
+                     dist&esp;<pc type="reg" ana="DD">:</pc>&#160;<said who="#eufamianus"
+                     >&d-maj;onons fe<lb/>me a&esp;nostre fil&deuxpoints-virg3;si acroistra nostre
+                     lignie.</said>&esp;Q&nasuscrit-an;t&esp;<lb/>la&esp;dame o&itrem; la&esp;parole
                   de&esp;son mari<pc type="reg" ana="subordonnee">,</pc> ele en fu si&esp;lie<pc
                      type="orig" ana="subCorr">.</pc>&esp;<lb/>q<pc type="reg">'</pc>ele
                   en&esp;che&itrem; a&esp;ses piez de&esp;&i-j;oie<pc type="reg" ana="coordination"
-                     >,</pc> si&esp;dist&point-deuxpointsDial;<said who="#aglaise">Nostre &s-maj;i<lb/>res
-                     te&esp;puisse esforcier de&esp;fere les noces
+                     >,</pc> si&esp;dist&point-deuxpointsDial;<said who="#aglaise">Nostre
+                     &s-maj;i<lb/>res te&esp;puisse esforcier de&esp;fere les noces
                      de&esp;m&otilde-on;&esp;<lb/>chier fil<pc type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;si qe &i-j;e le &u-v;oie<pc type="orig"
                         ana="coordination">.</pc>&esp;&esperluette-et;m<pc type="reg">'</pc>ame s<pc
@@ -370,9 +359,9 @@
                      >&e-maj;ufimianus</persName> fist esposer a&esp;son fil une&esp;<lb/>pucele
                   qi&esp;de roial lignie estoit<pc type="orig" ana="coordination"
                   >:</pc>&esp;&esperluette-et;furent&esp;<lb/>assamblez par mariage el&esp;mostier
-                  &m-maj;on<lb/>signeur <persName ref="#boniface">&s-maj;eint &b-maj;oniface</persName><pc
-                     type="orig" ana="relative">.</pc>&esp;qi encore est
-                  en&esp;<lb/>la&esp;cit&eacc; de <placeName ref="#rome"
+                  &m-maj;on<lb/>signeur <persName ref="#boniface">&s-maj;eint
+                     &b-maj;oniface</persName><pc type="orig" ana="relative">.</pc>&esp;qi encore
+                  est en&esp;<lb/>la&esp;cit&eacc; de <placeName ref="#rome"
                   >&r-maj;ome</placeName>.&esp;Qant il furent re&u-v;enuz&esp;<lb/>del mostier<pc
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;menez en la chambre
                   qui&esp;<lb/>mout estoit richement apareillie &esperluette-et;en<lb/>cortinee de
@@ -386,23 +375,22 @@
                      type="reg">'</pc>il &u-v;eoient lor fil de&esp;si&esp;grant
                   be<lb/>aut&eacc;&#160;&esperluette-et;de si sage &esperluette-et;de ce qu<pc
                      type="reg">'</pc>il estoit de tel&esp;<lb/>aage qu<pc type="reg">'</pc>il
-                  a&u-v;oit pris feme<pc type="orig" ana="subCorr">.</pc>&esp;q<pc type="reg">'</pc>il ne sa&u-v;oi<lb/>ent qe
-                  fere pe&utrem;sssent de&esp;&i-j;oie.&esp;Qant
+                  a&u-v;oit pris feme<pc type="orig" ana="subCorr">.</pc>&esp;q<pc type="reg"
+                  >'</pc>il ne sa&u-v;oi<lb/>ent qe fere pe&utrem;sssent de&esp;&i-j;oie.&esp;Qant
                      &u-v;int&esp;<lb/>a&esp;la&esp;&u-v;espree&point-virg4;<persName
                      ref="#eufamianus">&e-maj;ufemianus</persName> dist a&esp;son
-                     fil&esp;:&esp;<lb/><said who="#eufamianus">Beaus fiuz<pc type="reg" ana="apostrophe"
-                     >,</pc>&#160;&u-v;a gesir en&esp;la chambre ensem<lb/>ble o&esp;ta
-                  feme.</said>&esp;Dont entra li &i-j;o&u-v;enceaus
+                     fil&esp;:&esp;<lb/><said who="#eufamianus">Beaus fiuz<pc type="reg"
+                        ana="apostrophe">,</pc>&#160;&u-v;a gesir en&esp;la chambre ensem<lb/>ble
+                     o&esp;ta feme.</said>&esp;Dont entra li &i-j;o&u-v;enceaus
                   en&esp;<lb/>la&esp;chambre&point-virg3;si&esp;tro&u-v;a s<pc type="reg"
                   >'</pc>espose seant seur un&esp;<lb/>siege. Et&esp;il li dona un anel d<pc
                      type="reg">'</pc>or &esperluette-et;une chein<lb/>ture en&u-v;olepee en un drap
-                  de&esp;soie &esperluette-et;si
-                     li&esp;dist&point-deuxpointsDial;<lb/><said who="#saintalexis">&p-maj;renez ces choses<pc
-                        type="reg" ana="coordination">,</pc> si les gardez<pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;nostre
-                     &s-maj;ires&esp;<lb/>serra entre nous deus tant com &l-maj;ui
-                     plera.&esp;<lb/>Ce sera la ramembrance de&esp;moi
-                  a&esp;&u-v;ous.</said>&esp;Et&esp;<lb/>encore li dist il une autre pri&u-v;ee
+                  de&esp;soie &esperluette-et;si li&esp;dist&point-deuxpointsDial;<lb/><said
+                     who="#saintalexis">&p-maj;renez ces choses<pc type="reg" ana="coordination"
+                        >,</pc> si les gardez<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;nostre &s-maj;ires&esp;<lb/>serra entre nous deus
+                     tant com &l-maj;ui plera.&esp;<lb/>Ce sera la ramembrance de&esp;moi
+                     a&esp;&u-v;ous.</said>&esp;Et&esp;<lb/>encore li dist il une autre pri&u-v;ee
                   parole qe&esp;<lb/>la&esp;pucele entendi bien &esperluette-et;retint.&esp;Dont
                      issi&esp;<lb/><persName ref="#saintalexis">&a-maj;lexis</persName> li
                   &i-j;o&u-v;enceaus fors de&esp;la chambre&point-virg3;si&esp;<lb/>prist or
@@ -421,9 +409,9 @@
                   chargies&point-virg3;si&esp;entra&esp;<lb/>ensemble o&esp;eus en&esp;la
                      cit&eacc;<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;ala&esp;tant q<pc type="reg">'</pc>il
-                  &u-v;int&esp;<lb/>au&esp;mostier &m-maj;a &d-maj;ame
-                     <persName ref="#marie">&s-maj;einte
-                     &m-maj;arie</persName>.&esp;La&esp;&u-v;it<lb/><cb n="b"/>il une &ypoint;mage <choice>
+                  &u-v;int&esp;<lb/>au&esp;mostier &m-maj;a &d-maj;ame <persName ref="#marie"
+                     >&s-maj;einte &m-maj;arie</persName>.&esp;La&esp;&u-v;it<lb/><cb n="b"/>il une
+                  &ypoint;mage <choice>
                      <orig>E</orig>
                      <reg>e</reg>
                   </choice>n forme de crucefi<choice>
@@ -476,9 +464,9 @@
                      type="reg">'</pc>aumosne ensem<lb/>ble o&esp;les autres
                   po&u-v;res&point-virg3;mes onques ne le&esp;<lb/>reconurent.&esp;Li&esp;seinz hom
                   les conoissoit&esp;<lb/>bien&point-virg3;si&esp;en looit nostre &s-maj;ignor
-                  &esperluette-et;si disoit&esp;:&esp;<lb/><said who="#saintalexis">Beaus &s-maj;ire qui l<pc
-                        type="reg">'</pc>aumosne me fes re&c-ced;oi&u-v;re&esp;<lb/>de&esp;ma mesnie
-                        proprement<pc type="orig" ana="CC">.</pc>&esp;por ton seinti<lb/>me non&point-virg2;<choice>
+                  &esperluette-et;si disoit&esp;:&esp;<lb/><said who="#saintalexis">Beaus &s-maj;ire
+                     qui l<pc type="reg">'</pc>aumosne me fes re&c-ced;oi&u-v;re&esp;<lb/>de&esp;ma
+                     mesnie proprement<pc type="orig" ana="CC">.</pc>&esp;por ton seinti<lb/>me non&point-virg2;<choice>
                         <orig>J</orig>
                         <reg>j</reg>
                      </choice>e ren&c-ced; graces a&esp;&t-maj;oi qi
@@ -525,10 +513,11 @@
                   </choice>ant qe ce &u-v;int une nuit qe li &ypoint;mage no<lb/>stre &d-maj;ame
                      s<pc type="reg">'</pc>aparut au secretein<note>sacristain</note> de l<pc
                      type="reg">'</pc>eglise<pc type="reg" ana="coordination">,</pc>&esp;<lb/>si li
-                     dist&point-deuxpointsDial;<said who="#marie">&f-maj;ai entrer ceenz l<pc type="reg"
-                     >'</pc>ome &d-maj;eu qi&esp;la&esp;fors&esp;<lb/>est&point-virg3;car il est
-                     dignes d<pc type="reg">'</pc>a&u-v;oir le regne &d-maj;iu&esp;<lb/>del
-                        ciel.&esp;&s-maj;<pc type="reg">'</pc>orisson est o&itrem;e de&u-v;ant
+                     dist&point-deuxpointsDial;<said who="#marie">&f-maj;ai entrer ceenz l<pc
+                        type="reg">'</pc>ome &d-maj;eu
+                     qi&esp;la&esp;fors&esp;<lb/>est&point-virg3;car il est dignes d<pc type="reg"
+                        >'</pc>a&u-v;oir le regne &d-maj;iu&esp;<lb/>del ciel.&esp;&s-maj;<pc
+                        type="reg">'</pc>orisson est o&itrem;e de&u-v;ant
                         nostre&esp;<lb/>&s-maj;ignor<pc type="orig" ana="coordination"
                      >.</pc>&esp;&esperluette-et;li seinz &e-maj;speriz repose
                         ensamble&esp;<lb/>o&esp;lui<pc type="orig" ana="coordination"
@@ -551,9 +540,10 @@
                      ana="coordination">,</pc> si li dist&point-deuxpointsDial;<said>Cil qi siet
                      defors l<pc type="reg">'</pc>eglis<lb/>se a&esp;l<pc type="reg">'</pc>uis plus
                         proceinz<pc type="reg" ana="apposition">,</pc> ce est li hom
-                     &d-maj;eu&esp;<lb/>qe&esp;tu demandes.</said>&esp;Lors retorna arriere&esp;<lb/>cil<pc type="reg" ana="coordination">,</pc> si tro&u-v;a <persName
-                     ref="#saintalexis">seint &a-maj;lexis</persName> defors l<pc type="reg"
-                  >'</pc>uis fe<lb/>sant ses orissons&deuxpoints-virg4;si com cil qi
+                     &d-maj;eu&esp;<lb/>qe&esp;tu demandes.</said>&esp;Lors retorna
+                     arriere&esp;<lb/>cil<pc type="reg" ana="coordination">,</pc> si tro&u-v;a
+                     <persName ref="#saintalexis">seint &a-maj;lexis</persName> defors l<pc
+                     type="reg">'</pc>uis fe<lb/>sant ses orissons&deuxpoints-virg4;si com cil qi
                   a&esp;autre&esp;<lb/>chose n<pc type="reg">'</pc>a&u-v;oit s<pc type="reg"
                   >'</pc>entente.&esp;Dont le&esp;prist cil &pbarre-par;&esp;<lb/>la&esp;mein<pc
                      type="reg" ana="coordination">,</pc> si le mena dedenz l<pc type="reg"
@@ -578,12 +568,14 @@
                <p><hi rend="decorated-initial">Q</hi><choice>
                      <orig>U</orig>
                      <reg>u</reg>
-                  </choice>ant <persName ref="#saintalexis">seinz &a-maj;lexis</persName>&#160;&u-v;it
-                  &esperluette-et;sot qu<pc type="reg">'</pc>il&esp;<lb/>estoit einsint cone&utrem;s
-                  &esperluette-et;depueplez<note>departi et de parler ? Correction Pierreville</note>&esp;<lb/>par tote la contree<pc type="orig"
+                  </choice>ant <persName ref="#saintalexis">seinz
+                  &a-maj;lexis</persName>&#160;&u-v;it &esperluette-et;sot qu<pc type="reg"
+                  >'</pc>il&esp;<lb/>estoit einsint cone&utrem;s
+                     &esperluette-et;depueplez<note>departi et de parler ? Correction
+                     Pierreville</note>&esp;<lb/>par tote la contree<pc type="orig"
                      ana="coordination">.</pc>&esp;&esperluette-et;par toute&esp;<lb/>la cit&eacc;
                   de&esp;ses oe&u-v;res&deuxpoints-virg4;il issi fors de&esp;la
-                  cit&eacc;&esp;<lb/>qi a&u-v;oit non <placeName ref="#magine"
+                  cit&eacc;&esp;<lb/>qi a&u-v;oit non <placeName ref="#edesse"
                      >&e-maj;desse</placeName> sanz congi&eacc; prendre&point-virg3;<lb/>si s<pc
                      type="reg">'</pc>en ala en une autre &u-v;ile qi <placeName ref="#laudesse"
                      >&l-maj;audesse</placeName>&esp;<lb/>estoit apelee.&esp;&l-maj;a ne re&u-v;out
@@ -597,20 +589,20 @@
                      <orig>E</orig>
                      <reg>e</reg>
                   </choice>t si dist&esp;<lb/>par lui me&itrem;smes qe la&esp;iroit il por ce c<pc
-                     type="reg">'</pc>on&esp;<lb/>ne&esp;l<pc type="reg">'</pc>i conoissoit mie.&esp;Qant il fu
-                  entrez&esp;<lb/>en&esp;la nef &esperluette-et;li&esp;&u-v;oiles fu
-                  tenduz&point-virg4;uns &u-v;ens&esp;<lb/>de&esp;terre le&esp;parti
-                  &esperluette-et;se&u-v;ra mout tost del port&esp;<lb/>&esperluette-et;tant les
-                  porta a&esp;grant force q<pc type="reg">'</pc>il
-                  &u-v;indr&etilde-en;t&esp;<lb/>a&esp;la cit&eacc; de&esp;<placeName ref="#rome"
-                     >&r-maj;ome</placeName> par la ri&u-v;iere del <placeName ref="#tibre"
-                     >&t-maj;oi&u-v;re</placeName>.&esp;<lb/>&l-maj;a issi <persName
+                     type="reg">'</pc>on&esp;<lb/>ne&esp;l<pc type="reg">'</pc>i conoissoit
+                  mie.&esp;Qant il fu entrez&esp;<lb/>en&esp;la nef
+                  &esperluette-et;li&esp;&u-v;oiles fu tenduz&point-virg4;uns
+                  &u-v;ens&esp;<lb/>de&esp;terre le&esp;parti &esperluette-et;se&u-v;ra mout tost
+                  del port&esp;<lb/>&esperluette-et;tant les porta a&esp;grant force q<pc type="reg"
+                     >'</pc>il &u-v;indr&etilde-en;t&esp;<lb/>a&esp;la cit&eacc; de&esp;<placeName
+                     ref="#rome">&r-maj;ome</placeName> par la ri&u-v;iere del <placeName
+                     ref="#tibre">&t-maj;oi&u-v;re</placeName>.&esp;<lb/>&l-maj;a issi <persName
                      ref="#saintalexis">seinz &a-maj;lexis</persName> a&esp;terre<pc type="orig"
                      ana="coordination">.</pc>&esp;&esperluette-et;si&esp;dist <pc type="reg"
-                     ana="DD">:</pc>&esp;<said who="#saintalexis">&c-maj;e saces&esp;<lb/>nostre &s-maj;ires<pc
-                        type="orig" ana="completive">.</pc>&esp;qe &i-j;e n<pc type="reg"
-                     >'</pc>enterrai en autre me<lb/>son qu<pc type="reg">'</pc>en la mon
-                     pere.</said>&esp;Lors s<pc type="reg">'</pc>en ala toute&esp;<lb/>la
+                     ana="DD">:</pc>&esp;<said who="#saintalexis">&c-maj;e saces&esp;<lb/>nostre
+                        &s-maj;ires<pc type="orig" ana="completive">.</pc>&esp;qe &i-j;e n<pc
+                        type="reg">'</pc>enterrai en autre me<lb/>son qu<pc type="reg">'</pc>en la
+                     mon pere.</said>&esp;Lors s<pc type="reg">'</pc>en ala toute&esp;<lb/>la
                   rue&deuxpoints-virg4;si&esp;com cil qi bien sa&u-v;oit la &u-v;oie.&esp;<lb/>Dont
                   a&u-v;int si&esp;la chose q<pc type="reg">'</pc>il encontra son&esp;<lb/>pere qi
                   re&u-v;enoit del pal&eacc;s l<pc type="reg">'</pc>empereor<pc type="orig"
@@ -619,33 +611,34 @@
                      &a-maj;lexis</persName> le &u-v;it&point-virg3;il parla a&esp;lui<pc
                      type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;&esp;<lb/>si&esp;li&esp;dist aussint com uns
-                  po&u-v;res hom&point-deuxpointsDial;<said who="#saintalexis">Serz&esp;<lb/>&d-maj;eu<pc type="reg"
-                        ana="apostrophe">,</pc> aies de&esp;moi merci
-                     &esperluette-et;piti&eacc;&#160; &esperluette-et;misericor<lb/>de qi sui
-                     po&u-v;res &esperluette-et;besoigneus &esperluette-et;si&esp;me herber<lb/>ge
-                     en&esp;ta meson &esperluette-et;done del relief de&esp;ta table&esp;<lb/>qe
-                     nostre &s-maj;ires &u-v;oelle bene&itrem;r ta&esp;&u-v;ie<pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;si te&esp;<lb/>doinst
-                     le&esp;regne des cius &esperluette-et;&u-v;oelle garder <pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;<lb/>raemplir de&esp;sa
-                     misericorde un fil&esp;qe tu as&esp;<lb/>qui est
-                  en&esp;pelerinage.</said>&esp;Qant <persName ref="#eufamianus"
-                     >&e-maj;ufemianus</persName>&esp;<lb/>o&itrem; parler de&esp;son
-                  fil&point-virg4;il se pensa qu<pc type="reg">'</pc>il herber<lb/>geroit celui qi
-                  estranges estoit.&esp;Dont fist&esp;<lb/>&u-v;enir <persName ref="#saintalexis"
-                     >seint &a-maj;lexi</persName> en&esp;sa meson por l<pc type="reg"
-                  >'</pc>amisti&eacc;&esp;<lb/>de&esp;son fil &esperluette-et;si dist a&esp;ses
-                     ser&i-j;anz&point-deuxpointsDial;<said who="#eufamianus">&l-maj;i queus&esp;<lb/>de&esp;&u-v;ous
-                     &u-v;oudra ser&u-v;ir cest po&u-v;re home es<lb/>trange&point-virg5;il sera
-                     frans toz les &i-j;ors de sa &u-v;ie <pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;li&esp;<lb/>donrai en messon rente
-                  assise.</said>&esp;Li&esp;uns res<lb/>pondi &esperluette-et;si&esp;dist<pc
-                     type="reg" ana="DD">:</pc>&esp;<said>Sire<pc type="reg" ana="apostrophe"
-                     >,</pc>&#160;&i-j;e ser&u-v;irai &u-v;olentiers&esp;<lb/>a&esp;cest besoigneus
-                     home a&esp;&u-v;ostre &u-v;olent&eacc;&esp;<lb/>si com &u-v;os
-                     dites.</said>&esp;<persName ref="#eufamianus">&e-maj;ufemianus</persName>
-                  li&esp;dist <pc type="reg" ana="DD">:</pc>&esp;<said who="#eufamianus">&f-maj;ai lui&esp;<lb/>un
-                     grabat por son lit fere iluec<pc type="reg" ana="apposition">,</pc> desoz
+                  po&u-v;res hom&point-deuxpointsDial;<said who="#saintalexis"
+                        >Serz&esp;<lb/>&d-maj;eu<pc type="reg" ana="apostrophe">,</pc> aies
+                     de&esp;moi merci &esperluette-et;piti&eacc;&#160;
+                     &esperluette-et;misericor<lb/>de qi sui po&u-v;res &esperluette-et;besoigneus
+                     &esperluette-et;si&esp;me herber<lb/>ge en&esp;ta meson &esperluette-et;done
+                     del relief de&esp;ta table&esp;<lb/>qe nostre &s-maj;ires &u-v;oelle
+                     bene&itrem;r ta&esp;&u-v;ie<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;si te&esp;<lb/>doinst le&esp;regne des cius
+                     &esperluette-et;&u-v;oelle garder <pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;<lb/>raemplir de&esp;sa misericorde un fil&esp;qe
+                     tu as&esp;<lb/>qui est en&esp;pelerinage.</said>&esp;Qant <persName
+                     ref="#eufamianus">&e-maj;ufemianus</persName>&esp;<lb/>o&itrem; parler
+                  de&esp;son fil&point-virg4;il se pensa qu<pc type="reg">'</pc>il herber<lb/>geroit
+                  celui qi estranges estoit.&esp;Dont fist&esp;<lb/>&u-v;enir <persName
+                     ref="#saintalexis">seint &a-maj;lexi</persName> en&esp;sa meson por l<pc
+                     type="reg">'</pc>amisti&eacc;&esp;<lb/>de&esp;son fil &esperluette-et;si dist
+                  a&esp;ses ser&i-j;anz&point-deuxpointsDial;<said who="#eufamianus">&l-maj;i
+                     queus&esp;<lb/>de&esp;&u-v;ous &u-v;oudra ser&u-v;ir cest po&u-v;re home
+                     es<lb/>trange&point-virg5;il sera frans toz les &i-j;ors de sa &u-v;ie <pc
+                        type="orig" ana="coordination">.</pc>&esp;&esperluette-et;li&esp;<lb/>donrai
+                     en messon rente assise.</said>&esp;Li&esp;uns res<lb/>pondi
+                     &esperluette-et;si&esp;dist<pc type="reg" ana="DD">:</pc>&esp;<said>Sire<pc
+                        type="reg" ana="apostrophe">,</pc>&#160;&i-j;e ser&u-v;irai
+                     &u-v;olentiers&esp;<lb/>a&esp;cest besoigneus home a&esp;&u-v;ostre
+                     &u-v;olent&eacc;&esp;<lb/>si com &u-v;os dites.</said>&esp;<persName
+                     ref="#eufamianus">&e-maj;ufemianus</persName> li&esp;dist <pc type="reg"
+                     ana="DD">:</pc>&esp;<said who="#eufamianus">&f-maj;ai lui&esp;<lb/>un grabat
+                     por son lit fere iluec<pc type="reg" ana="apposition">,</pc> desoz
                      ce&esp;degr&eacc;&esp;<lb/>de&u-v;ant l<pc type="reg">'</pc>entree de&esp;ma
                      chambre&point-virg4;si qe<pc type="reg" ana="subordonnee">,</pc>
                      qant&esp;<lb/>&i-j;e enterrai dedenz &esperluette-et;istrai fors<pc type="reg"
@@ -724,7 +717,8 @@
                      type="reg" ana="coordination">,</pc> si&esp;li dist q<pc type="reg">'</pc>il li
                   bail<lb/>last parchemin &esperluette-et;enque &esperluette-et;pene por
                   escrire.&esp;<lb/>Cil li quist erranment qe nule chose ne li&esp;<lb/>osoit
-                  contredire.&esp;Dont prist <persName ref="#saintalexis">seinz &a-maj;lexis</persName> le&esp;<lb/>parchemin<pc type="reg" ana="coordination"
+                  contredire.&esp;Dont prist <persName ref="#saintalexis">seinz
+                     &a-maj;lexis</persName> le&esp;<lb/>parchemin<pc type="reg" ana="coordination"
                      >,</pc> si escrist tote sa &u-v;ie<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;&neuf-con;ment&esp;<lb/>il a&u-v;oit al&eacc;&#160;
                      &esperluette-et;esploiti&eacc;<pc type="orig" ana="coordination"
@@ -759,12 +753,13 @@
                   en&esp;tel &u-v;oie &esperluette-et;en&esp;teil&esp;<lb/>maniere&point-virg4;il
                   se&esp;lessierent cheoir a&esp;terre de&esp;poor<pc type="reg" ana="coordination"
                      >,</pc>&esp;<lb/>si distrent&point-deuxpointsDial;<said><hi rend="rubricated"
-                           ><seg xml:lang="grec">K&ypoint;rie ele&ypoint;son&point-exclamation;</seg></hi><note>Trace
-                        de l'origine grecque de la Vie, grec présent dans la vie latine, mais pas
-                        dans la vie en AF du XIe</note></said>&esp;Apr&eacc;s ce qu<pc type="reg"
-                     >'</pc>il&esp;<lb/>orent einsint dit&point-virg4;la&esp;&u-v;oiz
-                  recomen&c-ced;a a&esp;dire&point-deuxpointsDial;<lb/><said>Qerez l<pc type="reg"
-                        >'</pc>ome &d-maj;eu<pc type="orig" ana="coordination"
+                           ><seg xml:lang="grec">K&ypoint;rie
+                           ele&ypoint;son&point-exclamation;</seg></hi><note>Trace de l'origine
+                        grecque de la Vie, grec présent dans la vie latine, mais pas dans la vie en
+                        AF du XIe</note></said>&esp;Apr&eacc;s ce qu<pc type="reg"
+                  >'</pc>il&esp;<lb/>orent einsint dit&point-virg4;la&esp;&u-v;oiz recomen&c-ced;a
+                     a&esp;dire&point-deuxpointsDial;<lb/><said>Qerez l<pc type="reg">'</pc>ome
+                        &d-maj;eu<pc type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;si&esp;li&esp;proiez q<pc type="reg">'</pc>il proit
                      por <placeName ref="#rome">&r-maj;ome</placeName>.</said>&esp;<lb/>
                </p>
@@ -810,18 +805,19 @@
                      &esperluette-et;la signorie&esp;<lb/>&esperluette-et;si ne la nos as mie
                      demostree&point-interrogation;</said>&esp;<persName ref="#eufamianus"
                      >Eufemiens</persName>&esp;<lb/>lor respondi
-                     &esperluette-et;dist&point-deuxpointsDial;<said who="#eufamianus">Ce sace nostre &s-maj;ires qe
-                     &i-j;e&esp;<lb/>mie n<pc type="reg">'</pc>en i&esp;sai.</said>&esp;Lors apela
-                  celui qi&esp;deseure tote&esp;<lb/>sa&esp;mesnie estoit<pc type="reg"
-                     ana="coordination">,</pc> si li dist&point-deuxpointsDial;<said who="#eufamianus">Sez tu li
-                     quieus&esp;<lb/>de ma mesnie a&esp;tel
-                  grace&point-interrogation;</said>&esp;Cil respondi <pc type="reg" ana="DD"
-                     >:</pc>&esp;<said>&j-maj;e n<pc type="reg">'</pc>&etilde-en;&esp;<lb/>conois
-                     mie.</said>&esp;Dont comanderent li empereor&esp;<lb/>q<pc type="reg">'</pc>en
-                  alast a&esp;la meson <persName ref="#eufamianus">&e-maj;ufemien</persName> qerre
-                     l<pc type="reg">'</pc>ome&esp;<lb/>nostre &s-maj;ignor.&esp;<persName
-                     ref="#eufamianus">Eufemiens</persName> en&u-v;oia de&u-v;ant&esp;<lb/>en sa
-                  meson por apareillier les sieges &esperluette-et;por&esp;<lb/>fere beau luminaire
+                     &esperluette-et;dist&point-deuxpointsDial;<said who="#eufamianus">Ce sace
+                     nostre &s-maj;ires qe &i-j;e&esp;<lb/>mie n<pc type="reg">'</pc>en
+                     i&esp;sai.</said>&esp;Lors apela celui qi&esp;deseure
+                  tote&esp;<lb/>sa&esp;mesnie estoit<pc type="reg" ana="coordination">,</pc> si li
+                     dist&point-deuxpointsDial;<said who="#eufamianus">Sez tu li quieus&esp;<lb/>de
+                     ma mesnie a&esp;tel grace&point-interrogation;</said>&esp;Cil respondi <pc
+                     type="reg" ana="DD">:</pc>&esp;<said>&j-maj;e n<pc type="reg"
+                     >'</pc>&etilde-en;&esp;<lb/>conois mie.</said>&esp;Dont comanderent li
+                     empereor&esp;<lb/>q<pc type="reg">'</pc>en alast a&esp;la meson <persName
+                     ref="#eufamianus">&e-maj;ufemien</persName> qerre l<pc type="reg"
+                  >'</pc>ome&esp;<lb/>nostre &s-maj;ignor.&esp;<persName ref="#eufamianus"
+                     >Eufemiens</persName> en&u-v;oia de&u-v;ant&esp;<lb/>en sa meson por
+                  apareillier les sieges &esperluette-et;por&esp;<lb/>fere beau luminaire
                   &esperluette-et;embraser encens a&esp;<lb/>o&eacc;s ceus qi
                   i&esp;&u-v;endroient&point-virg3;car tele estoit la&esp;<lb/>costume
                   adonc.&esp;Einsint le firent li ser&i-j;ant&esp;<lb/>com il lor estoit
@@ -839,10 +835,10 @@
                      type="reg" ana="apposition">,</pc> la mere <persName ref="#saintalexis"
                      >se&itilde-in;t&esp;<lb/>&a-maj;lexis</persName><pc type="reg" ana="apposition"
                      >,</pc> sozhau&c-ced;a le sidoine qi&esp;de&u-v;ant une fene<lb/>stre estoit ou
-                  ele gisoit &esperluette-et;si&esp;dist&point-deuxpointsDial;<said who="#aglaise">Qieus
-                     resons&esp;<lb/>est ce &esperluette-et;qieus noise &esperluette-et;de qoi sont
-                     cez paroles&point-interrogation;</said>&esp;<lb/>Sa brus qi de&u-v;ant li
-                  estoit li disoit tout ce&esp;<lb/>q<pc type="reg">'</pc>ele &u-v;eoit<pc
+                  ele gisoit &esperluette-et;si&esp;dist&point-deuxpointsDial;<said who="#aglaise"
+                     >Qieus resons&esp;<lb/>est ce &esperluette-et;qieus noise &esperluette-et;de
+                     qoi sont cez paroles&point-interrogation;</said>&esp;<lb/>Sa brus qi de&u-v;ant
+                  li estoit li disoit tout ce&esp;<lb/>q<pc type="reg">'</pc>ele &u-v;eoit<pc
                      type="orig" ana="coordination">:</pc>&esp;&esperluette-et;qe la a&u-v;oit grant
                   assemblee&esp;<lb/>de&esp;genz.&esp;Li ser&i-j;anz qui <persName
                      ref="#saintalexis">seint &a-maj;lexi</persName> gardoit&esp;<lb/>dist a
@@ -891,8 +887,8 @@
                      <orig>I</orig>
                      <reg>i</reg>
                   </choice>l repaira as empereors arrie<lb/>re &esperluette-et;si lor
-                     dist&point-deuxpointsDial;<said who="#eufamianus">Nos a&u-v;ons tro&u-v;&eacc; celui
-                     que&esp;<lb/>nos querons.</said>&esp;Dont lor &neuf-con;men&c-ced;a
+                     dist&point-deuxpointsDial;<said who="#eufamianus">Nos a&u-v;ons tro&u-v;&eacc;
+                     celui que&esp;<lb/>nos querons.</said>&esp;Dont lor &neuf-con;men&c-ced;a
                   a&esp;conter la&esp;&u-v;ie&esp;<lb/>qe&esp;li seinz hom a&u-v;oit&esp;<pc
                      ana="number">.</pc><seg type="number">xvii</seg><pc ana="number">.</pc>&esp;anz
                   demenee en&esp;<lb/>sa meson<pc type="orig" ana="coordination"
@@ -915,20 +911,20 @@
                      <orig>T</orig>
                      <reg>t</reg>
                   </choice>out&esp;<lb/>em&esp;plorant<pc type="reg" ana="coordination">,</pc> si
-                     distrent&point-deuxpointsDial;<said who="#honorius #archades">Seinz hom qi ci gis<pc type="reg"
-                        ana="apostrophe">,</pc>&esp;<lb/>encore soions nos pecheors&point-virg4;si
-                     somes nos em<lb/>pereors<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;ci est li apostoiles qi peres est as
-                        cres<lb/>tiens<pc type="reg" ana="apposition">,</pc> done cele chartre qe
-                     nos sa&c-ced;ons qi tu&esp;<lb/>ies &esperluette-et;q<pc type="reg">'</pc>ele
-                     senefie.</said>&esp;Tantost o&u-v;ri <persName ref="#saintalexis">seinz
-                     &a-maj;lexis</persName>&esp;<lb/>sa mein<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;lor lessa aler la chartre q<pc type="reg">'</pc>il
-                  de&u-v;ant&esp;<lb/>ne &u-v;oloit baillier a&esp;son
+                     distrent&point-deuxpointsDial;<said who="#honorius #archades">Seinz hom qi ci
+                        gis<pc type="reg" ana="apostrophe">,</pc>&esp;<lb/>encore soions nos
+                     pecheors&point-virg4;si somes nos em<lb/>pereors<pc type="orig"
+                        ana="coordination">.</pc>&esp;&esperluette-et;ci est li apostoiles qi peres
+                     est as cres<lb/>tiens<pc type="reg" ana="apposition">,</pc> done cele chartre
+                     qe nos sa&c-ced;ons qi tu&esp;<lb/>ies &esperluette-et;q<pc type="reg"
+                     >'</pc>ele senefie.</said>&esp;Tantost o&u-v;ri <persName ref="#saintalexis"
+                     >seinz &a-maj;lexis</persName>&esp;<lb/>sa mein<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;lor lessa aler la chartre q<pc
+                     type="reg">'</pc>il de&u-v;ant&esp;<lb/>ne &u-v;oloit baillier a&esp;son
                   pere.&esp;Donc&esp;la&esp;baillie<lb/>rent li empereor a&esp;un clerc<pc
                      type="reg" ana="coordination">,</pc> si&esp;li
-                  &neuf-con;manderent&esp;<lb/>a&esp;lire.&esp;Tuit cil qi la estoient se
-                  teurent &esperluette-et;li&esp;<lb/>clers lut la chartre tote outre
+                  &neuf-con;manderent&esp;<lb/>a&esp;lire.&esp;Tuit cil qi la estoient se teurent
+                  &esperluette-et;li&esp;<lb/>clers lut la chartre tote outre
                   &esperluette-et;esponst oi<lb/>ant touz.&esp;<lb/>
                </p>
             </div>
@@ -948,12 +944,13 @@
                   >:</pc>&esp;&esperluette-et;si detrest toz ses
                   che&u-v;eus&esp;<lb/>&esperluette-et;se lessa cheoir parmi le cors tout
                   plorant&esp;<lb/>&esperluette-et;criant a&esp;longue alaine &esperluette-et;si
-                     disoit&point-deuxpointsDial;<said who="#eufamianus">&h-maj;ee&deuxpoints-exclamation;&m-maj;es&esp;<lb/>tres
-                     doz fiuz<pc type="reg" ana="apostrophe">,</pc> por qoi a&u-v;ez &u-v;os
+                     disoit&point-deuxpointsDial;<said who="#eufamianus"
+                     >&h-maj;ee&deuxpoints-exclamation;&m-maj;es&esp;<lb/>tres doz fiuz<pc
+                        type="reg" ana="apostrophe">,</pc> por qoi a&u-v;ez &u-v;os
                         si&esp;corroci&eacc;<pc type="orig" ana="COD">.</pc>&esp;<lb/>m<pc
                         type="reg">'</pc>ame&point-interrogation;&et-maj;por qoi a&u-v;ez &u-v;os
-                     mis si&esp;grant&esp;<lb/>duel en mon cuer toz les &i-j;orz de
-                        <corr type="add">ma</corr><note>ma] sa C1 correction d'après ms.
+                     mis si&esp;grant&esp;<lb/>duel en mon cuer toz les &i-j;orz de <corr type="add"
+                        >ma</corr><note>ma] sa C1 correction d'après ms.
                      411</note>&esp;&u-v;ie&point-interrogation;Bea&apos-us;&esp;<lb/>fiuz douz<pc
                         type="reg" ana="apostrophe">,</pc>&#160;&i-j;e&esp;cuidoie parler
                         a&esp;toi<pc type="orig" ana="CC">.</pc>&esp;por sa&u-v;oir&esp;<lb/>qi tu
@@ -985,11 +982,11 @@
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;ses
                   che&u-v;eus&esp;<lb/>meesmement desrompoit ele a&esp;ses meins&esp;<lb/>come
                      forsenee<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;regardoit
-                  a&esp;la fo&itrem;e &u-v;ers le&esp;<lb/>ciel &esperluette-et;a&esp;la fo&itrem;e &u-v;ers le
-                  pueple qi entor li es<lb/>toit<pc type="reg" ana="coordination">,</pc> si lor
-                     disoit&point-deuxpointsDial;<said who="#aglaise">Beles genz<pc type="reg" ana="apostrophe"
-                        >,</pc> car me lessiez&esp;<lb/>por &d-maj;eu aler &u-v;eoir mon fil
-                     a&esp;cui l<pc type="reg">'</pc>esperance&esp;<lb/>estoit de ma &u-v;ie
+                  a&esp;la fo&itrem;e &u-v;ers le&esp;<lb/>ciel &esperluette-et;a&esp;la fo&itrem;e
+                  &u-v;ers le pueple qi entor li es<lb/>toit<pc type="reg" ana="coordination">,</pc>
+                  si lor disoit&point-deuxpointsDial;<said who="#aglaise">Beles genz<pc type="reg"
+                        ana="apostrophe">,</pc> car me lessiez&esp;<lb/>por &d-maj;eu aler &u-v;eoir
+                     mon fil a&esp;cui l<pc type="reg">'</pc>esperance&esp;<lb/>estoit de ma &u-v;ie
                      &esperluette-et;cui &i-j;e aletai de&esp;mes ma<lb/>meles.</said>&esp;Qant ele
                   a&u-v;oit ce dit<pc type="reg">,</pc> ele se referoit&esp;<lb/>enmi le piz
                   &esperluette-et;redemenoit une doleur si des<pc type="reg">-</pc><lb/><pb n="170"
@@ -1001,32 +998,34 @@
                      <orig>S</orig>
                      <reg>s</reg>
                   </choice>&esp;
-                     &u-v;ois&esp;<lb/>&esperluette-et;si&esp;disoit&point-deuxpointsDial;<said who="#aglaise">Vous
-                     toz &esperluette-et;toutes qi&esp;ci estes assam<lb/>blez<pc type="reg"
-                        ana="apostrophe">,</pc>&#160; &esperluette-et;plorez ensemble o&esp;moi
-                     &esperluette-et;demenez do<lb/>leur&deuxpoints-virg4;por ce qe mes fuiz
-                        a&esp;est&eacc;&esp;<pc ana="number">.</pc><seg type="number">xvii</seg><pc
-                        ana="number">.</pc>&esp;anz en&esp;<lb/>ma meson ne ne le conut nus hom<pc
-                        type="orig" ana="completive">.</pc>&esp;qe ce&esp;<lb/>fust <persName
-                        ref="#saintalexis">&a-maj;lexis</persName><pc type="reg" ana="apposition">,</pc> l<pc type="reg">'</pc>esperance
-                     de&esp;ma &u-v;ie.&esp;Si serf&esp;<lb/>le leidengoient ne ne sa&u-v;oient qui
-                     il estoit&esp;<lb/>ne ne le conissoient.</said>&esp;Dont se rescrioit
-                  a&esp;hau<lb/>tes &u-v;oiz apr&eacc;s
-                     &esperluette-et;disoit&point-deuxpointsDial;<said who="#aglaise">Beaus fiuz qui lu<lb/>miere
-                     estoiez de&esp;mes iols&point-virg2;coment te pe&utrem;s&esp;<lb/>tu&esp;celer en la
-                     meson ton pere si loing ter<lb/>mine&point-interrogation;</said>&esp;Lors
-                  baisoit le cors<pc type="reg" ana="coordination">,</pc> si
-                        disoit&point-deuxpointsDial;<said who="#aglaise">Beaus&esp;<lb/>fuiz<pc type="reg"
-                        ana="apostrophe">,</pc> por qoi a&u-v;ez &u-v;os einsint o&u-v;r&eacc;&#160;
+                     &u-v;ois&esp;<lb/>&esperluette-et;si&esp;disoit&point-deuxpointsDial;<said
+                     who="#aglaise">Vous toz &esperluette-et;toutes qi&esp;ci estes
+                        assam<lb/>blez<pc type="reg" ana="apostrophe">,</pc>&#160;
+                     &esperluette-et;plorez ensemble o&esp;moi &esperluette-et;demenez
+                     do<lb/>leur&deuxpoints-virg4;por ce qe mes fuiz a&esp;est&eacc;&esp;<pc
+                        ana="number">.</pc><seg type="number">xvii</seg><pc ana="number"
+                     >.</pc>&esp;anz en&esp;<lb/>ma meson ne ne le conut nus hom<pc type="orig"
+                        ana="completive">.</pc>&esp;qe ce&esp;<lb/>fust <persName ref="#saintalexis"
+                        >&a-maj;lexis</persName><pc type="reg" ana="apposition">,</pc> l<pc
+                        type="reg">'</pc>esperance de&esp;ma &u-v;ie.&esp;Si serf&esp;<lb/>le
+                     leidengoient ne ne sa&u-v;oient qui il estoit&esp;<lb/>ne ne le
+                     conissoient.</said>&esp;Dont se rescrioit a&esp;hau<lb/>tes &u-v;oiz apr&eacc;s
+                     &esperluette-et;disoit&point-deuxpointsDial;<said who="#aglaise">Beaus fiuz qui
+                     lu<lb/>miere estoiez de&esp;mes iols&point-virg2;coment te
+                     pe&utrem;s&esp;<lb/>tu&esp;celer en la meson ton pere si loing
+                     ter<lb/>mine&point-interrogation;</said>&esp;Lors baisoit le cors<pc type="reg"
+                     ana="coordination">,</pc> si disoit&point-deuxpointsDial;<said who="#aglaise"
+                        >Beaus&esp;<lb/>fuiz<pc type="reg" ana="apostrophe">,</pc> por qoi a&u-v;ez
+                     &u-v;os einsint o&u-v;r&eacc;&#160;
                      &u-v;ers&esp;<lb/>moi&point-interrogation;Vouz &u-v;ei&eacc;s &u-v;ostre pere
                      &esperluette-et;moi chasc&utilde-un;&esp;<lb/>&i-j;or plorer por &u-v;os<pc
                         type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si ne &u-v;os
                      desco&u-v;riez&esp;<lb/>mie ne n<pc type="reg">'</pc>a&u-v;iez piti&eacc; ne
-                     misericorde de nos&point-exclamation;</said>&esp;<lb/>A&esp;ceus qi&esp;la&esp;chastioient
-                  &esperluette-et;confortoient
-                     disoit&esp;<lb/>ele&point-deuxpointsDial;<said who="#aglaise">&l-maj;essiez moi ma&esp;grant
-                     dolor demener<pc type="reg" ana="coordination">,</pc> car&esp;<lb/>&i-j;e l<pc
-                        type="reg">'</pc>ai assez de&esp;qoi
+                     misericorde de nos&point-exclamation;</said>&esp;<lb/>A&esp;ceus
+                  qi&esp;la&esp;chastioient &esperluette-et;confortoient
+                     disoit&esp;<lb/>ele&point-deuxpointsDial;<said who="#aglaise">&l-maj;essiez moi
+                     ma&esp;grant dolor demener<pc type="reg" ana="coordination">,</pc>
+                     car&esp;<lb/>&i-j;e l<pc type="reg">'</pc>ai assez de&esp;qoi
                   fere.</said>&esp;<lb/>
                </p>
             </div>
@@ -1046,23 +1045,23 @@
                      &u-v;e&u-v;e&point-exclamation;&c-maj;ui gar<lb/>derai &i-j;e<pc type="reg"
                         ana="finPhrase">?</pc> mes ne atenderai<pc type="orig" ana="COD"
                      >:</pc>&esp;nule chose se&esp;<lb/>ploremenz non toz les &i-j;orz
-                     de&esp;ma&esp;&u-v;ie.</said>&esp;Li peu<lb/>ples qi&esp;la
-                  estoient assemblez &esperluette-et;la genz s<pc type="reg"
-                  >'</pc>es<lb/>bahissoient &esperluette-et;esmer&u-v;eilloient mout du<lb/>rement
-                  de&esp;ce q<pc type="reg">'</pc>il &u-v;eoient &esperluette-et;si&esp;ploroient<pc
-                     type="orig" ana="CC">.</pc>&esp;por&esp;<lb/>la&esp;dolor q<pc type="reg"
-                     >'</pc>il &u-v;eoient fere au pere &esperluette-et;a&esp;la
-                  mere&esp;<lb/>&esperluette-et;a&esp;la feme <persName ref="#saintalexis">seint &a-maj;lexi</persName>.&esp;Dont comanderent&esp;<lb/>li dui empereor c<pc
-                     type="reg">'</pc>on aportast le lit sor qoi&esp;<lb/>li&esp;seinz hom gisoit
-                  enmi la&esp;cit&eacc;<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;si firent&esp;<lb/>par<pc type="orig" ana="mot"
-                     >&#160;</pc>tout noncier &esperluette-et;dire q<pc type="reg">'</pc>il
-                  a&u-v;oient tro<lb/>&u-v;&eacc; l<pc type="reg">'</pc>ome &d-maj;eu q<pc
-                     type="reg">'</pc>il a&u-v;oient quis.&esp;Tuit re&u-v;e<lb/>noient encontre le
-                  seint cors&point-virg7;homes<pc type="reg" ana="enumeration">,</pc>
-                     fe<lb/>mes<pc type="reg" ana="enumeration">,</pc>&#160;&esperluette-et;cil qi enferm
-                  estoient de lor maladies&esp;<lb/>&esperluette-et;languereus i&esp;guerissoient
-                  de&esp;lor enferme<lb/>tez.&esp;Li muel i&esp;ra&u-v;oient lor
+                     de&esp;ma&esp;&u-v;ie.</said>&esp;Li peu<lb/>ples qi&esp;la estoient assemblez
+                  &esperluette-et;la genz s<pc type="reg">'</pc>es<lb/>bahissoient
+                  &esperluette-et;esmer&u-v;eilloient mout du<lb/>rement de&esp;ce q<pc type="reg"
+                     >'</pc>il &u-v;eoient &esperluette-et;si&esp;ploroient<pc type="orig" ana="CC"
+                     >.</pc>&esp;por&esp;<lb/>la&esp;dolor q<pc type="reg">'</pc>il &u-v;eoient fere
+                  au pere &esperluette-et;a&esp;la mere&esp;<lb/>&esperluette-et;a&esp;la feme
+                     <persName ref="#saintalexis">seint &a-maj;lexi</persName>.&esp;Dont
+                  comanderent&esp;<lb/>li dui empereor c<pc type="reg">'</pc>on aportast le lit sor
+                  qoi&esp;<lb/>li&esp;seinz hom gisoit enmi la&esp;cit&eacc;<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;si firent&esp;<lb/>par<pc
+                     type="orig" ana="mot">&#160;</pc>tout noncier &esperluette-et;dire q<pc
+                     type="reg">'</pc>il a&u-v;oient tro<lb/>&u-v;&eacc; l<pc type="reg">'</pc>ome
+                  &d-maj;eu q<pc type="reg">'</pc>il a&u-v;oient quis.&esp;Tuit re&u-v;e<lb/>noient
+                  encontre le seint cors&point-virg7;homes<pc type="reg" ana="enumeration">,</pc>
+                     fe<lb/>mes<pc type="reg" ana="enumeration">,</pc>&#160;&esperluette-et;cil qi
+                  enferm estoient de lor maladies&esp;<lb/>&esperluette-et;languereus
+                  i&esp;guerissoient de&esp;lor enferme<lb/>tez.&esp;Li muel i&esp;ra&u-v;oient lor
                   paroles&point-virg7;li a&u-v;u<lb/>gle lor &u-v;e&utrem;es&point-virg7;li liepreus
                   i&esp;estoient mondez<pc type="reg" ana="enumeration"
                   >,</pc>&esp;<lb/>li&esp;der&u-v;&eacc; i&esp;guerissoient.&esp;Ces miracles
@@ -1133,7 +1132,8 @@
                   me<lb/>rite qu<pc type="reg">'</pc>il i&esp;peire&point-virg;car qi bon signor
                   sert bon<lb/>ne merite atent<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;qi mau&u-v;&eacc;s le siert&esp;<lb/>si s<pc
-                     type="reg">'</pc>en repent so&u-v;ent.&esp;<persName ref="#saintalexis">Seinz &a-maj;lexis</persName> ser&u-v;i&esp;<lb/>bon&esp;signor&deuxpoints-virg4;qant
+                     type="reg">'</pc>en repent so&u-v;ent.&esp;<persName ref="#saintalexis">Seinz
+                     &a-maj;lexis</persName> ser&u-v;i&esp;<lb/>bon&esp;signor&deuxpoints-virg4;qant
                   il se tint as
                   comande&mbarre-men;z&esp;<lb/>&esperluette-et;a&esp;la&esp;lo&ypoint; nostre
                   &s-maj;ignor&deuxpoints-point;&d-maj;ont la&esp;plus grant&esp;<lb/>partie de ceus

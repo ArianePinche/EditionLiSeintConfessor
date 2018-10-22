@@ -7,17 +7,40 @@
         <xsl:param name="string"/>
         <xsl:value-of select="translate($string, 'áàâäéèêëíìîïóòôöúùûü', 'aaaaeeeeiiiioooouuuu')"/>
     </xsl:function>
-    <xsl:function name="my:regularize">
+    <xsl:function name="my:regularizeName">
         <xsl:param name="node"/>
         <xsl:variable name="var"
             select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg' and not(text() = '-')])"/>
-        <xsl:value-of select="replace(string-join($var), '\s+', ' ')"/>
+        <xsl:value-of select="
+            normalize-space(
+                replace(
+                    replace(
+                        string-join($var),
+                        '&#160;',
+                        ' ')
+                    , '^\s*[sS][ae]in[tze]{0,2}s?',
+                    ''
+                )
+            )"/>
+    </xsl:function>
+    <xsl:function name="my:regularizePlace">
+        <xsl:param name="node"/>
+        <xsl:variable name="var"
+            select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg' and not(text() = '-')])"/>
+        <xsl:value-of select="
+            normalize-space(
+            replace(
+            string-join($var),
+            '&#160;',
+            ' '
+            )
+            )"/>
     </xsl:function>
     <!-- enlève les espaces de l'element cité / balise nécessaire pour le traitement LaTeX-->
     <xsl:strip-space elements="*"/>
     <xsl:output method="text" encoding="UTF-8"/>
     <xsl:template
-        match="tei:teiCorpus/tei:teiHeader[1]">
+        match="tei:teiCorpus/tei:teiHeader[1]">^
         <xsl:variable name="witfile">
             <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
@@ -50,13 +73,13 @@
             
             ﻿\chapter*{Index}           
             ﻿ ﻿\paragraph*{}
-            Cet index a pour objectif de permettre l'identification des noms propres et des toponymes qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs formes relevées dans le texte. Ainsi pour un nom donné on trouvera successivement :
+            Cet index a pour objectif de permettre l'identification des noms propres et des toponymes qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs occurrences. Ainsi pour un nom donné on trouvera successivement :
             \begin{list}{-}{}
-            \item En petites capitales, la forme qui sert de base au regroupement est la forme la plus représentée dans le texte. Dans les cas où la vedette fait mention d'un personnage historique, ses dates, dans la mesure du possible, sont indiquées à la suite entre parenthèses. Les noms de saint sont classés sous la forme de leur prénom uniquement, en revanche nous avons indiqué la présence ou non de l'adjectif \og saint \fg{} dans la mention de l'occurence relevée.   
-            \subitem Exemple : \textsc{Martin (saint)};
-            \item Ces formes sont suivies de la référence à la Vie du saint et du ou des chapitres où elles apparaissent. La Vie est signalée par le prénom du saint entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og dialogues \fg{}  entre crochets.
-            \subitem Exemple : [Martin];
-            \item En italique est donnée l'identification du personnage et du nom de lieu. 
+            \item En petites capitales, la forme qui sert de base au ﻿regroupement﻿\footnote{Dans la mesure du possible, forme la plus fréquente parmi les occurrences du corpus}. Dans les cas où la vedette fait mention d'un personnage historique, ses dates, dans la mesure du possible, sont indiquées à la suite entre parenthèses.   
+            \subitem Exemple : \textsc{Martin} (316-397);
+            \item  La graphie de l'occurrence, dans les cas où cette dernière est différente de la vedette, suivie de la référence à la Vie du saint et du ou des chapitres où apparaissent les occurrences. La Vie est signalée par le prénom du saint entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og Dialogues \fg{}  entre crochets.
+            \subitem Exemple : Martins :  [Martin] 1,  2,  3,
+            \item En italique, les notes permettant l'identification du personnage et du lieu. 
             \end{list}
             \begin{center}
             \section*{Index des noms propres}
@@ -86,44 +109,59 @@
     <xsl:template name="NomPropre">
         <xsl:for-each select="descendant::tei:person">
             <xsl:sort order="ascending" select="my:no-accent(tei:persName)"/>
-            <xsl:variable name="id">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:variable>
-            <xsl:variable name="persName">
-                <xsl:value-of select="tei:persName"/>
-            </xsl:variable>
+            <xsl:variable name="id" select="@xml:id" />
+            <xsl:variable name="persName" select="tei:persName/text()" />
+            
             \textsc{<xsl:value-of select="tei:persName"/>}<xsl:if test="tei:death">
                 <xsl:text> (</xsl:text><xsl:choose><xsl:when test="tei:birth"><xsl:apply-templates select="tei:birth"/>
                     <xsl:text>-</xsl:text></xsl:when><xsl:otherwise><xsl:if test="tei:death/@when">†</xsl:if></xsl:otherwise></xsl:choose>
                 <xsl:apply-templates select="tei:death"/>
                 <xsl:text>)</xsl:text>
-            </xsl:if> :
+            </xsl:if><xsl:text> : </xsl:text>
+            <!-- On sélectionne l'ensemble des occurrences par souci de lisibilité et performance -->
+            <xsl:variable name="occurrences" select="//tei:body//tei:persName[
+                @ref = '#' || $id and 
+                not(ancestor::tei:head)]"/>
+            <!-- On affiche d'abord, si elle existe, les occurrences dont la graphie est = à celle de la 
+                vedette -->
+            <xsl:call-template name="GraphiePersNames">
+                <xsl:with-param name="persNames" select="$occurrences[my:regularizeName(.) = $persName]" />
+                <!-- On ne sélectionne que les occurrences de la vedette -->
+                <xsl:with-param name="graphie" select="false()" />
+                <!-- On n'affiche pas la graphie elle-même -->
+            </xsl:call-template>
+       
             <xsl:for-each-group
-                select="//tei:body//tei:persName[@ref = '#' || $id and not(ancestor::tei:head)]"
-                group-by="my:regularize(.)">
+                select="$occurrences[my:regularizeName(.) != $persName]"
+                group-by="my:regularizeName(.)">
+                <!-- Ici, on récupère chaque graphie trouvées de la personne concernée quelque soit la vie -->
                 <xsl:sort order="ascending" select="current-grouping-key()"/>
-                <xsl:text> </xsl:text>
-                <xsl:if test="current-grouping-key() != $persName ">
-                    <xsl:apply-templates mode="reg" select="current()"/>
-                    <xsl:text> : </xsl:text>
+                <!-- On trie par l'orthographe de celle-ci. -->
+                <xsl:if test="current-grouping-key() != $persName">
+                    <xsl:call-template name="GraphiePersNames">
+                       <xsl:with-param name="persNames" select="current-group()" />
+                       <xsl:with-param name="graphie" select="true()" />
+                    </xsl:call-template>
                 </xsl:if>
-                <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
-                    <xsl:text> </xsl:text>
-                    <xsl:call-template name="NomVie"/>
-                    <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
-                        group-by="@n">
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="@n"/>
-                        <xsl:choose>    
-                            <xsl:when test="position() = last()"><xsl:text>; </xsl:text></xsl:when>
-                            <xsl:otherwise>, </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each-group>
-                </xsl:for-each-group>
             </xsl:for-each-group>
             \textit{<xsl:apply-templates select="tei:note"/>}\\
         </xsl:for-each>
     </xsl:template>
+    <xsl:template name="GraphiePersNames">
+        <xsl:param name="graphie"/><!-- Booleen : si vrai, on affiche la graphie -->
+        <xsl:param name="persNames"/>
+        <xsl:if test="$graphie = true()">
+            <!-- On n'affiche pas les occurrences si celle-ci est celle de la vedette -->
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates mode="regName" select="$persNames[1]"/>
+            <xsl:text> : </xsl:text>
+        </xsl:if>
+        <xsl:for-each-group select="$persNames" group-by="ancestor::tei:body/@n">
+            <xsl:call-template name="group" />
+        </xsl:for-each-group>
+    </xsl:template>
+    
+    
     <xsl:template name="NomLieu">
         <xsl:for-each select="descendant::tei:place">
             <xsl:sort order="ascending" select="my:no-accent(tei:placeName)"/>
@@ -133,62 +171,72 @@
             <xsl:variable name="placeName">
                 <xsl:value-of select="tei:placeName"/>
             </xsl:variable>
-            \textsc{<xsl:value-of select="tei:placeName"/>}<xsl:text>, </xsl:text><xsl:for-each-group
-                select="//tei:body//tei:placeName[@ref = '#' || $id and not(ancestor::tei:head)]"
-                group-by="my:regularize(.)">
+            
+            \textsc{<xsl:value-of select="tei:placeName"/>}<xsl:text> : </xsl:text>
+            <xsl:variable name="occurrences" select="//tei:body//tei:placeName[
+                @ref = '#' || $id and 
+                not(ancestor::tei:head)]"/>
+            <!-- On affiche d'abord, si elle existe, les occurrences dont la graphie est = à celle de la 
+                vedette -->
+            
+            <xsl:call-template name="GraphieplaceNames">
+                <xsl:with-param name="placesNames" select="$occurrences[my:regularizePlace(.) = $placeName]" />
+                <!-- On ne sélectionne que les occurrences de la vedette -->
+                <xsl:with-param name="graphie" select="false()" />
+                <!-- On n'affiche pas la graphie elle-même -->
+            </xsl:call-template>
+            
+            
+            <xsl:for-each-group
+                select="$occurrences[my:regularizePlace(.) != $placeName]"
+                group-by="my:regularizePlace(.)">
+                <!-- Ici, on récupère chaque graphie trouvées de la personne concernée quelque soit la vie -->
                 <xsl:sort order="ascending" select="current-grouping-key()"/>
-                <xsl:variable name="ref">
-                    <xsl:value-of select="replace(@ref, '#', '')"/>
-                </xsl:variable>
-                <xsl:text> </xsl:text>
-                <xsl:if test="current-grouping-key() != $placeName ">
-                    <xsl:apply-templates mode="reg" select="current()"/>
-                    <xsl:text>: </xsl:text>
+                <!-- On trie par l'orthographe de celle-ci. -->
+                <xsl:if test="current-grouping-key() != $placeName">
+                    <xsl:call-template name="GraphieplaceNames">
+                        <xsl:with-param name="placesNames" select="current-group()" />
+                        <xsl:with-param name="graphie" select="true()" />
+                    </xsl:call-template>
                 </xsl:if>
-                <xsl:for-each-group select="current-group()" group-by="ancestor::tei:body/@n">
-                    <xsl:text> </xsl:text>
-                    <xsl:call-template name="NomVie"/>
-                    <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
-                        group-by="@n">
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="@n"/>
-                        <xsl:choose>    
-                            <xsl:when test="position() = last()">
-                                <xsl:choose>
-                                    <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note "><xsl:text>; </xsl:text></xsl:when>
-                                    <xsl:otherwise/>
-                                </xsl:choose>
-                            </xsl:when>
-                            <xsl:otherwise>, </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each-group>
-                    <xsl:choose>    
-                        <xsl:when test="position() != last()">
-                            <xsl:choose>
-                                <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note"/>
-                                <xsl:otherwise><xsl:text>; </xsl:text></xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose>
-                </xsl:for-each-group>
-                <xsl:choose>    
-                    <xsl:when test="position() != last()">
-                        <xsl:choose>
-                            <xsl:when test="ancestor::tei:teiCorpus/tei:teiHeader//tei:place[@xml:id = $ref]/tei:note"/>
-                            <xsl:otherwise><xsl:text>; </xsl:text></xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:otherwise/>
-                </xsl:choose>
             </xsl:for-each-group>
             \textit{<xsl:apply-templates select="tei:note"/>}\\
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="tei:persName|tei:placeName" mode="reg">
+        <xsl:template name="GraphieplaceNames">
+            <xsl:param name="graphie"/><!-- Booleen : si vrai, on affiche la graphie -->
+            <xsl:param name="placesNames"/>
+            <xsl:if test="$graphie = true()">
+                <!-- On n'affiche pas les occurrences si celle-ci est celle de la vedette -->
+                <xsl:text> </xsl:text>
+                <xsl:apply-templates mode="regPlace" select="$placesNames[1]"/>
+                <xsl:text> : </xsl:text>
+            </xsl:if>
+            <xsl:for-each-group select="$placesNames" group-by="ancestor::tei:body/@n">
+                <xsl:call-template name="group" />
+            </xsl:for-each-group>
+        </xsl:template>
+    
+        <xsl:template name="group">
+           <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
+                group-by="@n">
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="@n"/>
+                <xsl:choose>    
+                    <xsl:when test="position() = last()"><xsl:text>; </xsl:text></xsl:when>
+                    <xsl:otherwise>, </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each-group>
+        </xsl:template>
+           
+    <xsl:template match="tei:persName" mode="regName">
         <xsl:value-of
-            select="my:regularize(.)"/>
+            select="my:regularizeName(.)"/>
+    </xsl:template>
+    <xsl:template match="tei:placeName" mode="regPlace">
+        <xsl:value-of
+            select="my:regularizePlace(.)"/>
     </xsl:template>
     <xsl:template name="NomVie">
         <xsl:choose>

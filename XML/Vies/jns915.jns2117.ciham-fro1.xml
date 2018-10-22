@@ -534,6 +534,16 @@
                   </location>
                   <note>Corinthe, ville portuaire de Grêce.</note>
                </place>
+                <place xml:id="claudiomas" corresp="https://pleiades.stoa.org/places/138299">
+                    <placeName>Claudiomias</placeName>
+                    <location>
+                        <geo>46.941585 1.232804</geo>
+                    </location>
+                    <note>Cité romaine dont le nom est formé sur le nom de l'empereur Claude et
+                        du terme Gaulois "magus" qui désigne "le marche, le champ, la plaine".
+                        Située dans l'Indre, il s'agit de l'actuelle commune de
+                        CLion-Sur-Indre.</note>
+                </place>
             <place xmlns:tei="http://www.tei-c.org/ns/1.0"
                    xml:id="cyrene"
                    corresp="https://pleiades.stoa.org/places/981517">
@@ -2020,7 +2030,7 @@
                                 ou&esp;<lb/><persName ref="#paul">seinz &p-maj;ols</persName>
                             li&esp;premiers hermites habita&esp;<lb/>en sa &u-v;ie<pc type="orig"
                                 ana="coordination">:</pc>&esp;&esperluette-et;si
-                            &u-v;i&c-ced;&#160;la <placeName ref="#merRouge">roge mer</placeName> qi
+                            &u-v;i&c-ced;&#160;la <placeName ref="#merRouge">&r-maj;oge &m-maj;er</placeName> qi
                             pres est&esp;<lb/>d<pc type="reg">'</pc>icele
                             contree&point-virg3;&esperluette-et;si monte el mont de <placeName
                                 ref="#synay">&s-maj;&ypoint;<lb/>na&ypoint-trem;</placeName>&point-virg3;<choice>
@@ -2524,8 +2534,7 @@
                                 >&c-maj;&ypoint;renen<lb/>ses</persName><note> Son nom n'est pas
                                     indiqué dans la source latine, mais il est fait mention du fait qu'il est
                                     originaire de Cyrénaïque, <hi rend="italic">cyrenensis</hi>. L'attribution de
-                                    ce nom au prêtre est peut-être lié à une confusion de <persName ref="#wauchier"
-                                        >Wauchier de Denain</persName>.</note>&point-virg3;<choice>
+                                    ce nom au prêtre est peut-être lié à une confusion de Wauchier de Denain.</note>&point-virg3;<choice>
                                 <orig>M</orig>
                                 <reg>m</reg>
                             </choice>es il l<pc type="reg">'</pc>escrist par
@@ -2873,7 +2882,7 @@
                             qe&esp;tu ta parole&esp;<lb/>ra&u-v;eroies&deuxpoints-virg4;aussint
                             &neuf-con;me <persName ref="#zacharie">&z-maj;acharie</persName>&esp;le
                             rot&esp;<lb/>por demonstrer le non <persName ref="#jeanBaptiste">seint
-                                &j-maj;ehan baptiste</persName>.&esp;<lb/>Mes or &neuf-con;mence
+                                &j-maj;ehan &b-maj;aptiste</persName>.&esp;<lb/>Mes or &neuf-con;mence
                             heitiement &esperluette-et;si nos&esp;raconte&esp;<lb/>ce qe tu en sez
                             &esperluette-et;&u-v;e&itrem;s&deuxpoints-virg3;car nos a&u-v;ons
                             au&qbarre2;s&esp;<lb/>de tens gast&eacc;&#160; en autres paroles<pc
