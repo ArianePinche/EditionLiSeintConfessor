@@ -94,319 +94,310 @@
       </encodingDesc>
      <profileDesc>
          <particDesc>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="agapites">
+            <listPerson>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="agapites">
                   <persName>Agapites</persName>
                   <note type="biographical">Sous-diacre de <persName ref="#benoit">Saint
-                        Benoit</persName>.</note>
+                     Benoit</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="apolloine">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="apolloine">
                   <persName>Apollin</persName>
                   <note type="biographical">Évêque d'<placeName ref="Excorande">Excorande</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="appollin">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="appollin">
                   <persName>Appollin</persName>
                   <note type="biographical">Dieu du panthéon romain.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="benoit">
-                  <persName>Beneoit (saint)</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="benoit">
+                  <persName>Beneoit</persName>
                   <birth when="0480">480</birth>
                   <death when="0547">547</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb118911827">Saint Benoit, patriarche et législateur des moines d'Occident, fondateur de
-                     l'ordre des bénédictins. Abbé du <placeName ref="#cassin">Mont-Cassin</placeName>, il est célèbre pour sa règle de vie monastique,
-                     dite « la règle de saint Benoit ».</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb118911827">Saint
+                     Benoit, patriarche et législateur des moines d'Occident, fondateur de l'ordre des
+                     bénédictins. Abbé du <placeName ref="#cassin">Mont-Cassin</placeName>, il est célèbre
+                     pour sa règle de vie monastique, dite « la règle de saint Benoit ».</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="blidin">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="blidin">
                   <persName>Blidin</persName>
-                  <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                     >Totila</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="constentin2">
-                  <persName>Costentin</persName>
-                  <note type="biographical">Successeur de <persName ref="#benoit">saint
-                        Benoit</persName> à la tête du monastère de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="costance">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="costance">
                   <persName>Costances</persName>
-                  <note type="biographical">Évêque d'<placeName ref="#aquin">Aquino</placeName>.
-                     .</note>
+                  <note type="biographical">Évêque d'<placeName ref="#aquin">Aquino</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="deudone2">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="constentin2">
+                  <persName>Costentin</persName>
+                  <note type="biographical">Successeur de <persName ref="#benoit">saint Benoit</persName> à
+                     la tête du monastère de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="deudone2">
                   <persName>Deudonez</persName>
                   <note type="biographical">Abbé du moine <persName ref="#romein">Romain</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="evitius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="evitius">
                   <persName>Evitius</persName>
                   <note type="biographical">Noble, père de <persName ref="#maurum">Maurum</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="florentin">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="florentin">
                   <persName>Florences</persName>
-                  <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain
-                     empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
+                  <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain empoisonné à
+                     <persName ref="#benoit">saint Benoit</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gotus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="germein"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
+                  <persName>Germein</persName>
+                  <death when="0541">541</death>
+                  <note type="biographical">Saint Germain de Capoue, évêque de Capoue en Italie, ami de
+                     <persName ref="#benoit">Saint Benoît</persName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gotus">
                   <persName>Gotus</persName>
                   <note type="biographical"> Moine de la confrérie de <persName ref="#benoit">saint
-                        Benoit</persName>, pauvre d'esprit.</note>
+                     Benoit</persName>, pauvre d'esprit.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gregoire">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gregoire">
                   <persName>Gregoires</persName>
                   <birth when="0540">540</birth>
                   <death when="0604">604</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11886472r">Grégoire le grand, pape de Rome de 590 à 604, auteur des <hi rend="italic">Dialogues</hi> dont est issue la <hi rend="italic">Vie de <persName ref="#benoit">saint Benoit</persName>
-                  </hi>.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11886472r">Grégoire
+                     le grand, pape de Rome de 590 à 604, auteur des <hi rend="italic">Dialogues</hi> dont
+                     est issue la <hi rend="italic">Vie de <persName ref="#benoit">saint Benoit</persName>
+                     </hi>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="honores">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="honores">
                   <persName>Honores</persName>
                   <note type="biographical">Abbé du monastère où saint Benoit rentra dans les ordres.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
-                  <persName>Jehan (Baptiste)</persName>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
-                  <surname type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
-                     en Judée.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jehan">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jehan">
                   <persName>Jehan</persName>
                   <birth when="0360">360</birth>
                   <death when="0432">432</death>
                   <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
-                     <surname type="complex">Jean Cassien ou Jean l'ermite</surname> prêtre et
-                     moine, originaire d'<placeName ref="#egypte">Egypte</placeName>, il établit sa
-                     communauté sur l'île de Chypre.</note>
+                     <surname type="complex">Jean Cassien ou Jean l'ermite</surname> prêtre et moine,
+                     originaire d'<placeName ref="#egypte">Égypte</placeName>, il établit sa communauté sur
+                     l'île de Chypre.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-                    xml:id="jesus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
+                  <persName>Jehan Baptiste</persName>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
+                     <surname type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur en
+                     Judée.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
                   <persName>Jesu Crist</persName>
                   <birth when="0001">0</birth>
                   <death when="0030">33</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-                     <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
-                     reconnaissent comme le fils unique de Dieu.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                     <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le reconnaissent
+                     comme le fils unique de Dieu.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
-                    xml:id="martin">
-                  <persName>Martin (saint)</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC" xml:id="martin">
+                  <persName>Martin</persName>
                   <birth when="0316">316</birth>
                   <death when="0397-11-08">397</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-                     <surname type="complex">Saint Martin de Tours</surname> est né en Hongrie dans
-                     la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il
-                     est mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
-                     397.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
+                     <surname type="complex">Saint Martin de Tours</surname>, né en Hongrie dans la colonie
+                     romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316 et mort à <placeName
+                        ref="#conde">Candes</placeName> en France le 8 novembre 397.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="maurum">
-                  <persName>Mauru</persName>
-                  <note type="biographical">Fils d'<persName ref="#evitius">Evitius</persName>
-                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="maurum">
+                  <persName>Maurum</persName>
+                  <note type="biographical">Disciple de <persName ref="#benoit">saint Benoit</persName> et
+                     fils d'<persName ref="#evitius">Evitius</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pelerins">
+                  <persName>Pelerins</persName>
+                  <note type="biographical">Moine de <persName ref="#benoit">Saint Benoit</persName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
+                  <persName>Pere</persName>
+                  <death when="0064">64</death>
+                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de
+                     Rome, pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le premier
+                     évêque de <placeName ref="#rome">Rome</placeName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="placidum">
+                  <persName>Placidus</persName>
+                  <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName> et
+                     disciple de <persName ref="#benoit">saint Benoit</persName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
                   <persName>Pol</persName>
                   <birth when="0228">228</birth>
                   <death when="0341">341</death>
                   <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
-                     fondatrice du monachisme avec <persName ref="#antoine">saint
-                     Antoine</persName>.</note>
+                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure fondatrice du
+                     monachisme avec <persName ref="#antoine">saint Antoine</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pelerins">
-                  <persName>Pelerins</persName>
-                  <note type="biographical">Moine de <persName ref="#benoit">Saint Benoit</persName>.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
-                  <persName>Pere</persName>
-                  <death when="0064">64</death>
-                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pierre,
-                     pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
-                     premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="placidum">
-                  <persName>Placidus</persName>
-                  <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName>
-                     envoié auprès de <persName ref="#benoit">saint Benoit</persName>.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pompeien">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pompeien">
                   <persName>Pompeiens</persName>
                   <note type="biographical">Abbé.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ringo">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ringo">
                   <persName>Ringoz</persName>
-                  <note type="biographical">Serviteur du roi <persName ref="#thotila">Totila</persName>.</note>
+                  <note type="biographical">Serviteur du roi <persName ref="#thotila"
+                     >Totila</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="romein">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="romein">
                   <persName>Romeins</persName>
-                  <note type="biographical">Moine, apporte des vivres à saint Benoit pendant sa retraite.</note>
+                  <note type="biographical">Moine qui apporte des vivres à saint Benoit pendant sa
+                     retraite.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rudich">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rudich">
                   <persName>Rudrich</persName>
-                  <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                     >Totila</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    xml:id="germein"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
-                  <persName>Germein (saint)</persName>
-                  <death when="0541">541</death>
-                  <note type="biographical">Saint Germain de Capoue, Evêque de Capoue en Italie, ami
-                     de <persName ref="#benoit">Saint Benoît</persName>.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="scolastica">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="scolastica">
                   <persName>Scolastica</persName>
                   <note type="biographical">Nonne, amie de <persName ref="#benoit">saint
-                        Benoit</persName>.</note>
+                     Benoit</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="sernandu">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="sernandu">
                   <persName>Sernanduz</persName>
-                  <note type="biographical">Abbé, témoin avec <persName ref="#benoit">saint
-                        Benoit</persName> de l'ascension de l'âme de <persName ref="germein">saint
-                        Germain de Chaples</persName>.</note>
+                  <note type="biographical">Abbé, témoin avec <persName ref="#benoit">saint Benoit</persName>
+                     de l'ascension de l'âme de <persName ref="germein">saint Germain de
+                        Chaples</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="simplices">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="simplices">
                   <persName>Simplices</persName>
-                  <note type="biographical">Troisième successeur de saint Benoit à la tête du
-                     monastère de <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
+                  <note type="biographical">Troisième successeur de saint Benoit à la tête du monastère de
+                     <placeName ref="#cassin">Mont-Cassin</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theoprobus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theoprobus">
                   <persName>Theoprobus</persName>
                   <note type="biographical">Homme noble, ami de saint Benoit.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theralius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theralius">
                   <persName>Theralius</persName>
                   <note type="biographical">Noble, père de Placidum.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    xml:id="thotila"
-                    corresp="https://www.wikidata.org/wiki/Q159707">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="thotila"
+                  corresp="https://www.wikidata.org/wiki/Q159707">
                   <persName>Thotila</persName>
                   <death when="0552">552</death>
                   <note type="biographical">Totila, roi ostrogoth, élu roi d'Italie en 541.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valentinien3">
-                  <persName>Valentinien</persName>
-                  <note type="biographical">Abbé du monastère de <placeName ref="#latran">Latran</placeName>, puis moine du monastère du <placeName ref="cassin">mont
-                        Cassin</placeName> .</note>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valentinien3">
+                  <persName>Valentiniens</persName>
+                  <note type="biographical">Abbé du monastère de <placeName ref="#latran">Latran</placeName>,
+                     puis moine du monastère du <placeName ref="cassin">mont Cassin</placeName> .</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="vult">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="vult">
                   <persName>Vult</persName>
-                  <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                     >Totila</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ylarates">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ylarates">
                   <persName>Ylarates</persName>
-                  <note type="biographical">Convers du <placeName ref="#cassin">mont
-                        Cassin</placeName>.</note>
+                  <note type="biographical">Convers de <placeName ref="#cassin"
+                     >Mont-Cassin</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="zalla">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="zalla">
                   <persName>Zalla</persName>
-                  <note type="biographical">Envoyé du roi dans la région du Mont Cassin, homme cruel.</note>
+                  <note type="biographical">Envoyé du roi dans la région de Mont-Cassin.</note>
                </person>
+            </listPerson>
          </particDesc>
          <settingDesc>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="aquin"
-                   corresp="https://pleiades.stoa.org/places/432695">
+            <listPlace>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aquin"
+                  corresp="https://pleiades.stoa.org/places/432695">
                   <placeName>Aquinense</placeName>
                   <location>
                      <geo>41.4407, 13.7</geo>
                   </location>
                   <note>Aquino, ville italienne du Latium.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="chaples"
-                   corresp="https://pleiades.stoa.org/places/432754">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="chaples"
+                  corresp="https://pleiades.stoa.org/places/432754">
                   <placeName>Chaples</placeName>
                   <location>
                      <geo>41.0860925, 14.250207</geo>
                   </location>
                   <note>Capoue, ville italienne de Campanie.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="effide">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="effide">
                   <placeName>Effide</placeName>
                   <note>Monastère proche de Rome où séjournent <persName ref="#pierre">saint
-                        Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
+                     Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
                   <!-- A vérifer dans les dialogues II de saint Grégoire -->
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="https://pleiades.stoa.org/places/825912337"
-                   xml:id="latran">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="https://pleiades.stoa.org/places/825912337" xml:id="latran">
                   <placeName>Latran</placeName>
                   <location>
                      <geo>41.885906, 12.506156</geo>
                   </location>
-                  <note>Site religieux de Rome qui réunit, entre autres, la basilique de
-                     Saint-Jean-de-Latran et le palais du Latran, lieu de séjour principal des papes
-                     entre le IV<ex>e</ex> et le XIV<ex>e</ex> siècle.</note>
+                  <note>Site religieux de Rome qui réunit, entre autres, la basilique de Saint-Jean-de-Latran
+                     et le palais du Latran, lieu de séjour principal des papes entre le IV<ex>e</ex> et le
+                     XIV<ex>e</ex> siècle.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="https://pleiades.stoa.org/places/432764"
-                   xml:id="cassin">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="https://pleiades.stoa.org/places/432764" xml:id="cassin">
                   <placeName>Montcassin</placeName>
                   <location>
                      <geo>41.492907, 13.830583</geo>
                   </location>
-                  <note>Mont Cassin, situé dans le latium en Italie.</note>
+                  <note>Mont Cassin, situé dans le latium en Italie, désigne également Mont-Cassin, monastère
+                     établi par saint Benoît.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="https://pleiades.stoa.org/places/413229"
-                   xml:id="nurse">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="https://pleiades.stoa.org/places/413229" xml:id="nurse">
                   <placeName>Nurse</placeName>
                   <location>
                      <geo>42.794246, 13.096435</geo>
                   </location>
-                  <note>Nursie, ville d'Italie. Lieu de naissance de <persName ref="#benoit">saint
-                        Benoit</persName>.</note>
+                  <note>Nursie, ville d'Italie, lieu de naissance de <persName ref="#benoit">saint
+                     Benoit</persName>.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
-                   xml:id="orient">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
                   <placeName>Orient</placeName>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/423025"
-                   xml:id="rome">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
                   <placeName>Rome</placeName>
                   <location>
                      <geo>41.891775, 12.486137</geo>
                   </location>
-                  <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
+                  <note>Ville italienne, capitale de l'empire romain d'occident.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="sublacus"
-                   corresp="https://pleiades.stoa.org/places/423078">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="sublacus"
+                  corresp="https://pleiades.stoa.org/places/423078">
                   <placeName>Sublacus</placeName>
                   <location>
                      <geo>41.926211, 13.094892</geo>
                   </location>
                   <note>Sublaqueum, ville italienne.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="sicile"
-                   corresp="https://pleiades.stoa.org/places/981549">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="sicile"
+                  corresp="https://pleiades.stoa.org/places/981549">
                   <placeName>Sulie</placeName>
                   <location>
                      <geo>37.751645425, 14.6747958 </geo>
                   </location>
                   <note>Sicile, île au large de l'Italie.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="tamisse">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="tamisse">
                   <placeName>Tamisse</placeName>
-                  <note>Ville non-identifiée. Dans les <hi rend="italic">Dialogues</hi> de Grégoire le Grand, il est fait
-                     mention de la ville de Canosa située dans les Pouilles en Italie. La ville de
-                     Tamisse, fait peut-être référence à l'actuelle Tamise située dans les Flandres
-                     en Belgique, soit dans la région de Wauchier de Denain</note>
+                  <note>Ville non-identifiée. Dans les <hi rend="italic">Dialogues</hi> de Grégoire le Grand,
+                     il est fait mention de la ville de Canosa située dans les Pouilles en Italie. La ville
+                     de Tamisse, fait peut-être référence à l'actuelle Tamise située dans les Flandres en
+                     Belgique, soit dans la région de Wauchier de Denain</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="teracenence"
-                   corresp="http://www.geonames.org/3165762/terracina.html">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="teracenence"
+                  corresp="http://www.geonames.org/3165762/terracina.html">
                   <placeName>Teracenense</placeName>
                   <location>
                      <geo>41.2241, 13.2495</geo>
                   </location>
                   <note>Terracine, ville italienne du Latium.</note>
                </place>
+            </listPlace>
          </settingDesc>
       </profileDesc>
    </teiHeader>

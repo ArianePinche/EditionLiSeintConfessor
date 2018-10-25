@@ -8,9 +8,9 @@
         <xsl:param name="string"/>
         <xsl:value-of select="translate($string, 'áàâäéèêëíìîïóòôöúùûü', 'aaaaeeeeiiiioooouuuu')"/>
     </xsl:function>
-    
-    
-    
+
+
+
     <xsl:template match="tei:TEI">
         <xsl:variable name="nomFichier">
             <xsl:value-of
@@ -19,54 +19,55 @@
         </xsl:variable>
         <xsl:result-document href="../XML/Vies/test/{$nomFichier}">
             <TEI xmlns="http://www.tei-c.org/ns/1.0">
-                <xsl:apply-templates />
+                <profileDesc>
+                <particDesc>
+                <listPerson>
+                    <xsl:for-each select="./descendant::tei:person">
+                        <xsl:sort order="ascending" select="my:no-accent(tei:persName)"/>
+                        <xsl:variable name="idPerson">
+                            <xsl:value-of select="@xml:id"/>
+                        </xsl:variable>
+                        <xsl:copy-of
+                            select="ancestor::tei:teiCorpus/tei:teiHeader//descendant::tei:person[@xml:id = $idPerson]"
+                        />
+                    </xsl:for-each>
+                </listPerson>
+                </particDesc>
+              
+                <settingDesc>
+                <listPlace>
+                    <xsl:for-each select="./descendant::tei:place">
+                        <xsl:sort order="ascending" select="my:no-accent(tei:placeName)"/>
+                        <xsl:variable name="idPlace">
+                            <xsl:value-of select="@xml:id"/>
+                        </xsl:variable>
+                        <xsl:copy-of
+                            select="ancestor::tei:teiCorpus/tei:teiHeader//descendant::tei:place[@xml:id = $idPlace]"/>
+                    </xsl:for-each>
+                </listPlace>
+                </settingDesc>
+                </profileDesc>
             </TEI>
         </xsl:result-document>
     </xsl:template>
-   
-    <xsl:template match="tei:listPerson">
-        <xsl:apply-templates select="attribute()"/>
-        <xsl:for-each select="tei:person">
-            <xsl:sort order="ascending" select="my:no-accent(tei:persName)"/>
-            <xsl:variable name="idPerson">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:variable>
-            <xsl:choose>
-                <xsl:when
-                    test="./@xml:id = ancestor::tei:TEI/tei:text/descendant::tei:persName/replace(@ref, '#', '')">
-                    <xsl:copy-of
-                        select="ancestor::tei:teiCorpus/tei:teiHeader//descendant::tei:person[@xml:id = $idPerson]"
-                    />
-                </xsl:when>
-                <xsl:otherwise/>
-            </xsl:choose>
-        </xsl:for-each>
+
+    <xsl:template match="tei:listPerson" name="Person">
+        <xsl:copy-of select="tei:person"/>
+        <!--  
+        <
+        -->
     </xsl:template>
-  
+
     <xsl:template match="tei:listPlace">
         <xsl:apply-templates select="attribute()"/>
-        <xsl:for-each select="tei:place">
-            <xsl:sort order="ascending" select="my:no-accent(tei:placeName)"/>
-            <xsl:variable name="idPlace">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:variable>
-            <xsl:choose>
-                <xsl:when
-                    test="./@xml:id = ancestor::tei:TEI/tei:text/descendant::tei:placeName/replace(@ref, '#', '')">
-                    <xsl:copy-of
-                        select="ancestor::tei:teiCorpus/tei:teiHeader//descendant::tei:place[@xml:id = $idPlace]"
-                    />
-                </xsl:when>
-                <xsl:otherwise/>
-            </xsl:choose>
-        </xsl:for-each>
+
     </xsl:template>
-   
-    
+
+    <!--  
     <xsl:template match="attribute()|node()|comment()">
         <xsl:copy>
             <xsl:apply-templates select="attribute()|node()|comment()"/>
         </xsl:copy>
     </xsl:template>
-    
+    -->
 </xsl:stylesheet>

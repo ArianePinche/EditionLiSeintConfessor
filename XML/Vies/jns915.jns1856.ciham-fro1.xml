@@ -98,35 +98,36 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC"
-                    xml:id="abraham">
+            <listPerson>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11944615b/PUBLIC" xml:id="abraham">
                   <persName>Abraham</persName>
-                  <note type="biographical">Personnage biblique, Abraham est le personnage fondateur
-                     des religions juive, chrétienne et musulmane.</note>
+                  <note type="biographical">Personnage biblique, fondateur des religions juive,
+                     chrétienne et musulmane.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ambroise">
                   <birth when="0340">340</birth>
                   <death when="0397">397</death>
-                  <persName>Ambrose (saint)</persName>
+                  <persName>Ambrose</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
                      <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et
-                     docteur de l'Église latine. Il est le maître à penser de <persName ref="#martin">saint Martin</persName>.</note>
+                     docteur de l'Église latine. Il est le maître à penser de <persName
+                        ref="#martin">saint Martin</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="anatolius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="anatolius">
                   <persName>Anatolius</persName>
                   <note type="biographical">Jeune homme diabolique qui intègre une communauté
                      religieuse dirigée par <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="arborius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="arborius">
                   <persName>Arborius</persName>
                   <note type="biographical">Magnus Arborius, élu comte des largesses sacrées en 379,
-                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de <persName ref="#saintMartin">saint Martin</persName>.</note>
+                     puis préfet de Rome en 380, il aurait été l’un des protecteurs de <persName
+                        ref="#saintMartin">saint Martin</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
-                    xml:id="arius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC" xml:id="arius">
                   <persName>Arrius</persName>
                   <birth when="0256">256</birth>
                   <death when="0336">336</death>
@@ -136,58 +137,43 @@
                      des plus importantes hérésies christologiques, l'arianisme. Il est excommunié
                      et déclaré hérésiarque en 325 lors du concile de Nicée.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="clarus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="clarus">
                   <persName>Clarus</persName>
                   <note type="biographical">Jeune disciple de <persName rend="#martin">saint
                         Martin</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="elie">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="elie">
                   <persName>Elye</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11944721j/PUBLIC">Personnage
                      biblique, il est considéré comme un prophète majeur des religions
                      abrahamiques.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC"
-                    xml:id="gratien">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb16757733t/PUBLIC" xml:id="gratien">
                   <persName>Gracien</persName>
                   <death when="0301">301</death>
-                  <note type="biographical">Gatien de Tours, premier évêque de <placeName ref="#tours">Tours</placeName>.</note>
+                  <note type="biographical">Gratien de Tours, premier évêque de <placeName
+                        ref="#tours">Tours</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="hilaire">
-                  <persName>Ylaire</persName>
-                  <birth when="0315">315</birth>
-                  <death when="0367">367</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
-                     <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers,
-                     écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
-                  <ex>e</ex>
-                     siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à l'arianisme.
-                     Saint Martin le rejoignit en 356 et devint alors son élève.</note>
-               </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
-                  <persName>Jehan (Baptiste)</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jeanBaptiste">
+                  <persName>Jehan Baptiste</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
-                  <surname type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
-                     en Judée.</note>
+                     <surname type="complex">Jean le Baptiste</surname>, personnage biblique,
+                     prédicateur en Judée.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-                    xml:id="jesus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
                   <persName>Jesu Crist</persName>
                   <birth when="0001">0</birth>
                   <death when="0030">33</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
                      <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
                      reconnaissent comme le fils unique de Dieu.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC"
-                    xml:id="julien">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC" xml:id="julien">
                   <persName>Juliens</persName>
                   <birth when="0331">331</birth>
                   <death when="0363">363</death>
@@ -195,62 +181,65 @@
                      source="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC">
                      <surname type="complex">Flavius Claudius Julianus</surname>, nommé Julien
                      l’Apostat par la tradition chrétienne. Il doit son surnom à sa volonté de
-                     rétablir le polythéisme dans l’Empire romain.</note>
+                     rétablir le polythéisme dans l’empire romain.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jupiter">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jupiter"
+                  corresp="https://catalogue.bnf.fr/ark:/12148/cb11980295k">
                   <persName>Jupiter</persName>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb120421559">Dieu du panthéon romain.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120421559"
+                     >Dieu du panthéon romain.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lidoire">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lidoire">
                   <death when="0371">371</death>
                   <persName>Lidorius</persName>
-                  <note type="biographical">Lidoire (en latin Litorius), prédecesseur de <persName ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName ref="#tours">Tours</placeName> en 338.</note>
+                  <note type="biographical">Lidoire (en latin Litorius), prédécesseur de <persName
+                        ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName
+                        ref="#tours">Tours</placeName> en 338.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lupicin">
-                  <persName>Lupicin</persName>
-                  <note type="biographical">Homme important de la ville de <placeName ref="#poitiers">Poitiers</placeName>.</note>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lupicin">
+                  <persName>Lupecines</persName>
+                  <note type="biographical">Homme important de la ville de <placeName
+                        ref="#poitiers">Poitiers</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
-                    xml:id="martin">
-                  <persName>Martin (saint)</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC" xml:id="martin">
+                  <persName>Martin</persName>
                   <birth when="0316">316</birth>
                   <death when="0397-11-08">397</death>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-                     <surname type="complex">Saint Martin de Tours</surname> est né en Hongrie dans
-                     la colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316. Il
-                     est mort à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
+                     <surname type="complex">Saint Martin de Tours</surname>, né en Hongrie dans la
+                     colonie romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316 et mort
+                     à <placeName ref="#conde">Candes</placeName> en France le 8 novembre
                      397.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="maximin">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="maximin">
                   <persName>Maximien</persName>
                   <birth when="0383">173</birth>
                   <death when="0384-08-31">384</death>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC">Maximin,
                         <surname type="complex">Magnus Clemens Maximus</surname>, officier romain à
-                     la tête des légions de Bretagne qui renversèrent en 383 l'<persName ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en
+                     la tête des légions de Bretagne qui renversèrent en 383 l'<persName
+                        ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en
                      388, où il fut vaincu et tué par les troupes de Théodose.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
                   <persName>Mercurie</persName>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11937106h">Mercure, dieu du panthéon latin.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11937106h"
+                     >Mercure, dieu du panthéon romain.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="michel">
-                  <persName>Michel</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="michel">
+                  <persName>Michiel</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb11947740j/PUBLIC">Saint Michel,
                      archange.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="minerve">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="minerve">
                   <persName>Minerve</persName>
-                  <note type="biographical"
-                     source="http://catalogue.bnf.fr/ark:/12148/cb11968395c">Déesse du panthéon latin.</note>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11968395c"
+                     >Déesse du panthéon latin.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paulin">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paulin">
                   <persName>Paulin</persName>
                   <birth when="0353">353</birth>
                   <death when="0431">431</death>
@@ -262,7 +251,7 @@
                      l'encouragea dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa
                      mort.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="perpetuus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="perpetuus">
                   <death when="0490">490</death>
                   <persName>Perpetuus</persName>
                   <note type="biographical"
@@ -270,191 +259,207 @@
                         <persName ref="#martin">saint Martin</persName>, sixième évêque de
                         <placeName ref="#tours">Tours</placeName> .</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rufus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rufus">
                   <persName>Rufus</persName>
                   <note type="biographical">Évêque d'Espagne.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rurtius">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rurtius">
                   <persName>Rurtius</persName>
-                  <note type="biographical">Homme important de la ville de <placeName ref="#tours">Tours</placeName>.</note>
+                  <note type="biographical">Homme important de la ville de <placeName ref="#tours"
+                        >Tours</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne"
-                    xml:id="sevrin">
-                  <persName>Severin (saint)</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
+                  <persName>Severins</persName>
                   <death when="0403">403</death>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
-                     <surname type="complex">Saint Séverin de Cologne</surname>, évêque de cologne à la fin du <seg type="number">iv</seg>
-                  <ex>e</ex> siècle.</note>
+                     <surname type="complex">Saint Séverin de Cologne</surname>, évêque de Cologne à
+                     la fin du <seg type="number">iv</seg>
+                     <ex>e</ex> siècle.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC"
-                    xml:id="severus">
-                  <persName>Severum</persName>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC" xml:id="severus">
+                  <persName>Severus</persName>
                   <birth when="0363">363</birth>
                   <death when="0420">420</death>
                   <note type="biographical">
-                     <surname type="complex">Sulpice Sévère</surname>, avocat aquitain et disciple saint Martin. Il est l'auteur d'une Chronique universelle
-                     (403), de la <hi rend="italic">Vita Martini</hi> (397) et des <hi rend="italic">Dialogues</hi> (404).</note>
+                     <surname type="complex">Sulpice Sévère</surname>, avocat aquitain et disciple
+                     de saint Martin. Il est l'auteur d'une Chronique universelle (403), de la <hi
+                        rend="italic">Vita Martini</hi> (397) et des <hi rend="italic"
+                        >Dialogues</hi> (404).</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="thedrades">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="thedrades">
                   <persName>Thedrades</persName>
                   <note type="biographical">Consul de la cité de Trèves.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valentinien">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valentinien">
                   <persName>Valentinien</persName>
                   <birth when="0371">371</birth>
                   <death when="0392-05-15">392</death>
                   <note type="biographical" source="http://dbpedia.org/page/Valentinian_II">
                      <surname type="complex">Valentinien <seg type="number">ii</seg>
-                  </surname>, fils
-                     de Valentinien <seg type="number">i</seg>
-                  <ex>er</ex>, empereur romain de 375 à
-                     392.</note>
+                     </surname>, fils de Valentinien <seg type="number">i</seg>
+                     <ex>er</ex>, empereur romain de 375 à 392.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="venus">
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="venus">
                   <persName>Venus</persName>
                   <note type="biographical" source="https://www.wikidata.org/wiki/Q47652">Déesse du
-                     panthéon latin.</note>
+                     panthéon romain.</note>
                </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="hilaire">
+                  <persName>Ylaire</persName>
+                  <birth when="0315">315</birth>
+                  <death when="0367">367</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
+                     <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers,
+                     écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
+                     <ex>e</ex> siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à
+                     l'arianisme. Saint Martin le rejoignit en 356 et devint alors son élève.</note>
+               </person>
+            </listPerson>
          </particDesc>
          <settingDesc>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/109321"
-                   xml:id="amiens">
+            <listPlace>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
                   <placeName>Amiens</placeName>
                   <location>
                      <geo>49.8936075, 2.297948</geo>
                   </location>
                   <note>Ville du Nord de la France.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="https://pleiades.stoa.org/places/187290 "
-                   xml:id="aquile">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
                   <placeName>Aquilee</placeName>
                   <location>
                      <geo>45.7692106667, 13.3688636667</geo>
                   </location>
                   <note>Ville du Nord-Est de l'Italie, près de la Slovénie.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="calitone">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="calitone">
                   <placeName>Calitone</placeName>
                   <note>Ville proche de Tours, non-identifiée.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/138305"
-                   xml:id="conde">
-                  <placeName>Conde</placeName>
-                  <location>
-                     <geo>47.210797, 0.074696</geo>
-                  </location>
-                  <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
-               </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/108751"
-                   xml:id="cologne">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
                   <placeName>Coloigne</placeName>
                   <location>
                      <geo>50.9333300 6.9500000</geo>
                   </location>
                   <note>Ville de Cologne, située en Allemagne de l'Ouest.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="enfer"
-                   corresp="https://catalogue.bnf.fr/ark:/12148/cb119519478">
-                  <placeName>Infer</placeName>
-                  <note>Lieu où sont envoyées après la mort les âmes de pêcheurs dans la religion
-                     chrétienne.</note>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
+                  <placeName>Conde</placeName>
+                  <location>
+                     <geo>47.210797, 0.074696</geo>
+                  </location>
+                  <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC"
-                   xml:id="espagne">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC" xml:id="espagne">
                   <placeName>Espaigne</placeName>
                   <note>Espagne.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
-                   xml:id="france">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
                   <placeName>France</placeName>
                   <note>France.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC"
-                   xml:id="loire">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
                   <placeName>Loire</placeName>
                   <note>Fleuve français.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
-                   xml:id="lombardie">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
                   <placeName>Lombardie</placeName>
                   <note>Région du Nord de l'Italie</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/383706"
-                   xml:id="milan">
-                  <placeName>Melan</placeName>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
+                  <placeName>Melans</placeName>
                   <location>
                      <geo>45.463746, 9.18806</geo>
                   </location>
                   <note>Milan, ville du Nord de l'Italie.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/167932"
-                   xml:id="saint-bernard">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
                   <placeName>Mongiu</placeName>
                   <location>
                      <geo>45.75, 7.25</geo>
                   </location>
                   <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
-                   xml:id="orient">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
                   <placeName>Orient</placeName>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
-                   xml:id="pannonie">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC" xml:id="pannonie">
                   <placeName>Pannone</placeName>
-                  <note>Pannonie, province romaine de l'Europe centrale au sud du Danube.</note>
+                  <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du
+                     Danube.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/109126"
-                   xml:id="paris">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
                   <placeName>Paris</placeName>
                   <location>
                      <geo>48.8534100 2.3488000</geo>
                   </location>
                   <note>Ville française.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/138656"
-                   xml:id="poitiers">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
                   <placeName>Poitiers</placeName>
                   <location>
                      <geo>46.5833300 0.3333300</geo>
                   </location>
                   <note>Ville située dans le Centre-Est de la France.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC"
-                   xml:id="poitou">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
                   <placeName>Poito</placeName>
                   <note>Poitou, province française de l'Ouest.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/423025"
-                   xml:id="rome">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
                   <placeName>Rome</placeName>
                   <location>
                      <geo>41.891775, 12.486137</geo>
                   </location>
-                  <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
+                  <note>Ville italienne, capitale de l'empire romain d'occident.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/236666"
-                   xml:id="sabarie">
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC" xml:id="touraine">
+                  <placeName>Toraine</placeName>
+                  <note>Touraine, province du centre de la France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
+                  <placeName>Tors</placeName>
+                  <location>
+                     <geo>47.3925295, 0.691471</geo>
+                  </location>
+                  <note>Tours, ville du centre de la France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
+                  <placeName>Vangione</placeName>
+                  <location>
+                     <geo>49.997518, 8.268828</geo>
+                  </location>
+                  <note>Ville située en actuelle Allemagne.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="vienne"
+                  corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
+                  <placeName>Viane</placeName>
+                  <note>Vienne, rivière française du bassin de la Loire.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
                   <placeName>Ysabbarie</placeName>
                   <location>
                      <geo>41.254974, -5.71091</geo>
@@ -462,36 +467,7 @@
                   <note>Sabarie, actuelle Szombathely, ville de Hongrie, ancienne colonie romaine du
                      nom de Sabaria où saint Martin serait né.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC"
-                   xml:id="touraine">
-                  <placeName>Toraine</placeName>
-                  <note>Touraine, province du centre de la France.</note>
-               </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/138255"
-                   xml:id="tours">
-                  <placeName>Tors</placeName>
-                  <location>
-                     <geo>47.3925295, 0.691471</geo>
-                  </location>
-                  <note>Tours, ville du centre de la France.</note>
-               </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/109410"
-                   xml:id="vangione">
-                  <placeName>Vangione</placeName>
-                  <location>
-                     <geo>49.997518, 8.268828</geo>
-                  </location>
-                  <note>Ville située en actuelle Allemagne.</note>
-               </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="vienne"
-                   corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
-                  <placeName>Viane</placeName>
-                  <note>Vienne, rivière française du bassin de la Loire.</note>
-               </place>
+            </listPlace>
          </settingDesc>
       </profileDesc>
    </teiHeader>
@@ -598,7 +574,8 @@
                   </app><pc type="orig" ana="subCorr">.</pc>&esp;<app>
                      <lem>q<pc type="reg">&apos;</pc>il les enmeine</lem>
                      <rdg wit="#C3 #G1">qui les enmeine</rdg>
-                  </app> en&esp;<lb/><placeName ref="#enfer">infer</placeName> <app>
+                  </app> en&esp;<lb/><placeName ref="#enfer">infer</placeName>
+                  <app>
                      <lem>le<pc type="reg">&#160;</pc>grant chemin plenier</lem>
                      <rdg wit="#G1">le grant chemin plenier et la grant voie batue</rdg>
                   </app>&deuxpoints-point;&d-maj;e<pc type="reg">&#160;</pc>ce se&esp;<lb/><app>
@@ -3957,12 +3934,13 @@
                   tres<lb/>pass&eacc;s&deuxpoints-virg4;cil &i-j;o&u-v;enceaus qi&esp;la estoit
                   &u-v;enuz&esp;<lb/>disoit qe&esp;li angele soloient a&esp;lui
                   &pbarre-par;ler&deuxpoints-virg3;si&esp;<lb/>atornoit les pluisors de&esp;ses
-                  freres a&esp;cele&esp;<lb/>creance<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;<app><lem>par&esp;ce il</lem><rdg wit="#C2">par ce qu'il</rdg></app> cuidoient q<pc type="reg">'</pc>il fust
-                  de&esp;<lb/>bone lo&ypoint;&esp;&esperluette-et;de seinte &u-v;ie.&esp;Mes
-                     il&esp;n<pc type="reg">'</pc>a&u-v;oit&esp;<lb/>en&esp;lui ne foi ne creance.
-                  Et apr&eacc;s si cou<lb/>men&c-ced;a a&esp;dire qe&esp;li&esp;angele aloient
-                  entre&esp;<lb/>lui &esperluette-et;<choice>
+                  freres a&esp;cele&esp;<lb/>creance<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;<app>
+                     <lem>par&esp;ce il</lem>
+                     <rdg wit="#C2">par ce qu'il</rdg>
+                  </app> cuidoient q<pc type="reg">'</pc>il fust de&esp;<lb/>bone
+                  lo&ypoint;&esp;&esperluette-et;de seinte &u-v;ie.&esp;Mes il&esp;n<pc type="reg"
+                     >'</pc>a&u-v;oit&esp;<lb/>en&esp;lui ne foi ne creance. Et apr&eacc;s si
+                  cou<lb/>men&c-ced;a a&esp;dire qe&esp;li&esp;angele aloient entre&esp;<lb/>lui &esperluette-et;<choice>
                      <orig>d</orig>
                      <reg>D</reg>
                   </choice>eu<pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;portoient
@@ -4025,11 +4003,13 @@
                   &esperluette-et;entendre.&esp;<lb/></p>
             </div>
             <div n="3" type="section">
-               <p>Qant <app><lem>&u-v;int</lem><rdg wit="#C2">ce vint</rdg></app> a&esp;mienuit<pc type="reg">,</pc> si&esp;o&itrem;rent
-                  grant&esp;<lb/>noise &esperluette-et;grant fremissement<pc type="orig"
-                     ana="subCorr">:</pc>&esp;si qe toz li&esp;<lb/>leus se&esp;mo&u-v;oit ou&esp;il
-                  estoient &esperluette-et;la celle ou&esp;<lb/>li &i-j;o&u-v;enceaus habitoit
-                  resplendissoit &pbarre-par;&esp;<lb/><app>
+               <p>Qant <app>
+                     <lem>&u-v;int</lem>
+                     <rdg wit="#C2">ce vint</rdg>
+                  </app> a&esp;mienuit<pc type="reg">,</pc> si&esp;o&itrem;rent grant&esp;<lb/>noise
+                  &esperluette-et;grant fremissement<pc type="orig" ana="subCorr">:</pc>&esp;si qe
+                  toz li&esp;<lb/>leus se&esp;mo&u-v;oit ou&esp;il estoient &esperluette-et;la celle
+                  ou&esp;<lb/>li &i-j;o&u-v;enceaus habitoit resplendissoit &pbarre-par;&esp;<lb/><app>
                      <lem>meintes</lem>
                      <rdg wit="#C2">moltes</rdg>
                   </app> lumieres c<pc type="reg">'</pc>on&esp;i&esp;&u-v;eoit<pc type="orig"
@@ -4095,9 +4075,10 @@
                   </choice>e saint home engignier.&esp;<lb/>Lors coumen&c-ced;a li chetis
                   a&esp;crier &esperluette-et;a&esp;estre en<lb/>contre de qanq<pc type="reg"
                   >'</pc>il pooit<pc type="orig" ana="coordination"
-                  >:</pc>&esp;&esperluette-et;si&esp;dist <app><lem>q<pc type="reg">'</pc>a</lem><rdg wit="#C2">que</rdg></app>&#160;<persName
-                     ref="#martin">seint &m-maj;ar<lb/>tin</persName>&#160;
-                  <app>
+                  >:</pc>&esp;&esperluette-et;si&esp;dist <app>
+                     <lem>q<pc type="reg">'</pc>a</lem>
+                     <rdg wit="#C2">que</rdg>
+                  </app>&#160;<persName ref="#martin">seint &m-maj;ar<lb/>tin</persName>&#160; <app>
                      <lem>n<pc type="reg">'</pc>iroit</lem>
                      <rdg wit="#C2">ni iroit</rdg>
                   </app> il mie&point-virg3;car desfendu li&esp;estoit<pc type="orig"
@@ -4127,10 +4108,12 @@
                   e&utrem;st&point-interrogation;&esp;Dont sorent bien li&esp;frere<pc type="orig"
                      ana="completive">:</pc>&esp;<lb/>qe ce estoit oe&u-v;re de deable qi engignier
                   les&esp;<lb/>&u-v;oloit.&esp;Adonc se recomencierent li
-                  pluisor&esp;<lb/>a&esp;porpenser entre eus &esperluette-et;<app><lem>a</lem><rdg wit="#C2" cause="om."/></app>&esp;dire<pc
-                     type="orig" ana="completive">.</pc>&esp;qu<pc type="reg">'</pc>en cel
-                  tens&esp;<lb/>me&itrem;smes a&u-v;oit un &i-j;o&u-v;encel en <placeName
-                     ref="#espagne"><choice>
+                  pluisor&esp;<lb/>a&esp;porpenser entre eus &esperluette-et;<app>
+                     <lem>a</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;dire<pc type="orig" ana="completive">.</pc>&esp;qu<pc type="reg"
+                  >'</pc>en cel tens&esp;<lb/>me&itrem;smes a&u-v;oit un &i-j;o&u-v;encel en
+                     <placeName ref="#espagne"><choice>
                         <orig>e</orig>
                         <reg>E</reg>
                      </choice>spaigne</placeName>&esp;<lb/>qi s<pc type="reg">'</pc>estoit entremis
@@ -4347,12 +4330,14 @@
                      &esperluette-et;dire<pc type="orig" ana="coordination">.</pc>&esp;
                   &esperluette-et;dont cele fole opi<lb/>nium &u-v;int a&esp;cels qi disoient qe
                      <persName ref="#martin">seinz&esp;<lb/>&m-maj;artins</persName> qi&esp;les
-                  deables cha&c-ced;oit hors <app><lem>des</lem><rdg wit="#C2">de</rdg></app>&esp;<lb/>pluiseurs<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;resuscitoit les mors<pc
-                     type="orig" ana="coordination">.</pc>&esp;
-                  &esperluette-et;a&u-v;oit&esp;<lb/>ost&eacc;&#160;les feus &esperluette-et;les
-                  flambes de pluiseurs&esp;<lb/>leus<pc type="orig" ana="relative">:</pc>&esp;ne
-                  pooit a&u-v;oir lui me&itrem;smes ga<lb/>ranti&deuxpoints-virg3;<choice>
+                  deables cha&c-ced;oit hors <app>
+                     <lem>des</lem>
+                     <rdg wit="#C2">de</rdg>
+                  </app>&esp;<lb/>pluiseurs<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;resuscitoit les mors<pc type="orig" ana="coordination"
+                     >.</pc>&esp; &esperluette-et;a&u-v;oit&esp;<lb/>ost&eacc;&#160;les feus
+                  &esperluette-et;les flambes de pluiseurs&esp;<lb/>leus<pc type="orig"
+                     ana="relative">:</pc>&esp;ne pooit a&u-v;oir lui me&itrem;smes ga<lb/>ranti&deuxpoints-virg3;<choice>
                      <orig>M</orig>
                      <reg>m</reg>
                   </choice>es il&esp;mentent ne&esp;ne se&u-v;ent&esp;<lb/>noient
@@ -4384,9 +4369,12 @@
                      type="orig" ana="relative">.</pc>&esp;<lb/><choice>
                      <orig>L</orig>
                      <reg>l</reg>
-                  </choice>i aparellierent <app><lem>en</lem><rdg wit="#C2" cause="om."/></app>&esp;un secr&eacc;&#160;leu de&esp;l<pc type="reg"
-                     >'</pc>egli<lb/>se ou&esp;il&esp;pe&utrem;st seoir &esperluette-et;gesir<pc
-                     type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si firent
+                  </choice>i aparellierent <app>
+                     <lem>en</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;un secr&eacc;&#160;leu de&esp;l<pc type="reg">'</pc>egli<lb/>se
+                  ou&esp;il&esp;pe&utrem;st seoir &esperluette-et;gesir<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;si firent
                   g&nasuscrit-ran;t&esp;<lb/>feu sor un pa&u-v;ement ten&u-v;ene qi
                   en&esp;cele&esp;<lb/>chambre estoit<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;&i-j;oste le fu&esp;firent il un&esp;<lb/><app>
@@ -4491,12 +4479,14 @@
                   com cil&esp;qi seinz hom estoit et&esp;<lb/>&i-j;ustes<choice>
                      <orig>.</orig>
                      <reg>,&esp;</reg>
-                  </choice>car il n<pc type="reg">'</pc>i&esp;ot <app><lem>ne</lem><rdg wit="#C2">ni</rdg></app> mal ne peine<pc type="orig"
-                     >:</pc> autre&esp;<lb/>qe &u-v;os a&u-v;ez o&itrem;. Et qi ore &u-v;oudroit
-                  o&itrem;r &neuf-con;<lb/>ment li seinz hom defina<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;lessa ceste&esp;<lb/>mortel
-                     &u-v;ie<pc type="orig" ana="segPrep">.</pc> por aler a&esp;la
-                  &pbarre-par;menable gloi<lb/>re&point-virg3;si entendez deci en a&u-v;ant
+                  </choice>car il n<pc type="reg">'</pc>i&esp;ot <app>
+                     <lem>ne</lem>
+                     <rdg wit="#C2">ni</rdg>
+                  </app> mal ne peine<pc type="orig">:</pc> autre&esp;<lb/>qe &u-v;os a&u-v;ez
+                  o&itrem;. Et qi ore &u-v;oudroit o&itrem;r &neuf-con;<lb/>ment li seinz hom
+                     defina<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;lessa
+                  ceste&esp;<lb/>mortel &u-v;ie<pc type="orig" ana="segPrep">.</pc> por aler
+                  a&esp;la &pbarre-par;menable gloi<lb/>re&point-virg3;si entendez deci en a&u-v;ant
                   mes&esp;&pbarre-par;oles.<lb/></p>
             </div>
          </div>
@@ -4553,16 +4543,20 @@
                   >'</pc>aler ensamble o&esp;lui estoient ad&eacc;s&esp;<lb/>acostum&eacc;.&esp;Si
                   com il aloient ensamble&esp;<lb/>de&i-j;oste un flun&point-virg4;il &u-v;it
                   plunions qi piss&otilde-on;<lb/>niaus si&u-v;oient<pc type="orig"
-                     ana="coordination"
-                  >.</pc>&esp;&esperluette-et;cha&c-ced;oient&deuxpoints-virg;<app><lem>qant</lem><rdg wit="#C2">et qant</rdg></app> il
-                  les&esp;<lb/>ataignoient&point-virg3;si les de&u-v;oroient
+                     ana="coordination">.</pc>&esp;&esperluette-et;cha&c-ced;oient&deuxpoints-virg;<app>
+                     <lem>qant</lem>
+                     <rdg wit="#C2">et qant</rdg>
+                  </app> il les&esp;<lb/>ataignoient&point-virg3;si les de&u-v;oroient
                   &esperluette-et;men&i-j;oi<lb/>ent.&esp;Dont arresta li seinz hom
                   &esperluette-et;si dist a&esp;<lb/>ses deciples&point-deuxpointsDial;<said
                      who="#martin">O<choice>
                         <orig>R</orig>
                         <reg>r</reg>
                      </choice>&#160;poez &u-v;eoir&deuxpoints-virg5;c<pc type="reg">'</pc>est
-                     maniere&esp;<lb/>de deable qi <app><lem>guetent</lem><rdg wit="#C2">guete</rdg></app>&#160;<app>
+                     maniere&esp;<lb/>de deable qi <app>
+                        <lem>guetent</lem>
+                        <rdg wit="#C2">guete</rdg>
+                     </app>&#160;<app>
                         <lem>ceus</lem>
                         <rdg wit="#C2">cles</rdg>
                      </app> qi noient<pc type="orig" ana="completive">.</pc>&esp;ne&esp;<lb/>sont
@@ -4600,8 +4594,10 @@
                   montaignes&deuxpoints-virg3;&esperluette-et;<lb/>li pluisor qi ce &u-v;irent s<pc
                      type="reg">'</pc>esmer&u-v;eillier&etilde-en;t&esp;<lb/>de&esp;la grant
                   &u-v;ertu qe&esp;nostre &s-maj;ires a&u-v;oit&esp;<lb/>mise en <persName
-                     ref="#martin">seint &m-maj;artin</persName>&deuxpoints-virg4;<app><lem>qe</lem><rdg wit="#C2">qi</rdg></app>&esp;sor
-                  oiseaus&esp;<lb/>me&itrem;smes a&u-v;oit de&esp;&neuf-con;mander
+                     ref="#martin">seint &m-maj;artin</persName>&deuxpoints-virg4;<app>
+                     <lem>qe</lem>
+                     <rdg wit="#C2">qi</rdg>
+                  </app>&esp;sor oiseaus&esp;<lb/>me&itrem;smes a&u-v;oit de&esp;&neuf-con;mander
                   puissance.&esp;<lb/>
                </p>
             </div>
@@ -4660,7 +4656,10 @@
                         <orig>M</orig>
                         <reg>m</reg>
                      </choice>es tuit ti&esp;loier sont sauf<pc type="orig" ana="coordination"
-                        >:</pc>&esp;&esperluette-et;si&esp;n<pc type="reg">'</pc><app><lem>a<lb/>menuiseront</lem><rdg wit="#C2">amenuisierent</rdg></app> mie&deuxpoints-point;<choice>
+                        >:</pc>&esp;&esperluette-et;si&esp;n<pc type="reg">'</pc><app>
+                        <lem>a<lb/>menuiseront</lem>
+                        <rdg wit="#C2">amenuisierent</rdg>
+                     </app> mie&deuxpoints-point;<choice>
                         <orig>a</orig>
                         <reg>A</reg>
                      </choice>ies merci de nous&esp;<lb/>qe tu ne nos deguerpisses
@@ -4790,8 +4789,10 @@
                   muee&point-virg4;&esp;la gloire de&esp;la surrection qi li&esp;<lb/>estoit
                   a&esp;&u-v;enir.&esp;Et l<pc type="reg">'</pc>en ne&esp;poroit mie
                   croire&esp;<lb/>com grans pueples assambla al cors del
-                  se&itilde-in;t&esp;<lb/>home. Tuit li home de&esp;la
-                     cit&eacc;&#160;<app><lem>i</lem><rdg wit="#C2" cause="om."/></app>&esp;&u-v;indrent<pc type="orig" ana="coordination"
+                  se&itilde-in;t&esp;<lb/>home. Tuit li home de&esp;la cit&eacc;&#160;<app>
+                     <lem>i</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;&u-v;indrent<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;<lb/>tuit cil qi estoient as&esp;champaignes
                      &esperluette-et;as&esp;<lb/>&u-v;oies<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;me&itrem;smement les pluseurs
@@ -4828,9 +4829,9 @@
                      ref="#conde"><choice>
                         <orig>c</orig>
                         <reg>C</reg>
-                     </choice>onde</placeName><pc type="orig" ana="relative"
-                  >:</pc>&esp;qi&esp;siet en&esp;l<pc type="reg">'</pc>e&u-v;eschi&eacc;&#160;
-                     de&esp;<placeName ref="#tours"><choice>
+                     </choice>onde</placeName><pc type="orig" ana="relative">:</pc>&esp;qi&esp;siet
+                     en&esp;l<pc type="reg">'</pc>e&u-v;eschi&eacc;&#160; de&esp;<placeName
+                     ref="#tours"><choice>
                         <orig>t</orig>
                      </choice><reg>T</reg>ors</placeName><pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;si&esp;<lb/>ala a&esp;nostre &s-maj;ignor <persName
@@ -5144,19 +5145,19 @@
                   cont&eacc;&point-virg6;aloit <persName ref="#severus">seinz
                      &s-maj;e&u-v;rins</persName> en<lb/>tor le&esp;cuer de l<pc type="reg"
                   >'</pc>egl&ypoint;se seint <choice>
-                        <orig>p</orig>
-                        <reg>P</reg>
-                     </choice>ierre de <choice>
-                        <orig>c</orig>
-                        <reg>C</reg>
-                     </choice>oloigne&esp;<lb/>disant ses orissons apr&eacc;s matines<pc
-                     type="orig" ana="coordination">:</pc>&esp;&esperluette-et;de ses&esp;<lb/>clers
-                  grant &pbarre-par;tie ensamble o&esp;lui.&esp;Si com il&esp;<lb/>aloit einsi com
-                  &i-j;e &u-v;os di&deuxpoints-virg4;il o&itrem; droit a&esp;cele ore&esp;<lb/>qe
-                     <persName ref="#martin">seinz &m-maj;artins</persName> fu de&u-v;i&eacc;s<pc
-                     type="orig" ana="relative">:</pc>&esp;&u-v;oiz chanter en&esp;<lb/>l<pc
-                     type="reg">'</pc>air mout haut<pc type="reg" ana="incise">,</pc>
-                  ce&esp;li&esp;sambla. Et ces &u-v;oiz&esp;<lb/>si estoient de&esp;grant &i-j;oie
+                     <orig>p</orig>
+                     <reg>P</reg>
+                  </choice>ierre de <choice>
+                     <orig>c</orig>
+                     <reg>C</reg>
+                  </choice>oloigne&esp;<lb/>disant ses orissons apr&eacc;s matines<pc type="orig"
+                     ana="coordination">:</pc>&esp;&esperluette-et;de ses&esp;<lb/>clers grant
+                  &pbarre-par;tie ensamble o&esp;lui.&esp;Si com il&esp;<lb/>aloit einsi com &i-j;e
+                  &u-v;os di&deuxpoints-virg4;il o&itrem; droit a&esp;cele ore&esp;<lb/>qe <persName
+                     ref="#martin">seinz &m-maj;artins</persName> fu de&u-v;i&eacc;s<pc type="orig"
+                     ana="relative">:</pc>&esp;&u-v;oiz chanter en&esp;<lb/>l<pc type="reg"
+                  >'</pc>air mout haut<pc type="reg" ana="incise">,</pc> ce&esp;li&esp;sambla. Et
+                  ces &u-v;oiz&esp;<lb/>si estoient de&esp;grant &i-j;oie
                   &esperluette-et;de&esp;grant esleece&mbarre-men;t.&esp;<lb/></p>
             </div>
             <div n="2" type="section">
@@ -5410,8 +5411,10 @@
                   &s-maj;ignor qi&esp;de&esp;tote chose est sires
                   &esperluette-et;<lb/>crieres&point-virg7;qi&esp;&u-v;it &esperluette-et;regne
                   &pbarre-par;&esp;toz les siecles des sie<lb/>cles em&esp;&pbarre-par;menable
-                  gloire&esp;ou nos <app><lem>tuit
-                  puiss&otilde-on;s</lem><rdg wit="#C2">puissions tuit</rdg></app>&esp;<lb/>&pbarre-par;&u-v;enir.&esp;Amen.&esp;</p>
+                  gloire&esp;ou nos <app>
+                     <lem>tuit puiss&otilde-on;s</lem>
+                     <rdg wit="#C2">puissions tuit</rdg>
+                  </app>&esp;<lb/>&pbarre-par;&u-v;enir.&esp;Amen.&esp;</p>
             </div>
          </div>
          <div type="chapter" n="44"
@@ -5451,11 +5454,13 @@
                         <reg>P</reg>
                      </choice>erpetuus</persName> estoit apelez par non.&esp;Qant&esp;<lb/>il fu
                   en&esp;la dignit&eacc;&#160;&esperluette-et;en&esp;la signorie&deuxpoints-virg4;il
-                  porp&etilde-en;<lb/>sa a&esp;fere sor le cors <app><lem><persName ref="#martin">seint
-                     &m-maj;artin</persName></lem><rdg wit="#C2">de seint Martin</rdg></app> plus hau<lb/>te eglisse &esperluette-et;plus bele<pc
-                     type="orig" ana="subCorr">.</pc>&esp;q<pc type="reg">'</pc>ele n<pc type="reg"
-                     >'</pc>i estoit faite.&esp;Ce&esp;<lb/>fist&esp;il &pbarre-par;&esp;molt grant
-                     estude<pc ana="coordination" type="orig">.</pc>&esp;&esperluette-et;molt
+                  porp&etilde-en;<lb/>sa a&esp;fere sor le cors <app>
+                     <lem><persName ref="#martin">seint &m-maj;artin</persName></lem>
+                     <rdg wit="#C2">de seint Martin</rdg>
+                  </app> plus hau<lb/>te eglisse &esperluette-et;plus bele<pc type="orig"
+                     ana="subCorr">.</pc>&esp;q<pc type="reg">'</pc>ele n<pc type="reg">'</pc>i
+                  estoit faite.&esp;Ce&esp;<lb/>fist&esp;il &pbarre-par;&esp;molt grant estude<pc
+                     ana="coordination" type="orig">.</pc>&esp;&esperluette-et;molt
                   en&esp;auri<lb/>ons a&esp;parler &neuf-con;ment l<pc type="reg">'</pc>oe&u-v;re
                   fu&esp;parfaite &esperluette-et;<lb/>consomee&deuxpoints-virg4;se&esp;nous
                   a&esp;plus haute chose rac&otilde-on;<lb/>ter &esperluette-et;dire<pc type="orig"
@@ -5525,13 +5530,18 @@
                   &esperluette-et;en &u-v;egiles.</p>
             </div>
             <div n="2" type="section">
-               <p>Et&esp;qant &u-v;int au <app><lem>qart</lem><rdg wit="#C2">tierz</rdg></app>&#160;&i-j;or&point-virg4;<lb/>il&esp;s<pc type="reg"
-                     >'</pc>aprochierent au sarqu ou&esp;li cors gisoit del&esp;<lb/>seint home&point-virg3;<choice>
+               <p>Et&esp;qant &u-v;int au <app>
+                     <lem>qart</lem>
+                     <rdg wit="#C2">tierz</rdg>
+                  </app>&#160;&i-j;or&point-virg4;<lb/>il&esp;s<pc type="reg">'</pc>aprochierent au
+                  sarqu ou&esp;li cors gisoit del&esp;<lb/>seint home&point-virg3;<choice>
                      <orig>S</orig>
                      <reg>s</reg>
-                  </choice>i <app><lem>i</lem><rdg wit="#C2" cause="om."/></app>&esp;mistrent toz les meins por&esp;<lb/>remo&u-v;oir le
-                  &esperluette-et;por le&u-v;er le<pc type="reg" ana="coordination">,</pc>
-                  mes&esp;il ne porent.&esp;<lb/>
+                  </choice>i <app>
+                     <lem>i</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;mistrent toz les meins por&esp;<lb/>remo&u-v;oir le &esperluette-et;por
+                  le&u-v;er le<pc type="reg" ana="coordination">,</pc> mes&esp;il ne porent.&esp;<lb/>
                   <pb n="114" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f237"/>
                   <cb n="a"/> Quant il &u-v;irent ce<pc type="reg" ana="coordination">,</pc>&esp;<choice>
                      <orig>S</orig>
@@ -5546,10 +5556,12 @@
                   doutance&deuxpoints-virg4;uns &u-v;ielz hom de&esp;&mlt;&esp;<lb/>grant
                      beaut&eacc;<pc type="reg" ana="apposition">,</pc> aussi blans &neuf-con;me
                      nois&esp;negie&deuxpoints-virg5;<lb/>s<pc type="reg">'</pc>aparut a&esp;els<pc
-                     type="orig" ana="coordination">.</pc>&esp;&esperluette-et;il li demanderent
-                  <app><lem>qi&esp;il</lem><rdg wit="#C2">q'il</rdg></app> estoit<pc type="orig" ana="coordination"
-                  >:</pc>&esp;<lb/>&esperluette-et;il lor dist q<pc type="reg">'</pc>il estoit uns
-                     abbes<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;puis si
+                     type="orig" ana="coordination">.</pc>&esp;&esperluette-et;il li demanderent <app>
+                     <lem>qi&esp;il</lem>
+                     <rdg wit="#C2">q'il</rdg>
+                  </app> estoit<pc type="orig" ana="coordination">:</pc>&esp;<lb/>&esperluette-et;il
+                  lor dist q<pc type="reg">'</pc>il estoit uns abbes<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;puis si
                   &pbarre-par;la&esp;<lb/>&esperluette-et;lor dist&point-deuxpointsDial;<said
                      who="#martin"><choice>
                         <orig>p</orig>
@@ -5562,9 +5574,11 @@
                         &m-maj;artin</persName> qi &u-v;os &u-v;ient aidier<pc type="orig"
                         ana="segPrep">.</pc>&esp;a&esp;ceste cho<lb/>se se &u-v;oz i&esp;&u-v;olez
                      les meins metre&point-interrogation;</said> Dont osta&esp;<lb/>li&esp;blans hom
-                  qi&esp;la estoit <app><lem>&u-v;enuz</lem><rdg wit="#C2" cause="om."/></app> s<pc type="reg">'</pc>afuble&utrem;re<pc type="orig"
-                     ana="coordination">.</pc>&esp;<lb/>&esperluette-et;li&esp;prestre aussi
-                  qi&esp;la estoient
+                  qi&esp;la estoit <app>
+                     <lem>&u-v;enuz</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> s<pc type="reg">'</pc>afuble&utrem;re<pc type="orig" ana="coordination"
+                     >.</pc>&esp;<lb/>&esperluette-et;li&esp;prestre aussi qi&esp;la estoient
                   &esperluette-et;li&esp;&u-v;esqe&point-virg3;&esperluette-et;les&esp;<lb/>seintes
                   reliqes &esperluette-et;les croiz &esperluette-et;<pc ana="number">.</pc><seg
                      type="number">vii</seg><pc ana="number">.</pc>&esp;cierges i&esp;fu<lb/>rent
@@ -5585,34 +5599,48 @@
                   >.</pc>&esp;&esperluette-et;la&esp;messe fu chantee<pc type="orig"
                      ana="coordination">.</pc>&esp;&esperluette-et;il&esp;se&esp;furent
                   as<lb/>sambl&eacc; por mengier ensamble si&esp;&neuf-com;&esp;il
-                  estoit&esp;<lb/>costume adonqes&point-virg4;il <app><lem>manderent</lem><rdg wit="#C2">demanderent</rdg></app> le &u-v;iel ho<lb/>me qi
-                  aidi&eacc;&#160;lor a&u-v;oit&point-virg3;mes il n<pc type="reg">'</pc>en
-                     tro&u-v;er&etilde-en;t&esp;<lb/>mie<pc type="orig" ana="coordination"
-                  >.</pc>&esp;ne il n<pc type="reg">'</pc>estoit la&esp;nus hom qi l<pc type="reg">'</pc>e&utrem;st &u-v;e&utrem;&esp;<lb/>issir de&esp;l<pc type="reg"
-                     >'</pc>eglisse&deuxpoints-point;</p></div>
-            <div n="3" type="section"><p><choice>
+                  estoit&esp;<lb/>costume adonqes&point-virg4;il <app>
+                     <lem>manderent</lem>
+                     <rdg wit="#C2">demanderent</rdg>
+                  </app> le &u-v;iel ho<lb/>me qi aidi&eacc;&#160;lor a&u-v;oit&point-virg3;mes il
+                     n<pc type="reg">'</pc>en tro&u-v;er&etilde-en;t&esp;<lb/>mie<pc type="orig"
+                     ana="coordination">.</pc>&esp;ne il n<pc type="reg">'</pc>estoit la&esp;nus hom
+                  qi l<pc type="reg">'</pc>e&utrem;st &u-v;e&utrem;&esp;<lb/>issir de&esp;l<pc
+                     type="reg">'</pc>eglisse&deuxpoints-point;</p>
+            </div>
+            <div n="3" type="section">
+               <p><choice>
                      <orig>p</orig>
                      <reg>P</reg>
-                  </choice>or&esp;ce <app><lem>croi &i-j;e</lem><rdg wit="#C2">crei je bien</rdg></app> qe&esp;ce fu aucuns&esp;<lb/>angeles qi por le
-                  seint hom s<pc type="reg">'</pc>aparut
-                  ilue&qbarre;s&deuxpoints-virg3;<lb/>&esperluette-et;si ne s<pc type="reg"
-                  >'</pc>aparut onqes <app><lem>puis</lem><rdg wit="#C2">plus</rdg></app> a&esp;nul d<pc type="reg">'</pc>eus de cels&esp;<lb/>de
-                     l<pc type="reg">'</pc>eglisse.&esp;Et en icel leu ou&esp;li cors del
-                  seint&esp;<lb/>home fu mis a&u-v;indrent tres&esp;ce &i-j;or en
-                  a&u-v;&atilde-an;t&esp;<lb/>meint beau miracle<pc type="orig" ana="relative"
-                     >.</pc>&esp;qi par negligence sont&esp;<lb/>lessi&eacc; en escripture
-                  a&esp;metre.&esp;Mes nos en
+                  </choice>or&esp;ce <app>
+                     <lem>croi &i-j;e</lem>
+                     <rdg wit="#C2">crei je bien</rdg>
+                  </app> qe&esp;ce fu aucuns&esp;<lb/>angeles qi por le seint hom s<pc type="reg"
+                     >'</pc>aparut ilue&qbarre;s&deuxpoints-virg3;<lb/>&esperluette-et;si ne s<pc
+                     type="reg">'</pc>aparut onqes <app>
+                     <lem>puis</lem>
+                     <rdg wit="#C2">plus</rdg>
+                  </app> a&esp;nul d<pc type="reg">'</pc>eus de cels&esp;<lb/>de l<pc type="reg"
+                     >'</pc>eglisse.&esp;Et en icel leu ou&esp;li cors del seint&esp;<lb/>home fu
+                  mis a&u-v;indrent tres&esp;ce &i-j;or en a&u-v;&atilde-an;t&esp;<lb/>meint beau
+                     miracle<pc type="orig" ana="relative">.</pc>&esp;qi par negligence
+                  sont&esp;<lb/>lessi&eacc; en escripture a&esp;metre.&esp;Mes nos en
                      a&u-v;&otilde-on;s&esp;<lb/>cont&eacc;&#160;&esperluette-et;dit<pc type="orig"
                      ana="relative">:</pc>&esp;ce qe nos en a&u-v;ons en nostre
-                     tens&esp;<lb/>&u-v;e&utrem;<pc type="orig" ana="coordination"
-                  >:</pc>&esp;<app><lem>&esperluette-et;qe</lem><rdg wit="#C2">et ce que</rdg></app> nos en&esp;o&itrem;mes conter par autrui<pc
-                     type="orig" ana="coordination">:</pc>&esp;&esperluette-et;<lb/>ce qe nos en
-                  de&utrem;mes &u-v;eraiement croire<pc type="orig" ana="segPrep"
-                     >.</pc>&esp;&pbarre-par;&esp;<lb/>l<pc type="reg">'</pc>a&itrem;de nostre
-                     &s-maj;ignor<pc type="orig" ana="relative">.</pc>&esp;<choice>
+                     tens&esp;<lb/>&u-v;e&utrem;<pc type="orig" ana="coordination">:</pc>&esp;<app>
+                     <lem>&esperluette-et;qe</lem>
+                     <rdg wit="#C2">et ce que</rdg>
+                  </app> nos en&esp;o&itrem;mes conter par autrui<pc type="orig" ana="coordination"
+                     >:</pc>&esp;&esperluette-et;<lb/>ce qe nos en de&utrem;mes &u-v;eraiement
+                     croire<pc type="orig" ana="segPrep">.</pc>&esp;&pbarre-par;&esp;<lb/>l<pc
+                     type="reg">'</pc>a&itrem;de nostre &s-maj;ignor<pc type="orig" ana="relative"
+                     >.</pc>&esp;<choice>
                      <orig>Q</orig>
                      <reg>q</reg>
-                  </choice>i &u-v;it &esperluette-et;regne par tos&esp;<lb/>les siecles <app><lem>des siecles</lem><rdg wit="#C2">des siecles sanz fin</rdg></app>.&esp;Ame<choice>
+                  </choice>i &u-v;it &esperluette-et;regne par tos&esp;<lb/>les siecles <app>
+                     <lem>des siecles</lem>
+                     <rdg wit="#C2">des siecles sanz fin</rdg>
+                  </app>.&esp;Ame<choice>
                      <orig>N</orig>
                      <reg>n</reg>
                   </choice>.<lb/>

@@ -96,193 +96,195 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
-               <persName>Aurelius</persName>
-               <note type="biographical">Archidiacre de <persName ref="#cesaire">saint
-                  Césaire</persName>, évêque d'<placeName ref="#arles">Arles</placeName>.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="cesaire">
-               <persName>Cesaires</persName>
-               <birth when="0470">470</birth>
-               <death when="0542">542</death>
-               <note type="biographical"
-                  source=" http://catalogue.bnf.fr/ark:/12148/cb118947651">Saint Césaire d'<placeName ref="#arles">Arles</placeName>, évêque.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="charlemagne">
-               <persName>Charlemeine</persName>
-               <birth when="0742">742</birth>
-               <death when="0814">814</death>
-               <note type="biographical"
-                  source="http://data.bnf.fr/fr/11940325/charlemagne/">Charlemagne, roi des Francs dès 768, puis empereur d'Occident à partir de
-                  800.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="flavi">
-               <persName>Flavius</persName>
-               <note type="biographical">Roi du sud de la France dont les troupes partent à la
-                  poursuite de la biche de <persName ref="#gile">saint Gilles</persName> lors
-                  d'une partie de chasse.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gile">
-               <persName>Gile (saint)</persName>
-               <birth when="0640">640</birth>
-               <death when="0710">710</death>
-               <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint
-                  Giles l'ermite.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-               xml:id="jesus">
-               <persName>Jesu Crist</persName>
-               <birth when="0001">0</birth>
-               <death when="0030">33</death>
-               <note type="biographical"
-                  source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-                  <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
-                  reconnaissent comme le fils unique de Dieu.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
-               <persName>Pol</persName>
-               <birth when="0228">228</birth>
-               <death when="0341">341</death>
-               <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-                  <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
-                  fondatrice du monachisme avec <persName ref="#antoine">saint
-                     Antoine</persName>.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pelagie">
-               <persName>Pelagie</persName>
-               <note type="biographical">Mère de <persName ref="#gile">saint Gilles</persName>
-                  .</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
-               <persName>Pere</persName>
-               <death when="0064">64</death>
-               <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Pierre,
-                  pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
-                  premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="prius">
-               <persName>Priu</persName>
-               <note type="biographical">Saint homme.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theocrite">
-               <persName>Teocrite</persName>
-               <note type="biographical">Veuve dont
-                  la fille est guérie par <persName ref="#gile">saint Gilles</persName>.</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theodorus">
-               <persName>Theodorus</persName>
-               <note type="biographical">Père de <persName ref="#gile">saint Gilles</persName>.
-                  .</note>
-            </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="veredemius">
-               <persName>Veredemium</persName>
-               <note type="biographical">Ermite qui partage pour un temps la retraite de
-                  <persName ref="#gile">saint Gilles</persName>.</note>
-            </person>
+            <listPerson>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aurelius">
+                  <persName>Aurelius</persName>
+                  <note type="biographical">Archidiacre de <persName ref="#cesaire">saint
+                     Césaire</persName>, évêque d'<placeName ref="#arles">Arles</placeName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="cesaire">
+                  <persName>Cesaires</persName>
+                  <birth when="0470">470</birth>
+                  <death when="0542">542</death>
+                  <note type="biographical"
+                     source=" http://catalogue.bnf.fr/ark:/12148/cb118947651">Saint Césaire d'<placeName ref="#arles">Arles</placeName>, évêque.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="charlemagne">
+                  <persName>Charlemeine</persName>
+                  <birth when="0742">742</birth>
+                  <death when="0814">814</death>
+                  <note type="biographical"
+                     source="http://data.bnf.fr/fr/11940325/charlemagne/">Charlemagne, roi des Francs dès 768, puis empereur d'Occident à partir de
+                     800.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="flavi">
+                  <persName>Flavius</persName>
+                  <note type="biographical">Roi du sud de la France.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gile">
+                  <persName>Gilles</persName>
+                  <birth when="0640">640</birth>
+                  <death when="0710">710</death>
+                  <note type="biographical" source="https://www.wikidata.org/wiki/Q149727">Saint
+                     Giles l'ermite.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+                  xml:id="jesus">
+                  <persName>Jesu Crist</persName>
+                  <birth when="0001">0</birth>
+                  <death when="0030">33</death>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                     <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
+                     reconnaissent comme le fils unique de Dieu.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pelagie">
+                  <persName>Pelagie</persName>
+                  <note type="biographical">Mère de <persName ref="#gile">saint Gilles</persName>
+                     .</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
+                  <persName>Pere</persName>
+                  <death when="0064">64</death>
+                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de Rome,
+                     pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
+                     premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
+                  <persName>Pol</persName>
+                  <birth when="0228">228</birth>
+                  <death when="0341">341</death>
+                  <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
+                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
+                     fondatrice du monachisme avec <persName ref="#antoine">saint
+                        Antoine</persName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="prius">
+                  <persName>Priu</persName>
+                  <note type="biographical">Saint homme.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theocrite">
+                  <persName>Teocrite</persName>
+                  <note type="biographical">Veuve dont
+                     la fille est guérie par <persName ref="#gile">saint Gilles</persName>.</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="theodorus">
+                  <persName>Theodorus</persName>
+                  <note type="biographical">Père de <persName ref="#gile">saint Gilles</persName>.
+                     .</note>
+               </person>
+               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="veredemius">
+                  <persName>Veredemium</persName>
+                  <note type="biographical">Ermite qui partage pour un temps la retraite de
+                     <persName ref="#gile">saint Gilles</persName>.</note>
+               </person>
+            </listPerson>
          </particDesc>
          <settingDesc>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="arles"
-               corresp="https://pleiades.stoa.org/places/148217">
-               <placeName>Arle</placeName>
-               <location>
-                  <geo>43.677616, 4.630799</geo>
-               </location>
-               <note>Arles, ville du Sud de la France.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="athenes"
-               corresp="https://pleiades.stoa.org/places/579885">
-               <placeName>Atheines</placeName>
-               <location>
-                  <geo>37.9751203779, 23.7271979517</geo>
-               </location>
-               <note>Athènes, capitale de la Grèce.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="cabinone"
-               corresp="https://pleiades.stoa.org/places/148027">
-               <placeName>Cabinone</placeName>
-               <location>
-                  <geo>43.829885, 5.034166</geo>
-               </location>
-               <note>Cavaillon, ville du Sud-Ouest de la France.</note>
-               <!-- Attribution peu sûre, hésitation avec chabanais -->
-               <bibl> GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
-                  publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
-                  Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. </bibl>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
-               xml:id="france">
-               <placeName>France</placeName>
-               <note>France.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gardone">
-               <placeName>Gardone</placeName>
-               <note>Gardon, rivière française.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="grece"
-               corresp="http://data.bnf.fr/fr/15238445/grece/">
-               <placeName>Grece</placeName>
-               <note>Grèce, pays du Sud de l'Europe</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="marseille"
-               corresp="http://pleiades.stoa.org/places/981537">
-               <placeName>Marselle</placeName>
-               <location>
-                  <geo>43.296482 5.369779999999992</geo>
-               </location>
-               <note>Marseille, ville située dans le Sud de la France.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="nime"
-               corresp="https://pleiades.stoa.org/places/148142">
-               <placeName>Nemausense</placeName>
-               <location>
-                  <geo>43.8431497874, 4.3541755708</geo>
-               </location>
-               <note>Nemausensis, nom latin de la ville de Nîmes.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="orleans"
-               corresp="https://pleiades.stoa.org/places/138281">
-               <placeName>Orliens</placeName>
-               <location>
-                  <geo>47.9007265, 1.9068675</geo>
-               </location>
-               <note>Orléans, ville du centre de la France</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="provence"
-               corresp="http://data.bnf.fr/fr/15366292/royaume_de_provence__1032-1481_/">
-               <placeName>Provence</placeName>
-               <note>Province du Sud de la France</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="rhone"
-               corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
-               <placeName>Rosne</placeName>
-               <note>Rhône, fleuve de France.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               corresp="http://pleiades.stoa.org/places/423025"
-               xml:id="rome">
-               <placeName>Rome</placeName>
-               <location>
-                  <geo>41.891775, 12.486137</geo>
-               </location>
-               <note>Ville Italienne, capitale de l'empire romain d'occident.</note>
-            </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-               xml:id="tibre"
-               corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
-               <placeName>Toivre</placeName>
-               <note>Tibre, fleuve italien.</note>
-            </place>
+            <listPlace>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="arles"
+                  corresp="https://pleiades.stoa.org/places/148217">
+                  <placeName>Arle</placeName>
+                  <location>
+                     <geo>43.677616, 4.630799</geo>
+                  </location>
+                  <note>Arles, ville du Sud de la France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="athenes"
+                  corresp="https://pleiades.stoa.org/places/579885">
+                  <placeName>Atheines</placeName>
+                  <location>
+                     <geo>37.9751203779, 23.7271979517</geo>
+                  </location>
+                  <note>Athènes, capitale de la Grèce.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="cabinone"
+                  corresp="https://pleiades.stoa.org/places/148027">
+                  <placeName>Cabinone</placeName>
+                  <location>
+                     <geo>43.829885, 5.034166</geo>
+                  </location>
+                  <note>Cavaillon, ville du Sud-Ouest de la France.</note>
+                  <!-- Attribution peu sûre, hésitation avec chabanais -->
+                  <bibl> GUILLAUME DE BERNEVILLE, La vie de saint Gilles: texte du XIIe siècle,
+                     publié d’après le manuscrit de la Bibliothèque Laurentienne de Florence, éd.
+                     Françoise Laurent, Paris, France, H. Champion, 2003, lxiv+308 p. </bibl>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC"
+                  xml:id="france">
+                  <placeName>France</placeName>
+                  <note>France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gardone">
+                  <placeName>Gardone</placeName>
+                  <note>Gardon, rivière française.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="grece"
+                  corresp="http://data.bnf.fr/fr/15238445/grece/">
+                  <placeName>Grece</placeName>
+                  <note>Grèce, pays du Sud de l'Europe</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="marseille"
+                  corresp="http://pleiades.stoa.org/places/981537">
+                  <placeName>Marselle</placeName>
+                  <location>
+                     <geo>43.296482 5.369779999999992</geo>
+                  </location>
+                  <note>Marseille, ville située dans le Sud de la France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="nime"
+                  corresp="https://pleiades.stoa.org/places/148142">
+                  <placeName>Nemausense</placeName>
+                  <location>
+                     <geo>43.8431497874, 4.3541755708</geo>
+                  </location>
+                  <note>Nemausensis, nom latin de la ville de Nîmes.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="orleans"
+                  corresp="https://pleiades.stoa.org/places/138281">
+                  <placeName>Orliens</placeName>
+                  <location>
+                     <geo>47.9007265, 1.9068675</geo>
+                  </location>
+                  <note>Orléans, ville du centre de la France</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="provence"
+                  corresp="http://data.bnf.fr/fr/15366292/royaume_de_provence__1032-1481_/">
+                  <placeName>Provence</placeName>
+                  <note>Province du Sud de la France</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  corresp="http://pleiades.stoa.org/places/423025"
+                  xml:id="rome">
+                  <placeName>Rome</placeName>
+                  <location>
+                     <geo>41.891775, 12.486137</geo>
+                  </location>
+                  <note>Ville italienne, capitale de l'empire romain d'occident.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="rhone"
+                  corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
+                  <placeName>Rosne</placeName>
+                  <note>Rhône, fleuve de France.</note>
+               </place>
+               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+                  xml:id="tibre"
+                  corresp="http://data.bnf.fr/fr/11964673/tibre__italie__-_cours_d_eau_/">
+                  <placeName>Toivre</placeName>
+                  <note>Tibre, fleuve italien.</note>
+               </place>
+            </listPlace>
          </settingDesc>
       </profileDesc>
    </teiHeader>

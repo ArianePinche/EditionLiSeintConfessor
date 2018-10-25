@@ -7,10 +7,34 @@
         <xsl:param name="string" />
         <xsl:value-of select="translate($string,'áàâäéèêëíìîïóòôöúùûü','aaaaeeeeiiiioooouuuu')"/>
     </xsl:function>
-    <xsl:function name="my:regularize">
-        <xsl:param name="node" />
-        <xsl:variable name="var" select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type='reg' and not(text()='-')])"/>
-        <xsl:value-of select="replace(string-join($var), '\s+', ' ')"/>
+    <xsl:function name="my:regularizeName">
+        <xsl:param name="node"/>
+        <xsl:variable name="var"
+            select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg' and not(text() = '-')])"/>
+        <xsl:value-of select="
+            normalize-space(
+            replace(
+            replace(
+            string-join($var),
+            '&#160;',
+            ' ')
+            , '^\s*[sS][ae]in[tze]{0,2}s?',
+            ''
+            )
+            )"/>
+    </xsl:function>
+    <xsl:function name="my:regularizePlace">
+        <xsl:param name="node"/>
+        <xsl:variable name="var"
+            select="$node/(text() | tei:hi/text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text() | .//tei:pc[@type = 'reg' and not(text() = '-')])"/>
+        <xsl:value-of select="
+            normalize-space(
+            replace(
+            string-join($var),
+            '&#160;',
+            ' '
+            )
+            )"/>
     </xsl:function>
     <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
 
@@ -282,9 +306,9 @@
             <xsl:element name="dd">
                 <xsl:element name="ul">
                     <xsl:attribute name="class">list-occurences</xsl:attribute>
-                    <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:persName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                    <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:persName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularizeName(.)">
                         <xsl:element name="li">
-                            <xsl:apply-templates mode="reg" select="current()"/>
+                            <xsl:apply-templates mode="regName" select="current()"/>
                             <xsl:text> :</xsl:text>
                             <xsl:for-each-group select="current-group()/ancestor::tei:div[@type='chapter']" group-by="@n">
                                 <xsl:element name="li">
@@ -301,9 +325,13 @@
         
     </xsl:template>
     
-    <xsl:template match="tei:persName|tei:placeName" mode="reg">
+    <xsl:template match="tei:persName" mode="regName">
         <xsl:value-of
-            select="my:regularize(.)"/>
+            select="my:regularizeName(.)"/>
+    </xsl:template>
+    <xsl:template match="tei:placeName" mode="regPlace">
+        <xsl:value-of
+            select="my:regularizePlace(.)"/>
     </xsl:template>
     
     
@@ -330,9 +358,9 @@
         <xsl:element name="dd">
             <xsl:element name="ul">
                 <xsl:attribute name="class">list-occurences</xsl:attribute>
-                <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:placeName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularize(.)">
+                <xsl:for-each-group select="ancestor::tei:TEI//tei:body//tei:placeName[@ref = '#'||$id and not(ancestor::tei:head)]" group-by="my:regularizePlace(.)">
                     <xsl:element name="li">
-                        <xsl:apply-templates mode="reg" select="current()"/>
+                        <xsl:apply-templates mode="regPlace" select="current()"/>
                         <xsl:text> :</xsl:text>
                         <xsl:for-each-group select="current-group()/ancestor::tei:div[@type='chapter']" group-by="@n">
                             <xsl:element name="li">
