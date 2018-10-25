@@ -244,10 +244,12 @@
                      <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
                      reconnaissent comme le fils unique de Dieu.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="justinien">
-                  <persName>Justien</persName>
-                  <note type="biographical">Evêque de Tours, successeur de <persName ref="#brice">saint Brice</persName> suite à son exil.</note>
-               </person>
+            <person xml:id="justinien" corresp="http://data.bnf.fr/fr/12055108/justinien_1/">
+               <persName>Justiniens</persName>
+               <birth when="0482">482</birth>
+               <death when="0565">565</death>
+               <note type="biographical">Justinien 1<ex>er</ex>, empereur romain d'Orient.</note>
+            </person>
             <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="leons">
                   <persName>Leons</persName>
                   <note type="biographical">Évêque de <placeName ref="#cupersane">Cupersane</placeName> .</note>

@@ -73,11 +73,11 @@
             
             ﻿\chapter*{Index}           
             ﻿ ﻿\paragraph*{}
-            Cet index a pour objectif de permettre l'identification des noms propres et des toponymes qui apparaissent dans le recueil des \textit{Seint Confessor} avec toutes leurs occurrences. Ainsi pour un nom donné on trouvera successivement :
+            Cet index a pour objectif de permettre l'identification des noms propres et des toponymes qui apparaissent dans le recueil des \textit{Seint Confessor}. Ainsi pour un nom donné, on trouvera successivement :
             \begin{list}{-}{}
-            \item En petites capitales, la forme qui sert de base au ﻿regroupement﻿\footnote{Dans la mesure du possible, forme la plus fréquente parmi les occurrences du corpus}. Dans les cas où la vedette fait mention d'un personnage historique, ses dates, dans la mesure du possible, sont indiquées à la suite entre parenthèses.   
+            \item En petites capitales, la forme qui sert de base au ﻿regroupement﻿\footnote{Dans la mesure du possible, forme la plus fréquente parmi les occurrences du corpus.}. Dans les cas où la vedette fait mention d'un personnage historique, ses dates, dans la mesure du possible, sont indiquées à la suite entre parenthèses.   
             \subitem Exemple : \textsc{Martin} (316-397);
-            \item  La graphie de l'occurrence, dans les cas où cette dernière est différente de la vedette, suivie de la référence à la Vie du saint et du ou des chapitres où apparaissent les occurrences. La Vie est signalée par le prénom du saint entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og Dialogues \fg{}  entre crochets.
+            \item  La graphie de l'occurrence, si cette dernière est différente de la vedette, suivie de la référence à la Vie du saint et du ou des chapitres où apparaissent les occurrences. \footnote{La Vie est signalée par le prénom du saint entre crochets. Dans le cas particulier des ﻿\textit{Dialogues sur les Vertus de saint Martin}, nous avons simplement mis \og Dialogues \fg{}  entre crochets.}.
             \subitem Exemple : Martins :  [Martin] 1,  2,  3,
             \item En italique, les notes permettant l'identification du personnage et du lieu. 
             \end{list}
@@ -219,6 +219,7 @@
         </xsl:template>
     
         <xsl:template name="group">
+            <xsl:call-template name="NomVie"/>
            <xsl:for-each-group select="current-group()/ancestor::tei:div[@type = 'chapter']"
                 group-by="@n">
                 <xsl:text> </xsl:text>
