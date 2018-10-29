@@ -38,10 +38,9 @@
 \begin{document}
 \pagestyle{fancy}
 \fancyhead[LE,RO]{ \thepage}
-\fancyhead[RE, LO]{\textsc{</xsl:text><xsl:value-of
-                select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
+\fancyhead[RE, LO]{\textsc{</xsl:text><xsl:value-of select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
 \fancyfoot[C]{}
-\Xmaxhnotes{.33\textheight}.
+\Xmaxhnotes{.33\textheight}
 \renewcommand{\footfudgefiddle}{68}
 \Xbeforenotes[A]{10pt}
 \Xafterrule[A]{5pt}
@@ -58,10 +57,11 @@
     <xsl:template match="tei:teiHeader"/>
     <xsl:template match="tei:text">
         <xsl:text>
-\section*{
-        </xsl:text>
+﻿\begin{center}
+\section*{</xsl:text>
         <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
-        <xsl:text>}</xsl:text>
+        <xsl:text>}
+\end{center}</xsl:text>
 \beginnumbering
         <xsl:apply-templates/>
 \endnumbering
@@ -123,9 +123,8 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:del">
-        \dotuline{<xsl:apply-templates/>}
-    </xsl:template>
+    <xsl:template match="tei:del[@type='exponctué']">\dotuline{<xsl:apply-templates/>}</xsl:template>
+    <xsl:template match="tei:del[@type='raturé']">\sout{<xsl:apply-templates/>}</xsl:template>
     
     <xsl:template match="tei:orig"/>
     <xsl:template match="tei:abbr"/>
@@ -241,7 +240,7 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/tei:hi/tei:choice | ./tei:lem/tei:hi/tei:pc | ./tei:lem/tei:hi/tei:placeName | ./tei:lem/tei:hi/tei:persName | ./tei:lem/tei:choice | ./tei:lem/tei:persName | ./tei:lem/tei:placeName | ./tei:lem/tei:pc | ./tei:lem/tei:corr[@type='del'] | ./tei:lem/tei:corr[@type='add']/text()"/>
+            select=".//tei:lem/text() | .//tei:lem/tei:hi/text() | .//tei:lem/tei:hi/tei:choice | .//tei:lem/tei:hi/tei:pc | .//tei:lem/tei:hi/tei:placeName | .//tei:lem/tei:hi/tei:persName | .//tei:lem/tei:choice | .//tei:lem/tei:persName | .//tei:lem/tei:placeName | .//tei:lem/tei:pc | .//tei:lem/tei:corr[@type='del'] | .//tei:lem/tei:corr[@type='add']/text()"/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">

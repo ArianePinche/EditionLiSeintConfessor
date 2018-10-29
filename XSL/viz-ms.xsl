@@ -677,7 +677,7 @@
                     <xsl:attribute name="class">list-unstyled</xsl:attribute>
                     <xsl:element name="li">
                         <xsl:value-of
-                            select="./tei:lem/text() | ./tei:lem/tei:hi/text() | ./tei:lem/descendant::tei:persName/text() | ./tei:lem/descendant::tei:placeName/text() | ./tei:lem/descendant::tei:pc[@type != 'orig']/text() | ./tei:lem/descendant::tei:reg/text() | ./tei:lem/descendant::tei:expan/text() | ./tei:lem/descendant::tei:ex/text() | ./tei:lem/descendant::tei:corr/text()"/>
+                            select=".//tei:lem/text() | .//tei:lem/tei:hi/text() | .//tei:lem/tei:choice/tei:reg/text() | .//tei:lem/tei:choice/tei:corr/text() | .//tei:lem/tei:choice/tei:expan/text() |.//tei:lem/tei:choice/tei:expan/tei:ex/text() | .//tei:lem/tei:hi/tei:pc/text() | .//tei:lem/tei:hi/tei:placeName/text() | .//tei:lem/tei:hi/tei:persName/text()  | .//tei:lem/tei:persName/text() | .//tei:lem/tei:placeName/text() | .//tei:lem/tei:pc/text() | .//tei:lem/tei:corr[@type='del']/text() | .//tei:lem/tei:corr[@type='add']/text()"/>
                         <xsl:if test="./@wit">
                             <xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:if>
@@ -719,6 +719,12 @@
     </xsl:template>
 
     <xsl:template match="tei:del[@type = 'exponctué']">
+        <xsl:element name="span">
+            <xsl:attribute name="class">exponc</xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:del[@type = 'raturé']">
         <xsl:element name="span">
             <xsl:attribute name="class">exponc</xsl:attribute>
             <xsl:apply-templates/>
