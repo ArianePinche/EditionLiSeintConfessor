@@ -113,12 +113,12 @@
         <xsl:choose>
             <xsl:when test="@type = 'add'">
                 <xsl:if test="ancestor::tei:l"><xsl:text>\relax </xsl:text></xsl:if><xsl:text>[</xsl:text>
-                <xsl:value-of select="normalize-space(.)"/>
+                <xsl:value-of select="./text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text()"/>
                 <xsl:text>]</xsl:text>
             </xsl:when>
             <xsl:when test="@type = 'del'">
                 <xsl:text>(</xsl:text>
-                <xsl:value-of select="normalize-space(.)"/>
+                <xsl:value-of select="./text() | .//tei:reg/text() | .//tei:expan/text() | .//tei:ex/text()"/>
                 <xsl:text>)</xsl:text>
             </xsl:when>
         </xsl:choose>
