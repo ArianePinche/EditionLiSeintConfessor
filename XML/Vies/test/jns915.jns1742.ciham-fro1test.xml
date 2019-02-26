@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:my="LOCALHOST">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:my="LOCALHOST">
    <profileDesc>
       <particDesc>
          <listPerson>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="antoine">
+            <person xml:id="antoine">
                   <persName>Antoines</persName>
                   <birth when="0251">251</birth>
                   <death when="0356">356</death>
@@ -12,12 +14,12 @@
                         l'Ermite</surname>, considéré comme le fondateur du l'érémitisme
                      chrétien.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="eusebius">
+            <person xml:id="eusebius">
                   <persName>Eusebius</persName>
                   <note type="biographical">Père de <persName ref="#jerome">saint
                      Jérôme</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="honorius">
+            <person xml:id="honorius">
                   <persName>Honoires</persName>
                   <birth when="0384">384</birth>
                   <death when="0423">423</death>
@@ -25,7 +27,7 @@
                      source="http://catalogue.bnf.fr/ark:/12148/cb12566387q">Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395
                      à 423.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jerome">
+            <person xml:id="jerome">
                   <persName>Jeroime</persName>
                   <birth when="0345">345</birth>
                   <death when="0420-09-20">420</death>
@@ -33,22 +35,21 @@
                      docteur de l'Église, célèbre traducteur de la bible latine. Il est l'un des
                      principaux opposants aux idées d'<persName ref="#origene">Origène</persName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
+            <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
                     xml:id="marie">
                   <persName>Marie</persName>
                   <note type="biographical"
                      source="http://catalogue.bnf.fr/ark:/12148/cb119503581">Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
                      Dieu.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
+            <person xml:id="pierre">
                   <persName>Pere</persName>
                   <death when="0064">64</death>
                   <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de Rome,
                      pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
                      premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
                </person>
-            <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
+            <person xml:id="paul">
                   <persName>Pol</persName>
                   <birth when="0228">228</birth>
                   <death when="0341">341</death>
@@ -61,52 +62,42 @@
       </particDesc>
       <settingDesc>
          <listPlace>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="bethleem"
-                   corresp="https://pleiades.stoa.org/places/687856">
+            <place xml:id="bethleem" corresp="https://pleiades.stoa.org/places/687856">
                   <placeName>Bethleem</placeName>
                   <location>
                      <geo>31.712291, 35.202123</geo>
                   </location>
                   <note>Bethléem, ville de Cisjordanie, lieu de naissance présumé du Christ.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="dalmasse"
+            <place xml:id="dalmasse"
                    corresp="http://data.bnf.fr/fr/15367120/dalmatie__province_romaine__33_av__j_c_-_/">
                   <placeName>Dalmasse</placeName>
                   <note>Dalmatie, région romaine, actuelle Croatie.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="egypte"
-                   corresp="http://data.bnf.fr/15238583/egypte/">
+            <place xml:id="egypte" corresp="http://data.bnf.fr/15238583/egypte/">
                   <placeName>Egypte</placeName>
                   <note>Égypte, pays d'Afrique du Nord</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   xml:id="jerusalem"
-                   corresp="https://pleiades.stoa.org/places/687928">
+            <place xml:id="jerusalem" corresp="https://pleiades.stoa.org/places/687928">
                   <placeName>Jerusalem</placeName>
                   <location>
                      <geo>31.776679, 35.234156</geo>
                   </location>
                   <note>Ville de Jérusalem, située en actuelle Israël.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
+            <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
                    xml:id="pannonie">
                   <placeName>Pannone</placeName>
                   <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du Danube.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                   corresp="http://pleiades.stoa.org/places/423025"
-                   xml:id="rome">
+            <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
                   <placeName>Rome</placeName>
                   <location>
                      <geo>41.891775, 12.486137</geo>
                   </location>
                   <note>Ville italienne, capitale de l'empire romain d'occident.</note>
                </place>
-            <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="stridon">
+            <place xml:id="stridon">
                   <placeName>Stridons</placeName>
                   <note>Ville romaine, située entre la <placeName ref="#pannonie">Pannonie</placeName> et la <placeName ref="#dalmasse">Dalmatie</placeName>, lieu de naissance de <persName ref="#jerome">saint Jérôme</persName>.</note>
                </place>
