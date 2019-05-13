@@ -99,12 +99,12 @@
       <profileDesc>
          <particDesc>
             <listPerson>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="armense">
+               <person  xml:id="armense">
                   <persName>Armense</persName>
                   <note type="biographical">Évêque de <placeName ref="#tours">Tours</placeName>,
                      successeur de <persName ref="#justinien">Justinien</persName> et de <persName ref="#brice">saint Brice</persName>.</note>
                </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="brice">
+               <person  xml:id="brice">
                   <persName>Brice</persName>
                   <birth when="0377">377</birth>
                   <death when="0444">444</death>
@@ -112,11 +112,11 @@
                      <surname type="complex">Saint Brice de Tours</surname>, ordonné évêque de Tours
                      en 397, successeur de <persName ref="#martin">saint Martin</persName>.</note>
                </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="eustache">
+               <person  xml:id="eustache">
                   <persName>Eustochies</persName>
                   <note type="biographical">Évêque de Tours, successeur de Brice.</note>
                </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <person 
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
                   xml:id="jesus">
                   <persName>Jesu Crist</persName>
@@ -127,11 +127,11 @@
                      <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le
                      reconnaissent comme le fils unique de Dieu.</note>
                </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="justien">
+               <person  xml:id="justien">
                   <persName>Justien</persName>
                   <note type="biographical">Évêque de Tours, successeur de <persName ref="#brice">saint Brice</persName> suite à son exil.</note>
                </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <person 
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
                   xml:id="martin">
                   <persName>Martin</persName>
@@ -148,7 +148,7 @@
          </particDesc>
          <settingDesc>
             <listPlace>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <place
                   xml:id="lodun"
                   corresp="https://pleiades.stoa.org/places/138414">
                   <placeName>Lodun</placeName>
@@ -158,13 +158,13 @@
                   <note>Ancien vicus de Laudiacum, mentionné dans le texte de Grégoire de Tours,
                      actuelle ville de Montlouis-sur-Loire.</note>
                </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <place 
                   corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
                   xml:id="lombardie">
                   <placeName>Lombardie</placeName>
                   <note>Région du Nord de l'Italie</note>
                </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <place
                   corresp="http://pleiades.stoa.org/places/423025"
                   xml:id="rome">
                   <placeName>Rome</placeName>
@@ -173,7 +173,7 @@
                   </location>
                   <note>Ville italienne, capitale de l'empire romain d'occident.</note>
                </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <place
                   corresp="http://pleiades.stoa.org/places/138255"
                   xml:id="tours">
                   <placeName>Tors</placeName>
@@ -182,7 +182,7 @@
                   </location>
                   <note>Tours, ville du centre de la France.</note>
                </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
+               <place
                   xml:id="vercelles"
                   corresp="https://pleiades.stoa.org/places/383815">
                   <placeName>Verziaus</placeName>
