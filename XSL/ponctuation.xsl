@@ -72,7 +72,7 @@
                 </tr>
             </xsl:for-each-group>
         </table>
-        <!--  
+         
         <table>
             <head>Nombres de signes maintenus</head>
             <xsl:for-each select="//tei:p/text()">
@@ -96,5 +96,5 @@
 
         </table>
     </xsl:template>
-    -->
+
 </xsl:stylesheet>

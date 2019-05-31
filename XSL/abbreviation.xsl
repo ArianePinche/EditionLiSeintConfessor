@@ -17,11 +17,9 @@
 
                     <xsl:for-each-group select="current-group()//tei:expan"
                         group-by="string-join(.//text(), '')">
-                        <xsl:sort select="string-join(.//text(), '')"/>
+                        <xsl:sort select="string-join(.//text(), '')" order="ascending"/>
                         <td>
-                            <em>
-                                <xsl:value-of select="string-join(current-group()[1]//text(), '')"/>
-                            </em>
+                            <em><xsl:value-of select="current-grouping-key()"/>, <xsl:value-of select="count(current-group())"/></em>
                             <xsl:for-each select="current-group()/ancestor::tei:choice">
                                 <xsl:variable name="head" select="./preceding-sibling::text()[1]"/>
                                 <xsl:variable name="tail" select="./following-sibling::text()[1]"/>
@@ -33,7 +31,7 @@
                                                 select="tokenize($head, ' ')[last()] || string-join(./tei:expan//text(), '') || tokenize($tail, ' ')[1]"/>
                                             <xsl:for-each-group select="current-group()"
                                                 group-by="$word">
-                                                <xsl:sort select="$word"/>
+                                                <xsl:sort select="$word" order="ascending"/>
                                                 <xsl:value-of
                                                   select="tokenize($head, ' ')[last()] || string-join(.//text(), '') || tokenize($tail, ' ')[1]"
                                                 />
