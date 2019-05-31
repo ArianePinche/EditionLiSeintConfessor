@@ -60,7 +60,7 @@
                         édition est aisément citable et archivable grâce au respect de normes
                         internationales.</p>
                     <p>Dans le recueil de Wauchier de Denain, chacune des Vies est encodée dans un
-                        fichier XML différent évitant ainsi de faire des fichiers trop longs et de
+                        fichier XML différent évitant ainsi de faire des fichiers trop longs et permettant de
                         bien séparer chacun des travaux tout en respectant la norme CTS. Les
                         fichiers de l’édition sont nommés et identifiés de la manière suivante :
                         « urn:cts:froLit:jns915.jns1856.ciham-fro1 ». La première partie de l’URN :
@@ -433,7 +433,7 @@
                                     >'</pc>oneur </egXML></p>
                         <p> Dans le troisième cas, le manuscrit présente bien un signe de
                             ponctuation, mais celui-ci ne correspond pas à nos usages modernes.
-                            Ainsi, afin faciliter la lecture et la compréhension du texte, le signe
+                            Ainsi, pour faciliter la lecture et la compréhension du texte, le signe
                             de ponctuation doit être modifié. Dans ce cas-là, nous avons opté pour
                             la même méthode que pour les régularisations en utilisant la balise
                                 <gi>choice</gi>. <egXML xmlns="http://www.tei-c.org/ns/Examples"
