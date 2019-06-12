@@ -17,14 +17,14 @@
             <date>2015-2018</date>
          </publicationStmt>
          <sourceDesc>
-            <msDesc xml:id="A">
+            <msDesc xml:id="C1">
                <msIdentifier>
                   <country>Paris</country>
                   <settlement>Bibliothèque nationale de France</settlement>
                   <idno>fr. 00412</idno>
                </msIdentifier>
                <head>
-                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <title>De seint Martin</title>
                   <origDate>1285</origDate>
                   <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
                      notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
@@ -35,48 +35,46 @@
                </head>
                <msContents>
                   <msItemStruct>
-                     <locus>fol.103-fol.170</locus>
-                     <author>Wauchier de Denain</author>
-                     <title>Oeuvres hagiographiques 'Li Seint Confessor' de Wauchier de
-                        Denain</title>
-                     <incipit>De saint &m-maj;artin mout doit on doucement et volentiers le
-                        bien o&itrem;r etentendre</incipit>
-                     <explicit/>
+                     <locus>fol.103-fol.114</locus>
+                     <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
+                        entendre</incipit>
+                     <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des
+                        siecles. Amen.</explicit>
                   </msItemStruct>
                </msContents>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>parchemin</support>
-                        <extent>
-                           <width unit="mm">330</width>
-                           <height unit="mm">245</height>
-                        </extent>
-                        <foliation>21 Senions, 245 folios</foliation>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="2" writtenLines="46"/>
-                     </layoutDesc>
-                  </objectDesc>
-                  <scriptDesc>
-                     <scriptNote>Caroline</scriptNote>
-                  </scriptDesc>
-               </physDesc>
-               <history>
-                  <origin/>
-                  <provenance>
-                     <p/>
-                     <listBibl>
-                        <bibl>
-                           <author/>
-                           <title/>
-                           <pubPlace/>
-                           <publisher/>
-                           <date/>
-                        </bibl>
-                     </listBibl>
-                  </provenance>
-               </history>
+            </msDesc>
+            <msDesc xml:id="C2">
+               <msIdentifier>
+                  <country>Paris</country>
+                  <settlement>Bibliothèque nationale de France</settlement>
+                  <idno>fr. 00411</idno>
+               </msIdentifier>
+               <head>
+                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <origDate>14e siècle</origDate>
+               </head>
+            </msDesc>
+            <msDesc xml:id="C3">
+               <msIdentifier>
+                  <country>London</country>
+                  <settlement>British Library</settlement>
+                  <idno>Royal 20.D.VI</idno>
+               </msIdentifier>
+               <head>
+                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <origDate>1240-1255 </origDate>
+               </head>
+            </msDesc>
+            <msDesc xml:id="G1">
+               <msIdentifier>
+                  <country>Bruxelles</country>
+                  <settlement>Bibliothèque royale</settlement>
+                  <idno>9225</idno>
+               </msIdentifier>
+               <head>
+                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+                  <origDate>14e siècle</origDate>
+               </head>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -829,10 +827,7 @@
                               us&qz-que; ad consummationem
                         seculi&deuxpoints-point;</seg></hi></said>&esp;<lb/>&c-maj;e est
                         a&esp;dire<pc type="reg" ana="CC"> :</pc>&#160;<said>&j-maj;e ser&eacc;
-                     ensamble o&esp;&u-v;os toz les &i-j;orz&esp;<lb/>qi&esp;serront tres<choice>
-                        <orig>&#160;</orig>
-                        <reg/>
-                     </choice>q<pc type="reg">'</pc>a la fin del siecle.</said>&esp;Et apr&eacc;s
+                           ensamble o&esp;&u-v;os toz les &i-j;orz&esp;<lb/>qi&esp;serront tres&nospace;q<pc type="reg">'</pc>a la fin del siecle.</said>&esp;Et apr&eacc;s
                         ce&esp;<lb/>q<pc type="reg">'</pc>il fu resoscitez<pc type="reg"
                         ana="subordonnee">,</pc> nos comanda&esp;il
                            &esperluette-et;dist&point-deuxpointsDial;<said who="#jesus"><hi rend="rubricated"
@@ -1996,10 +1991,7 @@
                   em﻿&pbarre-per;eres&esp;<lb/>li ot don&eacc; molt amiablement&point-virg4;il
                   &u-v;int a&esp;tot&esp;<lb/>son pueple qi ensamble o&esp;lui estoient<pc
                      type="reg" ana="coordination">,</pc> si
-                     dist&point-deuxpointsDial;<said who="#etienneDuc">&esp;<lb/>Alons tuit ensamble a&esp;mon<choice>
-                        <orig>&#160;</orig>
-                        <reg/>
-                     </choice>signeur <persName ref="#pierre"
+                  dist&point-deuxpointsDial;<said who="#etienneDuc">&esp;<lb/>Alons tuit ensamble a&esp;mon&nospace;signeur <persName ref="#pierre"
                         >seint&esp;<lb/>&p-maj;ere</persName><pc type="reg" ana="apposition">,</pc>
                      le&esp;prince des apostles<pc type="reg" ana="coordination">,</pc> si prendrons
                      sa&esp;<lb/>bene&itrem;&c-ced;on&deuxpoints-virg4;si qe&esp;nos puissons
@@ -3206,7 +3198,8 @@
                   >&g-maj;arone</placeName>&deuxpoints-virg3;car la a&u-v;oit mout
                   de&esp;<lb/>pueple apareilli&eacc;&#160; &esperluette-et;assambl&eacc;
                   qi&esp;en&esp;nostre&esp;<lb/>&s-maj;ignor creoient&deuxpoints-virg4;s<pc
-                     type="reg">'</pc>il estoit qi&esp;lor demostrast&esp;<lb/>la foi del seint
+                     type="reg">'</pc>il estoit <app><lem wit="#C2">q'i<corr type="add" resp="editor" source="#C2">l</corr></lem>
+                        <rdg wit="#C1">qi</rdg></app>&esp;lor demostrast&esp;<lb/>la foi del seint
                   baptesme.&esp;&l-maj;a s<pc type="reg">'</pc>en ala li seinz&esp;<lb/>hom<pc
                      type="reg" ana="coordination">,</pc> si &u-v;it molt de&esp;pueple
                   aparelli&eacc; pour&esp;<lb/>croire en nostre &s-maj;ignor&deuxpoints-virg3;si
