@@ -3,754 +3,768 @@
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Vie de saint Jérome</title>
-            <author>Wauchier de Denain</author>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>Ariane Pinche</publisher>
-            <date>2017</date>
-         </publicationStmt>
-         <sourceDesc>
-            <msDesc xml:id="A">
-               <msIdentifier>
-                  <country>Paris</country>
-                  <settlement>Bibliothèque nationale de France</settlement>
-                  <idno>fr. 00412</idno>
-               </msIdentifier>
-               <head>
-                  <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-                  <origDate>1285</origDate>
-                  <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
-                     notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
-                     la base Jonas-IRHT/CNRS (permalink : <ref
-                        target="http://jonas.irht.cnrs.fr/manuscrit/45533"
-                        >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
-                     03/07/2015 </note>
-               </head>
-               <msContents>
-                  <msItemStruct>
-                     <locus>fol.103-fol.170</locus>
-                     <author>Wauchier de Denain</author>
-                     <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-                     <incipit>De saint Martin mout doit on doucement et volentiers le bien oïr et
-                        entendre</incipit>
-                     <explicit/>
-                  </msItemStruct>
-               </msContents>
-               <physDesc>
-                  <objectDesc>
-                     <supportDesc>
-                        <support>parchemin</support>
-                        <extent>
-                           <width unit="mm">330</width>
-                           <height unit="mm">245</height>
-                        </extent>
-                        <foliation>21 Senions, 245 folios</foliation>
-                     </supportDesc>
-                     <layoutDesc>
-                        <layout columns="2" writtenLines="46"/>
-                     </layoutDesc>
-                  </objectDesc>
-                  <scriptDesc>
-                     <scriptNote>Caroline</scriptNote>
-                  </scriptDesc>
-               </physDesc>
-               <history>
-                  <origin/>
-                  <provenance>
-                     <p/>
-                     <listBibl>
-                        <bibl>
-                           <author/>
-                           <title/>
-                           <pubPlace/>
-                           <publisher/>
-                           <date/>
-                        </bibl>
-                     </listBibl>
-                  </provenance>
-               </history>
-            </msDesc>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc>
-         <refsDecl n="CTS">
-            <cRefPattern n="section" matchPattern="(.+).(.+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\']/tei:div[@n=\'$2\'])">
-               <p>This pointer pattern extracts chapter and section</p>
-            </cRefPattern>
-            <cRefPattern n="chapter" matchPattern="(.+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\'])">
-               <p>This pointer pattern extracts chapter.</p>
-            </cRefPattern>
-         </refsDecl>
-         <variantEncoding method="parallel-segmentation" location="internal"/>
-         <projectDesc>
-            <p/>
-         </projectDesc>
-      </encodingDesc>
-      <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="antoine">
-                  <persName>Antoines</persName>
-                  <birth when="0251">251</birth>
-                  <death when="0356">356</death>
-                  <note type="biographical" source="http://data.bnf.fr/11888967/antoine/">
-                     <surname type="complex">Antoine le grand, Antoine d'Égypte ou Antoine
-                        l'Ermite</surname>, considéré comme le fondateur du l'érémitisme
-                     chrétien.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="eusebius">
-                  <persName>Eusebius</persName>
-                  <note type="biographical">Père de <persName ref="#jerome">saint
-                     Jérôme</persName>.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="honorius">
-                  <persName>Honoires</persName>
-                  <birth when="0384">384</birth>
-                  <death when="0423">423</death>
-                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12566387q"
-                     >Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395
-                     à 423.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jerome">
-                  <persName>Jeroime</persName>
-                  <birth when="0345">345</birth>
-                  <death when="0420-09-20">420</death>
-                  <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
-                     docteur de l'Église, célèbre traducteur de la bible latine. Il est l'un des
-                     principaux opposants aux idées d'<persName ref="#origene"
-                     >Origène</persName>.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
-                  <persName>Marie</persName>
-                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
-                     >Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
-                     Dieu.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
-                  <persName>Pere</persName>
-                  <death when="0064">64</death>
-                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint
-                     Pierre de Rome, pêcheur de Galilée, devenu un des douze apôtres de
-                     Jésus-Christ. Il est le premier évêque de <placeName ref="#rome"
-                        >Rome</placeName>.</note>
-               </person>
-               <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="paul">
-                  <persName>Pol</persName>
-                  <birth when="0228">228</birth>
-                  <death when="0341">341</death>
-                  <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-                     <surname type="complex">Paul de Thèbes ou Paul l'ermite</surname>, figure
-                     fondatrice du monachisme avec <persName ref="#antoine">saint
-                     Antoine</persName>.</note>
-               </person>
-            </listPerson>
-         </particDesc>
-         <settingDesc>
-            <listPlace>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="bethleem"
-                  corresp="https://pleiades.stoa.org/places/687856">
-                  <placeName>Bethleem</placeName>
-                  <location>
-                     <geo>31.712291, 35.202123</geo>
-                  </location>
-                  <note>Bethléem, ville de Cisjordanie, lieu de naissance présumé du Christ.</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="dalmasse"
-                  corresp="http://data.bnf.fr/fr/15367120/dalmatie__province_romaine__33_av__j_c_-_/">
-                  <placeName>Dalmasse</placeName>
-                  <note>Dalmatie, région romaine, actuelle Croatie.</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="egypte"
-                  corresp="http://data.bnf.fr/15238583/egypte/">
-                  <placeName>Egypte</placeName>
-                  <note>Égypte, pays d'Afrique du Nord</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jerusalem"
-                  corresp="https://pleiades.stoa.org/places/687928">
-                  <placeName>Jerusalem</placeName>
-                  <location>
-                     <geo>31.776679, 35.234156</geo>
-                  </location>
-                  <note>Ville de Jérusalem, située en actuelle Israël.</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                  corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC" xml:id="pannonie">
-                  <placeName>Pannone</placeName>
-                  <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du
-                     Danube.</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-                  corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-                  <placeName>Rome</placeName>
-                  <location>
-                     <geo>41.891775, 12.486137</geo>
-                  </location>
-                  <note>Ville italienne, capitale de l'empire romain d'occident.</note>
-               </place>
-               <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="stridon">
-                  <placeName>Stridons</placeName>
-                  <note>Ville romaine, située entre la <placeName ref="#pannonie"
-                        >Pannonie</placeName> et la <placeName ref="#dalmasse">Dalmatie</placeName>,
-                     lieu de naissance de <persName ref="#jerome">saint Jérôme</persName>.</note>
-               </place>
-            </listPlace>
-         </settingDesc>
-      </profileDesc>
-   </teiHeader>
-   <text n="edition">
-      <body n="urn:cts:froLit:jns915.jns1742.ciham-fro1">
-         <div n="1" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
-            <head>Ci comence la&esp;&u-v;ie de&esp;<choice>
-                  <orig>.s'.</orig>
-                  <reg>saint</reg>
-               </choice>&esp;<persName ref="#jerome">&j-maj;erosme</persName></head>
-            <div type="section" n="1">
-               <p><pb facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item" n="157"/><cb
-                     n="a"/><hi rend="rubricated orig">Ci comence la&esp;&u-v;ie de&esp;<choice>
-                        <orig>.s'.</orig>
-                        <reg>saint</reg>
-                     </choice>&esp;<persName ref="#jerome"
-                     >&j-maj;erosme</persName>.</hi>&esp;<lb/><persName ref="#jerome"><hi
-                        rend="decorated-initial">S</hi><choice>
-                        <orig>E</orig>
-                        <reg>e</reg>
-                     </choice>inz Jerosme&sexp-s;</persName>&esp;<lb/>fu&esp;nez
-                     de&esp;hau<lb/>te&esp;lignie&deuxpoints-virg7;d<pc type="reg"
-                  >'</pc>&utilde-un;&esp;<lb/>chastel&esp;qi fu&esp;<lb/>apelez <placeName
-                     ref="#stridon">&s-maj;tri<lb/>dons</placeName>&point-virg3;si esto<lb/>it en
-                  la&esp;mar<lb/>che <placeName ref="#dalmasse"
-                  >&d-maj;almasse</placeName>&esp;<lb/>&esperluette-et;de <placeName ref="#pannonie"
-                     >&p-maj;anno<lb/>nie</placeName>&point-virg3;mes il&esp;<lb/>est destruit grant
-                  tens a&point-virg4;si come sont plu<lb/>seurs autres &u-v;iles qi &i-j;a furent
-                  de&esp;grant no<lb/>blece.&esp;Li&esp;peres <persName ref="#jerome">seint
-                     Jerome</persName> eut a&esp;non <persName ref="#eusebius"
-                     >&e-maj;u<lb/>sebius</persName> qi&esp;mout fu preudom
-                  &esperluette-et;sages.&esp;&l-maj;i filz&esp;<lb/>l<pc type="reg">'</pc>ensi&u-v;i
-                  mout bien de science&point-virg4;si com &u-v;oz por<lb/>roiz o&itrem;r
-                  &esperluette-et;entendre.&esp;Qant <persName ref="#jerome">seinz
-                     J﻿eromes</persName>&esp;<lb/>fu&esp;enfes<pc type="reg" ana="subordonnee"
-                     >,</pc> il deguerpi son pere&point-virg4;por&esp;ce q<pc type="reg">'</pc>il
-                  &u-v;oloit&esp;<lb/>ensi&u-v;re la seinte &e-maj;u&u-v;angile.&esp;Il &u-v;int
-                  au&esp;ri&u-v;a<lb/>ge de&esp;la&esp;mer par la&esp;&u-v;olent&eacc; nostre
-                  &s-maj;ignor&point-virg3;si&esp;<lb/>entra en&esp;une nef qi&esp;a&esp;droit cours
-                  le porta&esp;<lb/>a&esp;la&esp;cit&eacc; de <placeName ref="#rome"
-                     >&r-maj;ome</placeName>.&esp;Et qant il&esp;i&esp;fu &u-v;enuz<pc type="reg"
-                     ana="subordonnee">,</pc> il ala&esp;<lb/>au&esp;mostier mon<pc type="orig"
-                     ana="mot">&#160;</pc>signeur <persName ref="#pierre">seint
-                     &p-maj;ere</persName><pc type="orig" ana="coordination"
-                     >:</pc>&esp;&esperluette-et;<persName ref="#paul"
-                     >seint&esp;<lb/>&p-maj;ol</persName><pc type="reg" ana="apposition">,</pc> les
-                  apostres nostre &s-maj;ignor.&esp;&l-maj;a aprist il&esp;<lb/>premiers greu
-                  &esperluette-et;latin par&esp;grant
-                  diligence&esp;<lb/>&esperluette-et;si&esp;ensi&u-v;i la&esp;lo&ypoint; nostre
-                  &s-maj;ignor del tout en&esp;<lb/>tout molt benignement<pc type="orig"
-                     ana="coordination">:</pc>&esp;&esperluette-et;fu ordenez a&esp;<lb/>prestre
-                  &esperluette-et;fez chardonaus en la cit&eacc; de&esp;&r-maj;ome.&esp;<lb/>Et en
-                  sa &i-j;o&u-v;enece fu&esp;il ensigniez &esperluette-et;apris
-                  &esperluette-et;<lb/>doctrinez de&esp;toz les hauz mestres qi i&esp;estoi<lb/>ent
-                  adonc.&esp;Il sot greu &esperluette-et;latin &esperluette-et;ebreu
-                  &esperluette-et;araboi&esp;<lb/>&esperluette-et;caldeu&deuxpoints-virg6;plus c<pc
-                     type="reg">'</pc>on ne porroit conter ne di<lb/>re.&esp;De &r-maj;ome
-                  se&esp;departi il&deuxpoints-virg3;si&esp;s<pc type="reg">'</pc>en ala en
-                     <placeName ref="#jerusalem"
-                  >&j-maj;eru<lb/>salem</placeName>&deuxpoints-point;&l-maj;a&esp;fu&esp;il petit
-                     de&esp;tens<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
-                     >'</pc>en ala&point-virg3;car&esp;il&esp;<lb/>se pensa q<pc type="reg">'</pc>il
-                  &u-v;oudroit &u-v;i&u-v;re en&esp;tel&esp;manie<lb/>re qe s<pc type="reg"
-                  >'</pc>arme ne fust dampnee<pc type="orig" ana="coordination"
-                  >:</pc>&esp;&esperluette-et;estre pres&esp;<lb/>de&esp;la ou&esp;nostre
-                  &s-maj;ires fu couchiez &esperluette-et;le&u-v;ez&deuxpoints-virg3;si&esp;<lb/>
-                  &u-v;int a&esp;l<pc type="reg">'</pc>e&u-v;esqe
-                  de&esp;la&esp;cit&eacc;&point-virg3;si&esp;li requist q<pc type="reg"
-                  >'</pc>il&esp;li&esp;<lb/>donast la&esp;parosse de&esp;l<pc type="reg"
-                  >'</pc>eglisse de&esp;<placeName ref="#bethleem">&b-maj;ethleem</placeName>
-                  por&esp;<lb/>la&esp;estorer une eglisse ou&esp;il pe&utrem;st arrester
-                  toz&esp;<lb/>les &i-j;orz de sa &u-v;ie.&esp;Li&esp;e&u-v;esqes li otroia
-                     molt&esp;<lb/><cb n="b"/><choice>
-                     <orig>B</orig>
-                     <reg>b</reg>
-                  </choice>enignement&point-virg4;si com il ot droit.&esp;Dont&esp;<lb/>fist
-                     <persName ref="#jerome">seinz &j-maj;eromes</persName> une eglisse en
-                     <placeName ref="#bethleem">&b-maj;ethleem</placeName>&esp;<lb/>ou il mist
-                  preudes&esp;omes ensamble o&esp;lui en&esp;<lb/>confrarie qi&esp;&u-v;esquissent
-                  ensamble o&esp;lui de<lb/>souz la&esp;riule des apostres.&esp;La&esp;translata
-                  il&esp;les&esp;<lb/>li&u-v;res ebrieus en&esp;latin<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;&d-maj;aniel<note>Référence au
-                     commentaire que Jérôme fit sur le livre de Daniel. Daniel est un des quatre
-                     grands prophètes du canon de l'Église. Il aurait vécu à Babylone sous les
-                     régnes de Nabuchodonosor, de son fils Balthasar, ainsi que de Darius et de
-                     Cyrus, rois de Perse.</note> de&esp;caldeu&esp;<lb/>en&esp;latin
-                  &esperluette-et;le &u-v;iez testament &esperluette-et;le
-                  no&u-v;el&point-virg4;si&esp;c&otilde-om;&esp;<lb/>nos l<pc type="reg"
-                  >'</pc>a&u-v;ons encore escrit.&esp;Mout fu <persName ref="#jerome"
-                     >seinz&esp;&j-maj;e<lb/>romes</persName> preudom &esperluette-et;de&esp;grant
-                  science &esperluette-et;mout&esp;<lb/>enlumina seinte eglisse&point-virg3;car
-                     il&esp;translata&esp;<lb/>d<pc type="reg">'</pc>ebreu en&esp;latin les&esp;<pc
-                     ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
-                  >.</pc>&esp;prophetes &esperluette-et;le psau<lb/>tier aussint
-                  &esperluette-et;mout mena seinte &u-v;ie.&esp;&n-maj;e&esp;<lb/>porroit estre qe
-                  nuz hom racontast toz ses&esp;<lb/>fez<pc type="reg" ana="coordination">,</pc>
-                  car&esp;trop&esp;seroit longue chose&point-virg3;mes&esp;&i-j;e
-                  &u-v;&apos-os;&esp;<lb/>dirai un miracle q<pc type="reg">'</pc>il a&u-v;int en
-                     l<pc type="reg">'</pc>eglisse ou&esp;<lb/>il arrestoit ensamble o&esp;ses
-                     freres<pc type="reg" ana="incise">,</pc> si com&esp;<lb/>&i-j;e&esp;&u-v;os
-                  ai&esp;de&u-v;ant dit<pc type="reg" ana="incise">,</pc> en&esp;<placeName
-                     ref="#bethleem">&b-maj;ethleem</placeName> si&esp;com &i-j;e&esp;<lb/>l<pc
-                     type="reg">'</pc>o&itrem;&esp;raconter as religieus homes qi
-                  i&esp;furent&esp;<lb/>&esperluette-et;einsint comence&point-deuxpoints;<lb/></p>
-            </div>
-         </div>
-         <div n="2" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
-            <div type="section" n="1">
-               <p><hi rend="decorated-initial">U</hi><choice>
-                     <orig>N</orig>
-                     <reg>n</reg>
-                  </choice>&#160;&i-j;or a&u-v;int qe<pc type="reg" ana="subordonnee">,</pc>
-                  la&esp;ou messires&esp;<lb/><persName ref="#jerome">seinz
-                     &j-maj;eroimes</persName> estoit&esp;a&esp;la&esp;le&c-ced;on&esp;<lb/>c<pc
-                     type="reg">'</pc>om list de&u-v;ant les freres si&esp;c&otilde-om;&esp;<lb/>il
-                  est&esp;encore costume&deuxpoints-virg4;qe uns granz lions&esp;<lb/>entra en l<pc
-                     type="reg">'</pc>encloistre&point-virg4;la&esp;ou&esp;li frere
-                  seoient&esp;<lb/>qi clochoit a&esp;trois piez por le qart q<pc type="reg">'</pc>il
-                  a<lb/>&u-v;oit malade.&esp;Qant li frere le&esp;&u-v;irent<pc type="reg"
-                     ana="subordonnee">,</pc>&esp;<lb/>il furent mout espoentez<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;por&esp;la&esp;poor q<pc
-                     type="reg">'</pc>il&esp;<lb/>en orent<pc type="reg" ana="subordonnee">,</pc>
-                     s<pc type="reg">'</pc>en&esp;tornerent il li pluiseur
-                     en&esp;<lb/>fuies.&esp;<persName ref="#jerome">Seinz &j-maj;eroimes</persName>
-                  ne&esp;le dota mie&point-virg3;<lb/>einz ala encontre aussint com se ce
-                  fust&esp;<lb/>uns hostes qi&esp;li &u-v;enist por herbergier<pc type="orig"
-                     ana="coordination">:</pc>&esp;&esperluette-et;<lb/>li&esp;lions &u-v;int
-                  de&u-v;ant lui<pc type="reg" ana="coordination">,</pc> si&esp;li mostra
-                  la&esp;<lb/>plante de&esp;son&esp;pi&eacc; ou&esp;il a&u-v;oit
-                  la&esp;blece&utrem;re.&esp;<lb/>Dont apela <persName ref="#jerome">seinz
-                     &j-maj;eroimes</persName> ses freres<pc type="reg" ana="coordination">,</pc>
-                  si&esp;<lb/>lor &neuf-con;manda q<pc type="reg">'</pc>il li la&u-v;assent
-                  le&esp;pi&eacc; mout&esp;<lb/>docement<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;si quisissent por quel&esp;chose
-                  il&esp;<lb/>clochoit&point-virg3;si&esp;tro&u-v;erent qe&esp;li&esp;lions estoit
-                     bleciez&esp;<lb/>d<pc type="reg">'</pc>un estoc<pc type="reg"
-                     ana="coordination">,</pc> si&esp;estoit li&esp;fuz remes dedenz
-                     la&esp;<lb/>plaie.&esp;<persName ref="#jerome">Seinz &j-maj;eroimes</persName>
-                  li&esp;fist treire &esperluette-et;si&esp;<lb/>l<pc type="reg">'</pc>asouaga
-                  &esperluette-et;gueri en&esp;me&itrem;smes l<pc type="reg"
-                  >'</pc>eure.&esp;Li&esp;<lb/>lions deguerpi tote la maniere
-                     de&esp;sa&esp;fe<lb/>lonie<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;si demora en la meson aussint&esp;<lb/>come une beste
-                  dontee.&esp;Qant ce&esp;&u-v;it <persName ref="#jerome"
-                     >se&itilde-in;z&esp;<lb/>&j-maj;eroimes</persName><pc type="reg"
-                     ana="subordonnee">,</pc> il&esp;parla a&esp;ses
-                  freres&esp;&esperluette-et;si&esp;dist&point-deuxpointsDial; <said who="#jerome"
-                        >Bea&apos-us;&esp;<lb/>signor<pc type="reg" ana="apostrophe">,</pc>
-                     or&esp;esgardez qele oe&u-v;re cis lions&esp;nos&esp;<lb/>porroit faire
-                     qi&esp;a&esp;nostre &s-maj;ignor fust plesans&esp;<lb/><pb n="157"
-                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f324.item.zoom"/><cb
-                        n="c"/><choice>
-                        <orig>E</orig>
-                        <reg>e</reg>
-                     </choice>t pourfitable&point-virg3;<choice>
-                        <orig>C</orig>
-                        <reg>c</reg>
-                     </choice>ar<pc type="reg" ana="incise">,</pc>&esp;si com &i-j;e croi<pc
-                        type="reg" ana="incise">,</pc>&esp;<choice>
-                        <orig>N</orig>
-                        <reg>n</reg>
-                     </choice>ostre&esp;<lb/>&s-maj;ires qi puissanz estoit de&esp;lui guerir
-                        ne&esp;l<pc type="reg">'</pc>en<lb/>&u-v;oia mie ci tant seulement
-                     por&esp;la garisson&esp;<lb/>de&esp;son pi&eacc;<pc type="orig" ana="subCorr"
-                        >:</pc>&esp;com por la&esp;demostrance q<pc type="reg">'</pc>il
-                     nos&esp;<lb/>aidast en&esp;nostre ser&u-v;ice.</said>&esp;Dont
-                  respondirent&esp;<lb/>li frere mout humlement
-                        &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Bea&apos-us;&esp;<lb/>peres<pc
-                        type="reg" ana="apostrophe">,</pc> tu sez bien qe nostre asne
-                     qi&esp;la&esp;busche&esp;<lb/>soloit aporter auroit mestier d<pc type="reg"
-                        >'</pc>une garde&esp;<lb/>qui a&esp;lui fust ententi&u-v;e&point-virg3;car
-                     nos resoign&otilde-on;s&esp;<lb/>mout qe aucune cruele beste
-                     ne&esp;le&esp;de&u-v;ore&esp;<lb/>qi&esp;nos en&esp;face damage.&esp;Et
-                        por&esp;ce<pc type="reg" ana="subordonnee">,</pc>&esp;s<pc type="reg"
-                     >'</pc>il te plest<pc type="reg" ana="subordonnee">,</pc>&esp;<lb/>comande
-                     a&esp;cest lion q<pc type="reg">'</pc>il prenge garde a&esp;cest&esp;<lb/>asne
-                     &esperluette-et;si&esp;le&esp;meint en pasture &esperluette-et;si&esp;le gart
-                        a&esp;l<pc type="reg">'</pc><lb/>aler &esperluette-et;au &u-v;enir en
-                     meson&point-virg3;car ce nos sam<lb/>ble la&esp;miudre chose
-                  a&esp;fere.</said>&esp;Einsint le&esp;fist&esp;<lb/>
-                  <persName ref="#jerome">seinz &j-maj;eroimes</persName>&point-virg3;car&esp;il
-                  comanda au lion &qisuscrit-qi;l&esp;<lb/>gardast l<pc type="reg">'</pc>asne par
-                  grant diligense&deuxpoints-point;&et-maj;il&esp;si&esp;<lb/>fist a&esp;guise
-                  de&esp;bon pasteur<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;en
-                  quel c<pc type="reg">'</pc>on&qbarre2;s&esp;<lb/>leu qe li&esp;asnes alast
-                     em&esp;pasture<pc type="reg" ana="subordonnee">,</pc> estoit li li<lb/>ons
-                  ensamble o&esp;lui<pc type="orig" ana="coordination"
-                  >:</pc>&esp;&esperluette-et;si&esp;li&esp;fu bons desfender<lb/>res
-                  &esperluette-et;bons aidierres s<pc type="reg">'</pc>il en e&utrem;st mestier&deuxpoints-virg4;<choice>
-                     <orig>Q</orig>
-                     <reg>q</reg>
-                  </choice>&nasuscrit-an;t&esp;<lb/>li asnes re&u-v;enoit en&esp;meson por fere s<pc
-                     type="reg">'</pc>oe&u-v;re&esp;<lb/>qi &i-j;a l<pc type="reg">'</pc>a&u-v;oit
-                  a&esp;costume mout bien<pc type="reg" ana="subordonnee"
-                  >,</pc>&esp;&esperluette-et;li lions&esp;<lb/>ensamble o&esp;lui.&esp;Tant ala
-                  einsi la&esp;chose qe&esp;<lb/>li lions remena son asne en pasture
-                  un&esp;<lb/>&i-j;or q<pc type="reg">'</pc>il a&u-v;oit &i-j;a ceste oe&u-v;re
-                  grant piece de<lb/>menee.&esp;Dont a&u-v;int qe granz talenz de&esp;<lb/>dormir
-                  prist au&esp;lion q<pc type="reg">'</pc>il se coucha &esperluette-et;endormi<pc
-                     type="orig" ana="CC">:</pc>&esp;<lb/>mout fermement si come sa&esp;nature li
-                  apor<lb/>toit &esperluette-et;ensignoit.&esp;Si com li&esp;lions
-                  dormoit&esp;<lb/>en&esp;tel maniere&deuxpoints-virg4;il a&u-v;int qe
-                  marcheant&esp;<lb/>passerent par iluec qi por huile acheter s<pc type="reg"
-                  >'</pc>en&esp;<lb/>alerent en <placeName ref="#egypte"
-                     >&e-maj;g&ypoint;pte</placeName>.&esp;Qant il &u-v;irent l<pc type="reg"
-                  >'</pc>asne&esp;<lb/>tout seul en la pasture&esp;&esperluette-et;sanz
-                     garde&deuxpoints-virg4;il&esp;le&esp;<lb/>pristrent<pc type="reg"
-                     ana="coordination">,</pc> si&esp;l<pc type="reg">'</pc>en&esp;menerent par
-                  felenesse&esp;<lb/>co&u-v;oitise.&esp;Apr&eacc;s ce petit d<pc type="reg"
-                  >'</pc>eure s<pc type="reg">'</pc>es&u-v;eilla li&esp;<lb/>lions qi&esp;ne
-                  sa&u-v;oit mot de&esp;son domache.&esp;Et&esp;<lb/>lors comen&c-ced;a a&esp;querre
-                     l<pc type="reg">'</pc>asne qi&esp;li estoit en&esp;<lb/>garde charchiez.&esp;Et
-                  qant il ne&esp;le pot tro&u-v;&apos-er;&esp;<lb/>en la pasture<pc type="reg"
-                     ana="subordonnee">,</pc> il fu mout dolenz &esperluette-et;pleinz
-                  de&esp;<lb/>grant angoisse&point-virg3;si comen&c-ced;a a&esp;aler
-                  une&esp;<lb/>grant piece del &i-j;or amont &esperluette-et;a&u-v;al<pc type="reg"
-                     ana="apposition">,</pc> sus &esperluette-et;<lb/>&i-j;us<pc type="reg"
-                     ana="apposition">,</pc> tot muiant por ce q<pc type="reg">'</pc>il &u-v;oloit
-                  tro&u-v;er&esp;<lb/>la beste q<pc type="reg">'</pc>il a&u-v;oit perdue.&esp;Et
-                  qant il &u-v;it&esp;<lb/>qe&esp;tro&u-v;er ne&esp;la&esp;porroit en&esp;nule
-                     maniere<pc type="orig" ana="coordination">.</pc>&esp;<lb/>&esperluette-et;qu<pc
-                     type="reg">'</pc>il en a&u-v;oit l<pc type="reg">'</pc>esperance
-                  perdue&point-virg4;il &u-v;int&esp;<lb/><cb n="d"/><choice>
-                     <orig>A</orig>
-                     <reg>a</reg>
-                  </choice> la&esp;porte de&esp;l<pc type="reg">'</pc>abe&itrem;e sanz l<pc
-                     type="reg">'</pc>asne<pc type="orig" ana="coordination">:</pc>&esp;<choice>
-                     <orig>E</orig>
-                     <reg>e</reg>
-                  </choice>t arresta&esp;<lb/>defors ne n<pc type="reg">'</pc>osa mie entrer dedenz
-                  por le mes<lb/>fet q<pc type="reg">'</pc>il fet a&u-v;oit<pc type="reg"
-                     ana="subordonnee">,</pc> si&esp;com il soloit
-                  entrer&point-virg4;qant&esp;<lb/>il ramenoit l<pc type="reg">'</pc>asne
-                  de&esp;la&esp;pasture.&esp;Qant <persName ref="#jerome"
-                     >se&itilde-in;z&esp;<lb/>Jeroimes</persName>&#160;&esperluette-et;li frere
-                  de&esp;la meson &u-v;irent le&esp;<lb/>lion arrester a&esp;la porte de&esp;l<pc
-                     type="reg">'</pc>abe&itrem;e sanz l<pc type="reg"
-                     >'</pc>asne&esp;<lb/>&esperluette-et;q<pc type="reg">'</pc>il&esp;a&u-v;oit
-                  tant atargi&eacc; q<pc type="reg">'</pc>il n<pc type="reg">'</pc>estoit
-                  re&u-v;e<lb/>nuz a&esp;droite heure&deuxpoints-virg8;si&esp;com il
-                  soloit&point-virg4;il cui<lb/>dierent q<pc type="reg">'</pc>il e&utrem;st ocis lor
-                  asne &esperluette-et;mengi&eacc;&#160;&esperluette-et;por&esp;<lb/>ce&esp;ne li
-                  &u-v;oudrent doner&esp;tel &u-v;iande com il&esp;<lb/>soloient doner<pc type="reg"
-                     ana="coordination">,</pc> einz li&esp;disoient<pc type="reg" ana="DD">:
-                        </pc><said>&v-maj;a&esp;t<pc type="reg">'</pc>en
-                     &esperluette-et;si&esp;<lb/>mengue la partie qi&esp;t<pc type="reg">'</pc>est
-                     remese del asne qe&esp;<lb/>tu as ocis<pc type="reg" ana="coordination">,</pc>
-                     si&esp;raempliz ta&esp;glotonie&point-exclamation;</said>&esp;Et
-                  encore&esp;<lb/>de&itrem;ssent il ce&point-virg4;il ne le sa&u-v;oient mie
-                     certain<lb/>nement<pc type="orig" ana="completive"
-                  >.</pc>&esp;se&esp;li&esp;lions a&u-v;oit fet le&esp;mal qu<pc type="reg"
-                  >'</pc>il&esp;<lb/>sus li metoient.&esp;Et por&esp;ce sa&u-v;oir s<pc type="reg"
-                     >'</pc>esmur&etilde-en;t&esp;<lb/>ne sei qanz des freres<pc type="reg"
-                     ana="coordination">,</pc> si s<pc type="reg">'</pc>en alerent
-                  a&esp;la&esp;<lb/>pasture ou li lions soloit l<pc type="reg">'</pc>asne
-                  mener&point-virg3;si&esp;<lb/>qistrent d<pc type="reg">'</pc>une part
-                     &esperluette-et;d<pc type="reg">'</pc>autre<pc type="reg" ana="subordonnee"
-                     >,</pc> s<pc type="reg">'</pc>il &i-j;a par a&u-v;en<lb/>ture tro&u-v;assent
-                  aucune enseigne ou au<lb/>cune trace del sanc de&esp;lor beste&point-virg3;<choice>
-                     <orig>M</orig>
-                     <reg>m</reg>
-                  </choice>es on&qbarre2;s&esp;<lb/>tant ne sorent qerre q<pc type="reg">'</pc>il en
-                  pe&utrem;ssent tro&u-v;er&esp;<lb/>enseignes ne no&u-v;eles.&esp;Dont le
-                  noncierent&esp;<lb/>einsi a&esp;<persName ref="#jerome">seint
-                     &j-maj;eroime</persName>.&esp;Qant il l<pc type="reg">'</pc>o&itrem;<pc
-                     type="reg" ana="subordonnee">,</pc> il par<lb/>la<pc type="reg"
-                     ana="coordination">,</pc> si dist&point-deuxpointsDial;<said>Beaus freres<pc
-                        type="reg" ana="apostrophe">,</pc>&#160;&i-j;e &u-v;oz proi
-                     qe&esp;&u-v;os&esp;<lb/>soffrez em&esp;pes le domache de&esp;l<pc type="reg"
-                        >'</pc>asne<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si
-                     ne&esp;<lb/>leidengiez ne enchaciez cest lion&deuxpoints-virg3;mes
-                     donez&esp;<lb/>lui sa&esp;&u-v;iande tele com il&esp;la&esp;soloit a&u-v;oir<pc
-                        type="orig" ana="coordination">:</pc>&esp;<lb/>&esperluette-et;si&esp;le
-                     norrissiez q<pc type="reg">'</pc>il ne defaille.&esp;Si alez el&esp;<lb/>bois
-                     &esperluette-et;tailliez la buische<pc type="reg" ana="subordonnee">,</pc>
-                     si&esp;com &u-v;os soliez<pc type="reg" ana="coordination">,</pc>&esp;<lb/>si
-                     atelez le lion el leu de&esp;l<pc type="reg">'</pc>asne<pc type="reg"
-                        ana="coordination">,</pc> si&esp;la noz a<lb/>trera.</said>&esp;Einsint le
-                  firent li frere com <persName ref="#jerome"
-                     >seinz&esp;<lb/>&j-maj;eroimes</persName> lor &neuf-con;manda.&esp;Li lions
-                  fu&esp;remis&esp;<lb/>en la&esp;porte<pc type="reg" ana="coordination">,</pc>
-                  si&esp;rot sa grace<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;aloit chascun&esp;<lb/>&i-j;or au bois ensamble
-                  o&esp;un des freres ou&esp;<lb/>ensamble&esp;<pc ana="number">.</pc><seg
-                     type="number">ii</seg><pc ana="number">.</pc>&esp;&esperluette-et;el leu
-                     de&esp;l<pc type="reg">'</pc>asne lor
-                  aportoit&esp;<lb/>&esperluette-et;atreioit busche.&esp;<lb/></p>
-            </div>
-         </div>
-         <div n="3" type="chapter">
-            <div type="section" n="1">
-               <p><hi rend="decorated-initial">E</hi><choice>
-                     <orig>I</orig>
-                     <reg>i</reg>
-                  </choice>nsint esploita par ne sai com<lb/>bien de tens&point-virg4;tant qe&esp;un
-                  &i-j;our&esp;<lb/>&u-v;int q<pc type="reg">'</pc>il ot oe&u-v;re
-                     lessie.&esp;Adont&esp;<lb/>s<pc type="reg">'</pc>esmut par la &u-v;olent&eacc;
-                  nostre &s-maj;ignor si&esp;c&otilde-om;&esp;<lb/>&i-j;e cuit.&esp;&e-maj;ncore
-                  fust il mue beste<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
-                     >'</pc>en ala&esp;<lb/>a&esp;la champaigne por enquerre s<pc type="reg"
-                  >'</pc>il sauroit&esp;<lb/>&i-j;a&esp;par a&u-v;enture no&u-v;eles de&esp;son
-                  compaig<lb/>non.&esp;Dont cercha par toz les angles del&esp;<lb/>bois
-                  &esperluette-et;fosses &esperluette-et;qarrieres &esperluette-et;ala tant q<pc
-                     type="reg">'</pc>il fu&esp;<lb/><pb n="158"
-                     facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f325.item.zoom"/><cb n="a"/><choice>
-                     <orig>M</orig>
-                     <reg>m</reg>
-                  </choice>out lassez &esperluette-et;q<pc type="reg">'</pc>il &u-v;int en un haut <choice>
-                     <orig>L</orig>
-                     <reg>l</reg>
-                  </choice>eu&esp;<lb/>qi estoit el&esp;comun chemin.&esp;Qant il fu la
-                  &u-v;e<lb/>nuz mout tra&u-v;eilliez<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;molt angoisseus&esp;<lb/>de&esp;la
-                  &u-v;oie&deuxpoints-virg4;il resgarda si&esp;loing com il onqes&esp;<lb/>pot
-                  en&u-v;iron lui&deuxpoints-virg3;si&esp;&u-v;it homes qi
-                  chameus&esp;<lb/>charchiez amenoient &esperluette-et;de&u-v;ant tote&esp;la
-                  rote&esp;<lb/>&u-v;enoit li asnes<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;por ce q<pc type="reg">'</pc>il estoit trop
-                  loing&esp;<lb/>por lui conoistre&point-virg4;se&esp;mist il a&esp;la&esp;&u-v;oi
-                  encontre.&esp;<lb/>Costume est en&esp;cele region qe qant
-                  marcheant&esp;<lb/>meinent chameus por aporter granz fes<note>troupeau</note>
-                  de&esp;<lb/>lonteignes contrees<pc type="reg" ana="subordonnee">,</pc> q<pc
-                     type="reg">'</pc>il ont un asne qui&esp;<lb/>porte en&esp;son col une corde
-                  a&esp;qoi&esp;li chamel sont&esp;<lb/>liiez&deuxpoints-virg3;si s<pc type="reg"
-                     >'</pc>en &u-v;et de&u-v;ant &esperluette-et;li chamel le
-                  si&u-v;ent&esp;<lb/>tout soef le&esp;pas li uns apr&eacc;s l<pc type="reg"
-                  >'</pc>autre sanz issir&esp;<lb/> de&esp;&u-v;oie<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;einsint si&u-v;oient ad&eacc;s
-                     l<pc type="reg">'</pc>asne&esp;li&esp;chamel&esp;<lb/>solonc ceste
-                  costume.&esp;Qant li marcheanz &u-v;i<lb/>rent le&esp;lion
-                     &esperluette-et;il&esp;l<pc type="reg">'</pc>aproismierent<pc type="reg"
-                     ana="subordonnee">,</pc> il orent
-                  grant&esp;<lb/>poor&deuxpoints-point;&l-maj;i&esp;lions reconut l<pc type="reg"
-                     >'</pc>asne<pc type="reg" ana="coordination">,</pc>&esp;si comen&c-ced;a
-                  a&esp;muire&esp;<lb/>mout durement<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;lors&esp;lor corut seure<pc type="reg"
-                     ana="coordination">,</pc> mes&esp;<lb/>il n<pc type="reg"
-                  >'</pc>en&esp;ble&c-ced;a nul<pc type="orig" ana="coordination"
-                  >.</pc>&esp;ne&esp;ne fist mal de&esp;lor cors
-                  ne&esp;<lb/>gre&u-v;ance&deuxpoints-virg3;car li&esp;marcheanz
-                  deguerpirent&esp;<lb/>totes lor choses&point-virg3;si&esp;s<pc type="reg"
-                     >'</pc>en<pc type="orig" ana="mot">&#160;</pc>fo&itrem;rent por la
-                  poour&esp;<lb/>de&esp;la&esp;beste q<pc type="reg">'</pc>il &u-v;eoient &u-v;enir
-                  grant &esperluette-et;hisdeuse.&esp;<lb/>Et si&esp;com il s<pc type="reg">'</pc>en
-                     fuioient<pc type="reg" ana="subordonnee">,</pc> li&esp;lions mu&i-j;oit
-                  &esperluette-et;si&esp;<lb/>feroit la&esp;terre de&esp;sa keue mout
-                  durement&deuxpoints-point;<lb/>Li chamel qi charchiez estoient erent
-                  molt&esp;<lb/>espoentez.&esp;Lors les acuelli li lions<pc type="reg"
-                     ana="coordination">,</pc> si&esp;les en<lb/>mena de&u-v;ant lui
-                  &esperluette-et;cha&c-ced;a&esp;tant q<pc type="reg">'</pc>il
-                  &u-v;indrent&esp;<lb/>atout l<pc type="reg">'</pc>asne a&esp;l<pc type="reg"
-                     >'</pc>abe&itrem;e.&esp;Qant il &u-v;indrent a&esp;la&esp;<lb/>porte
-                  &esperluette-et;li frere&esp;les &u-v;irent<pc type="reg" ana="subordonnee">,</pc>
-                  il alerent a&esp;<persName ref="#jerome"
-                     >seint&esp;<lb/>&j-maj;eroime</persName><pc type="reg" ana="coordination"
-                     >,</pc> si&esp;li distrent.&esp;Qant il o&itrem; ceste no&u-v;ele<pc type="reg"
-                     ana="subordonnee"
-                  >,</pc>&esp;<lb/>il&esp;issi&esp;fors&point-virg3;si&esp;&neuf-con;manda
-                  a&esp;o&u-v;rir les portes
-                     &esperluette-et;puis&esp;<lb/>si&esp;dist&point-deuxpointsDial;<said
-                     who="#jerome">Descharchiez nos ostes des fes
-                     qe&esp;il&esp;<lb/>portent&point-virg3;puis lor donez a&esp;mengier<pc
-                        type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;apr&eacc;s&esp;<lb/>esgarderons qe nostre
-                     &s-maj;ires &u-v;oudra a&esp;nous&esp;<lb/>demostrer&point-virg5;qi si&esp;serf
-                        somes<pc type="reg" ana="apposition">,</pc> de&esp;ceste chose
-                     de<lb/>mostrer &esperluette-et;fere.</said>&esp;Li&esp;frere firent ce q<pc
-                     type="reg">'</pc>il &neuf-con;manda&esp;<lb/>&esperluette-et;atornerent mout
-                  bien les chameus &esperluette-et;aai<lb/>sierent<note>contenter, mettre à
-                     l'aide</note>.&esp;Li&esp;lions comen&c-ced;a a&esp;aler molt liement&esp;<lb/>
-                  par tout l<pc type="reg">'</pc>encloistre de&esp;l<pc type="reg"
-                  >'</pc>abe&itrem;e&point-virg3;si se&esp;coucha de<lb/>&u-v;ant chascun
-                  frere&deuxpoints-virg4;aussi com s<pc type="reg">'</pc>il &u-v;ousist di<lb/>re
-                     q<pc type="reg">'</pc>il n<pc type="reg">'</pc>a&u-v;oit mie faite la felonie
-                     c<pc type="reg">'</pc>on li a&u-v;oit&esp;<lb/>sus&esp;mise.&esp;Qant
-                  ce&esp;&u-v;irent li frere<pc type="reg" ana="subordonnee">,</pc> il firent
-                  lor&esp;<lb/>peneance por&esp;la&esp;cruiaut&eacc; del blasme dont
-                     il&esp;<lb/>l<pc type="reg">'</pc>a&u-v;oient ret&eacc;<note>accusé</note>
-                  a&esp;tort&deuxpoints-virg3;car&esp;adont estoient moi<lb/>ne piu
-                     &esperluette-et;doz<pc type="orig" ana="coordination">.</pc>&esp;ne ne
-                  sa&u-v;oient mie tant de&esp;<lb/><cb n="b"/>mal&point-virg4;<choice>
-                     <orig>C</orig>
-                     <reg>c</reg>
-                  </choice>ome il se&u-v;ent ores.&esp;<lb/></p>
-               <lg n="1">
-                  <l n="1"><hi rend="decorated-initialblue">C</hi>eus qi or sont het nostre
-                     &s-maj;ire.</l>
-                  <l n="2">Nus n<pc type="reg">'</pc>en&esp;<lb/>porroit conter ne dire<pc
-                        type="orig" ana="COD">.</pc></l>
-                  <l n="3">Lor maus ne lor mal<lb/>a&u-v;entures.</l>
-                  <l n="4">Deu heent &esperluette-et;les &e-maj;scritures<pc type="orig"
-                        ana="coordination">.</pc></l>
-                  <l n="5">Et&esp;<lb/>lor ordre mescest del meins<note>Et leur ordre déchoit de
-                        plus en plus</note>.</l>
-                  <l n="6">Ja nus preudom&esp;<lb/>n<pc type="reg">'</pc>ert lor compeins<pc
-                        type="orig" ana="relative">.</pc></l>
-                  <l n="7">Qi ne s<pc type="reg">'</pc>en plaigne<pc type="reg" ana="apposition"
-                        >,</pc> c<pc type="reg">'</pc>est&esp;<lb/>la fins.</l>
-                  <l n="8">En&esp;moine a&esp;plus de&esp;larrecins<pc type="orig" ana="subCorr"
-                        >.</pc></l>
-                  <l n="9">Qu<pc type="reg">'</pc>&etilde-en;&esp;<lb/>usurier de fauset&eacc;.</l>
-                  <l n="10">Et se li cuens<note>Philipe de Namur ?</note> la &u-v;erit&eacc;<pc
-                        type="orig" ana="COD">.</pc>&esp;<lb/></l>
-                  <l n="11">Sa&u-v;oit de&esp;lor cuers les felons&point-virg4;</l>
-                  <l n="12">Ja&esp;ne seroit&esp;<lb/>li ans si&esp;lons<pc type="orig"
-                        ana="subCorr">.</pc></l>
-                  <l n="13">Qe por eus fe&itrem;st nule rien&point-virg3;<lb/></l>
-                  <l n="14">Car &i-j;e&esp;li mant<note>verbe mander</note><pc type="reg"
-                        ana="incise">,</pc> sel sace bien&point-virg8;</l>
-                  <l n="15">Qe por&esp;lui fe<lb/>roient petit<pc type="orig" ana="coordination"
-                        >.</pc></l>
-                  <l n="16">N<pc type="reg">'</pc>en orissons n<pc type="reg">'</pc>en fet n<pc
-                        type="reg">'</pc>en dit.&esp;</l>
-                  <lb/>
-               </lg>
-            </div>
-         </div>
-         <div n="4" type="chapter">
-            <div type="section" n="1">
-               <p><hi rend="decorated-initial">L</hi><choice>
-                     <orig>I</orig>
-                     <reg>i</reg>
-                  </choice>&esp;frere <persName ref="#jerome">seint &j-maj;eroime</persName>
-                  disoient del&esp;<lb/>lion&esp;:&esp;<said>&v-maj;eez&esp;ici nostre pasteur qe
-                     nos&esp;<lb/>dampnions si cruelment com&esp;<lb/>se&esp;ce fust uns
-                        de&u-v;orrieres<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;nostre &s-maj;ires nos&esp;<lb/>a&esp;demostr&eacc;
-                     mout beau miracle&point-virg4;por ce qu<pc type="reg">'</pc>il&esp;<lb/>fust
-                     de&esp;cest blasme escusez.</said>&esp;<persName ref="#jerome">Seinz
-                     &j-maj;eroimes</persName>&esp;<lb/>qi&esp;bien sa&u-v;oit ce qe
-                  a&esp;a&u-v;enir estoit de&esp;ceste&esp;<lb/>chose dist a&esp;ses
-                     freres&point-deuxpointsDial;<said who="#jerome">Apareilliez
-                     qe&esp;&u-v;os&esp;<lb/>aiez &u-v;iandes a&esp;o&eacc;s ceus
-                        qi&esp;&u-v;endront<pc type="reg" ana="subordonnee">,</pc> si qu<pc
-                        type="reg">'</pc>il&esp;<lb/>soient rece&utrem;z
-                     honorablement&point-virg4;si com l<pc type="reg">'</pc>en&esp;<lb/>doit ostes
-                     rece&u-v;oir.</said>&esp;Il firent einsint com&esp;lor&esp;<lb/>seint pere lor
-                  &neuf-con;mandoit&point-virg3;car&esp;il ne trespassas<lb/>sent mie de&esp;legier
-                  obedience.&esp;Qant tot ce&esp;<lb/>fu&esp;fet
-                  &esperluette-et;atorn&eacc;&point-virg4;uns messages &u-v;int qi lor
-                  dist&esp;<lb/> &esperluette-et;anon&c-ced;a q<pc type="reg">'</pc>il a&u-v;oit
-                  hostes a&esp;la porte qi &u-v;oloi<lb/>ent &u-v;eoir le&esp;pere
-                     de&esp;la&esp;meson.&esp;<persName ref="#jerome">Seinz
-                     &j-maj;eroi<lb/>mes</persName> comanda c<pc type="reg">'</pc>on o&u-v;rist la
-                     porte<pc type="reg" ana="coordination">,</pc> si les&esp;<lb/>lessast l<pc
-                     type="reg">'</pc>en a&esp;lui &u-v;enir.&esp;Cil entrerent
-                     enz&esp;tot&esp;<lb/>honteus<pc type="reg" ana="subordonnee">,</pc> encore
-                  fussent il mand&eacc;.&esp;Et tan<lb/>tost com il &u-v;irent <persName
-                     ref="#jerome">seint &j-maj;eroime</persName><pc type="reg" ana="subordonnee"
-                     >,</pc>&esp;il&esp;li che&itrem;rent&esp;<lb/>as&esp;piez<pc type="reg"
-                     ana="coordination">,</pc> si&esp;li proierent merci &esperluette-et;pardon
-                  del&esp;<lb/>mesfet q<pc type="reg">'</pc>il fet a&u-v;oient.&esp;<persName
-                     ref="#jerome">Seinz &j-maj;eroimes</persName>&esp;<lb/>les redre&c-ced;a
-                  &esperluette-et;si&esp;lor&esp;dist &esperluette-et;amonesta q<pc type="reg"
-                     >'</pc>il&esp;une&esp;<lb/>autre foiz ne fe&itrem;ssent tele
-                  oe&u-v;re&deuxpoints-virg3;mes pre&itrem;s<lb/>sent lor choses &esperluette-et;les
-                  autrui lessassent ne&esp;<lb/>ne les co&u-v;oitassent.&esp;Dont lor fist
-                  rendre&esp;<lb/>lor chameus a&esp;totes lor charges qe&esp;onques&esp;<lb/>riens
-                     n<pc type="reg">'</pc>en fu detrete.&esp;Dont parlerent li&esp;mar<lb/>cheanz
-                  tuit a&esp;une &u-v;oiz<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Beaus&esp;<lb/>
-                        pere<pc type="reg" ana="apostrophe">,</pc> nos te&esp;prions<pc type="orig"
-                        ana="completive">.</pc>&esp;qe&esp;tu&esp;a&esp;o&eacc;s
-                        le&esp;luminaire&esp;<lb/>de&esp;l<pc type="reg">'</pc>eglisse fere
-                     &esperluette-et;a&esp;o&eacc;s les besoignes des fre<lb/>res de&esp;ceste
-                        meson<pc type="orig" ana="segPrep">:</pc>&esp;faciez prendre
-                        la&esp;moi<lb/>ti&eacc;&esp;de&esp;l<pc type="reg">'</pc>uile qe noz chameus
-                     aporterent&point-virg3;<lb/>car nos&esp;sa&u-v;ons bien certeinement
-                        qe&esp;nos&esp;<lb/><pb n="158"
-                        facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f326.item.zoom"/><cb
-                        n="c"/><choice>
-                        <orig>P</orig>
-                        <reg>p</reg>
-                     </choice>lus alames en&esp;<placeName ref="#egypte"
-                        >&e-maj;g&ypoint;pte</placeName>&esp;<choice>
-                        <orig>P</orig>
-                        <reg>p</reg>
-                     </choice>or nostre utilit&eacc;&esp;<lb/>qe por l<pc type="reg"
-                     >'</pc>utilit&eacc; de&esp;marcheandise.</said>&esp;<persName ref="#jerome"
-                     >Seinz &j-maj;eroi<lb/>mes</persName> lor respondi&esp;&esperluette-et;dist<pc
-                     type="reg" ana="DD"> : </pc><said who="#jerome">&v-maj;os n<pc type="reg"
-                        >'</pc>a&u-v;ez mie requis&esp;<lb/>droiture<pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;leide chose seroit qe nos qi
-                     de&u-v;ons&esp;<lb/>a&u-v;oir piti&eacc; des genz &esperluette-et;misericorde
-                     &esperluette-et;aidier&esp;<lb/>a&esp;lor besoing &esperluette-et;doner del
-                        nostre<pc type="orig" ana="relative">.</pc>&esp;&u-v;os gre&u-v;issi<lb/>ons
-                     &esperluette-et;pre&itrem;ssons del &u-v;ostre de qoi nos n<pc type="reg"
-                        >'</pc>a&u-v;ons&esp;<lb/>nule soffrete.</said>&esp;Dont respondirent
-                     li&esp;marche&atilde-an;z&esp;<lb/>a&esp;<persName ref="#jerome">seint
-                     &j-maj;eroime</persName><pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Nos ne
-                     menge<lb/>rons ceenz ne&esp;ne prenderons nules de&esp;totes&esp;<lb/>nos
-                        choses&point-virg4;tresq<pc type="reg">'</pc>atant qe &u-v;os&esp;auroiz
-                     &neuf-con;man<lb/>d&eacc;&esp;a&esp;fere ce qe nos &u-v;os proierons&point-virg5;<choice>
-                        <orig>C</orig>
-                        <reg>c</reg>
-                     </choice>e&esp;est que&esp;<lb/>&u-v;os preigniez la moiti&eacc; de&esp;l<pc
-                        type="reg">'</pc>uile<pc type="orig" ana="relative">.</pc>&esp;qe nos
-                     cha<lb/>meus ont aportee.&esp;Et&esp;apr&eacc;s &u-v;os a&u-v;ons
-                     nos&esp;<lb/>en&esp;co&u-v;enant &esperluette-et;otroions qe nos
-                     &esperluette-et;nostre oir<pc type="orig" ana="COD">:</pc>&esp;<lb/>donrons
-                     a&esp;&u-v;os &esperluette-et;a&esp;ceus qi&esp;apr&eacc;s &u-v;os
-                     &u-v;endront&esp;<lb/> a&esp;o&eacc;s l<pc type="reg">'</pc>eglisse
-                     de&esp;ceste meson chascun an une&esp;<lb/>mesure d<pc type="reg"
-                     >'</pc>uile.</said>&esp;Lors fist <persName ref="#jerome">seinz
-                     &j-maj;eroimes</persName> aus&itilde-in;t&esp;<lb/>&neuf-con;me a&esp;force
-                  re&c-ced;oi&u-v;re l<pc type="reg">'</pc>uile qe&esp;li marcheans&esp;li&esp;<lb/>
-                  donerent.&esp;Et puis si&esp;mengierent li&esp;marche<lb/>anz
-                  &esperluette-et;reci&u-v;rent la&esp;bene&itrem;&c-ced;on <persName ref="#jerome"
-                     >seint &j-maj;erosme</persName>.&esp;<lb/>&p-maj;uis pristrent lor choses
-                  &esperluette-et;lor chameus<pc type="reg" ana="coordination">,</pc>
-                     si&esp;<lb/>s<pc type="reg">'</pc>en repeirierent en lor contrees.<lb/></p>
-            </div>
-         </div>
-         <div n="5" type="chapter">
-            <div type="section" n="1">
-               <p><hi rend="decorated-initial">C</hi><choice>
-                     <orig>E</orig>
-                     <reg>e</reg>
-                  </choice>ste chose a&u-v;int en la&esp;cit&eacc; de&esp;&b-maj;eth<pc type="orig"
-                     ana="mot">.</pc><lb/>leem&point-virg4;si&esp;com cil de la &u-v;ile
-                  le&esp;racon<lb/>tent.&esp;Bethleem fu la cit&eacc; en qoi&esp;<lb/>nostre
-                     &s-maj;ires<pc type="reg" ana="apposition">,</pc> li&esp;&s-maj;au&u-v;eres
-                  de&esp;tot le monde<pc type="reg" ana="apposition">,</pc> fu&esp;<lb/>nez
-                     de&esp;la&esp;<persName ref="#marie"
-                  >&v-maj;irge</persName>&deuxpoints-virg4;si&esp;com li prophete l<pc type="reg"
-                     >'</pc>a&u-v;oient&esp;<lb/>de&u-v;ant
-                  prononci&eacc;&point-virg4;&esperluette-et;la fu mis en&esp;la creche.&esp;<lb/>Et
-                  adont estoit la&esp;creche aornee &esperluette-et;d<pc type="reg">'</pc>or
-                     &esperluette-et;d<pc type="reg">'</pc>ar<lb/>gent&point-virg4;si com <persName
-                     ref="#antoine">seinz &a-maj;ntoines</persName> le
-                  raconte&deuxpoints-point;<lb/>Et la ser&u-v;oit <persName ref="#jerome">seinz
-                     &j-maj;eroimes</persName>&#160;&esperluette-et;si frere par&esp;<lb/>grant
-                  de&u-v;otion nuit &esperluette-et;&i-j;or.&esp;Et ad&eacc;s
-                  i&esp;a&u-v;oit&esp;<lb/>luminaire.&esp;La creche estoit en&esp;une
-                     fosse&esp;<lb/>a&esp;l<pc type="reg">'</pc>entree estroite<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;a&esp;cele entree fist
-                  mes<lb/>sires <persName ref="#jerome">seinz &j-maj;eroimes</persName> fere
-                  a&esp;son o&eacc;s une se<lb/>pouture en qoi il fu mis
-                  &esperluette-et;ense&u-v;eliz qant&esp;<lb/>il parti de&esp;cest siecle.&esp;Ce fu
-                  as secondes kalen<lb/>des d<pc type="reg"
-                  >'</pc>octembre&deuxpoints-point;Et&esp;adonc a&u-v;oit il aempli&esp;<lb/>nonante
-                  anz de son aage.&esp;<persName ref="#honorius">&h-maj;onoires</persName>
-                  estoit&esp;<lb/>empereres a&esp;<placeName ref="#rome">Rome</placeName>
-                     qui&esp;<pc ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
-                     >.</pc>&esp;anz a&u-v;oit&esp;<lb/>tenu le reigne par le
-                  coumandement&esp;<lb/>de &c-maj;elui qui &u-v;it &esperluette-et;reigne
-                  parmenable<lb/>ment.</p>
-            </div>
-         </div>
-      </body>
-   </text>
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title>Vie de saint Jérome</title>
+      <author>Wauchier de Denain</author>
+     </titleStmt>
+     <publicationStmt>
+      <publisher>Ariane Pinche</publisher>
+      <date>2017</date>
+     </publicationStmt>
+     <sourceDesc>
+      <msDesc xml:id="A">
+        <msIdentifier>
+         <country>Paris</country>
+         <settlement>Bibliothèque nationale de France</settlement>
+         <idno>fr. 00412</idno>
+        </msIdentifier>
+        <head>
+         <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+         <origDate>1285</origDate>
+         <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
+           notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
+           la base Jonas-IRHT/CNRS (permalink : <ref
+            target="http://jonas.irht.cnrs.fr/manuscrit/45533"
+            >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
+           03/07/2015 </note>
+        </head>
+        <msContents>
+         <msItemStruct>
+           <locus>fol.103-fol.170</locus>
+           <author>Wauchier de Denain</author>
+           <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+           <incipit>De saint Martin mout doit on doucement et volentiers le bien oïr et
+            entendre</incipit>
+           <explicit/>
+         </msItemStruct>
+        </msContents>
+        <physDesc>
+         <objectDesc>
+           <supportDesc>
+            <support>parchemin</support>
+            <extent>
+              <width unit="mm">330</width>
+              <height unit="mm">245</height>
+            </extent>
+            <foliation>21 Senions, 245 folios</foliation>
+           </supportDesc>
+           <layoutDesc>
+            <layout columns="2" writtenLines="46"/>
+           </layoutDesc>
+         </objectDesc>
+         <scriptDesc>
+           <scriptNote>Caroline</scriptNote>
+         </scriptDesc>
+        </physDesc>
+        <history>
+         <origin/>
+         <provenance>
+           <p/>
+           <listBibl>
+            <bibl>
+              <author/>
+              <title/>
+              <pubPlace/>
+              <publisher/>
+              <date/>
+            </bibl>
+           </listBibl>
+         </provenance>
+        </history>
+      </msDesc>
+     </sourceDesc>
+   </fileDesc>
+   <encodingDesc>
+     <refsDecl n="CTS">
+      <cRefPattern n="section" matchPattern="(.+).(.+)"
+        replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\']/tei:div[@n=\'$2\'])">
+        <p>This pointer pattern extracts chapter and section</p>
+      </cRefPattern>
+      <cRefPattern n="chapter" matchPattern="(.+)"
+        replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\'])">
+        <p>This pointer pattern extracts chapter.</p>
+      </cRefPattern>
+     </refsDecl>
+     <variantEncoding method="parallel-segmentation" location="internal"/>
+     <projectDesc>
+      <p/>
+     </projectDesc>
+   </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="antoine">
+            <persName>Antoines</persName>
+            <birth when="0251">251</birth>
+            <death when="0356">356</death>
+            <note type="biographical" source="http://data.bnf.fr/11888967/antoine/">
+              <surname type="complex" full="yes">Antoine le grand, Antoine d'Égypte ou Antoine
+                l'Ermite</surname>, considéré comme le fondateur du l'érémitisme
+              chrétien.</note>
+          </person>
+          <person xml:id="namur">
+            <persName>Duc de Namur</persName>
+            <birth when="1174">1174</birth>
+            <death when="1212">1212</death>
+            <note type="biographical" source="https://www.wikidata.org/wiki/Q646297">Philippe
+              <seg type="number">i</seg>
+              <ex>er</ex> de Namur, duc de Namur et comte de
+              Hainaut, mécène de <persName ref="#wauchier">Wauchier de
+                Denain</persName>.</note>
+          </person>
+          <person xml:id="eusebius">
+            <persName>Eusebius</persName>
+            <note type="biographical">Père de <persName ref="#jerome">saint
+              Jérôme</persName>.</note>
+          </person>
+          <person xml:id="honorius">
+            <persName>Honoires</persName>
+            <birth when="0384">384</birth>
+            <death when="0423">423</death>
+            <note type="biographical"
+              source="http://catalogue.bnf.fr/ark:/12148/cb12566387q">Flavius Honorius, empereur de la partie occidentale de l'empire romain de 395
+              à 423.</note>
+          </person>
+          <person xml:id="jerome">
+            <persName>Jeroime</persName>
+            <birth when="0345">345</birth>
+            <death when="0420-09-20">420</death>
+            <note type="biographical" source="http://data.bnf.fr/11907498/jerome/">Père et
+              docteur de l'Église, célèbre traducteur de la bible latine. Il est l'un des
+              principaux opposants aux idées d'<persName ref="#origene">Origène</persName>.</note>
+          </person>
+          <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC"
+            xml:id="marie">
+            <persName>Marie</persName>
+            <note type="biographical"
+              source="http://catalogue.bnf.fr/ark:/12148/cb119503581">Personnage biblique, <surname type="complex" full="yes">vierge Marie</surname>, mère de
+              Dieu.</note>
+          </person>
+          <person xml:id="pierre">
+            <persName>Pere</persName>
+            <death when="0064">64</death>
+            <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de Rome,
+              pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
+              premier évêque de <placeName ref="#rome" full="yes">Rome</placeName>.</note>
+          </person>
+          <person xml:id="paul">
+            <persName>Pol</persName>
+            <birth when="0228">228</birth>
+            <death when="0341">341</death>
+            <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
+              <surname type="complex" full="yes">Paul de Thèbes ou Paul l'ermite</surname>, figure
+              fondatrice du monachisme avec <persName ref="#antoine">saint
+                Antoine</persName>.</note>
+          </person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="bethleem" corresp="https://pleiades.stoa.org/places/687856">
+            <placeName full="yes">Bethleem</placeName>
+            <country type="pays">Cisjordanie</country>
+            <country type="civilisation">Orient</country>
+            <location>
+              <geo>31.712291, 35.202123</geo>
+            </location>
+            <note>Bethléem, ville de Cisjordanie, lieu de naissance présumé du Christ.</note>
+          </place>
+          <place xml:id="dalmasse"
+            corresp="http://data.bnf.fr/fr/15367120/dalmatie__province_romaine__33_av__j_c_-_/">
+            <placeName full="yes">Dalmasse</placeName>
+            <country type="pays">Croatie</country>
+            <country type="civilisation">Occident</country>
+            <note>Dalmatie, région romaine, actuelle Croatie.</note>
+          </place>
+          <place xml:id="egypte" corresp="http://data.bnf.fr/15238583/egypte/">
+            <placeName full="yes">Egypte</placeName>
+            <country type="pays">Égypte</country>
+            <country type="civilisation">Orient</country>
+            <note>Égypte, pays d'Afrique du Nord</note>
+          </place>
+          <place xml:id="jerusalem" corresp="https://pleiades.stoa.org/places/687928">
+            <placeName full="yes">Jerusalem</placeName>
+            <country type="pays">Israël</country>
+            <country type="civilisation">Orient</country>
+            <location>
+              <geo>31.776679, 35.234156</geo>
+            </location>
+            <note>Ville de Jérusalem, située en actuelle Israël.</note>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC"
+            xml:id="pannonie">
+            <placeName full="yes">Pannone</placeName>
+            <country type="civilisation">Occident</country>
+            <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du Danube.</note>
+          </place>
+          <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+            <placeName full="yes">Rome</placeName>
+            <country type="pays">Italie</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>41.891775, 12.486137</geo>
+            </location>
+            <note>Ville italienne, capitale de l'empire romain d'occident.</note>
+          </place>
+          <place xml:id="stridon">
+            <placeName full="yes">Stridons</placeName>
+            <country type="pays">Croatie</country>
+            <country type="civilisation">Occident</country>
+            <note>Ville romaine, située entre la <placeName ref="#pannonie" full="yes">Pannonie</placeName> et la <placeName ref="#dalmasse" full="yes">Dalmatie</placeName>, lieu de naissance de <persName ref="#jerome">saint Jérôme</persName>.</note>
+          </place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text n="edition">
+   <body n="urn:cts:froLit:jns915.jns1742.ciham-fro1">
+     <div n="1" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
+      <head>Ci comence la&esp;&u-v;ie de&esp;<choice>
+         <orig>.s'.</orig>
+         <reg>saint</reg>
+        </choice>&esp;<persName ref="#jerome">&j-maj;erosme</persName></head>
+      <div type="section" n="1">
+        <p><pb facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item" n="157"/><cb
+           n="a"/><hi rend="rubricated orig">Ci comence la&esp;&u-v;ie de&esp;<choice>
+            <orig>.s'.</orig>
+            <reg>saint</reg>
+           </choice>&esp;<persName ref="#jerome"
+           >&j-maj;erosme</persName>.</hi>&esp;<lb/><persName ref="#jerome"><hi
+            rend="decorated-initial">S</hi><choice>
+            <orig>E</orig>
+            <reg>e</reg>
+           </choice>inz Jerosme&sexp-s;</persName>&esp;<lb/>fu&esp;nez
+           de&esp;hau<lb/>te&esp;lignie&deuxpoints-virg7;d<pc type="reg"
+         >'</pc>&utilde-un;&esp;<lb/>chastel&esp;qi fu&esp;<lb/>apelez <placeName
+           ref="#stridon">&s-maj;tri<lb/>dons</placeName>&point-virg3;si esto<lb/>it en
+         la&esp;mar<lb/>che <placeName ref="#dalmasse"
+         >&d-maj;almasse</placeName>&esp;<lb/>&esperluette-et;de <placeName ref="#pannonie"
+           >&p-maj;anno<lb/>nie</placeName>&point-virg3;mes il&esp;<lb/>est destruit grant
+         tens a&point-virg4;si come sont plu<lb/>seurs autres &u-v;iles qi &i-j;a furent
+         de&esp;grant no<lb/>blece.&esp;Li&esp;peres <persName ref="#jerome">seint
+           Jerome</persName> eut a&esp;non <persName ref="#eusebius"
+           >&e-maj;u<lb/>sebius</persName> qi&esp;mout fu preudom
+         &esperluette-et;sages.&esp;&l-maj;i filz&esp;<lb/>l<pc type="reg">'</pc>ensi&u-v;i
+         mout bien de science&point-virg4;si com &u-v;oz por<lb/>roiz o&itrem;r
+         &esperluette-et;entendre.&esp;Qant <persName ref="#jerome">seinz
+           J﻿eromes</persName>&esp;<lb/>fu&esp;enfes<pc type="reg" ana="subordonnee"
+           >,</pc> il deguerpi son pere&point-virg4;por&esp;ce q<pc type="reg">'</pc>il
+         &u-v;oloit&esp;<lb/>ensi&u-v;re la seinte &e-maj;u&u-v;angile.&esp;Il &u-v;int
+         au&esp;ri&u-v;a<lb/>ge de&esp;la&esp;mer par la&esp;&u-v;olent&eacc; nostre
+         &s-maj;ignor&point-virg3;si&esp;<lb/>entra en&esp;une nef qi&esp;a&esp;droit cours
+         le porta&esp;<lb/>a&esp;la&esp;cit&eacc; de <placeName ref="#rome"
+           >&r-maj;ome</placeName>.&esp;Et qant il&esp;i&esp;fu &u-v;enuz<pc type="reg"
+           ana="subordonnee">,</pc> il ala&esp;<lb/>au&esp;mostier mon<pc type="orig"
+           ana="mot">&#160;</pc>signeur <persName ref="#pierre">seint
+           &p-maj;ere</persName><pc type="orig" ana="coordination"
+           >:</pc>&esp;&esperluette-et;<persName ref="#paul"
+           >seint&esp;<lb/>&p-maj;ol</persName><pc type="reg" ana="apposition">,</pc> les
+         apostres nostre &s-maj;ignor.&esp;&l-maj;a aprist il&esp;<lb/>premiers greu
+         &esperluette-et;latin par&esp;grant
+         diligence&esp;<lb/>&esperluette-et;si&esp;ensi&u-v;i la&esp;lo&ypoint; nostre
+         &s-maj;ignor del tout en&esp;<lb/>tout molt benignement<pc type="orig"
+           ana="coordination">:</pc>&esp;&esperluette-et;fu ordenez a&esp;<lb/>prestre
+         &esperluette-et;fez chardonaus en la cit&eacc; de&esp;&r-maj;ome.&esp;<lb/>Et en
+         sa &i-j;o&u-v;enece fu&esp;il ensigniez &esperluette-et;apris
+         &esperluette-et;<lb/>doctrinez de&esp;toz les hauz mestres qi i&esp;estoi<lb/>ent
+         adonc.&esp;Il sot greu &esperluette-et;latin &esperluette-et;ebreu
+         &esperluette-et;araboi&esp;<lb/>&esperluette-et;caldeu&deuxpoints-virg6;plus c<pc
+           type="reg">'</pc>on ne porroit conter ne di<lb/>re.&esp;De &r-maj;ome
+         se&esp;departi il&deuxpoints-virg3;si&esp;s<pc type="reg">'</pc>en ala en
+           <placeName ref="#jerusalem"
+         >&j-maj;eru<lb/>salem</placeName>&deuxpoints-point;&l-maj;a&esp;fu&esp;il petit
+           de&esp;tens<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
+           >'</pc>en ala&point-virg3;car&esp;il&esp;<lb/>se pensa q<pc type="reg">'</pc>il
+         &u-v;oudroit &u-v;i&u-v;re en&esp;tel&esp;manie<lb/>re qe s<pc type="reg"
+         >'</pc>arme ne fust dampnee<pc type="orig" ana="coordination"
+         >:</pc>&esp;&esperluette-et;estre pres&esp;<lb/>de&esp;la ou&esp;nostre
+         &s-maj;ires fu couchiez &esperluette-et;le&u-v;ez&deuxpoints-virg3;si&esp;<lb/>
+         &u-v;int a&esp;l<pc type="reg">'</pc>e&u-v;esqe
+         de&esp;la&esp;cit&eacc;&point-virg3;si&esp;li requist q<pc type="reg"
+         >'</pc>il&esp;li&esp;<lb/>donast la&esp;parosse de&esp;l<pc type="reg"
+         >'</pc>eglisse de&esp;<placeName ref="#bethleem">&b-maj;ethleem</placeName>
+         por&esp;<lb/>la&esp;estorer une eglisse ou&esp;il pe&utrem;st arrester
+         toz&esp;<lb/>les &i-j;orz de sa &u-v;ie.&esp;Li&esp;e&u-v;esqes li otroia
+           molt&esp;<lb/><cb n="b"/><choice>
+           <orig>B</orig>
+           <reg>b</reg>
+         </choice>enignement&point-virg4;si com il ot droit.&esp;Dont&esp;<lb/>fist
+           <persName ref="#jerome">seinz &j-maj;eromes</persName> une eglisse en
+           <placeName ref="#bethleem">&b-maj;ethleem</placeName>&esp;<lb/>ou il mist
+         preudes&esp;omes ensamble o&esp;lui en&esp;<lb/>confrarie qi&esp;&u-v;esquissent
+         ensamble o&esp;lui de<lb/>souz la&esp;riule des apostres.&esp;La&esp;translata
+         il&esp;les&esp;<lb/>li&u-v;res ebrieus en&esp;latin<pc type="orig"
+           ana="coordination">.</pc>&esp;&esperluette-et;&d-maj;aniel<note>Référence au
+           commentaire que Jérôme fit sur le livre de Daniel. Daniel est un des quatre
+           grands prophètes du canon de l'Église. Il aurait vécu à Babylone sous les
+           régnes de Nabuchodonosor, de son fils Balthasar, ainsi que de Darius et de
+           Cyrus, rois de Perse.</note> de&esp;caldeu&esp;<lb/>en&esp;latin
+         &esperluette-et;le &u-v;iez testament &esperluette-et;le
+         no&u-v;el&point-virg4;si&esp;c&otilde-om;&esp;<lb/>nos l<pc type="reg"
+         >'</pc>a&u-v;ons encore escrit.&esp;Mout fu <persName ref="#jerome"
+           >seinz&esp;&j-maj;e<lb/>romes</persName> preudom &esperluette-et;de&esp;grant
+         science &esperluette-et;mout&esp;<lb/>enlumina seinte eglisse&point-virg3;car
+           il&esp;translata&esp;<lb/>d<pc type="reg">'</pc>ebreu en&esp;latin les&esp;<pc
+           ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
+         >.</pc>&esp;prophetes &esperluette-et;le psau<lb/>tier aussint
+         &esperluette-et;mout mena seinte &u-v;ie.&esp;&n-maj;e&esp;<lb/>porroit estre qe
+         nuz hom racontast toz ses&esp;<lb/>fez<pc type="reg" ana="coordination">,</pc>
+         car&esp;trop&esp;seroit longue chose&point-virg3;mes&esp;&i-j;e
+         &u-v;&apos-os;&esp;<lb/>dirai un miracle q<pc type="reg">'</pc>il a&u-v;int en
+           l<pc type="reg">'</pc>eglisse ou&esp;<lb/>il arrestoit ensamble o&esp;ses
+           freres<pc type="reg" ana="incise">,</pc> si com&esp;<lb/>&i-j;e&esp;&u-v;os
+         ai&esp;de&u-v;ant dit<pc type="reg" ana="incise">,</pc> en&esp;<placeName
+           ref="#bethleem">&b-maj;ethleem</placeName> si&esp;com &i-j;e&esp;<lb/>l<pc
+           type="reg">'</pc>o&itrem;&esp;raconter as religieus homes qi
+         i&esp;furent&esp;<lb/>&esperluette-et;einsint comence&point-deuxpoints;<lb/></p>
+      </div>
+     </div>
+     <div n="2" type="chapter" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f323.item">
+      <div type="section" n="1">
+        <p><hi rend="decorated-initial">U</hi><choice>
+           <orig>N</orig>
+           <reg>n</reg>
+         </choice>&#160;&i-j;or a&u-v;int qe<pc type="reg" ana="subordonnee">,</pc>
+         la&esp;ou messires&esp;<lb/><persName ref="#jerome">seinz
+           &j-maj;eroimes</persName> estoit&esp;a&esp;la&esp;le&c-ced;on&esp;<lb/>c<pc
+           type="reg">'</pc>om list de&u-v;ant les freres si&esp;c&otilde-om;&esp;<lb/>il
+         est&esp;encore costume&deuxpoints-virg4;qe uns granz lions&esp;<lb/>entra en l<pc
+           type="reg">'</pc>encloistre&point-virg4;la&esp;ou&esp;li frere
+         seoient&esp;<lb/>qi clochoit a&esp;trois piez por le qart q<pc type="reg">'</pc>il
+         a<lb/>&u-v;oit malade.&esp;Qant li frere le&esp;&u-v;irent<pc type="reg"
+           ana="subordonnee">,</pc>&esp;<lb/>il furent mout espoentez<pc type="orig"
+           ana="coordination">.</pc>&esp;&esperluette-et;por&esp;la&esp;poor q<pc
+           type="reg">'</pc>il&esp;<lb/>en orent<pc type="reg" ana="subordonnee">,</pc>
+           s<pc type="reg">'</pc>en&esp;tornerent il li pluiseur
+           en&esp;<lb/>fuies.&esp;<persName ref="#jerome">Seinz &j-maj;eroimes</persName>
+         ne&esp;le dota mie&point-virg3;<lb/>einz ala encontre aussint com se ce
+         fust&esp;<lb/>uns hostes qi&esp;li &u-v;enist por herbergier<pc type="orig"
+           ana="coordination">:</pc>&esp;&esperluette-et;<lb/>li&esp;lions &u-v;int
+         de&u-v;ant lui<pc type="reg" ana="coordination">,</pc> si&esp;li mostra
+         la&esp;<lb/>plante de&esp;son&esp;pi&eacc; ou&esp;il a&u-v;oit
+         la&esp;blece&utrem;re.&esp;<lb/>Dont apela <persName ref="#jerome">seinz
+           &j-maj;eroimes</persName> ses freres<pc type="reg" ana="coordination">,</pc>
+         si&esp;<lb/>lor &neuf-con;manda q<pc type="reg">'</pc>il li la&u-v;assent
+         le&esp;pi&eacc; mout&esp;<lb/>docement<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;si quisissent por quel&esp;chose
+         il&esp;<lb/>clochoit&point-virg3;si&esp;tro&u-v;erent qe&esp;li&esp;lions estoit
+           bleciez&esp;<lb/>d<pc type="reg">'</pc>un estoc<pc type="reg"
+           ana="coordination">,</pc> si&esp;estoit li&esp;fuz remes dedenz
+           la&esp;<lb/>plaie.&esp;<persName ref="#jerome">Seinz &j-maj;eroimes</persName>
+         li&esp;fist treire &esperluette-et;si&esp;<lb/>l<pc type="reg">'</pc>asouaga
+         &esperluette-et;gueri en&esp;me&itrem;smes l<pc type="reg"
+         >'</pc>eure.&esp;Li&esp;<lb/>lions deguerpi tote la maniere
+           de&esp;sa&esp;fe<lb/>lonie<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;si demora en la meson aussint&esp;<lb/>come une beste
+         dontee.&esp;Qant ce&esp;&u-v;it <persName ref="#jerome"
+           >se&itilde-in;z&esp;<lb/>&j-maj;eroimes</persName><pc type="reg"
+           ana="subordonnee">,</pc> il&esp;parla a&esp;ses
+         freres&esp;&esperluette-et;si&esp;dist&point-deuxpointsDial; <said who="#jerome"
+            >Bea&apos-us;&esp;<lb/>signor<pc type="reg" ana="apostrophe">,</pc>
+           or&esp;esgardez qele oe&u-v;re cis lions&esp;nos&esp;<lb/>porroit faire
+           qi&esp;a&esp;nostre &s-maj;ignor fust plesans&esp;<lb/><pb n="157"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f324.item.zoom"/><cb
+            n="c"/><choice>
+            <orig>E</orig>
+            <reg>e</reg>
+           </choice>t pourfitable&point-virg3;<choice>
+            <orig>C</orig>
+            <reg>c</reg>
+           </choice>ar<pc type="reg" ana="incise">,</pc>&esp;si com &i-j;e croi<pc
+            type="reg" ana="incise">,</pc>&esp;<choice>
+            <orig>N</orig>
+            <reg>n</reg>
+           </choice>ostre&esp;<lb/>&s-maj;ires qi puissanz estoit de&esp;lui guerir
+            ne&esp;l<pc type="reg">'</pc>en<lb/>&u-v;oia mie ci tant seulement
+           por&esp;la garisson&esp;<lb/>de&esp;son pi&eacc;<pc type="orig" ana="subCorr"
+            >:</pc>&esp;com por la&esp;demostrance q<pc type="reg">'</pc>il
+           nos&esp;<lb/>aidast en&esp;nostre ser&u-v;ice.</said>&esp;Dont
+         respondirent&esp;<lb/>li frere mout humlement
+            &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Bea&apos-us;&esp;<lb/>peres<pc
+            type="reg" ana="apostrophe">,</pc> tu sez bien qe nostre asne
+           qi&esp;la&esp;busche&esp;<lb/>soloit aporter auroit mestier d<pc type="reg"
+            >'</pc>une garde&esp;<lb/>qui a&esp;lui fust ententi&u-v;e&point-virg3;car
+           nos resoign&otilde-on;s&esp;<lb/>mout qe aucune cruele beste
+           ne&esp;le&esp;de&u-v;ore&esp;<lb/>qi&esp;nos en&esp;face damage.&esp;Et
+            por&esp;ce<pc type="reg" ana="subordonnee">,</pc>&esp;s<pc type="reg"
+           >'</pc>il te plest<pc type="reg" ana="subordonnee">,</pc>&esp;<lb/>comande
+           a&esp;cest lion q<pc type="reg">'</pc>il prenge garde a&esp;cest&esp;<lb/>asne
+           &esperluette-et;si&esp;le&esp;meint en pasture &esperluette-et;si&esp;le gart
+            a&esp;l<pc type="reg">'</pc><lb/>aler &esperluette-et;au &u-v;enir en
+           meson&point-virg3;car ce nos sam<lb/>ble la&esp;miudre chose
+         a&esp;fere.</said>&esp;Einsint le&esp;fist&esp;<lb/>
+         <persName ref="#jerome">seinz &j-maj;eroimes</persName>&point-virg3;car&esp;il
+         comanda au lion &qisuscrit-qi;l&esp;<lb/>gardast l<pc type="reg">'</pc>asne par
+         grant diligense&deuxpoints-point;&et-maj;il&esp;si&esp;<lb/>fist a&esp;guise
+         de&esp;bon pasteur<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;en
+         quel c<pc type="reg">'</pc>on&qbarre2;s&esp;<lb/>leu qe li&esp;asnes alast
+           em&esp;pasture<pc type="reg" ana="subordonnee">,</pc> estoit li li<lb/>ons
+         ensamble o&esp;lui<pc type="orig" ana="coordination"
+         >:</pc>&esp;&esperluette-et;si&esp;li&esp;fu bons desfender<lb/>res
+         &esperluette-et;bons aidierres s<pc type="reg">'</pc>il en e&utrem;st mestier&deuxpoints-virg4;<choice>
+           <orig>Q</orig>
+           <reg>q</reg>
+         </choice>&nasuscrit-an;t&esp;<lb/>li asnes re&u-v;enoit en&esp;meson por fere s<pc
+           type="reg">'</pc>oe&u-v;re&esp;<lb/>qi &i-j;a l<pc type="reg">'</pc>a&u-v;oit
+         a&esp;costume mout bien<pc type="reg" ana="subordonnee"
+         >,</pc>&esp;&esperluette-et;li lions&esp;<lb/>ensamble o&esp;lui.&esp;Tant ala
+         einsi la&esp;chose qe&esp;<lb/>li lions remena son asne en pasture
+         un&esp;<lb/>&i-j;or q<pc type="reg">'</pc>il a&u-v;oit &i-j;a ceste oe&u-v;re
+         grant piece de<lb/>menee.&esp;Dont a&u-v;int qe granz talenz de&esp;<lb/>dormir
+         prist au&esp;lion q<pc type="reg">'</pc>il se coucha &esperluette-et;endormi<pc
+           type="orig" ana="CC">:</pc>&esp;<lb/>mout fermement si come sa&esp;nature li
+         apor<lb/>toit &esperluette-et;ensignoit.&esp;Si com li&esp;lions
+         dormoit&esp;<lb/>en&esp;tel maniere&deuxpoints-virg4;il a&u-v;int qe
+         marcheant&esp;<lb/>passerent par iluec qi por huile acheter s<pc type="reg"
+         >'</pc>en&esp;<lb/>alerent en <placeName ref="#egypte"
+           >&e-maj;g&ypoint;pte</placeName>.&esp;Qant il &u-v;irent l<pc type="reg"
+         >'</pc>asne&esp;<lb/>tout seul en la pasture&esp;&esperluette-et;sanz
+           garde&deuxpoints-virg4;il&esp;le&esp;<lb/>pristrent<pc type="reg"
+           ana="coordination">,</pc> si&esp;l<pc type="reg">'</pc>en&esp;menerent par
+         felenesse&esp;<lb/>co&u-v;oitise.&esp;Apr&eacc;s ce petit d<pc type="reg"
+         >'</pc>eure s<pc type="reg">'</pc>es&u-v;eilla li&esp;<lb/>lions qi&esp;ne
+         sa&u-v;oit mot de&esp;son domache.&esp;Et&esp;<lb/>lors comen&c-ced;a a&esp;querre
+           l<pc type="reg">'</pc>asne qi&esp;li estoit en&esp;<lb/>garde charchiez.&esp;Et
+         qant il ne&esp;le pot tro&u-v;&apos-er;&esp;<lb/>en la pasture<pc type="reg"
+           ana="subordonnee">,</pc> il fu mout dolenz &esperluette-et;pleinz
+         de&esp;<lb/>grant angoisse&point-virg3;si comen&c-ced;a a&esp;aler
+         une&esp;<lb/>grant piece del &i-j;or amont &esperluette-et;a&u-v;al<pc type="reg"
+           ana="apposition">,</pc> sus &esperluette-et;<lb/>&i-j;us<pc type="reg"
+           ana="apposition">,</pc> tot muiant por ce q<pc type="reg">'</pc>il &u-v;oloit
+         tro&u-v;er&esp;<lb/>la beste q<pc type="reg">'</pc>il a&u-v;oit perdue.&esp;Et
+         qant il &u-v;it&esp;<lb/>qe&esp;tro&u-v;er ne&esp;la&esp;porroit en&esp;nule
+           maniere<pc type="orig" ana="coordination">.</pc>&esp;<lb/>&esperluette-et;qu<pc
+           type="reg">'</pc>il en a&u-v;oit l<pc type="reg">'</pc>esperance
+         perdue&point-virg4;il &u-v;int&esp;<lb/><cb n="d"/><choice>
+           <orig>A</orig>
+           <reg>a</reg>
+         </choice> la&esp;porte de&esp;l<pc type="reg">'</pc>abe&itrem;e sanz l<pc
+           type="reg">'</pc>asne<pc type="orig" ana="coordination">:</pc>&esp;<choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>t arresta&esp;<lb/>defors ne n<pc type="reg">'</pc>osa mie entrer dedenz
+         por le mes<lb/>fet q<pc type="reg">'</pc>il fet a&u-v;oit<pc type="reg"
+           ana="subordonnee">,</pc> si&esp;com il soloit
+         entrer&point-virg4;qant&esp;<lb/>il ramenoit l<pc type="reg">'</pc>asne
+         de&esp;la&esp;pasture.&esp;Qant <persName ref="#jerome"
+           >se&itilde-in;z&esp;<lb/>Jeroimes</persName>&#160;&esperluette-et;li frere
+         de&esp;la meson &u-v;irent le&esp;<lb/>lion arrester a&esp;la porte de&esp;l<pc
+           type="reg">'</pc>abe&itrem;e sanz l<pc type="reg"
+           >'</pc>asne&esp;<lb/>&esperluette-et;q<pc type="reg">'</pc>il&esp;a&u-v;oit
+         tant atargi&eacc; q<pc type="reg">'</pc>il n<pc type="reg">'</pc>estoit
+         re&u-v;e<lb/>nuz a&esp;droite heure&deuxpoints-virg8;si&esp;com il
+         soloit&point-virg4;il cui<lb/>dierent q<pc type="reg">'</pc>il e&utrem;st ocis lor
+         asne &esperluette-et;mengi&eacc;&#160;&esperluette-et;por&esp;<lb/>ce&esp;ne li
+         &u-v;oudrent doner&esp;tel &u-v;iande com il&esp;<lb/>soloient doner<pc type="reg"
+           ana="coordination">,</pc> einz li&esp;disoient<pc type="reg" ana="DD">:
+            </pc><said>&v-maj;a&esp;t<pc type="reg">'</pc>en
+           &esperluette-et;si&esp;<lb/>mengue la partie qi&esp;t<pc type="reg">'</pc>est
+           remese del asne qe&esp;<lb/>tu as ocis<pc type="reg" ana="coordination">,</pc>
+           si&esp;raempliz ta&esp;glotonie&point-exclamation;</said>&esp;Et
+         encore&esp;<lb/>de&itrem;ssent il ce&point-virg4;il ne le sa&u-v;oient mie
+           certain<lb/>nement<pc type="orig" ana="completive"
+         >.</pc>&esp;se&esp;li&esp;lions a&u-v;oit fet le&esp;mal qu<pc type="reg"
+         >'</pc>il&esp;<lb/>sus li metoient.&esp;Et por&esp;ce sa&u-v;oir s<pc type="reg"
+           >'</pc>esmur&etilde-en;t&esp;<lb/>ne sei qanz des freres<pc type="reg"
+           ana="coordination">,</pc> si s<pc type="reg">'</pc>en alerent
+         a&esp;la&esp;<lb/>pasture ou li lions soloit l<pc type="reg">'</pc>asne
+         mener&point-virg3;si&esp;<lb/>qistrent d<pc type="reg">'</pc>une part
+           &esperluette-et;d<pc type="reg">'</pc>autre<pc type="reg" ana="subordonnee"
+           >,</pc> s<pc type="reg">'</pc>il &i-j;a par a&u-v;en<lb/>ture tro&u-v;assent
+         aucune enseigne ou au<lb/>cune trace del sanc de&esp;lor beste&point-virg3;<choice>
+           <orig>M</orig>
+           <reg>m</reg>
+         </choice>es on&qbarre2;s&esp;<lb/>tant ne sorent qerre q<pc type="reg">'</pc>il en
+         pe&utrem;ssent tro&u-v;er&esp;<lb/>enseignes ne no&u-v;eles.&esp;Dont le
+         noncierent&esp;<lb/>einsi a&esp;<persName ref="#jerome">seint
+           &j-maj;eroime</persName>.&esp;Qant il l<pc type="reg">'</pc>o&itrem;<pc
+           type="reg" ana="subordonnee">,</pc> il par<lb/>la<pc type="reg"
+           ana="coordination">,</pc> si dist&point-deuxpointsDial;<said>Beaus freres<pc
+            type="reg" ana="apostrophe">,</pc>&#160;&i-j;e &u-v;oz proi
+           qe&esp;&u-v;os&esp;<lb/>soffrez em&esp;pes le domache de&esp;l<pc type="reg"
+            >'</pc>asne<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si
+           ne&esp;<lb/>leidengiez ne enchaciez cest lion&deuxpoints-virg3;mes
+           donez&esp;<lb/>lui sa&esp;&u-v;iande tele com il&esp;la&esp;soloit a&u-v;oir<pc
+            type="orig" ana="coordination">:</pc>&esp;<lb/>&esperluette-et;si&esp;le
+           norrissiez q<pc type="reg">'</pc>il ne defaille.&esp;Si alez el&esp;<lb/>bois
+           &esperluette-et;tailliez la buische<pc type="reg" ana="subordonnee">,</pc>
+           si&esp;com &u-v;os soliez<pc type="reg" ana="coordination">,</pc>&esp;<lb/>si
+           atelez le lion el leu de&esp;l<pc type="reg">'</pc>asne<pc type="reg"
+            ana="coordination">,</pc> si&esp;la noz a<lb/>trera.</said>&esp;Einsint le
+         firent li frere com <persName ref="#jerome"
+           >seinz&esp;<lb/>&j-maj;eroimes</persName> lor &neuf-con;manda.&esp;Li lions
+         fu&esp;remis&esp;<lb/>en la&esp;porte<pc type="reg" ana="coordination">,</pc>
+         si&esp;rot sa grace<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;aloit chascun&esp;<lb/>&i-j;or au bois ensamble
+         o&esp;un des freres ou&esp;<lb/>ensamble&esp;<pc ana="number">.</pc><seg
+           type="number">ii</seg><pc ana="number">.</pc>&esp;&esperluette-et;el leu
+           de&esp;l<pc type="reg">'</pc>asne lor
+         aportoit&esp;<lb/>&esperluette-et;atreioit busche.&esp;<lb/></p>
+      </div>
+     </div>
+     <div n="3" type="chapter">
+      <div type="section" n="1">
+        <p><hi rend="decorated-initial">E</hi><choice>
+           <orig>I</orig>
+           <reg>i</reg>
+         </choice>nsint esploita par ne sai com<lb/>bien de tens&point-virg4;tant qe&esp;un
+         &i-j;our&esp;<lb/>&u-v;int q<pc type="reg">'</pc>il ot oe&u-v;re
+           lessie.&esp;Adont&esp;<lb/>s<pc type="reg">'</pc>esmut par la &u-v;olent&eacc;
+         nostre &s-maj;ignor si&esp;c&otilde-om;&esp;<lb/>&i-j;e cuit.&esp;&e-maj;ncore
+         fust il mue beste<pc type="reg" ana="coordination">,</pc> si&esp;s<pc type="reg"
+           >'</pc>en ala&esp;<lb/>a&esp;la champaigne por enquerre s<pc type="reg"
+         >'</pc>il sauroit&esp;<lb/>&i-j;a&esp;par a&u-v;enture no&u-v;eles de&esp;son
+         compaig<lb/>non.&esp;Dont cercha par toz les angles del&esp;<lb/>bois
+         &esperluette-et;fosses &esperluette-et;qarrieres &esperluette-et;ala tant q<pc
+           type="reg">'</pc>il fu&esp;<lb/><pb n="158"
+           facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f325.item.zoom"/><cb n="a"/><choice>
+           <orig>M</orig>
+           <reg>m</reg>
+         </choice>out lassez &esperluette-et;q<pc type="reg">'</pc>il &u-v;int en un haut <choice>
+           <orig>L</orig>
+           <reg>l</reg>
+         </choice>eu&esp;<lb/>qi estoit el&esp;comun chemin.&esp;Qant il fu la
+         &u-v;e<lb/>nuz mout tra&u-v;eilliez<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;molt angoisseus&esp;<lb/>de&esp;la
+         &u-v;oie&deuxpoints-virg4;il resgarda si&esp;loing com il onqes&esp;<lb/>pot
+         en&u-v;iron lui&deuxpoints-virg3;si&esp;&u-v;it homes qi
+         chameus&esp;<lb/>charchiez amenoient &esperluette-et;de&u-v;ant tote&esp;la
+         rote&esp;<lb/>&u-v;enoit li asnes<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;por ce q<pc type="reg">'</pc>il estoit trop
+         loing&esp;<lb/>por lui conoistre&point-virg4;se&esp;mist il a&esp;la&esp;&u-v;oi
+         encontre.&esp;<lb/>Costume est en&esp;cele region qe qant
+         marcheant&esp;<lb/>meinent chameus por aporter granz fes<note>troupeau</note>
+         de&esp;<lb/>lonteignes contrees<pc type="reg" ana="subordonnee">,</pc> q<pc
+           type="reg">'</pc>il ont un asne qui&esp;<lb/>porte en&esp;son col une corde
+         a&esp;qoi&esp;li chamel sont&esp;<lb/>liiez&deuxpoints-virg3;si s<pc type="reg"
+           >'</pc>en &u-v;et de&u-v;ant &esperluette-et;li chamel le
+         si&u-v;ent&esp;<lb/>tout soef le&esp;pas li uns apr&eacc;s l<pc type="reg"
+         >'</pc>autre sanz issir&esp;<lb/> de&esp;&u-v;oie<pc type="orig"
+           ana="coordination">.</pc>&esp;&esperluette-et;einsint si&u-v;oient ad&eacc;s
+           l<pc type="reg">'</pc>asne&esp;li&esp;chamel&esp;<lb/>solonc ceste
+         costume.&esp;Qant li marcheanz &u-v;i<lb/>rent le&esp;lion
+           &esperluette-et;il&esp;l<pc type="reg">'</pc>aproismierent<pc type="reg"
+           ana="subordonnee">,</pc> il orent
+         grant&esp;<lb/>poor&deuxpoints-point;&l-maj;i&esp;lions reconut l<pc type="reg"
+           >'</pc>asne<pc type="reg" ana="coordination">,</pc>&esp;si comen&c-ced;a
+         a&esp;muire&esp;<lb/>mout durement<pc type="orig" ana="coordination"
+         >.</pc>&esp;&esperluette-et;lors&esp;lor corut seure<pc type="reg"
+           ana="coordination">,</pc> mes&esp;<lb/>il n<pc type="reg"
+         >'</pc>en&esp;ble&c-ced;a nul<pc type="orig" ana="coordination"
+         >.</pc>&esp;ne&esp;ne fist mal de&esp;lor cors
+         ne&esp;<lb/>gre&u-v;ance&deuxpoints-virg3;car li&esp;marcheanz
+         deguerpirent&esp;<lb/>totes lor choses&point-virg3;si&esp;s<pc type="reg"
+           >'</pc>en<pc type="orig" ana="mot">&#160;</pc>fo&itrem;rent por la
+         poour&esp;<lb/>de&esp;la&esp;beste q<pc type="reg">'</pc>il &u-v;eoient &u-v;enir
+         grant &esperluette-et;hisdeuse.&esp;<lb/>Et si&esp;com il s<pc type="reg">'</pc>en
+           fuioient<pc type="reg" ana="subordonnee">,</pc> li&esp;lions mu&i-j;oit
+         &esperluette-et;si&esp;<lb/>feroit la&esp;terre de&esp;sa keue mout
+         durement&deuxpoints-point;<lb/>Li chamel qi charchiez estoient erent
+         molt&esp;<lb/>espoentez.&esp;Lors les acuelli li lions<pc type="reg"
+           ana="coordination">,</pc> si&esp;les en<lb/>mena de&u-v;ant lui
+         &esperluette-et;cha&c-ced;a&esp;tant q<pc type="reg">'</pc>il
+         &u-v;indrent&esp;<lb/>atout l<pc type="reg">'</pc>asne a&esp;l<pc type="reg"
+           >'</pc>abe&itrem;e.&esp;Qant il &u-v;indrent a&esp;la&esp;<lb/>porte
+         &esperluette-et;li frere&esp;les &u-v;irent<pc type="reg" ana="subordonnee">,</pc>
+         il alerent a&esp;<persName ref="#jerome"
+           >seint&esp;<lb/>&j-maj;eroime</persName><pc type="reg" ana="coordination"
+           >,</pc> si&esp;li distrent.&esp;Qant il o&itrem; ceste no&u-v;ele<pc type="reg"
+           ana="subordonnee"
+         >,</pc>&esp;<lb/>il&esp;issi&esp;fors&point-virg3;si&esp;&neuf-con;manda
+         a&esp;o&u-v;rir les portes
+           &esperluette-et;puis&esp;<lb/>si&esp;dist&point-deuxpointsDial;<said
+           who="#jerome">Descharchiez nos ostes des fes
+           qe&esp;il&esp;<lb/>portent&point-virg3;puis lor donez a&esp;mengier<pc
+            type="orig" ana="coordination"
+           >.</pc>&esp;&esperluette-et;apr&eacc;s&esp;<lb/>esgarderons qe nostre
+           &s-maj;ires &u-v;oudra a&esp;nous&esp;<lb/>demostrer&point-virg5;qi si&esp;serf
+            somes<pc type="reg" ana="apposition">,</pc> de&esp;ceste chose
+           de<lb/>mostrer &esperluette-et;fere.</said>&esp;Li&esp;frere firent ce q<pc
+           type="reg">'</pc>il &neuf-con;manda&esp;<lb/>&esperluette-et;atornerent mout
+         bien les chameus &esperluette-et;aai<lb/>sierent<note>contenter, mettre à
+           l'aide</note>.&esp;Li&esp;lions comen&c-ced;a a&esp;aler molt liement&esp;<lb/>
+         par tout l<pc type="reg">'</pc>encloistre de&esp;l<pc type="reg"
+         >'</pc>abe&itrem;e&point-virg3;si se&esp;coucha de<lb/>&u-v;ant chascun
+         frere&deuxpoints-virg4;aussi com s<pc type="reg">'</pc>il &u-v;ousist di<lb/>re
+           q<pc type="reg">'</pc>il n<pc type="reg">'</pc>a&u-v;oit mie faite la felonie
+           c<pc type="reg">'</pc>on li a&u-v;oit&esp;<lb/>sus&esp;mise.&esp;Qant
+         ce&esp;&u-v;irent li frere<pc type="reg" ana="subordonnee">,</pc> il firent
+         lor&esp;<lb/>peneance por&esp;la&esp;cruiaut&eacc; del blasme dont
+           il&esp;<lb/>l<pc type="reg">'</pc>a&u-v;oient ret&eacc;<note>accusé</note>
+         a&esp;tort&deuxpoints-virg3;car&esp;adont estoient moi<lb/>ne piu
+           &esperluette-et;doz<pc type="orig" ana="coordination">.</pc>&esp;ne ne
+         sa&u-v;oient mie tant de&esp;<lb/><cb n="b"/>mal&point-virg4;<choice>
+           <orig>C</orig>
+           <reg>c</reg>
+         </choice>ome il se&u-v;ent ores.&esp;<lb/></p>
+        <lg n="1">
+         <l n="1"><hi rend="decorated-initialblue">C</hi>eus qi or sont het nostre
+           &s-maj;ire.</l>
+         <l n="2">Nus n<pc type="reg">'</pc>en&esp;<lb/>porroit conter ne dire<pc
+            type="orig" ana="COD">.</pc></l>
+         <l n="3">Lor maus ne lor mal<lb/>a&u-v;entures.</l>
+         <l n="4">Deu heent &esperluette-et;les &e-maj;scritures<pc type="orig"
+            ana="coordination">.</pc></l>
+         <l n="5">Et&esp;<lb/>lor ordre mescest del meins<note>Et leur ordre déchoit de
+            plus en plus</note>.</l>
+         <l n="6">Ja nus preudom&esp;<lb/>n<pc type="reg">'</pc>ert lor compeins<pc
+            type="orig" ana="relative">.</pc></l>
+         <l n="7">Qi ne s<pc type="reg">'</pc>en plaigne<pc type="reg" ana="apposition"
+            >,</pc> c<pc type="reg">'</pc>est&esp;<lb/>la fins.</l>
+         <l n="8">En&esp;moine a&esp;plus de&esp;larrecins<pc type="orig" ana="subCorr"
+            >.</pc></l>
+         <l n="9">Qu<pc type="reg">'</pc>&etilde-en;&esp;<lb/>usurier de fauset&eacc;.</l>
+         <l n="10">Et se <rs ref="#namur">li cuens</rs><note>Philipe de Namur ?</note> la &u-v;erit&eacc;<pc
+            type="orig" ana="COD">.</pc>&esp;<lb/></l>
+         <l n="11">Sa&u-v;oit de&esp;lor cuers les felons&point-virg4;</l>
+         <l n="12">Ja&esp;ne seroit&esp;<lb/>li ans si&esp;lons<pc type="orig"
+            ana="subCorr">.</pc></l>
+         <l n="13">Qe por eus fe&itrem;st nule rien&point-virg3;<lb/></l>
+         <l n="14">Car &i-j;e&esp;li mant<note>verbe mander</note><pc type="reg"
+            ana="incise">,</pc> sel sace bien&point-virg8;</l>
+         <l n="15">Qe por&esp;lui fe<lb/>roient petit<pc type="orig" ana="coordination"
+            >.</pc></l>
+         <l n="16">N<pc type="reg">'</pc>en orissons n<pc type="reg">'</pc>en fet n<pc
+            type="reg">'</pc>en dit.&esp;</l>
+         <lb/>
+        </lg>
+      </div>
+     </div>
+     <div n="4" type="chapter">
+      <div type="section" n="1">
+        <p><hi rend="decorated-initial">L</hi><choice>
+           <orig>I</orig>
+           <reg>i</reg>
+         </choice>&esp;frere <persName ref="#jerome">seint &j-maj;eroime</persName>
+         disoient del&esp;<lb/>lion&esp;:&esp;<said>&v-maj;eez&esp;ici nostre pasteur qe
+           nos&esp;<lb/>dampnions si cruelment com&esp;<lb/>se&esp;ce fust uns
+            de&u-v;orrieres<pc type="orig" ana="coordination"
+           >.</pc>&esp;&esperluette-et;nostre &s-maj;ires nos&esp;<lb/>a&esp;demostr&eacc;
+           mout beau miracle&point-virg4;por ce qu<pc type="reg">'</pc>il&esp;<lb/>fust
+           de&esp;cest blasme escusez.</said>&esp;<persName ref="#jerome">Seinz
+           &j-maj;eroimes</persName>&esp;<lb/>qi&esp;bien sa&u-v;oit ce qe
+         a&esp;a&u-v;enir estoit de&esp;ceste&esp;<lb/>chose dist a&esp;ses
+           freres&point-deuxpointsDial;<said who="#jerome">Apareilliez
+           qe&esp;&u-v;os&esp;<lb/>aiez &u-v;iandes a&esp;o&eacc;s ceus
+            qi&esp;&u-v;endront<pc type="reg" ana="subordonnee">,</pc> si qu<pc
+            type="reg">'</pc>il&esp;<lb/>soient rece&utrem;z
+           honorablement&point-virg4;si com l<pc type="reg">'</pc>en&esp;<lb/>doit ostes
+           rece&u-v;oir.</said>&esp;Il firent einsint com&esp;lor&esp;<lb/>seint pere lor
+         &neuf-con;mandoit&point-virg3;car&esp;il ne trespassas<lb/>sent mie de&esp;legier
+         obedience.&esp;Qant tot ce&esp;<lb/>fu&esp;fet
+         &esperluette-et;atorn&eacc;&point-virg4;uns messages &u-v;int qi lor
+         dist&esp;<lb/> &esperluette-et;anon&c-ced;a q<pc type="reg">'</pc>il a&u-v;oit
+         hostes a&esp;la porte qi &u-v;oloi<lb/>ent &u-v;eoir le&esp;pere
+           de&esp;la&esp;meson.&esp;<persName ref="#jerome">Seinz
+           &j-maj;eroi<lb/>mes</persName> comanda c<pc type="reg">'</pc>on o&u-v;rist la
+           porte<pc type="reg" ana="coordination">,</pc> si les&esp;<lb/>lessast l<pc
+           type="reg">'</pc>en a&esp;lui &u-v;enir.&esp;Cil entrerent
+           enz&esp;tot&esp;<lb/>honteus<pc type="reg" ana="subordonnee">,</pc> encore
+         fussent il mand&eacc;.&esp;Et tan<lb/>tost com il &u-v;irent <persName
+           ref="#jerome">seint &j-maj;eroime</persName><pc type="reg" ana="subordonnee"
+           >,</pc>&esp;il&esp;li che&itrem;rent&esp;<lb/>as&esp;piez<pc type="reg"
+           ana="coordination">,</pc> si&esp;li proierent merci &esperluette-et;pardon
+         del&esp;<lb/>mesfet q<pc type="reg">'</pc>il fet a&u-v;oient.&esp;<persName
+           ref="#jerome">Seinz &j-maj;eroimes</persName>&esp;<lb/>les redre&c-ced;a
+         &esperluette-et;si&esp;lor&esp;dist &esperluette-et;amonesta q<pc type="reg"
+           >'</pc>il&esp;une&esp;<lb/>autre foiz ne fe&itrem;ssent tele
+         oe&u-v;re&deuxpoints-virg3;mes pre&itrem;s<lb/>sent lor choses &esperluette-et;les
+         autrui lessassent ne&esp;<lb/>ne les co&u-v;oitassent.&esp;Dont lor fist
+         rendre&esp;<lb/>lor chameus a&esp;totes lor charges qe&esp;onques&esp;<lb/>riens
+           n<pc type="reg">'</pc>en fu detrete.&esp;Dont parlerent li&esp;mar<lb/>cheanz
+         tuit a&esp;une &u-v;oiz<pc type="orig" ana="coordination"
+           >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Beaus&esp;<lb/>
+            pere<pc type="reg" ana="apostrophe">,</pc> nos te&esp;prions<pc type="orig"
+            ana="completive">.</pc>&esp;qe&esp;tu&esp;a&esp;o&eacc;s
+            le&esp;luminaire&esp;<lb/>de&esp;l<pc type="reg">'</pc>eglisse fere
+           &esperluette-et;a&esp;o&eacc;s les besoignes des fre<lb/>res de&esp;ceste
+            meson<pc type="orig" ana="segPrep">:</pc>&esp;faciez prendre
+            la&esp;moi<lb/>ti&eacc;&esp;de&esp;l<pc type="reg">'</pc>uile qe noz chameus
+           aporterent&point-virg3;<lb/>car nos&esp;sa&u-v;ons bien certeinement
+            qe&esp;nos&esp;<lb/><pb n="158"
+            facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f326.item.zoom"/><cb
+            n="c"/><choice>
+            <orig>P</orig>
+            <reg>p</reg>
+           </choice>lus alames en&esp;<placeName ref="#egypte"
+            >&e-maj;g&ypoint;pte</placeName>&esp;<choice>
+            <orig>P</orig>
+            <reg>p</reg>
+           </choice>or nostre utilit&eacc;&esp;<lb/>qe por l<pc type="reg"
+           >'</pc>utilit&eacc; de&esp;marcheandise.</said>&esp;<persName ref="#jerome"
+           >Seinz &j-maj;eroi<lb/>mes</persName> lor respondi&esp;&esperluette-et;dist<pc
+           type="reg" ana="DD"> : </pc><said who="#jerome">&v-maj;os n<pc type="reg"
+            >'</pc>a&u-v;ez mie requis&esp;<lb/>droiture<pc type="orig"
+            ana="coordination">.</pc>&esp;&esperluette-et;leide chose seroit qe nos qi
+           de&u-v;ons&esp;<lb/>a&u-v;oir piti&eacc; des genz &esperluette-et;misericorde
+           &esperluette-et;aidier&esp;<lb/>a&esp;lor besoing &esperluette-et;doner del
+            nostre<pc type="orig" ana="relative">.</pc>&esp;&u-v;os gre&u-v;issi<lb/>ons
+           &esperluette-et;pre&itrem;ssons del &u-v;ostre de qoi nos n<pc type="reg"
+            >'</pc>a&u-v;ons&esp;<lb/>nule soffrete.</said>&esp;Dont respondirent
+           li&esp;marche&atilde-an;z&esp;<lb/>a&esp;<persName ref="#jerome">seint
+           &j-maj;eroime</persName><pc type="orig" ana="coordination"
+           >.</pc>&esp;&esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Nos ne
+           menge<lb/>rons ceenz ne&esp;ne prenderons nules de&esp;totes&esp;<lb/>nos
+            choses&point-virg4;tresq<pc type="reg">'</pc>atant qe &u-v;os&esp;auroiz
+           &neuf-con;man<lb/>d&eacc;&esp;a&esp;fere ce qe nos &u-v;os proierons&point-virg5;<choice>
+            <orig>C</orig>
+            <reg>c</reg>
+           </choice>e&esp;est que&esp;<lb/>&u-v;os preigniez la moiti&eacc; de&esp;l<pc
+            type="reg">'</pc>uile<pc type="orig" ana="relative">.</pc>&esp;qe nos
+           cha<lb/>meus ont aportee.&esp;Et&esp;apr&eacc;s &u-v;os a&u-v;ons
+           nos&esp;<lb/>en&esp;co&u-v;enant &esperluette-et;otroions qe nos
+           &esperluette-et;nostre oir<pc type="orig" ana="COD">:</pc>&esp;<lb/>donrons
+           a&esp;&u-v;os &esperluette-et;a&esp;ceus qi&esp;apr&eacc;s &u-v;os
+           &u-v;endront&esp;<lb/> a&esp;o&eacc;s l<pc type="reg">'</pc>eglisse
+           de&esp;ceste meson chascun an une&esp;<lb/>mesure d<pc type="reg"
+           >'</pc>uile.</said>&esp;Lors fist <persName ref="#jerome">seinz
+           &j-maj;eroimes</persName> aus&itilde-in;t&esp;<lb/>&neuf-con;me a&esp;force
+         re&c-ced;oi&u-v;re l<pc type="reg">'</pc>uile qe&esp;li marcheans&esp;li&esp;<lb/>
+         donerent.&esp;Et puis si&esp;mengierent li&esp;marche<lb/>anz
+         &esperluette-et;reci&u-v;rent la&esp;bene&itrem;&c-ced;on <persName ref="#jerome"
+           >seint &j-maj;erosme</persName>.&esp;<lb/>&p-maj;uis pristrent lor choses
+         &esperluette-et;lor chameus<pc type="reg" ana="coordination">,</pc>
+           si&esp;<lb/>s<pc type="reg">'</pc>en repeirierent en lor contrees.<lb/></p>
+      </div>
+     </div>
+     <div n="5" type="chapter">
+      <div type="section" n="1">
+        <p><hi rend="decorated-initial">C</hi><choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>ste chose a&u-v;int en la&esp;cit&eacc; de&esp;&b-maj;eth<pc type="orig"
+           ana="mot">.</pc><lb/>leem&point-virg4;si&esp;com cil de la &u-v;ile
+         le&esp;racon<lb/>tent.&esp;Bethleem fu la cit&eacc; en qoi&esp;<lb/>nostre
+           &s-maj;ires<pc type="reg" ana="apposition">,</pc> li&esp;&s-maj;au&u-v;eres
+         de&esp;tot le monde<pc type="reg" ana="apposition">,</pc> fu&esp;<lb/>nez
+           de&esp;la&esp;<persName ref="#marie"
+         >&v-maj;irge</persName>&deuxpoints-virg4;si&esp;com li prophete l<pc type="reg"
+           >'</pc>a&u-v;oient&esp;<lb/>de&u-v;ant
+         prononci&eacc;&point-virg4;&esperluette-et;la fu mis en&esp;la creche.&esp;<lb/>Et
+         adont estoit la&esp;creche aornee &esperluette-et;d<pc type="reg">'</pc>or
+           &esperluette-et;d<pc type="reg">'</pc>ar<lb/>gent&point-virg4;si com <persName
+           ref="#antoine">seinz &a-maj;ntoines</persName> le
+         raconte&deuxpoints-point;<lb/>Et la ser&u-v;oit <persName ref="#jerome">seinz
+           &j-maj;eroimes</persName>&#160;&esperluette-et;si frere par&esp;<lb/>grant
+         de&u-v;otion nuit &esperluette-et;&i-j;or.&esp;Et ad&eacc;s
+         i&esp;a&u-v;oit&esp;<lb/>luminaire.&esp;La creche estoit en&esp;une
+           fosse&esp;<lb/>a&esp;l<pc type="reg">'</pc>entree estroite<pc type="orig"
+           ana="coordination">.</pc>&esp;&esperluette-et;a&esp;cele entree fist
+         mes<lb/>sires <persName ref="#jerome">seinz &j-maj;eroimes</persName> fere
+         a&esp;son o&eacc;s une se<lb/>pouture en qoi il fu mis
+         &esperluette-et;ense&u-v;eliz qant&esp;<lb/>il parti de&esp;cest siecle.&esp;Ce fu
+         as secondes kalen<lb/>des d<pc type="reg"
+         >'</pc>octembre&deuxpoints-point;Et&esp;adonc a&u-v;oit il aempli&esp;<lb/>nonante
+         anz de son aage.&esp;<persName ref="#honorius">&h-maj;onoires</persName>
+         estoit&esp;<lb/>empereres a&esp;<placeName ref="#rome">Rome</placeName>
+           qui&esp;<pc ana="number">.</pc><seg type="number">xii</seg><pc ana="number"
+           >.</pc>&esp;anz a&u-v;oit&esp;<lb/>tenu le reigne par le
+         coumandement&esp;<lb/>de &c-maj;elui qui &u-v;it &esperluette-et;reigne
+         parmenable<lb/>ment.</p>
+      </div>
+     </div>
+   </body>
+  </text>
 </TEI>
