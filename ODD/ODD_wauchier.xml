@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Attention à rajouter dans l'établissement du text les del et corr / les hands responsable / les country ac les types pays et continent-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"
     xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
     <teiHeader>
@@ -593,11 +594,11 @@
             </div1>
             <div1>
                 <head>Tableau des éléments</head>
-                <schemaSpec ident="oddbyexample" start="TEI ">
+                <schemaSpec ident="oddbyexample">
                     <moduleRef key="tei"/>
                     <moduleRef key="corpus" include="particDesc settingDesc"/>
                     <moduleRef key="core"
-                        include="del p hi said corr sic choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
+                        include="rs del p hi said corr sic choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
                     <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
                     <elementSpec ident="variantEncoding" mode="change">
                         <attList>
@@ -1058,7 +1059,13 @@
                             <attDef ident="ana" mode="delete"/>
                             <attDef ident="facs" mode="delete"/>
                             <attDef ident="ref" mode="delete"/>
-                            <attDef ident="type" mode="delete"/>
+                            <attDef ident="type" mode="change">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="pays"/>
+                                    <valItem ident="civilisation"/>
+                                </valList>
+                            </attDef>
+                            
                         </attList>
                     </elementSpec>
                     <elementSpec ident="settlement" mode="change">
@@ -1148,6 +1155,7 @@
                             <attDef ident="ana" mode="delete"/>
                             <attDef ident="facs" mode="delete"/>
                             <attDef ident="target" mode="delete"/>
+                            <attDef ident="anchored" mode="delete"/>
                             <attDef ident="type" mode="change">
                                 <valList mode="add" type="closed">
                                     <valItem ident="biographical"/>
@@ -1612,9 +1620,17 @@
                     <classSpec ident="att.textCritical" type="atts" mode="change">
                         <attList>
                             <attDef ident="type" mode="delete"/>
-
                             <attDef ident="varSeq" mode="delete"/>
-                            <attDef ident="hand" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.editLike" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="instant" mode="delete"/>
+                        </attList>
+                    </classSpec>
+                    <classSpec ident="att.fragmentable" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="part" mode="delete"/>
                         </attList>
                     </classSpec>
                 </schemaSpec>
