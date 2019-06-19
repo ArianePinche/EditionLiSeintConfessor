@@ -1,30 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://fn.com" xmlns="http://www.tei-c.org/ns/1.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tei-c.org/ns/1.0"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs" version="2.0">
-    <xsl:function name="fn:normalize">
-        <xsl:param name="input"></xsl:param>
-        <xsl:value-of select="translate(normalize-unicode(lower-case($input),'NFKD'), 'áàâäéèêëíìîïóòôöúùûü','aaaaeeeeiiiioooouuuu')"/>
-    </xsl:function>
+
     <xsl:output method="text"/>
     <xsl:template match="/">
-       
         <xsl:result-document href="../analyseCorpus.txt">
             
-            <!-- Traitement des vocalismes -->
-            
-            <!-- a initial -->
-            
-            <xsl:variable name="regex_ainit" select="'^[a-z]a'"/>
-            <xsl:variable name="regex_ahiatus" select="'^[a-z]?a[aeiou]?'"/>
-            <xsl:text>A initiale en hiatus </xsl:text>
-            <xsl:for-each-group select="w[matches(fn:normalize(.), $regex_ainit)]" group-by=".">
-                <xsl:text>(</xsl:text><xsl:value-of select="count(.)"/><xsl:text> dont </xsl:text>
-                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/><xsl:text> :</xsl:text>
-                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/>
-            </xsl:for-each-group>
+          
+          <!-- Alternance graphique c/che -->
 
-            <!-- règle test sur le pronom ce -->
+            <!-- règle sur le pronom ce -->
             <xsl:if test="descendant::w/@lemma = 'ce1'">
                 <xsl:text>&#10;</xsl:text>
                 <xsl:text>ce</xsl:text>(<xsl:value-of select="count(descendant::w[@lemma = 'ce1'])"
@@ -101,30 +87,25 @@
 
             <xsl:text> c à l'initial</xsl:text>
             <xsl:text> c+e (</xsl:text>
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ce')])"/>
-            <xsl:text>) &#10;</xsl:text>
-
-
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ce')])"/>    
+           <xsl:text>) &#10;</xsl:text>
+            
+           
             <xsl:text> initiale en ce/che </xsl:text>
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ce')]"
-                group-by="starts-with(lower-case(.), 'ch')">
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ce')]" group-by="starts-with(lower-case(.), 'ch')">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+               <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ce')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'ch')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+            
             <xsl:text> initiale en c </xsl:text>
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ce')]"
-                group-by="not(starts-with(lower-case(.), 'ch'))">
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ce')]" group-by="not(starts-with(lower-case(.), 'ch'))">
                 <xsl:sort order="ascending"/>
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text> c &#10;</xsl:text>
@@ -133,205 +114,159 @@
                 <xsl:sort order="ascending"/>
                 <xsl:if test="not(starts-with(., 'ch'))">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-
+            
+        
 
             <xsl:text>&#10;</xsl:text>
             <xsl:text>che/ce à l'initial / attention ne prend pas cascun (une occurence)</xsl:text>
-
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'che')])"/>
+       
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'che')])"/>    
             <xsl:text>) &#10;</xsl:text>
 
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]"
-                group-by="starts-with(lower-case(.), 'ce')">
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]" group-by="starts-with(lower-case(.), 'ce')">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'ce')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
-            </xsl:for-each-group>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]"
-                group-by="not(starts-with(lower-case(.), 'ce'))">
-                <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                    </xsl:for-each-group>
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]" group-by="not(starts-with(lower-case(.), 'ce'))">    <xsl:sort order="ascending"/>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'che')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'che')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+            
             <xsl:text>&#10;</xsl:text>
             <xsl:text>cha/ca à l'initial / attention ne prend pas cascun (une occurence)</xsl:text>
-
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'cha')])"/>
+            
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'cha')])"/>    
             <xsl:text>) &#10;</xsl:text>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]"
-                group-by="not(starts-with(lower-case(.), 'ch'))">
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]" group-by="not(starts-with(lower-case(.), 'ch'))">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="not(starts-with(lower-case(.), 'ch'))">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]"
-                group-by="not(starts-with(lower-case(.), 'ca'))">
-                <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]" group-by="not(starts-with(lower-case(.), 'ca'))">    <xsl:sort order="ascending"/>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'cha')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'cha')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+            
             <xsl:text>&#10;</xsl:text>
             <xsl:text>ca/cha à l'initial / attention ne prend pas cascun (une occurence)</xsl:text>
-
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ca')])"/>
+            
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ca')])"/>    
             <xsl:text>) &#10;</xsl:text>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]"
-                group-by="starts-with(lower-case(.), 'cha')">
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]" group-by="starts-with(lower-case(.), 'cha')">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'cha')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]"
-                group-by="not(starts-with(lower-case(.), 'ca'))">
-                <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]" group-by="not(starts-with(lower-case(.), 'ca'))">    <xsl:sort order="ascending"/>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ca')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'ca')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-
-
+            
+           
+           
             <xsl:text>&#10;</xsl:text>
             <xsl:text>ci à l'initial / attention ne prend pas cascun (une occurence)</xsl:text>
-
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ci')])"/>
+            
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'ci')])"/>    
             <xsl:text>) &#10;</xsl:text>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]"
-                group-by="starts-with(lower-case(.), 'chi')">
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]" group-by="starts-with(lower-case(.), 'chi')">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'chi')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]"
-                group-by="not(starts-with(lower-case(.), 'ci'))">
-                <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]" group-by="not(starts-with(lower-case(.), 'ci'))">    <xsl:sort order="ascending"/>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'ci')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'ci')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+            
             <xsl:text>&#10;</xsl:text>
             <xsl:text>chi/ci à l'initial / attention ne prend pas cascun (une occurence)</xsl:text>
-
-            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'chi')])"/>
+            
+            <xsl:value-of select="count(descendant::w[starts-with(@lemma, 'chi')])"/>    
             <xsl:text>) &#10;</xsl:text>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]"
-                group-by="starts-with(lower-case(.), 'ci')">
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]" group-by="starts-with(lower-case(.), 'ci')">
                 <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'ci')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]"
-                group-by="not(starts-with(lower-case(.), 'ci'))">
-                <xsl:sort order="ascending"/>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:value-of select="."/>
-                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]" group-by="not(starts-with(lower-case(.), 'ci'))">    <xsl:sort order="ascending"/>
+                <xsl:value-of select="count(current-group())"/><xsl:value-of select="."/><xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[starts-with(@lemma, 'chi')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="starts-with(., 'chi')">
                     <xsl:value-of select="count(current-group())"/>
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+                
 
             <xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
@@ -347,75 +282,51 @@
             </xsl:for-each-group>
 
 
-
+           
             <xsl:text>PPF  avec auxiliaire être </xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:value-of select="count(descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n'])"/>
+            <xsl:value-of select="count(descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n'])"/>
             <xsl:text>ie</xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by="ends-with(., 'ie')">
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>:</xsl:text>
-                <xsl:variable name="vb1" select="'^[a-z]*er[1-9]?$'"/>
-
-                <xsl:text>Verbes du 1er groupe (</xsl:text>
-                <xsl:value-of select="count(current-group()[matches(@lemma, $vb1)])"/>
-                <xsl:text>)</xsl:text>
-                <xsl:value-of select="current-group()[matches(@lemma, $vb1)]"/>
-                <xsl:text>&#10;</xsl:text>
-                
-                <xsl:text>autres groupes (</xsl:text>
-                <xsl:value-of
-                    select="count(current-group()[not(matches(@lemma, $vb1))])"/>
-                <xsl:text>)</xsl:text>
-                <xsl:value-of
-                    select="current-group()[not(matches(@lemma, $vb1))]"/>
-
+            <xsl:for-each-group select="descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n']" group-by="ends-with(., 'ie')">
+                <xsl:value-of select="count(current-group())"/><xsl:text>:</xsl:text>
+                <xsl:value-of select="."/>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
-            <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
+            <xsl:for-each-group select="descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n']" group-by=".">
                 <xsl:sort order="ascending"/>
-                <xsl:if test="ends-with(., 'ie')">
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                <xsl:if test="ends-with(.,'ie')">
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
+            
             <xsl:text>iee</xsl:text>
-            <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by="ends-with(., 'iee')">
-                <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n']" group-by="ends-with(., 'iee')">
+           <xsl:text>&#10;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#10;</xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:text>, </xsl:text>
+                <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
-            <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
-                <xsl:if test="ends-with(., 'iee')">
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+            <xsl:for-each-group select="descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n']" group-by=".">
+                <xsl:if test="ends-with(.,'iee')">
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Autre</xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
+            <xsl:for-each-group select="descendant::w[@type ='POS=VERppe|NOMB.=s|GENRE=f|CAS=n']" group-by=".">
                 <xsl:sort order="ascending"/>
-                <xsl:if test="not(ends-with(., 'iee')) and not(ends-with(., 'ie'))">
-                    <xsl:value-of select="."/>
-                    <xsl:text>, </xsl:text>
+                <xsl:if test="not(ends-with(.,'iee')) and not(ends-with(.,'ie'))">
+                    <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:if>
             </xsl:for-each-group>
-
-
-
-
-
+            
+                
+         
+            
+        
 
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Nombre de le pour la au cas régime féminin sing</xsl:text>

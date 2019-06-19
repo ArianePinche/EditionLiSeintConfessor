@@ -16,7 +16,7 @@
     <xsl:variable name="lemma_match" select="'^ch?[^zrtyuopqsdfghjklmwxcvbn]'"/>
     
     <xsl:function name="fn:normalize">
-        <xsl:param name="input"></xsl:param>
+        <xsl:param name="input"/>
         <xsl:value-of select="translate(normalize-unicode(lower-case($input),'NFKD'), 'áàâäéèêëíìîïóòôöúùûü','aaaaeeeeiiiioooouuuu')"/>
     </xsl:function>
     

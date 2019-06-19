@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY esp '<pc type="reg">&#160;</pc>'>
+<!ENTITY esp '<pc type="reg" ana="space">&#160;</pc>'>
+<!ENTITY nospace '<pc type="orig" ana="space">&#160;</pc>'>
 <!ENTITY esperluette-et '<choice><abbr>&#61784;</abbr><expan>et&#160;</expan></choice>'>
 <!ENTITY apostrophe  '<choice><abbr>&apos;</abbr><expan>ier</expan></choice>'>
 <!ENTITY c-ced  '<choice><orig>c</orig><reg>ç</reg></choice>'>
@@ -123,38 +124,38 @@
 <!-- Ponctuation -->
 
 <!--point -->
-<!ENTITY point-virg '<choice><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-pointvirg '<choice><orig>.</orig><reg>;&esp;</reg></choice>' >
-<!ENTITY point-virg1 '<choice ana="balancement"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg2 '<choice ana="apostrophe"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg3 '<choice ana="conjonctionCoordination"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg4 '<choice ana="subordonnée"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg5 '<choice ana="apposition"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg6 '<choice ana="CC"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg7 '<choice ana="enumeration"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg8 '<choice ana="incise"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-virg9 '<choice ana="parataxe"><orig>.</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY point-deuxpointsDial '<choice ana="dialogue"><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
-<!ENTITY point-deuxpoints '<choice><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
-<!ENTITY point-deuxpointsEnum '<choice ana="enumeration"><orig>.</orig><reg>&esp;:&esp;</reg></choice>' >
-<!ENTITY point-interrogation '<choice ana="interrogation"><orig>.</orig><reg>&esp;?&esp;</reg></choice>' >
-<!ENTITY point-exclamation '<choice ana="exclamation"><orig>.</orig><reg>&esp;!&esp;</reg></choice>' >
+<!ENTITY point-virg '<pc><choice><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-pointvirg '<pc><choice><orig>.</orig><reg>;&esp;</reg></choice></pc>' >
+<!ENTITY point-virg1 '<pc><choice ana="balancement"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg2 '<pc><choice ana="apostrophe"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg3 '<pc><choice ana="conjonctionCoordination"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg4 '<pc><choice ana="subordonnée"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg5 '<pc><choice ana="apposition"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg6 '<pc><choice ana="CC"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg7 '<pc><choice ana="enumeration"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg8 '<pc><choice ana="incise"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-virg9 '<pc><choice ana="parataxe"><orig>.</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY point-deuxpointsDial '<pc><choice ana="dialogue"><orig>.</orig><reg>&esp;:&esp;</reg></choice></pc>' >
+<!ENTITY point-deuxpoints '<pc><choice><orig>.</orig><reg>&esp;:&esp;</reg></choice></pc>' >
+<!ENTITY point-deuxpointsEnum '<pc><choice ana="enumeration"><orig>.</orig><reg>&esp;:&esp;</reg></choice></pc>' >
+<!ENTITY point-interrogation '<pc><choice ana="interrogation"><orig>.</orig><reg>&esp;?&esp;</reg></choice></pc>' >
+<!ENTITY point-exclamation '<pc><choice ana="exclamation"><orig>.</orig><reg>&esp;!&esp;</reg></choice></pc>' >
 
 <!-- deux points -->
-<!ENTITY deuxpoints-virg '<choice><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg1 '<choice ana="balancement"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg2 '<choice ana="apostrophe"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg3 '<choice ana="conjonctionCoordination"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg4 '<choice ana="subordonnée"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg5 '<choice ana="apposition"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg6 '<choice ana="CC"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg7 '<choice ana="enumeration"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg8 '<choice ana="incise"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-virg9 '<choice ana="parataxe"><orig>:</orig><reg>,&esp;</reg></choice>' >
-<!ENTITY deuxpoints-point '<choice><orig>:</orig><reg>.&esp;</reg></choice>' >
-<!ENTITY deuxpoints-pointvirg '<choice><orig>:</orig><reg>;&esp;</reg></choice>' >
-<!ENTITY deuxpoints-exclamation '<choice ana="exclamation"><orig>:</orig><reg>&esp;!&esp;</reg></choice>' >
-<!ENTITY deuxpoints-interrogation '<choice ana="interrogation"><orig>:</orig><reg>&esp;?&esp;</reg></choice>' >
+<!ENTITY deuxpoints-virg '<pc><choice><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg1 '<pc><choice ana="balancement"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg2 '<pc><choice ana="apostrophe"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg3 '<pc><choice ana="conjonctionCoordination"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg4 '<pc><choice ana="subordonnée"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg5 '<pc><choice ana="apposition"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg6 '<pc><choice ana="CC"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg7 '<pc><choice ana="enumeration"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg8 '<pc><choice ana="incise"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-virg9 '<pc><choice ana="parataxe"><orig>:</orig><reg>,&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-point '<pc><choice><orig>:</orig><reg>.&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-pointvirg '<pc><choice><orig>:</orig><reg>;&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-exclamation '<pc><choice ana="exclamation"><orig>:</orig><reg>&esp;!&esp;</reg></choice></pc>' >
+<!ENTITY deuxpoints-interrogation '<pc><choice ana="interrogation"><orig>:</orig><reg>&esp;?&esp;</reg></choice></pc>' >
 
 
  
