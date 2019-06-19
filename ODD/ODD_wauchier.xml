@@ -1634,6 +1634,11 @@
                             <attDef ident="part" mode="delete"/>
                         </attList>
                     </classSpec>
+                    <classSpec ident="att.personnal" type="atts" mode="change">
+                        <attList>
+                            <attDef ident="full" mode="delete"/>
+                        </attList>
+                    </classSpec>
                 </schemaSpec>
             </div1>
         </body>
