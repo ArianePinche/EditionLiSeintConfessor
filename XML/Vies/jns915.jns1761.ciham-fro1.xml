@@ -96,422 +96,463 @@
   </encodingDesc>
   <profileDesc>
    <particDesc>
-    <listPerson>
-     <person xml:id="alpinien">
-      <persName>Alpiniens</persName>
-      <note type="biographical">Discipline de <persName ref="#marcel">saint
-       Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="andrius">
-      <persName>Andriu</persName>
-      <note type="biographical">Prêtre païen de la cité de <placeName ref="#limoges"
-        >Limoges</placeName>, converti avec <persName ref="#aurelien">Aurelien</persName> à
-       la foi chrétienne par <persName ref="#marcel">saint Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="archade">
-      <persName>Archade</persName>
-      <note type="biographical">Comte de Poitiers, père de <persName ref="#hydebres"
-        >Hyldebert</persName> qui fut ressuscité par <persName ref="#marcel">saint
-        Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aurelien">
-      <persName>Aurelien</persName>
-      <note type="biographical">Prêtre païen de la cité de <placeName ref="#limoges"
-        >Limoges</placeName>, converti avec <persName ref="#andrius">Andrius</persName> à la
-       foi chrétienne par <persName ref="#marcel">saint Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="austriclinien">
-      <persName>Austricliniens</persName>
-      <note type="biographical">Discipline de <persName ref="#marcel">saint
-       Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="benoite">
-      <persName>Beneoite</persName>
-      <note type="biographical">Comtesse de la cité de <placeName ref="#bordeaux"
-        >Bordeaux</placeName>, femme du comte <persName ref="#soybre"
-       >Soybre</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="benjamin">
-      <persName>Benjamin</persName>
-      <note type="biographical" source="https://www.wikidata.org/wiki/Q460763">Personnage de
-       l'ancien Testament, fils cadet de Jacob et Rebbeca.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="cleopha">
-      <persName>Cleopha</persName>
-      <note type="biographical" source="https://www.wikidata.org/wiki/Q711072">Jeune disciple
-       de <persName ref="#jesus">Jésus</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="david">
-      <persName>David</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb14569207z"
-       >Personnage biblique, roi des Hébreux et fils de Salomon.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="diane">
-      <persName>Dyane</persName>
-      <note type="biographical">Diane, déesse du panthéon romain.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="elisabet">
-      <persName>Elyzabez</persName>
-      <note type="biographical">Élisabeth, mère de <surname type="complex">
-        <persName ref="#marcel">saint Marcel</persName> de <placeName ref="#limoges"
-         >Limoges</placeName>
-       </surname> .</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="engigniere">
-      <persName>Engignieres</persName>
-      <note type="biographical">Engigniere de Mil, démon aquatique responsable avec <persName
-        ref="#nuiton">Nuiton</persName> et <persName ref="#risoaudus">Risoaudus</persName>
-       de la noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="ernou">
-      <persName>Ernous</persName>
-      <note type="biographical">Comte de Tours.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="etienne"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
-      <persName>Estiene</persName>
-      <death when="0037">37</death>
-      <note type="biographical">Saint Étienne, premier martyr chrétien, il fait partie de la
-       première communauté chrétienne de <placeName ref="#jerusalem"
-       >Jérusalem</placeName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="etienneDuc">
-      <persName>Estienes</persName>
-      <note type="biographical">Étienne, duc, il ordonne ﻿l'exécution de <persName
-        ref="#valerie">sainte Valérie</persName> pour avoir refusé de se marier avec lui,
-       avant de se repentir et de se convertir à la foi chrétienne sous le patronage de
-        <persName ref="#marcel">saint Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="wauchier">
-      <persName>Gauchiers</persName>
-      <note type="biographical">Wauchier de Denain, auteur du recueil hagiographique <hi
-        rend="italic">Li seint Confessor</hi>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="hydebres">
-      <persName>Hyldebert</persName>
-      <note type="biographical">Hyldebert, fils d'<persName ref="#archade">Archade</persName>,
-       conte de Poitiers.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
-      <persName>Jesu Crist</persName>
-      <birth when="0001">0</birth>
-      <death when="0030">33</death>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-       <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le reconnaissent
-       comme le fils unique de Dieu.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="job">
-      <persName>Job</persName>
-      <note type="biographical" source="https://www.wikidata.org/wiki/Q179962">Personnage
-       biblique, archétype du juste éprouvé par le diable.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="joseph">
-      <persName>Joseph d'Arimatie</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb13572684w"
-       >Personnage de la tradition chrétienne, il aurait récupéré dans une coupe le sang du
-        <persName ref="#jesus">Christ</persName> sur la Croix.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jupiter"
-      corresp="https://catalogue.bnf.fr/ark:/12148/cb11980295k">
-      <persName>Jupiter</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120421559">Dieu
-       du panthéon romain.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="lazare">
-      <persName>Lazarum</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12421301z"
-       >Lazare, personnage de l'Évangile, ressuscité par <persName ref="#jesus"
-        >Jésus-Christ</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="marcelPere">
-      <persName>Marceaus</persName>
-      <note type="biographical">Père de <surname type="complex">
-        <persName ref="#marcel">saint Marcel</persName> de <placeName ref="#limoges"
-         >Limoges</placeName>
-       </surname>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="marcel">
-      <persName>Marcel</persName>
-      <birth>3<ex>e</ex> siècle</birth>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12520934h">Saint
-       Marcel ou saint Martial de Limoges, évêque de Limoges au <seg type="number">iii</seg>
-       <ex>e</ex> siècle.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="marcelConsul">
-      <persName>Marcel</persName>
-      <note type="biographical">Consul romain, il accueille dans sa maison <persName
-        ref="#pierre">saint Pierre</persName> et sa suite à leur arrivée à <placeName
-        ref="#rome">Rome</placeName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
-      <persName>Marie</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
-       >Personnage biblique, <surname type="complex">vierge Marie</surname>, mère de
-       Dieu.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="mercurius">
-      <persName>Mercurie</persName>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11937106h"
-       >Mercure, dieu du panthéon romain.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="nerva">
-      <persName>Nerva</persName>
-      <note type="biographical">Haut dignitaire romain, proche de l'empereur <persName
-        ref="#neron">Néron</persName> dont le fils est ressuscité par <persName
-        ref="#marcel">saint Marcel</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="neron">
-      <persName>Noirons</persName>
-      <birth when="0037-12-15">37</birth>
-      <death when="0068-06-09">68</death>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11936625x">Néron,
-       empereur de <placeName ref="#rome">Rome</placeName> de 54 à 68, il est connu pour
-       avoir persécuté les chrétiens et, notamment avoir fait crucifié <persName
-        ref="#pierre">saint Pierre</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="nuiton">
-      <persName>Nuiton</persName>
-      <note type="biographical">Démon aquatique responsable avec <persName ref="#engigniere"
-        >Engigniere de Mil</persName> et <persName ref="#risoaudus">Risoaudus</persName> de
-       la noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="pierre">
-      <persName>Pere</persName>
-      <death when="0064">64</death>
-      <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de
-       Rome, pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
-       premier évêque de <placeName ref="#rome">Rome</placeName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="risoaudus">
-      <persName>Risoaudus</persName>
-      <note type="biographical">Démon aquatique responsable avec <persName ref="#nuiton"
-        >Nuiton</persName> et <persName ref="#engigniere">Engigniere de Mil</persName> de la
-       noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="soybre">
-      <persName>Soybres</persName>
-      <note type="biographical">Comte de Bordeaux et mari de la comtesse <persName
-        ref="#beneoite">Beneoite</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="suzanne">
-      <persName>Susane</persName>
-      <note type="biographical">Dame noble, mère de Valérie.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="thomas">
-      <persName>Thomas</persName>
-      <death when="0072">72</death>
-      <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb131792525"
-       >Apôtre du Christ.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="valerie">
-      <persName>Valerie</persName>
-      <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb136122287">Jeune
-       fille d'origine noble, fille de <persName ref="#suzanne">Susane</persName>, promise en
-       mariage au <persName ref="#etienneDuc">duc Étienne</persName>.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="vespasien">
-      <persName>Vaspasiens</persName>
-      <birth when="0009-11-17">9</birth>
-      <death when="0079-06-23">76</death>
-      <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb14480609t"
-       >Vespasien, <surname type="complex">Titus Flavius Vespasianus</surname>, empereur
-       romain.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="venus">
-      <persName>Venus</persName>
-      <note type="biographical" source="https://www.wikidata.org/wiki/Q47652">Déesse du
-       panthéon romain.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="hilaire">
-      <persName>Ylaire</persName>
-      <birth when="0315">315</birth>
-      <death when="0367">367</death>
-      <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
-       <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers, écrivain
-       latin chrétien. Théologien du <seg type="number">iv</seg>
-       <ex>e</ex> siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à
-       l'arianisme. Saint Martin le rejoignit en 356 et devint alors son élève.</note>
-     </person>
-     <person xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="zacheus">
-      <persName>Zacheus</persName>
-      <death>1<ex>er</ex> siècle</death>
-      <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb144299176"
-       >Zachée, personnage biblique, disciple de Jésus Christ.</note>
-     </person>
-    </listPerson>
-   </particDesc>
-   <settingDesc>
-    <listPlace>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="adagedonc">
-      <placeName>Adagedonc</placeName>
-      <note>château.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="anjou"
-      corresp="http://data.bnf.fr/fr/15325845/province_d__anjou__france_/">
-      <placeName>Anjo</placeName>
-      <note>Anjou, région du Nord-Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="anse">
-      <placeName>Anse</placeName>
-      <note>château.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="antioche"
-      corresp="https://pleiades.stoa.org/places/658381">
-      <placeName>Antioche</placeName>
-      <location>
-       <geo>36.2225515, 36.183214</geo>
-      </location>
-      <note>Capitale de la province romaine de Syrie, en actuelle Turquie.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aquitaine"
-      corresp="http://data.bnf.fr/fr/15376861/province_d__aquitaine__empire_romain_/">
-      <placeName>Aqitaine</placeName>
-      <note>Aquitaine, région du Sud-Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="aspre">
-      <placeName>Aspre</placeName>
-      <note>Port d'Aspre, lieu qui marque l'une des frontières du royaume du duc
-       Étienne.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="auvergne"
-      corresp="http://data.bnf.fr/fr/15289184/region_auvergne__france__1955-2016_/">
-      <placeName>Auvergne</placeName>
-      <note>Région du Centre de la France</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="bethanie"
-      corresp="http://data.bnf.fr/fr/15304950/bethanie__namibie_/">
-      <placeName>Bethanie</placeName>
-      <note>Béthanie, région du Sud de l'Afrique, correspond à l'actuelle Namibie.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="bordeaux"
-      corresp="https://pleiades.stoa.org/places/138248">
-      <placeName>Bordeaus</placeName>
-      <location>
-       <geo>44.837205, -0.576533</geo>
-      </location>
-      <note>Bordeaux, ville du Sud-Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="espire">
-      <placeName>Espire</placeName>
-      <note>Mont d'Espire, désigne les ﻿Pyrénées.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
-      <placeName>France</placeName>
-      <note>France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="garone">
-      <placeName>Garone</placeName>
-      <note>Garonne, fleuve français.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="garre">
-      <placeName>Garre</placeName>
-      <note>Gard, rivière française.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="gascogne">
-      <placeName>Gascoigne</placeName>
-      <note>Gascogne, région du Sud–Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jerusalem"
-      corresp="https://pleiades.stoa.org/places/687928">
-      <placeName>Jerusalem</placeName>
-      <location>
-       <geo>31.776679, 35.234156</geo>
-      </location>
-      <note>Ville de Jérusalem, située en actuelle Israël.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="jogonse">
-      <placeName>Jogonse</placeName>
-      <note>Château.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="limoges"
-      corresp="https://pleiades.stoa.org/places/138203">
-      <placeName>Lymoges</placeName>
-      <location>
-       <geo>45.8285425, 1.2643925 </geo>
-      </location>
-      <note>Limoges, ville du Sud-Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
-      <placeName>Loire</placeName>
-      <note>Fleuve français.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
-      <placeName>Lombardie</placeName>
-      <note>Région du Nord de l'Italie</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="meine"
-      corresp="https://catalogue.bnf.fr/ark:/12148/cb11979028v">
-      <placeName>Meine</placeName>
-      <note>Province française du Maine.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="morteigne"
-      corresp="https://catalogue.bnf.fr/ark:/12148/cb14632858c">
-      <placeName>Mortaigne</placeName>
-      <note>Mortagne-sur-Gironde, ville du Sud-Ouest de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="navare"
-      corresp="http://data.bnf.fr/fr/12326228/navarre__royaume__--_1234-1284__maison_de_champagne_/">
-      <placeName>Navare</placeName>
-      <note>Royaume de Navarre, situé au Nord de l'Espagne actuelle.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="normandie"
-      corresp="https://catalogue.bnf.fr/ark:/12148/cb121012519">
-      <placeName>Normendie</placeName>
-      <note>Normandie, province du Nord-Est de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="occident">
-      <placeName>Occident</placeName>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
-      <placeName>Orient</placeName>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
-      <placeName>Poitiers</placeName>
-      <location>
-       <geo>46.5833300 0.3333300</geo>
-      </location>
-      <note>Ville située dans le Centre-Est de la France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
-      <placeName>Poito</placeName>
-      <note>Poitou, province française de l'Ouest.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0"
-      corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-      <placeName>Rome</placeName>
-      <location>
-       <geo>41.891775, 12.486137</geo>
-      </location>
-      <note>Ville italienne, capitale de l'empire romain d'occident.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="rhone"
-      corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
-      <placeName>Rosne</placeName>
-      <note>Rhône, fleuve de France.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="tulle"
-      corresp="http://www.geonames.org/2971482/tulle.html">
-      <placeName>Tulle</placeName>
-      <location>
-       <geo>45.27001, 1.77309</geo>
-      </location>
-      <note>Tulle, ville du Sud-Ouest de la France, proche de Limoges.</note>
-     </place>
-     <place xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="vienne"
-      corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
-      <placeName>Viane</placeName>
-      <note>Vienne, rivière française du bassin de la Loire.</note>
-     </place>
-    </listPlace>
-   </settingDesc>
+        <listPerson>
+          <person xml:id="alpinien">
+            <persName>Alpiniens</persName>
+            <note type="biographical">Discipline de <persName ref="#marcel">saint
+              Marcel</persName>.</note>
+          </person>
+          <person xml:id="andrius">
+            <persName>Andriu</persName>
+            <note type="biographical">Prêtre païen de la cité de <placeName ref="#limoges"
+                full="yes">Limoges</placeName>, converti avec <persName ref="#aurelien"
+                >Aurelien</persName> à la foi chrétienne par <persName ref="#marcel">saint
+                Marcel</persName>.</note>
+          </person>
+          <person xml:id="archade">
+            <persName>Archade</persName>
+            <note type="biographical">Comte de Poitiers, père de <persName ref="#hydebres"
+                >Hyldebert</persName> qui fut ressuscité par <persName ref="#marcel">saint
+                Marcel</persName>.</note>
+          </person>
+          <person xml:id="aurelien">
+            <persName>Aurelien</persName>
+            <note type="biographical">Prêtre païen de la cité de <placeName ref="#limoges"
+                full="yes">Limoges</placeName>, converti avec <persName ref="#andrius"
+                >Andrius</persName> à la foi chrétienne par <persName ref="#marcel">saint
+                Marcel</persName>.</note>
+          </person>
+          <person xml:id="austriclinien">
+            <persName>Austricliniens</persName>
+            <note type="biographical">Discipline de <persName ref="#marcel">saint
+              Marcel</persName>.</note>
+          </person>
+          <person xml:id="benoite">
+            <persName>Beneoite</persName>
+            <note type="biographical">Comtesse de la cité de <placeName ref="#bordeaux" full="yes"
+                >Bordeaux</placeName>, femme du comte <persName ref="#soybre"
+              >Soybre</persName>.</note>
+          </person>
+          <person xml:id="benjamin">
+            <persName>Benjamin</persName>
+            <note type="biographical" source="https://www.wikidata.org/wiki/Q460763">Personnage de
+              l'ancien Testament, fils cadet de Jacob et Rebbeca.</note>
+          </person>
+          <person xml:id="cleopha">
+            <persName>Cleopha</persName>
+            <note type="biographical" source="https://www.wikidata.org/wiki/Q711072">Jeune disciple
+              de <persName ref="#jesus">Jésus</persName>.</note>
+          </person>
+          <person xml:id="david">
+            <persName>David</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb14569207z"
+              >Personnage biblique, roi des Hébreux et fils de Salomon.</note>
+          </person>
+          <person xml:id="diane">
+            <persName>Dyane</persName>
+            <note type="biographical">Diane, déesse du panthéon romain.</note>
+          </person>
+          <person xml:id="elisabet">
+            <persName>Elyzabez</persName>
+            <note type="biographical">Élisabeth, mère de <surname type="complex" full="yes">
+                <persName ref="#marcel">saint Marcel</persName> de <placeName ref="#limoges"
+                  full="yes">Limoges</placeName>
+              </surname> .</note>
+          </person>
+          <person xml:id="engigniere">
+            <persName>Engignieres</persName>
+            <note type="biographical">Engigniere de Mil, démon aquatique responsable avec <persName
+                ref="#nuiton">Nuiton</persName> et <persName ref="#risoaudus">Risoaudus</persName>
+              de la noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
+          </person>
+          <person xml:id="ernou">
+            <persName>Ernous</persName>
+            <note type="biographical">Comte de Tours.</note>
+          </person>
+          <person xml:id="etienne" corresp="http://catalogue.bnf.fr/ark:/12148/cb12251678n">
+            <persName>Estiene</persName>
+            <death when="0037">37</death>
+            <note type="biographical">Saint Étienne, premier martyr chrétien, il fait partie de la
+              première communauté chrétienne de <placeName ref="#jerusalem" full="yes"
+                >Jérusalem</placeName>.</note>
+          </person>
+          <person xml:id="etienneDuc">
+            <persName>Estienes</persName>
+            <note type="biographical">Étienne, duc, il ordonne ﻿l'exécution de <persName
+                ref="#valerie">sainte Valérie</persName> pour avoir refusé de se marier avec lui,
+              avant de se repentir et de se convertir à la foi chrétienne sous le patronage de
+                <persName ref="#marcel">saint Marcel</persName>.</note>
+          </person>
+          <person xml:id="wauchier">
+            <persName>Gauchiers</persName>
+            <note type="biographical">Wauchier de Denain, auteur du recueil hagiographique <hi
+                rend="italic">Li seint Confessor</hi>.</note>
+          </person>
+          <person xml:id="hydebres">
+            <persName>Hyldebert</persName>
+            <note type="biographical">Hyldebert, fils d'<persName ref="#archade">Archade</persName>,
+              conte de Poitiers.</note>
+          </person>
+          <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
+            <persName>Jesu Crist</persName>
+            <birth when="0001">0</birth>
+            <death when="0030">33</death>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+              <surname type="complex" full="yes">Jésus-Christ</surname>, messie. Les chrétiens le
+              reconnaissent comme le fils unique de Dieu.</note>
+          </person>
+          <person xml:id="job">
+            <persName>Job</persName>
+            <note type="biographical" source="https://www.wikidata.org/wiki/Q179962">Personnage
+              biblique, archétype du juste éprouvé par le diable.</note>
+          </person>
+          <person xml:id="joseph">
+            <persName>Joseph d'Arimatie</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb13572684w"
+              >Personnage de la tradition chrétienne, il aurait récupéré dans une coupe le sang du
+                <persName ref="#jesus">Christ</persName> sur la Croix.</note>
+          </person>
+          <person xml:id="jupiter" corresp="https://catalogue.bnf.fr/ark:/12148/cb11980295k">
+            <persName>Jupiter</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb120421559">Dieu
+              du panthéon romain.</note>
+          </person>
+          <person xml:id="lazare">
+            <persName>Lazarum</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12421301z"
+              >Lazare, personnage de l'Évangile, ressuscité par <persName ref="#jesus"
+                >Jésus-Christ</persName>.</note>
+          </person>
+          <person xml:id="marcelPere">
+            <persName>Marceaus</persName>
+            <note type="biographical">Père de <surname type="complex" full="yes">
+                <persName ref="#marcel">saint Marcel</persName> de <placeName ref="#limoges"
+                  full="yes">Limoges</placeName>
+              </surname>.</note>
+          </person>
+          <person xml:id="marcel">
+            <persName>Marcel</persName>
+            <birth>3<ex>e</ex> siècle</birth>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12520934h">Saint
+              Marcel ou saint Martial de Limoges, évêque de Limoges au <seg type="number">iii</seg>
+              <ex>e</ex> siècle.</note>
+          </person>
+          <person xml:id="marcelConsul">
+            <persName>Marcel</persName>
+            <note type="biographical">Consul romain, il accueille dans sa maison <persName
+                ref="#pierre">saint Pierre</persName> et sa suite à leur arrivée à <placeName
+                ref="#rome" full="yes">Rome</placeName>.</note>
+          </person>
+          <person corresp="http://catalogue.bnf.fr/ark:/12148/cb11975977k/PUBLIC" xml:id="marie">
+            <persName>Marie</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119503581"
+              >Personnage biblique, <surname type="complex" full="yes">vierge Marie</surname>, mère
+              de Dieu.</note>
+          </person>
+          <person xml:id="mercurius">
+            <persName>Mercurie</persName>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11937106h"
+              >Mercure, dieu du panthéon romain.</note>
+          </person>
+          <person xml:id="nerva">
+            <persName>Nerva</persName>
+            <note type="biographical">Haut dignitaire romain, proche de l'empereur <persName
+                ref="#neron">Néron</persName> dont le fils est ressuscité par <persName
+                ref="#marcel">saint Marcel</persName>.</note>
+          </person>
+          <person xml:id="neron">
+            <persName>Noirons</persName>
+            <birth when="0037-12-15">37</birth>
+            <death when="0068-06-09">68</death>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11936625x">Néron,
+              empereur de <placeName ref="#rome" full="yes">Rome</placeName> de 54 à 68, il est
+              connu pour avoir persécuté les chrétiens et, notamment avoir fait crucifié <persName
+                ref="#pierre">saint Pierre</persName>.</note>
+          </person>
+          <person xml:id="nuiton">
+            <persName>Nuiton</persName>
+            <note type="biographical">Démon aquatique responsable avec <persName ref="#engigniere"
+                >Engigniere de Mil</persName> et <persName ref="#risoaudus">Risoaudus</persName> de
+              la noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
+          </person>
+          <person xml:id="pierre">
+            <persName>Pere</persName>
+            <death when="0064">64</death>
+            <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de
+              Rome, pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
+              premier évêque de <placeName ref="#rome" full="yes">Rome</placeName>.</note>
+          </person>
+          <person xml:id="risoaudus">
+            <persName>Risoaudus</persName>
+            <note type="biographical">Démon aquatique responsable avec <persName ref="#nuiton"
+                >Nuiton</persName> et <persName ref="#engigniere">Engigniere de Mil</persName> de la
+              noyade d'<persName ref="#hydebres">Hyldebert</persName>.</note>
+          </person>
+          <person xml:id="soybre">
+            <persName>Soybres</persName>
+            <note type="biographical">Comte de Bordeaux et mari de la comtesse <persName
+                ref="#beneoite">Beneoite</persName>.</note>
+          </person>
+          <person xml:id="suzanne">
+            <persName>Susane</persName>
+            <note type="biographical">Dame noble, mère de Valérie.</note>
+          </person>
+          <person xml:id="thomas">
+            <persName>Thomas</persName>
+            <death when="0072">72</death>
+            <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb131792525"
+              >Apôtre du Christ.</note>
+          </person>
+          <person xml:id="valerie">
+            <persName>Valerie</persName>
+            <note type="biographical" source=" http://catalogue.bnf.fr/ark:/12148/cb136122287">Jeune
+              fille d'origine noble, fille de <persName ref="#suzanne">Susane</persName>, promise en
+              mariage au <persName ref="#etienneDuc">duc Étienne</persName>.</note>
+          </person>
+          <person xml:id="vespasien">
+            <persName>Vaspasiens</persName>
+            <birth when="0009-11-17">9</birth>
+            <death when="0079-06-23">76</death>
+            <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb14480609t"
+              >Vespasien, <surname type="complex" full="yes">Titus Flavius Vespasianus</surname>,
+              empereur romain.</note>
+          </person>
+          <person xml:id="venus">
+            <persName>Venus</persName>
+            <note type="biographical" source="https://www.wikidata.org/wiki/Q47652">Déesse du
+              panthéon romain.</note>
+          </person>
+          <person xml:id="hilaire">
+            <persName>Ylaire</persName>
+            <birth when="0315">315</birth>
+            <death when="0367">367</death>
+            <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
+              <surname type="complex" full="yes">Hilaire de Poitiers</surname>, évêque de Poitiers,
+              écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
+              <ex>e</ex> siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à
+              l'arianisme. Saint Martin le rejoignit en 356 et devint alors son élève.</note>
+          </person>
+          <person xml:id="zacheus">
+            <persName>Zacheus</persName>
+            <death>1<ex>er</ex> siècle</death>
+            <note type="biographical" source="https://catalogue.bnf.fr/ark:/12148/cb144299176"
+              >Zachée, personnage biblique, disciple de Jésus Christ.</note>
+          </person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="adagedonc">
+            <placeName full="yes">Adagedonc</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>château.</note>
+          </place>
+          <place xml:id="anjou" corresp="http://data.bnf.fr/fr/15325845/province_d__anjou__france_/">
+            <placeName full="yes">Anjo</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Anjou, région du Nord-Ouest de la France.</note>
+          </place>
+          <place xml:id="anse">
+            <placeName full="yes">Anse</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>château.</note>
+          </place>
+          <place xml:id="antioche" corresp="https://pleiades.stoa.org/places/658381">
+            <placeName full="yes">Antioche</placeName>
+            <country type="pays">Turquie</country>
+            <country type="civilisation">Orient</country>
+            <location>
+              <geo>36.2225515, 36.183214</geo>
+            </location>
+            <note>Capitale de la province romaine de Syrie, en actuelle Turquie.</note>
+          </place>
+          <place xml:id="aquitaine"
+            corresp="http://data.bnf.fr/fr/15376861/province_d__aquitaine__empire_romain_/">
+            <placeName full="yes">Aqitaine</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Aquitaine, région du Sud-Ouest de la France.</note>
+          </place>
+          <place xml:id="aspre">
+            <placeName full="yes">Aspre</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Port d'Aspre, lieu qui marque l'une des frontières du royaume du duc
+              Étienne.</note>
+          </place>
+          <place xml:id="auvergne"
+            corresp="http://data.bnf.fr/fr/15289184/region_auvergne__france__1955-2016_/">
+            <placeName full="yes">Auvergne</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Région du Centre de la France</note>
+          </place>
+          <place xml:id="bethanie" corresp="http://data.bnf.fr/fr/15304950/bethanie__namibie_/">
+            <placeName full="yes">Bethanie</placeName>
+            <country type="pays">Jordanie</country>
+            <country type="civilisation">Orient</country>
+            <note>Béthanie ou Béthanie au-delà du Jourdain est l'un des lieux de résidence de Jean
+              le Baptiste. Le lieu se situerait en Jordanie.</note>
+          </place>
+          <place xml:id="bordeaux" corresp="https://pleiades.stoa.org/places/138248">
+            <placeName full="yes">Bordeaus</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>44.837205, -0.576533</geo>
+            </location>
+            <note>Bordeaux, ville du Sud-Ouest de la France.</note>
+          </place>
+          <place xml:id="espire">
+            <placeName full="yes">Espire</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Mont d'Espire, désigne les ﻿Pyrénées.</note>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
+            <placeName full="yes">France</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>France.</note>
+          </place>
+          <place xml:id="garone">
+            <placeName full="yes">Garone</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Garonne, fleuve français.</note>
+          </place>
+          <place xml:id="garre">
+            <placeName full="yes">Garre</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Gard, rivière française.</note>
+          </place>
+          <place xml:id="gascogne">
+            <placeName full="yes">Gascoigne</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Gascogne, région du Sud–Ouest de la France.</note>
+          </place>
+          <place xml:id="jerusalem" corresp="https://pleiades.stoa.org/places/687928">
+            <placeName full="yes">Jerusalem</placeName>
+            <country type="pays">Israël</country>
+            <country type="civilisation">Orient</country>
+            <location>
+              <geo>31.776679, 35.234156</geo>
+            </location>
+            <note>Ville de Jérusalem, située en actuelle Israël.</note>
+          </place>
+          <place xml:id="jogonse">
+            <placeName full="yes">Jogonse</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Château.</note>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
+            <placeName full="yes">Loire</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Fleuve français.</note>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
+            <placeName full="yes">Lombardie</placeName>
+            <country type="pays">Italie</country>
+            <country type="civilisation">Occident</country>
+            <note>Région du Nord de l'Italie</note>
+          </place>
+          <place xml:id="limoges" corresp="https://pleiades.stoa.org/places/138203">
+            <placeName full="yes">Lymoges</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>45.8285425, 1.2643925 </geo>
+            </location>
+            <note>Limoges, ville du Sud-Ouest de la France.</note>
+          </place>
+          <place xml:id="meine" corresp="https://catalogue.bnf.fr/ark:/12148/cb11979028v">
+            <placeName full="yes">Meine</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Province française du Maine.</note>
+          </place>
+          <place xml:id="morteigne" corresp="https://catalogue.bnf.fr/ark:/12148/cb14632858c">
+            <placeName full="yes">Mortaigne</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Mortagne-sur-Gironde, ville du Sud-Ouest de la France.</note>
+          </place>
+          <place xml:id="navare"
+            corresp="http://data.bnf.fr/fr/12326228/navarre__royaume__--_1234-1284__maison_de_champagne_/">
+            <placeName full="yes">Navare</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Royaume de Navarre, situé au Nord de l'Espagne actuelle.</note>
+          </place>
+          <place xml:id="normandie" corresp="https://catalogue.bnf.fr/ark:/12148/cb121012519">
+            <placeName full="yes">Normendie</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Normandie, province du Nord-Est de la France.</note>
+          </place>
+          <place xml:id="occident">
+            <placeName full="yes">Occident</placeName>
+            <country type="civilisation">Occident</country>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
+            <placeName full="yes">Orient</placeName>
+            <country type="civilisation">Orient</country>
+          </place>
+          <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
+            <placeName full="yes">Poitiers</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>46.5833300 0.3333300</geo>
+            </location>
+            <note>Ville située dans le Centre-Est de la France.</note>
+          </place>
+          <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
+            <placeName full="yes">Poito</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Poitou, province française de l'Ouest.</note>
+          </place>
+          <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+            <placeName full="yes">Rome</placeName>
+            <country type="pays">Italie</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>41.891775, 12.486137</geo>
+            </location>
+            <note>Ville italienne, capitale de l'empire romain d'occident.</note>
+          </place>
+          <place xml:id="rhone" corresp="http://data.bnf.fr/fr/11932772/rhone__cours_d_eau_/">
+            <placeName full="yes">Rosne</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Rhône, fleuve de France.</note>
+          </place>
+          <place xml:id="tulle" corresp="http://www.geonames.org/2971482/tulle.html">
+            <placeName full="yes">Tulle</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <location>
+              <geo>45.27001, 1.77309</geo>
+            </location>
+            <note>Tulle, ville du Sud-Ouest de la France, proche de Limoges.</note>
+          </place>
+          <place xml:id="vienne"
+            corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
+            <placeName full="yes">Viane</placeName>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
+            <note>Vienne, rivière française du bassin de la Loire.</note>
+          </place>
+        </listPlace>
+      </settingDesc>
   </profileDesc>
  </teiHeader>
  <text n="edition">
