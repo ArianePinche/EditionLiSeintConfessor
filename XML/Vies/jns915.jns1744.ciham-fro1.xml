@@ -2,7 +2,7 @@
 <!DOCTYPE TEI SYSTEM "../../entity-Wauchier.dtd">
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" n="8">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="8" type="G2">
 <teiHeader>
   <fileDesc>
    <titleStmt>
@@ -390,6 +390,8 @@
         </place>
         <place xml:id="tamisse">
          <placeName full="yes">Tamisse</placeName>
+           <country type="pays">Italie ?</country>
+           <country type="civilisation">Occident</country>
          <note>Ville non-identifiée. Dans les <hi rend="italic">Dialogues</hi> de Grégoire le Grand, il est fait
            mention de la ville de Canosa située dans les Pouilles en Italie. La ville de
            Tamisse, fait peut-être référence à l'actuelle Tamise située dans les Flandres
