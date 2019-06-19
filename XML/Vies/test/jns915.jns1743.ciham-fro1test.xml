@@ -1,0 +1,2289 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:my="LOCALHOST">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title>Vie de saint Brice</title>
+      <author>Wauchier de Denain</author>
+     </titleStmt>
+     <publicationStmt>
+      <publisher>Ariane Pinche</publisher>
+      <availability default="false">
+        <licence>creative commons CC BY-NC-SA 3.0 FR</licence>
+      </availability>
+      <date>2015-2018</date>
+      <idno>jns.915.jns1743.ciham-fro1</idno>
+     </publicationStmt>
+     <sourceDesc default="false">
+      <msDesc xml:id="A" status="draft">
+        <msIdentifier>
+         <country>Paris</country>
+         <settlement>Bibliothèque nationale de France</settlement>
+         <idno>fr. 00412</idno>
+        </msIdentifier>
+        <head>
+         <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+         <origDate>1285</origDate>
+         <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
+      notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
+      la base Jonas-IRHT/CNRS (permalink : <ref target="http://jonas.irht.cnrs.fr/manuscrit/45533">http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
+      03/07/2015 </note>
+        </head>
+        <msContents>
+         <msItemStruct>
+           <locus>fol.103-fol.170</locus>
+           <author>Wauchier de Denain</author>
+           <title>Oeuvres hagiographiques 'Li Seint Confessor' de Wauchier de
+      Denain</title>
+           <incipit>De saint <choice>
+              <orig>m</orig>
+              <reg>M</reg>
+            </choice>artin mout doit on doucement et volentiers le
+      bien o<choice>
+              <orig>i</orig>
+              <reg>ï</reg>
+            </choice>r etentendre</incipit>
+           <explicit/>
+         </msItemStruct>
+        </msContents>
+        <physDesc>
+         <objectDesc>
+           <supportDesc>
+            <support>parchemin</support>
+            <extent>
+              <width unit="mm">330</width>
+              <height unit="mm">245</height>
+            </extent>
+            <foliation>21 Senions, 245 folios</foliation>
+           </supportDesc>
+           <layoutDesc>
+            <layout columns="2" writtenLines="46"/>
+           </layoutDesc>
+         </objectDesc>
+         <scriptDesc>
+           <scriptNote>Caroline</scriptNote>
+         </scriptDesc>
+        </physDesc>
+        <history>
+         <origin/>
+         <provenance>
+           <p/>
+           <listBibl default="false">
+            <bibl default="false" status="draft">
+              <author/>
+              <title/>
+              <pubPlace/>
+              <publisher/>
+              <date/>
+            </bibl>
+           </listBibl>
+         </provenance>
+        </history>
+      </msDesc>
+     </sourceDesc>
+   </fileDesc>
+   <encodingDesc>
+     <refsDecl n="CTS">
+      <cRefPattern n="section"
+             matchPattern="(.+).(.+)"
+             replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1']/tei:div[@n='$2'])">
+        <p>This pointer pattern extracts chapter and section</p>
+      </cRefPattern>
+      <cRefPattern n="chapter"
+             matchPattern="(.+)"
+             replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n='$1'])">
+        <p>This pointer pattern extracts chapter.</p>
+      </cRefPattern>
+     </refsDecl>
+     <variantEncoding method="parallel-segmentation" location="internal"/>
+     <projectDesc>
+      <p/>
+     </projectDesc>
+   </encodingDesc>
+   <profileDesc>
+     <particDesc>
+      <listPerson>
+        <person xml:id="armense">
+         <persName>Armense</persName>
+         <note type="biographical">Évêque de <placeName ref="#tours" full="yes">Tours</placeName>,
+           successeur de <persName ref="#justinien">Justinien</persName> et de <persName ref="#brice">saint Brice</persName>.</note>
+        </person>
+        <person xml:id="brice">
+         <persName>Brice</persName>
+         <birth when="0377">377</birth>
+         <death when="0444">444</death>
+         <note type="biographical" source="https://www.wikidata.org/wiki/Q913528">
+           <surname type="complex" full="yes">Saint Brice de Tours</surname>, ordonné évêque de Tours
+           en 397, successeur de <persName ref="#martin">saint Martin</persName>.</note>
+        </person>
+        <person xml:id="eustache">
+         <persName>Eustochies</persName>
+         <note type="biographical">Évêque de Tours, successeur de Brice.</note>
+        </person>
+        <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+            xml:id="jesus">
+         <persName>Jesu Crist</persName>
+         <birth when="0001">0</birth>
+         <death when="0030">33</death>
+         <note type="biographical"
+            source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+           <surname type="complex" full="yes">Jésus-Christ</surname>, messie. Les chrétiens le
+           reconnaissent comme le fils unique de Dieu.</note>
+        </person>
+        <person xml:id="justien">
+         <persName>Justien</persName>
+         <note type="biographical">Évêque de Tours, successeur de <persName ref="#brice">saint Brice</persName> suite à son exil.</note>
+        </person>
+        <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
+            xml:id="martin">
+         <persName>Martin</persName>
+         <birth when="0316">316</birth>
+         <death when="0397-11-08">397</death>
+         <note type="biographical"
+            source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
+           <surname type="complex" full="yes">Saint Martin de Tours</surname>, né en Hongrie dans
+           la colonie romaine de <placeName ref="#sabarie" full="yes">Sabaria</placeName> en 316 et
+           mort à <placeName ref="#conde" full="yes">Candes</placeName> en France le 8 novembre
+           397.</note>
+        </person>
+      </listPerson>
+     </particDesc>
+     <settingDesc>
+      <listPlace>
+        <place xml:id="lodun" corresp="https://pleiades.stoa.org/places/138414">
+         <placeName full="yes">Lodun</placeName>
+         <country type="pays">France</country>
+         <country type="civilisation">Occident</country>
+         <location>
+           <geo>47.5, 0.5</geo>
+         </location>
+         <note>Ancien vicus de Laudiacum, mentionné dans le texte de Grégoire de Tours,
+           actuelle ville de Montlouis-sur-Loire.</note>
+        </place>
+        <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC"
+           xml:id="lombardie">
+         <placeName full="yes">Lombardie</placeName>
+         <country type="pays">Italie</country>
+         <country type="civilisation">Occident</country>
+         <note>Région du Nord de l'Italie</note>
+        </place>
+        <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+         <placeName full="yes">Rome</placeName>
+         <country type="pays">Italie</country>
+         <country type="civilisation">Occident</country>
+         <location>
+           <geo>41.891775, 12.486137</geo>
+         </location>
+         <note>Ville italienne, capitale de l'empire romain d'occident.</note>
+        </place>
+        <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
+         <placeName full="yes">Tors</placeName>
+         <country type="pays">France</country>
+         <country type="civilisation">Occident</country>
+         <location>
+           <geo>47.3925295, 0.691471</geo>
+         </location>
+         <note>Tours, ville du centre de la France.</note>
+        </place>
+        <place xml:id="vercelles" corresp="https://pleiades.stoa.org/places/383815">
+         <placeName full="yes">Verziaus</placeName>
+         <country type="pays">Italie</country>
+         <country type="civilisation">Occident</country>
+         <location>
+           <geo>45.321094, 8.426374</geo>
+         </location>
+         <note>Vercelles, ville de la Gaule Transpadane, située près du lac de Côme.</note>
+        </place>
+      </listPlace>
+     </settingDesc>
+   </profileDesc>
+  </teiHeader>
+  <text n="edition">
+   <body n="urn:cts:froLit:jns915.jns1743.ciham-fro1">
+     <div n="1"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f263">
+   <!-- // vie de saint Brice, dans l'histoire de Francs de Grégoire de Tours -->
+      <head>Ci<pc type="reg"> </pc>
+        <lb/>
+        <choice>
+         <abbr>ꝯ</abbr>
+         <expan>con</expan>
+        </choice>mence la <choice>
+         <orig>u</orig>
+         <reg>v</reg>
+        </choice>ie de<pc type="reg"> </pc>mon<choice>
+         <orig> </orig>
+         <reg/>
+        </choice>signeur
+    se<choice>
+         <abbr>ĩ</abbr>
+         <expan>i<ex>n</ex>
+         </expan>
+        </choice>t <choice>
+         <orig>b</orig>
+         <reg>B</reg>
+        </choice>rice.</head>
+      <div n="1" type="section">
+        <pb n="127" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f263"/>
+        <cb n="b"/>
+        <p>
+         <hi rend="rubricated orig">Ci<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <abbr>ꝯ</abbr>
+            <expan>con</expan>
+           </choice>mence la <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ie de<pc type="reg"> </pc>mon signeur
+      se<choice>
+            <abbr>ĩ</abbr>
+            <expan>i<ex>n</ex>
+            </expan>
+           </choice>t <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice.</hi>
+         <pc type="reg"> </pc>
+         <lb/>
+         <hi rend="decorated-initial">Q</hi>
+         <choice>
+           <orig>U</orig>
+           <reg>u</reg>
+         </choice>ant <persName ref="#brice">seinz<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+     estoit<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>o<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>enceaus<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>il guaitoit<pc type="reg"> </pc>
+         <lb/>mout
+      <persName ref="#martin">seint<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artin</persName>
+         <choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>por<pc type="reg"> </pc>
+         <lb/>ce q<pc type="reg">'</pc>il
+     le <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>e<lb/>oit <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>iel ho<lb/>me
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de<pc type="reg"> </pc>gr<choice>
+           <abbr>ā</abbr>
+           <expan>a<ex>n</ex>
+           </expan>
+         </choice>t<pc type="reg"> </pc>
+         <lb/>abstinence<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de seinte
+     <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ie<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>li <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>o<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>enceaus a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit le<pc type="reg"> </pc>
+         <lb/>cuer
+     <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>o<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ene<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si ne<pc type="reg"> </pc>li pleisoient mie les oe<lb/>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>res
+     del<pc type="reg"> </pc>seint home qi<pc type="reg"> </pc>estoit arche<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqes<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>car<pc type="reg"> </pc>il
+     <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ousist bien q<pc type="reg">'</pc>il se meintenist de<pc type="reg"> </pc>
+         <lb/>dras
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>d<pc type="reg">'</pc>autres choses plus belement<pc type="reg" ana="subordonnee">,</pc> si c<choice>
+           <abbr>o'</abbr>
+           <expan>o<ex>m</ex>
+           </expan>
+         </choice>
+         <pc type="reg"> </pc>
+         <lb/>li<pc type="reg"> </pc>pluiseur feroient
+      encore<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>qe<pc type="reg"> </pc>s<pc type="reg">'</pc>il
+     <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>eoient<pc type="reg"> </pc>
+         <lb/>les e<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqes <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>les hautes persones
+     dedui<lb/>re po<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>rement <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>en <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ielz habiz <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>en
+     granz<pc type="reg"> </pc>
+         <lb/>abstinences por l<pc type="reg">'</pc>amor nostre
+     <choice>
+           <orig>s</orig>
+           <reg>S</reg>
+         </choice>ignor<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il<pc type="reg"> </pc>les<pc type="reg"> </pc>
+         <lb/>en<pc type="reg"> </pc>blasmeroient
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>diroient qe ce seroit <choice>
+           <orig>ẏ</orig>
+           <reg>y</reg>
+         </choice>
+         <lb/>crisie<choice ana="apposition">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lg n="1">
+           <l n="1">
+            <hi rend="decorated-initialblue">P</hi>or ce<pc type="reg"> </pc>ne set l<pc type="reg">'</pc>en mes qe fere.<pc type="reg"> </pc>
+           </l>
+           <l n="2">Nus<pc type="reg"> </pc>
+            <lb/>ne<pc type="reg"> </pc>se<pc type="reg"> </pc>set au<pc type="reg"> </pc>quel chief trere.<pc type="reg"> </pc>
+           </l>
+           <l n="3">Beghins est qi<pc type="reg"> </pc>
+            <lb/>
+            <choice>
+              <orig>u</orig>
+              <reg>v</reg>
+            </choice>iut fere bien<pc type="orig" ana="coordination">.</pc>
+            <pc type="reg"> </pc>
+           </l>
+           <l n="4">Ne<pc type="reg"> </pc>nus nul tient a<pc type="reg"> </pc>crestien<pc type="reg"> </pc>
+            <lb/>
+           </l>
+           <l n="5">Qi le<pc type="reg"> </pc>mal fet apertement.<pc type="reg"> </pc>
+           </l>
+           <l n="6">Qi se<pc type="reg"> </pc>meinti<choice>
+              <abbr>ē</abbr>
+              <expan>e<ex>n</ex>
+              </expan>
+            </choice>t<pc type="reg"> </pc>
+            <lb/>moienement<pc type="orig" ana="relative">.</pc>
+            <pc type="reg"> </pc>
+           </l>
+           <l n="7">L<pc type="reg">'</pc>on li met sus q<pc type="reg">'</pc>il est
+      escharz<choice ana="conjonctionCoordination">
+              <orig>.</orig>
+              <reg>,<pc type="reg"> </pc>
+              </reg>
+            </choice>
+           </l>
+           <lb/>
+           <l n="8">Si<pc type="reg"> </pc>est li<pc type="reg"> </pc>maus par tout esparz<choice ana="subordonnée">
+              <orig>.</orig>
+              <reg>,<pc type="reg"> </pc>
+              </reg>
+            </choice>
+           </l>
+           <l n="9">Qe<pc type="reg"> </pc>nus<pc type="reg"> </pc>
+            <lb/>ne set qe de<choice>
+              <orig>u</orig>
+              <reg>v</reg>
+            </choice>enir<pc type="orig" ana="coordination">.</pc>
+            <pc type="reg"> </pc>
+           </l>
+           <l n="10">Ne<pc type="reg"> </pc>la<pc type="reg"> </pc>quel <choice>
+              <orig>u</orig>
+              <reg>v</reg>
+            </choice>oie il puist<pc type="reg"> </pc>
+            <lb/>tenir.</l>
+         </lg>
+        </p>
+      </div>
+      <div n="2"
+         type="section"
+         facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f263, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f264">
+        <p>
+         <hi rend="decorated-initial">U</hi>n <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>our a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int qe uns hom
+     estoit<pc type="reg"> </pc>
+         <lb/>entrepris de<pc type="reg"> </pc>grant enfermet<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si aloit
+     que<lb/>rant <persName ref="#martin">seint <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artin</persName> por a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oir
+      sant<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>a<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>de<pc type="reg">,</pc>
+         <pc type="reg"> </pc>
+         <lb/>car li
+     seint home <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>i<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oient<note> à corriger par vivoit, d'après 411</note> encore adonc<choice>
+           <orig>:</orig>
+           <reg>.<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>
+         <persName ref="#brice">Seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> estoit lors d<choice>
+           <orig>ẏ</orig>
+           <reg>y</reg>
+         </choice>acres<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si
+     estoit<pc type="reg"> </pc>
+         <lb/>en<pc type="reg"> </pc>la place ou cil demandoit le<pc type="reg"> </pc>seint
+     arche<lb/>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe.<pc type="reg"> </pc>Qant <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+      l<pc type="reg">'</pc>o<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>
+         <choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il<pc type="reg"> </pc>li<pc type="reg"> </pc>dist<pc type="reg"> </pc>:<pc type="reg"> </pc>
+         <said who="#brice" direct="true">
+           <pc type="reg"> </pc>Se<pc type="reg"> </pc>
+           <lb/>tu
+      le<pc type="reg"> </pc>
+           <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ius conoistre<pc type="reg" ana="subordonnee">,</pc> regarde
+      de<pc type="reg"> </pc>loing<choice ana="conjonctionCoordination">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>car<pc type="reg"> </pc>
+           <lb/>il<pc type="reg"> </pc>est
+      der<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ez<choice ana="conjonctionCoordination">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>si<pc type="reg"> </pc>le<pc type="reg"> </pc>porras bien
+      reconoistre<choice ana="conjonctionCoordination">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>
+           <lb/>car il est
+      borgnes<choice ana="conjonctionCoordination">
+            <orig>.</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>
+           <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>aussi regarde il <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ers<pc type="reg"> </pc>
+           <lb/>le ciel
+      com s<pc type="reg">'</pc>il fust der<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ez.</said>
+         <pc type="reg"> </pc>Qant li
+     po<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>res<pc type="reg"> </pc>
+         <lb/>hom entendi ce<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il ne l<pc type="reg">'</pc>en
+     fu gueres<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>einz<pc type="reg"> </pc>
+         <lb/>ala tant qerant le<pc type="reg"> </pc>seint home q<pc type="reg">'</pc>il<pc type="reg"> </pc>l<pc type="reg">'</pc>ot tro<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>
+         <choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>
+         <pb n="127" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f264"/>
+         <cb n="c"/>
+         <choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>t si fu touz gueriz de<pc type="reg"> </pc>s<pc type="reg">'</pc>enfermet<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>.
+      Et<pc type="reg"> </pc>
+         <persName ref="#martin">seinz<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artins</persName> <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int a<pc type="reg"> </pc>
+         <persName ref="#brice">seint <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName> qi<pc type="reg"> </pc>diacres estoit
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>
+         <pc type="reg"> </pc>
+         <lb/>parla en<pc type="reg"> </pc>tel
+      maniere<choice ana="dialogue">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>:<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <said who="#martin" direct="true">
+           <persName ref="#brice">Brices</persName>
+           <pc type="reg" ana="apostrophe">,</pc> dont ne<pc type="reg"> </pc>te
+      sam<lb/>ble <choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>e borgnes
+      <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>der<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ez<choice ana="interrogation">
+            <orig>.</orig>
+            <reg>
+              <pc type="reg"> </pc>?<pc type="reg"> </pc>
+            </reg>
+           </choice>
+         </said>
+         <pc type="reg"> </pc>Qant il l<pc type="reg">'</pc>o<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>
+         <pc type="reg" ana="subordonnee">,</pc> si en
+     ot<pc type="reg"> </pc>
+         <lb/>grant honte<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>comen<choice>
+           <orig>c</orig>
+           <reg>ç</reg>
+         </choice>a a<pc type="reg"> </pc>denoier a<pc type="reg"> </pc>son
+     pooir<pc type="reg"> </pc>
+         <lb/>ceste parole c<pc type="reg">'</pc>onqes ne<pc type="reg"> </pc>l<pc type="reg">'</pc>a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit dite.<pc type="reg"> </pc>Dont li<pc type="reg"> </pc>dist<pc type="reg"> </pc>
+         <pc type="orig" ana="sujet">:</pc>
+         <lb/>
+         <persName ref="#martin">seinz <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artins</persName>
+         <pc type="reg" ana="DD">:</pc>
+         <said who="#martin" direct="true"> 
+           <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>es<pc type="reg"> </pc>orelles estoient pres
+      de<pc type="reg"> </pc>ta<pc type="reg"> </pc>
+           <lb/>bouche dementieres qe<pc type="reg"> </pc>tu le de<choice>
+            <orig>i</orig>
+            <reg>ï</reg>
+           </choice>s.<pc type="reg"> </pc>Et
+      bien<pc type="reg"> </pc>saces<pc type="reg"> </pc>
+           <lb/>q<pc type="reg">'</pc>a paines m<pc type="reg">'</pc>a otroi<choice>
+            <orig>e</orig>
+            <reg>é</reg>
+           </choice> nostre <choice>
+            <orig>s</orig>
+            <reg>S</reg>
+           </choice>ires qe<pc type="reg"> </pc>tu aies<pc type="reg"> </pc>
+           <lb/>apr<choice>
+            <orig>e</orig>
+            <reg>é</reg>
+           </choice>s
+      moi<pc type="reg"> </pc>l<pc type="reg">'</pc>e<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>eschi<choice>
+            <orig>e</orig>
+            <reg>é</reg>
+           </choice>
+           <choice ana="conjonctionCoordination">
+            <orig>.</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>
+           <choice>
+            <orig>M</orig>
+            <reg>m</reg>
+           </choice>es neqe<choice>
+            <orig> </orig>
+            <reg/>
+           </choice>dent tu l<pc type="reg">'</pc>a<lb/>uras<choice ana="subordonnée">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>si en
+      soufferras an<choice>
+            <orig>c</orig>
+            <reg>ç</reg>
+           </choice>ois molt d<pc type="reg">'</pc>a<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>er<lb/>sitez<pc type="orig" ana="coordination">:</pc>
+           <pc type="reg"> </pc>
+           <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>molt
+      de<pc type="reg"> </pc>persecutions.</said>
+         <pc type="reg"> </pc>Qant <persName ref="#brice">seinz
+      <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>ri<lb/>ces</persName> l<pc type="reg">'</pc>o<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>
+         <choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>l<pc type="reg">'</pc>en comen<choice>
+           <orig>c</orig>
+           <reg>ç</reg>
+         </choice>a
+     a<pc type="reg"> </pc>degaber
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>a<pc type="reg"> </pc>dire<choice ana="dialogue">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>:<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <said who="#brice" direct="true">D<choice>
+            <abbr>ō</abbr>
+            <expan>o<ex>n</ex>
+            </expan>
+           </choice>t<pc type="reg"> </pc>
+           <lb/>ne
+      disoie <choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>e bien qe cis disoit so<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>entes foiz der<lb/>
+           <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ees
+      paroles<choice ana="interrogation">
+            <orig>.</orig>
+            <reg>
+              <pc type="reg"> </pc>?<pc type="reg"> </pc>
+            </reg>
+           </choice>
+         </said>
+         <pc type="reg"> </pc>En<pc type="reg"> </pc>tel maniere leidenga il so<lb/>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ent le<pc type="reg"> </pc>seint
+     home par paroles<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>tant q<pc type="reg">'</pc>il<pc type="reg"> </pc>
+         <lb/>fu morz<pc type="reg" ana="subordonnee">,</pc> si com
+     <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>os a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ez o<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice> conter arriere.<pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+     <div n="2"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f264">
+      <div type="section" n="1">
+        <p>
+         <hi rend="decorated-initial">Q</hi>
+         <choice>
+           <orig>U</orig>
+           <reg>u</reg>
+         </choice>ant la<pc type="reg"> </pc>citez fu sanz pastor
+     qi<pc type="reg"> </pc>la<pc type="reg"> </pc>
+         <lb/>go<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ernast<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>li<pc type="reg"> </pc>citoien
+      eslurent<pc type="reg"> </pc>
+         <lb/>
+         <persName ref="#brice">seint <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName>
+     a<pc type="reg"> </pc>arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>car il estoit<pc type="reg"> </pc>
+         <lb/> de<pc type="reg"> </pc>seinte <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ie<pc type="reg" ana="subordonnee">,</pc>
+     encore fust il orguilleus.<pc type="reg"> </pc>Au<pc type="reg"> </pc>
+         <lb/>trentisme an apr<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>s ce<pc type="reg"> </pc>q<pc type="reg">'</pc>il fu ordenez a<pc type="reg"> </pc>arce<lb/>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>mis en
+     la signorie<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>li<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int uns g<choice>
+           <abbr>nͣ</abbr>
+           <expan>
+            <ex>ra</ex>n</expan>
+         </choice>z<pc type="reg"> </pc>
+         <lb/> anuiz
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>uns granz blasmes<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>car une feme<pc type="reg"> </pc>
+         <lb/>qi les
+     dras la<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit de<pc type="reg"> </pc>sa<pc type="reg"> </pc>mesnie fu<pc type="reg"> </pc>enceinte<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si
+     acoucha <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>ot un enfant<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>se<pc type="reg"> </pc>meinte<lb/>noit cele en<pc type="reg"> </pc>guise
+     religieuse par le sembl<choice>
+           <abbr>ā</abbr>
+           <expan>a<ex>n</ex>
+           </expan>
+         </choice>t<pc type="reg"> </pc>
+         <lb/>de<pc type="reg"> </pc>ses <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>estemenz.<pc type="reg"> </pc>Et qant
+     cil de<pc type="reg"> </pc>la cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> sorent<pc type="reg"> </pc>
+         <lb/>qe cele estoit acouchie d<pc type="reg">'</pc>enfant<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il furent<pc type="reg"> </pc>
+         <lb/>molt
+     iri<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>mout corrociez<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>por ce q<pc type="reg">'</pc>il lor<pc type="reg"> </pc>
+         <lb/>sambloit qe ele estoit de molt
+     bone<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ie<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>si<pc type="reg"> </pc>mistrent tout le blasme<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>tout l<pc type="reg">'</pc>afere<pc type="reg"> </pc>
+         <lb/>seur <persName ref="#brice">seint
+      <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>li<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oudrent tuit ensem<lb/>ble corre seure
+     por<pc type="reg"> </pc>lapider <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>por ocirre
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>
+         <lb/>disoient<pc type="reg"> </pc>:<pc type="reg"> </pc>
+         <said direct="true"> 
+           <choice>
+            <orig>l</orig>
+            <reg>L</reg>
+           </choice>a<pc type="reg"> </pc>piti<choice>
+            <orig>e</orig>
+            <reg>é</reg>
+           </choice>
+      del seint home qi clers<pc type="reg"> </pc>
+           <lb/>tu fus a<pc type="reg"> </pc>fet celer molt longement tes
+      ma<lb/>les oe<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>res <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>ta<pc type="reg"> </pc>grant luxure<pc type="orig" ana="coordination">:</pc>
+           <pc type="reg"> </pc>
+           <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>
+           <choice>
+            <orig>d</orig>
+            <reg>D</reg>
+           </choice>ex ne nos<pc type="reg"> </pc>
+           <lb/>lest
+      mes baisier tiels meins<choice ana="conjonctionCoordination">
+            <orig>.</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>car eles ne<pc type="reg"> </pc>
+           <lb/>sont mie
+      dignes.</said> <persName ref="#brice">Seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+      respondoit<pc type="reg"> </pc>
+         <lb/>qanq<pc type="reg">'</pc>il pooit encontre
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>disoit qe onqes<pc type="reg"> </pc>
+         <lb/>teil chose ne<pc type="reg"> </pc>li<pc type="reg"> </pc>estoit
+     a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>enue<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <choice>
+           <orig>M</orig>
+           <reg>m</reg>
+         </choice>es com<pc type="reg"> </pc>
+         <lb/>plus s<pc type="reg">'</pc>en escondissoit<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>cil meins l<pc type="reg">'</pc>en cre<lb/>oient<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <choice>
+           <orig>T</orig>
+           <reg>t</reg>
+         </choice>ant qe <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+     dist<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>qant il <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>it<pc type="reg"> </pc>
+         <lb/>q<pc type="reg">'</pc>il n<pc type="reg">'</pc>i porroit a<pc type="reg"> </pc>eus durer en<pc type="reg"> </pc>nule
+     maniere<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>qe l<pc type="reg">'</pc>en li aportast l<pc type="reg">'</pc>enfant de<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ant lui.<pc type="reg"> </pc>Li en<lb/>fes fu aportez qi<pc type="reg"> </pc>n<pc type="reg">'</pc>a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit qe<pc type="reg"> </pc>
+         <pc ana="number">.</pc>
+         <seg type="number">xxx</seg>
+         <pc ana="number">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>orz.<pc type="reg"> </pc>Q<choice>
+           <abbr>nͣ</abbr>
+           <expan>
+            <ex>a</ex>n</expan>
+         </choice>t<pc type="reg"> </pc>
+         <lb/>
+         <cb n="d"/> il fu mi<choice>
+           <orig>S</orig>
+           <reg>s</reg>
+         </choice> de<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ant le pueple<pc type="reg"> </pc>
+         <choice>
+           <orig>Q</orig>
+           <reg>q</reg>
+         </choice>i la estoit assam<lb/>blez <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ant <persName ref="#brice">seint <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName>
+         <choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <persName ref="#brice">
+           <choice>
+            <orig>S</orig>
+            <reg>s</reg>
+           </choice>einz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> parla<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>t si dist<pc type="reg"> </pc>
+         <pc type="reg" ana="DD">:</pc>
+         <pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+     <div n="3"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f264">
+      <div n="1" type="section">
+        <p>
+         <said who="#brice" direct="true"> <hi rend="decorated-initial">E</hi>
+           <choice>
+            <orig>N</orig>
+            <reg>n</reg>
+           </choice>fes<pc type="reg" ana="apostrophe">,</pc> <choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>e<pc type="reg"> </pc>te con<choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>ur par nostre <choice>
+            <orig>s</orig>
+            <reg>S</reg>
+           </choice>ig<lb/>nor <persName ref="#jesus">
+            <choice>
+              <orig>i</orig>
+              <reg>J</reg>
+            </choice>esu<pc type="reg"> </pc>
+            <choice>
+              <orig>c</orig>
+              <reg>C</reg>
+            </choice>rist</persName> le fil <choice>
+            <orig>d</orig>
+            <reg>D</reg>
+           </choice>eu qi est
+      puis<lb/>sanz seur tote creature<pc type="orig" ana="relative">.</pc>
+           <pc type="reg"> </pc>qe tu
+      dies<pc type="reg"> </pc>
+           <lb/> de<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ant toz ceus qi ci sont assamblez aperte<lb/>ment
+      <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>sanz atar<choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>ance se<pc type="reg"> </pc>
+           <choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>e t<pc type="reg">'</pc>engendrai.</said>
+         <pc type="reg"> </pc>
+         <lb/>Tuit cil qi la estoient se
+     teurent<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>t li enfes<pc type="reg"> </pc>
+         <lb/>respondi par la<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>olent<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+     nostre <choice>
+           <orig>s</orig>
+           <reg>S</reg>
+         </choice>ignor a<pc type="reg"> </pc>
+         <persName ref="#brice">se<choice>
+            <abbr>ĩ</abbr>
+            <expan>i<ex>n</ex>
+            </expan>
+           </choice>t<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName> 
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>dist<choice ana="dialogue">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>:<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <said direct="true">Tu<pc type="reg"> </pc>n<pc type="reg">'</pc>ies mie mon
+     pere.</said>
+         <pc type="reg"> </pc>Dont<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr>ꝯ</abbr>
+           <expan>con</expan>
+         </choice>men<choice>
+           <orig>c</orig>
+           <reg>ç</reg>
+         </choice>a<pc type="reg"> </pc>toz li pueples
+     a<pc type="reg"> </pc>crier a<pc type="reg"> </pc>
+         <persName ref="#brice">seint <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName>
+         <pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>a<pc type="reg"> </pc>dire q<pc type="reg">'</pc>il li demandast qi son pere
+      estoit.<pc type="reg"> </pc>
+         <lb/>
+         <persName ref="#brice">Seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> lor
+     respondi <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si dist<pc type="reg"> </pc>:<pc type="reg"> </pc>
+         <said who="#brice" direct="true"> 
+           <choice>
+            <orig>a</orig>
+            <reg>A</reg>
+           </choice>
+           <pc type="reg"> </pc>moi<pc type="reg"> </pc>n<pc type="reg">'</pc>en<pc type="reg"> </pc>
+           <lb/>tient rien de<pc type="reg"> </pc>ce demander ne enqerre.
+      Ce<pc type="reg"> </pc>
+           <lb/>q<pc type="reg">'</pc>a moi en apertient ice li ai <choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>e
+      demand<choice>
+            <orig>e</orig>
+            <reg>é</reg>
+           </choice>
+           <pc type="orig" ana="coordination">:</pc>
+           <pc type="reg"> </pc>
+           <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>
+           <lb/>se <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>oz en <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>olez autre chose
+      sa<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>oir<pc type="reg" ana="subordonnee">,</pc> si<pc type="reg"> </pc>le
+      de<lb/>mandez.</said>
+         <pc type="reg"> </pc>Dont dist li pueples qe ce a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit<pc type="reg"> </pc>
+         <lb/>il fait
+     par enchanterie<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>ne plus ne
+     seroit<pc type="reg"> </pc>
+         <lb/>lor<pc type="reg"> </pc>pasteur ne lor e<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe.<pc type="reg"> </pc>
+         <persName ref="#brice">Seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> qui<pc type="reg"> </pc>
+         <lb/>mout estoit en grant angoisse de ce
+     que<pc type="reg"> </pc>
+         <lb/>li<pc type="reg"> </pc>pueples le<pc type="reg"> </pc>demenoit en<pc type="reg"> </pc>tel maniere<pc type="orig" ana="relative">.</pc>
+         <pc type="reg"> </pc>
+         <lb/>prist charbons toz ardanz de<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ant lui
+     en<pc type="reg"> </pc>
+         <lb/>sa <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>este<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>re<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>les emporta tres<choice>
+           <orig> </orig>
+           <reg/>
+         </choice>q<pc type="reg">'</pc>a<pc type="reg"> </pc>la<pc type="reg"> </pc>sepou<lb/>ture <persName ref="#martin">seint <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artin</persName>
+         <pc type="orig" ana="segPrep">.</pc>
+         <pc type="reg"> </pc>de<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ant lui bien estre<choice>
+           <abbr>ĩ</abbr>
+           <expan>i<ex>n</ex>
+           </expan>
+         </choice>z<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <orig>E</orig>
+           <reg>e</reg>
+         </choice>t qant il i<pc type="reg"> </pc>par<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il les geta <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>us ne
+     onqes<pc type="reg"> </pc>
+         <lb/>sa <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>este<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>re ne fu de<pc type="reg"> </pc>noient
+     brullee.<pc type="reg"> </pc>Lors<pc type="reg"> </pc>
+         <lb/>parla li e<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqes au pueple <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si lor
+      dist<choice ana="dialogue">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>:<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <said who="#brice" direct="true"> Bea<choice>
+            <abbr>'</abbr>
+            <expan>
+              <ex>us</ex>
+            </expan>
+           </choice>
+           <pc type="reg"> </pc>
+           <lb/>signors<pc type="reg" ana="apostrophe">,</pc> saciez qe noient plus qe cis dras<pc type="reg"> </pc>
+           <lb/>est
+      empiriez ne maumis par le feu ne﻿<pc type="reg"> </pc>
+           <choice>
+            <abbr>﻿ꝑ</abbr>
+            <expan>p<ex>ar</ex>
+            </expan>
+           </choice>
+           <pc type="reg"> </pc>
+           <lb/>la<pc type="reg"> </pc>flambe qi
+      a<pc type="reg"> </pc>lui est a<choice>
+            <orig>i</orig>
+            <reg>j</reg>
+           </choice>ostee<choice ana="subordonnée">
+            <orig>.</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>si<pc type="reg"> </pc>com <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ous<pc type="reg"> </pc>
+           <lb/>a<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ez
+      o<choice>
+            <orig>i</orig>
+            <reg>ï</reg>
+           </choice> <choice>
+            <abbr></abbr>
+            <expan>et </expan>
+           </choice>
+           <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>e<choice>
+            <orig>u</orig>
+            <reg>ü</reg>
+           </choice>
+           <choice ana="subordonnée">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>noient plus n<pc type="reg">'</pc>est mon cors<pc type="reg"> </pc>
+           <lb/>conciez ne atouchiez par l<pc type="reg">'</pc>atochement de<pc type="reg"> </pc>
+           <lb/>ceste feme.</said>
+         <pc type="reg"> </pc>Cil ne l<pc type="reg">'</pc>en <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oudrent croire<pc type="reg"> </pc>por<pc type="reg"> </pc>
+         <lb/>quanq<pc type="reg">'</pc>il a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oient <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>e<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>
+         <choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>einz le<pc type="reg"> </pc>trestrent
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>
+         <lb/>geterent fors<pc type="reg"> </pc>de<pc type="reg"> </pc>la<pc type="reg"> </pc>cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>.<pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+     <div n="4"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f264.item, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f265.item">
+      <div n="1" type="section">
+        <p>
+         <hi rend="decorated-initial">E</hi>
+         <choice>
+           <orig>I</orig>
+           <reg>i</reg>
+         </choice>nsint fu aemplie la parole <persName ref="#martin">seint<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artin</persName>
+         <pc type="orig" ana="relative">:</pc>
+         <pc type="reg"> </pc>qi<pc type="reg"> </pc>li dist q<pc type="reg">'</pc>il a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>eroit
+     <choice>
+           <abbr>mlt'</abbr>
+           <expan>mout</expan>
+         </choice>
+         <pc type="reg"> </pc>
+         <lb/>de<pc type="reg"> </pc>paines <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de<pc type="reg"> </pc>ad<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ersitez en<pc type="reg"> </pc>l<pc type="reg">'</pc>e<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>es<lb/>chi<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>en<pc type="reg"> </pc>la
+     signorie.<pc type="reg"> </pc>Qant <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+     fu<pc type="reg"> </pc>
+         <lb/> einsi getez de<pc type="reg"> </pc>la cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> de <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>orz</placeName>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>sachiez<pc type="reg" ana="subordonnee">,</pc>
+     li<pc type="reg"> </pc>citoi<choice>
+           <abbr>ē</abbr>
+           <expan>e<ex>n</ex>
+           </expan>
+         </choice>
+         <pc type="reg"> </pc>
+         <lb/>firent arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe de<pc type="reg"> </pc>
+         <persName ref="#justien">
+           <choice>
+            <orig>i</orig>
+            <reg>J</reg>
+           </choice>ustinien</persName>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>
+         <persName ref="#brice">seinz
+      <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName>s<pc type="reg"> </pc>
+         <lb/>s<pc type="reg">'</pc>en ala a<pc type="reg"> </pc>
+         <placeName ref="#rome" full="yes">
+           <choice>
+            <orig>r</orig>
+            <reg>R</reg>
+           </choice>ome</placeName> a<pc type="reg"> </pc>l<pc type="reg">'</pc>apostole<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>li conta
+     tout<pc type="reg"> </pc>
+         <lb/>em<pc type="reg"> </pc>plorant coment l<pc type="reg">'</pc>oe<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>re de<pc type="reg"> </pc>lui
+     estoit a<lb/>lee<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>li dist qe ce estoit a<pc type="reg"> </pc>bon droit q<pc type="reg">'</pc>il a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit<pc type="reg"> </pc>
+         <lb/>cest tra<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ail <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>ceste
+     peine<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>car il a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit molt<pc type="reg"> </pc>
+         <lb/>
+         <pb n="128" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f265.item"/>
+         <cb n="a"/>
+         <choice>
+           <orig>P</orig>
+           <reg>p</reg>
+         </choice>echi<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> en<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ers <persName ref="#martin">seint
+      Martin</persName> le seint home<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <orig>home</orig>
+           <reg/>
+         </choice>
+         <note>diplologie sur home</note>
+         <pc type="reg"> </pc>
+         <pc type="orig" ana="coordination">.</pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>dites meintes paroles qi<pc type="reg"> </pc>li
+     gre<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>erent<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>la<pc type="reg"> </pc>ou il a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>e<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>es ses
+     <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ertuz<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>ne<pc type="reg"> </pc>les a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit<pc type="reg"> </pc>
+         <lb/>il mie
+     cre<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>es.<pc type="reg"> </pc>Qant cil de<pc type="reg"> </pc>
+         <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName>
+     sorent qe <persName ref="#brice">se<choice>
+            <abbr>ĩ</abbr>
+            <expan>i<ex>n</ex>
+            </expan>
+           </choice>z<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+     estoit einsi a<pc type="reg"> </pc>
+         <placeName ref="#rome" full="yes">
+           <choice>
+            <orig>r</orig>
+            <reg>R</reg>
+           </choice>ome</placeName>
+     alez<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il trestrent
+      a<pc type="reg"> </pc>
+         <lb/>
+         <persName ref="#justien">
+           <choice>
+            <orig>i</orig>
+            <reg>J</reg>
+           </choice>ustien</persName> lor
+      arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>si<pc type="reg"> </pc>li distrent q<pc type="reg">'</pc>il s<pc type="reg">'</pc>en<pc type="reg"> </pc>
+         <lb/>alast apr<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>s <persName ref="#brice">seint
+      <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rice</persName> a<pc type="reg"> </pc>
+         <placeName full="yes">
+           <choice>
+            <orig>r</orig>
+            <reg>R</reg>
+           </choice>ome</placeName>
+         <choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si
+     fust encon<lb/>tre lui del<pc type="reg"> </pc>tout<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si com por lui me<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>smes<pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>s<pc type="reg">'</pc>il<pc type="reg"> </pc>
+         <lb/>ce<pc type="reg"> </pc>ne fesoit<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>bien se<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>st q<pc type="reg">'</pc>il le desposeroient.<pc type="reg"> </pc>
+         <lb/>Dont issi <persName ref="#justien">
+           <choice>
+            <orig>i</orig>
+            <reg>J</reg>
+           </choice>ustiens</persName> de<pc type="reg"> </pc>la cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> de <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>ala tant<pc type="reg"> </pc>
+         <lb/>q<pc type="reg">'</pc>il <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int
+      a<pc type="reg"> </pc>
+         <placeName ref="#vercelles" full="yes">
+           <choice>
+            <orig>u</orig>
+            <reg>V</reg>
+           </choice>erziaus</placeName> en <placeName ref="#lombardie" full="yes">
+           <choice>
+            <orig>l</orig>
+            <reg>L</reg>
+           </choice>ombardie</placeName>
+         <pc type="orig" ana="coordination">:</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>la acou<lb/>cha il
+     malades<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>morut par la<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>olentet<pc type="reg"> </pc>
+         <lb/>nostre
+     <choice>
+           <orig>s</orig>
+           <reg>S</reg>
+         </choice>ignor.<pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+     <div n="5"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f265.item">
+      <div n="1" type="section">
+        <p>
+         <hi rend="decorated-initial">Q</hi>
+         <choice>
+           <orig>U</orig>
+           <reg>u</reg>
+         </choice>ant cil de <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName> sorent
+     la<pc type="reg"> </pc>no<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ele<pc type="reg"> </pc>
+         <lb/>de <persName ref="#justien">
+           <choice>
+            <orig>i</orig>
+            <reg>J</reg>
+           </choice>ustien</persName>
+     qi mors estoit<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>il ne<pc type="reg"> </pc>
+         <lb/>deguerpirent mie lor
+     grant<pc type="reg"> </pc>
+         <lb/>felonie<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>einz remistrent <persName ref="#armense">
+           <choice>
+            <orig>a</orig>
+            <reg>A</reg>
+           </choice>rmense</persName> en la<pc type="reg"> </pc>
+         <lb/>chaere <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>en la
+     signorie.<pc type="reg"> </pc>Et <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+     qi<pc type="reg"> </pc>
+         <lb/>en <placeName ref="#rome" full="yes">
+           <choice>
+            <orig>r</orig>
+            <reg>R</reg>
+           </choice>ome</placeName> estoit chantoit messe
+     en la cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>ploroit por les mesfez q<pc type="reg">'</pc>il
+     a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit fez en<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ers<pc type="reg"> </pc>
+         <lb/>
+         <persName ref="#martin">seint
+     <choice>
+            <orig>m</orig>
+            <reg>M</reg>
+           </choice>artin</persName>.<pc type="reg"> </pc>Qant <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int au<pc type="reg"> </pc>septieme<pc type="reg"> </pc>an<choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <lb/>il
+      s<pc type="reg">'</pc>en repaira par la <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>olent<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> de<pc type="reg"> </pc>l<pc type="reg">'</pc>apostoile <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>
+         <lb/>par s<pc type="reg">'</pc>auctorit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+     a<pc type="reg"> </pc>la cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> de<pc type="reg"> </pc>
+         <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName> 
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>ala tant q<pc type="reg">'</pc>il<pc type="reg"> </pc>
+         <lb/>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>int au<pc type="reg"> </pc>chastel
+      de<pc type="reg"> </pc>
+         <placeName ref="#lodun" full="yes">
+           <choice>
+            <orig>l</orig>
+            <reg>L</reg>
+           </choice>odun</placeName>
+         <choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>se<pc type="reg"> </pc>s<pc type="reg">'</pc>i<pc type="reg"> </pc>herberga
+     une<pc type="reg"> </pc>
+         <lb/>nuit<choice>
+           <orig>:</orig>
+           <reg>.<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <choice>
+           <orig>⁊</orig>
+           <reg>Et<pc type="reg"> </pc>
+           </reg>
+         </choice>adonc<pc type="reg"> </pc>estoit <persName ref="#armense">
+           <choice>
+            <orig>a</orig>
+            <reg>A</reg>
+           </choice>rmenses</persName> molt mala<lb/>des de<pc type="reg"> </pc>molt crueles
+     fie<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>res<choice ana="subordonnée">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si q<pc type="reg">'</pc>il rendi l<pc type="reg">'</pc>ame<pc type="reg"> </pc>
+         <lb/>a<pc type="reg"> </pc>mienuit.<pc type="reg"> </pc>Et meitenant q<pc type="reg">'</pc>il fu
+      morz<pc type="reg" ana="subordonnee">,</pc> le<pc type="reg"> </pc>
+         <lb/>sot <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> par
+     a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ision<choice ana="conjonctionCoordination">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si<pc type="reg"> </pc>dist a<pc type="reg"> </pc>ses com<lb/>paignons qi ensamble
+     o<pc type="reg"> </pc>lui
+      estoient<choice ana="dialogue">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>:<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <said who="#brice" direct="true">
+           <choice>
+            <orig>l</orig>
+            <reg>L</reg>
+           </choice>e<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>ez<pc type="reg"> </pc>
+           <lb/>sus<pc type="reg"> </pc>isnielement<choice ana="subordonnée">
+            <orig>:</orig>
+            <reg>,<pc type="reg"> </pc>
+            </reg>
+           </choice>si
+      qe<pc type="reg"> </pc>nos puissons <choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>enir<pc type="reg"> </pc>
+           <lb/>a<pc type="reg"> </pc>tens a<pc type="reg"> </pc>enfo<choice>
+            <orig>i</orig>
+            <reg>ï</reg>
+           </choice>r l<pc type="reg">'</pc>arce<choice>
+            <orig>u</orig>
+            <reg>v</reg>
+           </choice>esqe de<pc type="reg"> </pc>
+           <placeName ref="#tours" full="yes">
+            <choice>
+              <orig>t</orig>
+              <reg>T</reg>
+            </choice>ors</placeName>.</said>
+         <pc type="reg"> </pc>Lors s<pc type="reg">'</pc>es<lb/>murent
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>qant il <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>indrent a<pc type="reg"> </pc>la porte de<pc type="reg"> </pc>
+         <lb/>
+         <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName>
+         <choice ana="conjonctionCoordination">
+           <orig>.</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>si entrerent dedenz<pc type="orig" ana="coordination">:</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>a<pc type="reg"> </pc>cele eure
+     droit<pc type="reg"> </pc>
+         <lb/>emportoit l<pc type="reg">'</pc>en l<pc type="reg">'</pc>arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe enfo<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>r qi morz<pc type="reg"> </pc>
+         <lb/>estoit par l<pc type="reg">'</pc>autre porte de<pc type="reg"> </pc>la<pc type="reg"> </pc>cit<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <pc type="orig" ana="coordination">.</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>mout<pc type="reg"> </pc>
+         <lb/> de<pc type="reg"> </pc>clers <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>d<pc type="reg">'</pc>autres genz aloient apr<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>s por<pc type="reg"> </pc>
+         <lb/>l<pc type="reg">'</pc>enfo<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>r.<pc type="reg"> </pc>Et qant <persName ref="#armense">
+           <choice>
+            <orig>a</orig>
+            <reg>A</reg>
+           </choice>rmenses</persName>
+     li<pc type="reg"> </pc>arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqes<pc type="reg"> </pc>
+         <lb/>fu enfo<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>z<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName> se rassist en sa cha<lb/>aire en
+     pes<choice ana="subordonnée">
+           <orig>:</orig>
+           <reg>,<pc type="reg"> </pc>
+           </reg>
+         </choice>sanz ce qe nus li<pc type="reg"> </pc>contrede<choice>
+           <orig>i</orig>
+           <reg>ï</reg>
+         </choice>st en<pc type="reg"> </pc>
+         <lb/>nule
+     maniere.<pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+     <div n="6"
+       type="chapter"
+       facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f265.item">
+      <div n="1" type="section">
+        <p>
+         <hi rend="decorated-initial">A</hi>pr<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>s ce <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqi <persName ref="#brice">seinz <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+         <pc type="reg"> </pc>
+         <pc ana="number">.</pc>
+         <seg type="number">vii</seg>
+         <pc ana="number">.</pc>
+         <pc type="reg"> </pc>
+         <lb/>anz mout preudom
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de<pc type="reg"> </pc>mout<pc type="reg"> </pc>
+         <lb/>seinte<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>ie.<pc type="reg"> </pc>Et qant il morut<pc type="reg">,</pc> si<pc type="reg"> </pc>
+         <lb/>a<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>oit il est<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <pc type="reg"> </pc>
+         <pc ana="number">.</pc>
+         <seg type="number">xlvii</seg>
+         <pc ana="number">.</pc>
+         <pc type="reg"> </pc>anz
+      arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqes<pc type="reg" ana="apposition">,</pc> encore<pc type="reg"> </pc>
+         <lb/>e<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>st
+     il ci dedenz e<choice>
+           <orig>u</orig>
+           <reg>ü</reg>
+         </choice>es les persecutions <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>les<pc type="reg"> </pc>
+         <lb/>peines
+     qe<pc type="reg"> </pc>
+         <choice>
+           <orig>i</orig>
+           <reg>j</reg>
+         </choice>e <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>os ai contees
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>dites<choice>
+           <orig>:</orig>
+           <reg>.<pc type="reg"> </pc>
+           </reg>
+         </choice>Apri<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>s<pc type="reg"> </pc>
+         <lb/>
+         <cb n="b"/>
+         <persName ref="#brice">
+           <choice>
+            <orig>S</orig>
+            <reg>s</reg>
+           </choice>eins <choice>
+            <orig>b</orig>
+            <reg>B</reg>
+           </choice>rices</persName>
+         <pc type="reg">,</pc> fu arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqe<choice>
+           <orig>S</orig>
+           <reg>s</reg>
+         </choice> de<pc type="reg"> </pc>
+         <placeName ref="#tours" full="yes">
+           <choice>
+            <orig>t</orig>
+            <reg>T</reg>
+           </choice>ors</placeName>
+         <pc type="orig" ana="sujet">:</pc>
+         <pc type="reg"> </pc>
+         <persName ref="#eustache">seinz<pc type="reg"> </pc>
+           <lb/>
+           <choice>
+            <orig>e</orig>
+            <reg>E</reg>
+           </choice>ustochies</persName> qi<pc type="reg"> </pc>mout fu preudom
+      <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>de<pc type="reg"> </pc>grant<pc type="reg"> </pc>
+         <lb/>seinte<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice>
+         <pc type="orig" ana="coordination">:</pc>
+         <pc type="reg"> </pc>
+         <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>maintint l<pc type="reg">'</pc>arce<choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>esqi<choice>
+           <orig>e</orig>
+           <reg>é</reg>
+         </choice> <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>la seg<lb/>norie
+     <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>son pueple bien <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>honestement
+      a<pc type="reg"> </pc>
+         <lb/>la<pc type="reg"> </pc>lo<choice>
+           <orig>ẏ</orig>
+           <reg>y</reg>
+         </choice> <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>a<pc type="reg"> </pc>l<pc type="reg">'</pc>onor nostre <choice>
+           <orig>s</orig>
+           <reg>S</reg>
+         </choice>ignor <persName ref="#jesus">
+           <choice>
+            <orig>i</orig>
+            <reg>J</reg>
+           </choice>esu
+      <choice>
+            <orig>c</orig>
+            <reg>C</reg>
+           </choice>rist</persName>
+         <pc type="orig" ana="segPrep">:</pc>
+         <pc type="reg"> </pc>
+         <lb/>de<pc type="reg"> </pc>la<pc type="reg"> </pc>qui gloire nos puissons tuit
+      estre<pc type="reg"> </pc>
+         <lb/>par<choice>
+           <orig>c</orig>
+           <reg>ç</reg>
+         </choice>onier<pc type="reg" ana="apposition">,</pc> ce nos
+     otroit <choice>
+           <orig>c</orig>
+           <reg>C</reg>
+         </choice>il qi<pc type="reg"> </pc>
+         <choice>
+           <orig>u</orig>
+           <reg>v</reg>
+         </choice>it <choice>
+           <abbr></abbr>
+           <expan>et </expan>
+         </choice>reigne<pc type="reg"> </pc>
+         <lb/>par tout
+     le<pc type="reg"> </pc>siecle des siecles<choice ana="exclamation">
+           <orig>.</orig>
+           <reg>
+            <pc type="reg"> </pc>!<pc type="reg"> </pc>
+           </reg>
+         </choice>
+         <pc type="reg"> </pc>Ame<choice>
+           <orig>N</orig>
+           <reg>n</reg>
+         </choice>
+         <pc type="reg"> </pc>
+         <lb/>
+        </p>
+      </div>
+     </div>
+   </body>
+ </text>
+</TEI>

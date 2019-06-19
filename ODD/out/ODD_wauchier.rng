@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2019-06-10T18:23:17Z. .
+Schema generated from ODD source 2019-06-19T07:45:18Z. .
 TEI Edition: Version 3.3.0. Last updated on
 	31st January 2018, revision f4d8439
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.3.0/
@@ -437,6 +437,10 @@ belongs, but this <sch:name/> element has no textual content.</sch:assert>
          </attribute>
       </optional>
    </define>
+   <define name="att.datcat.attributes">
+      <ref name="att.datcat.attribute.datcat"/>
+      <ref name="att.datcat.attribute.valueDatcat"/>
+   </define>
    <define name="att.datcat.attribute.datcat">
       <optional>
          <attribute name="datcat" ns="http://www.isocat.org/ns/dcr">
@@ -494,26 +498,8 @@ belongs, but this <sch:name/> element has no textual content.</sch:assert>
          </attribute>
       </optional>
    </define>
-   <define name="att.fragmentable.attribute.part">
-      <optional>
-         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                    name="part"
-                    a:defaultValue="N">
-            <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-            <choice>
-               <value>Y</value>
-               <a:documentation>(yes) the element is fragmented in some (unspecified) respect</a:documentation>
-               <value>N</value>
-               <a:documentation>(no) the element is not fragmented, or no claim is made as to its completeness</a:documentation>
-               <value>I</value>
-               <a:documentation>(initial) this is the initial part of a fragmented element</a:documentation>
-               <value>M</value>
-               <a:documentation>(medial) this is a medial part of a fragmented element</a:documentation>
-               <value>F</value>
-               <a:documentation>(final) this is the final part of a fragmented element</a:documentation>
-            </choice>
-         </attribute>
-      </optional>
+   <define name="att.fragmentable.attributes">
+      <empty/>
    </define>
    <define name="att.docStatus.attributes">
       <ref name="att.docStatus.attribute.status"/>
@@ -569,7 +555,6 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
    </define>
    <define name="att.editLike.attributes">
       <ref name="att.editLike.attribute.evidence"/>
-      <ref name="att.editLike.attribute.instant"/>
    </define>
    <define name="att.editLike.attribute.evidence">
       <optional>
@@ -591,24 +576,6 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
                   </choice>
                </oneOrMore>
             </list>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.editLike.attribute.instant">
-      <optional>
-         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                    name="instant"
-                    a:defaultValue="false">
-            <a:documentation>indicates whether this is an instant revision or not.</a:documentation>
-            <choice>
-               <data type="boolean"/>
-               <choice>
-                  <value>unknown</value>
-                  <a:documentation/>
-                  <value>inapplicable</value>
-                  <a:documentation/>
-               </choice>
-            </choice>
          </attribute>
       </optional>
    </define>
@@ -1002,6 +969,11 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             </choice>
          </attribute>
       </optional>
+   </define>
+   <define name="att.segLike.attributes">
+      <ref name="att.datcat.attributes"/>
+      <ref name="att.fragmentable.attributes"/>
+      <ref name="att.segLike.attribute.function"/>
    </define>
    <define name="att.segLike.attribute.function">
       <optional>
@@ -2019,6 +1991,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="model.nameLike.agent"/>
          <ref name="model.offsetLike"/>
          <ref name="model.placeStateLike"/>
+         <ref name="rs"/>
          <ref name="idno"/>
          <ref name="model.persNamePart"/>
       </choice>
@@ -2028,6 +2001,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="model.nameLike.agent_alternation"/>
          <ref name="model.offsetLike_alternation"/>
          <ref name="model.placeStateLike_alternation"/>
+         <ref name="rs"/>
          <ref name="idno"/>
          <ref name="model.persNamePart_alternation"/>
       </choice>
@@ -2036,6 +2010,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="model.nameLike.agent_sequence"/>
       <ref name="model.offsetLike_sequence"/>
       <ref name="model.placeStateLike_sequence"/>
+      <ref name="rs"/>
       <ref name="idno"/>
       <ref name="model.persNamePart_sequence"/>
    </define>
@@ -2048,6 +2023,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </optional>
       <optional>
          <ref name="model.placeStateLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="rs"/>
       </optional>
       <optional>
          <ref name="idno"/>
@@ -2067,6 +2045,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="model.placeStateLike_sequenceOptionalRepeatable"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="rs"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="idno"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -2082,6 +2063,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </oneOrMore>
       <oneOrMore>
          <ref name="model.placeStateLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="rs"/>
       </oneOrMore>
       <oneOrMore>
          <ref name="idno"/>
@@ -2257,18 +2241,8 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
          <ref name="att.declaring.attributes"/>
+         <ref name="att.fragmentable.attributes"/>
          <ref name="att.written.attributes"/>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
-            </attribute>
-         </optional>
          <empty/>
       </element>
    </define>
@@ -2514,6 +2488,16 @@ Normalization 12. Critical Apparatus]</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="rs">
+      <element name="rs">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. [13.2.1. Personal Names 3.5.1. Referring Strings]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.naming.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="date">
       <element name="date">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.6. Dates and Times]</a:documentation>
@@ -2538,7 +2522,7 @@ Normalization 12. Critical Apparatus]</a:documentation>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
          <ref name="att.datable.attributes"/>
-         <ref name="att.editLike.attribute.evidence"/>
+         <ref name="att.editLike.attributes"/>
          <ref name="att.dimensions.attribute.quantity"/>
          <ref name="att.dimensions.attribute.extent"/>
          <ref name="att.dimensions.attribute.precision"/>
@@ -2686,14 +2670,6 @@ Normalization 12. Critical Apparatus]</a:documentation>
                   <value>biographical</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="anchored"
-                       a:defaultValue="true">
-               <a:documentation>indicates whether the copy text shows the exact place of reference for the note.</a:documentation>
-               <data type="boolean"/>
             </attribute>
          </optional>
          <empty/>
@@ -2942,6 +2918,7 @@ Elements]</a:documentation>
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
+         <ref name="att.fragmentable.attributes"/>
          <attribute name="n">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
             <data type="string"/>
@@ -3237,9 +3214,8 @@ Elements]</a:documentation>
             </choice>
          </zeroOrMore>
          <ref name="att.global.attributes"/>
-         <ref name="att.textCritical.attribute.hand"/>
          <ref name="att.textCritical.attribute.require"/>
-        
+         <ref name="att.written.attribute.hand"/>
          <optional>
             <attribute name="cause">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the cause for the variant reading, according to any appropriate typology of possible origins.</a:documentation>
@@ -3677,6 +3653,17 @@ Elements]</a:documentation>
          <ref name="att.canonical.attribute.key"/>
          <ref name="att.typed.attribute.subtype"/>
          <ref name="att.datable.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+               <choice>
+                  <value>pays</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>civilisation</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -3873,7 +3860,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
-         <ref name="att.editLike.attribute.evidence"/>
+         <ref name="att.editLike.attributes"/>
          <ref name="att.sortable.attributes"/>
          <attribute name="xml:id">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
@@ -3928,7 +3915,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
          <ref name="att.typed.attribute.subtype"/>
-         <ref name="att.editLike.attribute.evidence"/>
+         <ref name="att.editLike.attributes"/>
          <ref name="att.sortable.attributes"/>
          <attribute name="xml:id">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
@@ -4507,7 +4494,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.ranging.attribute.min"/>
          <ref name="att.ranging.attribute.max"/>
          <ref name="att.ranging.attribute.confidence"/>
-         <ref name="att.editLike.attribute.evidence"/>
+         <ref name="att.editLike.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <empty/>
       </element>
@@ -4965,7 +4952,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
-         <ref name="att.editLike.attribute.evidence"/>
+         <ref name="att.editLike.attributes"/>
          <ref name="att.datable.attributes"/>
          <empty/>
       </element>
@@ -5006,9 +4993,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
-         <ref name="att.segLike.attribute.function"/>
-         <ref name="att.datcat.attribute.datcat"/>
-         <ref name="att.datcat.attribute.valueDatcat"/>
+         <ref name="att.segLike.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <ref name="att.written.attributes"/>
          <ref name="att.notated.attributes"/>
@@ -5115,9 +5100,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
-         <ref name="att.segLike.attribute.function"/>
-         <ref name="att.datcat.attribute.datcat"/>
-         <ref name="att.datcat.attribute.valueDatcat"/>
+         <ref name="att.segLike.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
          <ref name="att.linguistic.attributes"/>
          <optional>
@@ -5183,17 +5166,6 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
                      </choice>
                   </oneOrMore>
                </list>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                       name="part"
-                       a:defaultValue="N">
-               <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
-               <choice>
-                  <value>N</value>
-                  <a:documentation/>
-               </choice>
             </attribute>
          </optional>
          <optional>
@@ -5622,14 +5594,6 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
       <ref name="att.textCritical.attribute.cause"/>
       <ref name="att.textCritical.attribute.require"/>
    </define>
-   <define name="att.textCritical.attribute.hand">
-      <optional>
-         <attribute name="hand">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <text/>
-         </attribute>
-      </optional>
-   </define>
    <define name="att.textCritical.attribute.cause">
       <optional>
          <attribute name="cause">
@@ -5664,6 +5628,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
    <start>
       <choice>
          <ref name="TEI"/>
+         <ref name="teiCorpus"/>
       </choice>
    </start>
 </grammar>

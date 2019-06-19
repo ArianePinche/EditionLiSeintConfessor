@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:my="LOCALHOST" exclude-result-prefixes="xs" version="2.0" xmlns="http://www.tei-c.org/ns/1.0">
+    xmlns:my="LOCALHOST" exclude-result-prefixes="xs tei" version="2.0" xmlns="http://www.tei-c.org/ns/1.0">
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
     <xsl:function name="my:no-accent">
@@ -19,6 +19,10 @@
         </xsl:variable>
         <xsl:result-document href="../XML/Vies/test/{$nomFichier}">
             <TEI xmlns="http://www.tei-c.org/ns/1.0">
+                <teiHeader>
+                <xsl:copy-of select="descendant::tei:fileDesc"/>
+                <xsl:copy-of select="descendant::tei:encodingDesc"/>
+                
                 <profileDesc>
                 <particDesc>
                 <listPerson>
@@ -47,6 +51,8 @@
                 </listPlace>
                 </settingDesc>
                 </profileDesc>
+                </teiHeader>
+                <xsl:apply-templates select="tei:text"/>
             </TEI>
         </xsl:result-document>
     </xsl:template>
@@ -63,11 +69,7 @@
 
     </xsl:template>
 
-    <!--  
-    <xsl:template match="attribute()|node()|comment()">
-        <xsl:copy>
-            <xsl:apply-templates select="attribute()|node()|comment()"/>
-        </xsl:copy>
+    <xsl:template match="tei:text">
+        <xsl:copy-of select="."/>
     </xsl:template>
-    -->
 </xsl:stylesheet>
