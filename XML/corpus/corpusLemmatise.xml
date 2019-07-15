@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_corpus.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_corpus.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -24,6 +24,7 @@
     <xi:include href="../lemmatisations/jns915.jns1856.ciham-lem.xml"/>
     <xi:include href="../lemmatisations/jns915.jns2117.ciham-lem.xml"/>
     <xi:include href="../lemmatisations/jns915.jns1743.ciham-lem.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1761.ciham-lem.xml"/>
     <xi:include href="../lemmatisations/jns915.jns2000.ciham-lem.xml"/>
     <xi:include href="../lemmatisations/jns915.jns1742.ciham-lem.xml"/>
     <xi:include href="../lemmatisations/jns915.jns1994.ciham-lem.xml"/>
