@@ -15,7 +15,7 @@
         
        
 
-        <xsl:result-document href="../analyseCorpus.tsv">
+        <xsl:result-document href="../analyseCorpus_atonique.tsv">
 
             <!-- Traitement des vocalismes / Plan // ac la Petie Grammaire de l'ancien picard-->
             
@@ -52,8 +52,8 @@
             
             <xsl:text>Alternance ar/er suivi de consonne&#10;</xsl:text>
            <!-- regex ar+cons -->
-            <xsl:variable name="regex_ar_consonnes" select="'^\s*[aA-zZ]*ar[^hzrtpqsdfghjklmwxcvbn]*[a-z]*'"/>
-            <xsl:variable name="regex_er_consonnes" select="'^\s*[aA-zZ]*er[^hzrtpqsdfghjklmwxcvbn]*[a-z]*'"/>
+            <xsl:variable name="regex_ar_consonnes" select="'^\s*\w*ar[^hzrtpqsdfghjklmwxcvbn]*\w*'"/>
+            <xsl:variable name="regex_er_consonnes" select="'^\s*\w*er[^hzrtpqsdfghjklmwxcvbn]*\w*'"/>
            
             <xsl:text>Nombre de mots en ar :</xsl:text><xsl:value-of select="count(//w[matches(text(), $regex_ar_consonnes)])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>Nombre de mots en er :</xsl:text><xsl:value-of select="count(//w[matches(text(), $regex_er_consonnes)])"/><xsl:text>&#10;</xsl:text>
@@ -92,12 +92,12 @@
             <xsl:text>&#10;</xsl:text>
             
             <xsl:text>ATICU > age/aige/ege $7</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^[aA-zZ]+age\d?$')]" group-by="@lemma">
+            <xsl:for-each-group select="//w[matches(@lemma, '^\w+age\d?$')]" group-by="@lemma">
                 
                 <xsl:value-of select="current-grouping-key()"/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
-                <xsl:if test="current-group()[matches(text(),'^[aA-zZ]+aige[s]?$')]">
+                <xsl:if test="current-group()[matches(text(),'^\w+aige[s]?$')]">
                 <xsl:text>&#09;</xsl:text>
                 <xsl:for-each-group select="current-group()" group-by=".">
                     <xsl:value-of select="."/><xsl:text>, </xsl:text>
@@ -118,7 +118,7 @@
                 group-by="ends-with(., 'ie')">
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#09;</xsl:text>
-                <xsl:variable name="vb1" select="'^[a-z]*er[1-9]?$'"/>
+                <xsl:variable name="vb1" select="'^\w*er[1-9]?$'"/>
                 
                 <xsl:text>Verbes du 1er groupe (</xsl:text>
                 <xsl:value-of select="count(current-group()[matches(@lemma, $vb1)])"/>
@@ -223,8 +223,8 @@
 
             <!-- a initial -->
 
-            <xsl:variable name="regex_ainit" select="'^[aA-zZ]?a'"/>
-            <xsl:variable name="regex_ahiatus" select="'^[aA-zZ]?a[aeo]'"/>
+            <xsl:variable name="regex_ainit" select="'^\w?a'"/>
+            <xsl:variable name="regex_ahiatus" select="'^\w?a[aeo]'"/>
             <xsl:text>Nombre de mots en A inital : </xsl:text>
             <xsl:value-of select="count(descendant::w[matches(fn:normalize(.), $regex_ainit)])"/>
             <xsl:text>&#10;</xsl:text>
@@ -232,14 +232,14 @@
             <xsl:value-of select="count(descendant::w[matches(fn:normalize(.), $regex_ahiatus)])"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="descendant::w[matches(fn:normalize(.), $regex_ahiatus)]"
-                group-by=".">
+                group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:variable select="@lemma" name="lemma"/>
                 <xsl:value-of select="."/>
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="@lemma"/>
                 <xsl:text>) : </xsl:text>
-                <xsl:for-each-group select="//w[@lemma = $lemma]" group-by=".">
+                <xsl:for-each-group select="current-group()" group-by=".">
                     <xsl:value-of select="."/>
                     <xsl:text>, </xsl:text>
                 </xsl:for-each-group>
@@ -247,7 +247,7 @@
             </xsl:for-each-group>
             <xsl:text>a/ai</xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="descendant::w[matches(., 'ai')]" group-by=".">
+            <xsl:for-each-group select="descendant::w[matches(., 'ai')]" group-by="@lemma">
                 <xsl:sort order="ascending"/>
                 <xsl:variable select="@lemma" name="lemma"/>
                 <xsl:if test="not(matches(@lemma, 'ai')) and matches(@lemma, 'a')">
@@ -255,7 +255,7 @@
                     <xsl:text> (</xsl:text>
                     <xsl:value-of select="@lemma"/>
                     <xsl:text>) : </xsl:text>
-                    <xsl:for-each-group select="//w[@lemma = $lemma]" group-by=".">
+                    <xsl:for-each-group select="current-group()" group-by=".">
                         <xsl:value-of select="."/>
                         <xsl:text>, </xsl:text>
                     </xsl:for-each-group>
