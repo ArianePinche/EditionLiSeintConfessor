@@ -389,6 +389,44 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Evolution de e fermé</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Forme alternantive des infinitifs : seîr, caïr/keïr et veïr</xsl:text><!-- Inexsitant dans le corpus pour l'instant-->
+            
+            <xsl:text>formes infinitives de voir </xsl:text><xsl:value-of select="count(//w[@lemma='vëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma='vëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
+              <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:for-each-group select="//w[text() = 've[ï|i]r']" group-by=".">
+                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            
+            <xsl:text>formes infinitives de sëoir </xsl:text><xsl:value-of select="count(//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
+                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:for-each-group select="//w[text() = 'se[ï|i]r']" group-by=".">
+                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            
+            <xsl:text>formes infinitives de sëoir </xsl:text><xsl:value-of select="count(//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
+                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:for-each-group select="//w[text() = 'se[ï|i]r']" group-by=".">
+                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+            </xsl:for-each-group>
+            
+            <xsl:text>&#10;&#10;</xsl:text>
+            <xsl:text>-ilius , -ilis > pic. ius, ieus</xsl:text>
+            <xsl:for-each-group select="//w[ends-with(text(), 'ius')]" group-by="@lemma">
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#109;</xsl:text><xsl:value-of select="."/><xsl:text>&#109;</xsl:text><xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;&#10;</xsl:text>
+            </xsl:for-each-group>
+            
+            
+            
         </xsl:result-document>
     </xsl:template>
 
