@@ -20,6 +20,19 @@
             <!-- Traitement des vocalismes / Plan // ac la Petie Grammaire de l'ancien picard-->
             
             <!-- 1. Voyelles toniques -->
+            
+            <!-- a initial -->
+            
+            <xsl:variable name="regex_ainit" select="'^[a-z]a'"/>
+            <xsl:variable name="regex_ahiatus" select="'^[a-z]?a[aeiou]?'"/>
+            <xsl:text>A initiale en hiatus </xsl:text>
+            <xsl:for-each-group select="w[matches(fn:normalize(.), $regex_ainit)]" group-by=".">
+                <xsl:text>(</xsl:text><xsl:value-of select="count(.)"/><xsl:text> dont </xsl:text>
+                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/><xsl:text> :</xsl:text>
+                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/>
+            </xsl:for-each-group>
+            
+            
             <!-- a libre tonique  > ei §2 -->
             <xsl:text>Mot&#09;Nombres d'occurrences en ei&#09;Nombre d'occurrences total&#10;</xsl:text>
             <xsl:for-each-group select="//w[contains(text(), 'ei') and not(contains(@type,'OUT'))]" group-by="@lemma">
