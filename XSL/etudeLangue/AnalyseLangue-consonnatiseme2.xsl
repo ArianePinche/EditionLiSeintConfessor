@@ -22,7 +22,7 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Groupe scy :  assourdissement de la finale&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(text(), '^\w*che\s?$') and not(matches(@lemma, '^\w*che$'))]" group-by="@lemma">
+            <xsl:for-each-group select="//w[matches(text(), '^\w*ch\i?e[r|s]?$') and not(matches(@lemma, '^\w*ch\i?e[r|s]?'))]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
                 <xsl:for-each-group select="current-group()" group-by=".">
