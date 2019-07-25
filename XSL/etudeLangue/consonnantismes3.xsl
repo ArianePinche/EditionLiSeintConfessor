@@ -86,6 +86,42 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>chute de la consonne d'épenthèse</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>l(d/b)r</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[not(matches(text(), '^^\w*l(d|b)r\w*$')) and matches(@lemma,'^\w*l(d|b)r\w*\d?$')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@lemma"/>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>n(d/b)r</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[not(matches(text(), '^^\w*n(b|d)r\w*$')) and matches(@lemma,'^\w*n(d|b)r\w*\d?$')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@lemma"/>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>m(d/b)l</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[not(matches(text(), '^^\w*m(b|d)l\w*$')) and matches(@lemma,'^\w*m(d|b)l\w*\d?$')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@lemma"/>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <!-- Compléter les cas avec les verbes conjugués après-->
+            <xsl:text>&#10;</xsl:text>
             
             
         </xsl:result-document>
