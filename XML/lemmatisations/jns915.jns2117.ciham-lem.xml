@@ -244,9 +244,9 @@
                     <w xml:id="t114" n="114" lemma="et"
                        type="POS=CONcoo|MORPH=empty" >et</w>
                     <w xml:id="t115" n="115" lemma="un"
-                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=n" >un</w>
+                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=r" >un</w>
                     <w xml:id="t116" n="116" lemma="poi"
-                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n" >pou</w>
+                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >pou</w>
                     <w xml:id="t117" n="117" lemma="après"
                        type="POS=ADVgen|DEGRE=-" >aprés</w>
                     <w xml:id="t118" n="118" lemma="si"
@@ -5594,7 +5594,7 @@
                     <w xml:id="t2789" n="2789" lemma="sor2"
                        type="POS=PRE|MORPH=empty" >sor</w>
                     <w xml:id="t2790" n="2790" lemma="le"
-                       type="POS=DETdef|NOMB.=s|GENRE=m|CAS=r" >li</w>
+                       type="POS=PROper|PERS.=3|NOMB.=s|GENRE=m|CAS=r" >li</w>
                     <w xml:id="t2791" n="2791" lemma="estre1"
                        type="POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s" >estoit</w>
                     <w xml:id="t2792" n="2792" lemma=","
@@ -7858,7 +7858,7 @@
                     <w xml:id="t3921" n="3921" lemma="où"
                        type="POS=PROrel|NOMB.=s|GENRE=m|CAS=i" >ou</w>
                     <w xml:id="t3922" n="3922" lemma="nostre"
-                       type="POS=DETpos|PERS.=1|NOMB.=s|GENRE=m|CAS=r" >nos</w>
+                       type="POS=DETpos|PERS.=1|NOMB.=s|GENRE=m|CAS=n" >nos</w>
                     <w xml:id="t3923" n="3923" lemma="saint"
                        type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p" >seinz</w>
                     <w xml:id="t3924" n="3924" lemma="oste"
@@ -7916,7 +7916,7 @@
                     <w xml:id="t3950" n="3950" lemma="et"
                        type="POS=CONcoo|MORPH=empty" >et</w>
                     <w xml:id="t3951" n="3951" lemma="mon1"
-                       type="POS=DETpos|PERS.=1|NOMB.=p|GENRE=m|CAS=n" >mes</w>
+                       type="POS=DETpos|PERS.=1|NOMB.=p|GENRE=m|CAS=r" >mes</w>
                     <w xml:id="t3952" n="3952" lemma="compagnon"
                        type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n" >compeinz</w>
                     <w xml:id="t3953" n="3953" lemma=","
@@ -16310,11 +16310,11 @@
                     <w xml:id="t8147" n="8147" lemma="fors1"
                        type="POS=ADVgen|DEGRE=-" >fors</w>
                     <w xml:id="t8148" n="8148" lemma="un"
-                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=r" >uns</w>
+                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=n" >uns</w>
                     <w xml:id="t8149" n="8149" lemma="sol1"
-                       type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p" >seus</w>
+                       type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p" >seus</w>
                     <w xml:id="t8150" n="8150" lemma="prestre"
-                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >prestres</w>
+                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n" >prestres</w>
                     <w xml:id="t8151" n="8151" lemma="qui"
                        type="POS=PROrel|NOMB.=p|GENRE=m|CAS=n" >qi</w>
                     <w xml:id="t8152" n="8152" lemma="avoir"
@@ -19318,7 +19318,7 @@
                     <w xml:id="t9651" n="9651" lemma="Zacharie"
                        type="POS=NOMpro|NOMB.=s|GENRE=m|CAS=n" >Zacharie</w>
                     <w xml:id="t9652" n="9652" lemma="le"
-                       type="POS=DETdef|NOMB.=s|GENRE=f|CAS=r" >le</w>
+                       type="POS=PROper|PERS.=3|NOMB.=s|GENRE=f|CAS=r" >le</w>
                     <w xml:id="t9653" n="9653" lemma="ravoir1"
                        type="POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s" >rot</w>
                     <w xml:id="t9654" n="9654" lemma="por2"
@@ -19884,7 +19884,7 @@
                     <w xml:id="t9934" n="9934" lemma="a3"
                        type="POS=PRE|MORPH=empty" >a</w>
                     <w xml:id="t9935" n="9935" lemma="us"
-                       type="POS=DETndf|NOMB.=p|GENRE=m|CAS=r" >us</w>
+                       type="POS=NOMcom|NOMB.=p|GENRE=m|CAS=r" >us</w>
                     <w xml:id="t9936" n="9936" lemma="et"
                        type="POS=CONcoo|MORPH=empty" >et</w>
                     <w xml:id="t9937" n="9937" lemma="a3"
@@ -21734,7 +21734,7 @@
                     <w xml:id="t10859" n="10859" lemma="que4"
                        type="POS=CONsub|MORPH=empty" >qe</w>
                     <w xml:id="t10860" n="10860" lemma="un"
-                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=r" >uns</w>
+                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=n" >uns</w>
                     <w xml:id="t10861" n="10861" lemma="serpent"
                        type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n" >serpenz</w>
                     <w xml:id="t10862" n="10862" lemma="avoir"
@@ -31186,9 +31186,9 @@
                     <w xml:id="t15585" n="15585" lemma=","
                        type="POS=PONfbl|MORPH=empty" >,</w>
                     <w xml:id="t15586" n="15586" lemma="le"
-                       type="POS=DETdef|NOMB.=p|GENRE=m|CAS=n" >les</w>
+                       type="POS=DETdef|NOMB.=p|GENRE=m|CAS=r" >les</w>
                     <w xml:id="t15587" n="15587" lemma="benëir"
-                       type="POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p" >beneois</w>
+                       type="POS=ADJqua|NOMB.=p|GENRE=m|CAS=r|DEGRE=p" >beneois</w>
                     <w xml:id="t15588" n="15588" lemma="apostle"
                        type="POS=NOMcom|NOMB.=p|GENRE=m|CAS=r" >apostres</w>
                     <w xml:id="t15589" n="15589" lemma="."
@@ -33946,9 +33946,9 @@
                     <w xml:id="t16965" n="16965" lemma="adès"
                        type="POS=ADVgen|DEGRE=-" >adés</w>
                     <w xml:id="t16966" n="16966" lemma="le"
-                       type="POS=DETdef|NOMB.=s|GENRE=m|CAS=r" >li</w>
+                       type="POS=DETdef|NOMB.=s|GENRE=m|CAS=n" >li</w>
                     <w xml:id="t16967" n="16967" lemma="uile"
-                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >oiles</w>
+                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n" >oiles</w>
                     <w xml:id="t16968" n="16968" lemma=","
                        type="POS=PONfbl|MORPH=empty" >,</w>
                     <w xml:id="t16969" n="16969" lemma="si"
@@ -38878,9 +38878,9 @@
                     <w xml:id="t19431" n="19431" lemma="avoir"
                        type="POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s" >avoit</w>
                     <w xml:id="t19432" n="19432" lemma="un"
-                       type="POS=DETndf|NOMB.=s|GENRE=f|CAS=r" >un</w>
+                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=r" >un</w>
                     <w xml:id="t19433" n="19433" lemma="idle"
-                       type="POS=NOMcom|NOMB.=s|GENRE=f|CAS=r" >ydre</w>
+                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >ydre</w>
                     <w xml:id="t19434" n="19434" lemma="."
                        type="POS=PONfrt|MORPH=empty" >.</w>
                     <w xml:id="t19435" n="19435" lemma="ce1"
@@ -39414,11 +39414,11 @@
                     <w xml:id="t19699" n="19699" lemma="par"
                        type="POS=PRE|MORPH=empty" >par</w>
                     <w xml:id="t19700" n="19700" lemma="un"
-                       type="POS=DETndf|NOMB.=s|GENRE=m|CAS=r" >uns</w>
+                       type="POS=DETndf|NOMB.=p|GENRE=m|CAS=r" >uns</w>
                     <w xml:id="t19701" n="19701" lemma="jor"
-                       type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >jorz</w>
+                       type="POS=NOMcom|NOMB.=p|GENRE=m|CAS=r" >jorz</w>
                     <w xml:id="t19702" n="19702" lemma="pasquerez"
-                       type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p" >Pasqueres</w>
+                       type="POS=ADJqua|NOMB.=p|GENRE=m|CAS=r|DEGRE=p" >Pasqueres</w>
                     <w xml:id="t19703" n="19703" lemma="que4"
                        type="POS=CONsub|MORPH=empty" >que</w>
                     <w xml:id="t19704" n="19704" lemma="le"
@@ -43525,7 +43525,7 @@
                        type="POS=NOMcom|NOMB.=s|GENRE=f|CAS=n" >tempeste</w>
                     <w xml:id="t21755" n="21755" lemma="qui"
                        type="POS=PROrel|NOMB.=s|GENRE=f|CAS=n" >qi</w>
-                    <w xml:id="t21756" n="21756" lemma="son4"
+                    <w xml:id="t21756" n="21756" lemma="lor2"
                        type="POS=DETpos|PERS.=3|NOMB.=s|GENRE=m|CAS=r" >lor</w>
                     <w xml:id="t21757" n="21757" lemma="mast"
                        type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=r" >mast</w>
