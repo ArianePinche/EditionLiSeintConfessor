@@ -15,682 +15,1005 @@
         <xsl:result-document href="../analyseMorphologique2_pronoms.tsv">
             <xsl:text>&#10;</xsl:text>
             
-            <xsl:variable name="CSSm"/>
-            <xsl:variable name="CSSf"/>
-            <xsl:variable name="CSRm"/>
-            <xsl:variable name="CSRf"/>
-            <xsl:variable name="CSIm"/>
-            <xsl:variable name="CSIf"/>
-            <xsl:variable name="pers1"/>
-            <xsl:variable name="pers2"/>
-            <xsl:variable name="pers3"/>
-            <xsl:variable name="CatGram"/>
-            <xsl:variable name="lem"/>
+            <xsl:variable name="CSSm" select="'NOMB.=s\|GENRE=m\|CAS=n'"/>
+            <xsl:variable name="CSSf" select="'NOMB.=s\|GENRE=f\|CAS=n'"/>
+            <xsl:variable name="CSSn" select="'NOMB.=s\|GENRE=n\|CAS=n'"/>
+            <xsl:variable name="CSRm" select="'NOMB.=s\|GENRE=m\|CAS=r'"/>
+            <xsl:variable name="CSRf" select="'NOMB.=s\|GENRE=f\|CAS=r'"/>
+            <xsl:variable name="CSRn" select="'NOMB.=s\|GENRE=n\|CAS=r'"/>
+            <xsl:variable name="CSIm" select="'NOMB.=s\|GENRE=m\|CAS=i'"/>
+            <xsl:variable name="CSIf" select="'NOMB.=s\|GENRE=f\|CAS=i'"/>
+            <xsl:variable name="CSIn" select="'NOMB.=s\|GENRE=n\|CAS=i'"/>
+            <xsl:variable name="CPSm" select="'NOMB.=p\|GENRE=m\|CAS=n'"/>
+            <xsl:variable name="CPSf" select="'NOMB.=p\|GENRE=f\|CAS=n'"/>
+            <xsl:variable name="CPSn" select="'NOMB.=p\|GENRE=n\|CAS=n'"/>
+            <xsl:variable name="CPRm" select="'NOMB.=p\|GENRE=m\|CAS=r'"/>
+            <xsl:variable name="CPRf" select="'NOMB.=p\|GENRE=f\|CAS=r'"/>
+            <xsl:variable name="CPRn" select="'NOMB.=p\|GENRE=n\|CAS=r'"/>
+            <xsl:variable name="CPIm" select="'NOMB.=p\|GENRE=m\|CAS=i'"/>
+            <xsl:variable name="CPIf" select="'NOMB.=p\|GENRE=f\|CAS=i'"/>
+            <xsl:variable name="CPIn" select="'NOMB.=p\|GENRE=n\|CAS=i'"/>
             
             <xsl:text>Les pronoms personnels&#10;</xsl:text>
-            <xsl:variable name="CatGram"/>
+            <xsl:variable name="CatGram" select="'PROper'"/>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>P1</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>cas&#09;masc&#09;fém&#10;</xsl:text>
-            <xsl:text>CSS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|PERS.=1\|NOMB.=s\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
+            
+            <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@type"/>
+                <xsl:variable name="lemma" select="current-grouping-key()"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="$lemma"/>
+                <xsl:text> nb.</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
+                <xsl:text>CSS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSSm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSSf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSSn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CIS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=m\|CAS=i')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=m\|CAS=i')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=i')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=s\|GENRE=f\|CAS=i')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSRm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CSP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSRf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSRn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSIm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>CIP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=i')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=m\|CAS=i')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=i')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=PROper\|NOMB.=p\|GENRE=f\|CAS=i')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSIf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-     
-            <xsl:text>§63 L'article indéfini&#10;</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>cas&#09;masc&#09;fém&#10;</xsl:text>
-            <xsl:text>CSS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CSIn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CSP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPSm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=s\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPSf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CSP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPSn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPRm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETndf\|NOMB.=p\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPRf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>§63 L'article possessif&#10;</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>1ere personne</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>cas&#09;masc&#09;fém&#10;</xsl:text>
-            <xsl:text>CSS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPRn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPIm)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=s\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIm)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPIf)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CSP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIf)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type, $CPIn)]"
+                    group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/>
+                    <xsl:text> (nb. </xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.1|NOMB.=p\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
+                    <xsl:value-of
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIn)) and @lemma = $lemma]) * 100)"/>
+                    <xsl:text>%)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>§63 L'article possessif&#10;</xsl:text>
+            
+            <!-- fin ici compte pourcentage -->
+            <xsl:text>Les pronoms demonstratifs&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'PROdem'"/>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>2ere personne</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>cas&#09;masc&#09;fém&#10;</xsl:text>
-            <xsl:text>CSS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=s\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CSP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.2|NOMB.=p\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>3e personne</xsl:text>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>cas&#09;masc&#09;fém&#10;</xsl:text>
-            <xsl:text>CSS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRS</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=s\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
+            
+            <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@type"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text> nb.</xsl:text><xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
+                <xsl:text>CSS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CSP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>CSP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=m\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=m\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=f\|CAS=n')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=f\|CAS=n')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
+            
+            <xsl:text>Les pronoms possessifs&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'PROpos'"/>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@type"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text> nb.</xsl:text><xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
+                <xsl:text>CSS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CSP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>CRP</xsl:text>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=m\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=m\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
-            </xsl:for-each-group>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=f\|CAS=r')]"
-                group-by="lower-case(.)">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of
-                    select="round(count(current-group()) div count(//w[matches(@type, 'POS=DETpos\|PERS.3|NOMB.=p\|GENRE=f\|CAS=r')]) * 100)"/>
-                <xsl:text>% - nb: </xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)</xsl:text>
-                <xsl:if test="position() != last()">
-                    <xsl:text>, </xsl:text>
-                </xsl:if>
+            
+            <xsl:text>Les pronoms relatifs&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'PROrel'"/>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@type"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text> nb.</xsl:text><xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
+                <xsl:text>CSS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CSP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>Les pronoms interrogatifs&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'PROint'"/>
             <xsl:text>&#10;</xsl:text>
-
+            
+            <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@type"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text> nb.</xsl:text><xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
+                <xsl:text>CSS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIS&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CSIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CSP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPSn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CRP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPRn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:text>CIP&#09;</xsl:text>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIm)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIf)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:for-each-group select="current-group()[matches(@type,$CPIn)]" group-by="lower-case(.)">
+                    <xsl:sort order="ascending" select="lower-case(.)"/>
+                    <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>Les pronoms indéfinis&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'PROind'"/>
+            <xsl:text>&#10;</xsl:text>
+           
         </xsl:result-document>
 
     </xsl:template>
