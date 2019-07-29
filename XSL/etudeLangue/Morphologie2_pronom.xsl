@@ -921,7 +921,7 @@
             <xsl:text>&#10;</xsl:text>
             
             <xsl:text>Les pronoms relatifs&#10;</xsl:text>
-            <xsl:variable name="CatGram" select="'PROrel'"/>
+            <xsl:variable name="CatGram" select="'PROrel\|'"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@type"/>
@@ -941,7 +941,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, $CSSm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -956,7 +956,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSSf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -971,7 +971,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSSn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -987,7 +987,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSRm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1002,7 +1002,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSRf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1017,7 +1017,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSRn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSRn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1033,7 +1033,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSIm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1048,7 +1048,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSIf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1063,7 +1063,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSIn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CSIn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1079,7 +1079,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPSm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1094,7 +1094,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPSf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1109,7 +1109,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPSn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPSn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1126,7 +1126,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPRm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1141,7 +1141,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPRf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1156,7 +1156,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPRn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPRn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1172,7 +1172,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIm)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPIm)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1187,7 +1187,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIf)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPIf)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
@@ -1202,7 +1202,7 @@
                     <xsl:value-of select="count(current-group())"/>
                     <xsl:text>, </xsl:text>
                     <xsl:value-of
-                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CPIn)) and @lemma = $lemma]) * 100)"/>
+                        select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram,  $CPIn)) and @lemma = $lemma]) * 100)"/>
                     <xsl:text>%)</xsl:text>
                     <xsl:if test="position() != last()">
                         <xsl:text>, </xsl:text>
