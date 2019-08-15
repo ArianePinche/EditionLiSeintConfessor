@@ -12,7 +12,7 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
 
-        <xsl:result-document href="../analyseMorphologique2_pronoms.tsv">
+        <xsl:result-document href="../../resultats/analyseMorphologique2_pronoms.tsv">
             <xsl:text>&#10;</xsl:text>
             
             <xsl:variable name="CSSm" select="'NOMB.=s\|GENRE=m\|CAS=n'"/>

@@ -15,7 +15,7 @@
         
        
 
-        <xsl:result-document href="../analyseCorpus_atonique.tsv">
+        <xsl:result-document href="../../resultats/Vocalisme1_atonique.tsv">
 
             <!-- Traitement des vocalismes / Plan // ac la Petie Grammaire de l'ancien picard-->
             

@@ -15,7 +15,7 @@
         
         
         
-        <xsl:result-document href="../analyseCorpus_itonique.tsv">
+        <xsl:result-document href="../../resultats//Vocalisme2_itonique.tsv">
             
             <!-- Traitement des vocalismes / Plan // ac la Petie Grammaire de l'ancien picard-->
             

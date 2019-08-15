@@ -9,7 +9,7 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
         
-        <xsl:result-document href="../analyseconsonantisme3.tsv">
+        <xsl:result-document href="../../resultats//analyseconsonantisme3.tsv">
             <xsl:text>&#10;</xsl:text>
          
             <xsl:text>§57 métathèse du groupe er/re &#10;</xsl:text>

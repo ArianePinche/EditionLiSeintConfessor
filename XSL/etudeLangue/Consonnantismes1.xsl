@@ -19,7 +19,7 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
         <xsl:message select="normalize-unicode('éûü')"></xsl:message>
-        <xsl:result-document href="../analyseGutturales.tsv">
+        <xsl:result-document href="../../resultats//consonnantismes1.tsv">
           <xsl:text>C - Ch </xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:text>Ch </xsl:text><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[matches(fn:normalize(@lemma), $regex_ch)])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>C </xsl:text><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[matches(fn:normalize(@lemma), $regex_c)])"/><xsl:text>&#10;</xsl:text>

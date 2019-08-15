@@ -9,7 +9,7 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
        
-        <xsl:result-document href="../analyseconsonantisme2.tsv">
+        <xsl:result-document href="../../resultats/analyseconsonantisme2.tsv">
             <xsl:text>&#10;</xsl:text>
           <xsl:text>Groupe scy :  ss&#10;</xsl:text>
             <xsl:for-each-group select="//w[matches(text(), '^\w*ss\w*') and not(matches(@lemma, '^\w*ss\w*'))]" group-by="@lemma">

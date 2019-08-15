@@ -7,7 +7,7 @@
     <xsl:output method="text"/>
     <xsl:template match="/">
 
-        <xsl:result-document href="../analyseMorphologique1_Déterminants.tsv">
+        <xsl:result-document href="../../resultats/analyseMorphologique1_Déterminants.tsv">
             <xsl:text>&#10;</xsl:text>
 
             <xsl:variable name="CSSm" select="'NOMB.=s\|GENRE=m\|CAS=n'"/>
