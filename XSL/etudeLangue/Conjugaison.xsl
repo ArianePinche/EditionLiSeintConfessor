@@ -5,7 +5,7 @@
     exclude-result-prefixes="xs" version="2.0">
     
     <xsl:template match="/">
-      <xsl:result-document href="Conjugaison.tsv">
+      <xsl:result-document href="../../resultats/Conjugaison.tsv">
           <!-- Personnes -->
           <xsl:variable name="P1" select="'PERS.=1\|NOMB.=s'"/>
           <xsl:variable name="P2" select="'PERS.=2\|NOMB.=s'"/>
