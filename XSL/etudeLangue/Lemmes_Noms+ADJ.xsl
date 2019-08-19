@@ -11,11 +11,10 @@
     version="2.0">
     <xsl:output method="text"/>
     
-    <xsl:variable name="mesDocs" select="collection('../xml/?select=*_pos.xml')"/>
     
     
     <xsl:template match="teiCorpus">
-        <xsl:result-document href="../../resultats/lemmesNom+ADJ.tsv">
+        <xsl:result-document href="../../resultats/lemmesNom+ADJ+VER.tsv">
             <xsl:text>&#10;Substantifs</xsl:text>
             <xsl:text>&#10;</xsl:text>
         <xsl:for-each-group select=".//w[matches(@type, 'NOMcom')]" group-by="@lemma">
@@ -34,7 +33,16 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#10;</xsl:text>
         </xsl:for-each-group>
+            <xsl:text>&#10;Verbes</xsl:text>
         <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select=".//w[matches(@type, 'VERcjg')]" group-by="@lemma">
+                <xsl:sort select="count(current-group())" order="descending"/>
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>&#9;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
