@@ -136,10 +136,10 @@
                     <w xml:id="t60" n="60" lemma="pere"
                        type="POS=NOMcom|NOMB.=s|GENRE=m|CAS=n">peres</w>
                     <w xml:id="t61" n="61" lemma="saint"
-                       type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p">seint</w>
+                       type="POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p">seint</w>
                     <w xml:id="t62" n="62" lemma="Jerome"
                        type="POS=NOMpro|NOMB.=s|GENRE=m|CAS=r">Jerome</w>
-                    <w xml:id="t63" n="63" lemma="estre1"
+                    <w xml:id="t63" n="63" lemma="avoir"
                        type="POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">eut</w>
                     <w xml:id="t64" n="64" lemma="a3"
                        type="POS=PRE|MORPH=empty">a</w>
@@ -4976,7 +4976,7 @@
                     <w xml:id="t2480" n="2480" lemma="il"
                        type="POS=PROper|PERS.=3|NOMB.=p|GENRE=m|CAS=r">les</w>
                     <w xml:id="t2481" n="2481" lemma="laissier"
-                       type="POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">lessast</w>
+                       type="POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s">lessast</w>
                     <w xml:id="t2482" n="2482" lemma="le"
                        type="POS=OUT|MORPH=empty">l</w>
                     <w xml:id="t2483" n="2483" lemma="‘"
@@ -5254,7 +5254,7 @@
                     <w xml:id="t2619" n="2619" lemma="maison"
                        type="POS=NOMcom|NOMB.=s|GENRE=f|CAS=r">meson</w>
                     <w xml:id="t2620" n="2620" lemma="faire"
-                       type="POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=2|NOMB.=p">faciez</w>
+                       type="POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=2|NOMB.=p">faciez</w>
                     <w xml:id="t2621" n="2621" lemma="prendre"
                        type="POS=VERinf|NOMB.=x|GENRE=x|CAS=x">prendre</w>
                     <w xml:id="t2622" n="2622" lemma="le"
@@ -5486,7 +5486,7 @@
                     <w xml:id="t2735" n="2735" lemma="vos"
                        type="POS=PROper|PERS.=2|NOMB.=p|GENRE=m|CAS=n">vos</w>
                     <w xml:id="t2736" n="2736" lemma="avoir"
-                       type="POS=VERcjg|MODE=con|PERS.=1|NOMB.=p">auroiz</w>
+                       type="POS=VERcjg|MODE=con|PERS.=2|NOMB.=p">auroiz</w>
                     <w xml:id="t2737" n="2737" lemma="comander"
                        type="POS=VERppe|NOMB.=s|GENRE=n|CAS=r">conmandé</w>
                     <w xml:id="t2738" n="2738" lemma="a3"
@@ -5670,7 +5670,7 @@
                     <w xml:id="t2827" n="2827" lemma="et"
                        type="POS=CONcoo|MORPH=empty">et</w>
                     <w xml:id="t2828" n="2828" lemma="recevoir"
-                       type="POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">recivrent</w>
+                       type="POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">reciurent</w>
                     <w xml:id="t2829" n="2829" lemma="le"
                        type="POS=DETdef|NOMB.=s|GENRE=f|CAS=r">la</w>
                     <w xml:id="t2830" n="2830" lemma="benëiçon"
