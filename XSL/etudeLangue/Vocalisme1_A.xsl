@@ -21,19 +21,7 @@
             
             <!-- 1. Voyelles toniques -->
             
-            <!-- a initial -->
-            
-            <xsl:variable name="regex_ainit" select="'^[a-z]a'"/>
-            <xsl:variable name="regex_ahiatus" select="'^[a-z]?a[aeiou]?'"/>
-            <xsl:text>A initiale en hiatus </xsl:text>
-            <xsl:for-each-group select="w[matches(fn:normalize(.), $regex_ainit)]" group-by=".">
-                <xsl:text>(</xsl:text><xsl:value-of select="count(.)"/><xsl:text> dont </xsl:text>
-                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/><xsl:text> :</xsl:text>
-                <xsl:value-of select="matches(fn:normalize(current-group()), $regex_ahiatus)"/>
-            </xsl:for-each-group>
-            
-            
-            <!-- a libre tonique  > ei §2 -->
+            <!-- a libre tonique  > ei §1 -->
             <xsl:text>Mot&#09;Nombres d'occurrences en ei&#09;Nombre d'occurrences total&#10;</xsl:text>
             <xsl:for-each-group select="//w[contains(text(), 'ei') and not(contains(@type,'OUT'))]" group-by="@lemma">
                 <xsl:sort select="current-grouping-key()" order="ascending"></xsl:sort>
@@ -49,7 +37,7 @@
             <!-- avu  > au, eu, oi - essai sur poi §2 -->
             
             <xsl:text>Graphie du mot poi&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'poi']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'poi']" group-by="lower-case(.)">
                 <xsl:value-of select="@lemma"/>
                 <xsl:text>(</xsl:text>
                 <xsl:value-of select="count(//w[@lemma = 'poi'])"/>
@@ -86,7 +74,7 @@
             
             <xsl:text>Graphie du mot tel&#10;</xsl:text>
             <xsl:text>Lemme : tel&#09;</xsl:text><xsl:value-of select="count(//w[@lemma = 'tel'])"/><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'tel']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'tel']" group-by="lower-case(.)">
                 <xsl:value-of select="."/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
@@ -94,9 +82,9 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             
-            <xsl:text>Graphie du mot tel&#10;</xsl:text>
+            <xsl:text>Graphie du mot qel&#10;</xsl:text>
             <xsl:text>Lemme : quel1&#09;</xsl:text><xsl:value-of select="count(//w[@lemma = 'quel1'])"/><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'quel1']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'quel1']" group-by="lower-case(.)">
                 <xsl:value-of select="."/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
@@ -112,7 +100,7 @@
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:if test="current-group()[matches(text(),'^\w+aige[s]?$')]">
                 <xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="current-group()" group-by=".">
+                <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                     <xsl:value-of select="."/><xsl:text>, </xsl:text>
                 </xsl:for-each-group>
                 </xsl:if>
@@ -147,7 +135,7 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
+                group-by="lower-case(.)">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="ends-with(., 'ie')">
                     <xsl:value-of select="."/>
@@ -166,7 +154,7 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
+                group-by="lower-case(.)">
                 <xsl:if test="ends-with(., 'iee')">
                     <xsl:value-of select="."/>
                     <xsl:text>, </xsl:text>
@@ -176,7 +164,7 @@
             <xsl:text>Autre</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="descendant::w[@type = 'POS=VERppe|NOMB.=s|GENRE=f|CAS=n']"
-                group-by=".">
+                group-by="lower-case(.)">
                 <xsl:sort order="ascending"/>
                 <xsl:if test="not(ends-with(., 'iee')) and not(ends-with(., 'ie'))">
                     <xsl:value-of select="."/>
@@ -188,7 +176,7 @@
 
             <xsl:text>Graphie du mot pere&#10;</xsl:text>
             <xsl:text>Lemme : pere&#09;</xsl:text><xsl:value-of select="count(//w[@lemma = 'pere'])"/><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'pere']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'pere']" group-by="lower-case(.)">
                 <xsl:value-of select="."/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
@@ -198,7 +186,7 @@
 
             <xsl:text>Graphie du mot larme&#10;</xsl:text>
             <xsl:text>Lemme : larme&#09;</xsl:text><xsl:value-of select="count(//w[@lemma = 'larme'])"/><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'larme']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'larme']" group-by="lower-case(.)">
                 <xsl:value-of select="."/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
@@ -207,7 +195,7 @@
             <xsl:text>&#10;</xsl:text>
             
             <xsl:text>Graphie du mot daerrain&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'däerrain']" group-by=".">
+            <xsl:for-each-group select="//w[@lemma = 'däerrain']" group-by="lower-case(.)">
                 <xsl:value-of select="@lemma"/>
                 <xsl:text>(</xsl:text>
                 <xsl:value-of select="count(//w[@lemma = 'däerrain'])"/>
@@ -222,7 +210,7 @@
             <xsl:text>Graphie de la P3 pst de savoir&#10;</xsl:text>
             <xsl:for-each-group
                 select="//w[@lemma='savoir' and @type='POS=VERcjg\|MODE=ind\|TEMPS=pst\|PERS.=3\|NOMB.=s']"
-                group-by=".">
+                group-by="lower-case(.)">
                 <xsl:value-of select="@lemma"/>
                 <xsl:text>(</xsl:text>
                 <xsl:value-of select="count(//w[@lemma='savoir' and @type='POS=VERcjg\|MODE=ind\|TEMPS=pst\|PERS.=3\|NOMB.=s'])"/>
@@ -252,7 +240,7 @@
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="@lemma"/>
                 <xsl:text>) : </xsl:text>
-                <xsl:for-each-group select="current-group()" group-by=".">
+                <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                     <xsl:value-of select="."/>
                     <xsl:text>, </xsl:text>
                 </xsl:for-each-group>
@@ -268,7 +256,7 @@
                     <xsl:text> (</xsl:text>
                     <xsl:value-of select="@lemma"/>
                     <xsl:text>) : </xsl:text>
-                    <xsl:for-each-group select="current-group()" group-by=".">
+                    <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                         <xsl:value-of select="."/>
                         <xsl:text>, </xsl:text>
                     </xsl:for-each-group>

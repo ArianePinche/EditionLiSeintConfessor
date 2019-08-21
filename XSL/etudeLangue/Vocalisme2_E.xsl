@@ -222,6 +222,20 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
 
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Graphie du mot chastel&#10;</xsl:text>
+            <xsl:text>Lemme : chastel&#09;</xsl:text>
+            <xsl:value-of select="count(//w[@lemma = 'chastel'])"/>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma = 'chastel']" group-by="lower-case(.)">
+                <xsl:sort order="descending" select="count(current-group())"/>
+                <xsl:value-of select="."/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            
 
             <xsl:text>§12 ellus/os > eaus, iaus/aus&#10;</xsl:text>
             <xsl:text>&#10;Recherche prospective&#10;</xsl:text>
@@ -350,7 +364,7 @@
             <xsl:text>mots en an</xsl:text>
             <xsl:for-each-group select="//w[matches(text(), '^\w*an\w*$')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="current-grouping-key()"/>
-                <xsl:if test="not(matches(@lemma, '^\w*an\w*\d?$'))">
+                <xsl:if test="not(matches(fn:normalize(@lemma), '^\w*an\w*\d?$'))">
                     <xsl:text>Lemme :</xsl:text>
                     <xsl:value-of select="current-grouping-key()"/>
                     <xsl:text>&#09;</xsl:text>
@@ -362,7 +376,13 @@
                         <xsl:text>&#09;</xsl:text>
                         <xsl:value-of select="count(current-group())"/>
                         <xsl:text>&#10;</xsl:text>
-
+                    </xsl:for-each-group>
+                    <xsl:for-each-group select="//w[@lemma = current-grouping-key() and matches(text(), '^\w*en\w*\d?$') ]" group-by=".">
+                        <xsl:sort order="ascending" select="current-grouping-key()"/>
+                        <xsl:value-of select="."/>
+                        <xsl:text>&#09;</xsl:text>
+                        <xsl:value-of select="count(current-group())"/>
+                        <xsl:text>&#10;</xsl:text>
                     </xsl:for-each-group>
                     <xsl:text>&#10;</xsl:text>
                 </xsl:if>
@@ -371,7 +391,7 @@
             <xsl:text>mots en en</xsl:text>
             <xsl:for-each-group select="//w[matches(text(), '^\w*en\w*$')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="current-grouping-key()"/>
-                <xsl:if test="not(matches(@lemma, '^\w*en\w*\d?$'))">
+                <xsl:if test="not(matches(fn:normalize(@lemma), '^\w*en\w*\d?$'))">
                     <xsl:text>Lemme :</xsl:text>
                     <xsl:value-of select="current-grouping-key()"/>
                     <xsl:text>&#09;</xsl:text>
@@ -383,7 +403,13 @@
                         <xsl:text>&#09;</xsl:text>
                         <xsl:value-of select="count(current-group())"/>
                         <xsl:text>&#10;</xsl:text>
-
+                    </xsl:for-each-group>
+                    <xsl:for-each-group select="//w[@lemma = current-grouping-key() and matches(text(), '^\w*an\w*\d?$') ]" group-by=".">
+                        <xsl:sort order="ascending" select="current-grouping-key()"/>
+                        <xsl:value-of select="."/>
+                        <xsl:text>&#09;</xsl:text>
+                        <xsl:value-of select="count(current-group())"/>
+                        <xsl:text>&#10;</xsl:text>
                     </xsl:for-each-group>
                     <xsl:text>&#10;</xsl:text>
                 </xsl:if>
@@ -398,31 +424,49 @@
             <xsl:for-each-group select="//w[@lemma='vëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
               <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
             </xsl:for-each-group>
-            <xsl:for-each-group select="//w[text() = 've[ï|i]r']" group-by=".">
-                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
-            </xsl:for-each-group>
+          
             
             <xsl:text>formes infinitives de sëoir </xsl:text><xsl:value-of select="count(//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
                 <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
             </xsl:for-each-group>
-            <xsl:for-each-group select="//w[text() = 'se[ï|i]r']" group-by=".">
-                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
-            </xsl:for-each-group>
+         
             
-            <xsl:text>formes infinitives de sëoir </xsl:text><xsl:value-of select="count(//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma='sëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
+            <xsl:text>formes infinitives de chëoir </xsl:text><xsl:value-of select="count(//w[@lemma='chëoir' and contains(@type, 'POS=VERinf')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma='chëoir' and contains(@type, 'POS=VERinf')]" group-by=".">
                 <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
             </xsl:for-each-group>
-            <xsl:for-each-group select="//w[text() = 'se[ï|i]r']" group-by=".">
-                <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
+          
+          
+            <xsl:text>&#10;&#10;</xsl:text>
+            <xsl:text>-gula > pic. iule</xsl:text>
+            <xsl:for-each-group select="//w[matches(fn:normalize(text()), '^\w*iule[s]?$')]" group-by="@lemma">
+                <xsl:sort select="current-grouping-key()" order="ascending"/>
+                <xsl:variable name="lemma" select="current-grouping-key()"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=$lemma]" group-by=".">
+                    <xsl:sort select="current-grouping-key()" order="ascending"/>
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text
+                    ><xsl:value-of select="count(current-group())"/></xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             
             <xsl:text>&#10;&#10;</xsl:text>
             <xsl:text>-ilius , -ilis > pic. ius, ieus</xsl:text>
             <xsl:for-each-group select="//w[ends-with(text(), 'ius')]" group-by="@lemma">
-                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#109;</xsl:text><xsl:value-of select="."/><xsl:text>&#109;</xsl:text><xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#10;&#10;</xsl:text>
+                <xsl:sort select="current-grouping-key()" order="ascending"/>
+                <xsl:variable name="lemma" select="current-grouping-key()"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=$lemma]" group-by=".">
+                    <xsl:sort select="current-grouping-key()" order="ascending"/>
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text
+                    ><xsl:value-of select="count(current-group())"/>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             
             
