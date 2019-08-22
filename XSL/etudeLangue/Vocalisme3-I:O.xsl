@@ -7,7 +7,7 @@
     <xsl:function name="fn:normalize">
         <xsl:param name="input"/>
         <xsl:value-of
-            select="translate(normalize-unicode(lower-case($input), 'NFKD'), 'áàâäéèêëíìîïóòôöúùûü', 'aaaaeeeeiiiioooouuuu')"
+            select="translate(normalize-unicode(lower-case($input), 'NFKD'), 'áàâäéèêëíìîïóòôöúùûüç', 'aaaaeeeeiiiioooouuuuc')"
         />
     </xsl:function>
     <xsl:output method="text"/>
@@ -15,7 +15,7 @@
 
 
 
-        <xsl:result-document href="../../resultats/Vocalisme3_itonique.tsv">
+        <xsl:result-document href="../../resultats/Vocalisme3_i-otonique.tsv">
 
             <!-- Traitement des vocalismes / Plan // ac la Petie Grammaire de l'ancien picard-->
 
@@ -29,7 +29,7 @@
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/>
                 <xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by="lower-case(.)">
                     <xsl:value-of select="."/>
                     <xsl:text>&#09;</xsl:text>
                     <xsl:value-of select="count(current-group())"/>
@@ -46,7 +46,7 @@
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="current-group()" group-by=".">
+                <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                     <xsl:value-of select="."/>
                     <xsl:text>&#09;</xsl:text>
                     <xsl:value-of select="count(current-group())"/>
@@ -58,7 +58,7 @@
             <xsl:text>Cas sparticulier fils</xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:for-each-group
                 select="//w[matches(@lemma, 'fil\d?')]" 
-                group-by=".">
+                group-by="lower-case(.)">
         
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#09;</xsl:text>
@@ -71,7 +71,7 @@
             <xsl:text>Vérification de au/o avec la conjugaison du verbe voloir&#10;</xsl:text>
             <xsl:for-each-group select="//w[@lemma='voloir']" group-by="@type">
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="current-group()" group-by=".">
+                <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                     <xsl:sort order="ascending" select="."/>
                <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/>
                <xsl:text>&#09;</xsl:text>
@@ -79,22 +79,26 @@
                 <xsl:text>&#10;</xsl:text>
            </xsl:for-each-group>
             <xsl:text>&#10;&#10;</xsl:text>
-            <xsl:text>Alternance graphique o/ou/eu&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^\w*or\d?$')]" group-by="@lemma">
-                <xsl:sort order="ascending" select="@lemma"/>
-                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
-                    <xsl:sort order="ascending" select="."/>
-                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
-                </xsl:for-each-group>
-                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>Alternance graphique o/ou + nasale&#10;</xsl:text>
+            <xsl:for-each-group select="//w[matches(fn:normalize(@lemma), '^\w*o[n|m]\w*\d?$') and matches(fn:normalize(.), '^\w*ou[n|m]')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="current-grouping-key()"/>
+               <xsl:variable name="lemma" select="@lemma"/>
+                <xsl:value-of select="$lemma"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=$lemma])"/><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=$lemma]" group-by="fn:normalize(.)">
+                    <xsl:sort order="ascending" select="fn:normalize(.)"/>
+                        <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
+                         </xsl:for-each-group>
+                    <xsl:text>&#10;</xsl:text>
+                
             </xsl:for-each-group>
             <xsl:text>&#10;&#10;</xsl:text>
+            
             <xsl:text>O fermé sous l’influence de yod > oi, o pic.&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^\w*oi\w*$') and not(matches(text(), '^\w*oi\w*$'))]" group-by="@lemma">
+            <xsl:for-each-group select="//w[matches(fn:normalize(@lemma), '^\w*oi\w*\d?$') and not(matches(fn:normalize(text()), '^\w*oi\w*'))]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
-                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by="lower-case(.)">
                     <xsl:sort order="ascending" select="."/>
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>

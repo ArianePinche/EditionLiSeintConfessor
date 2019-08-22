@@ -34,19 +34,19 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>§32 -- E PROTONIQUE + YOD > PIC. oi, i&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^\w*(oi|ai|ei)\w*\d?$') and not(matches(text(), '^\w*oi\w*$'))]" group-by="@lemma">
+            <xsl:text>§32 -- E PROTONIQUE + s > PIC. i&#10;</xsl:text>
+            <xsl:for-each-group select="//w[matches(fn:normalize(@lemma), '^\w*(o|a)is') and matches(text(), '\w*[^o|^a]is')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
                 <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
-                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:sort order="ascending" select="."/>
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>§34 – e protonique + l/n > i, ei, e&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^\w*(ei)(n)?(gn|ll)\w*\d?$') and not(matches(text(), '^\w*(i)(n)?(gn|ll)\w*\d?$'))]" group-by="@lemma">
+            <xsl:text>§34 – e protonique + l/n > i, ei&#10;</xsl:text>
+            <xsl:for-each-group select="//w[matches(fn:normalize(@lemma), '^\w*(ei)(n)?(gn|ll)') and matches(text(), '^\w*[^e]i(n)?(gn|ll)')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
                 <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
@@ -57,11 +57,21 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>§34 – o initial + n > a + n&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, '^\w*o(n|m)\w*\d?$') and not(matches(text(), '^\w*a(n|m)\w*\d?$'))]" group-by="@lemma">
+            <xsl:for-each-group select="//w[matches(@lemma, '^\w?o(n|m)\w*\d?$') and matches(text(), '^\w?a(n|m)')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
                 <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
-                    <xsl:sort order="ascending" select="count(current-group())"/>
+                    <xsl:sort order="ascending" select="."/>
+                    <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[matches(@lemma, 'damage')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="@lemma"/>
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by=".">
+                    <xsl:sort order="ascending" select="."/>
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>
                 <xsl:text>&#10;</xsl:text>

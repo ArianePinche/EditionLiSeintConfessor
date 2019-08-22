@@ -359,6 +359,48 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Graphie du mot tel&#10;</xsl:text>
+            <xsl:text>Lemme : tel&#09;</xsl:text>
+            <xsl:value-of select="count(//w[@lemma = 'tel'])"/>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma = 'tel']" group-by="lower-case(.)">
+                <xsl:sort order="descending" select="count(current-group())"/>
+                <xsl:value-of select="."/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Graphie du mot autel&#10;</xsl:text>
+            <xsl:text>Lemme : autel&#09;</xsl:text>
+            <xsl:value-of select="count(//w[@lemma = 'autel1'])"/>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma = 'autel1']" group-by="lower-case(.)">
+                <xsl:sort order="descending" select="count(current-group())"/>
+                <xsl:value-of select="."/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Graphie du mot quel&#10;</xsl:text>
+            <xsl:text>Lemme :quel1 &#09;</xsl:text>
+            <xsl:value-of select="count(//w[@lemma = 'quel1'])"/>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:for-each-group select="//w[@lemma = 'quel1']" group-by="lower-case(.)">
+                <xsl:sort order="descending" select="count(current-group())"/>
+                <xsl:value-of select="."/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
 
             <xsl:text>Confusion graphique an/en, une plus grande propension à fermer la consonne nasale ?</xsl:text>
             <xsl:text>mots en an</xsl:text>
@@ -449,7 +491,9 @@
                 <xsl:for-each-group select="//w[@lemma=$lemma]" group-by=".">
                     <xsl:sort select="current-grouping-key()" order="ascending"/>
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text
-                    ><xsl:value-of select="count(current-group())"/></xsl:for-each-group>
+                    ><xsl:value-of select="count(current-group())"/>
+                    <xsl:text>&#09;</xsl:text>
+                </xsl:for-each-group>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             
@@ -465,6 +509,7 @@
                     <xsl:sort select="current-grouping-key()" order="ascending"/>
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text
                     ><xsl:value-of select="count(current-group())"/>
+                    <xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
