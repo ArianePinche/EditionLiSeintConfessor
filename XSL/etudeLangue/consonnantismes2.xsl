@@ -129,9 +129,10 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>§50 s intérieur devant consonne entraine en r en pic&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(fn:normalize(text()), '^\w+r[zrtpqsdfghjklmwxcvbn]\w+$') and matches(fn:normalize(@lemma), '^\w+s[zrtpqsdfghjklmwxcvbn]\w+\d?$') and not(matches(@type,'POS=VER'))]" group-by="@lemma">
+            <xsl:for-each-group select="//w[matches(fn:normalize(text()), '^\w+r[zrtpqsdfghjklmwxcvbn]\w+$') and matches(fn:normalize(@lemma), '^\w+s[zrtpqsdfghjklmwxcvbn]\w+\d?$') and not(matches(@type,'POS=VERcjg'))]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:text>&#10;</xsl:text>
                 <xsl:for-each-group select="current-group()" group-by="lower-case(.)">
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>
@@ -144,6 +145,7 @@
             <xsl:for-each-group select="//w[matches(fn:normalize(@lemma), 'rl') and matches(fn:normalize(text()), 'll')]" group-by="@lemma">
                 <xsl:sort order="ascending" select="@lemma"/>
                 <xsl:value-of select="current-grouping-key()"/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(//w[@lemma=current-grouping-key()])"/><xsl:text>&#09;</xsl:text>
+                <xsl:text>&#10;</xsl:text>
                 <xsl:for-each-group select="//w[@lemma=current-grouping-key()]" group-by="lower-case(.)">
                     <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#09;</xsl:text>
                 </xsl:for-each-group>

@@ -40,28 +40,27 @@
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_che-i)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ce-i)]" />
                
-                <xsl:for-each select="current-group()[count($ch)!=0]">
-               <xsl:sort order="descending" select="current()[count($ch)]"/>
+                <xsl:if test="current-group()[count($ch)!=0]">
                 <xsl:text>lemme : </xsl:text><xsl:value-of select="$sorting-key"/><xsl:text>&#09;ch: </xsl:text><xsl:value-of select="count($ch)"/><xsl:text>&#09;c: </xsl:text><xsl:value-of select="count($c)"/>
                 <xsl:text>&#10;</xsl:text>
                         <xsl:call-template name="forms">
                             <xsl:with-param name="nodes" select="$ch, $c"/>
                         </xsl:call-template>
                         <xsl:text>&#10;</xsl:text>
-                    </xsl:for-each>
+                    </xsl:if>
            
                 
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_cha)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ca)]" />
-                <xsl:for-each select="current()[count($ch)!=0]">
-                <xsl:sort order="descending" select="count($ch)"/>
+                <xsl:if test="current()[count($ch)!=0]">
+               
                 <xsl:text>lemme : </xsl:text><xsl:value-of select="$sorting-key"/><xsl:text>&#09;ch: </xsl:text><xsl:value-of select="count($ch)"/><xsl:text>&#09;c: </xsl:text><xsl:value-of select="count($c)"/>
                 <xsl:text>&#10;</xsl:text>
                 <xsl:call-template name="forms">
                     <xsl:with-param name="nodes" select="$ch, $c"/>
                 </xsl:call-template>
                 <xsl:text>&#10;</xsl:text>
-            </xsl:for-each>
+            </xsl:if>
            <!--
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ch)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_c)]" />
@@ -85,27 +84,27 @@
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_che-i)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ce-i)]" />
                
-                <xsl:for-each select="current()[count($c)!=0]">
-                    <xsl:sort order="descending" select="count($c)"/>
+                <xsl:if test="current-group()[count($c)!=0]">
+                    
                     <xsl:text>lemme : </xsl:text><xsl:value-of select="$sorting-key"/><xsl:text>&#09;ch: </xsl:text><xsl:value-of select="count($ch)"/><xsl:text>&#09;c: </xsl:text><xsl:value-of select="count($c)"/>
                     <xsl:text>&#10;</xsl:text>
                     <xsl:call-template name="forms">
                         <xsl:with-param name="nodes" select="$ch, $c"/>
                     </xsl:call-template>
                     <xsl:text>&#10;</xsl:text>
-                </xsl:for-each>
+                </xsl:if>
                
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_cha)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ca)]" />
-                <xsl:for-each select="current()[count($c)!=0]">
-                    <xsl:sort order="descending" select="count($c)"/>
+                <xsl:if test="current-group()[count($c)!=0]">
+                    
                     <xsl:text>lemme : </xsl:text><xsl:value-of select="$sorting-key"/><xsl:text>&#09;ch: </xsl:text><xsl:value-of select="count($ch)"/><xsl:text>&#09;c: </xsl:text><xsl:value-of select="count($c)"/>
                     <xsl:text>&#10;</xsl:text>
                     <xsl:call-template name="forms">
                         <xsl:with-param name="nodes" select="$ch, $c"/>
                     </xsl:call-template>
                     <xsl:text>&#10;</xsl:text>
-                </xsl:for-each>
+                </xsl:if>
                 <!--
                 <xsl:variable name="ch" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_ch)]"/>
                 <xsl:variable name="c" select="//w[@lemma=current-grouping-key() and matches(fn:normalize(./text()), $regex_c)]" />

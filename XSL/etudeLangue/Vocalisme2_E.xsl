@@ -479,6 +479,37 @@
                 <xsl:value-of select="."/><xsl:text> (</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>)&#10;</xsl:text>
             </xsl:for-each-group>
           
+            <xsl:text>Confusion graphique ain pour ein </xsl:text>
+            
+            <xsl:for-each-group select="//w[matches(text(), '^(\w|ç)*ain(\w|ç)*$')]" group-by="@lemma">
+                <xsl:sort order="ascending" select="current-grouping-key()"/>
+                <xsl:if test="matches(fn:normalize(@lemma), '^\w*ain\w*\d?$')">
+                    <xsl:text>Lemme :</xsl:text>
+                    <xsl:value-of select="current-grouping-key()"/>
+                    <xsl:text>&#09;</xsl:text>
+                    <xsl:value-of select="count(//w[@lemma = current-grouping-key()])"/>
+                    <xsl:text>&#10;</xsl:text>
+                    <xsl:for-each-group select="current-group()" group-by=".">
+                        <xsl:sort order="ascending" select="current-grouping-key()"/>
+                        <xsl:value-of select="."/>
+                        <xsl:text>&#09;</xsl:text>
+                        <xsl:value-of select="count(current-group())"/>
+                        <xsl:text>&#10;</xsl:text>
+                    </xsl:for-each-group>
+                    <xsl:for-each-group select="//w[@lemma = current-grouping-key() and matches(text(), '^\w*ein\w*\d?$') ]" group-by=".">
+                        <xsl:sort order="ascending" select="current-grouping-key()"/>
+                        <xsl:value-of select="."/>
+                        <xsl:text>&#09;</xsl:text>
+                        <xsl:value-of select="count(current-group())"/>
+                        <xsl:text>&#10;</xsl:text>
+                    </xsl:for-each-group>
+                    <xsl:text>&#10;</xsl:text>
+                </xsl:if>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>&#10;</xsl:text>
+          
           
             <xsl:text>&#10;&#10;</xsl:text>
             <xsl:text>-gula > pic. iule</xsl:text>
