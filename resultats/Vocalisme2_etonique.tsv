@@ -98,7 +98,7 @@ defroissier	3	defroiscier defroissoit defroisça
 deignier	14	deigna degne deignie deigne degnast deignast deignes deignoit 
 delaissier	2	delessoies delessoit 
 denoiier	2	denioit denoier 
-depecier	17	despechier depechier despecié depecier depecheroit depeçassent desiree depecheroient depeçoient despeça depecierent 
+depecier	16	despechier depechier despecié depecier depecheroit depeçassent depecheroient depeçoient despeça depecierent 
 depriier	7	deprions deproions deproi depri deproit 
 deschaucier	1	deschauça 
 descirier	7	desciré desciree descirez descirer desciroit desciroient 
@@ -180,6 +180,7 @@ parier	1	pardite
 partie	48	partie parties ﻿parties ﻿partie 
 pechier	4	pecheroie pechié pechames 
 peschier2	6	peschier peschoient peschié 
+plegier	1	plaiés 
 ploiier	3	ploier plaia ploïe 
 porchacier	4	porchaça porchaceroient porchaçasses 
 priier	163	proier proia pria prioit proi priierent priast proié prie pri priier proiasse proiés proierent proiast prioa proiez prions Proions proions proiassent prioient proie proioit proioient proiames prieur preïssons proierons proit prié priai 
@@ -958,15 +959,13 @@ plesanz	3
 plaierent	1
 pleisoient	1
 
-Lemme :plorer	80
+Lemme :plorer	78
 plorant	30
 ploroient	10
 
-Lemme :poindre	5
-portanz	1
-
-Lemme :porter	71
+Lemme :porter	72
 portant	1
+portanz	1
 portassent	1
 portent	1
 porterent	2
@@ -1425,7 +1424,7 @@ chastioient	1
 Lemme :chevauchier	1
 chevauchierent	1
 
-Lemme :chäeine	7
+Lemme :chäeine	8
 chaenes	1
 
 Lemme :chëoir	75
@@ -1443,7 +1442,7 @@ Lemme :comander	165
 comandassent	1
 comanderent	5
 conmanderent	2
-comanda	55
+comanda	56
 comandas	1
 comandassent	1
 comandast	4
@@ -1624,7 +1623,7 @@ Lemme :departir	108
 departirent	11
 departoient	2
 
-Lemme :depecier	17
+Lemme :depecier	16
 depecheroient	1
 depecierent	1
 depeçassent	1
@@ -1654,7 +1653,7 @@ desesperassent	1
 Lemme :desfermer	5
 desfermassent	1
 
-Lemme :desirrer	21
+Lemme :desirrer	22
 desiroient	1
 desirrent	1
 desirroient	4
@@ -1709,7 +1708,7 @@ dolereusement	3
 Lemme :doloser	1
 dolousoient	1
 
-Lemme :doner	187
+Lemme :doner	186
 donassent	3
 donerent	8
 donoient	2
@@ -1731,7 +1730,7 @@ doutassent	1
 doutent	1
 doutoient	1
 
-Lemme :douz	42
+Lemme :douz	41
 docement	15
 doucement	3
 
@@ -2291,7 +2290,7 @@ Lemme :plein	48
 Pleinement	1
 pleinement	14
 
-Lemme :plorer	80
+Lemme :plorer	78
 ploroient	10
 plorant	30
 
@@ -2304,13 +2303,14 @@ porportoient	1
 Lemme :porsivre	2
 porsivoient	1
 
-Lemme :porter	71
+Lemme :porter	72
 portassent	1
 portent	1
 porterent	2
 portient	1
 portoient	7
 portant	1
+portanz	1
 
 Lemme :premier	30
 premierement	1
@@ -2446,7 +2446,7 @@ regehissoient	1
 Lemme :relever	7
 releverent	2
 
-Lemme :religïos	16
+Lemme :religïos	15
 religieusement	1
 
 Lemme :remander	5
@@ -2593,9 +2593,6 @@ teisanz	1
 Lemme :tardif	1
 tardivement	1
 
-Lemme :tempoire	7
-tenpore	1
-
 Lemme :tesmoignier	21
 tesmoignent	2
 tesmoigneroient	2
@@ -2720,6 +2717,147 @@ seoir (5)
 formes infinitives de chëoir 36
 cheïr (2)
 cheoir (34)
+Confusion graphique ain pour ein Lemme :Aquitaine	3
+Aqitaine	1
+Aquitaine	2
+
+Lemme :Toraine	2
+Toraine	1
+Toreine	1
+
+Lemme :ainz	126
+ains	1
+ainz	20
+einz	101
+
+Lemme :ainzné	2
+ainsnez	1
+ainsné	1
+
+Lemme :ainçois	19
+ainçois	1
+einçois	9
+einçoiz	1
+
+Lemme :certainement	13
+certainnement	1
+certeinement	11
+certeinnement	1
+
+Lemme :deforain	2
+deforains	1
+deforeines	1
+
+Lemme :däerrain	16
+daerrain	1
+daerraines	1
+daerrein	7
+daerreine	2
+daerreines	1
+daerreinieres	1
+
+Lemme :lointain	10
+lointaine	1
+lontaine	1
+lontaines	2
+lonteines	1
+
+Lemme :main2	107
+main	1
+mein	47
+meins	51
+meinz	8
+
+Lemme :maint	60
+maintes	1
+Meint	1
+meins	1
+meint	18
+meinte	2
+meintes	34
+meinz	3
+
+Lemme :maintenir	15
+maintint	1
+Meintiegne	1
+meintenir	4
+meintenissent	1
+meintenist	1
+meintenoit	3
+meintenu	1
+meintenue	1
+meintient	1
+meintint	1
+
+Lemme :pain	32
+pain	3
+pein	25
+peins	4
+
+Lemme :plataine	1
+plataines	1
+
+Lemme :premerain	17
+premerain	1
+premeraine	4
+premerains	1
+premerainz	1
+premerein	7
+premereine	3
+
+Lemme :prochain	21
+prochaine	1
+proçaine	2
+proçaines	1
+proceine	5
+proceines	1
+proceins	2
+proceinz	1
+prochein	1
+procheine	5
+procheines	1
+procheins	1
+
+Lemme :sain	16
+saines	1
+sein	7
+seine	2
+seins	1
+seinz	5
+
+Lemme :saint	1753
+saint	13
+Seins	4
+Seint	21
+Seinte	5
+Seintismes	1
+Seinz	85
+seins	7
+seint	700
+seinte	119
+seintes	28
+seintime	7
+seintimes	2
+seintisme	22
+seintismes	16
+seinz	722
+
+Lemme :semaine	4
+semaine	1
+semeine	3
+
+Lemme :sodain	3
+soudainement	1
+soudeinement	2
+
+Lemme :soverain	1
+sovraine	1
+
+Lemme :traversain	1
+traversains	1
+
+
+
 
 
 -gula > pic. iule
@@ -2735,7 +2873,7 @@ Andrius
 Andriu	2	Andrius	1	
 
 Arborius
-Arborius	4	Priu	1	
+Arborius	4	
 
 Archemius
 Archemius	1	
