@@ -2,7 +2,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://fn.com"
-    xmlns="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net"
+    xmlns="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
     exclude-result-prefixes="xs" version="2.0">
     <!-- Fonction pour normaliser le texte en unicode et sans accent -->
     <xsl:function name="fn:normalize">
@@ -13,7 +13,7 @@
     </xsl:function>
     <xsl:output method="text"/>
     <xsl:template match="/">
-        <xsl:result-document href="../../resultats/Vocalisme1-8.tsv">
+        <xsl:result-document href="../../resultats/Vocalisme1-8.tsv" >
    <!-- Traitement des vocalismes / Le plan suit les chapitres de la Petite grammaire de l'ancien picard de C. T. Gossen-->
 
     <!-- §1 -->
@@ -191,7 +191,7 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
         </xsl:result-document>
-        <xsl:result-document href="../../resultats/Vocalisme9-21.tsv">
+        <xsl:result-document href="../../resultats/Vocalisme9-21.tsv" >
             <!-- E ouvert -->
             <!-- $9 -->
             <xsl:text>Graphie du mot Dieu $9&#10;</xsl:text>
@@ -369,7 +369,7 @@
         <xsl:param name="condition" required="yes"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombres d'occurrences total&#09;Nombre d'occurrences&#10;</xsl:text>
-        <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)" saxon:threads="3">
+        <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)">
             <xsl:sort select="current-grouping-key()" order="ascending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:text>Lemme : </xsl:text>
@@ -401,7 +401,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombre total&#09;Nombre d'occurrences en condition 1&#09;Nombre d'occurrences condition 2&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
-        <xsl:for-each-group select="$condition1" group-by="fn:normalize(@lemma)" saxon:threads="4">
+        <xsl:for-each-group select="$condition1" group-by="fn:normalize(@lemma)">
             <xsl:sort select="current-grouping-key()" order="ascending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:if test="//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)]">
