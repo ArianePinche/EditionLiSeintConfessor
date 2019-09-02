@@ -23,37 +23,16 @@
                     select="//w[matches(fn:normalize(text()), '\w*ei[zrtypqsdfghjklmwxcvbn]') and not(matches(fn:normalize(@lemma), '(e|a)i')) and not(matches(@type, 'OUT|VER'))]"
                 />
             </xsl:call-template>
-            <xsl:text>Graphie de la P3 pst de savoir&#10;</xsl:text>
-            <xsl:for-each-group
-                select="//w[@lemma = 'savoir' and @type = 'POS=VERcjg\|MODE=ind\|TEMPS=pst\|PERS.=3\|NOMB.=s']"
-                group-by="lower-case(fn:normalize(.))">
-                <xsl:value-of select="@lemma"/>
-                <xsl:text>(</xsl:text>
-                <xsl:value-of
-                    select="count(//w[@lemma = 'savoir' and @type = 'POS=VERcjg\|MODE=ind\|TEMPS=pst\|PERS.=3\|NOMB.=s'])"/>
-                <xsl:text>) : </xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:text>(</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)&#10;</xsl:text>
-            </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             
             
             <xsl:text>avu  > au, eu, oi - essai sur poi §2&#10;</xsl:text>
-            <xsl:text>Graphie du mot poi&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'poi']" group-by="lower-case(fn:normalize(.))">
-                <xsl:value-of select="@lemma"/>
-                <xsl:text>(</xsl:text>
-                <xsl:value-of select="count(//w[@lemma = 'poi'])"/>
-                <xsl:text>) : </xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:text>(</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>)&#10;</xsl:text>
-            </xsl:for-each-group>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"  select="//w[matches(fn:normalize(text()), 'eu|au') and matches(fn:normalize(@lemma), 'oi') and not(matches(@type, 'VER|OUT'))]"/>
+            </xsl:call-template>
+            <xsl:text>Graphie du mot poi&#10;</xsl:text>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="'poi'"/>
             </xsl:call-template>
 
    <!-- $3 -->
@@ -71,30 +50,15 @@
             <xsl:text>talis, qualis §5&#10;</xsl:text>
             
             <xsl:text>Graphie du mot tel&#10;</xsl:text>
-            <xsl:text>Mot&#09;Nombres d'occurrences total&#10;</xsl:text>
-            <xsl:text>lemme tel&#09;</xsl:text>
-            <xsl:value-of select="count(//w[@lemma = 'tel'])"/>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'tel']" group-by="lower-case(fn:normalize(.))">
-                <xsl:value-of select="."/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#10;</xsl:text>
-            </xsl:for-each-group>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="tel1"></xsl:with-param>
+            </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
 
             <xsl:text>Graphie du mot qel&#10;</xsl:text>
-            <xsl:text>Mot&#09;Nombres d'occurrences total&#10;</xsl:text>
-            <xsl:text>lemme quel1&#09;</xsl:text>
-            <xsl:value-of select="count(//w[@lemma = 'quel1'])"/>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma = 'quel1']" group-by="lower-case(fn:normalize(.))">
-                <xsl:value-of select="."/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#10;</xsl:text>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="quel1"></xsl:with-param>
+            </xsl:call-template>
 
 <!-- $7 -->
             <xsl:text>ATICU > age/aige/ege $7</xsl:text>
@@ -111,7 +75,6 @@
             <xsl:value-of
                 select="count(descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1)])"/>
             <xsl:text>&#10;</xsl:text>
-            
             <xsl:text>Participe en -ie(s) : Nb total d'occurrence&#09;</xsl:text>
             <xsl:value-of
                 select="count(descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)e(s|z)?$')])"/>
@@ -195,12 +158,12 @@
             <!-- E ouvert -->
             <!-- $9 -->
             <xsl:text>Graphie du mot Dieu $9&#10;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'dieu']"/>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="'dieu'"/>
             </xsl:call-template>
             <xsl:text>Graphie du mot lieu $25&#10;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'lieu']"/>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="'lieu'"/>
             </xsl:call-template>
             <!-- $10 -->
             <xsl:text> Réduction de e ouvert libre en i ou en e §10&#10;</xsl:text>
@@ -213,12 +176,10 @@
             </xsl:call-template>
             <xsl:text>Adjectif lié au fem.&#09;NB occ. : </xsl:text><xsl:value-of select="count(//w[@lemma ='lié1' and matches(@type,'GENRE=f')])"/>
             <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[@lemma ='lié1' and matches(@type,'GENRE=f')]" group-by=".">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#10;</xsl:text>
-            </xsl:for-each-group>
+            <xsl:call-template name="compteOccCond">
+                <xsl:with-param name="lemma" select="'lié1'"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='lié1' and matches(@type,'GENRE=f')]"/>
+            </xsl:call-template>
             <!-- $11 -->
             <xsl:text> reduction de e ouvert > ie §11&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
@@ -226,25 +187,26 @@
             </xsl:call-template>
             <!-- Etude de cas -->
             <xsl:text>Graphie du mot près&#10;</xsl:text>
-            <xsl:text>Lemme : près&#09;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma ='près' and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
+            <xsl:call-template name="compteOccCond">
+                <xsl:with-param name="lemma" select="'près'"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='près' and matches(fn:normalize(text()),'ie')]"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Graphie du mot après&#10;</xsl:text>
-            <xsl:text>Lemme : après&#09;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'après' and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
+            <xsl:call-template name="compteOccCond">
+                <xsl:with-param name="lemma" select="'après'"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='près' and matches(fn:normalize(text()),'ie')]"/>
             </xsl:call-template>
             <xsl:text>Graphie du mot apeler&#10;</xsl:text>
-            <xsl:text>Lemme : apeler&#09;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'apeler' and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
+            <xsl:call-template name="compteOccCond">
+                <xsl:with-param name="lemma" select="'apeler'"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='près' and matches(fn:normalize(text()),'ie')]"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Graphie du mot arester&#10;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'arester' and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
+            <xsl:call-template name="compteOccCond">
+                <xsl:with-param name="lemma" select="'arester'"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='près' and matches(fn:normalize(text()),'ie')]"/>
             </xsl:call-template>
             <!-- $12 -->      
             <xsl:text>§12.1 ellus/os > eaus > iaus&#10;</xsl:text> 
@@ -257,17 +219,15 @@
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>§12.3 Etude de la graphie du pronom P3 - pluriel régime&#10;</xsl:text>
-            <xsl:call-template name="occurrencesPhen">
+            <xsl:call-template name="compteOccCond">
                 <xsl:with-param name="condition" select="//w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il']"/>
+                <xsl:with-param name="lemma" select="'il'"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
-            <!-- $14 -->          
+            <!-- $14   -->       
             <xsl:text>§14 melius &lt; mius</xsl:text>
-            <xsl:text>Graphie du mot mieus&#10;</xsl:text>
-            <xsl:text>Lemme : mieus&#09;</xsl:text>
-            <xsl:value-of select="count(//w[@lemma = 'mieus'])"/>
-            <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[@lemma = 'mieus']"/>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="'mieus'"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <!-- $14 -->     
@@ -363,14 +323,60 @@
             </xsl:call-template>
         </xsl:result-document>
     </xsl:template>
-
-    <!-- Règle pour repérer un phénomène phonétique par comparaison avec la graphie de son lemme -->
+    <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->
+    <xsl:template name="forms">
+        <xsl:param name="nodes"/>
+        <xsl:for-each-group select="$nodes" group-by="fn:normalize(.)">
+            <xsl:sort select="count(current-group())" order="ascending"/>
+            <xsl:value-of select="current-grouping-key()"/>
+            <xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(current-group())"/>
+            <xsl:text>&#09;</xsl:text>
+        </xsl:for-each-group>
+    </xsl:template>
+    
+    <!-- Règle pour compter des occurences d'un terme sans condition supplémentaire -->
+    <xsl:template name="compteOcc">
+        <!-- Ajouter en paramètre la chaine de caractère que constitue le lemme : 'lemme' -->
+        <xsl:param name="lemma" required="yes"/>
+        <xsl:text>&#10;lemme : </xsl:text>
+        <xsl:value-of select="$lemma"/>
+        <xsl:text>&#09;Nombres d'occurrences : </xsl:text>
+        <xsl:value-of select="count(//w[@lemma = $lemma])"/>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:call-template name="forms">
+            <xsl:with-param name="nodes" select="//w[@lemma = $lemma]"/>
+        </xsl:call-template>
+        
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
+    
+    
+    <!-- Règle pour compter des occurences d'un terme avec condition(s) supplémentaire(s) -->
+    <xsl:template name="compteOccCond">
+        <!-- Ajouter en paramètre la chaine de caractère que constitue le lemme : 'lemme' -->
+        <xsl:param name="lemma" required="yes"/>
+        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
+        <xsl:param name="condition" required="yes"/>
+        <xsl:text>&#10;lemme : </xsl:text>
+        <xsl:value-of select="$lemma"/>
+        <xsl:text>&#09;Nombres d'occurrences : </xsl:text>
+        <xsl:value-of select="count(//w[@lemma = $lemma])"/>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:call-template name="forms">
+            <xsl:with-param name="nodes" select="$condition"/>
+        </xsl:call-template>
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
+    
+    <!-- Règle pour repérer un phénomène phonétique par comparaison entre la graphie du terme et la graphie de son lemme -->
     <xsl:template name="occurrencesPhen">
+        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
         <xsl:param name="condition" required="yes"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombres d'occurrences total&#09;Nombre d'occurrences&#10;</xsl:text>
         <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)">
-            <xsl:sort select="current-grouping-key()" order="ascending"/>
+            <xsl:sort select="count(current-group())" order="ascending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:text>Lemme : </xsl:text>
             <xsl:value-of select="$lemma"/>
@@ -379,15 +385,9 @@
             <xsl:text>&#09;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[fn:normalize(@lemma) = $lemma]"
-                group-by="fn:normalize(text())">
-                <xsl:sort select="current-grouping-key()" order="ascending"/>
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#10;</xsl:text>
-            </xsl:for-each-group>
-            <xsl:text>&#10;</xsl:text>
+            <xsl:call-template name="forms">
+                <xsl:with-param name="nodes" select="//w[fn:normalize(@lemma) = $lemma]"/>
+            </xsl:call-template>
         </xsl:for-each-group>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
@@ -396,13 +396,13 @@
     <xsl:template name="occurrencesAlt">
         <!-- condition 1 = xpath + graphie attendue -->
         <xsl:param name="condition1" required="yes"/>
-        <!--condtion 1 = graphie alternative -->
+        <!--condtion 2 = graphie alternative -->
         <xsl:param name="condition2" required="yes"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombre total&#09;Nombre d'occurrences en condition 1&#09;Nombre d'occurrences condition 2&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:for-each-group select="$condition1" group-by="fn:normalize(@lemma)">
-            <xsl:sort select="current-grouping-key()" order="ascending"/>
+            <xsl:sort select="count(current-group())" order="ascending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:if test="//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)]">
                 <xsl:text>Lemme : </xsl:text>
@@ -415,14 +415,9 @@
                 <xsl:value-of
                     select="count(//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)])"/>
                 <xsl:text>&#10;</xsl:text>
-                <xsl:for-each-group select="//w[fn:normalize(@lemma) = $lemma]"
-                    group-by="fn:normalize(text())">
-                    <xsl:sort select="current-grouping-key()" order="ascending"/>
-                    <xsl:value-of select="current-grouping-key()"/>
-                    <xsl:text>&#09;</xsl:text>
-                    <xsl:value-of select="count(current-group())"/>
-                    <xsl:text>&#10;</xsl:text>
-                </xsl:for-each-group>
+                <xsl:call-template name="forms">
+                    <xsl:with-param name="nodes" select="//w[fn:normalize(@lemma) = $lemma]"/>
+                </xsl:call-template>
                 <xsl:text>&#10;</xsl:text>
             </xsl:if>
         </xsl:for-each-group>
