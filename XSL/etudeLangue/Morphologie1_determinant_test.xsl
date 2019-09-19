@@ -317,27 +317,35 @@
         </xsl:for-each-group>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
-    
+    <!-- Règle pour récupérer toutes les formes d'une catégorie grammaticales et les classer dans un tableau  -->
     <xsl:template name="tableauFormes">
+        <!-- Ajout d'un paramètre qui est la catégorie grammaticale à étudier -->
         <xsl:param name="CatGram"/>
         <xsl:text>&#10;</xsl:text>
+        <!-- Premier classement des termes en fonction du lemme -->
         <xsl:for-each-group select="//w[matches(@type, $CatGram)]" group-by="@lemma">
             <xsl:sort order="ascending" select="@type"/>
+            <!-- Affichage du lemme traité -->
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:value-of select="$lemma"/>
+            <!-- Affichage du nombre d'occurrences totales d'un même terme -->
             <xsl:text> nb.</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#10;</xsl:text>
+            <!-- classement des formes du terme en fonction de son cas (vertical) et de son genre (horizontal) -->
             <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
             <xsl:text>CSS&#09;</xsl:text>
+            <!-- classement des formes au CSS masculin en fonction de la graphie -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSSm)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
                 <xsl:value-of select="."/>
+                <!-- Affichage du nombre de termes ayant la même graphie -->
                 <xsl:text> (nb. </xsl:text>
                 <xsl:value-of select="count(current-group())"/>
                 <xsl:text>, </xsl:text>
+                <!-- calcul du pourcentage de la graphie parmi les autres formes du même terme au même cas et au même genre -->
                 <xsl:value-of
                     select="round(count(current-group()) div count(//w[matches(@type, concat($CatGram, '\|', $CSSm)) and @lemma = $lemma]) * 100)"/>
                 <xsl:text>%)</xsl:text>
@@ -346,6 +354,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CSS féminin -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSSf)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -361,6 +370,7 @@
                 </xsl:if>  
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CSS neutre -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSSn)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -377,6 +387,7 @@
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>CRS&#09;</xsl:text>
+            <!-- classement des formes au CRS masculin -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSRm)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -392,6 +403,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CRS féminin -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSRf)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -407,6 +419,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CRS neutre -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSRn)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -424,6 +437,7 @@
             <xsl:text>&#09;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>CIS&#09;</xsl:text>
+            <!-- classement des formes au CIS masculin -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSIm)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -439,6 +453,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CIS féminin -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSIf)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -454,6 +469,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#09;</xsl:text>
+            <!-- classement des formes au CIS neutre -->
             <xsl:for-each-group select="current-group()[matches(@type, $CSIn)]"
                 group-by="lower-case(.)">
                 <xsl:sort order="ascending" select="count(current-group())"/>
@@ -469,6 +485,7 @@
                 </xsl:if>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            <!-- même chose pour chacun des cas et des genres pour le pluriel -->
             <xsl:text>CSP&#09;</xsl:text>
             <xsl:for-each-group select="current-group()[matches(@type, $CPSm)]"
                 group-by="lower-case(.)">

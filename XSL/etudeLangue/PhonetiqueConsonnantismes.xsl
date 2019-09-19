@@ -389,6 +389,13 @@
             <xsl:text>&#09;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#09;</xsl:text>
+            <xsl:for-each-group select="current-group()" group-by="@type">
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#09;</xsl:text>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>
         </xsl:for-each-group>
     </xsl:template>
     
