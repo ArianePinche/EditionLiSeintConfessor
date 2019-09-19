@@ -1,238 +1,182 @@
 a libre tonique  > ei §1
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : athenes	2	2
-atheines	2
-
-Lemme : charlemagne	2	2
-charlemeine	2
-
-Lemme : cler	16	1
-cleirs	1
-cler	3
-clere	7
-clers	5
-
-Lemme : compagnon	61	8
-compagnons	1
-compaignon	26
-compaignons	23
-compains	2
-compeins	5
-compeinz	3
-conpaignons	1
-
-Lemme : consule	17	2
-concele	2
-conceles	5
-conseile	2
-consele	3
-conseles	4
-conselle	1
-
-Lemme : covenable	5	1
-couveignable	1
-covegnables	1
-covenable	1
-covignable	2
-
 Lemme : encore	131	1
-eincore	1
-encor	2
-encore	126
-encores	2
-
-Lemme : foie2	77	1
-feiz	1
-foie	6
-foies	1
-fois	1
-foiz	66
-foïe	2
-
-Lemme : lé	4	1
-lee	2
-lees	1
-leiz	1
-
-Lemme : moins	10	9
-meins	7
-meinz	2
-mendres	1
-
-Lemme : moinsné	1	1
-meinsnez	1
-
-Lemme : mortagne	3	1
-mortaigne	2
-morteigne	1
-
-Lemme : nëis	4	4
-neis	4
-
-Lemme : none1	6	4
-nonains	2
-noneins	4
-
+eincore	1	POS=ADVgen|DEGRE=-	1	
+encor	2	POS=ADVgen|DEGRE=-	2	
+encores	2	POS=ADVgen|DEGRE=-	2	
+encore	126	POS=ADVgen|DEGRE=-	126	
 Lemme : orgoillos	4	1
-orgueilleus	1
-orguilleus	3
-
+orgueilleus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+orguilleus	3	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
 Lemme : plegement	1	1
-pleignement	1
-
-Lemme : regne	24	3
-regne	19
-regnes	2
-reigne	3
-
-Lemme : tel	177	3
-atieus	1
-teil	3
-tel	103
-tele	32
-teles	7
-teus	1
-tiels	1
-tieus	28
-tieuz	1
-
+pleignement	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : mortagne	3	1
+morteigne	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=n	1	
+mortaigne	2	POS=NOMpro|NOMB.=s|GENRE=m|CAS=r	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : foie2	77	1
+foies	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+feiz	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+fois	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+foïe	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+foie	6	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	6	
+foiz	66	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	31	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	34	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
 Lemme : volille	1	1
-voleilles	1
+voleilles	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+Lemme : covenable	5	1
+covegnables	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+covenable	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+couveignable	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+covignable	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=s	1	
+Lemme : cler	16	1
+cleirs	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=s	1	
+cler	3	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=c	1	
+clers	5	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	3	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=c	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+clere	7	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=c	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=s	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=s	1	
+Lemme : lé	4	1
+lees	1	POS=ADJqua|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	1	
+leiz	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+lee	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=s	1	
+Lemme : moinsné	1	1
+meinsnez	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : athenes	2	2
+atheines	2	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	2	
+Lemme : charlemagne	2	2
+charlemeine	2	POS=NOMpro|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : consule	17	2
+conselle	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+concele	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+conseile	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+consele	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	3	
+conseles	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	4	
+conceles	5	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : tel	177	3
+atieus	1	POS=PROind|NOMB.=s|GENRE=m|CAS=r	1	
+tieuz	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+tiels	1	POS=DETind|NOMB.=p|GENRE=f|CAS=r	1	
+teus	1	POS=DETind|NOMB.=p|GENRE=f|CAS=r	1	
+teil	3	POS=DETind|NOMB.=s|GENRE=f|CAS=n	1	POS=DETind|NOMB.=s|GENRE=m|CAS=r	1	POS=DETind|NOMB.=s|GENRE=f|CAS=r	1	
+teles	7	POS=ADJind|NOMB.=p|GENRE=f|CAS=r	2	POS=DETind|NOMB.=p|GENRE=f|CAS=r	5	
+tieus	28	POS=DETind|NOMB.=p|GENRE=m|CAS=r	6	POS=DETind|NOMB.=s|GENRE=f|CAS=n	1	POS=DETind|NOMB.=p|GENRE=f|CAS=r	16	POS=PROind|NOMB.=s|GENRE=m|CAS=n	2	POS=DETind|NOMB.=s|GENRE=m|CAS=n	1	POS=DETind|NOMB.=p|GENRE=f|CAS=n	1	POS=PROind|NOMB.=p|GENRE=m|CAS=n	1	
+tele	32	POS=DETind|NOMB.=s|GENRE=f|CAS=r	19	POS=ADJind|NOMB.=s|GENRE=f|CAS=r	7	POS=ADJind|NOMB.=s|GENRE=f|CAS=n	4	POS=PROind|NOMB.=s|GENRE=f|CAS=n	1	POS=PROind|NOMB.=s|GENRE=f|CAS=r	1	
+tel	103	POS=DETind|NOMB.=s|GENRE=f|CAS=r	86	POS=DETind|NOMB.=s|GENRE=m|CAS=r	17	
+Lemme : regne	24	3
+regnes	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	2	
+reigne	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	3	
+regne	19	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	19	
+Lemme : nëis	4	4
+neis	4	POS=ADVgen|DEGRE=-	2	POS=ADVneg	2	
+Lemme : none1	6	4
+nonains	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+noneins	4	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	3	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+Lemme : compagnon	61	8
+conpaignons	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+compagnons	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+compains	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	2	
+compeinz	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	3	
+compeins	5	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	4	
+compaignons	23	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	22	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+compaignon	26	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	6	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	18	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+Lemme : moins	10	9
+mendres	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=s	1	
+meinz	2	POS=ADVgen|DEGRE=-	1	POS=ADVgen|DEGRE=c	1	
+meins	7	POS=ADVgen|DEGRE=c	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	POS=ADVgen|DEGRE=s	1	POS=ADVgen|DEGRE=-	1	
 
-
-Graphie de la P3 pst de savoir
 
 avu  > au, eu, oi - essai sur poi §2
-Graphie du mot poi
-poi(50) : pou(39)
-poi(50) : poi(8)
-poi(50) : peu(3)
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : angoissos	2	2
-angoisseus	2
-
-Lemme : besoignos	11	11
-besoigneus	9
-besoigneuz	2
-
-Lemme : chamoil	12	7
-chamel	5
-chameus	7
-
 Lemme : chandoile	2	1
-chandele	1
-chaudele	1
-
-Lemme : covoitos	1	1
-covoiteus	1
-
-Lemme : enoios	1	1
-annieuse	1
-
-Lemme : joios	5	5
-joieus	2
-joieuse	2
-joïeus	1
-
-Lemme : oisel	9	7
-oiseaus	7
-oisel	2
-
-Lemme : oisos	2	2
-oiseuse	1
-oiseuses	1
-
-Lemme : orgoillos	4	4
-orgueilleus	1
-orguilleus	3
-
-Lemme : orgoillosement	1	1
-orguelleusement	1
-
-Lemme : poi	50	3
-peu	3
-poi	8
-pou	39
-
-Lemme : poissonel	1	1
-pissonniaus	1
-
-Lemme : roial2	7	1
-roial	6
-roiaus	1
-
+chaudele	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+chandele	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
 Lemme : roiaume	1	1
-roiaume	1
-
+roiaume	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : poissonel	1	1
+pissonniaus	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+Lemme : enoios	1	1
+annieuse	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	1	
+Lemme : covoitos	1	1
+covoiteus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : roial2	7	1
+roiaus	1	POS=ADJqua|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	1	
+roial	6	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	4	
+Lemme : orgoillosement	1	1
+orguelleusement	1	POS=ADVgen|DEGRE=s	1	
+Lemme : angoissos	2	2
+angoisseus	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=s	1	
+Lemme : oisos	2	2
+oiseuses	1	POS=ADJqua|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	1	
+oiseuse	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	
+Lemme : poi	50	3
+peu	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	POS=ADVgen|DEGRE=s	1	
+poi	8	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	5	POS=NOMcom|NOMB.=s|GENRE=n|CAS=r	1	POS=ADVgen|DEGRE=-	1	POS=NOMcom|NOMB.=s|GENRE=n|CAS=n	1	
+pou	39	POS=ADVgen|DEGRE=-	16	POS=NOMcom|NOMB.=s|GENRE=n|CAS=r	12	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	9	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	2	
 Lemme : voisos	3	3
-viseus	1
-voiseus	2
+viseus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+voiseus	2	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : orgoillos	4	4
+orgueilleus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+orguilleus	3	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : joios	5	5
+joïeus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+joieuse	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=s	1	
+joieus	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	2	
+Lemme : oisel	9	7
+oisel	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	2	
+oiseaus	7	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	3	
+Lemme : chamoil	12	7
+chamel	5	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	4	
+chameus	7	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	3	
+Lemme : besoignos	11	11
+besoigneuz	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+besoigneus	9	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	5	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
 
+Graphie du mot poi
+
+lemme : poi	Nombres d'occurrences : 50
+peu	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	POS=ADVgen|DEGRE=s	1	
+poi	8	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	5	POS=NOMcom|NOMB.=s|GENRE=n|CAS=r	1	POS=ADVgen|DEGRE=-	1	POS=NOMcom|NOMB.=s|GENRE=n|CAS=n	1	
+pou	39	POS=ADVgen|DEGRE=-	16	POS=NOMcom|NOMB.=s|GENRE=n|CAS=r	12	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	9	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	2	
 
 Alternance ar/er suivi de consonne
 
 Mot	Nombre total	Nombre d'occurrences en condition 1	Nombre d'occurrences condition 2
 
-Lemme : archier	2	2	1
-archier	1
-archiers	1
-
-Lemme : armenie	3	2	1
-armenee	1
-armenie	1
-hermenie	1
-
 Lemme : larme	4	1	3
-larmes	1
-lermes	3
-
-Lemme : larron	9	6	2
-larron	4
-larrons	2
-leres	1
-lerres	2
-
-Lemme : parçonier	4	3	2
-parçonier	2
-parçoniers	2
+larmes	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+lermes	3	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	3	
 
 Lemme : parlier	1	1	1
-parliers	1
+parliers	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+
+Lemme : archier	2	2	1
+archier	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+archiers	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+
+Lemme : armenie	3	2	1
+hermenie	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+armenee	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+armenie	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+
+Lemme : parçonier	4	3	2
+parçonier	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n	1	
+parçoniers	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n	1	
+
+Lemme : larron	9	6	2
+leres	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+lerres	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+larrons	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	2	
+larron	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
 
 
 talis, qualis §5
 Graphie du mot tel
-Mot	Nombres d'occurrences total
-lemme tel	177
-tel	103
-tele	32
-tieus	28
-teles	7
-atieus	1
-tieuz	1
-tiels	1
-teil	3
-teus	1
+
+lemme : 	Nombres d'occurrences : 0
+
 
 Graphie du mot qel
-Mot	Nombres d'occurrences total
-lemme quel1	88
-quel	35
-qele	10
-queus	4
-quels	5
-qel	4
-queles	2
-qeles	4
-qels	1
-quele	9
-quielz	1
-qieus	5
-quieus	2
-Quiels	1
-Ques	4
-quiel	1
+
+lemme : 	Nombres d'occurrences : 0
 
 ATICU > age/aige/ege $7
 Mot	Nombre total	Nombre d'occurrences en condition 1	Nombre d'occurrences condition 2

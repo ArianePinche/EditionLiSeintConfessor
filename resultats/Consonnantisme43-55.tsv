@@ -1,247 +1,215 @@
 
 Graphie de eau :
 lemme : aigue	Nombres d'occurrences : 55
-eaue	5
-eve	49
-eves	1
+eves	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+eaue	5	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	
+eve	49	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	48	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
 
 G+a lat. Et G + a,e,i germanique – conservation de la gutturale.
 §42 g pic. vs j fr à l'initiale
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : jesir	64	57
-gesir	8
-geta	1
-geü	6
-gis	1
-gisant	2
-gisoient	3
-gisoit	28
-gissant	1
-gist	7
-jurent	1
-jut	6
-
-Lemme : jeter	38	38
-geta	7
-getee	3
-getees	2
-geter	3
-geterent	4
-getetes	1
-getez	5
-geté	1
-getés	1
-getoient	1
-gieta	2
-gietast	1
-giete	1
-gieter	2
-gieterent	2
-gietes	1
-gieté	1
-
-Lemme : jëune	19	8
-geunes	8
-jeunes	11
-
 Lemme : jëuner	8	2
-geuner	1
-geuné	1
-jeuna	2
-jeuner	1
-jeunoient	1
-jeunoit	1
-jeuns	1
-
+geuné	1	POS=VERppe|NOMB.=s|GENRE=n|CAS=r	1	
+jeunoient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+geuner	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+jeuner	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+jeunoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+jeuns	1	POS=ADVgen|NOMB.=s|GENRE=m|CAS=n	1	
+jeuna	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
 Lemme : jorge	3	2
-george	2
-jorge	1
-
+jorge	1	POS=NOMpro|NOMB.=s|GENRE=m|CAS=r	1	
+george	2	POS=NOMpro|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : jëune	19	8
+geunes	8	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	6	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+jeunes	11	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	10	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+Lemme : jeter	38	38
+getés	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+gietes	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=p	1	
+gieté	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	1	
+getetes	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	1	
+gietast	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+geté	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	1	
+giete	1	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	
+getoient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+gieter	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+gieterent	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	2	
+gieta	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
+getees	2	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	2	
+geter	3	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	3	
+getee	3	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	3	
+geterent	4	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	4	
+getez	5	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=p	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	3	
+geta	7	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	7	
+Lemme : jesir	64	57
+geta	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+gissant	1	POS=VERppa|NOMB.=s|GENRE=m|CAS=r	1	
+jurent	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=p	1	
+gis	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	1	
+gisant	2	POS=VERppa|NOMB.=s|GENRE=m|CAS=n	1	POS=VERppa|NOMB.=s|GENRE=f|CAS=r	1	
+gisoient	3	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	3	
+geü	6	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	4	POS=VERppe|NOMB.=s|GENRE=n|CAS=r	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+jut	6	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	6	
+gist	7	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	7	
+gesir	8	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	8	
+gisoit	28	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	27	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
 
 §42 g pic. vs j fr à l'intérieur
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
 Lemme : enjoindre	2	1
-enjoing	1
-enjoint	1
-
-Lemme : rejehir	14	10
-regehi	3
-regehir	1
-regehirent	2
-regehis	1
-regehissoient	1
-regehissoit	1
-regehissons	1
-rejehir	2
-rejehis	1
-rejehisses	1
-
+enjoing	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=1|NOMB.=s	1	
+enjoint	1	POS=VERppe|NOMB.=s|GENRE=n|CAS=r	1	
 Lemme : rejeter	1	1
-regieta	1
-
+regieta	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+Lemme : rejehir	14	10
+regehissoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+regehir	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+regehis	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=s	1	
+rejehisses	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=2|NOMB.=p	1	
+rejehis	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=1|NOMB.=s	1	
+regehissoient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+regehissons	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=1|NOMB.=p	1	
+rejehir	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+regehirent	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	2	
+regehi	3	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	3	
 
 
 §42 gu/gh pic. vs g à l'initiale 
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : gaire	7	5
-gaires	2
-guaires	1
-gueres	4
-
-Lemme : gaitier	10	8
-gaitoient	2
-guaitent	1
-guaitoit	1
-guetent	1
-guetier	2
-guetoient	1
-guetoit	2
-
-Lemme : garir	7	3
-garie	1
-garir	1
-gariz	2
-guerir	1
-guerissoit	1
-gueriz	1
-
-Lemme : garison	8	4
-garisons	2
-garisson	2
-guerison	2
-guerisson	1
-guerissons	1
-
 Lemme : gaster	4	1
-gastee	1
-gasté	1
-gastoit	1
-guasterent	1
-
+gasté	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	1	
+gastoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=2|NOMB.=s	1	
+gastee	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
+guasterent	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	1	
+Lemme : garir	7	3
+garie	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+gueriz	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+guerissoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+garir	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+guerir	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+gariz	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=s	1	
+Lemme : garison	8	4
+guerissons	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+guerisson	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+garisons	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+garisson	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+guerison	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+Lemme : gaire	7	5
+guaires	1	POS=ADVneg|MORPH=empty	1	
+gaires	2	POS=ADVneg|MORPH=empty	1	POS=ADVgen|DEGRE=-	1	
+gueres	4	POS=ADVneg|MORPH=empty	1	POS=ADVgen|DEGRE=c	1	POS=ADVgen|DEGRE=-	2	
+Lemme : gaitier	10	8
+guetent	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=p	1	
+guaitoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+guetoient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+guaitent	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=p	1	
+gaitoient	2	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	2	
+guetoit	2	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	2	
+guetier	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
 Lemme : gerir	48	48
-gueresist	1
-gueri	2
-guerie	4
-gueries	1
-guerir	5
-guerissoient	5
-gueriz	30
-
+gueresist	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+gueries	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=n	1	
+gueri	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
+guerie	4	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	3	POS=VERppe|NOMB.=s|GENRE=f|CAS=r|DEGRE=s	1	
+guerir	5	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	5	
+guerissoient	5	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	4	
+gueriz	30	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	23	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	7	
 
 
 §42 gu/gh pic. vs g à l'intérieur 
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : agait	2	2
-aguaiz	1
-aguet	1
-
-Lemme : agaitier	4	3
-agaitoit	1
-aguaitoit	1
-aguetier	2
-
-Lemme : assëurer	1	1
-assegure	1
-
-Lemme : enorgoillir	2	2
-enorguellist	1
-orguelli	1
-
-Lemme : igal	1	1
-inguaus	1
-
-Lemme : langage	5	5
-language	2
-languages	3
-
 Lemme : langor	2	1
-langor	1
-languer	1
-
-Lemme : langoros	5	5
-languereus	5
-
-Lemme : lombart	3	3
-longuebars	1
-longuebarz	2
-
-Lemme : lonc	37	12
-lonc	18
-longe	5
-longue	11
-longues	1
-lons	2
-
-Lemme : longement	30	20
-longement	10
-longuement	20
-
-Lemme : mangier	85	3
-menga	5
-mengassent	1
-mengast	2
-mengastes	1
-mengerai	2
-mengeroit	3
-mengerons	2
-mengeront	1
-mengier	30
-mengierent	5
-mengiers	2
-mengiez	1
-mengié	8
-mengoie	1
-mengoient	3
-mengoit	9
-menguce	1
-mengue	2
-menja	1
-menjames	1
-menjoient	2
-menjoit	1
-menjuces	1
-
-Lemme : orgoillir	2	2
-orgueilli	1
-orguellesissent	1
-
-Lemme : orgoillos	4	4
-orgueilleus	1
-orguilleus	3
-
+languer	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+langor	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : assëurer	1	1
+assegure	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	1	
+Lemme : igal	1	1
+inguaus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
 Lemme : orgoillosement	1	1
-orguelleusement	1
-
+orguelleusement	1	POS=ADVgen|DEGRE=s	1	
+Lemme : enorgoillir	2	2
+orguelli	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+enorguellist	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+Lemme : agait	2	2
+aguaiz	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+aguet	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : orgoillir	2	2
+orguellesissent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+orgueilli	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+Lemme : agaitier	4	3
+agaitoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+aguaitoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+aguetier	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+Lemme : mangier	85	3
+menja	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+mengoie	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=1|NOMB.=s	1	
+menjames	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=p	1	
+menjoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+mengiez	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+menguce	1	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=3|NOMB.=s	1	
+mengastes	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=2|NOMB.=p	1	
+mengassent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+menjuces	1	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=2|NOMB.=p	1	
+mengeront	1	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=3|NOMB.=p	1	
+mengue	2	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	1	
+menjoient	2	POS=VERcjg|MODE=con|PERS.=3|NOMB.=p	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+mengiers	2	POS=VERinf|NOMB.=p|GENRE=m|CAS=r	2	
+mengerai	2	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=1|NOMB.=s	2	
+mengerons	2	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=1|NOMB.=p	2	
+mengast	2	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	2	
+mengeroit	3	POS=VERcjg|MODE=con|PERS.=3|NOMB.=s	3	
+mengoient	3	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	2	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+menga	5	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	5	
+mengierent	5	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	5	
+mengié	8	POS=VERppe|NOMB.=p|GENRE=m|CAS=r	1	POS=VERppe|NOMB.=s|GENRE=n|CAS=r	4	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	3	
+mengoit	9	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	9	
+mengier	30	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	23	POS=NOMcom|NOMB.=s|GENRE=n|CAS=r	1	POS=VERinf|NOMB.=s|GENRE=m|CAS=r	6	
+Lemme : lombart	3	3
+longuebars	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+longuebarz	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : orgoillos	4	4
+orgueilleus	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+orguilleus	3	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : langage	5	5
+language	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+languages	3	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r|DEGRE=p	1	
+Lemme : langoros	5	5
+languereus	5	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	2	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : lonc	37	12
+longues	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	
+lons	2	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=c	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=c	1	
+longe	5	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	3	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=c	1	
+longue	11	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	6	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=s	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=c	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=s	1	
+lonc	18	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	14	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=c	2	
+Lemme : longement	30	20
+longement	10	POS=ADVgen|DEGRE=-	7	POS=ADVgen|DEGRE=c	1	POS=ADVgen|DEGRE=s	2	
+longuement	20	POS=ADVgen|DEGRE=-	14	POS=ADVgen|DEGRE=s	6	
 
  g > ch en final 
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : chargier	20	7
-charcha	2
-charchast	1
-charchier	1
-charchies	4
-charchiez	5
-charchié	3
-charga	2
-chargie	1
-chargies	1
-
-Lemme : damage	8	4
-damage	2
-damages	1
-domache	4
-domage	1
-
 Lemme : jugier	3	2
-juches	1
-juchier	1
-juchiés	1
-
+juchier	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+juchiés	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
+juches	1	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	
+Lemme : damage	8	4
+damages	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+domage	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+damage	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+domache	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	4	
+Lemme : chargier	20	7
+chargie	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
+charchast	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+chargies	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+charchier	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+charga	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
+charcha	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
+charchié	3	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	3	
+charchies	4	POS=VERppe|NOMB.=p|GENRE=f|CAS=n	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	2	
+charchiez	5	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=r	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	2	
 
 
 Les dentales : conservation d'un t final
@@ -283,416 +251,342 @@ traire	1	traite	2	trete	1	tret	1
 Conservation d'un t final dans les autres mots
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : conte2	3	1
-conte	2
-conteret	1
-
-Lemme : doi	5	3
-doit	3
-doiz	2
-
-Lemme : morir	92	2
-morir	13
-moroient	4
-moroit	1
-morras	2
-morroit	1
-mors	4
-mort	8
-morte	2
-mortes	1
-morurent	2
-morussent	1
-morust	1
-morut	7
-morz	40
-muerent	1
-muert	2
-muire	1
-muirons	1
-
-Lemme : pechié	31	1
-pechiet	1
-pechiez	15
-pechié	10
-pechiés	5
-
-Lemme : prevoste	5	2
-prevost	2
-prevoz	3
-
 Lemme : proprïeté	1	1
-proprietet	1
-
-Lemme : raplegier	1	1
-raplegement	1
-
-Lemme : tiran	1	1
-tyrant	1
-
+proprietet	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
 Lemme : volenté	75	1
-volentet	1
-volentez	9
-volenté	61
-volonté	3
-volontés	1
-
+volontés	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+volentet	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+volonté	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	3	
+volentez	9	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	4	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	3	
+volenté	61	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	60	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+Lemme : tiran	1	1
+tyrant	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : pechié	31	1
+pechiet	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+pechiés	5	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+pechié	10	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	10	
+pechiez	15	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	14	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : conte2	3	1
+conteret	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+conte	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : raplegier	1	1
+raplegement	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : prevoste	5	2
+prevost	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+prevoz	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	3	
+Lemme : morir	92	2
+moroit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+morust	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+mortes	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=n	1	
+muerent	1	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=3|NOMB.=p	1	
+morroit	1	POS=VERcjg|MODE=con|PERS.=3|NOMB.=s	1	
+morussent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+muirons	1	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=1|NOMB.=p	1	
+muire	1	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=1|NOMB.=s	1	
+muert	2	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	2	
+morte	2	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
+morras	2	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=1|NOMB.=s	1	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=2|NOMB.=s	1	
+morurent	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	2	
+mors	4	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	4	
+moroient	4	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	4	
+morut	7	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	6	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+mort	8	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	4	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+morir	13	POS=VERinf|NOMB.=s|GENRE=n|CAS=n	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	12	
+morz	40	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	27	POS=VERppe|NOMB.=p|GENRE=m|CAS=r	5	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+Lemme : doi	5	3
+doiz	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	2	
+doit	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
 
 
 Confusion graphique de -s- et -ss-
 Graphie -ss- pour -s-
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : asie	4	1
-aise	3
-almasse	1
-
-Lemme : bas	6	2
-bas	4
-basse	2
-
-Lemme : buison	1	1
-buisson	1
-
-Lemme : covoitise	14	8
-couvoitisses	1
-covoitise	5
-covoitises	1
-covoitisse	7
-
-Lemme : crescent	1	1
-cressencii	1
-
-Lemme : eglise	165	146
-eglise	12
-eglisse	122
-eglisses	18
-eglyse	6
-eglyses	1
-eglysse	2
-glisse	3
-yglisse	1
-
-Lemme : enchantëor	1	1
-enchanteresses	1
-
-Lemme : escïent	2	2
-essient	1
-essïent	1
-
 Lemme : espès	4	1
-espes	1
-espesses	1
-espés	2
-
-Lemme : felon	14	1
-fel	5
-felenesse	1
-felon	4
-felonesche	1
-felonnies	1
-felons	2
-
-Lemme : garantise	2	1
-garantise	1
-garantisse	1
-
-Lemme : garison	8	4
-garisons	2
-garisson	2
-guerison	2
-guerisson	1
-guerissons	1
-
-Lemme : gros	3	2
-gros	1
-grosses	2
-
-Lemme : guise	10	3
-guise	7
-guisse	3
-
-Lemme : las	5	2
-las	3
-lasse	2
-
-Lemme : laschece	1	1
-lassece	1
-
-Lemme : lïon	32	3
-liens	2
-lion	9
-lionesse	3
-lions	18
-
-Lemme : maison	108	3
-meson	101
-mesons	4
-messon	3
-
+espesses	1	POS=ADJqua|NOMB.=p|GENRE=f|CAS=n|DEGRE=p	1	
+espes	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+espés	2	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=p|GENRE=m|CAS=r|DEGRE=p	1	
 Lemme : maisoncele	3	1
-maisonceles	1
-maissoncele	1
-mesoncele	1
-
-Lemme : orison	142	140
-orisons	2
-orisson	36
-orissons	104
-
-Lemme : prison	17	7
-prison	7
-prisons	3
-prisson	6
-prissons	1
-
-Lemme : raison	21	4
-raison	1
-raisson	3
-reison	2
-reisons	1
-reson	6
-resons	7
-ressons	1
-
-Lemme : seignor	775	29
-mesires	1
-messires	29
-monsigneur	71
-monsignor	20
-segnor	2
-seigneur	1
-seignor	15
-seignors	2
-signeur	13
-signeurs	1
-signor	404
-signors	8
-signour	3
-sire	58
-sires	147
-
-Lemme : sisiesme	4	2
-sisiesme	1
-sisimes	1
-sissieme	1
-sissime	1
-
-Lemme : tamise	1	1
-tamisse	1
-
-Lemme : träison	8	5
-traïson	3
-traïsson	5
-
+mesoncele	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+maisonceles	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+maissoncele	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : garantise	2	1
+garantisse	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+garantise	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : crescent	1	1
+cressencii	1	POS=NOMpro|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : enchantëor	1	1
+enchanteresses	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	1	
 Lemme : venice	2	1
-venice	1
-venisse	1
-
+venice	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+venisse	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : asie	4	1
+almasse	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=n	1	
+aise	3	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	3	
+Lemme : felon	14	1
+felonnies	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+felonesche	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	1	
+felenesse	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	
+felons	2	POS=ADJqua|NOMB.=p|GENRE=m|CAS=r|DEGRE=p	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+felon	4	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	2	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p	2	
+fel	5	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	4	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=p	1	
+Lemme : buison	1	1
+buisson	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : tamise	1	1
+tamisse	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : laschece	1	1
+lassece	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+Lemme : escïent	2	2
+essient	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+essïent	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : bas	6	2
+basse	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=c	1	
+bas	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	POS=ADJqua|NOMB.=p|GENRE=m|CAS=n|DEGRE=c	1	
+Lemme : gros	3	2
+gros	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=r|DEGRE=p	1	
+grosses	2	POS=ADJqua|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	2	
+Lemme : las	5	2
+lasse	2	POS=ADJqua|NOMB.=s|GENRE=f|CAS=n|DEGRE=p	2	
+las	3	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	2	POS=INJ|MORPH=empty	1	
+Lemme : sisiesme	4	2
+sisimes	1	POS=ADJord|NOMB.=p|GENRE=f|CAS=r	1	
+sisiesme	1	POS=ADJord|NOMB.=s|GENRE=m|CAS=r	1	
+sissieme	1	POS=ADJord|NOMB.=s|GENRE=m|CAS=r	1	
+sissime	1	POS=ADJord|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : guise	10	3
+guisse	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	3	
+guise	7	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	7	
+Lemme : lïon	32	3
+liens	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	2	
+lionesse	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	2	
+lion	9	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	9	
+lions	18	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	18	
+Lemme : maison	108	3
+messon	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	3	
+mesons	4	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	4	
+meson	101	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	97	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : garison	8	4
+guerissons	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+guerisson	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+garisons	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+garisson	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+guerison	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+Lemme : raison	21	4
+raison	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+reisons	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+ressons	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+reison	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+raisson	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+reson	6	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	
+resons	7	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	5	
+Lemme : träison	8	5
+traïson	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+traïsson	5	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	
+Lemme : prison	17	7
+prissons	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+prisons	3	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	3	
+prisson	6	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+prison	7	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	6	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : covoitise	14	8
+couvoitisses	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+covoitises	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+covoitise	5	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	
+covoitisse	7	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	5	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	2	
+Lemme : seignor	775	29
+seigneur	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+signeurs	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+mesires	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+seignors	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+segnor	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+signour	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	3	
+signors	8	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	8	
+signeur	13	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	12	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+seignor	15	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	15	
+monsignor	20	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	20	
+messires	29	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	29	
+sire	58	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	58	
+monsigneur	71	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	70	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+sires	147	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	147	
+signor	404	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	399	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	4	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : orison	142	140
+orisons	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	2	
+orisson	36	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	33	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	3	
+orissons	104	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	102	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+Lemme : eglise	165	146
+yglisse	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+eglyses	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+eglysse	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+glisse	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+eglyse	6	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	6	
+eglise	12	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	11	
+eglisses	18	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	17	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+eglisse	122	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	8	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	114	
 
 
 Graphie -s- pour -ss-
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : aussi	151	21
-ausi	6
-ausint	15
-aussi	69
-aussint	61
-
-Lemme : bisse	2	2
-bische	2
-
-Lemme : cyparissus	1	1
-quaparse	1
-
-Lemme : essemplaire2	1	1
-exemplaire	1
-
-Lemme : essemple	24	24
-example	13
-examples	6
-exemple	3
-exemples	2
-
-Lemme : fausseté	3	3
-fauseté	3
-
-Lemme : messie	1	1
-mesnie	1
-
 Lemme : paroisse	2	1
-parosse	1
-parroce	1
-
+parroce	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+parosse	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : essemplaire2	1	1
+exemplaire	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : messie	1	1
+mesnie	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+Lemme : cyparissus	1	1
+quaparse	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : bisse	2	2
+bische	2	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	2	
+Lemme : fausseté	3	3
+fauseté	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	3	
+Lemme : aussi	151	21
+ausi	6	POS=ADVgen|DEGRE=-	6	
+ausint	15	POS=ADVgen|DEGRE=-	15	
+aussint	61	POS=ADVgen|DEGRE=c	3	POS=ADVgen|DEGRE=-	58	
+aussi	69	POS=ADVgen|DEGRE=c	5	POS=ADVgen|DEGRE=-	64	
+Lemme : essemple	24	24
+exemples	2	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	2	
+exemple	3	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+examples	6	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	5	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	1	
+example	13	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	12	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
 
 
 §50 s intérieur devant consonne entraine en r en pic
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : arceveschié	2	2
-arcevesqié	2
-
-Lemme : arcevesque	37	37
-arcevesqe	8
-arcevesqes	18
-arcevesques	1
-archevesqe	1
-archevesqes	8
-archevesque	1
-
-Lemme : arester	48	18
-arresta	11
-arreste	2
-arrestees	1
-arrestent	3
-arrester	15
-arresterent	3
-arrestez	2
-arrestoien	1
-arrestoient	4
-arrestoit	5
-rarestai	1
-
-Lemme : cyparissus	1	1
-quaparse	1
-
-Lemme : desconforter	3	3
-desconfortee	1
-desconfortez	1
-desconfortés	1
-
-Lemme : descorder	1	1
-descordé	1
-
-Lemme : descovrir	10	2
-descovert	2
-descoverte	2
-descoverz	1
-descovri	1
-descovriez	1
-descovrir	1
-descovrist	1
-descuevre	1
-
-Lemme : desfermer	5	3
-defferma	1
-desfermassent	1
-desfermees	1
-desfermer	2
-
-Lemme : desroter	1	1
-derroutes	1
-
-Lemme : desrubant	1	1
-derrubans	1
-
-Lemme : desver	33	32
-dervee	4
-dervees	1
-dervez	20
-dervé	7
-desver	1
-
-Lemme : desverie	11	11
-derverie	11
-
-Lemme : enoscurcir	1	1
-enobscurci	1
-
-Lemme : escarteler	1	1
-esqartelez	1
-
 Lemme : escharnir	1	1
-escharnir	1
-
-Lemme : esclarcir	1	1
-esclarciz	1
-
-Lemme : esforcier	1	1
-esforcier	1
-
-Lemme : esforcier1	2	2
-esforcier	1
-esforciez	1
-
-Lemme : esgarder	37	17
-esgarda	2
-esgardames	1
-esgardasse	1
-esgardassent	1
-esgarde	1
-esgardee	1
-esgarder	14
-esgarderent	2
-esgarderons	1
-esgardes	1
-esgardez	2
-esgardé	2
-esgardions	1
-esgardissions	1
-esgardoient	6
-
-Lemme : esmerveillable	2	2
-esmerveillable	1
-esmerveillables	1
-
-Lemme : esmerveillier	30	2
-esmerveil	3
-esmerveilla	6
-esmerveillames	1
-esmerveille	1
-esmerveilles	1
-esmerveillierent	5
-esmerveilliez	3
-esmerveillions	1
-esmerveilloie	1
-esmerveilloient	1
-esmervella	1
-esmervellier	1
-esmervellierent	2
-esmervelloient	2
-esmervelloit	1
-
-Lemme : espandre	10	1
-espandi	1
-espandre	1
-espandue	4
-espanduz	2
-espant	1
-esparse	1
-
-Lemme : esperdre	2	2
-esperdu	2
-
-Lemme : estorbeillon	1	1
-estorbellons	1
-
-Lemme : estordir	1	1
-estordiz	1
-
-Lemme : marsdi	1	1
-mardi	1
-
+escharnir	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+Lemme : descorder	1	1
+descordé	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
 Lemme : paroisse	2	1
-parosse	1
-parroce	1
-
-Lemme : rescorre	3	2
-rescorre	2
-rescous	1
-
+parroce	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+parosse	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : desrubant	1	1
+derrubans	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+Lemme : estordir	1	1
+estordiz	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : estorbeillon	1	1
+estorbellons	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : enoscurcir	1	1
+enobscurci	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : espandre	10	1
+espant	1	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	
+espandre	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+espandi	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+esparse	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+espanduz	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+espandue	4	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	3	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
 Lemme : tresporter	2	1
-tresportassent	1
-tresportee	1
-
+tresportassent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+tresportee	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+Lemme : cyparissus	1	1
+quaparse	1	POS=NOMpro|NOMB.=s|GENRE=f|CAS=r	1	
+Lemme : marsdi	1	1
+mardi	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : esforcier	1	1
+esforcier	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+Lemme : desroter	1	1
+derroutes	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	1	
+Lemme : escarteler	1	1
+esqartelez	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : esclarcir	1	1
+esclarciz	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+Lemme : esmerveillier	30	2
+esmervellier	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+esmerveillames	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=p	1	
+esmerveilloie	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=1|NOMB.=s	1	
+esmerveilles	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=s	1	
+esmerveillions	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=p	1	
+esmerveille	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=1|NOMB.=s	1	
+esmervella	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+esmerveilloient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+esmervelloit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+esmervelloient	2	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	2	
+esmervellierent	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	2	
+esmerveilliez	3	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=p	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=2|NOMB.=p	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+esmerveil	3	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=1|NOMB.=s	3	
+esmerveillierent	5	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	5	
+esmerveilla	6	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	6	
+Lemme : esperdre	2	2
+esperdu	2	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	2	
+Lemme : arceveschié	2	2
+arcevesqié	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : descovrir	10	2
+descoverz	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
+descuevre	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	1	
+descovrir	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+descovrist	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+descovri	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+descovriez	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=2|NOMB.=s	1	
+descoverte	2	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+descovert	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : rescorre	3	2
+rescous	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+rescorre	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+Lemme : esforcier1	2	2
+esforciez	1	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	1	
+esforcier	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+Lemme : esmerveillable	2	2
+esmerveillables	1	POS=ADJqua|NOMB.=s|GENRE=m|CAS=n|DEGRE=p	1	
+esmerveillable	1	POS=ADJqua|NOMB.=s|GENRE=f|CAS=r|DEGRE=p	1	
+Lemme : desfermer	5	3
+desfermees	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	1	
+desfermassent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+defferma	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	
+desfermer	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+Lemme : desconforter	3	3
+desconfortez	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
+desconfortee	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	1	
+desconfortés	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	1	
 Lemme : trestorner	7	4
-trestorner	2
-trestorneroient	1
-trestornes	1
-trestorné	2
-trestornoit	1
-
+trestornoit	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	1	
+trestornes	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=s	1	
+trestorneroient	1	POS=VERcjg|MODE=con|PERS.=3|NOMB.=p	1	
+trestorné	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	2	
+trestorner	2	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	2	
+Lemme : desverie	11	11
+derverie	11	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	10	
+Lemme : esgarder	37	17
+esgardes	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=2|NOMB.=s	1	
+esgardames	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=p	1	
+esgardissions	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=1|NOMB.=p	1	
+esgardions	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=p	1	
+esgardee	1	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
+esgarde	1	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	
+esgardasse	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=2|NOMB.=s	1	
+esgarderons	1	POS=VERcjg|MODE=ind|TEMPS=fut|PERS.=2|NOMB.=p	1	
+esgardassent	1	POS=VERcjg|MODE=sub|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+esgarderent	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	1	
+esgarda	2	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	2	
+esgardez	2	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=p	2	
+esgardé	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=r	2	
+esgardoient	6	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	4	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	2	
+esgarder	14	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	14	
+Lemme : arester	48	18
+arrestoien	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+arrestees	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=n	1	
+rarestai	1	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=1|NOMB.=s	1	
+arrestez	2	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	2	
+arreste	2	POS=VERcjg|MODE=imp|PERS.=2|NOMB.=s	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s	1	
+arresterent	3	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p	3	
+arrestent	3	POS=VERcjg|MODE=sub|TEMPS=pst|PERS.=3|NOMB.=p	1	POS=VERcjg|MODE=ind|TEMPS=pst|PERS.=3|NOMB.=p	2	
+arrestoient	4	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	4	
+arrestoit	5	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s	5	
+arresta	11	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	11	
+arrester	15	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	15	
+Lemme : desver	33	32
+desver	1	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	1	
+dervees	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=r	1	
+dervee	4	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	3	POS=VERppe|NOMB.=s|GENRE=f|CAS=r	1	
+dervé	7	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	4	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	2	
+dervez	20	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	7	POS=VERppe|NOMB.=s|GENRE=m|CAS=n	8	POS=VERppe|NOMB.=p|GENRE=m|CAS=r	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=VERppe|NOMB.=p|GENRE=m|CAS=n	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+Lemme : arcevesque	37	37
+archevesque	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+archevesqe	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+arcevesques	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+archevesqes	8	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	7	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+arcevesqe	8	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	8	
+arcevesqes	18	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	16	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
 
 
 Les liquides
@@ -704,52 +598,45 @@ Mot	Nombres d'occurrences total	Nombre d'occurrences
 r parasite ?
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
-Lemme : ame	45	7
-ame	31
-ames	7
-arme	7
-
-Lemme : apostle	29	28
-apostles	1
-apostre	10
-apostres	18
-
-Lemme : conte2	3	1
-conte	2
-conteret	1
-
-Lemme : dïacne	6	6
-diacres	1
-dyacres	5
-
 Lemme : escandle	1	1
-escandres	1
-
+escandres	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+Lemme : conte2	3	1
+conteret	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+conte	2	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	2	
+Lemme : dïacne	6	6
+diacres	1	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	1	
+dyacres	5	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	5	
+Lemme : ame	45	7
+ames	7	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	6	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+arme	7	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	4	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	3	
+ame	31	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	25	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	6	
 Lemme : idle	23	20
-ydes	1
-ydole	1
-ydoles	1
-ydre	9
-ydres	11
-
+ydoles	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+ydes	1	POS=ADJqua|NOMB.=p|GENRE=f|CAS=r|DEGRE=p	1	
+ydole	1	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	1	
+ydre	9	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	8	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	1	
+ydres	11	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=r	9	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
+Lemme : apostle	29	28
+apostles	1	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	1	
+apostre	10	POS=NOMcom|NOMB.=s|GENRE=m|CAS=r	8	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	2	
+apostres	18	POS=NOMcom|NOMB.=p|GENRE=m|CAS=r	15	POS=NOMcom|NOMB.=s|GENRE=m|CAS=n	2	POS=NOMcom|NOMB.=p|GENRE=m|CAS=n	1	
 
 Grapihe de tristesse
 lemme : tristece	Nombres d'occurrences : 8
-tristece	3
-tristrece	4
-tristreces	1
+tristreces	1	POS=NOMcom|NOMB.=p|GENRE=f|CAS=n	1	
+tristece	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	3	
+tristrece	4	POS=NOMcom|NOMB.=s|GENRE=f|CAS=r	4	
 
 
 labdacisme ?
 
 Mot	Nombres d'occurrences total	Nombre d'occurrences
 Lemme : celer1	15	1
-cela	3
-celebroient	1
-celee	4
-celees	1
-celer	5
-celé	1
-
+celé	1	POS=VERppe|NOMB.=s|GENRE=n|CAS=r	1	
+celees	1	POS=VERppe|NOMB.=p|GENRE=f|CAS=n	1	
+celebroient	1	POS=VERcjg|MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p	1	
+cela	3	POS=VERcjg|MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s	3	
+celee	4	POS=VERppe|NOMB.=s|GENRE=f|CAS=n	3	POS=NOMcom|NOMB.=s|GENRE=f|CAS=n	1	
+celer	5	POS=VERinf|NOMB.=x|GENRE=x|CAS=x	5	
 
 
