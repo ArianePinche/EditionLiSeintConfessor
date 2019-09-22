@@ -20,7 +20,7 @@
             <xsl:text>a libre tonique  > ei §1</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"
-                    select="//w[matches(fn:normalize(text()), '\w*ei[zrtypqsdfghjklmwxcvbn]') and not(matches(fn:normalize(@lemma), '(e|a)i')) and not(matches(@type, 'OUT|VER'))]"
+                    select="//w[matches(fn:normalize(text()), '\w*ei[zrtypqsdfghjklmwxcvbn]') and not(matches(fn:normalize(@lemma), '(e|a)i')) and not(matches(@pos, 'OUT|VER'))]"
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
@@ -28,7 +28,7 @@
             
             <xsl:text>avu  > au, eu, oi - essai sur poi §2&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition"  select="//w[matches(fn:normalize(text()), 'eu|au') and matches(fn:normalize(@lemma), 'oi') and not(matches(@type, 'VER|OUT'))]"/>
+                <xsl:with-param name="condition"  select="//w[matches(fn:normalize(text()), 'eu|au') and matches(fn:normalize(@lemma), 'oi') and not(matches(@pos, 'VER|OUT'))]"/>
             </xsl:call-template>
             <xsl:text>Graphie du mot poi&#10;</xsl:text>
             <xsl:call-template name="compteOcc">
@@ -42,7 +42,7 @@
             <xsl:variable name="regex_er_consonnes" select="'er[hzrtpqsdfghjklmwxcvbn]'"/>
            
             <xsl:call-template name="occurrencesAlt">
-                <xsl:with-param name="condition1" select="//w[matches(fn:normalize(text()), $regex_ar_consonnes) and not(matches(@type, 'OUT|VER'))]"/>
+                <xsl:with-param name="condition1" select="//w[matches(fn:normalize(text()), $regex_ar_consonnes) and not(matches(@pos, 'OUT|VER'))]"/>
                 <xsl:with-param name="condition2" select="$regex_er_consonnes"/>
             </xsl:call-template>
 
@@ -77,7 +77,7 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Participe en -ie(s) : Nb total d'occurrence&#09;</xsl:text>
             <xsl:value-of
-                select="count(descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)e(s|z)?$')])"/>
+                select="count(descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)e(s|z)?$')])"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Terme</xsl:text>
             <xsl:text>&#09;</xsl:text>
@@ -86,7 +86,7 @@
             <xsl:text>Occurrences du texte</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group
-                select="descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)e(s|z)?$')]"
+                select="descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)e(s|z)?$')]"
                 group-by="@lemma">
                 <xsl:value-of select="current-grouping-key()"/>
                 <xsl:text>&#09;</xsl:text>
@@ -103,7 +103,7 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Participe en -iee(s) : Nb total d'occurrence&#09;</xsl:text>
             <xsl:value-of
-                select="count(descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)ee(s|z)?$')])"/>
+                select="count(descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)ee(s|z)?$')])"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Terme</xsl:text>
             <xsl:text>&#09;</xsl:text>
@@ -112,7 +112,7 @@
             <xsl:text>Occurrences du texte</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group
-                select="descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)ee(s|z)?$')]"
+                select="descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and matches(fn:normalize(text()), '(i|ï)ee(s|z)?$')]"
                 group-by="@lemma">
                 <xsl:value-of select="current-grouping-key()"/>
                 <xsl:text>&#09;</xsl:text>
@@ -129,7 +129,7 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Autres formes : Nb total d'occurrence&#09;</xsl:text>
             <xsl:value-of
-                select="count(descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and not(matches(fn:normalize(text()), '(i|ï)e(e)?(s|z)?$'))])"/>
+                select="count(descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and not(matches(fn:normalize(text()), '(i|ï)e(e)?(s|z)?$'))])"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Terme</xsl:text>
             <xsl:text>&#09;</xsl:text>
@@ -138,7 +138,7 @@
             <xsl:text>Occurrences du texte</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:for-each-group
-                select="descendant::w[matches(@type, 'POS=VERppe\|NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and not(matches(fn:normalize(text()), '(i|ï)e(e)?(s|z)?$'))]"
+                select="descendant::w[matches(@pos, 'VERppe') and matches(@msd, 'NOMB.=(s|p)\|GENRE=f\|CAS=n') and matches(@lemma, $vb1) and not(matches(fn:normalize(text()), '(i|ï)e(e)?(s|z)?$'))]"
                 group-by="@lemma">
                 <xsl:value-of select="current-grouping-key()"/>
                 <xsl:text>&#09;</xsl:text>
@@ -170,20 +170,20 @@
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"
                     select="
-                    //w[matches(fn:normalize(@lemma), '[zrtpqsdfgjklmwxcvbnç]ie[zrtpqsdfgjklmwxcvbnç]') and not(matches(@type, 'OUT|VER')) and
+                    //w[matches(fn:normalize(@lemma), '[zrtpqsdfgjklmwxcvbnç]ie[zrtpqsdfgjklmwxcvbnç]') and not(matches(@msd, 'OUT|VER')) and
                     not(matches(fn:normalize(text()), '[zrtpqsdfgjklmwxcvbnç]ie[zrtpqsdfgjklmwxcvbnç]'))]"
                 />
             </xsl:call-template>
-            <xsl:text>Adjectif lié au fem.&#09;NB occ. : </xsl:text><xsl:value-of select="count(//w[@lemma ='lié1' and matches(@type,'GENRE=f')])"/>
+            <xsl:text>Adjectif lié au fem.&#09;NB occ. : </xsl:text><xsl:value-of select="count(//w[@lemma ='lié1' and matches(@msd,'GENRE=f')])"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:call-template name="compteOccCond">
                 <xsl:with-param name="lemma" select="'lié1'"/>
-                <xsl:with-param name="condition" select="//w[@lemma ='lié1' and matches(@type,'GENRE=f')]"/>
+                <xsl:with-param name="condition" select="//w[@lemma ='lié1' and matches(@msd,'GENRE=f')]"/>
             </xsl:call-template>
             <!-- $11 -->
             <xsl:text> reduction de e ouvert > ie §11&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[not(matches(fn:normalize(@lemma), '[zrtypqsdfghjklmwxcvbnç](i)?(i|ï)e[zrtypqsdfghjklmwxcvbnç]')) and not(matches(@type, 'OUT|VER')) and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
+                <xsl:with-param name="condition" select="//w[not(matches(fn:normalize(@lemma), '[zrtypqsdfghjklmwxcvbnç](i)?(i|ï)e[zrtypqsdfghjklmwxcvbnç]')) and not(matches(@pos, 'OUT|VER')) and matches(fn:normalize(text()),'[zrtypqsdfghjklmwxcvbnç]ie[zrtypqsdfghjklmwxcvbnç]')]"/>
             </xsl:call-template>
             <!-- Etude de cas -->
             <xsl:text>Graphie du mot près&#10;</xsl:text>
@@ -220,7 +220,7 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>§12.3 Etude de la graphie du pronom P3 - pluriel régime&#10;</xsl:text>
             <xsl:call-template name="compteOccCond">
-                <xsl:with-param name="condition" select="//w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il']"/>
+                <xsl:with-param name="condition" select="//w[matches(@pos, 'PROper') and matches(@msd, 'PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)') and @lemma = 'il']"/>
                 <xsl:with-param name="lemma" select="'il'"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
@@ -234,18 +234,18 @@
             <xsl:text>Confusion graphique an/en $15</xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:text>mots en en</xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'a(n|m)[zrtpqsdfghjkmwxcvbnç]') and not(matches(@type, 'OUT|VER')) and matches(fn:normalize(@lemma), 'e(n|m)[zrtpqsdfghjkmwxcvbnç]')]"/>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'a(n|m)[zrtpqsdfghjkmwxcvbnç]') and not(matches(@pos, 'OUT|VER')) and matches(fn:normalize(@lemma), 'e(n|m)[zrtpqsdfghjkmwxcvbnç]')]"/>
             </xsl:call-template>
             <xsl:text>mots en an</xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'e(n|m)[zrtpqsdfghjkmwxcvbnç]') and not(matches(@type, 'OUT|VER')) and matches(fn:normalize(@lemma), 'a(n|m)[zrtpqsdfghjkmwxcvbnç]')]"/>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'e(n|m)[zrtpqsdfghjkmwxcvbnç]') and not(matches(@pos, 'OUT|VER')) and matches(fn:normalize(@lemma), 'a(n|m)[zrtpqsdfghjkmwxcvbnç]')]"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <!-- Evolution de e fermé -->
             <xsl:text>&#10;</xsl:text>
             <!-- $17 -->
             <xsl:text>Forme alternantive des infinitifs : seîr, caïr/keïr et veïr $17</xsl:text><xsl:text>&#10;</xsl:text>
-            <xsl:for-each-group select="//w[matches(@lemma, 'vëoir|sëoir|chëoir') and matches(@type, 'VERinf')]"
+            <xsl:for-each-group select="//w[matches(@lemma, 'vëoir|sëoir|chëoir') and matches(@pos, 'VERinf')]"
                 group-by="@lemma">
                 <xsl:for-each-group select="current-group()" group-by=".">
                     <xsl:value-of select="."/>
@@ -282,12 +282,12 @@
             <!-- $24 -->
             <xsl:text>oi, ui $24&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()),'ui') and matches(fn:normalize(@lemma), 'oi') and not(matches(@type, 'VER|OUT'))]"></xsl:with-param>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()),'ui') and matches(fn:normalize(@lemma), 'oi') and not(matches(@pos, 'VER|OUT'))]"></xsl:with-param>
             </xsl:call-template>
             <!-- $27 -->
             <xsl:text>O fermé sous l’influence de yod > oi, o pic. $27</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'oi')  and not(matches(fn:normalize(text()), 'oi')) and not(matches(@type, 'VER|OUT'))]"></xsl:with-param>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'oi')  and not(matches(fn:normalize(text()), 'oi')) and not(matches(@pos, 'VER|OUT'))]"></xsl:with-param>
             </xsl:call-template>
             <!-- $28 -->
             <xsl:text>Alternance graphique o/ou + nasale $28</xsl:text>
@@ -298,7 +298,7 @@
             <!-- $32, 33 -->
             <xsl:text> oi > PIC. i §32,$33</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '[zrtpqsdfghjklmwxcvbnç](o|a)i[zrtpqsdfghjklmwxcvbnç]') and matches(fn:normalize(text()), '[zrtpqsdfghjklmwxcvbnç]i[zrtpqsdfghjklmwxcvbnç]') and not(matches(@type, 'VER|OUT'))]"/>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '[zrtpqsdfghjklmwxcvbnç](o|a)i[zrtpqsdfghjklmwxcvbnç]') and matches(fn:normalize(text()), '[zrtpqsdfghjklmwxcvbnç]i[zrtpqsdfghjklmwxcvbnç]') and not(matches(@pos, 'VER|OUT'))]"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
             <!-- $34 -->
@@ -310,7 +310,7 @@
             <!-- $36 -->
             <xsl:text>o initial + n > a + n $36</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'o(n|m)') and matches(fn:normalize(text()), 'a(n|m)') and not(matches(@type, 'VER|OUT'))]"></xsl:with-param>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'o(n|m)') and matches(fn:normalize(text()), 'a(n|m)') and not(matches(@pos, 'VER|OUT'))]"></xsl:with-param>
             </xsl:call-template>
             <!-- $37 -->
             <xsl:text>Dissimilation de O $37</xsl:text>
@@ -332,7 +332,7 @@
             <xsl:text>&#09;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="current-group()" group-by="@type">
+            <xsl:for-each-group select="current-group()" group-by="@msd">
                 <xsl:value-of select="current-grouping-key()"/>
                 <xsl:text>&#09;</xsl:text>
                 <xsl:value-of select="count(current-group())"/>
@@ -363,7 +363,7 @@
     <xsl:template name="compteOccCond">
         <!-- Ajouter en paramètre la chaine de caractère que constitue le lemme : 'lemme' -->
         <xsl:param name="lemma" required="yes"/>
-        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
+        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@pos, 'PROper) and matches(@msd, 'PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
         <xsl:param name="condition" required="yes"/>
         <xsl:text>&#10;lemme : </xsl:text>
         <xsl:value-of select="$lemma"/>
@@ -378,7 +378,7 @@
     
     <!-- Règle pour repérer un phénomène phonétique par comparaison entre la graphie du terme et la graphie de son lemme -->
     <xsl:template name="occurrencesPhen">
-        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@type, 'POS=PROper\|PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
+        <!-- condition : chemin xpath complet pour atteindre le phénomène voulu, ex : //w[matches(@pos, 'PROper) and matches(@msd, 'PERS.=3\|NOMB.=p\|GENRE=(m|f)\|CAS=(r|i)$') and @lemma = 'il'] -->
         <xsl:param name="condition" required="yes"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombres d'occurrences total&#09;Nombre d'occurrences&#10;</xsl:text>
