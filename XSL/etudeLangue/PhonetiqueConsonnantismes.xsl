@@ -130,6 +130,30 @@
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
+            <!-- §44 -->
+            <xsl:text>Insertion d'un e svarabhaktique dans les groupes muta + liquide : br&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'br') and matches(fn:normalize(text()), 'ber')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:text>Insertion d'un e svarabhaktique dans les groupes muta + liquide : pr&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'pr') and matches(fn:normalize(text()), 'per')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'pr') and matches(fn:normalize(text()), 'per')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:call-template name="compteOcc">
+                <xsl:with-param name="lemma" select="'esperit'"/>
+            </xsl:call-template>
+            <xsl:text>Insertion d'un e svarabhaktique dans les groupes muta + liquide : vr&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'vr') and matches(fn:normalize(text()), 'ver')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:text>Insertion d'un e svarabhaktique dans les groupes muta + liquide : vl&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'vl') and matches(fn:normalize(text()), 'vel')]"></xsl:with-param>
+            </xsl:call-template>
+            
             <!-- §46 -->
             <xsl:text>Les dentales : conservation d'un t final&#10;</xsl:text>
             <xsl:text>Conservation d'un t final dans les ppe&#10;</xsl:text>
@@ -158,6 +182,20 @@
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
+            <!-- §47 -->
+            <xsl:text>Insertion d'un e prostatique devant sc&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, 'esc') and matches(fn:normalize(text()), '^sc')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:text>Insertion d'un e prostatique devant st&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, '^est') and matches(fn:normalize(text()), '^st')]"></xsl:with-param>
+            </xsl:call-template>
+            <xsl:text>Insertion d'un e prostatique devant sp&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(@lemma, '^esp') and matches(fn:normalize(text()), '^sp')]"></xsl:with-param>
+            </xsl:call-template>
+            
             <!-- $ 49 -->
             <xsl:text>Confusion graphique de -s- et -ss-&#10;</xsl:text>
             <xsl:text>Graphie -ss- pour -s-&#10;</xsl:text>
@@ -174,15 +212,35 @@
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>§50 s intérieur devant consonne entraine en r en pic&#10;</xsl:text>
+            <!-- §50 -->
+            <xsl:text>s intérieur devant consonne entraine en r en pic&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"
                     select="//w[matches(fn:normalize(text()), '^(\w|ç)+r[zrtpqsdfghjklmwxcvbn](\w|ç)+$') and matches(fn:normalize(@lemma), '^(\w|ç)+s[zrtpqsdfghjklmwxcvbn](\w|ç)+') and not(matches(@pos, 'VERcjg'))]"
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
+            <!-- §51 -->
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>w-germ initial > pic. w intérieur devant consonne entraine en r en pic&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition"
+                    select="//w[matches(fn:normalize(@lemma), '^g') and matches(fn:normalize(text()), '^w')]"
+                />
+            </xsl:call-template>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <!-- §52 -->
+            <xsl:text>-abulu, abile > pic. -aule, -avle&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition"
+                    select="//w[matches(fn:normalize(@lemma), 'able$') and not(matches(fn:normalize(text()), 'able(s|z)?$')) and @pos!='ADVgen']"
+                />
+            </xsl:call-template>
+            <xsl:text>&#10;</xsl:text>
+            <!-- §55 -->
             <xsl:text>Les liquides&#10;</xsl:text>
-            <xsl:text>§55 rl passe à ll assimilation&#10;</xsl:text>
+            <xsl:text>rl passe à ll assimilation&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"
                     select="//w[matches(fn:normalize(@lemma), 'rl') and matches(fn:normalize(text()), 'll')]"
@@ -440,20 +498,26 @@
         <xsl:param name="condition" required="yes"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombres d'occurrences total&#09;Nombre d'occurrences&#10;</xsl:text>
-        <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)">
-            <xsl:sort select="count(current-group())" order="ascending"/>
-            <xsl:variable name="lemma" select="current-grouping-key()"/>
-            <xsl:text>Lemme : </xsl:text>
-            <xsl:value-of select="$lemma"/>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:value-of select="count(//w[fn:normalize(@lemma) = $lemma])"/>
-            <xsl:text>&#09;</xsl:text>
-            <xsl:value-of select="count(current-group())"/>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:call-template name="forms">
-                <xsl:with-param name="nodes" select="//w[fn:normalize(@lemma) = $lemma]"/>
-            </xsl:call-template>
-        </xsl:for-each-group>
+        <xsl:choose>
+            <xsl:when test="$condition">
+                <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)">
+                <xsl:sort select="count(current-group())" order="ascending"/>
+                <xsl:variable name="lemma" select="current-grouping-key()"/>
+                <xsl:text>Lemme : </xsl:text>
+                <xsl:value-of select="$lemma"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(//w[fn:normalize(@lemma) = $lemma])"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:call-template name="forms">
+                    <xsl:with-param name="nodes" select="//w[fn:normalize(@lemma) = $lemma]"/>
+                </xsl:call-template>
+                </xsl:for-each-group>
+            </xsl:when>
+            <xsl:otherwise><xsl:text>Aucune occurrences</xsl:text></xsl:otherwise>
+        </xsl:choose>
+        
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
 
