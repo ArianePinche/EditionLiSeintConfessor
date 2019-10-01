@@ -222,7 +222,7 @@
             <xsl:text>&#10;</xsl:text>
             <!-- §51 -->
             <xsl:text>&#10;</xsl:text>
-            <xsl:text>w-germ initial > pic. w intérieur devant consonne entraine en r en pic&#10;</xsl:text>
+            <xsl:text>w-germ initial > pic. w &#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition"
                     select="//w[matches(fn:normalize(@lemma), '^g') and matches(fn:normalize(text()), '^w')]"
@@ -254,7 +254,7 @@
                     select="//w[matches(@pos, 'NOMcom') and matches(fn:normalize(text()), 'r') and not(matches(fn:normalize(@lemma), 'r'))]"
                 />
             </xsl:call-template>
-            <xsl:text>Grapihe de tristesse</xsl:text>
+            <xsl:text>Graphie de tristesse</xsl:text>
             <xsl:call-template name="compteOcc">
                 <xsl:with-param name="lemma" select="'tristece'"/>
             </xsl:call-template>
@@ -447,12 +447,6 @@
             <xsl:text>&#09;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="current-group()" group-by="@msd">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#09;</xsl:text>
-            </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
         </xsl:for-each-group>
     </xsl:template>

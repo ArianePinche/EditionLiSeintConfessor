@@ -59,6 +59,12 @@
             <xsl:call-template name="compteOcc">
                 <xsl:with-param name="lemma" select="quel1"></xsl:with-param>
             </xsl:call-template>
+            
+ <!-- $6 -->
+            <xsl:text>a + yod latin > ai, a, e</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ai') and not(matches(fn:normalize(text()), '(ai|ei)'))]"/>
+            </xsl:call-template>
 
 <!-- $7 -->
             <xsl:text>ATICU > age/aige/ege $7</xsl:text>
@@ -294,15 +300,22 @@
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'o[n|m]') and matches(fn:normalize(.), 'ou[n|m]')]"></xsl:with-param>
             </xsl:call-template>
+            <!-- §30 -->
+            <xsl:text>Maintien de e en hiatus §30</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(text(), 'eü') and not(matches(@pos, 'VER|OUT'))]"/>
+            </xsl:call-template>
+            <xsl:text>&#10;</xsl:text>
+            
             <!-- 1. Voyelles protoniques -->
-            <!-- $32, 33 -->
-            <xsl:text> oi > PIC. i §32,$33</xsl:text>
+            <!-- §32, 33 -->
+            <xsl:text> oi > PIC. i §32,§33</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '[zrtpqsdfghjklmwxcvbnç](o|a)i[zrtpqsdfghjklmwxcvbnç]') and matches(fn:normalize(text()), '[zrtpqsdfghjklmwxcvbnç]i[zrtpqsdfghjklmwxcvbnç]') and not(matches(@pos, 'VER|OUT'))]"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
-            <!-- $34 -->
-            <xsl:text>e protonique + l/n > i, ei $34</xsl:text>
+            <!-- §34 -->
+            <xsl:text>e protonique + l/n > i, ei §34</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '(ei)(n)?(gn|ll)') and matches(fn:normalize(text()), '[^e]i(n)?(gn|ll)')]"/>
             </xsl:call-template>
@@ -319,25 +332,32 @@
             </xsl:call-template>
             <xsl:text>Dissimilation de i $37</xsl:text>
             <xsl:call-template name="occurrencesPhen">
-                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ph(i|e)lippe|porriture|privilege|religïon|signifi|sicile|visiter|iprocrisie')]"/>
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ph(i|e)lippe|porriture|privilege|religïon|signifi|sicile|visiter|iprocrisie|glorefiier|senefiier|crucefier')]"/>
             </xsl:call-template>
+            
+            <!-- phénomène francien et flammand  -->
+            <xsl:text>Ouverture e en a suivi de r à l'initiale</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '^[zrtpqsdfghjklmwxcvbn]?[hur]?er') and matches(fn:normalize(text()), '^[zrtpqsdfghjklmwxcvbn]?[hur]?ar') ]"/>
+            </xsl:call-template>
+            
+            <xsl:text>fermeture en e de a en a suivi de r à l'initiale</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), '^[zrtpqsdfghjklmwxcvbn]?[hur]?er') and matches(fn:normalize(@lemma), '^[zrtpqsdfghjklmwxcvbn]?[hur]?ar') ]"/>
+            </xsl:call-template>
+            
+            
         </xsl:result-document>
     </xsl:template>
     <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->
     <xsl:template name="forms">
         <xsl:param name="nodes"/>
         <xsl:for-each-group select="$nodes" group-by="fn:normalize(.)">
-            <xsl:sort select="count(current-group())" order="ascending"/>
+            <xsl:sort select="count(current-group())" order="descending"/>
             <xsl:value-of select="current-grouping-key()"/>
             <xsl:text>&#09;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#09;</xsl:text>
-            <xsl:for-each-group select="current-group()" group-by="@msd">
-                <xsl:value-of select="current-grouping-key()"/>
-                <xsl:text>&#09;</xsl:text>
-                <xsl:value-of select="count(current-group())"/>
-                <xsl:text>&#09;</xsl:text>
-            </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
         </xsl:for-each-group>
     </xsl:template>
@@ -383,7 +403,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>Mot&#09;Nombres d'occurrences total&#09;Nombre d'occurrences&#10;</xsl:text>
         <xsl:for-each-group select="$condition" group-by="fn:normalize(@lemma)">
-            <xsl:sort select="count(current-group())" order="ascending"/>
+            <xsl:sort select="count(current-group())" order="descending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:text>Lemme : </xsl:text>
             <xsl:value-of select="$lemma"/>
@@ -409,7 +429,7 @@
         <xsl:text>Mot&#09;Nombre total&#09;Nombre d'occurrences en condition 1&#09;Nombre d'occurrences condition 2&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:for-each-group select="$condition1" group-by="fn:normalize(@lemma)">
-            <xsl:sort select="count(current-group())" order="ascending"/>
+            <xsl:sort select="count(current-group())" order="descending"/>
             <xsl:variable name="lemma" select="current-grouping-key()"/>
             <xsl:if test="//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)]">
                 <xsl:text>Lemme : </xsl:text>
