@@ -271,6 +271,10 @@
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'ain') and matches(fn:normalize(@lemma), 'ein')]"/>
             </xsl:call-template> 
+            <xsl:text>Graphie ein pour ain</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'ein') and matches(fn:normalize(@lemma), 'ain')]"/>
+            </xsl:call-template>
             <!-- Voyelle I -->      
             <!-- $20, $21 -->
             <xsl:text>pic. ius, ieus  $20,$21,$25</xsl:text>
@@ -344,9 +348,7 @@
             <xsl:text>fermeture en e de a en a suivi de r à l'initiale</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), '^[zrtpqsdfghjklmwxcvbn]?[hur]?er') and matches(fn:normalize(@lemma), '^[zrtpqsdfghjklmwxcvbn]?[hur]?ar') ]"/>
-            </xsl:call-template>
-            
-            
+            </xsl:call-template>            
         </xsl:result-document>
     </xsl:template>
     <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->

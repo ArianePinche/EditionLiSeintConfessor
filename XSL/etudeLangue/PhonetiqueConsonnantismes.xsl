@@ -434,6 +434,28 @@
                     select="//w[matches(fn:normalize(text()), 'ign') and not(matches(fn:normalize(@lemma), 'ign'))]"
                 />
             </xsl:call-template>
+            
+            <!-- Ajout - vérification de la disparition de h initial -->
+            <xsl:text>disparition du h initial&#10;</xsl:text>
+            <xsl:call-template name="occurrencesAlt">
+                <xsl:with-param name="condition1"
+                    select="//w[not(matches(fn:normalize(text()), '^h'))]"/>
+                <xsl:with-param name="condition2" select="'^h'"></xsl:with-param>  
+            </xsl:call-template>
+            <xsl:text>disparition du h initial (2, vérification)&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition"
+                    select="//w[matches(fn:normalize(text()), '^h') and not(matches(fn:normalize(@lemma), '^h')) ]"/>
+            </xsl:call-template>
+            
+            <!-- Ajout - vérification de l'apparition de h intercalaire-->
+            <xsl:text>apparition h intercalaire&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition"
+                    select="//w[matches(fn:normalize(text()), '^[^h]*[aeioüu]h[aeioüu]') and not(matches(fn:normalize(@lemma), 'h'))]"
+                />
+            </xsl:call-template>
+           
         </xsl:result-document>
 
     </xsl:template>
@@ -512,6 +534,37 @@
             <xsl:otherwise><xsl:text>Aucune occurrences</xsl:text></xsl:otherwise>
         </xsl:choose>
         
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
+    
+    <xsl:template name="occurrencesAlt">
+        <!-- condition 1 = xpath + graphie attendue -->
+        <xsl:param name="condition1" required="yes"/>
+        <!--condtion 2 = graphie alternative -->
+        <xsl:param name="condition2" required="yes"/>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:text>Mot&#09;Nombre total&#09;Nombre d'occurrences en condition 1&#09;Nombre d'occurrences condition 2&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:for-each-group select="$condition1" group-by="fn:normalize(@lemma)">
+            <xsl:sort select="count(current-group())" order="descending"/>
+            <xsl:variable name="lemma" select="current-grouping-key()"/>
+            <xsl:if test="//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)]">
+                <xsl:text>Lemme : </xsl:text>
+                <xsl:value-of select="$lemma"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(//w[fn:normalize(@lemma) = $lemma])"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of
+                    select="count(//w[fn:normalize(@lemma) = current-grouping-key() and matches(fn:normalize(text()), $condition2)])"/>
+                <xsl:text>&#10;</xsl:text>
+                <xsl:call-template name="forms">
+                    <xsl:with-param name="nodes" select="//w[fn:normalize(@lemma) = $lemma]"/>
+                </xsl:call-template>
+                <xsl:text>&#10;</xsl:text>
+            </xsl:if>
+        </xsl:for-each-group>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
 
