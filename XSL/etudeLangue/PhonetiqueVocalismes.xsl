@@ -339,16 +339,39 @@
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ph(i|e)lippe|porriture|privilege|religïon|signifi|sicile|visiter|iprocrisie|glorefiier|senefiier|crucefier')]"/>
             </xsl:call-template>
             
+            <!-- étude graphique nient/noiant  -->
+            <xsl:text>étude graphique nient/noiant</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[@lemma='nïent']"></xsl:with-param>
+            </xsl:call-template>
+            
             <!-- phénomène francien et flammand  -->
             <xsl:text>Ouverture e en a suivi de r à l'initiale</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), '^[zrtpqsdfghjklmwxcvbn]?[hur]?er') and matches(fn:normalize(text()), '^[zrtpqsdfghjklmwxcvbn]?[hur]?ar') ]"/>
             </xsl:call-template>
             
-            <xsl:text>fermeture en e de a en a suivi de r à l'initiale</xsl:text>
+            <xsl:text>fermeture en e de a suivi de r à l'initiale</xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), '^[zrtpqsdfghjklmwxcvbn]?[hur]?er') and matches(fn:normalize(@lemma), '^[zrtpqsdfghjklmwxcvbn]?[hur]?ar') ]"/>
-            </xsl:call-template>            
+            </xsl:call-template>
+            
+            
+            <xsl:text>y d’ornementation à valeur purement décorative à l'initiale</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), '^y') and not(matches(fn:normalize(@lemma), '^y')) ]"/>
+            </xsl:call-template>
+            <xsl:text>y d’ornementation à valeur purement décorative à l'intérieur</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), '\w+y\w+') and not(matches(fn:normalize(@lemma), 'y')) ]"/>
+            </xsl:call-template> 
+            <xsl:text>y d’ornementation à valeur purement décorative en finale</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'y$') and not(matches(fn:normalize(@lemma), 'y$')) ]"/>
+            </xsl:call-template>
+            
+            
+            
         </xsl:result-document>
     </xsl:template>
     <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->

@@ -212,6 +212,13 @@
                 />
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>Graphie -sc- pour [s]&#10;</xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition"
+                    select="//w[matches(fn:normalize(text()), 'sc') and not(matches(fn:normalize(@lemma), 'sc')) and not(matches(@pos, 'VER|OUT'))]"
+                />
+            </xsl:call-template>
+            <xsl:text>&#10;</xsl:text>
             <!-- §50 -->
             <xsl:text>s intérieur devant consonne entraine en r en pic&#10;</xsl:text>
             <xsl:call-template name="occurrencesPhen">
