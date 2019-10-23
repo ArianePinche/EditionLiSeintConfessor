@@ -371,7 +371,7 @@
             </xsl:call-template>
             
 
-            <xsl:text>Dissimilation de ein > oin </xsl:text>
+            <xsl:text>velarisation ein > oin </xsl:text>
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ein') and matches(fn:normalize(text()), 'oin')]"/>
             </xsl:call-template>
