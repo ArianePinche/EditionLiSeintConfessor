@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_corpus.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_corpus.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Li Seint Confessor lemmatisés</title>
+                <author>Wauchier de Denain</author>
+                <respStmt>
+                    <resp>Transcription et lemmatisation</resp>
+                    <persName>Ariane Pinche</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Lemmatisation issue de Pyrrha :
+                    lemmatisation issue de Pie avec le modèle de lemmatisation pour l'ancien français de l'école nationale des chartes.
+                    lemmatisation corrigée grâce à l'interface de correction de Pyrrha.
+                    <ref target="https://doi.org/10.5281/zenodo.2325428">Pyrrha : Clérice, T., Pilla, J. et Camps, J.-B. (2018).hipster-philology/pyrrha: 1.0.1.</ref>
+                    <ref target="emanjavacas/pie v0.2.3. https://doi.org/10.5281/zenodo.1637878">Pie : Manjavacas, E., Kestemont, M et Clérice, T. (2019).</ref>
+                    <ref target="https://doi.org/10.5281/zenodo.3237455">Modèle pour l'ancien français : Clérice. T. (2019). chartes/deucalion-model-af: 0.2.0.</ref>
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <xi:include href="../lemmatisations/jns915.jns1856.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns2117.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1743.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns2000.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1761.ciham-lemTEI.xml"/>   
+    <xi:include href="../lemmatisations/jns915.jns2114.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1742.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1744.ciham-lemTEI.xml"/>
+    <xi:include href="../lemmatisations/jns915.jns1994.ciham-lemTEI.xml"/>  
+</teiCorpus>
