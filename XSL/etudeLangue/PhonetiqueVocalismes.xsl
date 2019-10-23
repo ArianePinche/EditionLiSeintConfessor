@@ -321,6 +321,11 @@
             <xsl:call-template name="occurrencesPhen">
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ph(i|e)lippe|porriture|privilege|religïon|signifi|sicile|visiter|iprocrisie')]"/>
             </xsl:call-template>
+            
+            <xsl:text>Dissimilation de ein > oin </xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ein') and matches(fn:normalize(text()), 'oin')]"/>
+            </xsl:call-template>
         </xsl:result-document>
     </xsl:template>
     <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->
