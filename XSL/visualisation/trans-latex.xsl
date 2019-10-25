@@ -135,7 +135,7 @@
             <xsl:when test="@type = 'orig'"/>
             <xsl:when test="text() = '-'"/>
             <xsl:otherwise>
-                <xsl:value-of select="."/>
+                <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -240,7 +240,19 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select=".//tei:lem/text() | .//tei:lem/tei:hi/text() | .//tei:lem/tei:hi/tei:choice | .//tei:lem/tei:hi/tei:pc | .//tei:lem/tei:hi/tei:placeName | .//tei:lem/tei:hi/tei:persName | .//tei:lem/tei:choice | .//tei:lem/tei:persName | .//tei:lem/tei:placeName | .//tei:lem/tei:pc | .//tei:lem/tei:corr[@type='del'] | .//tei:lem/tei:corr[@type='add']/text()"/>
+            select=".//tei:lem/text() 
+            | .//tei:lem/tei:hi/text() 
+            | .//tei:lem/tei:hi/tei:choice 
+            | .//tei:lem/tei:hi/tei:pc 
+            | .//tei:lem/tei:hi/tei:placeName 
+            | .//tei:lem/tei:hi/tei:persName 
+            | .//tei:lem/tei:choice 
+            | .//tei:lem/tei:persName/text()
+            | .//tei:lem/tei:persName//tei:reg/text() 
+            | .//tei:lem/tei:placeName/text() 
+            | .//tei:lem//tei:pc 
+            | .//tei:lem/tei:corr[@type='del'] 
+            | .//tei:lem/tei:corr[@type='add']/text()"/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">
