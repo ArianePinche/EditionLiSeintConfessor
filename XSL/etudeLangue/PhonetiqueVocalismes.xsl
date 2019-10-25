@@ -370,8 +370,11 @@
                 <xsl:with-param name="condition" select="//w[matches(fn:normalize(text()), 'y$') and not(matches(fn:normalize(@lemma), 'y$')) ]"/>
             </xsl:call-template>
             
-            
-            
+
+            <xsl:text>velarisation ein > oin </xsl:text>
+            <xsl:call-template name="occurrencesPhen">
+                <xsl:with-param name="condition" select="//w[matches(fn:normalize(@lemma), 'ein') and matches(fn:normalize(text()), 'oin')]"/>
+            </xsl:call-template>
         </xsl:result-document>
     </xsl:template>
     <!-- Faire apparaitre toutes les formes graphiques d'un phénomène -->
