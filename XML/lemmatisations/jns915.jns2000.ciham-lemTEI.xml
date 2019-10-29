@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>file:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns2000.ciham-lemTEIfile:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns2000.ciham-lem.xml<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -7,14 +6,14 @@
             <author>Wauchier de Denain</author>
             <respStmt>
                <resp>Transcription et lemmatisation</resp>
-               <persName>Ariane Pinche</persName>
+               <persName instant="false" full="yes">Ariane Pinche</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p part="N">Publication Information</p>
          </publicationStmt>
-         <sourceDesc>
-            <p>Lemmatisation issue de Pyrrha :
+         <sourceDesc default="false">
+            <p part="N">Lemmatisation issue de Pyrrha :
                         lemmatisation issue de Pie avec le modèle de lemmatisation pour l'ancien français de l'école nationale des chartes.
                         lemmatisation corrigée grâce à l'interface de correction de Pyrrha.
                         <ref target="https://doi.org/10.5281/zenodo.2325428">Pyrrha : Clérice, T., Pilla, J. et Camps, J.-B. (2018).hipster-philology/pyrrha: 1.0.1.</ref>
@@ -136,7 +135,7 @@
                   lemma="ne1"
                   pos="ADVneg"
                   msd="MORPH=empty">n</w>
-               <w xml:id="t25" n="25" lemma="" pos="PONfbl" msd="MORPH=empty">''''</w>
+               <w xml:id="t25" n="25" lemma="" pos="PONfbl" msd="MORPH=empty">''</w>
                <w xml:id="t26"
                   n="26"
                   lemma="entendre"
@@ -187,7 +186,11 @@
                   lemma="uevre"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=r">oevres</w>
-               <w xml:id="t36" n="36" lemma="de+le">des</w>
+               <w xml:id="t36"
+                  n="36"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t37"
                   n="37"
                   lemma="saint"
@@ -218,7 +221,7 @@
                   lemma="que2"
                   pos="PROrel"
                   msd="NOMB.=p|GENRE=f|CAS=r">q</w>
-               <w xml:id="t43" n="43" lemma="" pos="PONfbl" msd="MORPH=empty">''''</w>
+               <w xml:id="t43" n="43" lemma="" pos="PONfbl" msd="MORPH=empty">''</w>
                <w xml:id="t44"
                   n="44"
                   lemma="il"
@@ -393,7 +396,7 @@
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">vie</w>
                <w xml:id="t81" n="81" lemma="de" pos="PRE" msd="MORPH=empty">d</w>
-               <w xml:id="t82" n="82" lemma="" pos="PONfbl" msd="MORPH=empty">''''</w>
+               <w xml:id="t82" n="82" lemma="" pos="PONfbl" msd="MORPH=empty">''</w>
                <w xml:id="t83"
                   n="83"
                   lemma="un"
@@ -570,7 +573,7 @@
                   n="119"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t120"
                   n="120"
                   lemma="Athenes"
@@ -805,7 +808,7 @@
                   n="166"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t167"
                   n="167"
                   lemma="avoir"
@@ -825,7 +828,7 @@
                   n="170"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t171"
                   n="171"
                   lemma="enfant"
@@ -938,7 +941,11 @@
                   lemma="et"
                   pos="CONcoo"
                   msd="MORPH=empty">et</w>
-               <w xml:id="t195" n="195" lemma="de+le">del</w>
+               <w xml:id="t195"
+                  n="195"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t196"
                   n="196"
                   lemma="maniere"
@@ -953,7 +960,7 @@
                   n="198"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t199"
                   n="199"
                   lemma="il"
@@ -1049,7 +1056,7 @@
                   n="218"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t219"
                   n="219"
                   lemma="aorner"
@@ -1149,7 +1156,7 @@
                   n="238"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t239"
                   n="239"
                   lemma="il"
@@ -1284,7 +1291,7 @@
                   n="265"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t266"
                   n="266"
                   lemma="eglise"
@@ -1437,7 +1444,11 @@
                   lemma="voiz"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">voiz</w>
-               <w xml:id="t298" n="298" lemma="de+le">del</w>
+               <w xml:id="t298"
+                  n="298"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t299"
                   n="299"
                   lemma="malade"
@@ -1508,7 +1519,7 @@
                   n="313"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t314"
                   n="314"
                   lemma="il"
@@ -1564,7 +1575,7 @@
                   n="325"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t326"
                   n="326"
                   lemma="avoir"
@@ -1589,7 +1600,7 @@
                   n="330"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t331"
                   n="331"
                   lemma="il"
@@ -1644,7 +1655,7 @@
                   n="341"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t342"
                   n="342"
                   lemma="avoir"
@@ -1805,7 +1816,7 @@
                   n="374"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t375"
                   n="375"
                   lemma="on"
@@ -1880,7 +1891,7 @@
                   n="389"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t390"
                   n="390"
                   lemma="il"
@@ -1965,7 +1976,7 @@
                   n="406"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t407"
                   n="407"
                   lemma="amer1"
@@ -2000,7 +2011,7 @@
                   n="413"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t414"
                   n="414"
                   lemma="avoir"
@@ -2020,7 +2031,7 @@
                   n="417"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t418"
                   n="418"
                   lemma="enfant"
@@ -2160,7 +2171,7 @@
                   n="445"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t446"
                   n="446"
                   lemma="il"
@@ -2195,7 +2206,7 @@
                   n="452"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t453"
                   n="453"
                   lemma="ore3"
@@ -2210,7 +2221,7 @@
                   n="455"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t456"
                   n="456"
                   lemma="il"
@@ -2402,7 +2413,7 @@
                   n="495"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t496"
                   n="496"
                   lemma="amor"
@@ -2443,7 +2454,11 @@
                   lemma="tot"
                   pos="PROind"
                   msd="NOMB.=s|GENRE=n|CAS=r">tout</w>
-               <w xml:id="t504" n="504" lemma="a3+le">as</w>
+               <w xml:id="t504"
+                  n="504"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t505"
                   n="505"
                   lemma="povre"
@@ -2493,7 +2508,7 @@
                   n="514"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t515"
                   n="515"
                   lemma="il"
@@ -2543,7 +2558,7 @@
                   n="524"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t525"
                   n="525"
                   lemma="il"
@@ -2628,7 +2643,7 @@
                   n="541"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t542"
                   n="542"
                   lemma="il"
@@ -2653,7 +2668,7 @@
                   n="546"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t547"
                   n="547"
                   lemma="eglise"
@@ -2724,7 +2739,7 @@
                   n="561"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t562"
                   n="562"
                   lemma="avoir"
@@ -2755,7 +2770,7 @@
                   n="568"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t569"
                   n="569"
                   lemma="il"
@@ -2860,7 +2875,7 @@
                   n="589"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t590"
                   n="590"
                   lemma="oraison"
@@ -2975,7 +2990,7 @@
                   n="612"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t613"
                   n="613"
                   lemma="il"
@@ -3145,7 +3160,7 @@
                   n="646"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t647"
                   n="647"
                   lemma="eglise"
@@ -3176,7 +3191,11 @@
                   lemma="entrer"
                   pos="VERppe"
                   msd="NOMB.=s|GENRE=m|CAS=n">entrez</w>
-               <w xml:id="t653" n="653" lemma="en1+le">el</w>
+               <w xml:id="t653"
+                  n="653"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t654"
                   n="654"
                   lemma="cort1"
@@ -3212,7 +3231,7 @@
                   n="661"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t662"
                   n="662"
                   lemma="il"
@@ -3278,7 +3297,7 @@
                   n="675"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t676"
                   n="676"
                   lemma="eglise"
@@ -3369,7 +3388,7 @@
                   n="694"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t695"
                   n="695"
                   lemma="orison"
@@ -3467,7 +3486,11 @@
                   lemma="comander"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">comanda</w>
-               <w xml:id="t716" n="716" lemma="a3+le">al</w>
+               <w xml:id="t716"
+                  n="716"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">al</w>
                <w xml:id="t717"
                   n="717"
                   lemma="maligne1"
@@ -3487,7 +3510,7 @@
                   n="720"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t721"
                   n="721"
                   lemma="il"
@@ -3563,7 +3586,7 @@
                   n="736"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t737"
                   n="737"
                   lemma="oser"
@@ -3584,7 +3607,11 @@
                   lemma="comandement"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">conmandement</w>
-               <w xml:id="t741" n="741" lemma="de+le">del</w>
+               <w xml:id="t741"
+                  n="741"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t742"
                   n="742"
                   lemma="saint"
@@ -3624,7 +3651,7 @@
                   n="749"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t750"
                   n="750"
                   lemma="il"
@@ -3665,7 +3692,7 @@
                   n="758"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t759"
                   n="759"
                   lemma="en2"
@@ -3786,7 +3813,11 @@
                   lemma="vertu"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">vertuz</w>
-               <w xml:id="t783" n="783" lemma="de+le">del</w>
+               <w xml:id="t783"
+                  n="783"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t784"
                   n="784"
                   lemma="saint"
@@ -4171,7 +4202,7 @@
                   n="860"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t861"
                   n="861"
                   lemma="on"
@@ -4212,7 +4243,7 @@
                   n="869"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t870"
                   n="870"
                   lemma="il"
@@ -4362,7 +4393,7 @@
                   n="899"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t900"
                   n="900"
                   lemma="en2"
@@ -4373,7 +4404,11 @@
                   lemma="aler"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">ala</w>
-               <w xml:id="t902" n="902" lemma="a3+le">au</w>
+               <w xml:id="t902"
+                  n="902"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t903"
                   n="903"
                   lemma="rivage2"
@@ -4439,7 +4474,7 @@
                   n="916"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t917"
                   n="917"
                   lemma="il"
@@ -4494,7 +4529,7 @@
                   n="927"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t928"
                   n="928"
                   lemma="avoir"
@@ -4615,7 +4650,7 @@
                   n="952"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t953"
                   n="953"
                   lemma="avoir"
@@ -4711,7 +4746,7 @@
                   n="972"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t973"
                   n="973"
                   lemma="atendre"
@@ -4841,7 +4876,7 @@
                   n="998"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t999"
                   n="999"
                   lemma="orison"
@@ -4866,7 +4901,7 @@
                   n="1003"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1004"
                   n="1004"
                   lemma="il"
@@ -5031,7 +5066,7 @@
                   n="1036"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1037"
                   n="1037"
                   lemma="il"
@@ -5212,7 +5247,11 @@
                   lemma="eschaper"
                   pos="VERppe"
                   msd="NOMB.=p|GENRE=m|CAS=n">eschapez</w>
-               <w xml:id="t1073" n="1073" lemma="de+le">des</w>
+               <w xml:id="t1073"
+                  n="1073"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t1074"
                   n="1074"
                   lemma="grant"
@@ -5318,7 +5357,11 @@
                   lemma="venir"
                   pos="VERppe"
                   msd="NOMB.=s|GENRE=m|CAS=n">venuz</w>
-               <w xml:id="t1095" n="1095" lemma="a3+le">au</w>
+               <w xml:id="t1095"
+                  n="1095"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1096"
                   n="1096"
                   lemma="port2"
@@ -5378,7 +5421,7 @@
                   n="1107"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1108"
                   n="1108"
                   lemma="il"
@@ -5408,7 +5451,7 @@
                   n="1113"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1114"
                   n="1114"
                   lemma="il"
@@ -5458,7 +5501,7 @@
                   n="1123"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1124"
                   n="1124"
                   lemma="en2"
@@ -5603,7 +5646,7 @@
                   n="1152"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1153"
                   n="1153"
                   lemma="il"
@@ -5654,7 +5697,11 @@
                   lemma="delivrer"
                   pos="VERppe"
                   msd="NOMB.=p|GENRE=m|CAS=r">delivrez</w>
-               <w xml:id="t1163" n="1163" lemma="de+le">del</w>
+               <w xml:id="t1163"
+                  n="1163"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1164"
                   n="1164"
                   lemma="grant"
@@ -5700,7 +5747,11 @@
                   lemma="defendre"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">deffendra</w>
-               <w xml:id="t1173" n="1173" lemma="de+le">des</w>
+               <w xml:id="t1173"
+                  n="1173"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=f|CAS=r">des</w>
                <w xml:id="t1174"
                   n="1174"
                   lemma="grant"
@@ -6420,7 +6471,7 @@
                   n="1317"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1318"
                   n="1318"
                   lemma="il"
@@ -6540,7 +6591,7 @@
                   n="1341"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1342"
                   n="1342"
                   lemma="il"
@@ -6630,13 +6681,17 @@
                   n="1359"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1360"
                   n="1360"
                   lemma="ome"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">ome</w>
-               <w xml:id="t1361" n="1361" lemma="en1+le">el</w>
+               <w xml:id="t1361"
+                  n="1361"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t1362"
                   n="1362"
                   lemma="sablon"
@@ -6697,7 +6752,11 @@
                   lemma="trace"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">trace</w>
-               <w xml:id="t1374" n="1374" lemma="de+le">des</w>
+               <w xml:id="t1374"
+                  n="1374"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t1375"
                   n="1375"
                   lemma="pas"
@@ -6712,7 +6771,7 @@
                   n="1377"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1378"
                   n="1378"
                   lemma="il"
@@ -6797,7 +6856,7 @@
                   n="1394"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1395"
                   n="1395"
                   lemma="aproismier"
@@ -6897,7 +6956,7 @@
                   n="1414"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1415"
                   n="1415"
                   lemma="il"
@@ -7017,7 +7076,7 @@
                   n="1438"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1439"
                   n="1439"
                   lemma="il"
@@ -7082,7 +7141,7 @@
                   n="1451"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1452"
                   n="1452"
                   lemma="aigue"
@@ -7102,7 +7161,7 @@
                   n="1455"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1456"
                   n="1456"
                   lemma="erbe"
@@ -7142,7 +7201,7 @@
                   n="1463"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1464"
                   n="1464"
                   lemma="autre"
@@ -7187,7 +7246,7 @@
                   n="1472"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1473"
                   n="1473"
                   lemma="oïr"
@@ -7257,7 +7316,7 @@
                   n="1486"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1487"
                   n="1487"
                   lemma="orison"
@@ -7297,7 +7356,7 @@
                   n="1494"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1495"
                   n="1495"
                   lemma="acoler"
@@ -7317,7 +7376,7 @@
                   n="1498"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1499"
                   n="1499"
                   lemma="embracier"
@@ -7357,7 +7416,7 @@
                   n="1506"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1507"
                   n="1507"
                   lemma="autre"
@@ -7372,7 +7431,7 @@
                   n="1509"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1510"
                   n="1510"
                   lemma="il"
@@ -7453,7 +7512,11 @@
                   lemma="congié"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">congié</w>
-               <w xml:id="t1526" n="1526" lemma="a3+le">au</w>
+               <w xml:id="t1526"
+                  n="1526"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1527"
                   n="1527"
                   lemma="saint"
@@ -7498,7 +7561,7 @@
                   n="1535"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1536"
                   n="1536"
                   lemma="en2"
@@ -7584,7 +7647,11 @@
                   lemma="tendre1"
                   pos="VERppe"
                   msd="NOMB.=p|GENRE=f|CAS=r">tendues</w>
-               <w xml:id="t1553" n="1553" lemma="a3+le">au</w>
+               <w xml:id="t1553"
+                  n="1553"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1554"
                   n="1554"
                   lemma="vent"
@@ -7614,7 +7681,7 @@
                   n="1559"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1560"
                   n="1560"
                   lemma="il"
@@ -7625,7 +7692,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">vindrent</w>
-               <w xml:id="t1562" n="1562" lemma="a3+le">au</w>
+               <w xml:id="t1562"
+                  n="1562"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1563"
                   n="1563"
                   lemma="tierz"
@@ -7690,7 +7761,7 @@
                   n="1575"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1576"
                   n="1576"
                   lemma="enföir1"
@@ -7825,7 +7896,7 @@
                   n="1602"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1603"
                   n="1603"
                   lemma="aler"
@@ -7851,7 +7922,11 @@
                   lemma="parler"
                   pos="VERinf"
                   msd="NOMB.=x|GENRE=x|CAS=x">parler</w>
-               <w xml:id="t1608" n="1608" lemma="a3+le">au</w>
+               <w xml:id="t1608"
+                  n="1608"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1609"
                   n="1609"
                   lemma="saint"
@@ -8091,7 +8166,7 @@
                   n="1656"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1657"
                   n="1657"
                   lemma="on"
@@ -8161,7 +8236,7 @@
                   n="1670"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1671"
                   n="1671"
                   lemma="un"
@@ -8357,7 +8432,11 @@
                   lemma="richece"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=r">richesces</w>
-               <w xml:id="t1710" n="1710" lemma="a3+le">as</w>
+               <w xml:id="t1710"
+                  n="1710"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t1711"
                   n="1711"
                   lemma="mire1"
@@ -8402,7 +8481,7 @@
                   n="1719"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1720"
                   n="1720"
                   lemma="avoir"
@@ -8617,7 +8696,7 @@
                   n="1762"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1763"
                   n="1763"
                   lemma="il"
@@ -8682,7 +8761,7 @@
                   n="1775"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1776"
                   n="1776"
                   lemma="orison"
@@ -8727,7 +8806,7 @@
                   n="1784"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1785"
                   n="1785"
                   lemma="il"
@@ -8742,7 +8821,7 @@
                   n="1787"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1788"
                   n="1788"
                   lemma="avoir"
@@ -8792,7 +8871,7 @@
                   n="1797"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1798"
                   n="1798"
                   lemma="enfermeté1"
@@ -9107,7 +9186,7 @@
                   n="1860"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t1861"
                   n="1861"
                   lemma="il"
@@ -9378,7 +9457,11 @@
                   lemma="coiement"
                   pos="ADVgen"
                   msd="DEGRE=-">coiement</w>
-               <w xml:id="t1915" n="1915" lemma="de+le">del</w>
+               <w xml:id="t1915"
+                  n="1915"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1916"
                   n="1916"
                   lemma="saint"
@@ -10078,7 +10161,7 @@
                   n="2055"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2056"
                   n="2056"
                   lemma="autre"
@@ -10173,7 +10256,7 @@
                   n="2074"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2075"
                   n="2075"
                   lemma="autre"
@@ -10463,7 +10546,7 @@
                   n="2132"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2133"
                   n="2133"
                   lemma="il"
@@ -10978,7 +11061,7 @@
                   n="2235"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2236"
                   n="2236"
                   lemma="il"
@@ -11008,7 +11091,7 @@
                   n="2241"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2242"
                   n="2242"
                   lemma="il"
@@ -11078,7 +11161,7 @@
                   n="2255"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2256"
                   n="2256"
                   lemma="en2"
@@ -11108,7 +11191,7 @@
                   n="2261"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2262"
                   n="2262"
                   lemma="avoir"
@@ -11193,7 +11276,7 @@
                   n="2278"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2279"
                   n="2279"
                   lemma="en2"
@@ -11563,7 +11646,7 @@
                   n="2352"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2353"
                   n="2353"
                   lemma="orison"
@@ -11653,7 +11736,7 @@
                   n="2370"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2371"
                   n="2371"
                   lemma="avoir"
@@ -11833,7 +11916,7 @@
                   n="2406"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2407"
                   n="2407"
                   lemma="il"
@@ -12008,7 +12091,7 @@
                   n="2441"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2442"
                   n="2442"
                   lemma="en2"
@@ -12153,7 +12236,7 @@
                   n="2470"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2471"
                   n="2471"
                   lemma="estre1"
@@ -12303,7 +12386,7 @@
                   n="2500"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2501"
                   n="2501"
                   lemma="entree"
@@ -12338,7 +12421,7 @@
                   n="2507"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2508"
                   n="2508"
                   lemma="onde"
@@ -12473,7 +12556,7 @@
                   n="2534"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2535"
                   n="2535"
                   lemma="il"
@@ -12543,7 +12626,7 @@
                   n="2548"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2549"
                   n="2549"
                   lemma="il"
@@ -12573,7 +12656,7 @@
                   n="2554"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2555"
                   n="2555"
                   lemma="ome"
@@ -12683,7 +12766,7 @@
                   n="2576"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2577"
                   n="2577"
                   lemma="autre"
@@ -12708,7 +12791,7 @@
                   n="2581"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2582"
                   n="2582"
                   lemma="erbe"
@@ -12858,7 +12941,7 @@
                   n="2611"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2612"
                   n="2612"
                   lemma="il"
@@ -13228,7 +13311,7 @@
                   n="2685"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2686"
                   n="2686"
                   lemma="un"
@@ -13253,7 +13336,7 @@
                   n="2690"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2691"
                   n="2691"
                   lemma="autre"
@@ -13319,7 +13402,11 @@
                   lemma="cri"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">cri</w>
-               <w xml:id="t2704" n="2704" lemma="de+le">des</w>
+               <w xml:id="t2704"
+                  n="2704"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t2705"
                   n="2705"
                   lemma="venëor"
@@ -13344,7 +13431,7 @@
                   n="2709"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2710"
                   n="2710"
                   lemma="en2"
@@ -13429,7 +13516,7 @@
                   n="2726"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2727"
                   n="2727"
                   lemma="entree"
@@ -13510,7 +13597,11 @@
                   lemma="äie"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">aïde</w>
-               <w xml:id="t2743" n="2743" lemma="a3+le">au</w>
+               <w xml:id="t2743"
+                  n="2743"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t2744"
                   n="2744"
                   lemma="saint"
@@ -13545,7 +13636,7 @@
                   n="2750"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2751"
                   n="2751"
                   lemma="oïr"
@@ -13575,7 +13666,7 @@
                   n="2756"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2757"
                   n="2757"
                   lemma="esmerveillier"
@@ -13900,7 +13991,7 @@
                   n="2821"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2822"
                   n="2822"
                   lemma="orison"
@@ -13950,7 +14041,7 @@
                   n="2831"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2832"
                   n="2832"
                   lemma="il"
@@ -13985,7 +14076,7 @@
                   n="2838"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2839"
                   n="2839"
                   lemma="il"
@@ -14070,7 +14161,7 @@
                   n="2855"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2856"
                   n="2856"
                   lemma="il"
@@ -14085,7 +14176,7 @@
                   n="2858"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2859"
                   n="2859"
                   lemma="apaisier"
@@ -14156,7 +14247,11 @@
                   lemma="pié"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">piez</w>
-               <w xml:id="t2873" n="2873" lemma="de+le">del</w>
+               <w xml:id="t2873"
+                  n="2873"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2874"
                   n="2874"
                   lemma="saint"
@@ -14286,7 +14381,7 @@
                   n="2899"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2900"
                   n="2900"
                   lemma="oser"
@@ -14361,7 +14456,7 @@
                   n="2914"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2915"
                   n="2915"
                   lemma="un"
@@ -14486,7 +14581,7 @@
                   n="2939"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2940"
                   n="2940"
                   lemma="il"
@@ -14501,7 +14596,7 @@
                   n="2942"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2943"
                   n="2943"
                   lemma="avoir"
@@ -14581,7 +14676,7 @@
                   n="2958"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2959"
                   n="2959"
                   lemma="il"
@@ -14701,7 +14796,7 @@
                   n="2982"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2983"
                   n="2983"
                   lemma="esmovoir"
@@ -14741,7 +14836,7 @@
                   n="2990"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t2991"
                   n="2991"
                   lemma="il"
@@ -14811,7 +14906,7 @@
                   n="3004"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3005"
                   n="3005"
                   lemma="en2"
@@ -14847,7 +14942,11 @@
                   lemma="conter"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">conterent</w>
-               <w xml:id="t3012" n="3012" lemma="a3+le">au</w>
+               <w xml:id="t3012"
+                  n="3012"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t3013"
                   n="3013"
                   lemma="roi2"
@@ -14978,7 +15077,11 @@
                   lemma="traire"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">trest</w>
-               <w xml:id="t3039" n="3039" lemma="a3+le">al</w>
+               <w xml:id="t3039"
+                  n="3039"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">al</w>
                <w xml:id="t3040"
                   n="3040"
                   lemma="evesque"
@@ -15493,7 +15596,7 @@
                   n="3142"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3143"
                   n="3143"
                   lemma="en2"
@@ -15509,7 +15612,11 @@
                   lemma="fuir"
                   pos="VERppa"
                   msd="NOMB.=x|GENRE=x|CAS=x">fuiant</w>
-               <w xml:id="t3146" n="3146" lemma="a3+le">au</w>
+               <w xml:id="t3146"
+                  n="3146"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t3147"
                   n="3147"
                   lemma="lieu"
@@ -15624,7 +15731,7 @@
                   n="3169"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3170"
                   n="3170"
                   lemma="il"
@@ -15644,7 +15751,7 @@
                   n="3173"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3174"
                   n="3174"
                   lemma="oser"
@@ -15689,7 +15796,7 @@
                   n="3182"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3183"
                   n="3183"
                   lemma="il"
@@ -15765,7 +15872,11 @@
                   lemma="fosse"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">fosse</w>
-               <w xml:id="t3198" n="3198" lemma="de+le">del</w>
+               <w xml:id="t3198"
+                  n="3198"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t3199"
                   n="3199"
                   lemma="saint"
@@ -15835,7 +15946,7 @@
                   n="3212"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3213"
                   n="3213"
                   lemma="espès"
@@ -15895,7 +16006,7 @@
                   n="3224"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3225"
                   n="3225"
                   lemma="il"
@@ -15910,7 +16021,7 @@
                   n="3227"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3228"
                   n="3228"
                   lemma="i2"
@@ -15991,7 +16102,11 @@
                   lemma="un"
                   pos="PROind"
                   msd="NOMB.=s|GENRE=m|CAS=n">uns</w>
-               <w xml:id="t3244" n="3244" lemma="de+le">des</w>
+               <w xml:id="t3244"
+                  n="3244"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t3245"
                   n="3245"
                   lemma="archier"
@@ -16026,7 +16141,7 @@
                   n="3251"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3252"
                   n="3252"
                   lemma="il"
@@ -16057,7 +16172,11 @@
                   lemma="fors1"
                   pos="ADVgen"
                   msd="DEGRE=-">fors</w>
-               <w xml:id="t3258" n="3258" lemma="de+le">del</w>
+               <w xml:id="t3258"
+                  n="3258"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=f|CAS=r">del</w>
                <w xml:id="t3259"
                   n="3259"
                   lemma="buisson"
@@ -16132,7 +16251,7 @@
                   n="3273"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3274"
                   n="3274"
                   lemma="entree"
@@ -16262,7 +16381,7 @@
                   n="3299"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3300"
                   n="3300"
                   lemma="il"
@@ -16273,7 +16392,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">vindrent</w>
-               <w xml:id="t3302" n="3302" lemma="a3+le">au</w>
+               <w xml:id="t3302"
+                  n="3302"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t3303"
                   n="3303"
                   lemma="serf"
@@ -16373,7 +16496,7 @@
                   n="3322"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3323"
                   n="3323"
                   lemma="en2"
@@ -16433,7 +16556,7 @@
                   n="3334"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3335"
                   n="3335"
                   lemma="il"
@@ -16523,7 +16646,7 @@
                   n="3352"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3353"
                   n="3353"
                   lemma="estre1"
@@ -16549,7 +16672,11 @@
                   lemma="dolor"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">doleur</w>
-               <w xml:id="t3358" n="3358" lemma="de+le">del</w>
+               <w xml:id="t3358"
+                  n="3358"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t3359"
                   n="3359"
                   lemma="sanc"
@@ -16599,7 +16726,7 @@
                   n="3368"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3369"
                   n="3369"
                   lemma="esmerveillier"
@@ -16784,7 +16911,7 @@
                   n="3405"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3406"
                   n="3406"
                   lemma="avoir"
@@ -16979,7 +17106,7 @@
                   n="3444"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3445"
                   n="3445"
                   lemma="avoir"
@@ -17099,7 +17226,7 @@
                   n="3468"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3469"
                   n="3469"
                   lemma="ochaison"
@@ -17210,7 +17337,11 @@
                   lemma="chëoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">cheïrent</w>
-               <w xml:id="t3491" n="3491" lemma="a3+le">as</w>
+               <w xml:id="t3491"
+                  n="3491"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t3492"
                   n="3492"
                   lemma="pié"
@@ -17285,7 +17416,7 @@
                   n="3506"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3507"
                   n="3507"
                   lemma="il"
@@ -17365,7 +17496,7 @@
                   n="3522"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3523"
                   n="3523"
                   lemma="agenoillier"
@@ -17410,7 +17541,7 @@
                   n="3531"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3532"
                   n="3532"
                   lemma="il"
@@ -17455,7 +17586,7 @@
                   n="3540"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3541"
                   n="3541"
                   lemma="il"
@@ -17595,7 +17726,7 @@
                   n="3568"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3569"
                   n="3569"
                   lemma="oïr"
@@ -17620,7 +17751,7 @@
                   n="3573"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3574"
                   n="3574"
                   lemma="esmerveillier"
@@ -17710,7 +17841,7 @@
                   n="3591"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3592"
                   n="3592"
                   lemma="en2"
@@ -17840,7 +17971,7 @@
                   n="3617"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3618"
                   n="3618"
                   lemma="en2"
@@ -17875,7 +18006,7 @@
                   n="3624"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3625"
                   n="3625"
                   lemma="en2"
@@ -17925,7 +18056,7 @@
                   n="3634"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3635"
                   n="3635"
                   lemma="il"
@@ -18280,7 +18411,7 @@
                   n="3705"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3706"
                   n="3706"
                   lemma="en2"
@@ -18330,7 +18461,7 @@
                   n="3715"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3716"
                   n="3716"
                   lemma="il"
@@ -18465,7 +18596,7 @@
                   n="3742"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3743"
                   n="3743"
                   lemma="il"
@@ -18500,7 +18631,7 @@
                   n="3749"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3750"
                   n="3750"
                   lemma="il"
@@ -18660,7 +18791,7 @@
                   n="3781"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3782"
                   n="3782"
                   lemma="il"
@@ -18865,7 +18996,7 @@
                   n="3822"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3823"
                   n="3823"
                   lemma="on"
@@ -18900,7 +19031,7 @@
                   n="3829"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3830"
                   n="3830"
                   lemma="un"
@@ -18920,7 +19051,7 @@
                   n="3833"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3834"
                   n="3834"
                   lemma="onor"
@@ -18945,7 +19076,7 @@
                   n="3838"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3839"
                   n="3839"
                   lemma="apostle"
@@ -18965,7 +19096,7 @@
                   n="3842"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3843"
                   n="3843"
                   lemma="autre"
@@ -18985,7 +19116,7 @@
                   n="3846"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3847"
                   n="3847"
                   lemma="onor"
@@ -19046,7 +19177,11 @@
                   lemma="fosse"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">fosse</w>
-               <w xml:id="t3859" n="3859" lemma="de+le">del</w>
+               <w xml:id="t3859"
+                  n="3859"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t3860"
                   n="3860"
                   lemma="saint"
@@ -19181,7 +19316,7 @@
                   n="3886"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3887"
                   n="3887"
                   lemma="assembler"
@@ -19386,7 +19521,7 @@
                   n="3927"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3928"
                   n="3928"
                   lemma="il"
@@ -19416,7 +19551,7 @@
                   n="3933"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t3934"
                   n="3934"
                   lemma="il"
@@ -19692,7 +19827,11 @@
                   lemma="baron"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">barons</w>
-               <w xml:id="t3989" n="3989" lemma="de+le">del</w>
+               <w xml:id="t3989"
+                  n="3989"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t3990"
                   n="3990"
                   lemma="regne"
@@ -19862,7 +20001,7 @@
                   n="4023"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4024"
                   n="4024"
                   lemma="il"
@@ -19887,7 +20026,7 @@
                   n="4028"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4029"
                   n="4029"
                   lemma="il"
@@ -19977,7 +20116,7 @@
                   n="4046"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4047"
                   n="4047"
                   lemma="il"
@@ -20047,7 +20186,7 @@
                   n="4060"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4061"
                   n="4061"
                   lemma="il"
@@ -20137,7 +20276,7 @@
                   n="4078"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4079"
                   n="4079"
                   lemma="il"
@@ -20197,7 +20336,7 @@
                   n="4090"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4091"
                   n="4091"
                   lemma="il"
@@ -20437,7 +20576,7 @@
                   n="4138"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4139"
                   n="4139"
                   lemma="il"
@@ -20448,7 +20587,11 @@
                   lemma="parvenir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">parvint</w>
-               <w xml:id="t4141" n="4141" lemma="a3+le">as</w>
+               <w xml:id="t4141"
+                  n="4141"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=f|CAS=r">as</w>
                <w xml:id="t4142"
                   n="4142"
                   lemma="oreille"
@@ -20693,7 +20836,7 @@
                   n="4190"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4191"
                   n="4191"
                   lemma="il"
@@ -20723,7 +20866,7 @@
                   n="4196"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4197"
                   n="4197"
                   lemma="il"
@@ -20878,7 +21021,7 @@
                   n="4227"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4228"
                   n="4228"
                   lemma="il"
@@ -20989,7 +21132,11 @@
                   lemma="il"
                   pos="PROper"
                   msd="PERS.=3|NOMB.=s|GENRE=m|CAS=n">il</w>
-               <w xml:id="t4250" n="4250" lemma="a3+le">au</w>
+               <w xml:id="t4250"
+                  n="4250"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4251"
                   n="4251"
                   lemma="mostier"
@@ -21054,7 +21201,7 @@
                   n="4263"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4264"
                   n="4264"
                   lemma="il"
@@ -21084,7 +21231,7 @@
                   n="4269"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4270"
                   n="4270"
                   lemma="eglise"
@@ -21120,7 +21267,11 @@
                   lemma="fors1"
                   pos="ADVgen"
                   msd="DEGRE=-">fors</w>
-               <w xml:id="t4277" n="4277" lemma="de+le">del</w>
+               <w xml:id="t4277"
+                  n="4277"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t4278"
                   n="4278"
                   lemma="sens"
@@ -21146,7 +21297,11 @@
                   lemma="angle"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">angle</w>
-               <w xml:id="t4283" n="4283" lemma="de+le">del</w>
+               <w xml:id="t4283"
+                  n="4283"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t4284"
                   n="4284"
                   lemma="mostier"
@@ -21196,7 +21351,7 @@
                   n="4293"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4294"
                   n="4294"
                   lemma="il"
@@ -21207,7 +21362,11 @@
                   lemma="avoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">avoit</w>
-               <w xml:id="t4296" n="4296" lemma="en1+le">el</w>
+               <w xml:id="t4296"
+                  n="4296"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t4297"
                   n="4297"
                   lemma="cors1"
@@ -21687,7 +21846,7 @@
                   n="4392"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4393"
                   n="4393"
                   lemma="umain"
@@ -21812,7 +21971,7 @@
                   n="4417"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4418"
                   n="4418"
                   lemma="ome"
@@ -21847,7 +22006,7 @@
                   n="4424"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4425"
                   n="4425"
                   lemma="il"
@@ -22057,7 +22216,7 @@
                   n="4466"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4467"
                   n="4467"
                   lemma="en2"
@@ -22227,7 +22386,7 @@
                   n="4500"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4501"
                   n="4501"
                   lemma="on"
@@ -22243,7 +22402,11 @@
                   lemma="avoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">avoit</w>
-               <w xml:id="t4504" n="4504" lemma="de+le">del</w>
+               <w xml:id="t4504"
+                  n="4504"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t4505"
                   n="4505"
                   lemma="saint"
@@ -22388,7 +22551,7 @@
                   n="4533"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4534"
                   n="4534"
                   lemma="il"
@@ -22434,7 +22597,11 @@
                   lemma="et"
                   pos="CONcoo"
                   msd="MORPH=empty">et</w>
-               <w xml:id="t4543" n="4543" lemma="de+le">del</w>
+               <w xml:id="t4543"
+                  n="4543"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t4544"
                   n="4544"
                   lemma="monde1"
@@ -22454,7 +22621,7 @@
                   n="4547"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4548"
                   n="4548"
                   lemma="on"
@@ -22539,7 +22706,7 @@
                   n="4564"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4565"
                   n="4565"
                   lemma="il"
@@ -22629,7 +22796,7 @@
                   n="4582"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4583"
                   n="4583"
                   lemma="il"
@@ -22644,7 +22811,7 @@
                   n="4585"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4586"
                   n="4586"
                   lemma="avoir"
@@ -22680,7 +22847,11 @@
                   lemma="ne2"
                   pos="CONcoo"
                   msd="MORPH=empty">ne</w>
-               <w xml:id="t4593" n="4593" lemma="a3+le">au</w>
+               <w xml:id="t4593"
+                  n="4593"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4594"
                   n="4594"
                   lemma="saint"
@@ -22705,7 +22876,7 @@
                   n="4598"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4599"
                   n="4599"
                   lemma="oser"
@@ -22736,7 +22907,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">vint</w>
-               <w xml:id="t4605" n="4605" lemma="a3+le">au</w>
+               <w xml:id="t4605"
+                  n="4605"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4606"
                   n="4606"
                   lemma="dïemanche"
@@ -22832,7 +23007,11 @@
                   lemma="estre1"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">estoit</w>
-               <w xml:id="t4625" n="4625" lemma="en1+le">el</w>
+               <w xml:id="t4625"
+                  n="4625"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t4626"
                   n="4626"
                   lemma="canon"
@@ -22897,7 +23076,7 @@
                   n="4638"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4639"
                   n="4639"
                   lemma="autel2"
@@ -22977,7 +23156,7 @@
                   n="4654"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4655"
                   n="4655"
                   lemma="avoir"
@@ -23002,7 +23181,7 @@
                   n="4659"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4660"
                   n="4660"
                   lemma="il"
@@ -23062,7 +23241,7 @@
                   n="4671"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4672"
                   n="4672"
                   lemma="il"
@@ -23077,7 +23256,7 @@
                   n="4674"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4675"
                   n="4675"
                   lemma="en2"
@@ -23118,7 +23297,11 @@
                   lemma="et"
                   pos="CONcoo"
                   msd="MORPH=empty">et</w>
-               <w xml:id="t4683" n="4683" lemma="a3+le">au</w>
+               <w xml:id="t4683"
+                  n="4683"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4684"
                   n="4684"
                   lemma="däerrain"
@@ -23168,7 +23351,7 @@
                   n="4693"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4694"
                   n="4694"
                   lemma="onque"
@@ -23218,7 +23401,7 @@
                   n="4703"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4704"
                   n="4704"
                   lemma="il"
@@ -23233,7 +23416,7 @@
                   n="4706"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4707"
                   n="4707"
                   lemma="avoir"
@@ -23258,7 +23441,7 @@
                   n="4711"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4712"
                   n="4712"
                   lemma="il"
@@ -23414,7 +23597,11 @@
                   lemma="conter"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">conta</w>
-               <w xml:id="t4743" n="4743" lemma="a3+le">au</w>
+               <w xml:id="t4743"
+                  n="4743"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4744"
                   n="4744"
                   lemma="roi2"
@@ -23454,7 +23641,7 @@
                   n="4751"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4752"
                   n="4752"
                   lemma="il"
@@ -23519,7 +23706,7 @@
                   n="4764"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4765"
                   n="4765"
                   lemma="il"
@@ -23555,7 +23742,11 @@
                   lemma="chëoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">cheï</w>
-               <w xml:id="t4772" n="4772" lemma="a3+le">as</w>
+               <w xml:id="t4772"
+                  n="4772"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t4773"
                   n="4773"
                   lemma="pié"
@@ -23590,7 +23781,7 @@
                   n="4779"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4780"
                   n="4780"
                   lemma="il"
@@ -23675,7 +23866,7 @@
                   n="4796"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4797"
                   n="4797"
                   lemma="il"
@@ -23756,7 +23947,11 @@
                   lemma="congié"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">congié</w>
-               <w xml:id="t4813" n="4813" lemma="a3+le">au</w>
+               <w xml:id="t4813"
+                  n="4813"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t4814"
                   n="4814"
                   lemma="roi2"
@@ -23811,7 +24006,7 @@
                   n="4824"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4825"
                   n="4825"
                   lemma="en2"
@@ -23851,7 +24046,7 @@
                   n="4832"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4833"
                   n="4833"
                   lemma="abeie"
@@ -23941,7 +24136,7 @@
                   n="4850"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4851"
                   n="4851"
                   lemma="il"
@@ -24081,7 +24276,7 @@
                   n="4878"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4879"
                   n="4879"
                   lemma="abeie"
@@ -24181,7 +24376,7 @@
                   n="4898"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4899"
                   n="4899"
                   lemma="abeie"
@@ -24306,7 +24501,7 @@
                   n="4923"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4924"
                   n="4924"
                   lemma="en2"
@@ -24466,7 +24661,7 @@
                   n="4955"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4956"
                   n="4956"
                   lemma="eglise"
@@ -24496,7 +24691,7 @@
                   n="4961"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4962"
                   n="4962"
                   lemma="apostoile"
@@ -24531,7 +24726,7 @@
                   n="4968"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4969"
                   n="4969"
                   lemma="i2"
@@ -24547,7 +24742,11 @@
                   lemma="droiture"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">droiture</w>
-               <w xml:id="t4972" n="4972" lemma="en1+le">el</w>
+               <w xml:id="t4972"
+                  n="4972"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t4973"
                   n="4973"
                   lemma="tens"
@@ -24568,7 +24767,11 @@
                   lemma="ne2"
                   pos="CONcoo"
                   msd="MORPH=empty">ne</w>
-               <w xml:id="t4977" n="4977" lemma="en1+le">el</w>
+               <w xml:id="t4977"
+                  n="4977"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t4978"
                   n="4978"
                   lemma="tens"
@@ -24668,7 +24871,7 @@
                   n="4997"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t4998"
                   n="4998"
                   lemma="apostoile"
@@ -24754,7 +24957,11 @@
                   lemma="image"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=n">ymages</w>
-               <w xml:id="t5015" n="5015" lemma="de+le">des</w>
+               <w xml:id="t5015"
+                  n="5015"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t5016"
                   n="5016"
                   lemma="apostle"
@@ -24794,7 +25001,7 @@
                   n="5023"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5024"
                   n="5024"
                   lemma="entree"
@@ -24814,7 +25021,7 @@
                   n="5027"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5028"
                   n="5028"
                   lemma="eglise"
@@ -24844,7 +25051,7 @@
                   n="5033"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5034"
                   n="5034"
                   lemma="il"
@@ -24894,7 +25101,7 @@
                   n="5043"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5044"
                   n="5044"
                   lemma="en2"
@@ -24940,7 +25147,11 @@
                   lemma="metre2"
                   pos="VERinf"
                   msd="NOMB.=x|GENRE=x|CAS=x">metre</w>
-               <w xml:id="t5053" n="5053" lemma="en1+le">el</w>
+               <w xml:id="t5053"
+                  n="5053"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t5054"
                   n="5054"
                   lemma="Tibre"
@@ -25075,7 +25286,7 @@
                   n="5080"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5081"
                   n="5081"
                   lemma="il"
@@ -25105,7 +25316,7 @@
                   n="5086"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5087"
                   n="5087"
                   lemma="en2"
@@ -25195,7 +25406,7 @@
                   n="5104"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5105"
                   n="5105"
                   lemma="il"
@@ -25300,7 +25511,7 @@
                   n="5125"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5126"
                   n="5126"
                   lemma="il"
@@ -25420,7 +25631,7 @@
                   n="5149"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5150"
                   n="5150"
                   lemma="abeie"
@@ -25440,7 +25651,7 @@
                   n="5153"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5154"
                   n="5154"
                   lemma="on"
@@ -25496,7 +25707,11 @@
                   lemma="estre1"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p">estoient</w>
-               <w xml:id="t5165" n="5165" lemma="a3+le">au</w>
+               <w xml:id="t5165"
+                  n="5165"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t5166"
                   n="5166"
                   lemma="port2"
@@ -25531,7 +25746,7 @@
                   n="5172"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5173"
                   n="5173"
                   lemma="ome"
@@ -25571,7 +25786,7 @@
                   n="5180"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5181"
                   n="5181"
                   lemma="oïr"
@@ -25716,7 +25931,7 @@
                   n="5209"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5210"
                   n="5210"
                   lemma="aigue"
@@ -25846,7 +26061,7 @@
                   n="5235"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5236"
                   n="5236"
                   lemma="abeie"
@@ -25862,13 +26077,21 @@
                   lemma="metre2"
                   pos="VERinf"
                   msd="NOMB.=x|GENRE=x|CAS=x">metre</w>
-               <w xml:id="t5239" n="5239" lemma="a3+le">as</w>
+               <w xml:id="t5239"
+                  n="5239"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t5240"
                   n="5240"
                   lemma="uisseüre"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">huisseüres</w>
-               <w xml:id="t5241" n="5241" lemma="de+le">del</w>
+               <w xml:id="t5241"
+                  n="5241"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t5242"
                   n="5242"
                   lemma="mostier"
@@ -25998,7 +26221,7 @@
                   n="5267"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5268"
                   n="5268"
                   lemma="espace"
@@ -26013,7 +26236,7 @@
                   n="5270"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5271"
                   n="5271"
                   lemma="un"
@@ -26068,7 +26291,7 @@
                   n="5281"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5282"
                   n="5282"
                   lemma="abeie"
@@ -26318,7 +26541,7 @@
                   n="5331"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5332"
                   n="5332"
                   lemma="il"
@@ -26403,7 +26626,7 @@
                   n="5348"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5349"
                   n="5349"
                   lemma="ame"
@@ -26534,7 +26757,11 @@
                   lemma="lëece"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">leesche</w>
-               <w xml:id="t5375" n="5375" lemma="de+le">des</w>
+               <w xml:id="t5375"
+                  n="5375"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t5376"
                   n="5376"
                   lemma="ciel"
@@ -26560,7 +26787,11 @@
                   lemma="estre1"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">fu</w>
-               <w xml:id="t5381" n="5381" lemma="en1+le">es</w>
+               <w xml:id="t5381"
+                  n="5381"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=f|CAS=r">es</w>
                <w xml:id="t5382"
                   n="5382"
                   lemma="chalende"
@@ -26620,7 +26851,7 @@
                   n="5393"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5394"
                   n="5394"
                   lemma="il"
@@ -26641,7 +26872,11 @@
                   lemma="compagnie"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=r">compaignies</w>
-               <w xml:id="t5398" n="5398" lemma="de+le">des</w>
+               <w xml:id="t5398"
+                  n="5398"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t5399"
                   n="5399"
                   lemma="angele"
@@ -26676,13 +26911,17 @@
                   n="5405"
                   lemma=""
                   pos="PONfbl"
-                  msd="MORPH=empty">''''</w>
+                  msd="MORPH=empty">''</w>
                <w xml:id="t5406"
                   n="5406"
                   lemma="ame"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">ame</w>
-               <w xml:id="t5407" n="5407" lemma="de+le">del</w>
+               <w xml:id="t5407"
+                  n="5407"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t5408"
                   n="5408"
                   lemma="saint"
@@ -26968,7 +27207,11 @@
                   lemma="siecle"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">siecles</w>
-               <w xml:id="t5465" n="5465" lemma="de+le">des</w>
+               <w xml:id="t5465"
+                  n="5465"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t5466"
                   n="5466"
                   lemma="siecle"

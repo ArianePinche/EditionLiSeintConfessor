@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>file:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns1742.ciham-lemTEIfile:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns1742.ciham-lem.xml<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -7,14 +6,14 @@
             <author>Wauchier de Denain</author>
             <respStmt>
                <resp>Transcription et lemmatisation</resp>
-               <persName>Ariane Pinche</persName>
+               <persName instant="false" full="yes">Ariane Pinche</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p part="N">Publication Information</p>
          </publicationStmt>
-         <sourceDesc>
-            <p>Lemmatisation issue de Pyrrha :
+         <sourceDesc default="false">
+            <p part="N">Lemmatisation issue de Pyrrha :
                         lemmatisation issue de Pie avec le modèle de lemmatisation pour l'ancien français de l'école nationale des chartes.
                         lemmatisation corrigée grâce à l'interface de correction de Pyrrha.
                         <ref target="https://doi.org/10.5281/zenodo.2325428">Pyrrha : Clérice, T., Pilla, J. et Camps, J.-B. (2018).hipster-philology/pyrrha: 1.0.1.</ref>
@@ -535,7 +534,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">vint</w>
-               <w xml:id="t116" n="116" lemma="a3+le">au</w>
+               <w xml:id="t116"
+                  n="116"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t117"
                   n="117"
                   lemma="rivage2"
@@ -712,7 +715,11 @@
                   lemma="aler"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">ala</w>
-               <w xml:id="t153" n="153" lemma="a3+le">au</w>
+               <w xml:id="t153"
+                  n="153"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t154"
                   n="154"
                   lemma="mostier"
@@ -855,7 +862,11 @@
                   lemma="seignor"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">Signor</w>
-               <w xml:id="t184" n="184" lemma="de+le">del</w>
+               <w xml:id="t184"
+                  n="184"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t185"
                   n="185"
                   lemma="tot"
@@ -1838,7 +1849,11 @@
                   lemma="riule"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">riule</w>
-               <w xml:id="t387" n="387" lemma="de+le">des</w>
+               <w xml:id="t387"
+                  n="387"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t388"
                   n="388"
                   lemma="apostle"
@@ -2453,7 +2468,11 @@
                   lemma="reconter"
                   pos="VERinf"
                   msd="NOMB.=x|GENRE=x|CAS=x">raconter</w>
-               <w xml:id="t514" n="514" lemma="a3+le">as</w>
+               <w xml:id="t514"
+                  n="514"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t515"
                   n="515"
                   lemma="religïos"
@@ -4365,7 +4384,11 @@
                   lemma="et"
                   pos="CONcoo"
                   msd="MORPH=empty">et</w>
-               <w xml:id="t910" n="910" lemma="a3+le">au</w>
+               <w xml:id="t910"
+                  n="910"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t911"
                   n="911"
                   lemma="venir"
@@ -4481,7 +4504,11 @@
                   lemma="comander"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">comanda</w>
-               <w xml:id="t934" n="934" lemma="a3+le">au</w>
+               <w xml:id="t934"
+                  n="934"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t935"
                   n="935"
                   lemma="lïon"
@@ -5069,7 +5096,11 @@
                   lemma="prendre"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">prist</w>
-               <w xml:id="t1054" n="1054" lemma="a3+le">au</w>
+               <w xml:id="t1054"
+                  n="1054"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1055"
                   n="1055"
                   lemma="lïon"
@@ -5750,7 +5781,11 @@
                   lemma="piece"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">piece</w>
-               <w xml:id="t1191" n="1191" lemma="de+le">del</w>
+               <w xml:id="t1191"
+                  n="1191"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1192"
                   n="1192"
                   lemma="jor"
@@ -6686,7 +6721,11 @@
                   lemma="remanoir"
                   pos="VERppe"
                   msd="NOMB.=s|GENRE=f|CAS=n">remese</w>
-               <w xml:id="t1379" n="1379" lemma="de+le">del</w>
+               <w xml:id="t1379"
+                  n="1379"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1380"
                   n="1380"
                   lemma="asne"
@@ -6922,7 +6961,11 @@
                   lemma="cant2"
                   pos="PROadv"
                   msd="MORPH=empty">qanz</w>
-               <w xml:id="t1427" n="1427" lemma="de+le">des</w>
+               <w xml:id="t1427"
+                  n="1427"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t1428"
                   n="1428"
                   lemma="frere"
@@ -7133,7 +7176,11 @@
                   lemma="trace"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">trace</w>
-               <w xml:id="t1470" n="1470" lemma="de+le">del</w>
+               <w xml:id="t1470"
+                  n="1470"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1471"
                   n="1471"
                   lemma="sanc"
@@ -7584,7 +7631,11 @@
                   lemma="aler"
                   pos="VERcjg"
                   msd="MODE=imp|PERS.=2|NOMB.=p">alez</w>
-               <w xml:id="t1561" n="1561" lemma="en1+le">el</w>
+               <w xml:id="t1561"
+                  n="1561"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t1562"
                   n="1562"
                   lemma="bois"
@@ -7660,7 +7711,11 @@
                   lemma="lïon"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">lion</w>
-               <w xml:id="t1577" n="1577" lemma="en1+le">el</w>
+               <w xml:id="t1577"
+                  n="1577"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t1578"
                   n="1578"
                   lemma="lieu"
@@ -7851,7 +7906,11 @@
                   lemma="jor"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">jor</w>
-               <w xml:id="t1616" n="1616" lemma="a3+le">au</w>
+               <w xml:id="t1616"
+                  n="1616"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1617"
                   n="1617"
                   lemma="bois"
@@ -7872,7 +7931,11 @@
                   lemma="un"
                   pos="PROind"
                   msd="NOMB.=s|GENRE=m|CAS=r">un</w>
-               <w xml:id="t1621" n="1621" lemma="de+le">des</w>
+               <w xml:id="t1621"
+                  n="1621"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t1622"
                   n="1622"
                   lemma="frere"
@@ -7903,7 +7966,11 @@
                   lemma="et"
                   pos="CONcoo"
                   msd="MORPH=empty">et</w>
-               <w xml:id="t1628" n="1628" lemma="en1+le">el</w>
+               <w xml:id="t1628"
+                  n="1628"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t1629"
                   n="1629"
                   lemma="lieu"
@@ -8304,7 +8371,11 @@
                   lemma="angle"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">angles</w>
-               <w xml:id="t1709" n="1709" lemma="de+le">del</w>
+               <w xml:id="t1709"
+                  n="1709"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t1710"
                   n="1710"
                   lemma="bois"
@@ -8430,7 +8501,11 @@
                   lemma="estre1"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=s">estoit</w>
-               <w xml:id="t1735" n="1735" lemma="en1+le">el</w>
+               <w xml:id="t1735"
+                  n="1735"
+                  lemma="en1+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">el</w>
                <w xml:id="t1736"
                   n="1736"
                   lemma="comun"
@@ -10056,7 +10131,11 @@
                   lemma="oste"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=m|CAS=r">ostes</w>
-               <w xml:id="t2061" n="2061" lemma="de+le">des</w>
+               <w xml:id="t2061"
+                  n="2061"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t2062"
                   n="2062"
                   lemma="fais"
@@ -10617,7 +10696,11 @@
                   lemma="crüauté"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">cruiauté</w>
-               <w xml:id="t2174" n="2174" lemma="de+le">del</w>
+               <w xml:id="t2174"
+                  n="2174"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2175"
                   n="2175"
                   lemma="blasme"
@@ -10923,7 +11006,11 @@
                   lemma="savoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s">mescest</w>
-               <w xml:id="t2236" n="2236" lemma="de+le">del</w>
+               <w xml:id="t2236"
+                  n="2236"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2237"
                   n="2237"
                   lemma="moins"
@@ -11264,7 +11351,11 @@
                   lemma=","
                   pos="PONfbl"
                   msd="MORPH=empty">,</w>
-               <w xml:id="t2305" n="2305" lemma="si+il">sel</w>
+               <w xml:id="t2305"
+                  n="2305"
+                  lemma="si+il"
+                  pos="ADVgen.PROper"
+                  msd="PERS.=3|NOMB.=s|GENRE=n|CAS=r">sel</w>
                <w xml:id="t2306"
                   n="2306"
                   lemma="savoir"
@@ -11395,7 +11486,11 @@
                   lemma="dire"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=ipf|PERS.=3|NOMB.=p">disoient</w>
-               <w xml:id="t2332" n="2332" lemma="de+le">del</w>
+               <w xml:id="t2332"
+                  n="2332"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2333"
                   n="2333"
                   lemma="lïon"
@@ -12286,7 +12381,11 @@
                   lemma="chëoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=p">cheïrent</w>
-               <w xml:id="t2511" n="2511" lemma="a3+le">as</w>
+               <w xml:id="t2511"
+                  n="2511"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">as</w>
                <w xml:id="t2512"
                   n="2512"
                   lemma="pié"
@@ -12327,7 +12426,11 @@
                   lemma="pardon"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">pardon</w>
-               <w xml:id="t2520" n="2520" lemma="de+le">del</w>
+               <w xml:id="t2520"
+                  n="2520"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2521"
                   n="2521"
                   lemma="mesfait"
@@ -12798,7 +12901,11 @@
                   lemma="besoigne"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=r">besoignes</w>
-               <w xml:id="t2615" n="2615" lemma="de+le">des</w>
+               <w xml:id="t2615"
+                  n="2615"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t2616"
                   n="2616"
                   lemma="frere"
@@ -13114,7 +13221,11 @@
                   lemma="pitié"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=r">pitié</w>
-               <w xml:id="t2679" n="2679" lemma="de+le">des</w>
+               <w xml:id="t2679"
+                  n="2679"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=f|CAS=r">des</w>
                <w xml:id="t2680"
                   n="2680"
                   lemma="gent1"
@@ -13165,7 +13276,11 @@
                   lemma="doner"
                   pos="VERinf"
                   msd="NOMB.=x|GENRE=x|CAS=x">doner</w>
-               <w xml:id="t2690" n="2690" lemma="de+le">del</w>
+               <w xml:id="t2690"
+                  n="2690"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2691"
                   n="2691"
                   lemma="nostre"
@@ -13191,7 +13306,11 @@
                   lemma="priier"
                   pos="VERcjg"
                   msd="MODE=sub|TEMPS=ipf|PERS.=1|NOMB.=p">preïssons</w>
-               <w xml:id="t2696" n="2696" lemma="de+le">del</w>
+               <w xml:id="t2696"
+                  n="2696"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t2697"
                   n="2697"
                   lemma="vostre"
@@ -14672,7 +14791,11 @@
                   lemma="estre1"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">fu</w>
-               <w xml:id="t2993" n="2993" lemma="a3+le">as</w>
+               <w xml:id="t2993"
+                  n="2993"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=f|CAS=r">as</w>
                <w xml:id="t2994"
                   n="2994"
                   lemma="secont1"

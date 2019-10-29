@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>file:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns1743.ciham-lemTEIfile:/Users/arianepinche/Documents/Github/EditionLiSeintConfessor/XML/lemmatisations/jns915.jns1743.ciham-lem.xml<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -7,14 +6,14 @@
             <author>Wauchier de Denain</author>
             <respStmt>
                <resp>Transcription et lemmatisation</resp>
-               <persName>Ariane Pinche</persName>
+               <persName instant="false" full="yes">Ariane Pinche</persName>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p part="N">Publication Information</p>
          </publicationStmt>
-         <sourceDesc>
-            <p>Lemmatisation issue de Pyrrha :
+         <sourceDesc default="false">
+            <p part="N">Lemmatisation issue de Pyrrha :
                         lemmatisation issue de Pie avec le modèle de lemmatisation pour l'ancien français de l'école nationale des chartes.
                         lemmatisation corrigée grâce à l'interface de correction de Pyrrha.
                         <ref target="https://doi.org/10.5281/zenodo.2325428">Pyrrha : Clérice, T., Pilla, J. et Camps, J.-B. (2018).hipster-philology/pyrrha: 1.0.1.</ref>
@@ -279,7 +278,11 @@
                   lemma="uevre"
                   pos="NOMcom"
                   msd="NOMB.=p|GENRE=f|CAS=n">oevres</w>
-               <w xml:id="t56" n="56" lemma="de+le">del</w>
+               <w xml:id="t56"
+                  n="56"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t57"
                   n="57"
                   lemma="saint"
@@ -694,7 +697,11 @@
                   lemma="savoir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=pst|PERS.=3|NOMB.=s">set</w>
-               <w xml:id="t143" n="143" lemma="a3+le">au</w>
+               <w xml:id="t143"
+                  n="143"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t144"
                   n="144"
                   lemma="quel1"
@@ -2685,7 +2692,11 @@
                   lemma="."
                   pos="PONfrt"
                   msd="MORPH=empty">.</w>
-               <w xml:id="t550" n="550" lemma="a3+le">Au</w>
+               <w xml:id="t550"
+                  n="550"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">Au</w>
                <w xml:id="t551"
                   n="551"
                   lemma="trentisme"
@@ -3320,7 +3331,11 @@
                   lemma="pitié"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=f|CAS=n">pitié</w>
-               <w xml:id="t681" n="681" lemma="de+le">del</w>
+               <w xml:id="t681"
+                  n="681"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">del</w>
                <w xml:id="t682"
                   n="682"
                   lemma="saint"
@@ -5124,7 +5139,11 @@
                   lemma="evesque"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=n">evesqes</w>
-               <w xml:id="t1049" n="1049" lemma="a3+le">au</w>
+               <w xml:id="t1049"
+                  n="1049"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1050"
                   n="1050"
                   lemma="pueple"
@@ -6400,7 +6419,11 @@
                   lemma="il"
                   pos="PROper"
                   msd="PERS.=3|NOMB.=s|GENRE=m|CAS=i">lui</w>
-               <w xml:id="t1305" n="1305" lemma="de+le">del</w>
+               <w xml:id="t1305"
+                  n="1305"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=n|CAS=r">del</w>
                <w xml:id="t1306"
                   n="1306"
                   lemma="tot"
@@ -6981,7 +7004,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">vint</w>
-               <w xml:id="t1422" n="1422" lemma="a3+le">au</w>
+               <w xml:id="t1422"
+                  n="1422"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1423"
                   n="1423"
                   lemma="septe"
@@ -7142,7 +7169,11 @@
                   lemma="venir"
                   pos="VERcjg"
                   msd="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s">vint</w>
-               <w xml:id="t1455" n="1455" lemma="a3+le">au</w>
+               <w xml:id="t1455"
+                  n="1455"
+                  lemma="a3+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=s|GENRE=m|CAS=r">au</w>
                <w xml:id="t1456"
                   n="1456"
                   lemma="chastel"
@@ -8543,7 +8574,11 @@
                   lemma="siecle"
                   pos="NOMcom"
                   msd="NOMB.=s|GENRE=m|CAS=r">siecle</w>
-               <w xml:id="t1736" n="1736" lemma="de+le">des</w>
+               <w xml:id="t1736"
+                  n="1736"
+                  lemma="de+le"
+                  pos="PRE.DETdef"
+                  msd="NOMB.=p|GENRE=m|CAS=r">des</w>
                <w xml:id="t1737"
                   n="1737"
                   lemma="siecle"

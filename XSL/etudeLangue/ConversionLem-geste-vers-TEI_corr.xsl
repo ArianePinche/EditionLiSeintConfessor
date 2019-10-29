@@ -47,7 +47,6 @@
                     </p>
                 </sourceDesc>
             </fileDesc>
-              <xsl:copy-of select="revisionDesc"/>  
             </teiHeader>
         <xsl:apply-templates select="text"/>
             </xsl:copy>
