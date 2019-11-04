@@ -179,7 +179,7 @@
         <xsl:text>cas&#09;masc&#09;fém&#09;neutre&#10;</xsl:text>
         <xsl:text>CSS&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSSm, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSSm) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -187,7 +187,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSSm, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CSSm) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -195,7 +195,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSSf, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSSf) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -203,7 +203,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSSf, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CSSf) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -211,7 +211,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSSn, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSSn) and matches(@pos, $CatGram) and  @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -219,7 +219,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSSn, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CSSn) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -228,7 +228,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>CRS&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSRm, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSRm) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -236,7 +236,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSRm, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CSRm) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -244,7 +244,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSRf, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSRf) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -252,7 +252,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSRf, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd,$CSRf) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -260,7 +260,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CSRn, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CSRn) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -268,7 +268,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CSRn, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CSRn) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -278,7 +278,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>CSP&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CPSm, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CPSm) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -286,7 +286,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CPSm, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CPSm)  and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -294,7 +294,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CPSf, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CPSf) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -302,7 +302,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CPSf, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CPSf) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -310,7 +310,7 @@
         </xsl:for-each-group>
         <xsl:text>&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CPSn, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CPSn) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -318,7 +318,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CPSn, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CPSn) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -328,7 +328,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>CRP&#09;</xsl:text>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CPRn, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CPRn) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -336,14 +336,14 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CPRf, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CPRf) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
             </xsl:if>
         </xsl:for-each-group>
         <xsl:for-each-group
-            select="//w[matches(@msd, concat($CPRn, '\|DEGRE=p')) and @lemma = $lemma]"
+            select="//w[matches(@msd, $CPRn) and matches(@pos, $CatGram) and @lemma = $lemma]"
             group-by="lower-case(.)">
             <xsl:sort order="descending" select="count(current-group())"/>
             <xsl:value-of select="."/>
@@ -351,7 +351,7 @@
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
             <xsl:value-of
-                select="round(count(current-group()) div count(//w[matches(@msd, concat($CPRn, '\|DEGRE=p')) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
+                select="round(count(current-group()) div count(//w[matches(@msd, $CPRn) and matches(@pos, $CatGram) and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
             <xsl:if test="position() != last()">
                 <xsl:text>, </xsl:text>
@@ -430,12 +430,18 @@
             </xsl:call-template>
             <xsl:text>&#09;&#10;</xsl:text>
             <xsl:variable name="CatGram" select="'NOMcom'"/>
-            <xsl:variable name="lemma" select="'gent'"/>
+            <xsl:variable name="lemma" select="'gent1'"/>
             <xsl:call-template name="declinaisonNomFem">
                 <xsl:with-param name="CatGram" select="$CatGram"/>
                 <xsl:with-param name="lemma" select="$lemma"/>
             </xsl:call-template>
             <xsl:text>&#10;</xsl:text>
+            <xsl:variable name="CatGram" select="'NOMcom'"/>
+            <xsl:variable name="lemma" select="'main2'"/>
+            <xsl:call-template name="declinaisonNomFem">
+                <xsl:with-param name="CatGram" select="$CatGram"/>
+                <xsl:with-param name="lemma" select="$lemma"/>
+            </xsl:call-template>
             <xsl:text>Les substantifs féminins à deux bases</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:variable name="CatGram" select="'NOMcom'"/>
@@ -495,6 +501,55 @@
                 <xsl:with-param name="CatGram" select="$CatGram"/>
                 <xsl:with-param name="lemma" select="$lemma"/>
             </xsl:call-template>
+            
+            
+            <!-- Terminaison des substantifs masculin -->
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison des CSS masculins</xsl:text><xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison en s</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 's') and matches(@msd, $CSSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison en z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 'z') and matches(@msd, $CSSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison ni s, ni z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[not(ends-with(text(), 's') or ends-with(text(), 'z')) and matches(@msd, $CSSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison des CSP masculins</xsl:text><xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison en s</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 's') and matches(@msd, $CPSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison en z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 'z') and matches(@msd, $CPSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison ni s, ni z, ni x</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[not(ends-with(text(), 's') or ends-with(text(), 'z') or ends-with(text(), 'x')) and matches(@msd, $CPSm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison des CRP masculins</xsl:text><xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison en s</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 's') and matches(@msd, $CPRm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison en z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[ends-with(text(), 'z') and matches(@msd, $CPRm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison ni s, ni z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[not(ends-with(text(), 's') or ends-with(text(), 'z')) and matches(@msd, $CPRm) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison des CSS féminins à terminaison masculine</xsl:text><xsl:text>&#10;</xsl:text>
+            <xsl:text>Terminaison en s ou z</xsl:text><xsl:text>&#09;</xsl:text>
+                <xsl:for-each-group select="//w[matches(text(), '[rtpqdfgjklmwcvbn](s|z)$') and matches(@msd, $CSSf) and @pos='NOMcom']" group-by=".">
+                    <xsl:value-of select="current-grouping-key()"/><xsl:text>, </xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                </xsl:for-each-group>
+            <xsl:text>Terminaison sans s ou z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:for-each-group select="//w[matches(text(), '[rtpqdfgjklmwcvbn]$') and matches(@msd, $CSSf) and @pos='NOMcom']" group-by=".">
+                <xsl:value-of select="current-grouping-key()"/><xsl:text>, </xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+            </xsl:for-each-group>
+    
+                <xsl:text>&#10;</xsl:text>
+            
+            <xsl:text>Terminaison en s ou z</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[matches(text(), '[rtpqdfgjklmwcvbn](s|z)$') and matches(@msd, $CSSf) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            <xsl:text>Terminaison ni s, ni z, ni e</xsl:text><xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(//w[matches(text(), '[rtpqdfgjklmwcvbn]$') and matches(@msd, $CSSf) and @pos='NOMcom'])"/><xsl:text>&#09;</xsl:text>
+            
         </xsl:result-document>
 
     </xsl:template>
