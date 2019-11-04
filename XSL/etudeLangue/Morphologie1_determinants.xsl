@@ -49,14 +49,10 @@
             <xsl:call-template name="tableauFormesPers">
                 <xsl:with-param name="CatGram" select="'ADJpos'"/>
             </xsl:call-template>  
-            <xsl:text>Les déterminants relatifs&#10;</xsl:text>
+            <xsl:text>Les déterminants relatifs et interrogatifs&#10;</xsl:text>
             <xsl:call-template name="tableauFormes">
-                <xsl:with-param name="CatGram" select="'DETrel'"/>
-            </xsl:call-template>         
-            <xsl:text>Les déterminants interrogatifs&#10;</xsl:text>
-            <xsl:call-template name="tableauFormes">
-                <xsl:with-param name="CatGram" select="'DETint'"/>
-            </xsl:call-template>       
+                <xsl:with-param name="CatGram" select="'DETrel|DETint'"/>
+            </xsl:call-template>           
             <xsl:text>&#10;</xsl:text>         
             <xsl:text>Les déterminants indéfinis&#10;</xsl:text>
             <xsl:call-template name="tableauFormes">
