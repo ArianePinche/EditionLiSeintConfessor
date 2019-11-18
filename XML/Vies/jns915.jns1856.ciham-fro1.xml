@@ -1246,8 +1246,10 @@
             </app>li&u-v;roisons <app>
               <lem>as</lem>
               <rdg wit="#G1">a ses</rdg>
-            </app> che&u-v;aliers<pc type="orig" ana="coordination">:</pc>&esp;<app><lem>&esperluette-et;</lem><rdg wit="#G1" cause="om."></rdg></app>si
-            les&esp;<lb/>fist semondre <app>
+            </app> che&u-v;aliers<pc type="orig" ana="coordination">:</pc>&esp;<app>
+              <lem>&esperluette-et;</lem>
+              <rdg wit="#G1" cause="om."/>
+            </app>si les&esp;<lb/>fist semondre <app>
               <lem>tout</lem>
               <rdg wit="#G1" cause="om."/>
             </app>&esp;&pbarre-par;tout <app>
@@ -1348,7 +1350,7 @@
                   </choice>artins</persName></lem>
               <rdg wit="#G1"> saint Martin sanz paour et sanz doutance</rdg>
             </app>&esp;<app>
-              <lem>a<pc type="reg">&#160;</pc>l<pc type="reg">&apos;</pc>empereror</lem>
+              <lem>a<pc type="reg">&#160;</pc>l<pc type="reg">&apos;</pc>empereor</lem>
               <rdg wit="#G1" cause="om."/>
             </app>&esp;:&esp;<said who="#martin">Se l<pc type="reg">&apos;</pc>on dist qe
               ce&esp;<lb/> soit&esp;por paor&esp;<pc type="orig" ana="completive">:</pc>
@@ -1379,19 +1381,24 @@
                 </choice>rist</persName> serai &i-j;e segniez <app>
                 <lem>del signe <lb/> de<pc type="reg">&#160;</pc>la</lem>
                 <rdg wit="#G1">de la sainte</rdg>
-              </app> croiz&deuxpoints-point;<app><lem><choice>
-                <orig>s</orig>
-                <reg>S</reg>
-              </choice>i</lem><rdg wit="#G1">Et si</rdg></app> sachiez qe &i-j;e <app>
+              </app> croiz&deuxpoints-point;<app>
+                <lem><choice>
+                    <orig>s</orig>
+                    <reg>S</reg>
+                  </choice>i</lem>
+                <rdg wit="#G1">Et si</rdg>
+              </app> sachiez qe &i-j;e <app>
                 <lem>trespercerai<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;<lb/>trespasserai</lem>
                 <rdg wit="#G1">passerai et trespercerai</rdg>
               </app>&esp;<app>
                 <lem>les</lem>
                 <rdg wit="#G1">toutes les</rdg>
-              </app> batailles de<pc type="reg">&#160;</pc><app><lem>mes</lem><rdg wit="#G1">voz</rdg></app> enemis <lb/>
-              se&utrem;rement&point-virg4;la ou eles serront plus espes<lb/>ses
-            assemblees.</said>&esp;<lb/>
+              </app> batailles de<pc type="reg">&#160;</pc><app>
+                <lem>mes</lem>
+                <rdg wit="#G1">voz</rdg>
+              </app> enemis <lb/> se&utrem;rement&point-virg4;la ou eles serront plus espes<lb/>ses
+              assemblees.</said>&esp;<lb/>
           </p>
         </div>
       </div>
@@ -5627,9 +5634,13 @@
             sa&u-v;oient q<pc type="reg">'</pc>il en pe<lb/>&utrem;ssent fere.&esp;Dont
             &pbarre-par;la uns des clers qi la estoi<lb/>ent
               &esperluette-et;si&esp;dist&point-deuxpointsDial;<said>Dont ne sa&u-v;ez &u-v;os<pc
-                type="reg" ana="apostrophe">,</pc> beau sig<lb/>nors<pc type="reg" ana="apostrophe"
-                >,</pc> qe tresq<pc type="reg">'</pc>a tierz &i-j;or sera la feste del&esp;&i-j;or
-                q<pc type="reg">'</pc>il&esp;<lb/>re&c-ced;ut l<pc type="reg">'</pc>arce&u-v;esqi&eacc;<choice>
+                type="reg" ana="apostrophe">, </pc>
+              <app>
+                <lem wit="#C2 #C3">beau<corr type="add">s</corr></lem>
+                <rdg wit="#C1">beau</rdg>
+              </app> sig<lb/>nors<pc type="reg" ana="apostrophe">,</pc> qe tresq<pc type="reg"
+                >'</pc>a tierz &i-j;or sera la feste del&esp;&i-j;or q<pc type="reg"
+              >'</pc>il&esp;<lb/>re&c-ced;ut l<pc type="reg">'</pc>arce&u-v;esqi&eacc;<choice>
                 <orig>.</orig>
                 <reg>,</reg>
               </choice>&esp;&esperluette-et;ceste feste a&u-v;oit il acostu<lb/>m&eacc; a&esp;feire.
