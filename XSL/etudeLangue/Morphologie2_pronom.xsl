@@ -10,6 +10,7 @@
         />
     </xsl:function>
     <xsl:output method="text"/>
+    <!-- Création d'une variable pour chacun des cas -->
     <xsl:variable name="CSSm" select="'NOMB.=s\|GENRE=m\|CAS=n'"/>
     <xsl:variable name="CSSf" select="'NOMB.=s\|GENRE=f\|CAS=n'"/>
     <xsl:variable name="CSSn" select="'NOMB.=s\|GENRE=n\|CAS=n'"/>
@@ -30,17 +31,20 @@
     <xsl:variable name="CPIn" select="'NOMB.=p\|GENRE=n\|CAS=i'"/>
 
     <xsl:template name="declinaisonProPers">
+        <!-- Règle qui classe les pronoms en fonction de la catégories, de la personne et du cas -->
         <xsl:param name="CatGram"/>
         <xsl:param name="pers"/>
         <xsl:param name="lemma"/>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>CSS&#09;</xsl:text>
+        <!-- Régle pour récupérer toutes les formes du cas correspondant, les classer par graphie et compter les occurrences correspondantes -->
         <xsl:for-each-group select="current-group()[matches(@msd, $CSSm)]" group-by="lower-case(.)">
             <xsl:sort order="ascending" select="count(current-group())"/>
             <xsl:value-of select="."/>
             <xsl:text> (nb. </xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>, </xsl:text>
+         <!-- Calcul du pourcentage de la graphie pour le cas donné -->
             <xsl:value-of
                 select="round(count(current-group()) div count(//w[matches(@msd, concat($pers, '\|', $CSSm)) and @pos = $CatGram and @lemma = $lemma]) * 100)"/>
             <xsl:text>%)</xsl:text>
@@ -293,6 +297,7 @@
         </xsl:for-each-group>
     </xsl:template>
     <xsl:template name="declinaisonPro">
+        <!-- Règle qui classe les pronoms en fonction de la catégories et du cas -->
         <xsl:param name="CatGram"/>
         <xsl:param name="lemma"/>
         <xsl:text>&#10;</xsl:text>
@@ -556,7 +561,6 @@
     </xsl:template>
 
     <xsl:template match="/">
-
         <xsl:result-document href="../../resultats/analyseMorphologique2_pronoms.tsv">
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Les pronoms personnels&#10;</xsl:text>
@@ -648,6 +652,7 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <!-- Les formes avec enclise -->
+            <xsl:text>Les formes avec enclise &#10;</xsl:text>
             <xsl:for-each-group select="//w[matches(@pos, 'PROrel.')]" group-by="@lemma">
                 <xsl:text>&#10;</xsl:text> <xsl:value-of select="current-grouping-key()"/><xsl:text>&#10;</xsl:text>
                 <xsl:for-each-group select="current-group()" group-by=".">
@@ -678,6 +683,18 @@
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
+            <!-- Les formes avec enclise -->
+            <xsl:text>Les formes avec enclise &#10;</xsl:text>
+            <xsl:for-each-group select="//w[matches(@pos, 'PROint.')]" group-by="@lemma">
+                <xsl:text>&#10;</xsl:text> <xsl:value-of select="current-grouping-key()"/><xsl:text>&#10;</xsl:text>
+                <xsl:for-each-group select="current-group()" group-by=".">
+                    <xsl:value-of select="current-grouping-key()"/>
+                    <xsl:text> nb.</xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
+                    <xsl:text>&#10;</xsl:text>
+                </xsl:for-each-group>
+            </xsl:for-each-group>
+            <xsl:text>&#10;</xsl:text>s
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Les pronoms indéfinis&#10;</xsl:text>
             <xsl:variable name="CatGram" select="'PROind'"/>
