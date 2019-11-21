@@ -647,6 +647,16 @@
                 </xsl:call-template>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each-group>
+            <!-- Les formes avec enclise -->
+            <xsl:for-each-group select="//w[matches(@pos, 'PROrel.')]" group-by="@lemma">
+                <xsl:text>&#10;</xsl:text> <xsl:value-of select="current-grouping-key()"/><xsl:text>&#10;</xsl:text>
+                <xsl:for-each-group select="current-group()" group-by=".">
+                    <xsl:value-of select="current-grouping-key()"/>
+                    <xsl:text> nb.</xsl:text>
+                    <xsl:value-of select="count(current-group())"/>
+                    <xsl:text>&#10;</xsl:text>
+                </xsl:for-each-group>
+            </xsl:for-each-group>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Les pronoms interrogatifs&#10;</xsl:text>
