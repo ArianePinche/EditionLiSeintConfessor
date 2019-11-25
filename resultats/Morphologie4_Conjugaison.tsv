@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 Indicatif présent
 Premier groupe
 
@@ -18,7 +18,6 @@ P6	leissent (1), lessent (1)
 
 priier
 P1	proi (25), prie (2), pri (2)
-P3	proit (1)
 P4	proions (5), prions (2)
 P5	proiés (1)
 
@@ -36,7 +35,7 @@ tenir1
 P1	tieng (2)
 P2	tienz (1)
 P3	tient (5)
-P6	tienent (3), tenoient (1)
+P6	tienent (3)
 
 venir
 P3	vient (10)
@@ -44,9 +43,9 @@ P5	venez (1)
 P6	vienent (4)
 
 öir
-P1	oï (1)
+P1	oï (2)
 P2	oz (1)
-P3	oï (2), oi (1)
+P3	oï (2)
 P5	oez (8)
 P6	oient (1)
 
@@ -80,7 +79,7 @@ P2	sieus (1)
 
 vëoir
 P1	voi (9)
-P2	vieus (2), voiz (1)
+P2	voiz (1)
 P3	voit (3)
 P4	veons (3)
 P5	veez (3), veiés (1)
@@ -123,16 +122,16 @@ devoir
 P1	doi (1)
 P2	doiz (2)
 P3	doit (46)
-P4	devons (4)
+P4	devons (4), doiomes (1)
 P5	devez (2)
 P6	doivent (8)
 
 faire
-P1	faz (2)
-P2	fes (4), faz (1), feïs (1), fez (1)
-P3	fet (33), fait (9)
+P1	faz (3)
+P2	fes (4), fez (1)
+P3	fet (33), fait (10)
 P5	fetes (2)
-P6	font (17)
+P6	font (18)
 
 pöoir
 P1	puis (4)
@@ -143,17 +142,17 @@ P5	poez (31), puez (3), poés (2)
 P6	pueent (4), puent (2)
 
 savoir
-P1	sai (46), sei (4), sez (1)
-P2	sez (5), ses (3)
+P1	sai (46), sei (4)
+P2	sez (6), ses (3)
 P3	seit (6), set (6), mescest (1)
 P4	savons (6)
 P5	savez (4)
 P6	sevent (4)
 
 voloir
-P1	voel (21), voeil (2), veul (1)
-P2	vius (4), veus (4)
-P3	viut (4), veut (2), velt (1), voeil (1), voel (1)
+P1	voel (22), voeil (3), veul (1)
+P2	vius (4), veus (4), vieus (2)
+P3	viut (4), veut (2), velt (1)
 P4	volons (4)
 P5	volez (9)
 P6	voelent (7), vuelent (1)
@@ -170,7 +169,7 @@ P2	lesses (1)
 P3	lest (3)
 
 priier
-P3	proiast (1)
+P3	proit (3), proiast (1)
 
 Deuxième groupe
 
@@ -235,7 +234,6 @@ P5	ailliez (1), aillez (1)
 devoir
 P1	doie (2)
 P3	doie (2)
-P4	doiomes (1)
 
 faire
 P1	face (1)
@@ -254,9 +252,9 @@ P6	puissent (12)
 
 savoir
 P2	saces (5)
-P3	sace (8), sache (1)
+P3	sace (9), sache (1)
 P4	saçons (1)
-P5	sace (1), sachiez (1)
+P5	sachiez (1)
 P6	sacent (2)
 
 voloir
@@ -292,7 +290,7 @@ P6	disoient (29)
 
 tenir1
 P3	tenoit (26)
-P6	tenoient (6)
+P6	tenoient (7)
 
 venir
 P2	venoies (1)
@@ -346,10 +344,10 @@ P5	aviez (2)
 P6	avoient (191)
 
 estre1
-P1	estoie (8), estions (3)
+P1	estoie (8)
 P2	estoies (2)
 P3	estoit (870), ert (24), iert (2)
-P4	estions (11)
+P4	estions (14)
 P6	estoient (347), erent (18)
 
 Les verbes irréguliers
@@ -478,7 +476,7 @@ Premier groupe
 
 comander
 P2	conmandas (1), comandas (1)
-P3	comanda (56), conmanda (34), coumanda (4), coumada (1)
+P3	comanda (56), conmanda (34), coumanda (5), coumada (1)
 P6	comanderent (5), conmanderent (2)
 
 comencier
@@ -596,8 +594,8 @@ P6	durent (2)
 
 faire
 P1	fis (2)
-P2	feïs (5), feïz (1)
-P3	fist (199), font (1), fait (1)
+P2	feïs (6), feïz (1)
+P3	fist (199)
 P4	feïmes (2)
 P5	feïstes (3)
 P6	firent (51), fissent (1)
@@ -684,11 +682,11 @@ avoir
 P1	aurai (3)
 P2	auras (1)
 P3	aura (5)
-P5	aurez (1), auroiz (1)
+P5	auroiz (2), aurez (1)
 P6	auront (5), averont (2)
 
 estre1
-P1	serai (3)
+P1	serai (3), seré (1)
 P2	seras (5), serras (2)
 P3	sera (23), serra (3), iert (1)
 P6	seront (7)
@@ -780,7 +778,6 @@ avoir
 P2	auroies (1)
 P3	auroit (14), averoit (3)
 P4	aurions (1)
-P5	auroiz (1)
 P6	auroient (3)
 
 estre1
@@ -905,4 +902,1263 @@ P5	fetes (3)
 
 savoir
 P2	saces (14), saches (4)
-P5	sachiez (30), saciez (19), sacez (1), saciés (1)
+P5	sachiez (30), saciez (19), sachiés (1), sacez (1), saciés (1)
+
+P1 en ç à l'indicatif présent	372
+cuidier1
+quiç	2
+cuit	9
+
+
+cuiç	3
+cuit	9
+
+
+
+lire1
+liuç	1
+
+
+
+comander
+coumanç	1
+comant	4
+coumant	1
+
+
+comanç	7
+comant	4
+coumant	1
+
+
+
+comencier
+conmanç	1
+
+
+comanç	1
+
+
+
+doter2
+douç	1
+
+
+
+rendre
+renç	4
+rens	1
+rent	1
+
+
+
+ç autre que P1
+
+P1 en ç à l'indicatif parfait	125
+vëoir
+viç	9
+vi	9
+
+
+
+ç autre que P1
+
+futur indicatif P1 en -é
+formes en -é :2	formes en -ai :117
+conter
+conteré	1
+conterai	22
+conterei	3
+
+
+
+estre1
+seré	1
+serai	3
+
+
+
+parfait indicatif P1 en -é
+formes en -é :1	formes en -ai :40
+priier
+prié	1
+priai	1
+
+
+
+Absence de -t, P3 indicatif pst
+avoir
+a	85
+
+
+
+öir
+oï	2
+
+
+
+descovrir
+descuevre	1
+
+
+
+defaillir
+defaille	1
+
+
+
+jesir
+gis	1
+
+
+
+Absence de -t, P3 indicatif parfait
+estre1
+fu	565
+
+
+
+aemplir
+aempli	5
+
+
+
+öir
+oï	109
+
+
+
+deguerpir
+deguerpi	14
+
+
+
+atendre
+atendi	3
+
+
+
+fremir
+fremi	1
+
+
+
+departir
+departi	41
+
+
+de﻿parti	3
+
+
+
+salir2
+salli	1
+
+
+sailli	4
+
+
+
+saisir
+seisi	1
+
+
+
+respondre1
+respondi	95
+
+
+respandi	1
+
+
+
+esvanöir
+esvanui	8
+
+
+esvanuï	1
+
+
+
+convertir
+converti	1
+
+
+
+sentir
+senti	13
+
+
+
+vivre1
+vesqui	8
+
+
+vesqi	2
+
+
+
+entendre
+entendi	20
+
+
+
+chëoir
+cheï	20
+
+
+
+ardre
+ardi	1
+arst	2
+
+
+
+abatre
+abati	3
+
+
+
+benëir
+beneï	8
+
+
+
+ensivre1
+ensivi	7
+
+
+
+rejehir
+regehi	3
+
+
+
+rendre
+rendi	30
+rendist	3
+
+
+
+ferir
+feri	9
+
+
+
+mentir
+menti	1
+
+
+
+issir
+issi	25
+
+
+
+sofrir
+soffri	4
+
+
+sosfri	1
+
+
+souffri	1
+
+
+
+partir
+parti	17
+
+
+﻿parti	1
+
+
+
+enföir2
+enfoï	1
+
+
+
+estendre
+estendi	2
+
+
+
+bastre
+bati	2
+
+
+
+defendre
+desfendi	2
+
+
+
+corir
+couru	2
+courut	2
+corut	13
+
+
+
+repaire
+repaira	13
+
+
+repera	1
+
+
+
+enföir1
+enfui	2
+
+
+
+covrir
+covri	2
+
+
+
+fuir
+fui	3
+
+
+
+perdre
+perdi	1
+perdit	1
+
+
+
+ovrir
+ovri	4
+
+
+
+combatre
+combati	1
+
+
+
+acomplir
+acompli	1
+
+
+
+rissir
+rissi	1
+
+
+
+tendre1
+tendi	14
+
+
+
+vestir
+vesti	4
+
+
+
+defaillir
+defailli	1
+
+
+
+amüir
+amui	1
+
+
+
+endormir
+endormi	4
+
+
+
+resalir
+resailli	2
+
+
+
+sospendre
+sospendi	1
+
+
+
+falir
+failli	3
+
+
+
+escondire
+escondi	1
+
+
+
+oïr
+oï	10
+
+
+
+criembre
+cremi	6
+
+
+
+ensevelir
+enseveli	1
+
+
+
+vomir
+womi	1
+
+
+
+derompre
+derrompi	1
+
+
+
+resplendir
+resplendi	3
+
+
+
+servir
+servi	2
+
+
+
+espandre
+espandi	1
+
+
+
+descendre
+descendi	1
+
+
+
+establir
+establi	3
+
+
+
+orgoillir
+orgueilli	1
+
+
+
+tolir
+toli	1
+
+
+
+gerir
+gueri	2
+
+
+
+ofrir
+offri	1
+
+
+
+pendre
+pendi	2
+
+
+
+sivre
+sivi	1
+
+
+
+resjöir
+resjoï	1
+
+
+
+desvestir
+desvesti	1
+
+
+
+veintre
+venqui	1
+
+
+
+espäorir
+espoori	1
+
+
+
+fondre
+fondi	1
+
+
+
+esbäir
+esbahi	1
+
+
+
+repentir
+repenti	1
+
+
+
+espartir
+esparti	1
+
+
+
+restre
+refu	1
+
+
+
+vendre
+vendi	2
+
+
+
+descovrir
+descovri	1
+
+
+
+Présence de -t, P3 indicatif parfait
+venir
+vint	233
+
+
+
+detenir
+detint	1
+
+
+
+retraire
+retraist	2
+
+
+retrest	1
+
+
+
+avenir
+avint	127
+
+
+
+vëoir
+vit	137
+
+
+revist	1
+
+
+
+prendre
+prist	87
+
+
+
+metre2
+mist	51
+
+
+
+dire
+dist	405
+
+
+dit	13
+
+
+
+sovenir
+sovint	6
+
+
+souvint	1
+
+
+
+avoir
+eüst	1
+
+
+ot	240
+
+
+out	1
+
+
+eut	1
+
+
+
+conoistre
+counut	1
+
+
+conut	3
+
+
+
+faire
+fist	199
+
+
+
+traire
+trest	15
+
+
+traist	1
+
+
+tret	1
+
+
+
+voloir
+vout	60
+
+
+volt	6
+
+
+
+croire
+crut	10
+
+
+
+revenir
+revint	25
+
+
+
+ravoir2
+rot	2
+
+
+
+loisir1
+lut	2
+
+
+
+destruire
+destruist	4
+
+
+destruisist	1
+
+
+
+enquerre
+enquist	4
+
+
+
+pöoir
+pot	34
+
+
+pout	3
+
+
+
+estovoir
+estut	1
+
+
+
+apercevoir
+aperçut	4
+
+
+
+savoir
+sot	52
+
+
+sout	1
+
+
+
+plaire
+plot	10
+
+
+
+emplir
+emplist	1
+
+
+
+ardre
+arst	2
+ardi	1
+
+
+
+devoir
+dut	5
+
+
+
+devenir
+devint	5
+
+
+
+corir
+courut	2
+couru	2
+
+
+corut	13
+couru	2
+
+
+
+tenir1
+tint	16
+
+
+
+covenir
+covint	4
+
+
+
+recevoir
+reçut	21
+
+
+rechut	3
+
+
+
+asseoir
+assist	1
+
+
+
+boivre
+but	3
+
+
+
+requerre
+requist	9
+
+
+reqist	1
+
+
+
+ocire
+ocist	4
+
+
+
+escorre
+escoust	1
+
+
+
+morir
+morut	6
+
+
+
+acorre
+acorut	2
+
+
+
+aparoir
+aparut	23
+
+
+
+movoir
+mut	5
+
+
+
+esprendre2
+esprist	2
+
+
+
+escrire
+escrist	5
+
+
+
+plovoir
+plut	2
+
+
+
+aprendre
+aprist	3
+
+
+
+sofire
+sosfist	1
+
+
+
+jesir
+jut	6
+
+
+gist	7
+
+
+
+ravoir1
+rot	1
+
+
+
+poindre
+poinst	1
+
+
+
+targier1
+tarjast	1
+
+
+
+prinseignier
+prensignast	1
+
+
+
+parvenir
+parvint	6
+
+
+
+esprendre1
+esprist	1
+
+
+
+emprendre
+emprist	1
+
+
+
+complaindre
+complegnoit	1
+
+
+
+remanoir
+remest	10
+
+
+
+atenir
+atint	1
+
+
+
+taire
+teut	2
+
+
+teüt	2
+
+
+
+rassëoir
+rassist	1
+
+
+
+maintenir
+maintint	1
+
+
+meintint	1
+
+
+
+rendre
+rendist	3
+rendi	30
+
+
+
+retenir
+retint	2
+
+
+
+constreindre
+constreinst	1
+
+
+
+esmovoir
+esmut	4
+
+
+
+trametre
+tramist	1
+
+
+
+reconoistre
+reconut	5
+
+
+
+estreindre
+estreinst	1
+
+
+
+detraire
+detruist	1
+
+
+detrest	1
+
+
+
+assoudre
+assoust	2
+
+
+
+parmanoir
+parmest	1
+
+
+
+prometre
+promist	2
+
+
+proumist	1
+
+
+
+esteindre
+esteinst	1
+
+
+
+sordre
+sorst	1
+
+
+
+doloir
+dolut	1
+
+
+
+acroistre
+acrut	3
+
+
+
+querre
+quist	4
+
+
+qist	1
+
+
+
+redire
+redist	1
+
+
+
+oindre
+oinst	2
+
+
+
+reprendre1
+reprist	1
+
+
+
+perdre
+perdit	1
+perdi	1
+
+
+
+repondre
+repost	2
+
+
+
+atraire
+atrest	2
+
+
+
+lire1
+list	1
+
+
+lut	1
+
+
+
+despire
+despist	1
+
+
+
+paroir
+parut	1
+
+
+
+decorir
+decorut	1
+
+
+
+trait
+treit	1
+
+
+
+removoir
+remut	1
+
+
+
+clore
+clost	1
+
+
+
+eslire
+eslut	1
+
+
+
+voir
+vit	1
+
+
+
+revoloir
+revout	1
+
+
+
+espondre
+esponst	1
+
+
+
+
+Première personne du pluriel en omes
+formes en -omes :22	formes en -ons :82
+estre1
+somes	18
+estions	14
+fumes	4
+fusmes	1
+seions	1
+soions	4
+fussions	1
+
+
+
+deguerpir
+deguerpissomes	1
+deguerpissons	1
+
+
+
+demander
+demandomes	1
+demandames	3
+
+
+
+dire
+disomes	2
+deïsmes	1
+disions	1
+dirons	2
+
+
+
+devoir
+doiomes	1
+deümes	1
+devions	2
+devons	4
+
+
+
+Première personne du pluriel en omavoir
+avom	1
+aurions	1
+avions	3
+avons	23
+eümes	6
+eüsmes	1
+aions	5
+Avons	1
+
+
+
+
+Deuxième personne du pluriel en és
+formes en -és :9	formes en -ez :262
+pöoir
+poés	2
+peüssiez	2
+poez	31
+porrez	1
+puez	3
+puissiez	5
+porroiz	1
+
+
+
+escouter
+escoutés	1
+escoutez	6
+
+
+
+priier
+proiés	1
+proiez	2
+
+
+
+savoir
+sachiés	1
+sachiez	29
+saciez	16
+sauroiz	1
+savez	4
+sacez	1
+Saciez	3
+seüssiez	1
+Sachiez	2
+
+
+saciés	1
+sachiez	29
+saciez	16
+sauroiz	1
+savez	4
+sacez	1
+Saciez	3
+seüssiez	1
+Sachiez	2
+
+
+
+taire
+taissiés	1
+
+
+
+mentir
+mentés	1
+
+
+
+vëoir
+veiés	1
+veïssiez	6
+veez	5
+Veez	5
+verroiz	2
+
+
+
+
+deuxième personne du pluriel en oiz
+formes en -oiz :13	formes en -ez :5
+savoir
+sauroiz	1
+
+
+
+conoistre
+conisteroiz	1
+
+
+
+relaiier
+releroiz	1
+
+
+
+voloir
+voudroiz	1
+
+
+
+vëoir
+verroiz	2
+
+
+
+partir
+partiroiz	1
+
+
+
+pöoir
+porroiz	1
+porrez	1
+
+
+
+avoir
+auroiz	2
+aurez	1
+
+
+
+trover
+troveroiz	1
+
+
+
+faire
+feroiz	1
+
+
+
+öir
+orroiz	1
+orrez	1
+
+
+

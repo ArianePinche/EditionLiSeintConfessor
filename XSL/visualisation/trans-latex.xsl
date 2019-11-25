@@ -248,11 +248,17 @@
             | .//tei:lem/tei:hi/tei:persName 
             | .//tei:lem/tei:choice 
             | .//tei:lem/tei:persName/text()
+            | .//tei:lem/tei:persName/tei:hi/text()
             | .//tei:lem/tei:persName//tei:reg/text() 
             | .//tei:lem/tei:placeName/text() 
             | .//tei:lem//tei:pc 
             | .//tei:lem/tei:corr[@type='del'] 
-            | .//tei:lem/tei:corr[@type='add']/text()"/>
+            | .//tei:lem/tei:corr[@type='add']/text()
+            | .//tei:lem/tei:seg/text() 
+            | .//tei:lem/tei:seg/tei:choice 
+            | .//tei:lem/tei:seg/tei:pc 
+            | .//tei:lem/tei:seg/tei:placeName 
+            | .//tei:lem/tei:seg/tei:persName "/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">
