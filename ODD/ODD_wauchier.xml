@@ -61,14 +61,14 @@
                         édition est aisément citable et archivable grâce au respect de normes
                         internationales.</p>
                     <p>Dans le recueil de Wauchier de Denain, chacune des Vies est encodée dans un
-                        fichier XML différent évitant ainsi de faire des fichiers trop longs et permettant de
-                        bien séparer chacun des travaux tout en respectant la norme CTS. Les
-                        fichiers de l’édition sont nommés et identifiés de la manière suivante :
-                        « urn:cts:froLit:jns915.jns1856.ciham-fro1 ». La première partie de l’URN :
-                        « urn:cts » indique à quel système de référence appartient l’URN ; ici, la
-                        norme CTS. « froLit » signifie que le texte appartient à un corpus des
-                        textes en ancien français. Les éléments précédés de « jns » indiquent les
-                        identifiants de l’œuvre dans <ref
+                        fichier XML différent évitant ainsi de faire des fichiers trop longs et
+                        permettant de bien séparer chacun des travaux tout en respectant la norme
+                        CTS. Les fichiers de l’édition sont nommés et identifiés de la manière
+                        suivante : « urn:cts:froLit:jns915.jns1856.ciham-fro1 ». La première partie
+                        de l’URN : « urn:cts » indique à quel système de référence appartient
+                        l’URN ; ici, la norme CTS. « froLit » signifie que le texte appartient à un
+                        corpus des textes en ancien français. Les éléments précédés de « jns »
+                        indiquent les identifiants de l’œuvre dans <ref
                             target="http://jonas.irht.cnrs.fr/intervenant/915">le portail
                             Jonas</ref> développé par l’IRHT qui rassemble des répertoires de textes
                         et manuscrits médiévaux en langue d’oc et d’oïl, « 915 » est l’identifiant
@@ -490,22 +490,21 @@
                                 <hi>del</hi>.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">Li preudom <corr type="del"
                                 >qi</corr><lb/>qi vit le beau liu </egXML>
-                        <p> Enfin, quand le texte présente une erreur ponctuelle dans le
-                            texte qui demande le recours à un autre témoin pour remplacer la graphie
-                            "fautive" de C1, nous avons utilisé le doublet <gi>sic</gi>
-                            et <gi>corr</gi> englobé dans une balise <gi>choice</gi>. Ainsi la vue
-                            facsimilaire présentera la graphie originale du manuscrit, tandis que la
-                            vue normalisée donnera la version corrigé du texte avec entre crochets les
+                        <p> Enfin, quand le texte présente une erreur ponctuelle dans le texte qui
+                            demande le recours à un autre témoin pour remplacer la graphie "fautive"
+                            de C1, nous avons utilisé le doublet <gi>sic</gi> et <gi>corr</gi>
+                            englobé dans une balise <gi>choice</gi>. Ainsi la vue facsimilaire
+                            présentera la graphie originale du manuscrit, tandis que la vue
+                            normalisée donnera la version corrigé du texte avec entre crochets les
                             endroits substitués par une leçon alternative issue de C2 ou C3.</p>
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                              <app>
-                                  <lem wit="#C2 #C3">adjuto
-                                      <choice>
-                                          <sic>z</sic>
-                                          <corr type="add">r</corr>
-                                      </choice>
-                                  </lem>
-                                  <rdg wit="#C1">adjutoz</rdg></app>
+                            <app>
+                                <lem wit="#C2 #C3">adjuto <choice>
+                                        <sic>z</sic>
+                                        <corr type="add">r</corr>
+                                    </choice>
+                                </lem>
+                                <rdg wit="#C1">adjutoz</rdg></app>
                         </egXML>
                         <p>L'intégralité des corrections opérées est également signalée dans
                             l'apparat critique pour renseigner la graphie fautive présente dans le
@@ -784,7 +783,7 @@
                             </attDef>
                         </attList>
                     </elementSpec>
-                    
+
                     <elementSpec ident="del" mode="change">
                         <gloss>Suppression</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
@@ -798,12 +797,12 @@
                             <attDef ident="type" mode="change">
                                 <valList mode="add" type="closed">
                                     <valItem ident="exponctué"/>
-                                    <valItem ident="raturé"></valItem>
+                                    <valItem ident="raturé"/>
                                 </valList>
                             </attDef>
                         </attList>
                     </elementSpec>
-                    
+
                     <elementSpec ident="choice" mode="change">
                         <gloss>Choix</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
@@ -835,11 +834,12 @@
                             <attDef ident="facs" mode="delete"/>
                         </attList>
                     </elementSpec>
-                    
+
                     <elementSpec ident="sic" mode="change">
                         <gloss>Graphie originale mais fautive</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
-                            d'encoder la forme originale du manuscrit tout en signalant que cette dernière est fautive</desc>
+                            d'encoder la forme originale du manuscrit tout en signalant que cette
+                            dernière est fautive</desc>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
@@ -975,13 +975,24 @@
                                     </constraint>
                                 </constraintSpec>
                             </attDef>
+                            <attDef ident="type" mode="add" usage="opt">
+                                <valList mode="add" type="closed">
+                                    <valItem ident="inv.">
+                                        <gloss>Inversion</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où l'ordre des mots est inversé par
+                                            rapport à celui du lemme.</desc>
+                                    </valItem>
+                                </valList>
+                            </attDef>
                             <attDef ident="cause" mode="change">
                                 <valList mode="add" type="closed">
                                     <valItem ident="om.">
                                         <gloss>Omission</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les manuscrits où le texte du lemme est
+                                            >signale les leçons où le texte du lemme est
                                             omis.</desc>
                                     </valItem>
                                 </valList>
@@ -991,8 +1002,7 @@
 
                     <elementSpec ident="lem" mode="change">
                         <gloss>Lemme</gloss>
-                        <desc>permet
-                            de signaler la leçon choisie dans le texte édité.</desc>
+                        <desc>permet de signaler la leçon choisie dans le texte édité.</desc>
                         <attList>
                             <attDef ident="type" mode="change">
                                 <valList mode="add" type="closed">
@@ -1065,7 +1075,7 @@
                                     <valItem ident="civilisation"/>
                                 </valList>
                             </attDef>
-                            
+
                         </attList>
                     </elementSpec>
                     <elementSpec ident="settlement" mode="change">
