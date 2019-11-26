@@ -3,6 +3,12 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://fn.com"
     xmlns="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs" version="2.0">
+    <xsl:function name="fn:normalize">
+        <xsl:param name="input"/>
+        <xsl:value-of
+            select="translate(normalize-unicode(lower-case($input), 'NFKD'), 'áàâäéèêëíìîïóòôöúùûü', 'aaaaeeeeiiiioooouuuu')"
+        />
+    </xsl:function>
     <xsl:output method="text" encoding="UTF-8"/>
     <!-- Personnes -->
     <xsl:variable name="P1" select="'PERS.=1\|NOMB.=s'"/>
@@ -23,11 +29,11 @@
     <xsl:variable name="imperatif" select="'MODE=imp\|'"/>
     
     <!-- groupe -->
-    <xsl:variable name="premierGroupe" select="'^comencier$|^priier$|^comander$|^laissier$'"/>
+    <xsl:variable name="premierGroupe" select="'^comencier$|^priier$|^comander$|^laissier$|^cuidier1$'"/>
     <xsl:variable name="deuxiemeGroupe" select="'^venir$|^dire$|^tenir1$|^öir$'"/>
     <xsl:variable name="troisiemeGroupe" select="'^repondre$|^metre2$|^entendre$|^croire$|^recevoir$|^soloir$|^vëoir$'"/>
     <xsl:variable name="Auxiliaires" select="'^estre1$|^avoir$'"/>
-    <xsl:variable name="verbesirreguliers" select="'^savoir$|^pöoir$|^faire$|^aler$|^devoir$|^cuidier1|^voloir$'"/>
+    <xsl:variable name="verbesirreguliers" select="'^savoir$|^pöoir$|^faire$|^aler$|^devoir$|^voloir$|^faire$'"/>
     
     <xsl:template name="conjugaison">
         <xsl:param name="temps"/>
@@ -595,6 +601,128 @@
               </xsl:for-each-group>
               <xsl:text>&#10;</xsl:text>
           </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>Troisième personne du pluriel en -isent au pluriel</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:text>formes en -isent :</xsl:text><xsl:value-of select="count(//w[matches(@msd, $P6) and matches(@msd, $indicatifParfait) and matches(text(), 'is(s)?ent$')])"/><xsl:text>&#09;</xsl:text>
+          <xsl:text>formes autres :</xsl:text><xsl:value-of select="count(//w[matches(@msd, $P6) and matches(@msd, $indicatifParfait) and not(matches(text(), 'is(s)?ent$'))])"/>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[matches(@msd, $P6) and matches(@msd, $indicatifParfait) and matches(text(), 'is(s)?ent$')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and matches(@msd, $P6) and matches(@msd, $indicatifParfait) and not(matches(text(), 'is(s)?ent$'))]" group-by='.'>
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>    
+                  <xsl:text>&#10;</xsl:text>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+              <xsl:text>&#10;</xsl:text>
+          </xsl:for-each-group>
+          <xsl:text> Subjonctif présent en ge (Gossen $80)</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[not(matches(@lemma, 'g(i)?er')) and matches(@msd, $subjonctifPresent) and matches(text(), 'ge')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and matches(@msd, $subjonctifPresent) and not(matches(text(), 'ge')) ]" group-by=".">
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>subjonctif en -ie (Gossen $80)</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[matches(@msd, $subjonctifPresent) and matches(text(), 'ie(nt)?$')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and matches(@msd, $subjonctifPresent) and not(matches(text(), 'ie(nt)?$')) ]" group-by=".">
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>Futur I et Futur II d d'épenthèse ou e </xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[(matches(@msd, $indicatifFutur) or matches(@msd, $conditionnel)) and matches(text(), 'nr')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and (matches(@msd, $indicatifFutur) or matches(@msd, $conditionnel)) and not(matches(text(), 'nr')) ]" group-by=".">
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>Futur I et Futur II apocope e </xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[(matches(@msd, $indicatifFutur) or matches(@msd, $conditionnel)) and matches(text(), 'rr')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and (matches(@msd, $indicatifFutur) or matches(@msd, $conditionnel)) and not(matches(text(), 'rr')) ]" group-by=".">
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <!-- Gossen 71 subj imparfaits en aisse -->     
+          <xsl:value-of select="count(//w[matches(@msd, $subjonctifImparfait)])"/>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[matches(@msd, $subjonctifImparfait) and matches(text(), 'aisse')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and matches(@msd, $subjonctifImparfait) and not(matches(text(), 'aisse'))]" group-by='.'>
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>    
+                  <xsl:text>&#10;</xsl:text>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+              <xsl:text>&#10;</xsl:text>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>Parfaits et subjonctifs imparfait en "eui"</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[(matches(@msd, $indicatifParfait) or matches(@msd, $subjonctifImparfait)) and matches(fn:normalize(text()), 'eui')]" group-by="@lemma">
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  <xsl:for-each-group select="//w[@lemma=$lemma and (matches(@msd, $indicatifParfait) or matches(@msd, $subjonctifImparfait)) and not(matches(fn:normalize(text()), 'eui')) ]" group-by=".">
+                      <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/><xsl:text>&#10;</xsl:text>
+                  </xsl:for-each-group>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
+          <xsl:text>infinitifs</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[matches(@pos, 'VERinf')]" group-by="@lemma">
+              <xsl:sort select="@lemma" order="ascending"/>
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+          </xsl:for-each-group>
+          <xsl:text>Participes présents</xsl:text><xsl:text>&#10;</xsl:text>
+          <xsl:for-each-group select="//w[matches(@pos, 'VERppa')]" group-by="@lemma">
+              <xsl:sort select="@lemma" order="ascending"/>
+              <xsl:variable name="lemma" select="current-grouping-key()"/>
+              <xsl:value-of select="$lemma"/><xsl:text>&#10;</xsl:text>
+              <xsl:for-each-group select="current-group()" group-by=".">
+                  <xsl:value-of select="."/><xsl:text>&#09;</xsl:text><xsl:value-of select="count(current-group())"/>
+                  <xsl:text>&#10;</xsl:text>
+              </xsl:for-each-group>
+              <xsl:text>&#10;</xsl:text>
+          </xsl:for-each-group>
+          <xsl:text>&#10;</xsl:text>
           </xsl:result-document>          
    </xsl:template>
     
