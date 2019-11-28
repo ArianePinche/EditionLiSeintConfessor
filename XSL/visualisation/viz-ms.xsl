@@ -615,7 +615,13 @@
 
     <!-- fin saut de page et de colonne -->
 
-
+    <xsl:template match="tei:persName|tei:placeName">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="tei:choice">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
 
     <!-- éléments à affichier pour la visualisation facsimilaire -->
     <xsl:template match="tei:orig">
@@ -694,7 +700,8 @@
                     <xsl:element name="li">
                         <xsl:apply-templates
                             select="
-                                .//tei:lem/text() 
+                                .//tei:lem/text()
+                                |.//tei:lem/tei:lg
                                 | .//tei:lem/tei:hi/text() 
                                 | .//tei:lem/tei:choice/tei:reg/text() 
                                 | .//tei:lem/tei:choice/tei:corr/text() 
@@ -704,12 +711,12 @@
                                 | .//tei:lem/tei:hi/tei:placeName/text() 
                                 | .//tei:lem/tei:hi/tei:persName/text() 
                                 | .//tei:lem/tei:persName/tei:hi/text()
-                                | .//tei:lem/tei:persName/text() 
-                                | .//tei:lem/tei:placeName/text() 
+                                | .//tei:lem/tei:persName
+                                | .//tei:lem/tei:placeName
                                 | .//tei:lem/tei:pc/text() 
                                 | .//tei:lem/tei:corr[@type = 'del']/text() 
                                 | .//tei:lem/tei:corr[@type = 'add']/text() 
-                                | .//tei:lem/tei:seg/text()
+                                | .//tei:lem/tei:seg
                                 | .//tei:lem/tei:seg/tei:choice
                                 | .//tei:lem/tei:seg/tei:pc
                                 | .//tei:lem/tei:seg/tei:placeName

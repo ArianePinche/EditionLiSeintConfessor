@@ -125,10 +125,18 @@
     </xsl:template>
     <xsl:template match="tei:del[@type='exponctué']">\dotuline{<xsl:apply-templates/>}</xsl:template>
     <xsl:template match="tei:del[@type='raturé']">\sout{<xsl:apply-templates/>}</xsl:template>
+    <xsl:template match="tei:persName|tei:placeName">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="tei:choice">
+        <xsl:apply-templates/>
+    </xsl:template>
     
     <xsl:template match="tei:orig"/>
     <xsl:template match="tei:abbr"/>
     <xsl:template match="tei:sic"/>
+    
+    
     
     <xsl:template match="tei:pc">
         <xsl:choose>
@@ -140,6 +148,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:lg">
+        \\
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="tei:l">
@@ -161,8 +170,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
-
+    
+    
     <xsl:template match="tei:hi[@rend = 'decorated-initial']">
         <xsl:text>\textbf{\Large{</xsl:text>
         <xsl:apply-templates/>
@@ -240,23 +249,25 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select=".//tei:lem/text() 
+            select=".//tei:lem/text()
+            | .//tei:lem/tei:lg/tei:l/text()
+            | .//tei:lem/tei:lg/tei:l/tei:choice
             | .//tei:lem/tei:hi/text() 
             | .//tei:lem/tei:hi/tei:choice 
             | .//tei:lem/tei:hi/tei:pc 
             | .//tei:lem/tei:hi/tei:placeName 
             | .//tei:lem/tei:hi/tei:persName 
             | .//tei:lem/tei:choice 
-            | .//tei:lem/tei:persName/text()
-            | .//tei:lem/tei:persName/tei:hi/text()
-            | .//tei:lem/tei:persName//tei:reg/text() 
-            | .//tei:lem/tei:placeName/text() 
-            | .//tei:lem//tei:pc 
+            | .//tei:lem//tei:persName/text()
+            | .//tei:lem//tei:persName/tei:hi/text()
+            | .//tei:lem//tei:persName//tei:reg/text() 
+            | .//tei:lem//tei:placeName
+            | .//tei:lem//tei:pc[@type='reg'] 
             | .//tei:lem/tei:corr[@type='del'] 
             | .//tei:lem/tei:corr[@type='add']/text()
-            | .//tei:lem/tei:seg/text() 
+            | .//tei:lem/tei:seg
             | .//tei:lem/tei:seg/tei:choice 
-            | .//tei:lem/tei:seg/tei:pc 
+            | .//tei:lem/tei:seg/tei:pc[@type='reg'] 
             | .//tei:lem/tei:seg/tei:placeName 
             | .//tei:lem/tei:seg/tei:persName "/>
         <xsl:text>}\Afootnote{</xsl:text>
