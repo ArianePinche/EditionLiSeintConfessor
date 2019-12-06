@@ -710,6 +710,7 @@
                                 | .//tei:lem/tei:hi/tei:pc/text() 
                                 | .//tei:lem/tei:hi/tei:placeName/text() 
                                 | .//tei:lem/tei:hi/tei:persName/text() 
+                                | .//tei:lem/tei:hi/tei:choice/tei:reg/text() 
                                 | .//tei:lem/tei:persName/tei:hi/text()
                                 | .//tei:lem/tei:persName
                                 | .//tei:lem/tei:placeName
