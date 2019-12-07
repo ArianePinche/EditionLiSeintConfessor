@@ -69,6 +69,7 @@
     <xsl:template match="tei:div">
         <xsl:text>\paragraph*{}</xsl:text>
         <xsl:apply-templates select="./tei:div"/>
+        ﻿﻿\vspace{-20pt}
     </xsl:template>
 
     <xsl:template match="tei:div[@type='section']">
@@ -91,7 +92,7 @@
         <xsl:apply-templates/>
         <xsl:text>
 \pend
-
+﻿﻿\vspace{-30pt}
 </xsl:text>
 </xsl:template>
     <xsl:template match="tei:div/tei:div/tei:p">
