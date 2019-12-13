@@ -235,26 +235,17 @@
 
     <xsl:template match="tei:app">
         <xsl:for-each select="tei:lem">
-            <xsl:choose>
-                <xsl:when test="tei:hi[@rend = 'rubricated orig']">
-                    <xsl:text>\edtext{</xsl:text>
-                    <xsl:apply-templates select="tei:hi/child::node()"/>
-                    <xsl:text>}</xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
                     <xsl:text>\edtext{</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text>}</xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
             select=".//tei:lem/text()
             | .//tei:lem/tei:lg/tei:l/text()
             | .//tei:lem/tei:lg/tei:l/tei:choice
-            | .//tei:lem/tei:hi/text() 
-            | .//tei:lem/tei:hi/tei:choice 
+            | .//tei:lem/tei:hi
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
             | .//tei:lem/tei:hi/tei:pc 
             | .//tei:lem/tei:hi/tei:placeName 
             | .//tei:lem/tei:hi/tei:persName 

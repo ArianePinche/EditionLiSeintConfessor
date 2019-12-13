@@ -702,7 +702,7 @@
                             select="
                                 .//tei:lem/text()
                                 |.//tei:lem/tei:lg
-                                | .//tei:lem/tei:hi/text() 
+                                | .//tei:lem/tei:hi
                                 | .//tei:lem/tei:choice/tei:reg/text() 
                                 | .//tei:lem/tei:choice/tei:corr/text() 
                                 | .//tei:lem/tei:choice/tei:expan/text() 
@@ -710,7 +710,7 @@
                                 | .//tei:lem/tei:hi/tei:pc/text() 
                                 | .//tei:lem/tei:hi/tei:placeName/text() 
                                 | .//tei:lem/tei:hi/tei:persName/text() 
-                                | .//tei:lem/tei:hi/tei:choice/tei:reg/text() 
+                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice/tei:reg/text() 
                                 | .//tei:lem/tei:persName/tei:hi/text()
                                 | .//tei:lem/tei:persName
                                 | .//tei:lem/tei:placeName
