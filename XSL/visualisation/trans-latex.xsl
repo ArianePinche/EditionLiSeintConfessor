@@ -244,17 +244,18 @@
             select=".//tei:lem/text()
             | .//tei:lem/tei:lg/tei:l/text()
             | .//tei:lem/tei:lg/tei:l/tei:choice
-            | .//tei:lem/tei:hi
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
-            | .//tei:lem/tei:hi/tei:pc 
-            | .//tei:lem/tei:hi/tei:placeName 
-            | .//tei:lem/tei:hi/tei:persName 
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName 
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName 
             | .//tei:lem/tei:choice 
-            | .//tei:lem//tei:persName/text()
-            | .//tei:lem//tei:persName/tei:hi/text()
-            | .//tei:lem//tei:persName//tei:reg/text() 
-            | .//tei:lem//tei:placeName
-            | .//tei:lem//tei:pc[@type='reg'] 
+            | .//tei:lem/tei:pc/tei:choice 
+            | .//tei:lem/tei:persName/text()
+            | .//tei:lem/tei:persName/tei:hi/text()
+            | .//tei:lem/tei:persName//tei:reg/text() 
+            | .//tei:lem/tei:placeName
+            | .//tei:lem/tei:pc[@type='reg'] 
             | .//tei:lem/tei:corr[@type='del'] 
             | .//tei:lem/tei:corr[@type='add']/text()
             | .//tei:lem/tei:seg

@@ -714,7 +714,7 @@
                                 | .//tei:lem/tei:persName/tei:hi/text()
                                 | .//tei:lem/tei:persName
                                 | .//tei:lem/tei:placeName
-                                | .//tei:lem/tei:pc/text() 
+                                | .//tei:lem/tei:pc
                                 | .//tei:lem/tei:corr[@type = 'del']/text() 
                                 | .//tei:lem/tei:corr[@type = 'add']/text() 
                                 | .//tei:lem/tei:seg
