@@ -241,28 +241,27 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select=".//tei:lem/text()
-            | .//tei:lem/tei:lg/tei:l/text()
-            | .//tei:lem/tei:lg/tei:l/tei:choice
+            select=".//tei:lem[not(ancestor::tei:l)]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName 
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName 
-            | .//tei:lem/tei:choice 
+            | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
             | .//tei:lem/tei:pc/tei:choice 
             | .//tei:lem/tei:persName/text()
             | .//tei:lem/tei:persName/tei:hi/text()
-            | .//tei:lem/tei:persName//tei:reg/text() 
+            | .//tei:lem/tei:persName/tei:choice
             | .//tei:lem/tei:placeName
             | .//tei:lem/tei:pc[@type='reg'] 
             | .//tei:lem/tei:corr[@type='del'] 
-            | .//tei:lem/tei:corr[@type='add']/text()
+            | .//tei:lem/tei:corr[@type='add' and not(ancestor::tei:l)]/text()
             | .//tei:lem/tei:seg
             | .//tei:lem/tei:seg/tei:choice 
             | .//tei:lem/tei:seg/tei:pc[@type='reg'] 
             | .//tei:lem/tei:seg/tei:placeName 
             | .//tei:lem/tei:seg/tei:persName "/>
+        <xsl:call-template name="vers"/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">
@@ -300,5 +299,13 @@
         <xsl:text>}}</xsl:text>
     </xsl:template>
 
+    <xsl:template name="vers">
+        <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
+            <xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text()"/>
+            <xsl:if test="position() != last()">
+                <xsl:text> / </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
 
 </xsl:stylesheet>

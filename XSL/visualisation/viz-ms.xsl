@@ -700,13 +700,12 @@
                     <xsl:element name="li">
                         <xsl:apply-templates
                             select="
-                                .//tei:lem/text()
-                                |.//tei:lem/tei:lg
+                                 .//tei:lem[not(ancestor::tei:l)]/text()
                                 | .//tei:lem/tei:hi
-                                | .//tei:lem/tei:choice/tei:reg/text() 
-                                | .//tei:lem/tei:choice/tei:corr/text() 
-                                | .//tei:lem/tei:choice/tei:expan/text() 
-                                | .//tei:lem/tei:choice/tei:expan/tei:ex/text() 
+                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:reg/text() 
+                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:corr/text() 
+                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:expan/text() 
+                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:expan/tei:ex/text() 
                                 | .//tei:lem/tei:hi/tei:pc/text() 
                                 | .//tei:lem/tei:hi/tei:placeName/text() 
                                 | .//tei:lem/tei:hi/tei:persName/text() 
@@ -722,6 +721,7 @@
                                 | .//tei:lem/tei:seg/tei:pc
                                 | .//tei:lem/tei:seg/tei:placeName
                                 | .//tei:lem/tei:seg/tei:persName"/>
+                        <xsl:call-template name="vers"/>
                         <xsl:if test="./@wit">
                             <xsl:value-of select="replace(./@wit, '#', '')"/>
                         </xsl:if>
@@ -760,6 +760,13 @@
                 </xsl:element>
             </xsl:element>
         </xsl:element>
+    </xsl:template>
+    
+    <xsl:template name="vers">
+        <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
+            <li><xsl:apply-templates select="./text() | .//tei:lem/text() | tei:choice | tei:pc[@type='reg']/text()"/></li>
+
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template match="tei:del[@type = 'exponctué']">
