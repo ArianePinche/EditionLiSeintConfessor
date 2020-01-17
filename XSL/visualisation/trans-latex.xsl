@@ -301,7 +301,7 @@
 
     <xsl:template name="vers">
         <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
-            <xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text()"/>
+            <xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text() | tei:persName | tei:placeName"/>
             <xsl:if test="position() != last()">
                 <xsl:text> / </xsl:text>
             </xsl:if>

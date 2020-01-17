@@ -764,7 +764,7 @@
     
     <xsl:template name="vers">
         <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
-            <li><xsl:apply-templates select="./text() | .//tei:lem/text() | tei:choice | tei:pc[@type='reg']/text()"/></li>
+            <li><xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text() | tei:persName | tei:placeName"/></li>
 
         </xsl:for-each>
     </xsl:template>
