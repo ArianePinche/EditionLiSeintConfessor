@@ -249,9 +249,9 @@
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName 
             | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
             | .//tei:lem/tei:pc/tei:choice 
-            | .//tei:lem/tei:persName/text()
-            | .//tei:lem/tei:persName/tei:hi/text()
-            | .//tei:lem/tei:persName/tei:choice
+            | .//tei:lem/tei:persName
+            | .//tei:lem/tei:persName
+            | .//tei:lem/tei:persName
             | .//tei:lem/tei:placeName
             | .//tei:lem/tei:pc[@type='reg'] 
             | .//tei:lem/tei:corr[@type='del'] 
