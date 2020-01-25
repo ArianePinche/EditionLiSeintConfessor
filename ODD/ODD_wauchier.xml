@@ -587,6 +587,7 @@
                                 </app>
                             </egXML>
                         </p>
+                        <!-- rajouter le question des causes et types -->
                     </div3>
 
                 </div2>
@@ -966,7 +967,7 @@
                                                 test="//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"
                                                 > the value of @wit is not declared </s:assert>
                                         </s:rule>
-                                        <!--  empêcher qu'un mêm manuscrit soit cité deux fois
+                                        <!--  empêcher qu'un même manuscrit soit cité deux fois
                                         <s:rule context="tei:rdg[@wit]">
                                             <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
                                             <s:asset test="not(preceding-sibling::tei:rdg[@wit=$ref1] | following-sibling::tei:rdg[@wit=$ref1])">the value of @wit is alreadey declared</s:asset>
@@ -983,6 +984,36 @@
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                                             >signale les leçons où l'ordre des mots est inversé par
                                             rapport à celui du lemme.</desc>
+                                    </valItem>
+                                    <valItem ident="plur.">
+                                        <gloss>Passage au pluriel</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où les termes sont au pluriel dans la variante.</desc>
+                                    </valItem>
+                                    <valItem ident="sing.">
+                                        <gloss>Passage au singulier</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où les termes sont au singulier dans la variante.</desc>
+                                    </valItem>
+                                    <valItem ident="temps">
+                                        <gloss>Changement de temps</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où le temps verbal a été modifié dans la variante.</desc>
+                                    </valItem>
+                                    <valItem ident="ajout">
+                                        <gloss>Ajout</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où la variante propose un ajout par rapport au lemme.</desc>
+                                    </valItem>
+                                    <valItem ident="red.">
+                                        <gloss>réduction</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où la variante propose un texte plus concis que celui du lemme.</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
