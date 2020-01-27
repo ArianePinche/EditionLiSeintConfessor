@@ -34,13 +34,16 @@
     </xsl:template>
     
     <xsl:template match="pc">
-        <xsl:if test="@type='reg'">
-        <xsl:value-of select="."/>
-        </xsl:if>
+      <xsl:choose>
+          <xsl:when test="@type='orig'"/>
+          <xsl:otherwise>
+              <xsl:apply-templates/>
+          </xsl:otherwise>
+      </xsl:choose>
     </xsl:template>
     
     
-    <xsl:template match="hi[contains(rend, 'orig')]"/>
+    <xsl:template match="hi[contains(@rend, 'orig')]"/>
     
     <xsl:template match="corr[@type='del']"/>
         
@@ -55,8 +58,8 @@
                 <xsl:element name="G1">
                     <xsl:attribute name="type">
                         <xsl:choose>
-                            <xsl:when test="rdg[@type|@cause]">
-                                <xsl:value-of select="rdg/@type | rdg/@cause"/>
+                            <xsl:when test="rdg[contains(@wit, 'G1')][@type|@cause]">
+                                <xsl:value-of select="rdg[contains(@wit, 'G1')]/@type | rdg[contains(@wit, 'G1')]/@cause"/>
                             </xsl:when>
                             <xsl:otherwise>semantique</xsl:otherwise>
                         </xsl:choose>
