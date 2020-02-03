@@ -30,8 +30,12 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>Pourcentage : </xsl:text>
+            <xsl:value-of select="count(current-group()) div 2206 * 100"/>
+            <xsl:text>&#10;</xsl:text>
             <xsl:text>Lemme </xsl:text><xsl:text>&#09;</xsl:text><xsl:text>leçon</xsl:text><xsl:text>&#10;</xsl:text>
-            <xsl:for-each select="current-group()">
+            <xsl:for-each-group select="current-group()" group-by="text()">
+                <xsl:sort select="current-grouping-key()"/>
                 <xsl:apply-templates select="preceding-sibling::lem"/>
                 <xsl:if test="preceding-sibling::lem[@wit]">
                     <xsl:text> (</xsl:text>
@@ -43,8 +47,10 @@
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="replace(@wit, '#', '')"/>
                 <xsl:text>)</xsl:text>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#10;</xsl:text>
-            </xsl:for-each>
+            </xsl:for-each-group>
         </xsl:for-each-group>
     </xsl:template>
     
@@ -56,16 +62,22 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:value-of select="count(current-group())"/>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>Pourcentage : </xsl:text>
+            <xsl:value-of select="count(current-group()) div 2206 * 100"/>
+            <xsl:text>&#10;</xsl:text>
             <xsl:text>Lemme </xsl:text><xsl:text>&#10;</xsl:text>
-            <xsl:for-each select="current-group()">
+            <xsl:for-each-group select="current-group()" group-by="preceding-sibling::lem">
+                <xsl:sort select="current-grouping-key()"/>
                 <xsl:apply-templates select="preceding-sibling::lem"/>
                 <xsl:if test="preceding-sibling::lem[@wit]">
                     <xsl:text> (</xsl:text>
                     <xsl:value-of select="preceding-sibling::lem/@wit"/>
                     <xsl:text>)</xsl:text>
                 </xsl:if>
+                <xsl:text>&#09;</xsl:text>
+                <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#10;</xsl:text>
-            </xsl:for-each>
+            </xsl:for-each-group>
         </xsl:for-each-group>
     </xsl:template>
     
@@ -73,9 +85,13 @@
         <xsl:text>&#10;Leçons d'ordre sémantique (</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, '#G1') and not(@cause|@type)])"/><xsl:text>)</xsl:text>
         <xsl:text>&#10;</xsl:text>
+        <xsl:text>Pourcentage : </xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, '#G1') and not(@cause|@type)]) div 2206 * 100"/>
+        <xsl:text>&#10;</xsl:text>
         <xsl:text>Lemme </xsl:text><xsl:text>&#09;</xsl:text><xsl:text>Leçon</xsl:text><xsl:text>&#10;</xsl:text>
-        <xsl:for-each select="//rdg[contains(@wit, '#G1') and not(@cause|@type)]">
-                <xsl:apply-templates select="preceding-sibling::lem"/>
+        <xsl:for-each-group select="//rdg[contains(@wit, '#G1') and not(@cause|@type)]" group-by="text()">
+            <xsl:sort select="current-grouping-key()"/>    
+            <xsl:apply-templates select="preceding-sibling::lem"/>
                 <xsl:if test="preceding-sibling::lem[@wit]">
                     <xsl:text> (</xsl:text>
                     <xsl:value-of select="preceding-sibling::lem/@wit"/>
@@ -86,8 +102,10 @@
             <xsl:text> (</xsl:text>
             <xsl:value-of select="replace(@wit, '#', '')"/>
             <xsl:text>)</xsl:text>
+            <xsl:text>&#09;</xsl:text>
+            <xsl:value-of select="count(current-group())"/>
                 <xsl:text>&#10;</xsl:text>
-        </xsl:for-each>
+        </xsl:for-each-group>
     </xsl:template>
     
     

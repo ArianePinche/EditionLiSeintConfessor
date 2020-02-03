@@ -245,22 +245,23 @@
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName 
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName 
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/text()
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:pc
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:choice
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/text()
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:pc
+            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:choice
             | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
             | .//tei:lem/tei:pc/tei:choice 
-            | .//tei:lem/tei:persName
-            | .//tei:lem/tei:persName
-            | .//tei:lem/tei:persName
+            | .//tei:lem/tei:persName/text()
+            | .//tei:lem/tei:persName/tei:pc
+            | .//tei:lem/tei:persName/tei:choice
             | .//tei:lem/tei:placeName
             | .//tei:lem/tei:pc[@type='reg'] 
             | .//tei:lem/tei:corr[@type='del'] 
             | .//tei:lem/tei:corr[@type='add' and not(ancestor::tei:l)]/text()
             | .//tei:lem/tei:seg
-            | .//tei:lem/tei:seg/tei:choice 
-            | .//tei:lem/tei:seg/tei:pc[@type='reg'] 
-            | .//tei:lem/tei:seg/tei:placeName 
-            | .//tei:lem/tei:seg/tei:persName "/>
+            "/>
         <xsl:call-template name="vers"/>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>

@@ -14,14 +14,22 @@
         <date>2015</date>
       </publicationStmt>
       <sourceDesc>
-        <msDesc xml:id="A">
+        <listWit>
+          <witness xml:id="C1" corresp="#ms412">Paris, manuscrit fr. 412, Bibliothèque nationale de
+            France, <date when="1285">1285</date></witness>
+          <witness xml:id="C2">Paris, manuscrit fr. 411, Bibliothèque nationale de France, <date
+            notBefore="1300" notAfter="1400">14e siècle</date></witness>
+          <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
+            notBefore="1250" notAfter="1300">13e siècle</date></witness>
+        </listWit>
+        <msDesc xml:id="ms412">
           <msIdentifier>
-            <country>Paris</country>
-            <settlement>Bibliothèque nationale de France</settlement>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
             <idno>fr. 00412</idno>
           </msIdentifier>
           <head>
-            <title>Oeuvres hagiographiques de Wauchier de Denain</title>
+            <title>De seint Martin</title>
             <origDate>1285</origDate>
             <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
               notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans la
@@ -32,49 +40,13 @@
           </head>
           <msContents>
             <msItemStruct>
-              <locus>fol.103-fol.170</locus>
-              <author>Wauchier de Denain</author>
-              <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-              <incipit>De saint Martin mout doit on doucement et volentiers le bien oïr et
+              <locus>fol.103-fol.114</locus>
+              <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
                 entendre</incipit>
-              <explicit/>
-              <note>Traduction des "Dialogues sur les vertus de saint Martin" de sulpice sévère, URN
-                CTS sur le "Perseus catalog" : urn:cts:latinLit:stoa0270.stoa003</note>
+              <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des siecles.
+                Amen.</explicit>
             </msItemStruct>
           </msContents>
-          <physDesc>
-            <objectDesc>
-              <supportDesc>
-                <support>parchemin</support>
-                <extent>
-                  <width unit="mm">330</width>
-                  <height unit="mm">245</height>
-                </extent>
-                <foliation>21 Senions, 245 folios</foliation>
-              </supportDesc>
-              <layoutDesc>
-                <layout columns="2" writtenLines="46"/>
-              </layoutDesc>
-            </objectDesc>
-            <scriptDesc>
-              <scriptNote>Caroline</scriptNote>
-            </scriptDesc>
-          </physDesc>
-          <history>
-            <origin/>
-            <provenance>
-              <p/>
-              <listBibl>
-                <bibl>
-                  <author/>
-                  <title/>
-                  <pubPlace/>
-                  <publisher/>
-                  <date/>
-                </bibl>
-              </listBibl>
-            </provenance>
-          </history>
         </msDesc>
       </sourceDesc>
     </fileDesc>

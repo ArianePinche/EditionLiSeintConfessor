@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-01-24T14:07:26Z. .
+Schema generated from ODD source 2020-01-31T10:54:21Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -21,6 +21,15 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
             <ref name="model.global"/>
             <ref name="lg"/>
             <ref name="model.lLike"/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="macro.limitedContent">
+      <zeroOrMore>
+         <choice>
+            <text/>
+            <ref name="model.limitedPhrase"/>
+            <ref name="model.inter"/>
          </choice>
       </zeroOrMore>
    </define>
@@ -1618,21 +1627,27 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    </define>
    <define name="model.listLike">
       <choice>
+         <ref name="listWit"/>
          <ref name="listPerson"/>
          <ref name="listPlace"/>
       </choice>
    </define>
    <define name="model.listLike_alternation">
       <choice>
+         <ref name="listWit"/>
          <ref name="listPerson"/>
          <ref name="listPlace"/>
       </choice>
    </define>
    <define name="model.listLike_sequence">
+      <ref name="listWit"/>
       <ref name="listPerson"/>
       <ref name="listPlace"/>
    </define>
    <define name="model.listLike_sequenceOptional">
+      <optional>
+         <ref name="listWit"/>
+      </optional>
       <optional>
          <ref name="listPerson"/>
       </optional>
@@ -1642,6 +1657,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    </define>
    <define name="model.listLike_sequenceOptionalRepeatable">
       <zeroOrMore>
+         <ref name="listWit"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="listPerson"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -1649,6 +1667,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </zeroOrMore>
    </define>
    <define name="model.listLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="listWit"/>
+      </oneOrMore>
       <oneOrMore>
          <ref name="listPerson"/>
       </oneOrMore>
@@ -2145,6 +2166,17 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="model.lPart"/>
          <ref name="model.phrase.xml"/>
          <ref name="model.specDescLike"/>
+         <ref name="model.pPart.data"/>
+      </choice>
+   </define>
+   <define name="model.limitedPhrase">
+      <choice>
+         <ref name="model.hiLike"/>
+         <ref name="model.emphLike"/>
+         <ref name="model.pPart.msdesc"/>
+         <ref name="model.pPart.editorial"/>
+         <ref name="model.ptrLike"/>
+         <ref name="model.phrase.xml"/>
          <ref name="model.pPart.data"/>
       </choice>
    </define>
@@ -3259,7 +3291,7 @@ Elements]</a:documentation>
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
                     context="tei:rdg[@wit]">
                                             <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
-                                            <s:assert test="//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"> the value of @wit is not declared </s:assert>
+                                            <s:assert test="//tei:witness[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"> the value of @wit is not declared </s:assert>
                                         </s:rule>
          </pattern>
          <optional>
@@ -3277,10 +3309,44 @@ Elements]</a:documentation>
                   <value>ajout</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Ajout) signale les leçons où la variante propose un ajout par rapport au lemme.</a:documentation>
                   <value>red.</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(réduction) signale les leçons où la variante propose un texte plus concis que celui du lemme.</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(red.) signale les leçons où la variante propose un texte plus concis que celui du lemme.</a:documentation>
                </choice>
             </attribute>
          </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="listWit">
+      <element name="listWit">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(witness list) lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically. [12.1. The Apparatus Entry, Readings, and Witnesses]</a:documentation>
+         <group>
+      
+      
+            <optional>
+               <ref name="model.headLike"/>
+            </optional>
+      
+      
+            <oneOrMore>
+               <choice>
+                  <ref name="witness"/>
+                  <ref name="listWit"/>
+               </choice>
+            </oneOrMore>
+        
+      
+         </group>
+         <ref name="att.global.attributes"/>
+         <ref name="att.sortable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="witness">
+      <element name="witness">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains either a description of a single witness referred to within the critical apparatus, or a list of witnesses which is to be referred to by a single sigil. [12.1. The Apparatus Entry, Readings, and Witnesses]</a:documentation>
+         <ref name="macro.limitedContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.sortable.attributes"/>
          <empty/>
       </element>
    </define>
@@ -4551,6 +4617,9 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
                <optional>
                   <ref name="settlement"/>
                </optional>
+               <optional>
+                  <ref name="repository"/>
+               </optional>
                <zeroOrMore>
                   <ref name="idno"/>
                </zeroOrMore>
@@ -4579,6 +4648,15 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="repository">
+      <element name="repository">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the name of a repository within which manuscripts or other objects are stored, possibly forming part of an institution. [10.4. The Manuscript Identifier]</a:documentation>
+         <ref name="macro.xtext"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.naming.attributes"/>
          <empty/>
       </element>
    </define>

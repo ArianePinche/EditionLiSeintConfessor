@@ -17,14 +17,22 @@
     <date>2015-2018</date>
    </publicationStmt>
    <sourceDesc>
-    <msDesc xml:id="C1">
+    <listWit>
+     <witness xml:id="C1" corresp="#ms412">Paris, manuscrit fr. 412, Bibliothèque nationale de
+      France, <date when="1285">1285</date></witness>
+     <witness xml:id="C2">Paris, manuscrit fr. 411, Bibliothèque nationale de France, <date
+      notBefore="1300" notAfter="1400">14e siècle</date></witness>
+     <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
+      notBefore="1250" notAfter="1300">13e siècle</date></witness>
+    </listWit>
+    <msDesc xml:id="ms412">
      <msIdentifier>
-      <country>Paris</country>
-      <settlement>Bibliothèque nationale de France</settlement>
+      <settlement>Paris</settlement>
+      <repository>Bibliothèque nationale de France</repository>
       <idno>fr. 00412</idno>
      </msIdentifier>
      <head>
-      <title>Li Seint Confessor</title>
+      <title>De seint Martin</title>
       <origDate>1285</origDate>
       <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
        notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans la
@@ -42,39 +50,6 @@
         Amen.</explicit>
       </msItemStruct>
      </msContents>
-    </msDesc>
-    <msDesc xml:id="C2">
-     <msIdentifier>
-      <country>Paris</country>
-      <settlement>Bibliothèque nationale de France</settlement>
-      <idno>fr. 00411</idno>
-     </msIdentifier>
-     <head>
-      <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-      <origDate>14e siècle</origDate>
-     </head>
-    </msDesc>
-    <msDesc xml:id="C3">
-     <msIdentifier>
-      <country>London</country>
-      <settlement>British Library</settlement>
-      <idno>Royal 20.D.VI</idno>
-     </msIdentifier>
-     <head>
-      <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-      <origDate>1240-1255 </origDate>
-     </head>
-    </msDesc>
-    <msDesc xml:id="G1">
-     <msIdentifier>
-      <country>Bruxelles</country>
-      <settlement>Bibliothèque royale</settlement>
-      <idno>9225</idno>
-     </msIdentifier>
-     <head>
-      <title>Oeuvres hagiographiques de Wauchier de Denain</title>
-      <origDate>14e siècle</origDate>
-     </head>
     </msDesc>
    </sourceDesc>
   </fileDesc>

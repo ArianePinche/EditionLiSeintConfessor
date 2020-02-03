@@ -96,11 +96,12 @@
                                 </specList> Le <gi>sourceDesc</gi> contient toutes les informations
                                 nécessaires sur le manuscrit de base, C<hi rend="exp">1</hi><note>Le
                                     sigle correspond au manuscrit 412 de la Bibliothèque Nationale
-                                    de France</note>.</p>
+                                    de France</note>. L'ensemble des données sont contenues dans un
+                                    <gi>msDesc</gi></p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <msIdentifier>
-                                    <country>Paris</country>
-                                    <settlement>Bibliothèque nationale de France</settlement>
+                                <msIdentifier xml:id="ms412">
+                                    <settlement>Paris</settlement>
+                                    <repository>Bibliothèque nationale de France</repository>
                                     <idno>fr. 00412</idno>
                                 </msIdentifier> [...] <msItemStruct>
                                     <locus>fol.103-fol.170</locus>
@@ -112,19 +113,31 @@
                                     <explicit/>
                                 </msItemStruct>
                             </egXML>
-                            <p>Il permet également de déclarer l'ensemble des temoins de la
-                                tradition et de leur attribuer un identifiant auquel l'apparat
-                                pourra se référer pour identifier les differentes leçons. Cet
-                                identfiant est attribué grâce à l'attribut <att>xml:id</att> de
-                                l'élément <gi>msDesc</gi>. <egXML
+                            <p>Pour permettre l'établissement de l'apparat critique, l'ensemble des
+                                temoins de la tradition est déclaré dans le <gi>sourceDesc</gi>
+                                dans un élément <gi>listWit</gi>. Chaque témoin est contenu dans un
+                                élément <gi>witness</gi> auquel est attribué un identifiant pour
+                                identifier dans l'apparat le manuscrit auquel se réfère les
+                                differentes leçons. Cet identfiant est ajouté grâce à l'attribut
+                                    <att>xml:id</att>. <egXML
                                     xmlns="http://www.tei-c.org/ns/Examples">
-                                    <msDesc xml:id="C1">
-                                        <msIdentifier>
-                                            <country>Paris</country>
-                                            <settlement>Bibliothèque nationale de
-                                                France</settlement>
-                                            <idno>fr. 00412</idno>
-                                        </msIdentifier> [...] </msDesc>
+                                    <listWit>
+                                        <witness xml:id="C1" corresp="#ms412">Paris, manuscrit fr.
+                                            412, Bibliothèque nationale de France, <date when="1285"
+                                                >1285</date></witness>
+                                        <witness xml:id="C2">Paris, manuscrit fr. 411, Bibliothèque
+                                            nationale de France, <date notBefore="1300"
+                                                notAfter="1400">14e siècle</date></witness>
+                                        <witness xml:id="C3">London, manuscrit, Royal 20.D.VI,
+                                            British Library, <date notBefore="1250" notAfter="1300"
+                                                >13e siècle</date></witness>
+                                        <witness xml:id="G1">Bruxelles, manuscrit 9225 bibliothèque
+                                            royale, <date notBefore="1300" notAfter="1400">14e
+                                                siècle</date></witness>
+                                        <witness xml:id="M1">Paris, manuscrit fr. 23112,
+                                            Bibliothèque nationale de France, <date notBefore="1200"
+                                                notAfter="1300">13e siècle</date></witness>
+                                    </listWit>
                                 </egXML>
                             </p>
                         </div4>
@@ -532,20 +545,23 @@
                             leçons. Ainsi cette édition ne propose pas de parcourir le texte de tous
                             les témoins, mais donne à lire les différentes leçons présentes dans la
                             tradition, à titre indicatif comme d’autres réalisations textuelles
-                            existantes du légendier de Wauchier de Denain. Les particularités de
-                            mise en page ou graphiques des manuscrits originaux, comme la présence
-                            de lettrines ou d’abréviations, n’ont donc pas été signalées
-                            contrairement au texte du lemme.</p>
-                        <p>L'apparat de l'édition suit les prescriptions d'un apparat négatif.
-                            L'apparat ne présente que les leçons avec un texte sémantiquement
-                            différent du lemme. Chaque leçon est rattachée au manuscrit dont elle
-                            est issue par un identifiant qui renvoie dans le document XML à sa
-                            notice. Cette méthode permet toutefois de rétablir, à tout moment, les
-                            indications nécessaires à l’établissement d’un apparat positif par
-                            comparaison entre les sigles de manuscrits cités pour les leçons
-                            divergentes et la liste des manuscrits collationnés présente dans le
-                            teiHeader du document XML.</p>
-
+                            existantes du recueil de Wauchier de Denain. Les particularités de mise
+                            en page ou graphiques des manuscrits originaux, comme la présence de
+                            lettrines ou d’abréviations, n’ont donc pas été signalées contrairement
+                            au texte du lemme.</p>
+                        <p>L'apparat de l'édition suit les prescriptions d'un apparat négatif,
+                            exceptionnellement mixte où nous signalons pour le lemme le manuscrit de
+                            base si ce dernier diffère du texte proposé dans C1. L'apparat ne
+                            présente que les leçons avec un texte sémantiquement différent du lemme.
+                            Chaque leçon est rattachée au manuscrit dont elle est issue par un
+                            identifiant qui renvoie dans le document XML à l'élément
+                                <gi>witness</gi> correspondant. Cette méthode permet toutefois de
+                            rétablir, à tout moment, les indications nécessaires à l’établissement
+                            d’un apparat positif par comparaison entre les sigles de manuscrits
+                            cités pour les leçons divergentes et la liste des manuscrits
+                            collationnés présente dans le <gi>teiHeader</gi> dans l'élément
+                                <gi>listWit</gi> du document XML.</p>
+                        <!-- Rajouter les listWit / vérifier explication msDesc -->
                         <p>Afin d'encoder l'apparat nous utilisons les balises suivantes : <specList>
                                 <specDesc key="app"/>
                                 <specDesc key="lem"/>
@@ -562,17 +578,39 @@
                         </egXML>
                         <p>Les balises <gi>rdg</gi> permettent de signaler les variantes. Leur
                             attribut <att>wit</att> permet de déclarer le ou les manuscrits
-                            proposant le même texte que celui de la variante concernée.Quand un
-                            manuscrit présente une omission à l’emplacement où devrait se trouve le
-                            lemme, le manque est signalé par un <att>cause</att> de valeur
-                                <hi>om.</hi> pour omission.<egXML
-                                xmlns="http://www.tei-c.org/ns/Examples">
+                            proposant le même texte que celui de la variante concernée. Il se réfère
+                            à l'identifiant déclarer dans le <gi>listWit</gi>.Quand un manuscrit
+                            présente une omission à l’emplacement où devrait se trouve le lemme, le
+                            manque est signalé par un <att>cause</att> de valeur <hi>om.</hi> pour
+                                omission.<egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
-                                    <lem wit="#C1"> De seint Martin </lem>
+                                    <lem> De seint Martin </lem>
                                     <rdg wit="#C2">Ci commence la vie de monseigneur seint
                                         Martin</rdg>
                                     <rdg wit="#C3">Ci comence la vie seint Martin</rdg>
                                     <rdg wit="#G1" cause="om."/>
+                                </app>
+                            </egXML>
+                        </p>
+                        <p>Nous avons également utilisé <att>type</att> sur les balises <gi>rdg</gi>
+                            pour signaler des types de variantes textuelles particulières.
+                                <att>type</att> n'accepte qu'une liste de valeur close pour assurer
+                            l'homogénéïté de l'encodage : <list>
+                                <item><val>ajout</val> : pour les ajouts</item>
+                                <item><val>inv.</val> : pour les inversions</item>
+                                <item><val>plur.</val> : pour les passages du singulier au
+                                    pluriel</item>
+                                <item><val>sing.</val> : pour les passages du pluriel
+                                    ausingulier</item>
+                                <item><val>tps.</val> : pour les changement de temps ou de
+                                    mode</item>
+                                <item><val>réduction.</val> : pour les endroits où le texte est
+                                    réécrit de manière plus synthétique</item>
+                            </list>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <app>
+                                    <lem>en escripture a metre</lem>
+                                    <rdg wit="#G1" type="inv.">a metre en escripture</rdg>
                                 </app>
                             </egXML>
                         </p>
@@ -599,7 +637,7 @@
                     <moduleRef key="corpus" include="particDesc settingDesc"/>
                     <moduleRef key="core"
                         include="rs del p hi said corr sic choice reg orig date abbr expan ref head note pb lb cb author title publisher pubPlace bibl listBibl l lg teiCorpus"/>
-                    <moduleRef key="textcrit" include="variantEncoding app lem rdg"/>
+                    <moduleRef key="textcrit" include="variantEncoding app lem rdg listWit witness"/>
                     <elementSpec ident="variantEncoding" mode="change">
                         <attList>
                             <attDef ident="method" mode="change">
@@ -964,15 +1002,9 @@
                                         <s:rule context="tei:rdg[@wit]">
                                             <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
                                             <s:assert
-                                                test="//tei:msDesc[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"
+                                                test="//tei:witness[@xml:id = substring-after($ref1, '#')] and starts-with($ref1, '#')"
                                                 > the value of @wit is not declared </s:assert>
                                         </s:rule>
-                                        <!--  empêcher qu'un même manuscrit soit cité deux fois
-                                        <s:rule context="tei:rdg[@wit]">
-                                            <s:let name="ref1" value="tokenize(@wit,' ')[1]"/>
-                                            <s:asset test="not(preceding-sibling::tei:rdg[@wit=$ref1] | following-sibling::tei:rdg[@wit=$ref1])">the value of @wit is alreadey declared</s:asset>
-                                        </s:rule>
-                                        -->
                                     </constraint>
                                 </constraintSpec>
                             </attDef>
@@ -989,31 +1021,36 @@
                                         <gloss>Passage au pluriel</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les leçons où les termes sont au pluriel dans la variante.</desc>
+                                            >signale les leçons où les termes sont au pluriel dans
+                                            la variante.</desc>
                                     </valItem>
                                     <valItem ident="sing.">
                                         <gloss>Passage au singulier</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les leçons où les termes sont au singulier dans la variante.</desc>
+                                            >signale les leçons où les termes sont au singulier dans
+                                            la variante.</desc>
                                     </valItem>
                                     <valItem ident="temps">
                                         <gloss>Changement de temps</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les leçons où le temps verbal a été modifié dans la variante.</desc>
+                                            >signale les leçons où le temps verbal a été modifié
+                                            dans la variante.</desc>
                                     </valItem>
                                     <valItem ident="ajout">
                                         <gloss>Ajout</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les leçons où la variante propose un ajout par rapport au lemme.</desc>
+                                            >signale les leçons où la variante propose un ajout par
+                                            rapport au lemme.</desc>
                                     </valItem>
                                     <valItem ident="red.">
-                                        <gloss>réduction</gloss>
+                                        <gloss>red.</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                                            >signale les leçons où la variante propose un texte plus concis que celui du lemme.</desc>
+                                            >signale les leçons où la variante propose un texte plus
+                                            concis que celui du lemme.</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
@@ -1362,7 +1399,7 @@
 
                     <!--Checking module msdescription-->
                     <moduleRef key="msdescription"
-                        include="msDesc height width locus origDate msIdentifier explicit incipit msContents msItemStruct physDesc objectDesc supportDesc support foliation layoutDesc layout scriptDesc history origin provenance"/>
+                        include="msDesc height width locus origDate msIdentifier explicit incipit msContents msItemStruct physDesc objectDesc supportDesc support foliation layoutDesc layout scriptDesc history origin provenance repository"/>
                     <elementSpec ident="msDesc" mode="change">
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
