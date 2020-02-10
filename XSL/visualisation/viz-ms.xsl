@@ -699,8 +699,8 @@
                     <xsl:attribute name="class">list-unstyled</xsl:attribute>
                     <xsl:element name="li">
                         <xsl:apply-templates
-                            select="
-                                 .//tei:lem[not(ancestor::tei:l)]/text()
+                            select=" tei:lem/text()
+                                | .//tei:lem[not(ancestor::tei:l)]/text()
                                 | .//tei:lem/tei:hi/text()
                                 | .//tei:lem/tei:hi/tei:choice/tei:reg/text() 
                                 | .//tei:lem/tei:hi/tei:choice/tei:corr/text() 
