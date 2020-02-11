@@ -241,7 +241,8 @@
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
         <xsl:apply-templates
-            select=".//tei:lem[not(ancestor::tei:l)]/text()
+            select="tei:lem/text()
+            | .//tei:lem[not(ancestor::tei:l)]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
