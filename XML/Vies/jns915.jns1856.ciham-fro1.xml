@@ -2196,8 +2196,8 @@
             </app> la parfin <app>
               <lem>le&esp;<lb/>laidengierent &esperluette-et;batirent de&esp;&u-v;erges</lem>
               <rdg wit="#M1" type="inv.">le batirent il de verges et le laidengierent</rdg>
-            </app>&#160;
-            <pc type="orig" ana="coordination">.</pc>&esperluette-et;le&esp;<lb/>chacierent <app>
+            </app>&#160; <pc type="orig" ana="coordination"
+            >.</pc>&esperluette-et;le&esp;<lb/>chacierent <app>
               <lem>fors</lem>
               <rdg wit="#G1" cause="om."/>
               <rdg wit="#M1">hors</rdg>
@@ -6866,12 +6866,18 @@
               <lem>&esperluette-et;<lb/>si</lem>
               <rdg wit="#G1">et lendemain</rdg>
             </app> sembloit qu<pc type="reg">'</pc>il n<pc type="reg">'</pc>e&utrem;st <app>
-              <lem>e&utrem;&#160;<app><lem>ne</lem><rdg wit="#M1" cause="om."/></app> doleur ne&esp;ble<lb/>ce&utrem;re</lem>
+              <lem>e&utrem;&#160;<app>
+                  <lem>ne</lem>
+                  <rdg wit="#M1" cause="om."/>
+                </app> doleur ne&esp;ble<lb/>ce&utrem;re</lem>
               <rdg wit="#G1">onques eu nule bleceüre</rdg>
-            </app>. Mes por ce qe longue chose seroit <app><lem>d<pc type="reg">'</pc>a<lb/>ler <app>
-              <lem>contant</lem>
-              <rdg wit="#G1">recontant</rdg>
-            </app></lem><rdg wit="#M1">de raconter</rdg></app> totes ses miracles <app>
+            </app>. Mes por ce qe longue chose seroit <app>
+              <lem>d<pc type="reg">'</pc>a<lb/>ler <app>
+                  <lem>contant</lem>
+                  <rdg wit="#G1">recontant</rdg>
+                </app></lem>
+              <rdg wit="#M1">de raconter</rdg>
+            </app> totes ses miracles <app>
               <lem>&esperluette-et;de dire</lem>
               <rdg wit="#G1" cause="om."/>
               <rdg wit="#M1">ne de dire</rdg>
@@ -6882,9 +6888,14 @@
             </app> entrelessier <app>
               <lem>de</lem>
               <rdg wit="#G1 #M1" cause="om."/>
-            </app>&esp;pluiseurs<pc ana="coordination" type="orig"
-            >.</pc>&esp;&esperluette-et;<app><lem>ra<lb/>conter</lem><rdg wit="#M1">conter</rdg></app> cels qe&esp;&i-j;e <app>
-              <lem><app><lem>me&itrem;smes</lem><rdg wit="#M1" cause="om."/></app> ai&esp;&u-v;e&utrem;es</lem>
+            </app>&esp;pluiseurs<pc ana="coordination" type="orig">.</pc>&esp;&esperluette-et;<app>
+              <lem>ra<lb/>conter</lem>
+              <rdg wit="#M1">conter</rdg>
+            </app> cels qe&esp;&i-j;e <app>
+              <lem><app>
+                  <lem>me&itrem;smes</lem>
+                  <rdg wit="#M1" cause="om."/>
+                </app> ai&esp;&u-v;e&utrem;es</lem>
               <rdg wit="#G1">veul</rdg>
             </app>.&esp;<lb/>
           </p>
