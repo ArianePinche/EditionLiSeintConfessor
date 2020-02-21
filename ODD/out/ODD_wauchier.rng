@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-01-31T10:54:21Z. .
+Schema generated from ODD source 2020-02-21T16:18:44Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -2940,15 +2940,6 @@ Elements]</a:documentation>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-l-lineNumber-constraint-rule-9">
-            <s:rule xmlns="http://www.tei-c.org/ns/1.0"
-                    xmlns:s="http://purl.oclc.org/dsdl/schematron"
-                    xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                    context="tei:l[@n]">
-               <s:assert test="number(@n) = number(preceding-sibling::tei:l[1]/@n) + 1 or count(preceding-sibling::tei:l[1]/@n) = 0"> value of @n is wrong </s:assert>
-                                </s:rule>
-         </pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-l-abstractModel-structure-l-constraint-report-8">
             <rule context="tei:l">
                <report xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -3012,7 +3003,7 @@ Elements]</a:documentation>
             </zeroOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-lg-lgNumber-constraint-rule-10">
+                  id="oddbyexample-lg-lgNumber-constraint-rule-9">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3021,7 +3012,7 @@ Elements]</a:documentation>
                                 </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-lg-atleast1oflggapl-constraint-assert-7">
+                  id="oddbyexample-lg-atleast1oflggapl-constraint-assert-6">
             <rule context="tei:lg">
                <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                            xmlns="http://www.tei-c.org/ns/1.0"
@@ -3285,7 +3276,7 @@ Elements]</a:documentation>
             </list>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-rdg-wit-witDecl-constraint-rule-11">
+                  id="oddbyexample-rdg-wit-witDecl-constraint-rule-10">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3381,7 +3372,7 @@ Elements]</a:documentation>
             </choice>
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-rule-12">
+                  id="oddbyexample-variantEncoding-location-variantEncodingLocation-constraint-rule-11">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -3646,7 +3637,7 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-persName-PersRef-constraint-rule-13">
+                  id="oddbyexample-persName-PersRef-constraint-rule-12">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -3693,7 +3684,7 @@ Elements]</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an absolute or relative place name. [13.2.3. Place Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-placeName-PlaceRef-constraint-rule-14">
+                  id="oddbyexample-placeName-PlaceRef-constraint-rule-13">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5547,7 +5538,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divNumber-constraint-rule-15">
+                  id="oddbyexample-div-divNumber-constraint-rule-14">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5556,7 +5547,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
                                 </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divChapter-constraint-rule-16">
+                  id="oddbyexample-div-divChapter-constraint-rule-15">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -5566,7 +5557,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
                                 </s:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="oddbyexample-div-divSection-constraint-rule-17">
+                  id="oddbyexample-div-divSection-constraint-rule-16">
             <s:rule xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"

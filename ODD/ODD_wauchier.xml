@@ -761,14 +761,6 @@
                         <gloss>Vers</gloss>
                         <desc xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">permet
                             de signaler les vers.</desc>
-                        <constraintSpec ident="lineNumber" scheme="isoschematron">
-                            <constraint>
-                                <s:rule context="tei:l[@n]"><s:assert
-                                        test="number(@n) = number(preceding-sibling::tei:l[1]/@n) + 1 or count(preceding-sibling::tei:l[1]/@n) = 0"
-                                        > value of @n is wrong </s:assert>
-                                </s:rule>
-                            </constraint>
-                        </constraintSpec>
                         <attList>
                             <attDef ident="corresp" mode="delete"/>
                             <attDef ident="ana" mode="delete"/>
