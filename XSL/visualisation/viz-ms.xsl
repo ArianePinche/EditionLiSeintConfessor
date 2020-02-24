@@ -698,8 +698,10 @@
                 <xsl:element name="ul">
                     <xsl:attribute name="class">list-unstyled</xsl:attribute>
                     <xsl:element name="li">
-                        <xsl:apply-templates
-                            select=" tei:lem/text()
+                        <xsl:choose>
+                            <xsl:when test="not(parent::tei:l)"> 
+                                <xsl:apply-templates
+                                select=" tei:lem/text()
                                 | .//tei:lem[not(ancestor::tei:l)]/text()
                                 | .//tei:lem/tei:hi/text()
                                 | .//tei:lem/tei:hi/tei:choice/tei:reg/text() 
@@ -730,7 +732,30 @@
                                 | .//tei:lem/tei:seg/tei:choice
                                 | .//tei:lem/tei:seg/tei:pc
                                 | .//tei:lem/tei:seg/tei:placeName
-                                | .//tei:lem/tei:seg/tei:persName"/>
+                                | .//tei:lem/tei:seg/tei:persName"/></xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates
+                                    select="tei:lem/text()
+                                | tei:lem/tei:hi/text()
+                                | tei:lem/tei:choice
+                                | tei:lem/tei:hi/tei:pc/text() 
+                                | tei:lem/tei:hi/tei:placeName/text() 
+                                | tei:lem/tei:hi/tei:persName/text() 
+                                | tei:lem/tei:persName
+                                | tei:lem/tei:persName/tei:pc
+                                | tei:lem/tei:persName/tei:choice
+                                | tei:lem/tei:placeName
+                                | tei:lem/tei:pc
+                                | tei:lem/tei:corr[@type = 'del']/text() 
+                                | tei:lem/tei:corr[@type = 'add']/text() 
+                                | tei:lem/tei:seg
+                                | tei:lem/tei:seg/tei:choice
+                                | tei:lem/tei:seg/tei:pc
+                                | tei:lem/tei:seg/tei:placeName
+                                | tei:lem/tei:seg/tei:persName"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        
                         <xsl:call-template name="vers"/>
                         <xsl:if test="./@wit">
                             <xsl:value-of select="replace(./@wit, '#', '')"/>
