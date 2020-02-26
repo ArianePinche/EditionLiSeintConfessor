@@ -73,10 +73,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type='section']">
-        <xsl:text>
-\subparagraph*{}
-
-</xsl:text>
+        <xsl:text>\subparagraph*{}</xsl:text>
         <xsl:if test="./preceding-sibling::tei:head">
             <xsl:if test="./@n='1'"><xsl:text>\pstart
             \noindent\textit{</xsl:text>
