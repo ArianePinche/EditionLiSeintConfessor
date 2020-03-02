@@ -6,11 +6,11 @@
         <xsl:output method="xml" indent="yes"/>
         <xsl:strip-space elements="*"/>
     
-    <xsl:variable name="manuscrit" select="'M1'"/>
+    <xsl:variable name="manuscrit" select="'G1'"/>
     
     
     <xsl:template match="/">
-        <xsl:result-document href="{concat('../../resultats/412_stats-master_G1/text',$manuscrit,'.xml')}">
+        <xsl:result-document href="{concat('../../resultats/412_stats-master_G1/textv2',$manuscrit,'.xml')}">
         <div>
             <xsl:apply-templates select="descendant::body"/>
         </div>
@@ -45,6 +45,10 @@
               <xsl:apply-templates/>
           </xsl:otherwise>
       </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="lem">
+        <xsl:apply-templates/>
     </xsl:template>
     
     
