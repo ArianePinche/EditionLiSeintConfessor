@@ -114,8 +114,8 @@
                                 </msItemStruct>
                             </egXML>
                             <p>Pour permettre l'établissement de l'apparat critique, l'ensemble des
-                                temoins de la tradition est déclaré dans le <gi>sourceDesc</gi>
-                                dans un élément <gi>listWit</gi>. Chaque témoin est contenu dans un
+                                temoins de la tradition est déclaré dans le <gi>sourceDesc</gi> dans
+                                un élément <gi>listWit</gi>. Chaque témoin est contenu dans un
                                 élément <gi>witness</gi> auquel est attribué un identifiant pour
                                 identifier dans l'apparat le manuscrit auquel se réfère les
                                 differentes leçons. Cet identfiant est ajouté grâce à l'attribut
@@ -596,15 +596,21 @@
                             pour signaler des types de variantes textuelles particulières.
                                 <att>type</att> n'accepte qu'une liste de valeur close pour assurer
                             l'homogénéïté de l'encodage : <list>
-                                <item><val>ajout</val> : pour les ajouts</item>
-                                <item><val>inv.</val> : pour les inversions</item>
-                                <item><val>plur.</val> : pour les passages du singulier au
+                                <item><val>ajout</val> pour les ajouts</item>
+                                <item><val>casAbs</val> pour les leçons où le texte propose une
+                                    variation sur l'expression du complet du nom avec ou sans
+                                    l'expression de la préposition "de".</item>
+                                <item><val>etym.</val> pour les leçons où la variante propose un
+                                    terme identique avec un changement de base étymologique. Nous
+                                    avons ainsi signalé les formes du verbe être étymologiques et
+                                    les formes refaites sur *estare.</item>
+                                <item><val>inv.</val> pour les inversions</item>
+                                <item><val>plur.</val> pour les passages du singulier au
                                     pluriel</item>
-                                <item><val>sing.</val> : pour les passages du pluriel
+                                <item><val>sing.</val> pour les passages du pluriel
                                     ausingulier</item>
-                                <item><val>tps.</val> : pour les changement de temps ou de
-                                    mode</item>
-                                <item><val>réduction.</val> : pour les endroits où le texte est
+                                <item><val>tps.</val> pour les changement de temps ou de mode</item>
+                                <item><val>réduction.</val> pour les endroits où le texte est
                                     réécrit de manière plus synthétique</item>
                             </list>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1043,6 +1049,23 @@
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                                             >signale les leçons où la variante propose un texte plus
                                             concis que celui du lemme.</desc>
+                                    </valItem>
+                                    <valItem ident="etym.">
+                                        <gloss>etym.</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où la variante propose un terme
+                                            identique avec un changement de base étymologique. Nous
+                                            avons ainsi signalé les formes du verbe être
+                                            étymologiques et les formes refaites sur *estare.</desc>
+                                    </valItem>
+                                    <valItem ident="casAbs">
+                                        <gloss>casAbs</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où le texte propose une variation
+                                            sur l'expression du complet du nom avec ou sans
+                                            l'expression de la préposition "de".</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
