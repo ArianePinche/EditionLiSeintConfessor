@@ -604,6 +604,7 @@
                                     terme identique avec un changement de base étymologique. Nous
                                     avons ainsi signalé les formes du verbe être étymologiques et
                                     les formes refaites sur *estare.</item>
+                                <item><val>erreur</val> pour les leçons où la variante propose une leçon issue d'une erreur évidente du copiste.</item>
                                 <item><val>inv.</val> pour les inversions</item>
                                 <item><val>plur.</val> pour les passages du singulier au
                                     pluriel</item>
@@ -1066,6 +1067,10 @@
                                             >signale les leçons où le texte propose une variation
                                             sur l'expression du complet du nom avec ou sans
                                             l'expression de la préposition "de".</desc>
+                                    </valItem>
+                                    <valItem ident="erreur">
+                                        <gloss>erreur</gloss>
+                                        <desc>signale les leçons où la variante propose une leçon issue d'une erreur évidente du copiste</desc>
                                     </valItem>
                                 </valList>
                             </attDef>

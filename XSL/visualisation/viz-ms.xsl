@@ -755,10 +755,27 @@
                                 | tei:lem/tei:seg/tei:persName"/>
                             </xsl:otherwise>
                         </xsl:choose>
-                        
                         <xsl:call-template name="vers"/>
-                        <xsl:if test="./@wit">
-                            <xsl:value-of select="replace(./@wit, '#', '')"/>
+                        <xsl:if test="tei:lem/@wit">
+                            <xsl:element name="span">
+                                <xsl:attribute name="class">wit</xsl:attribute>
+                                <xsl:for-each select="tokenize(tei:lem/@wit, '\s+')">
+                                    <xsl:variable name="witTok">
+                                        <xsl:value-of select="replace(., '#', '')"/>
+                                    </xsl:variable>
+                                    <xsl:variable name="witLet">
+                                        <xsl:value-of select="replace($witTok, '\d+', '')"/>
+                                    </xsl:variable>
+                                    <xsl:variable name="witNum">
+                                        <xsl:value-of select="replace($witTok, '\D+', '')"/>
+                                    </xsl:variable>
+                                    <xsl:value-of select="$witLet"/>
+                                    <xsl:element name="sup">
+                                        <xsl:value-of select="$witNum"/>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:element>
+                                </xsl:for-each>
+                            </xsl:element>
                         </xsl:if>
                         <xsl:text> ]</xsl:text>
                     </xsl:element>

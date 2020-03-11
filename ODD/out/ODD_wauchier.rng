@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-03-03T13:55:06Z. .
+Schema generated from ODD source 2020-03-11T11:08:16Z. .
 TEI Edition: Version 3.5.0. Last updated on
 	29th January 2019, revision 3c0c64ec4
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.5.0/
@@ -3305,6 +3305,8 @@ Elements]</a:documentation>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(etym.) signale les leçons où la variante propose un terme identique avec un changement de base étymologique. Nous avons ainsi signalé les formes du verbe être étymologiques et les formes refaites sur *estare.</a:documentation>
                   <value>casAbs</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(casAbs) signale les leçons où le texte propose une variation sur l'expression du complet du nom avec ou sans l'expression de la préposition "de".</a:documentation>
+                  <value>erreur</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(erreur) signale les leçons où la variante propose une leçon issue d'une erreur évidente du copiste</a:documentation>
                </choice>
             </attribute>
          </optional>
