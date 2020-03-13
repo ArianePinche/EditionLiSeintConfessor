@@ -73,10 +73,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type='section']">
-        <xsl:text>
-\subparagraph*{}
-
-</xsl:text>
+        <xsl:text>\subparagraph*{}</xsl:text>
         <xsl:if test="./preceding-sibling::tei:head">
             <xsl:if test="./@n='1'"><xsl:text>\pstart
             \noindent\textit{</xsl:text>
@@ -217,7 +214,7 @@
     <xsl:template match="tei:bibl"/>
     <xsl:template match="tei:seg[@type = 'number']">
         <xsl:text>\textsc{</xsl:text>
-        <xsl:apply-templates/>
+        <xsl:copy-of select="."/>
         <xsl:text>}</xsl:text>
     </xsl:template>
     <xsl:template match="tei:said">
@@ -240,54 +237,51 @@
                     <xsl:text>}</xsl:text>
         </xsl:for-each>
         <xsl:text>{\lemma{</xsl:text>
-        <xsl:apply-templates
-            select="tei:lem/text()
-            | .//tei:lem[not(ancestor::tei:l)]/text()
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/text()
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:pc
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:choice
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/text()
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:pc
-            | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:choice
-            | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
-            | .//tei:lem/tei:pc/tei:choice 
-            | .//tei:lem/tei:persName/text()
-            | .//tei:lem/tei:persName/tei:pc
-            | .//tei:lem/tei:persName/tei:choice
-            | .//tei:lem/tei:persName/tei:hi[not(@rend='rubricated orig')]/text()
-            | .//tei:lem/tei:placeName
-            | .//tei:lem/tei:pc[not(@type='orig')]
-            | .//tei:lem/tei:corr[@type='del'] 
-            | .//tei:lem/tei:corr[@type='add' and not(ancestor::tei:l)]/text()
-            | .//tei:lem/tei:seg
-            "/>
+        <xsl:choose>
+            <xsl:when test="not(parent::tei:l)">
+                <xsl:apply-templates
+                    select="tei:lem/text()
+                    | .//tei:lem[not(ancestor::tei:l)]/text()
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice 
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:pc 
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/text()
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:pc
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:choice
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/text()
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:pc
+                    | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:choice
+                    | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
+                    | .//tei:lem/tei:pc/tei:choice 
+                    | .//tei:lem/tei:persName/text()
+                    | .//tei:lem/tei:persName/tei:pc
+                    | .//tei:lem/tei:persName/tei:choice
+                    | .//tei:lem/tei:placeName
+                    | .//tei:lem/tei:pc[@type='reg'] 
+                    | .//tei:lem/tei:corr[@type='del'] 
+                    | .//tei:lem/tei:corr[@type='add' and not(ancestor::tei:l)]/text()
+                    | .//tei:lem/tei:seg
+                    "/> 
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates
+                    select="tei:lem/text()
+                    | tei:lem/tei:hi[not(@rend='rubricated orig')]/text()
+                    | tei:lem/tei:choice 
+                    | tei:lem/tei:pc/tei:choice 
+                    | tei:lem/tei:persName/text()
+                    | tei:lem/tei:persName/tei:pc
+                    | tei:lem/tei:persName/tei:choice
+                    | tei:lem/tei:placeName
+                    | tei:lem/tei:pc[@type='reg'] 
+                    | tei:lem/tei:corr[@type='del'] 
+                    | tei:lem/tei:corr[@type='add']/text()
+                    | tei:lem/tei:seg
+                    "/> 
+            </xsl:otherwise>
+        </xsl:choose>
+       
         <xsl:call-template name="vers"/>
-        <xsl:if test="tei:lem/@wit">
-            <xsl:text>~\textit{</xsl:text>
-            <xsl:for-each select="tokenize(tei:lem/@wit, '\s+')">
-                <xsl:variable name="last" select=".[last()]"/>
-                <xsl:variable name="witTok">
-                    <xsl:value-of select="replace(., '#', '')"/>
-                </xsl:variable>
-                <xsl:variable name="witLet">
-                    <xsl:value-of select="replace($witTok, '\d+', '')"/>
-                </xsl:variable>
-                <xsl:variable name="witNum">
-                    <xsl:value-of select="replace($witTok, '\D+', '')"/>
-                </xsl:variable>
-                <xsl:value-of select="$witLet"/>
-                <xsl:text>\up{</xsl:text>
-                <xsl:value-of select="$witNum"/>
-                <xsl:text>}</xsl:text>
-                <xsl:if test="position() !=last()">
-                    <xsl:text>&#160;</xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-            <xsl:text>}</xsl:text>
-        </xsl:if>
         <xsl:text>}\Afootnote{</xsl:text>
         <xsl:variable name="last" select="tei:rdg[last()]"/>
         <xsl:for-each select="tei:rdg">
@@ -327,7 +321,7 @@
 
     <xsl:template name="vers">
         <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
-            <xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text() | tei:persName | tei:placeName"/>
+            <xsl:apply-templates select="text() | tei:app | tei:choice | tei:pc[@type='reg']/text() | tei:persName | tei:placeName"/>
             <xsl:if test="position() != last()">
                 <xsl:text> / </xsl:text>
             </xsl:if>
