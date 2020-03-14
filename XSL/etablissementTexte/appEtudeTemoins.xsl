@@ -13,7 +13,7 @@
         <xsl:apply-templates select="descendant::body"/>
         </xsl:result-document>
     </xsl:template>
-    <xsl:variable name="temoin" select="'#M1'"/>
+    <xsl:variable name="temoin" select="'#G1'"/>
     <xsl:variable name="leçonsVariantes">
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin)])"/>
     </xsl:variable>
@@ -27,7 +27,16 @@
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#G1')]])"/><xsl:text>&#10;</xsl:text>
-        <xsl:text>&#10;</xsl:text> 
+        <xsl:text>Nb de leçons en commun avec M1 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#M1')])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec M1 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#M1')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de leçons en commun avec N :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#N')])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec N :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#N')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text>
         <xsl:call-template name="rdgType">
         </xsl:call-template>
         <xsl:call-template name="rdgOm">
@@ -52,6 +61,16 @@
             <xsl:value-of select="count(current-group()[contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
             <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#G1')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec M1 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#M1')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec M1 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#M1')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec N :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#N')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec N :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#N')]])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Lemme </xsl:text><xsl:text>&#09;</xsl:text><xsl:text>leçon</xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="current-group()" group-by="text()">
@@ -92,6 +111,16 @@
             <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
             <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#G1')]])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec M1 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#M1')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec M1 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#M1')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec N :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#N')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec N :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#N')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
             <xsl:text>Lemme </xsl:text><xsl:text>&#10;</xsl:text>
             <xsl:for-each-group select="current-group()" group-by="preceding-sibling::lem">
                 <xsl:sort select="count(current-group())"  order="descending"/>
@@ -121,6 +150,16 @@
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#G1') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin) and not(@cause|@type)] and rdg[contains(@wit, '#G1')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text> 
+        <xsl:text>Nb de leçons en commun avec M1 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#M1') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec M1 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin) and not(@cause|@type)] and rdg[contains(@wit, '#M1')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text> 
+        <xsl:text>Nb de leçons en commun avec N :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#N') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec N :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin) and not(@cause|@type)] and rdg[contains(@wit, '#N')]])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text> 
         <xsl:text>Lemme </xsl:text><xsl:text>&#09;</xsl:text><xsl:text>Leçon</xsl:text><xsl:text>&#10;</xsl:text>
         <xsl:for-each-group select="//rdg[contains(@wit, $temoin) and not(@cause|@type)]" group-by="text()">
