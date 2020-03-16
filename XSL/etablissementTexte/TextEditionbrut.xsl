@@ -6,11 +6,11 @@
         <xsl:output method="xml" indent="yes"/>
         <xsl:strip-space elements="*"/>
     
-    <xsl:variable name="manuscrit" select="'G1'"/>
+    <xsl:variable name="manuscrit" select="'M1'"/>
     
     
     <xsl:template match="/">
-        <xsl:result-document href="{concat('../../resultats/412_stats-master_G1/textv2',$manuscrit,'.xml')}">
+        <xsl:result-document href="{concat('../../resultats/',$manuscrit,'.xml')}">
         <div>
             <xsl:apply-templates select="descendant::body"/>
         </div>
