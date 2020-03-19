@@ -252,8 +252,7 @@
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/text()
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:pc
             | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:choice
-            | .//tei:lem[not(ancestor::tei:l)]/tei:choice 
-            | .//tei:lem/tei:pc/tei:choice 
+            | .//tei:lem/tei:choice
             | .//tei:lem/tei:persName/text()
             | .//tei:lem/tei:persName/tei:pc
             | .//tei:lem/tei:persName/tei:choice
