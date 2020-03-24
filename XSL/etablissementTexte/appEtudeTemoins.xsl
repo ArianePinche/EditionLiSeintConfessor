@@ -13,7 +13,7 @@
         <xsl:apply-templates select="descendant::body"/>
         </xsl:result-document>
     </xsl:template>
-    <xsl:variable name="temoin" select="'#G1'"/>
+    <xsl:variable name="temoin" select="'#D'"/>
     <xsl:variable name="leçonsVariantes">
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin)])"/>
     </xsl:variable>
@@ -23,6 +23,14 @@
     <xsl:template match="body">
         <xsl:text>Nb de leçons divergente entre l'édition et témoin :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin)])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de leçons en commun avec C2 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#C2')])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec C2 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#C2')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de leçons en commun avec C3 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#C3')])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec C3 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#C3')]])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de leçons en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
@@ -56,6 +64,16 @@
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Pourcentage : </xsl:text>
             <xsl:value-of select="count(current-group()) div $leçonsVariantes * 100"/>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec C2 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#C2')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec C2 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#C2')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec C3 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#C3')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec C3 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#C3')]])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>Nb de leçons en commun avec G1 :</xsl:text>
             <xsl:value-of select="count(current-group()[contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
@@ -106,6 +124,16 @@
             <xsl:text>Pourcentage : </xsl:text>
             <xsl:value-of select="count(current-group()) div $leçonsVariantes * 100"/>
             <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec C2 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#C2')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec C2 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#C2')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de leçons en commun avec C3 :</xsl:text>
+            <xsl:value-of select="count(current-group()[contains(@wit, '#C3')])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>Nb de lieux variants en commun avec C3 :</xsl:text>
+            <xsl:value-of select="count(current-group()[parent::app/rdg[contains(@wit, '#C3')]])"/><xsl:text>&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
             <xsl:text>Nb de leçons en commun avec G1 :</xsl:text>
             <xsl:value-of select="count(current-group()[contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
             <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
@@ -146,6 +174,16 @@
         <xsl:text>Pourcentage : </xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and not(@cause|@type)]) div $leçonsVariantes * 100"/>
         <xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de leçons en commun avec C2 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#C2') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec C2 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin) and not(@cause|@type)] and rdg[contains(@wit, '#C2')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text> 
+        <xsl:text>Nb de leçons en commun avec C3 :</xsl:text>
+        <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#C3') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>Nb de lieux variants en commun avec C3 :</xsl:text>
+        <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin) and not(@cause|@type)] and rdg[contains(@wit, '#C3')]])"/><xsl:text>&#10;</xsl:text>
+        <xsl:text>&#10;</xsl:text> 
         <xsl:text>Nb de leçons en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#G1') and not(@cause|@type)])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
