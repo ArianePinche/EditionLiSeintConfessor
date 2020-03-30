@@ -311,7 +311,7 @@
                 <xsl:text>\up{</xsl:text>
                 <xsl:value-of select="$witNum"/>
                 <xsl:text>}</xsl:text>
-                <xsl:if test=". != ($last)">
+                <xsl:if test="position() != (last())">
                     <xsl:text>&#160;</xsl:text>
                 </xsl:if>
             </xsl:for-each>
