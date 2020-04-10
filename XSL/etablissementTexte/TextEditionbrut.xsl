@@ -6,7 +6,7 @@
         <xsl:output method="xml" indent="yes"/>
         <xsl:strip-space elements="*"/>
     
-    <xsl:variable name="manuscrit" select="'E2'"/>
+    <xsl:variable name="manuscrit" select="'F2'"/>
     
     
     <xsl:template match="/">
