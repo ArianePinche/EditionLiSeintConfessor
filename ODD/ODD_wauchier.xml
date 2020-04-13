@@ -604,10 +604,15 @@
                                     terme identique avec un changement de base étymologique. Nous
                                     avons ainsi signalé les formes du verbe être étymologiques et
                                     les formes refaites sur *estare.</item>
-                                <item><val>erreur</val> pour les leçons où la variante propose une leçon issue d'une erreur évidente du copiste.</item>
+                                <item><val>erreur</val> pour les leçons où la variante propose une
+                                    leçon issue d'une erreur évidente du copiste.</item>
                                 <item><val>inv.</val> pour les inversions</item>
+                                <item><val>outil</val> pour les leçons où la variante porte sur un
+                                    mot outil de type conjonction de coordination, adverbe de phrase, préposition
+                                    ou conjonction de subordination (suppression ou remplacement par un terme équivalent)</item>
                                 <item><val>plur.</val> pour les passages du singulier au
                                     pluriel</item>
+                                <item><val>proPer</val> signale les leçons qui consistent en l'ajout d'un pronom personnel</item>
                                 <item><val>sing.</val> pour les passages du pluriel
                                     ausingulier</item>
                                 <item><val>tps.</val> pour les changement de temps ou de mode</item>
@@ -1070,7 +1075,18 @@
                                     </valItem>
                                     <valItem ident="erreur">
                                         <gloss>erreur</gloss>
-                                        <desc>signale les leçons où la variante propose une leçon issue d'une erreur évidente du copiste</desc>
+                                        <desc>signale les leçons où la variante propose une leçon
+                                            issue d'une erreur évidente du copiste</desc>
+                                    </valItem>
+                                    <valItem ident="outil">
+                                        <gloss>Mots outils</gloss>
+                                        <desc>signale les leçons où la variante porte sur un mot
+                                            outil de type conjonction de coordination, adverbe de
+                                            phrase, préposition ou conjonction de subordination (suppression ou remplacement par un terme équivalent)</desc>
+                                    </valItem>
+                                    <valItem ident="proPer">
+                                        <gloss>Pronom personnel</gloss>
+                                        <desc>signale les leçons où la variante consiste en l'ajout d'un pronom personnel</desc>
                                     </valItem>
                                 </valList>
                             </attDef>
