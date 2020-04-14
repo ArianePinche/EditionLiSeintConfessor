@@ -4,6 +4,8 @@
     exclude-result-prefixes="xs tei"
     version="2.0">
     
+    <xsl:output method="xml" indent="yes"></xsl:output>
+    
     <xsl:template match="/">
         <xsl:apply-templates select="descendant::app"/>
     </xsl:template>
