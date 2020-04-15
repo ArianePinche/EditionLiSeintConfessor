@@ -104,7 +104,7 @@
             <death when="0397">397</death>
             <persName>Ambrose</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
-              <surname type="complex" full="yes">Saint Ambroise</surname>, évêque de Milan, père et
+              <surname type="complex" >Saint Ambroise</surname>, évêque de Milan, père et
               docteur de l'Église latine. Il est le maître à penser de <persName ref="#martin">saint
                 Martin</persName>.</note>
           </person>
@@ -124,7 +124,7 @@
             <birth when="0256">256</birth>
             <death when="0336">336</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
-              >Arius, prêtre d'<placeName ref="#alexandrie" full="yes">Alexandrie</placeName>,
+              >Arius, prêtre d'<placeName ref="#alexandrie" >Alexandrie</placeName>,
               fondateur de l'une des plus importantes hérésies christologiques, l'arianisme. Il est
               excommunié et déclaré hérésiarque en 325 lors du concile de Nicée.</note>
           </person>
@@ -143,12 +143,12 @@
             <persName>Gracien</persName>
             <death when="0301">301</death>
             <note type="biographical">Gratien de Tours, premier évêque de <placeName ref="#tours"
-                full="yes">Tours</placeName>.</note>
+                >Tours</placeName>.</note>
           </person>
           <person xml:id="jeanBaptiste">
             <persName>Jehan Baptiste</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
-              <surname type="complex" full="yes">Jean le Baptiste</surname>, personnage biblique,
+              <surname type="complex" >Jean le Baptiste</surname>, personnage biblique,
               prédicateur en Judée.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
@@ -156,7 +156,7 @@
             <birth when="0001">0</birth>
             <death when="0030">33</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-              <surname type="complex" full="yes">Jésus-Christ</surname>, messie. Les chrétiens le
+              <surname type="complex" >Jésus-Christ</surname>, messie. Les chrétiens le
               reconnaissent comme le fils unique de Dieu.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC" xml:id="julien">
@@ -164,7 +164,7 @@
             <birth when="0331">331</birth>
             <death when="0363">363</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC">
-              <surname type="complex" full="yes">Flavius Claudius Julianus</surname>, nommé Julien
+              <surname type="complex" >Flavius Claudius Julianus</surname>, nommé Julien
               l’Apostat par la tradition chrétienne. Il doit son surnom à sa volonté de rétablir le
               polythéisme dans l’empire romain.</note>
           </person>
@@ -178,21 +178,21 @@
             <persName>Lidorius</persName>
             <note type="biographical">Lidoire (en latin Litorius), prédécesseur de <persName
                 ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName
-                ref="#tours" full="yes">Tours</placeName> en 338.</note>
+                ref="#tours" >Tours</placeName> en 338.</note>
           </person>
           <person xml:id="lupicin">
             <persName>Lupecines</persName>
             <note type="biographical">Homme important de la ville de <placeName ref="#poitiers"
-                full="yes">Poitiers</placeName>.</note>
+                >Poitiers</placeName>.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC" xml:id="martin">
             <persName>Martin</persName>
             <birth when="0316">316</birth>
             <death when="0397-11-08">397</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-              <surname type="complex" full="yes">Saint Martin de Tours</surname>, né en Hongrie dans
-              la colonie romaine de <placeName ref="#sabarie" full="yes">Sabaria</placeName> en 316
-              et mort à <placeName ref="#conde" full="yes">Candes</placeName> en France le 8
+              <surname type="complex" >Saint Martin de Tours</surname>, né en Hongrie dans
+              la colonie romaine de <placeName ref="#sabarie" >Sabaria</placeName> en 316
+              et mort à <placeName ref="#conde" >Candes</placeName> en France le 8
               novembre 397.</note>
           </person>
           <person xml:id="maximin">
@@ -200,7 +200,7 @@
             <birth when="0383">173</birth>
             <death when="0384-08-31">384</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC"
-              >Maximin, <surname type="complex" full="yes">Magnus Clemens Maximus</surname>,
+              >Maximin, <surname type="complex" >Magnus Clemens Maximus</surname>,
               officier romain à la tête des légions de Bretagne qui renversèrent en 383 l'<persName
                 ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en 388, où
               il fut vaincu et tué par les troupes de Théodose.</note>
@@ -225,7 +225,7 @@
             <birth when="0353">353</birth>
             <death when="0431">431</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC">
-              <surname type="complex" full="yes">Paulin de Nole</surname>, né à Bordeaux vers 353,
+              <surname type="complex" >Paulin de Nole</surname>, né à Bordeaux vers 353,
               mort à Nole en 431, est un poète et un ecclésiastique latin contemporain de saint
               Augustin et de <persName ref="#martin">Martin de Tours</persName> qui l'encouragea
               dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa mort.</note>
@@ -235,7 +235,7 @@
             <persName>Perpetuus</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC"
               >Successeur de <persName ref="#martin">saint Martin</persName>, sixième évêque de
-                <placeName ref="#tours" full="yes">Tours</placeName> .</note>
+                <placeName ref="#tours" >Tours</placeName> .</note>
           </person>
           <person xml:id="rufus">
             <persName>Rufus</persName>
@@ -244,13 +244,13 @@
           <person xml:id="rurtius">
             <persName>Rurtius</persName>
             <note type="biographical">Homme important de la ville de <placeName ref="#tours"
-                full="yes">Tours</placeName>.</note>
+                >Tours</placeName>.</note>
           </person>
           <person corresp="http://fr.dbpedia.org/page/Séverin_de_Cologne" xml:id="sevrin">
             <persName>Severins</persName>
             <death when="0403">403</death>
             <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
-              <surname type="complex" full="yes">Saint Séverin de Cologne</surname>, évêque de
+              <surname type="complex" >Saint Séverin de Cologne</surname>, évêque de
               Cologne à la fin du <seg type="number">iv</seg>
               <ex>e</ex> siècle.</note>
           </person>
@@ -259,7 +259,7 @@
             <birth when="0363">363</birth>
             <death when="0420">420</death>
             <note type="biographical">
-              <surname type="complex" full="yes">Sulpice Sévère</surname>, avocat aquitain et
+              <surname type="complex" >Sulpice Sévère</surname>, avocat aquitain et
               disciple de saint Martin. Il est l'auteur d'une Chronique universelle (403), de la <hi
                 rend="italic">Vita Martini</hi> (397) et des <hi rend="italic">Dialogues</hi>
               (404).</note>
@@ -273,7 +273,7 @@
             <birth when="0371">371</birth>
             <death when="0392-05-15">392</death>
             <note type="biographical" source="http://dbpedia.org/page/Valentinian_II">
-              <surname type="complex" full="yes">Valentinien <seg type="number">ii</seg>
+              <surname type="complex" >Valentinien <seg type="number">ii</seg>
               </surname>, fils de Valentinien <seg type="number">i</seg>
               <ex>er</ex>, empereur romain de 375 à 392.</note>
           </person>
@@ -287,7 +287,7 @@
             <birth when="0315">315</birth>
             <death when="0367">367</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
-              <surname type="complex" full="yes">Hilaire de Poitiers</surname>, évêque de Poitiers,
+              <surname type="complex" >Hilaire de Poitiers</surname>, évêque de Poitiers,
               écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
               <ex>e</ex> siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à
               l'arianisme. Saint Martin le rejoignit en 356 et devint alors son élève.</note>
@@ -297,7 +297,7 @@
       <settingDesc>
         <listPlace>
           <place corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
-            <placeName full="yes">Amiens</placeName>
+            <placeName >Amiens</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -306,7 +306,7 @@
             <note>Ville du Nord de la France.</note>
           </place>
           <place corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
-            <placeName full="yes">Aquilee</placeName>
+            <placeName >Aquilee</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -315,13 +315,13 @@
             <note>Ville du Nord-Est de l'Italie, près de la Slovénie.</note>
           </place>
           <place xml:id="calitone">
-            <placeName full="yes">Calitone</placeName>
+            <placeName >Calitone</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Ville proche de Tours, non-identifiée.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
-            <placeName full="yes">Coloigne</placeName>
+            <placeName >Coloigne</placeName>
             <country type="pays">Allemagne</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -330,7 +330,7 @@
             <note>Ville de Cologne, située en Allemagne de l'Ouest.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
-            <placeName full="yes">Conde</placeName>
+            <placeName >Conde</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -339,31 +339,31 @@
             <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC" xml:id="espagne">
-            <placeName full="yes">Espaigne</placeName>
+            <placeName >Espaigne</placeName>
             <country type="pays">Espagne</country>
             <country type="civilisation">Occident</country>
             <note>Espagne.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
-            <placeName full="yes">France</placeName>
+            <placeName >France</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>France.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
-            <placeName full="yes">Loire</placeName>
+            <placeName >Loire</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Fleuve français.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
-            <placeName full="yes">Lombardie</placeName>
+            <placeName >Lombardie</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <note>Région du Nord de l'Italie</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
-            <placeName full="yes">Melans</placeName>
+            <placeName >Melans</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -372,7 +372,7 @@
             <note>Milan, ville du Nord de l'Italie.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
-            <placeName full="yes">Mongiu</placeName>
+            <placeName >Mongiu</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -381,17 +381,17 @@
             <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
-            <placeName full="yes">Orient</placeName>
+            <placeName >Orient</placeName>
             <country type="civilisation">Orient</country>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC" xml:id="pannonie">
-            <placeName full="yes">Pannone</placeName>
+            <placeName >Pannone</placeName>
             <country type="civilisation">Occident</country>
             <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du
               Danube.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
-            <placeName full="yes">Paris</placeName>
+            <placeName >Paris</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -400,7 +400,7 @@
             <note>Ville française.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
-            <placeName full="yes">Poitiers</placeName>
+            <placeName >Poitiers</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -409,13 +409,13 @@
             <note>Ville située dans le Centre-Est de la France.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
-            <placeName full="yes">Poito</placeName>
+            <placeName >Poito</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Poitou, province française de l'Ouest.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-            <placeName full="yes">Rome</placeName>
+            <placeName >Rome</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -424,13 +424,13 @@
             <note>Ville italienne, capitale de l'empire romain d'occident.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC" xml:id="touraine">
-            <placeName full="yes">Toraine</placeName>
+            <placeName >Toraine</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Touraine, province du centre de la France.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
-            <placeName full="yes">Tors</placeName>
+            <placeName >Tors</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -439,7 +439,7 @@
             <note>Tours, ville du centre de la France.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
-            <placeName full="yes">Vangione</placeName>
+            <placeName >Vangione</placeName>
             <country type="pays">Allemagne</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -449,13 +449,13 @@
           </place>
           <place xml:id="vienne"
             corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
-            <placeName full="yes">Viane</placeName>
+            <placeName >Viane</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Vienne, rivière française du bassin de la Loire.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
-            <placeName full="yes">Ysabbarie</placeName>
+            <placeName >Ysabbarie</placeName>
             <country type="pays">Hongrie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -10058,7 +10058,7 @@
               <rdg wit="#N" cause="om."/>
             </app>&#160;<app>
               <lem>tres</lem>
-              <rdg wit="#F2 #G1 #M1 #N1" cause="om."/>
+              <rdg wit="#F2 #G1 #M1 #N" cause="om."/>
             </app>&#160;<app>
               <lem>cruieus</lem>
               <rdg wit="#G1">mortiex</rdg>
@@ -11295,7 +11295,7 @@
                 </app></lem>
               <rdg wit="#G1" type="ajout">qui Sires est de toute creature, car de lui vient touz les
                 biens</rdg>
-              <rdg wit="#M1 #N" type="ajout">car de lui vient trestoz li biens qi sont el siecle
+              <rdg wit="#M1" type="ajout">car de lui vient trestoz li biens qi sont el siecle
                 terrien et trestous chilx el chiel lassus</rdg>
               <rdg wit="#N" type="ajout">car de lui vient tous li biens qui est el siecle terrien et
                 trestot cil del ciel lassus</rdg>
@@ -12214,7 +12214,7 @@
                   <rdg wit="#M1 #N" type="inv.">poés bien</rdg>
                 </app>&#160;<app>
                   <lem>&u-v;os</lem>
-                  <rdg wit="#G1 #M #N1" cause="om." type="proPer"/>
+                  <rdg wit="#G1 #M1 #N" cause="om." type="proPer"/>
                 </app> sa&u-v;oir qe&esp;ce</lem>
               <rdg wit="#F2" cause="om."/>
             </app> estoit&esp;<lb/>granz mer&u-v;elle&point-virg4;<app>

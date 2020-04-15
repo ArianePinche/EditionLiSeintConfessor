@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Attention à rajouter dans l'établissement du text les del et corr / les hands responsables / les country ac les types pays et continent-->
+<!-- Attention à rajouter dans l'établissement du text les del et corr / finir explicarion sur les noms de lieux et de personnages-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"
     xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
     <teiHeader>
@@ -181,12 +181,25 @@
                         <div4>
                             <head>Le profileDesc</head>
                             <p>Le <gi>profileDesc</gi> contient les notices de tous les noms de
-                                personnage et de lieux apparaissant dans le fichier. Chacune des
+                                personnage et de lieu apparaissant dans le fichier. Chacune des
                                 notices possède un identifiant vers lequel vient pointer chacune des
                                 apparitions du lieu ou du personnage dans la Vie. Cette méthode
                                 permet de générer automatiquement à partir des fichiers XML les
                                 index des noms de lieux et des noms propres.</p>
-                            <p>Les notices de nom de personnage contiennent un renvoi vers la notice
+                            <!-- Explication a relire et finir -->
+                            <p>Les notices de nom de personnage, regroupées dans le <gi>particDesc</gi> et <gi>listPerson</gi>.
+                              Afin de constituer les notices des noms de lieux nous avons utilisé les balises
+                                    suivantes : <specList>
+                                        <specDesc key="person"/>
+                                        <specDesc key="persName"/>
+                                        <specDesc key="birth"/>
+                                        <specDesc key="death"/>
+                                        <specDesc key="note"/>
+                                    </specList>
+                            </p>
+                            <p> Quand cela est possible, les 
+                                contiennent un renvoi.
+                                vers la notice
                                 BnF du personnage concerné quand elle existe, le nom du personnage
                                 et une courte notice explicative. Si le personnage est un personnage
                                 historique, ses dates de naissance et de mort sont spécifiées quand
@@ -205,14 +218,25 @@
                                             ref="#sabarie">Sabaria</placeName> en 316. Il est mort à
                                             <placeName ref="#conde">Candes</placeName> en France le
                                         8 novembre 397.</note>
-                                </person> [...] <text> [...] <persName ref="#martin">seinz
-                                        Martins</persName> [...] </text>
+                                </person>
                             </egXML>
-                            <p>Les notices de noms de lieux contiennent un renvoi vers une notice
-                                pleiades quand le lieu est identifié et répertorié dans la base, le
-                                nom du lieu, une courte notice explicative si nécessaire et, quand
-                                le lieu est une ville identifiée, ses coordonnées afin de pouvoir à
-                                terme faire une carte des lieux cités dans le corpus.</p>
+                            <p>Les notices de noms de lieux, regroupées dans le <gi>settingDesc</gi> et <gi>listPlace</gi> contiennent le nom du lieu, un
+                                identifiant grâce à l'attribut <att>xml:id</att> et une courte
+                                notice explicative si nécessaire. Les occurrences qui apparaissent
+                                dans le texte sont signalées pas la balise <gi>placeName</gi> et
+                                identifiée grâce au pointeur <att>ref</att>.</p>
+                            <p>Afin de constituer les notices des noms de lieux nous avons utilisé les balises
+                                suivantes : <specList>
+                                    <specDesc key="place"/>
+                                    <specDesc key="placeName"/>
+                                    <specDesc key="country"/>
+                                    <specDesc key="location"/>
+                                    <specDesc key="note"/>
+                                </specList>
+                            </p>
+                            <p>Quand le lieu est une ville identifiée, ses coordonnées sont ajoutées
+                                afin de pouvoir à terme faire une carte des lieux cités dans le
+                                corpus. <att>ref</att>. </p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <place corresp="http://pleiades.stoa.org/places/423025"
                                     xml:id="rome">
@@ -220,8 +244,32 @@
                                     <location>
                                         <geo>41.8919300 12.5113300</geo>
                                     </location>
-                                </place> [...] <text> [...] <placeName ref="#rome">Roume</placeName>
-                                    [...] </text>
+                                </place>
+                            </egXML>
+                            <p>Pour assurer la bonne identification du lien, nous avons ajouté avec
+                                    <att>corresp</att> un lien vers une notice externe de préférence
+                                vers le site <hi rend="italic"><ref
+                                        target="https://pleiades.stoa.org">Pleiades : Ancient
+                                        Places</ref></hi> quand cela était possible, sinon vers <hi
+                                    rend="italic"><ref target="http://data.bnf.fr"
+                                    >data.bnf</ref></hi></p>
+                            <p>Enfin, afin de pouvoir classer les différents lieux cités par pays,
+                                mais aussi en fontion de leur rattachement à l'Orient ou à
+                                l'Occident nous avons utilisé l'élément <gi>country</gi> avec
+                                    <att>type</att> de <val>pays</val> pour signaler le pays et
+                                    <att>type</att> de <val>civilisation</val> pour indiquer
+                                l'appatenance à l'Orient ou à l'Occident.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <place corresp="http://pleiades.stoa.org/places/109321"
+                                    xml:id="amiens">
+                                    <placeName>Amiens</placeName>
+                                    <country type="pays">France</country>
+                                    <country type="civilisation">Occident</country>
+                                    <location>
+                                        <geo>49.8936075, 2.297948</geo>
+                                    </location>
+                                    <note>Ville du Nord de la France.</note>
+                                </place>
                             </egXML>
                         </div4>
                     </div3>
@@ -596,7 +644,8 @@
                             pour signaler des types de variantes textuelles particulières.
                                 <att>type</att> n'accepte qu'une liste de valeur close pour assurer
                             l'homogénéïté de l'encodage : <list>
-                                <item><val>ajout</val> pour les ajouts</item>
+                                <item><val>ajout</val> pour la variante qui consiste en des
+                                    ajouts</item>
                                 <item><val>casAbs</val> pour les leçons où le texte propose une
                                     variation sur l'expression du complet du nom avec ou sans
                                     l'expression de la préposition "de".</item>
@@ -607,17 +656,21 @@
                                 <item><val>erreur</val> pour les leçons où la variante propose une
                                     leçon issue d'une erreur évidente du copiste.</item>
                                 <item><val>inv.</val> pour les inversions</item>
-                                <item><val>outil</val> pour les leçons où la variante porte sur un
-                                    mot outil de type conjonction de coordination, adverbe de phrase, préposition
-                                    ou conjonction de subordination (suppression ou remplacement par un terme équivalent)</item>
+                                <item><val>outil</val> pour les leçons où la variante consiste en la
+                                    suppression, l'addition ou le remplacement d'un mot outil de
+                                    type conjonction de coordination, adverbe de phrase, préposition
+                                    ou conjonction de subordination et qui n'a pas d'influence
+                                    majeure sur la syntaxe ou le sens de la phrase</item>
                                 <item><val>plur.</val> pour les passages du singulier au
                                     pluriel</item>
-                                <item><val>proPer</val> signale les leçons qui consistent en l'ajout d'un pronom personnel</item>
+                                <item><val>proPer</val> signale les leçons qui consistent en l'ajout
+                                    d'un pronom personnel sujet</item>
                                 <item><val>sing.</val> pour les passages du pluriel
                                     ausingulier</item>
                                 <item><val>tps.</val> pour les changement de temps ou de mode</item>
                                 <item><val>réduction.</val> pour les endroits où le texte est
-                                    réécrit de manière plus synthétique</item>
+                                    réécrit de manière plus synthétique sans changement majeur de
+                                    sens</item>
                             </list>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
@@ -1080,13 +1133,17 @@
                                     </valItem>
                                     <valItem ident="outil">
                                         <gloss>Mots outils</gloss>
-                                        <desc>signale les leçons où la variante porte sur un mot
+                                        <desc>signale les leçons où la variante consiste en la
+                                            suppression, l'addition ou le remplacement d'un mot
                                             outil de type conjonction de coordination, adverbe de
-                                            phrase, préposition ou conjonction de subordination (suppression ou remplacement par un terme équivalent)</desc>
+                                            phrase, préposition ou conjonction de subordination et
+                                            qui n'a pas d'influence majeure sur la syntaxe ou le
+                                            sens de la phrase</desc>
                                     </valItem>
                                     <valItem ident="proPer">
                                         <gloss>Pronom personnel</gloss>
-                                        <desc>signale les leçons où la variante consiste en l'ajout d'un pronom personnel</desc>
+                                        <desc>signale les leçons où la variante consiste en l'ajout
+                                            d'un pronom personnel sujet</desc>
                                     </valItem>
                                 </valList>
                             </attDef>

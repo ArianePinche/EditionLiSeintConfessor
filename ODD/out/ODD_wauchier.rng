@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-04-13T08:33:55Z. .
+Schema generated from ODD source 2020-04-15T15:24:12Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -3294,9 +3294,9 @@ Elements]</a:documentation>
                   <value>erreur</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(erreur) signale les leçons où la variante propose une leçon issue d'une erreur évidente du copiste</a:documentation>
                   <value>outil</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mots outils) signale les leçons où la variante porte sur un mot outil de type conjonction de coordination, adverbe de phrase, préposition ou conjonction de subordination</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mots outils) signale les leçons où la variante consiste en la suppression, l'addition ou le remplacement d'un mot outil de type conjonction de coordination, adverbe de phrase, préposition ou conjonction de subordination et qui n'a pas d'influence majeure sur la syntaxe ou le sens de la phrase</a:documentation>
                   <value>proPer</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pronom personnel) signale les leçons où la variante consiste en l'ajout d'un pronom personnel</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pronom personnel) signale les leçons où la variante consiste en l'ajout d'un pronom personnel sujet</a:documentation>
                </choice>
             </attribute>
          </optional>
