@@ -7,11 +7,18 @@
     <xsl:output method="xml" indent="yes"></xsl:output>
     
     <xsl:template match="/">
-        <xsl:apply-templates select="descendant::app"/>
+        
+        <xsl:apply-templates select="descendant::rdg"/>
+        
     </xsl:template>
     
-    <xsl:template match="app">
+    <xsl:template match="rdg">
+        <xsl:if test="not(@type) and @cause">
+        <app>    
+        <xsl:copy-of select="preceding-sibling::lem"/>    
         <xsl:copy-of select="."/>
+        </app>
+        </xsl:if>
     </xsl:template>
     
 </xsl:stylesheet>
