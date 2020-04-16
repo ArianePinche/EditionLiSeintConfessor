@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-04-15T15:24:12Z. .
+Schema generated from ODD source 2020-04-16T07:57:45Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -3250,6 +3250,8 @@ Elements]</a:documentation>
                <choice>
                   <value>om.</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Omission) signale les leçons où le texte du lemme est omis.</a:documentation>
+                  <value>lacuna</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Lacune) signale les leçons où le texte d'un témoin présente une lacune qui s'étant sur plusieurs vers ou un paragraphe.</a:documentation>
                </choice>
             </attribute>
          </optional>

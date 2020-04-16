@@ -42,8 +42,8 @@
           <witness xml:id="M1" facs="https://gallica.bnf.fr/ark:/12148/btv1b9063234c/f236.item"
             >Paris, manuscrit fr. 23112, Bibliothèque nationale de France, <date notBefore="1200"
               notAfter="1300">13<hi rend="exp">e</hi> siècle</date></witness>
-          <witness xml:id="N" facs="https://gallica.bnf.fr/ark:/12148/btv1b9007593v/f97.item">PARIS,
-            Bibliothèque nationale de France, français 422, <date notBefore="1275" notAfter="1300"
+          <witness xml:id="N" facs="https://gallica.bnf.fr/ark:/12148/btv1b9007593v/f97.item">Paris,
+            Bibliothèque nationale de France, fr. 422, <date notBefore="1275" notAfter="1300"
               >fin du 13<hi rend="exp">e</hi> siècle</date></witness>
         </listWit>
         <msDesc xml:id="ms412">
@@ -4919,7 +4919,7 @@
                       <lem>cest</lem>
                       <rdg wit="#C2">ce</rdg>
                     </app> siecle departir.&esp; <lb/></l></lem>
-                <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+                <rdg wit="#D #E2 #F2 #G1" cause="lacuna"/>
               </app>
             </lg>
           </p>
@@ -11430,7 +11430,7 @@
                       <rdg wit="#F2" cause="om."/>
                     </app><pc type="orig" ana="sujet">.</pc>&esp;</l>
                 </lg></lem>
-              <rdg wit="#G1" cause="om."/>
+              <rdg wit="#G1" cause="lacuna"/>
             </app><lb/><app>
               <lem><choice>
                   <orig>U</orig>
@@ -14572,7 +14572,6 @@
           </p>
         </div>
       </div>
-      <!-- fin -->
       <div type="chapter" n="33"
         facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f231, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f232">
         <!-- Vie de saint Martin de Sulpice Sévère, IX, 2 / Epistula 1 à Eusèbe -->
@@ -17671,7 +17670,7 @@
                       <rdg wit="#N">seüe</rdg>
                     </app><pc type="orig" ana="coordination">.</pc>&esp;</l>
                   <l n="8">Et tote o&itrem;e &esperluette-et;entendue.</l></lem>
-                <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+                <rdg wit="#D #E2 #F2 #G1" cause="lacuna"/>
               </app>
               <lb/>
             </lg>
@@ -19217,7 +19216,7 @@
                   <rdg wit="#D" type="ajout">et en proieres et en vigiles</rdg>
                   <rdg wit="#G1" cause="om."/>
                 </app>.</lem>
-              <rdg wit="#M1 #N" cause="om."/>
+              <rdg wit="#M1 #N" cause="lacuna"/>
             </app></p>
 
         </div>
@@ -19472,7 +19471,7 @@
                   <lem>qi l<pc type="reg">'</pc>e&utrem;st &u-v;e&utrem;</lem>
                   <rdg wit="#F2">ne l'avoit veü</rdg>
                 </app>&esp;<lb/>issir de&esp;l<pc type="reg">'</pc>eglisse&deuxpoints-point;</lem>
-              <rdg wit="#M1 #N" cause="om."/>
+              <rdg wit="#M1 #N" cause="lacuna"/>
             </app></p>
         </div>
         <div n="3" type="section">
@@ -19570,7 +19569,7 @@
                   <orig>N</orig>
                   <reg>n</reg>
                 </choice>.</lem>
-              <rdg wit="#M1 #N" cause="om."/>
+              <rdg wit="#M1 #N" cause="lacuna"/>
             </app><note>Le manuscrit F2 présente à cet endroit en guise d'exciplit la rubrique
               suivante : "Ci fine la Vie saint Martin".</note><lb/>
           </p>

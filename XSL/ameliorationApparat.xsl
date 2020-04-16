@@ -13,7 +13,7 @@
     </xsl:template>
     
     <xsl:template match="rdg">
-        <xsl:if test="not(@type) and @cause">
+        <xsl:if test="@cause">
         <app>    
         <xsl:copy-of select="preceding-sibling::lem"/>    
         <xsl:copy-of select="."/>

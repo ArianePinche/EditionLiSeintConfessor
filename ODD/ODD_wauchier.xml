@@ -1156,6 +1156,12 @@
                                             >signale les leçons où le texte du lemme est
                                             omis.</desc>
                                     </valItem>
+                                    <valItem ident="lacuna">
+                                        <gloss>Lacune</gloss>
+                                        <desc
+                                            xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                                            >signale les leçons où le texte d'un témoin présente une lacune qui s'étant sur plusieurs vers ou un paragraphe.</desc>
+                                    </valItem>
                                 </valList>
                             </attDef>
                         </attList>
