@@ -13,7 +13,7 @@
         <xsl:apply-templates select="descendant::body"/>
         </xsl:result-document>
     </xsl:template>
-    <xsl:variable name="temoin" select="'#G1'"/>
+    <xsl:variable name="temoin" select="'#C3'"/>
     <xsl:variable name="leçonsVariantes">
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin)])"/>
     </xsl:variable>
@@ -21,7 +21,7 @@
     <xsl:template match="teiHeader"/>
 
     <xsl:template match="body">
-        <xsl:text>Nb de leçons divergente entre l'édition et témoin :</xsl:text>
+        <xsl:text>Nb de leçons divergentes entre l'édition et témoin :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin)])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de leçons en commun avec C2 :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#C2')])"/><xsl:text>&#10;</xsl:text>
@@ -43,12 +43,10 @@
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#F2')])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec F2 :</xsl:text>
         <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#F2')]])"/><xsl:text>&#10;</xsl:text>
-        <!--
         <xsl:text>Nb de leçons en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#G1')])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec G1 :</xsl:text>
         <xsl:value-of select="count(//app[rdg[contains(@wit, $temoin)] and rdg[contains(@wit, '#G1')]])"/><xsl:text>&#10;</xsl:text>
-        -->
         <xsl:text>Nb de leçons en commun avec M1 :</xsl:text>
         <xsl:value-of select="count(//rdg[contains(@wit, $temoin) and contains(@wit, '#M1')])"/><xsl:text>&#10;</xsl:text>
         <xsl:text>Nb de lieux variants en commun avec M1 :</xsl:text>
