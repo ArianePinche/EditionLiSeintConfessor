@@ -656,6 +656,7 @@
                                 <item><val>erreur</val> pour les leçons où la variante propose une
                                     leçon issue d'une erreur évidente du copiste.</item>
                                 <item><val>inv.</val> pour les inversions</item>
+                                <item><val>lacune</val> pour les leçons qui les leçons où le texte d'un témoin présente une lacune qui s'étant sur plusieurs vers ou un paragraphe.</item>
                                 <item><val>outil</val> pour les leçons où la variante consiste en la
                                     suppression, l'addition ou le remplacement d'un mot outil de
                                     type conjonction de coordination, adverbe de phrase, préposition
@@ -1156,7 +1157,7 @@
                                             >signale les leçons où le texte du lemme est
                                             omis.</desc>
                                     </valItem>
-                                    <valItem ident="lacuna">
+                                    <valItem ident="lacune">
                                         <gloss>Lacune</gloss>
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
