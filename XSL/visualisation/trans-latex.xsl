@@ -420,7 +420,7 @@
                 <xsl:text>}\Afootnote{</xsl:text>
                 <xsl:variable name="last" select="tei:rdg[not(matches(@type, $deletedAppType))][last()]"/>
                 <xsl:for-each select="tei:rdg[not(matches(@type, $deletedAppType))]">
-                    <xsl:value-of select="."/>
+                   <xsl:apply-templates/>
                     <xsl:if test="./@cause">
                         <xsl:text>~\textit{</xsl:text>
                         <xsl:value-of select="./@cause"/>
@@ -454,7 +454,7 @@
                 <xsl:text>}\Afootnote{</xsl:text>
                 <xsl:variable name="last" select="tei:rdg[last()]"/>
                 <xsl:for-each select="tei:rdg">
-                    <xsl:value-of select="."/>
+                   <xsl:apply-templates/>
                     <xsl:if test="./@cause">
                         <xsl:text>~\textit{</xsl:text>
                         <xsl:value-of select="./@cause"/>
