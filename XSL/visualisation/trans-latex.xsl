@@ -100,8 +100,7 @@
             <xsl:variable name="title">
                 <xsl:value-of select=".//tei:titleStmt/tei:title"/>
             </xsl:variable>
-            <xsl:text>
-\documentclass[12pt,a4paper]{book}
+            <xsl:text>\documentclass[12pt,a4paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -150,7 +149,7 @@
    <!-- Structure générale du texte -->
     <xsl:template match="tei:text">
         <xsl:text>
-﻿\begin{center}
+\begin{center}
 \section*{</xsl:text>
         <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
         <xsl:text>}

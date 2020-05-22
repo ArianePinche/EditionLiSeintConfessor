@@ -4400,11 +4400,11 @@
               <lem>cheve&esp;<lb/>estoit</lem>
               <rdg wit="#G1 #M1 #N1" type="inv.">estoit cavee</rdg>
             </app><note>Cheve, chave : adj. creux</note>.&esp;Li seinz hom a&u-v;oit&esp;<app>
-              <lem><seg type="number"><pc ana="number">.</pc>iiii</seg><pc ana="number">.</pc></lem>
-              <rdg wit="#G1 #M1"><seg type="number">.xxiiii.</seg></rdg>
-              <rdg wit="#N1" type="ajout">li sains hom avoit <seg type="number">.iiii<hi rend="exp"
+              <lem wit="#G1 #M1"><corr><seg type="number">.iiii<hi rend="exp">xx</hi>.</seg></corr></lem>
+              <rdg wit="#C1 #C2 #C3 #D #E2 #F2"><seg type="number"><pc ana="number">.</pc>iiii</seg><pc ana="number">.</pc></rdg>
+              <rdg wit="#N1"><seg type="number">.iiii<hi rend="exp"
                     >c</hi>.</seg></rdg>
-            </app>&esp;<app>
+            </app><note>Dans le texte de Sulpice Sévère, saint Martin est accompagné de quatre-vingts disciples.</note>&esp;<app>
               <lem>freres</lem>
               <rdg wit="#G1 #M1 #N1">desciples</rdg>
             </app> qi&esp;<lb/><app>
@@ -12932,8 +12932,8 @@
                 </app>&#160;&esperluette-et;&pbarre-par;&esp;la&esp;<app>
                   <lem>bone</lem>
                   <rdg wit="#D">haute</rdg>
-                  <rdg wit="#M1">sainte</rdg>
                   <rdg wit="#E2 #N1" cause="om."/>
+                  <rdg wit="#M1">sainte</rdg>
                 </app> creance</lem>
               <rdg wit="#F2" cause="om."/>
             </app>&deuxpoints-point;<lb/><choice>
@@ -13083,7 +13083,7 @@
               <rdg wit="#F2">ce croire</rdg>
             </app><pc type="orig" ana="coordination">.</pc>&esp;<app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#F2 #M1 #N1" cause="om."/>
+              <rdg wit="#F2 #M1 #N1" cause="om." type="outil"/>
             </app><app>
               <lem>par&esp;ce il</lem>
               <rdg wit="#C2 #C3 #E2 #F2 #G1 #M1 #N1">par ce qu'il</rdg>
@@ -13260,10 +13260,10 @@
                 <rdg wit="#M1 #N1" type="sing.">ceste parole</rdg>
               </app>.</said> Li frere qi ce o&itrem;rent le&esp;tindrent a&esp;<lb/>grant mer&u-v;elle&point-virg3;<app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#G1" cause="om."/>
+              <rdg wit="#G1" cause="om." type="outil"/>
             </app><app>
               <lem>si</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="outil"/>
             </app> mistrent grant&esp;<lb/>entente <app>
               <lem>en</lem>
               <rdg wit="#D #E2 #G1" type="outil">a</rdg>
@@ -13298,7 +13298,7 @@
                 </app>&esp;<app>
                   <lem>mo&u-v;oit</lem>
                   <rdg wit="#E2">esmouvoit</rdg>
-                </app>
+                </app>&#160;
                 <app>
                   <lem>ou</lem>
                   <rdg wit="#G1">li liex ou</rdg>
@@ -13307,7 +13307,7 @@
               <rdg wit="#F2" type="inv.">tous li lieus ou il estoient se mouvoit</rdg>
             </app>&#160;<app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#G1" cause="om."/>
+              <rdg wit="#G1" cause="om." type="outil"/>
             </app><app>
               <lem>la celle</lem>
               <rdg wit="#M1 #N1">li lieus</rdg>
@@ -13391,7 +13391,7 @@
                   <orig>p</orig>
                   <reg>P</reg>
                 </choice>uis</lem>
-              <rdg wit="#F2 #G1 #N1" cause="om."/>
+              <rdg wit="#F2 #G1 #N1" cause="om." type="outil"/>
               <rdg wit="#M1" type="outil">Et puis</rdg>
             </app>&#160;<app>
               <lem>si</lem>
@@ -13429,7 +13429,7 @@
               <rdg wit="#G1">parties</rdg>
             </app>. Cele &u-v;este<lb/>&utrem;re estoit molt soe&u-v;e <app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="outil"/>
             </app><app>
               <lem>molt</lem>
               <rdg wit="#G1" cause="om."/>
@@ -13455,11 +13455,11 @@
               <rdg wit="#F2" cause="om."/>
             </app>.&esp;<app>
               <lem>Mes</lem>
-              <rdg wit="#E2" cause="om."/>
-              <rdg wit="#F2">et</rdg>
+              <rdg wit="#E2" cause="om." type="outil"/>
+              <rdg wit="#F2" type="outil">et</rdg>
             </app>&#160;<app>
               <lem>non<lb/>por&nospace;qant</lem>
-              <rdg wit="#G1">nequedent</rdg>
+              <rdg wit="#G1" type="outil">nequedent</rdg>
             </app>&#160;<app>
               <lem>fu ele</lem>
               <rdg wit="#C2 #D #E2 #F2 #G1 #M1" type="inv.">ele fu</rdg>
@@ -13477,8 +13477,8 @@
             </app>&point-virg3;<lb/><app>
               <lem><app>
                   <lem>&esperluette-et;nepor&nospace;qant</lem>
-                  <rdg wit="#G1">nequedent</rdg>
-                  <rdg wit="#M1 #N1">et si</rdg>
+                  <rdg wit="#G1" type="outil">nequedent</rdg>
+                  <rdg wit="#M1 #N1" type="outil">et si</rdg>
                 </app>&#160;<app>
                   <lem>ce</lem>
                   <rdg wit="#M1 #N1" cause="om."/>
@@ -13576,7 +13576,7 @@
               <rdg wit="#C2">que</rdg>
             </app>&#160;<persName ref="#martin">seint &m-maj;ar<lb/>tin</persName>&#160; <app>
               <lem>n<pc type="reg">'</pc>iroit</lem>
-              <rdg wit="#C2 #D">n'i iroit</rdg>
+              <rdg wit="#C2 #D" type="ajout">n'i iroit</rdg>
             </app> il mie&point-virg3;<app>
               <lem>car</lem>
               <rdg wit="#N1">que</rdg>
@@ -13613,7 +13613,7 @@
               <rdg wit="#G1 #N1">menerent</rdg>
             </app> a&esp;<lb/>force. <app>
               <lem>Et</lem>
-              <rdg wit="#E2 #F2" cause="om."/>
+              <rdg wit="#E2 #F2" cause="om." type="outil"/>
             </app>&#160;<app>
               <lem>si come</lem>
               <rdg wit="#F2" type="outil">ainsint conme</rdg>
@@ -13813,7 +13813,7 @@
               <rdg wit="#F2 #G1">et</rdg>
             </app> l<pc type="reg">'</pc>aora <app>
               <lem>&neuf-con;me</lem>
-              <rdg wit="#E2 #M1 #N1" type="ajout">si conme</rdg>
+              <rdg wit="#E2 #M1 #N1" type="outil">si conme</rdg>
             </app>&#160;<app>
               <lem>nostre &s-maj;ignor</lem>
               <rdg wit="#F2">Dieu</rdg>
@@ -13828,9 +13828,9 @@
               <lem>de</lem>
               <rdg wit="#F2 #G1 #M1 #N1" type="outil">hors de</rdg>
             </app>&esp;<app>
-              <lem>s<pc type="reg">'</pc>e&u-v;es&qisuscrit-qi2;</lem>
+              <lem>s<pc type="reg">'</pc>e&u-v;es&qisuscrit-qi2;&eacc;</lem>
               <rdg wit="#F2">l'eveschié</rdg>
-            </app>&eacc;<pc type="reg" ana="subordonnee">,</pc>&esp;<lb/><app>
+            </app><pc type="reg" ana="subordonnee">,</pc>&esp;<lb/><app>
               <lem>si com nos <app>
                   <lem>me&itrem;smes</lem>
                   <rdg wit="#G1 #M1" cause="om."/>
@@ -13943,10 +13943,10 @@
             </app>&point-virg4;por ce q<pc type="reg">'</pc>il&esp;<lb/>le&esp;&u-v;oloit
             dece&u-v;oir en&esp;tel maniere&deuxpoints-virg3;<app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#N1" cause="om."/>
+              <rdg wit="#N1" cause="om." type="outil"/>
             </app><app>
               <lem>si</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="outil"/>
             </app> a&u-v;oit&esp;<lb/>&u-v;estu <app>
               <lem>roial &u-v;este&utrem;re</lem>
               <rdg wit="#N1" type="inv.">vesteüre roial</rdg>
@@ -14002,7 +14002,7 @@
               <rdg wit="#F2" type="ajout">fu au premier</rdg>
             </app> toz esbahiz&esp;<lb/>por la&esp;grant clart&eacc;&#160;<app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#F2 #G1" cause="om."/>
+              <rdg wit="#F2 #G1" cause="om." type="outil"/>
             </app><app>
               <lem>por la&esp;grant lumiere</lem>
               <rdg wit="#F2" cause="om."/>
@@ -14191,9 +14191,7 @@
                 </app> de&esp;<app>
                   <lem>si</lem>
                   <rdg wit="#M1" type="outil">tres</rdg>
-                </app>&esp;<app>
-                  <lem>grant</lem>
-                </app> pueur&esp;<lb/>qe</lem>
+                </app>&esp;grant pueur&esp;<lb/>qe</lem>
               <rdg wit="#G1">Si remest la ceaule toute empullentee</rdg>
             </app> bien fu pro&u-v;&eacc;&#160;<app>
               <lem>&u-v;raiement</lem>
@@ -14492,7 +14490,7 @@
                 </app>&esp;<lb/>&u-v;oel &i-j;e conter &esperluette-et;dire<pc type="orig"
                   ana="coordination">.</pc>&esp;<app>
                   <lem>&esperluette-et;</lem>
-                  <rdg wit="#D #E2 #G1 #M1 #N1" cause="om."/>
+                  <rdg wit="#D #E2 #G1 #M1 #N1" cause="om." type="outil"/>
                 </app>dont cele <app>
                   <lem>fole</lem>
                   <rdg wit="#G1">mauvaise</rdg>
@@ -15030,7 +15028,7 @@
               <rdg wit="#F2" cause="om."/>
             </app>. <app>
               <lem>Et</lem>
-              <rdg wit="#N1" cause="om."/>
+              <rdg wit="#N1" cause="om." type="outil"/>
             </app>&#160; <app>
               <lem>ce sace&esp;<app>
                   <lem><choice>
@@ -15575,7 +15573,7 @@
                   <rdg wit="#G1">le</rdg>
                 </app> leu<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;<app>
                   <lem>si</lem>
-                  <rdg wit="#G1" cause="om."/>
+                  <rdg wit="#G1" cause="om." type="outil"/>
                 </app></lem>
               <rdg wit="#F2" cause="om."/>
             </app>&esp;s<pc type="reg">'</pc>en alassent en&esp;<app>
@@ -15683,7 +15681,7 @@
                 </app>&esp;deguerpirent la ri&u-v;ie<lb/>re<pc type="reg" ana="coordination">,</pc>
                 si alerent as bois &esperluette-et;as montaignes&deuxpoints-virg3;<app>
                   <lem>&esperluette-et;</lem>
-                  <rdg wit="#M1 #N1" cause="om."/>
+                  <rdg wit="#M1 #N1" cause="om." type="outil"/>
                 </app><lb/>li pluisor <app>
                   <lem>qi ce &u-v;irent</lem>
                   <rdg wit="#G1" cause="om."/>
@@ -15856,7 +15854,7 @@
                 <rdg wit="#F2" cause="om."/>
               </app>&deuxpoints-interrogation;A&esp;cui nos&esp;<lb/>leiras tu qi <app>
                 <lem>si</lem>
-                <rdg wit="#C2 #G1 #M1 #N1" cause="om."/>
+                <rdg wit="#C2 #G1 #M1 #N1" cause="om." type="outil"/>
               </app> somes desconfortez <app>
                 <lem>&esperluette-et;descon<lb/>seilliez</lem>
                 <rdg wit="#F2" cause="om."/>
@@ -16078,7 +16076,7 @@
               <rdg wit="#F2">ainsint</rdg>
             </app> se mist&esp;<app>
               <lem>il</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="proPer"/>
             </app>&#160;<app>
               <lem>del tout en</lem>
               <rdg wit="#G1" type="red.">a</rdg>
@@ -16333,7 +16331,7 @@
                   <orig>U</orig>
                   <reg>u</reg>
                 </choice>ant</lem>
-              <rdg wit="#G1 #M1">Et quant</rdg>
+              <rdg wit="#G1 #M1" type="outil">Et quant</rdg>
             </app>&#160;<app>
               <lem>li seinz hom</lem>
               <rdg wit="#G1 #M1 #N1">il</rdg>
@@ -16354,7 +16352,7 @@
               <rdg wit="#D #F2 #G1 #M1 #N1">lui</rdg>
             </app>&deuxpoints-virg3;<app>
               <lem>si</lem>
-              <rdg wit="#G1">et</rdg>
+              <rdg wit="#G1" type="outil">et</rdg>
             </app>&esp;<app>
               <lem>&u-v;it</lem>
               <rdg wit="#F2" type="ajout">i vit</rdg>
@@ -16364,11 +16362,11 @@
               <rdg wit="#N1" type="ajout">devant lui ester le dyable</rdg>
             </app><pc type="orig" ana="coordination">.</pc>&esp;<app>
               <lem>et</lem>
-              <rdg wit="#F2">si</rdg>
-              <rdg wit="#G1" cause="om."/>
+              <rdg wit="#F2" type="outil">si</rdg>
+              <rdg wit="#G1" cause="om." type="outil"/>
             </app>&#160;<app>
               <lem>il</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="proPer"/>
             </app>&#160;<app>
               <lem>li</lem>
               <rdg wit="#M1" cause="om."/>
@@ -16643,7 +16641,7 @@
       </div>
       <div type="chapter" n="37" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234"
         corresp="urn:cts:latinLit:stoa0143.stoa001.1.46">
-        <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
+        <!-- Historia Francorum, I, 48 / Grégoire de Tours -->
         <div type="section" n="1">
           <p><pb n="112" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f234"/>
             <cb n="c"/><hi rend="decorated-initial">A</hi>donc a&u-v;oit li <choice>
@@ -16885,7 +16883,7 @@
                 <rdg wit="#F2" cause="om."/>
               </app>&point-virg3;&esperluette-et;<app>
                 <lem>si</lem>
-                <rdg wit="#F2" cause="om."/>
+                <rdg wit="#F2" cause="om." type="outil"/>
               </app> a&u-v;ez es<lb/>t&eacc;&#160;<app>
                 <lem>conferm&eacc;&#160;<app>
                     <lem>de</lem>
@@ -16938,7 +16936,7 @@
         </div>
       </div>
       <div n="38" type="chapter">
-        <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
+        <!-- Hisotira Francorum, I, 48 / Grégoire de Tours -->
         <div type="section" n="1">
           <p><hi rend="decorated-initial">A</hi>&esp;ce respondirent cil de&esp;<placeName
               ref="#tours"><choice>
@@ -16947,7 +16945,7 @@
               </choice>ors</placeName><pc type="orig" ana="coordination">.</pc>&esp;<app>
               <lem>&esperluette-et;<app>
                   <lem>si</lem>
-                  <rdg wit="#G1 #N1" cause="om."/>
+                  <rdg wit="#G1 #N1" cause="om." type="outil"/>
                 </app> dis<lb/>trent</lem>
               <rdg wit="#F2">a ceus de Poitiers</rdg>
             </app>&point-deuxpointsDial;<said><app>
@@ -17289,7 +17287,7 @@
         </div>
       </div>
       <div n="39" type="chapter">
-        <!-- Hisotira Francorum, I, 43 / Grégoire de Tours -->
+        <!-- Hisotira Francorum, I, 48 / Grégoire de Tours -->
         <div type="section" n="1">
           <p><app>
               <lem><hi rend="decorated-initial">Q</hi>uant</lem>
@@ -17582,10 +17580,10 @@
               <rdg wit="#N1">de ceste mortel vie</rdg>
             </app><pc type="orig" ana="segPrep">.</pc>&esp;ot&esp;<pc ana="number">.</pc><seg
               type="number">cccc</seg><pc ana="number">.</pc>&esp;anz et&esp;<app>
-              <lem><pc ana="number">.</pc><seg type="number">xiii</seg><pc ana="number">.</pc></lem>
+                <lem wit="#M1 #N1"><corr><seg type="number">.xii.</seg></corr></lem>
               <rdg wit="#G1"><seg type="number">.xxii.</seg></rdg>
-              <rdg wit="#M1 #N1"><seg type="number">.xii.</seg></rdg>
-            </app>&esp;<app>
+              <rdg wit="#C1 #C2 #C3 #D #E2 #F2"><pc ana="number">.</pc><seg type="number">xiii</seg><pc ana="number">.</pc></rdg>
+              </app><note>Dans la source latine, on trouve le chiffre 412 (voir <hi rend="italic">Historia francorum</hi>, I, 48)</note>&esp;<app>
               <lem>tout par <app>
                   <lem>nombre</lem>
                   <rdg wit="#M1 #N1">conte</rdg>
@@ -17782,7 +17780,7 @@
               <rdg wit="#F2 #G1" cause="om."/>
             </app><pc type="reg" ana="incise">,</pc> ce&esp;li&esp;sambla. Et ces &u-v;oiz&esp;<lb/><app>
               <lem>si</lem>
-              <rdg wit="#M1 #N1" cause="om."/>
+              <rdg wit="#M1 #N1" cause="om." type="outil"/>
             </app> estoient de&esp;<app>
               <lem>grant &i-j;oie <app>
                   <lem>&esperluette-et;de&esp;grant esleece&mbarre-men;t</lem>
@@ -17817,11 +17815,9 @@
               <rdg wit="#G1 #M1" cause="om."/>
             </app>&esp;respondi<pc type="orig" ana="completive">:</pc>&esp;<lb/>q<pc type="reg"
               >'</pc>il n<pc type="reg">'</pc>ooit <app>
-              <lem>ne <app>
-                  <lem>entendoit</lem>
-                  <rdg wit="#C3 #D #E2 #G1 #M1">n'entendoit</rdg>
-                </app></lem>
-              <rdg wit="#F2" cause="om."/>
+              <lem>ne entendoit</lem>
+                <rdg wit="#C3 #D #E2 #G1 #M1">ne n'entendoit</rdg>
+                <rdg wit="#F2" cause="om."/>
             </app> nule <app>
               <lem>creature</lem>
               <rdg wit="#M1 #N1">cose</rdg>
@@ -18108,7 +18104,7 @@
               <rdg wit="#G1" cause="om."/>
             </app>&esp;<lb/><app>
               <lem>par</lem>
-              <rdg wit="#D #E2">pour</rdg>
+              <rdg wit="#D #E2" type="outil">pour</rdg>
             </app> quoi il <app>
               <lem>le pe&utrem;ssent arrester <app>
                   <lem>ne&esp;tant ne&esp;<lb/>qant</lem>
@@ -18140,7 +18136,7 @@
               <rdg wit="#D" cause="om."/>
             </app> qe&esp;li deable <app>
               <lem>&esperluette-et;</lem>
-              <rdg wit="#F2" cause="om."/>
+              <rdg wit="#F2" cause="om." type="outil"/>
             </app><app>
               <lem>lor compaignie</lem>
               <rdg wit="#F2" cause="om."/>
@@ -18150,7 +18146,7 @@
             </app>&esp;<lb/>&u-v;oudrent <app>
               <lem>sesir<pc type="orig" ana="coordination">.</pc>&esp;<app>
                   <lem>&esperluette-et;</lem>
-                  <rdg wit="#F2" cause="om."/>
+                  <rdg wit="#F2" cause="om." type="outil"/>
                 </app><app>
                   <lem>prendre</lem>
                   <rdg wit="#F2" cause="om."/>
@@ -18207,11 +18203,9 @@
               <rdg wit="#F2" type="ajout">la sainte ame</rdg>
               <rdg wit="#G1 #M1 #N1" type="ajout">l'ame du saint home</rdg>
             </app> lassus <app>
-              <lem>es&esp;<app>
-                  <lem>cius</lem>
-                  <rdg wit="#G1" type="ajout">sains ciels</rdg>
-                </app></lem>
+              <lem>es&esp;cius</lem>
               <rdg wit="#F2">en paradis</rdg>
+              <rdg wit="#G1" type="ajout">es sains ciels</rdg>
             </app><pc type="orig" ana="segPrep">.</pc>&esp;<app>
               <lem>en&esp;<app>
                   <lem>la</lem>
@@ -18321,7 +18315,7 @@
                   <rdg wit="#F2" cause="om."/>
                 </app>.&esp;<lb/>
               </lem>
-              <rdg wit="#N1" cause="om."/>
+              <rdg wit="#N1" cause="lacune"/>
             </app>
           </p>
         </div>
@@ -18329,7 +18323,7 @@
       <div type="chapter" n="42"
         facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f235, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f236"
         corresp="urn:cts:latinLit:stoa0143.stoa002.1.5">
-        <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 5. -->
+        <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 5. BHL [5618] -->
         <div n="1" type="section">
           <p><app>
               <lem><hi rend="decorated-initial">E</hi>n</lem>
@@ -18544,8 +18538,8 @@
                 <rdg wit="#M1" type="ajout">ne torblés mie</rdg>
               </app>&deuxpoints-virg3;<app>
                 <lem>&esperluette-et;</lem>
-                <rdg wit="#G1" cause="om." type="ajout"/>
-                <rdg wit="#M1 #N1">car</rdg>
+                <rdg wit="#G1" cause="om." type="outil"/>
+                <rdg wit="#M1 #N1" type="outil">car</rdg>
               </app><lb/>bien saciez qe mout m<pc type="reg">'</pc>a <app>
                 <lem>&u-v;alu</lem>
                 <rdg wit="#G1 #M1" type="ajout">valu et conforté</rdg>
@@ -18621,7 +18615,6 @@
               <lem>&esperluette-et;</lem>
               <rdg wit="#F2 #N1" type="outil">si</rdg>
             </app><app>
-              <lem><app>
                   <lem>mout&esp;<lb/><app>
                       <lem>s<pc type="reg">'</pc>en</lem>
                       <rdg wit="#E2">se</rdg>
@@ -18629,10 +18622,8 @@
                       <lem>esmer&u-v;ellierent</lem>
                       <rdg wit="#E2" type="temps">esmerveilloient</rdg>
                     </app>&point-virg3;si</lem>
+                   <rdg wit="#F2 #N1" cause="om."/>
                   <rdg wit="#G1">tout droitement</rdg>
-                  <rdg wit="#N1" cause="om."/>
-                </app></lem>
-              <rdg wit="#F2" cause="om."/>
             </app>&#160;<app>
               <lem>noterent</lem>
               <rdg wit="#N1">volrent savoir</rdg>
@@ -18809,7 +18800,7 @@
             <rdg wit="#D #M1 #N1" cause="om."/>
             <rdg wit="#F2">La translation saint Martin</rdg>
           </app>
-          <note>Les manuscrits M<hi rend="exp">1</hi> et N ne contiennent pas la
+          <note>Les manuscrits M<hi rend="exp">1</hi> et N<hi rend="exp">1</hi> ne contiennent pas la
           translation</note></head>
         <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 6 -->
         <div type="section" n="1">
@@ -18995,10 +18986,7 @@
                   <lem>lor</lem>
                   <rdg wit="#G1">les</rdg>
                 </app> meins <app>
-                  <lem>tot entor por <app>
-                      <lem>le&u-v;er</lem>
-                      <rdg wit="#G1">laver</rdg>
-                    </app></lem>
+                  <lem>tot entor por le&u-v;er</lem>
                   <rdg wit="#C2" type="inv.">por lever tot entor</rdg>
                 </app>&#160;<app>
                   <lem>le</lem>
@@ -19035,7 +19023,7 @@
                   <rdg wit="#G1" type="outil">Adonc</rdg>
                 </app> furent molt dolenz&esp;<lb/><app>
                   <lem>&esperluette-et;</lem>
-                  <rdg wit="#F2 #G1" cause="om."/>
+                  <rdg wit="#F2 #G1" cause="om." type="outil"/>
                 </app>si&esp;lessierent <app>
                   <lem>trespasser le&esp;&i-j;or</lem>
                   <rdg wit="#F2">le jour passer</rdg>
@@ -19053,12 +19041,10 @@
                   <lem>me&itrem;sme</lem>
                   <rdg wit="#G1" cause="om."/>
                 </app> nuit <app>
-                  <lem><app>
                       <lem>re&u-v;ellier&etilde-en;t</lem>
                       <rdg wit="#D #E2 #F2">veillierent</rdg>
-                    </app>&esp;<lb/>il</lem>
-                  <rdg wit="#G1">travaillierent</rdg>
-                </app>&esp;<app>
+                    <rdg wit="#G1">travaillierent</rdg>
+                    </app>&esp;<lb/><app><lem>il</lem><rdg wit="#G1" cause="om." type="proPer"/></app>&esp;<app>
                   <lem>toute</lem>
                   <rdg wit="#D #E2 #F2" cause="om."/>
                 </app>&#160;<app>
@@ -19070,7 +19056,7 @@
                   <rdg wit="#G1" type="outil">Adonc</rdg>
                 </app>&#160;<app>
                   <lem>si</lem>
-                  <rdg wit="#F2 #G1" cause="om."/>
+                  <rdg wit="#F2 #G1" cause="om." type="outil"/>
                 </app>&esp;<app>
                   <lem>ressaie<lb/>rent</lem>
                   <rdg wit="#G1">essaierent</rdg>
@@ -19097,7 +19083,7 @@
                 </app>&#160;<app>
                   <lem>&esperluette-et;molt espoentez&point-virg3;<app>
                       <lem>car</lem>
-                      <rdg wit="#D #E2">par ce que</rdg>
+                      <rdg wit="#D #E2" type="outil">par ce que</rdg>
                     </app> il ne&esp;le&esp;<lb/>pooient <app>
                       <lem>mo&u-v;oir</lem>
                       <rdg wit="#G1">remouvoir</rdg>
@@ -19253,7 +19239,7 @@
                       <orig>E</orig>
                       <reg>e</reg>
                     </choice>t</lem>
-                  <rdg wit="#G1" cause="om."/>
+                  <rdg wit="#G1" cause="om." type="outil"/>
                 </app> tant qu<pc type="reg">'</pc>il se&esp;<lb/>porpenserent q<pc type="reg"
                   >'</pc>il reco&u-v;erroient de&esp;terre la se<lb/>pouture <app>
                   <lem>q<pc type="reg">'</pc>il a&u-v;oient desco&u-v;erte</lem>
@@ -19346,16 +19332,16 @@
                       type="number">vii</seg>. cierges ardans</rdg>
                 </app>.&esp;<app>
                   <lem>Dont</lem>
-                  <rdg wit="#F2" cause="om."/>
+                  <rdg wit="#F2" cause="om." type="outil"/>
                 </app>&#160;&neuf-con;mencierent&esp;<lb/><app>
                   <lem>l<pc type="reg">'</pc>ante&u-v;ene</lem>
                   <rdg wit="#G1">une anthiene</rdg>
                 </app> a&esp;chanter<pc type="orig" ana="coordination">.</pc>&esp;<app>
                   <lem>&esperluette-et;</lem>
-                  <rdg wit="#G1" cause="om."/>
+                  <rdg wit="#G1" cause="om." type="outil"/>
                 </app><app>
                   <lem>si</lem>
-                  <rdg wit="#F2" cause="om."/>
+                  <rdg wit="#F2" cause="om." type="outil"/>
                 </app>&esp;le&u-v;erent le sarqu&esp;<lb/>del seint home <app>
                   <lem>en haut</lem>
                   <rdg wit="#F2" cause="om."/>
@@ -19438,7 +19424,7 @@
                   <rdg wit="#F2" type="outil">et</rdg>
                 </app>&#160;<app>
                   <lem>il</lem>
-                  <rdg wit="#F2" cause="om."/>
+                  <rdg wit="#F2" cause="om." type="proPer"/>
                 </app>&#160;<app>
                   <lem>n<pc type="reg">'</pc>estoit la&esp;nus hom</lem>
                   <rdg wit="#F2">nul</rdg>
@@ -19483,7 +19469,7 @@
                   <rdg wit="#F2" cause="om."/>
                 </app>.&esp;<app>
                   <lem>Et</lem>
-                  <rdg wit="#G1" cause="om."/>
+                  <rdg wit="#G1" cause="om." type="outil"/>
                 </app> en <app>
                   <lem>icel</lem>
                   <rdg wit="#G1">cest</rdg>
@@ -19499,7 +19485,7 @@
                   <rdg wit="#D #E2 #F2 #G1" type="inv.">a metre en escripture</rdg>
                 </app>.&esp;<app>
                   <lem>Mes</lem>
-                  <rdg wit="#F2">Et</rdg>
+                  <rdg wit="#F2" type="outil">Et</rdg>
                 </app> nos en a&u-v;&otilde-on;s&esp;<lb/><app>
                   <lem>cont&eacc;&#160;&esperluette-et;</lem>
                   <rdg wit="#F2" cause="om."/>
@@ -19546,7 +19532,7 @@
                   <reg>n</reg>
                 </choice>.</lem>
               <rdg wit="#M1 #N1" cause="lacune"/>
-            </app><note>Le manuscrit F2 présente à cet endroit en guise d'exciplit la rubrique
+            </app><note>Le manuscrit F<hi rend="exp">2</hi> présente à cet endroit en guise d'exciplit la rubrique
               suivante : "Ci fine la Vie saint Martin".</note><lb/>
           </p>
         </div>
