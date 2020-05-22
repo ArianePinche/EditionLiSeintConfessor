@@ -42,6 +42,7 @@
                 )"
         />
     </xsl:function>
+    
     <xsl:output method="html" indent="yes" omit-xml-declaration="yes" name="html"/>
 
     <xsl:template match="tei:TEI">
@@ -439,16 +440,16 @@
                 <!-- fin ce barre de navigation dans le texte -->
 
 
-                <div class="col-md-6" id="contenu">
+                <div class="col-md-5" id="contenu">
                     <xsl:element name="h1">
                         <xsl:value-of select="./ancestor::tei:TEI//tei:titleStmt/tei:title"/>
                     </xsl:element>
                     <xsl:apply-templates/>
 
                 </div>
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1">
                     <xsl:element name="h4">Sélection des temoins</xsl:element>
-                    <xsl:for-each select="./ancestor::tei:TEI//tei:msDesc">
+                    <xsl:for-each select="./ancestor::tei:TEI//tei:witness">
                         <div class="checkbox">
                             <label>
                                 <xsl:element name="input">
@@ -482,6 +483,53 @@
                             </label>
                         </div>
                     </xsl:for-each>
+                    <div id="note-container"/>
+                </div>
+                <div class="col-md-2">
+                    <xsl:element name="h4">Sélection des types de variantes</xsl:element>
+                    <div class="checkbox">
+                        <label>
+                            <xsl:element name="input">
+                                <xsl:attribute name="class">
+                                    <xsl:text>activation activation-legende</xsl:text>
+                                </xsl:attribute>
+                                <xsl:attribute name="type">
+                                    <xsl:text>checkbox</xsl:text>
+                                </xsl:attribute>
+                                <xsl:attribute name="data-target">
+                                    <xsl:text>.semantique</xsl:text>
+                                    <xsl:value-of select="@type"/>
+                                </xsl:attribute>
+                                <xsl:attribute name="data-category">
+                                    <xsl:text>activation-legende</xsl:text>
+                                </xsl:attribute>
+                            </xsl:element>
+                            <xsl:text>sémantique</xsl:text>
+                        </label>
+                    </div>
+                    <xsl:for-each-group select="./ancestor::tei:TEI//tei:rdg" group-by="@type">
+                        <xsl:sort select="@type" order="ascending"/>
+                        <div class="checkbox">
+                            <label>
+                                <xsl:element name="input">
+                                    <xsl:attribute name="class">
+                                        <xsl:text>activation activation-legende</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="type">
+                                        <xsl:text>checkbox</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="data-target">
+                                        <xsl:text>.</xsl:text>
+                                        <xsl:value-of select="@type"/>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="data-category">
+                                        <xsl:text>activation-legende</xsl:text>
+                                    </xsl:attribute>
+                                </xsl:element>
+                                <xsl:value-of select="@type"/>
+                            </label>
+                        </div>
+                    </xsl:for-each-group>
                     <div id="note-container"/>
                 </div>
             </section>
@@ -678,11 +726,16 @@
         <xsl:variable name="renvoiNote">
             <xsl:number count="tei:app" level="any" from="tei:text"/>
         </xsl:variable>
-        <xsl:apply-templates select="./tei:lem"/>
+        <xsl:apply-templates select="tei:lem"/>
         <xsl:element name="span">
             <xsl:attribute name="class">
                 <xsl:text>linkapp </xsl:text>
                 <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="tei:rdg/@type"/>
+                <xsl:if test="tei:rdg[not(type)]">
+                    <xsl:text>semantique</xsl:text>
+                </xsl:if>
             </xsl:attribute>
             <xsl:attribute name="data-toggle">
                 <xsl:text>note</xsl:text>
@@ -693,69 +746,13 @@
                 <xsl:value-of select="$renvoiNote"/>
                 <xsl:text>]</xsl:text>
             </xsl:element>
+            
             <xsl:element name="div">
                 <xsl:attribute name="class">app</xsl:attribute>
                 <xsl:element name="ul">
                     <xsl:attribute name="class">list-unstyled</xsl:attribute>
                     <xsl:element name="li">
-                        <xsl:choose>
-                            <xsl:when test="not(parent::tei:l)"> 
-                                <xsl:apply-templates
-                                select=" tei:lem/text()
-                                | .//tei:lem[not(ancestor::tei:l)]/text()
-                                | .//tei:lem/tei:hi/text()
-                                | .//tei:lem/tei:hi/tei:choice/tei:reg/text() 
-                                | .//tei:lem/tei:hi/tei:choice/tei:corr/text() 
-                                | .//tei:lem/tei:hi/tei:choice/tei:expan/text() 
-                                | .//tei:lem/tei:hi/tei:choice/tei:expan/tei:ex/text() 
-                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:reg/text() 
-                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:corr/text() 
-                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:expan/text() 
-                                | .//tei:lem/tei:choice[not(ancestor::tei:l)]/tei:expan/tei:ex/text() 
-                                | .//tei:lem/tei:hi/tei:pc/text() 
-                                | .//tei:lem/tei:hi/tei:placeName/text() 
-                                | .//tei:lem/tei:hi/tei:persName/text() 
-                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:pc
-                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:placeName/tei:choice
-                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:pc
-                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:persName/tei:choice
-                                | .//tei:lem/tei:hi[not(@rend='rubricated orig')]/tei:choice/tei:reg/text() 
-                                | .//tei:lem//tei:hi/tei:persName/text()
-                                | .//tei:lem/tei:persName
-                                | .//tei:lem/tei:persName/tei:pc
-                                | .//tei:lem/tei:persName/tei:choice
-                                | .//tei:lem/tei:placeName
-                                | .//tei:lem/tei:pc
-                                | .//tei:lem/tei:corr[@type = 'del']/text() 
-                                | .//tei:lem/tei:corr[@type = 'add']/text() 
-                                | .//tei:lem/tei:seg
-                                | .//tei:lem/tei:seg/tei:choice
-                                | .//tei:lem/tei:seg/tei:pc
-                                | .//tei:lem/tei:seg/tei:placeName
-                                | .//tei:lem/tei:seg/tei:persName"/></xsl:when>
-                            <xsl:otherwise>
-                                <xsl:apply-templates
-                                    select="tei:lem/text()
-                                | tei:lem/tei:hi/text()
-                                | tei:lem/tei:choice
-                                | tei:lem/tei:hi/tei:pc/text() 
-                                | tei:lem/tei:hi/tei:placeName/text() 
-                                | tei:lem/tei:hi/tei:persName/text() 
-                                | tei:lem/tei:persName
-                                | tei:lem/tei:persName/tei:pc
-                                | tei:lem/tei:persName/tei:choice
-                                | tei:lem/tei:placeName
-                                | tei:lem/tei:pc
-                                | tei:lem/tei:corr[@type = 'del']/text() 
-                                | tei:lem/tei:corr[@type = 'add']/text() 
-                                | tei:lem/tei:seg
-                                | tei:lem/tei:seg/tei:choice
-                                | tei:lem/tei:seg/tei:pc
-                                | tei:lem/tei:seg/tei:placeName
-                                | tei:lem/tei:seg/tei:persName"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:call-template name="vers"/>
+                       <xsl:apply-templates select="tei:lem"/>
                         <xsl:if test="tei:lem/@wit">
                             <xsl:element name="span">
                                 <xsl:attribute name="class">wit</xsl:attribute>
@@ -779,7 +776,7 @@
                         </xsl:if>
                         <xsl:text> ]</xsl:text>
                     </xsl:element>
-                    <xsl:for-each select="child::tei:rdg">
+                    <xsl:for-each select="tei:rdg">
                         <xsl:element name="li">
                             <xsl:apply-templates/>
                             <xsl:if test="./@cause">
@@ -814,13 +811,7 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template name="vers">
-        <xsl:for-each select="tei:lem/tei:lg/tei:l | tei:lem/tei:l ">
-            <li><xsl:apply-templates select="./text() | tei:app | tei:choice | tei:pc[@type='reg']/text() | tei:persName | tei:placeName"/></li>
-
-        </xsl:for-each>
-    </xsl:template>
-
+   
     <xsl:template match="tei:del[@type = 'exponctué']">
         <xsl:element name="span">
             <xsl:attribute name="class">exponc</xsl:attribute>
@@ -911,7 +902,6 @@
         </xsl:element>
     </xsl:template>
 
-
     <!-- fin éléments à affichier pour la visualisation normalisée -->
 
     <!-- Footer starts -->
@@ -956,22 +946,7 @@
     <!-- Header ends -->
 
     <!-- templates -->
-    <!-- règles de numérotation des vers -->
-
-    <!--     <xsl:template name="ol">
-        <xsl:element name="ol">
-            <xsl:attribute name="start">
-                <xsl:value-of select="./tei:l[1]/@n"/>
-            </xsl:attribute>
-            <xsl:attribute name="class">
-                <xsl:text>norm</xsl:text>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    
-    -->
-
+   
     <!-- attribution des id -->
     <xsl:template name="id">
         <xsl:attribute name="id">

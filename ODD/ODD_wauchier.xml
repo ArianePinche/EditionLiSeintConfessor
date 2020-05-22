@@ -629,8 +629,9 @@
                             proposant le même texte que celui de la variante concernée. Il se réfère
                             à l'identifiant déclarer dans le <gi>listWit</gi>.Quand un manuscrit
                             présente une omission à l’emplacement où devrait se trouve le lemme, le
-                            manque est signalé par un <att>cause</att> de valeur <hi>om.</hi> pour
-                                omission.<egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            manque est signalé par un <att>cause</att> de valeur <val>om.</val> pour
+                            une omission simple et par <val>lacune</val> pour une omission qui s'étant sur plusieurs vers ou un paragraphe.
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
                                     <lem> De seint Martin </lem>
                                     <rdg wit="#C2">Ci commence la vie de monseigneur seint
@@ -647,16 +648,15 @@
                                 <item><val>ajout</val> pour la variante qui consiste en des
                                     ajouts</item>
                                 <item><val>casAbs</val> pour les leçons où le texte propose une
-                                    variation sur l'expression du complet du nom avec ou sans
+                                    variation sur l'expression du complément du nom avec ou sans
                                     l'expression de la préposition "de".</item>
                                 <item><val>etym.</val> pour les leçons où la variante propose un
                                     terme identique avec un changement de base étymologique. Nous
                                     avons ainsi signalé les formes du verbe être étymologiques et
                                     les formes refaites sur *estare.</item>
                                 <item><val>erreur</val> pour les leçons où la variante propose une
-                                    leçon issue d'une erreur évidente du copiste.</item>
+                                    leçon issue d'une erreur évidente de copie.</item>
                                 <item><val>inv.</val> pour les inversions</item>
-                                <item><val>lacune</val> pour les leçons qui les leçons où le texte d'un témoin présente une lacune qui s'étant sur plusieurs vers ou un paragraphe.</item>
                                 <item><val>outil</val> pour les leçons où la variante consiste en la
                                     suppression, l'addition ou le remplacement d'un mot outil de
                                     type conjonction de coordination, adverbe de phrase, préposition
@@ -667,8 +667,8 @@
                                 <item><val>proPer</val> signale les leçons qui consistent en l'ajout
                                     d'un pronom personnel sujet</item>
                                 <item><val>sing.</val> pour les passages du pluriel
-                                    ausingulier</item>
-                                <item><val>tps.</val> pour les changement de temps ou de mode</item>
+                                    au singulier</item>
+                                <item><val>tps.</val> pour les changements de temps ou de mode</item>
                                 <item><val>réduction.</val> pour les endroits où le texte est
                                     réécrit de manière plus synthétique sans changement majeur de
                                     sens</item>
@@ -1124,13 +1124,13 @@
                                         <desc
                                             xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                                             >signale les leçons où le texte propose une variation
-                                            sur l'expression du complet du nom avec ou sans
+                                            sur l'expression du complément du nom avec ou sans
                                             l'expression de la préposition "de".</desc>
                                     </valItem>
                                     <valItem ident="erreur">
                                         <gloss>erreur</gloss>
                                         <desc>signale les leçons où la variante propose une leçon
-                                            issue d'une erreur évidente du copiste</desc>
+                                            issue d'une erreur évidente de copie</desc>
                                     </valItem>
                                     <valItem ident="outil">
                                         <gloss>Mots outils</gloss>
