@@ -51,7 +51,7 @@
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
         <xsl:result-document
-            href="/Users/arianepinche/Dropbox/these/corpus/html/{concat($witfile,'.html')}"
+            href="{concat('/Users/arianepinche/Dropbox/these/corpus/html/',$witfile,'.html')}"
             method="html" indent="yes">
             <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
             <xsl:variable name="adresse">
@@ -498,7 +498,6 @@
                                 </xsl:attribute>
                                 <xsl:attribute name="data-target">
                                     <xsl:text>.semantique</xsl:text>
-                                    <xsl:value-of select="@type"/>
                                 </xsl:attribute>
                                 <xsl:attribute name="data-category">
                                     <xsl:text>activation-legende</xsl:text>
@@ -519,8 +518,8 @@
                                         <xsl:text>checkbox</xsl:text>
                                     </xsl:attribute>
                                     <xsl:attribute name="data-target">
-                                        <xsl:text>.</xsl:text>
-                                        <xsl:value-of select="@type"/>
+                                        <xsl:variable name="type" select="translate(@type, '.', '')"/>
+                                        <xsl:value-of select="concat('.',$type)"/>
                                     </xsl:attribute>
                                     <xsl:attribute name="data-category">
                                         <xsl:text>activation-legende</xsl:text>
@@ -732,9 +731,9 @@
                 <xsl:text>linkapp </xsl:text>
                 <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>
                 <xsl:text> </xsl:text>
-                <xsl:value-of select="tei:rdg/@type"/>
-                <xsl:if test="tei:rdg[not(type)]">
-                    <xsl:text>semantique</xsl:text>
+                <xsl:value-of select="translate(tei:rdg/@type, '.', '')"/>
+                <xsl:if test="tei:rdg[not(@type)]">
+                    <xsl:text> semantique</xsl:text>
                 </xsl:if>
             </xsl:attribute>
             <xsl:attribute name="data-toggle">
