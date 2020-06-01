@@ -42,9 +42,9 @@
           <witness xml:id="M1" facs="https://gallica.bnf.fr/ark:/12148/btv1b9063234c/f236.item"
             >Paris, manuscrit fr. 23112, Bibliothèque nationale de France, <date notBefore="1200"
               notAfter="1300">13<hi rend="exp">e</hi> siècle</date></witness>
-          <witness xml:id="N1" facs="https://gallica.bnf.fr/ark:/12148/btv1b9007593v/f97.item">Paris,
-            Bibliothèque nationale de France, fr. 422, <date notBefore="1275" notAfter="1300"
-              >fin du 13<hi rend="exp">e</hi> siècle</date></witness>
+          <witness xml:id="N1" facs="https://gallica.bnf.fr/ark:/12148/btv1b9007593v/f97.item"
+            >Paris, Bibliothèque nationale de France, fr. 422, <date notBefore="1275"
+              notAfter="1300">fin du 13<hi rend="exp">e</hi> siècle</date></witness>
         </listWit>
         <msDesc xml:id="ms412">
           <msIdentifier>
@@ -104,8 +104,8 @@
             <death when="0397">397</death>
             <persName>Ambrose</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11888642v/PUBLIC">
-              <surname type="complex" >Saint Ambroise</surname>, évêque de Milan, père et
-              docteur de l'Église latine. Il est le maître à penser de <persName ref="#martin">saint
+              <surname type="complex">Saint Ambroise</surname>, évêque de Milan, père et docteur de
+              l'Église latine. Il est le maître à penser de <persName ref="#martin">saint
                 Martin</persName>.</note>
           </person>
           <person xml:id="anatolius">
@@ -124,9 +124,9 @@
             <birth when="0256">256</birth>
             <death when="0336">336</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12461403r/PUBLIC"
-              >Arius, prêtre d'<placeName ref="#alexandrie" >Alexandrie</placeName>,
-              fondateur de l'une des plus importantes hérésies christologiques, l'arianisme. Il est
-              excommunié et déclaré hérésiarque en 325 lors du concile de Nicée.</note>
+              >Arius, prêtre d'<placeName ref="#alexandrie">Alexandrie</placeName>, fondateur de
+              l'une des plus importantes hérésies christologiques, l'arianisme. Il est excommunié et
+              déclaré hérésiarque en 325 lors du concile de Nicée.</note>
           </person>
           <person xml:id="clarus">
             <persName>Clarus</persName>
@@ -148,24 +148,24 @@
           <person xml:id="jeanBaptiste">
             <persName>Jehan Baptiste</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
-              <surname type="complex" >Jean le Baptiste</surname>, personnage biblique,
-              prédicateur en Judée.</note>
+              <surname type="complex">Jean le Baptiste</surname>, personnage biblique, prédicateur
+              en Judée.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC" xml:id="jesus">
             <persName>Jesu Crist</persName>
             <birth when="0001">0</birth>
             <death when="0030">33</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-              <surname type="complex" >Jésus-Christ</surname>, messie. Les chrétiens le
-              reconnaissent comme le fils unique de Dieu.</note>
+              <surname type="complex">Jésus-Christ</surname>, messie. Les chrétiens le reconnaissent
+              comme le fils unique de Dieu.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC" xml:id="julien">
             <persName>Juliens</persName>
             <birth when="0331">331</birth>
             <death when="0363">363</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb121721673/PUBLIC">
-              <surname type="complex" >Flavius Claudius Julianus</surname>, nommé Julien
-              l’Apostat par la tradition chrétienne. Il doit son surnom à sa volonté de rétablir le
+              <surname type="complex">Flavius Claudius Julianus</surname>, nommé Julien l’Apostat
+              par la tradition chrétienne. Il doit son surnom à sa volonté de rétablir le
               polythéisme dans l’empire romain.</note>
           </person>
           <person xml:id="jupiter" corresp="https://catalogue.bnf.fr/ark:/12148/cb11980295k">
@@ -178,7 +178,7 @@
             <persName>Lidorius</persName>
             <note type="biographical">Lidoire (en latin Litorius), prédécesseur de <persName
                 ref="#martin">saint Martin</persName>, ordonné second évêque de <placeName
-                ref="#tours" >Tours</placeName> en 338.</note>
+                ref="#tours">Tours</placeName> en 338.</note>
           </person>
           <person xml:id="lupicin">
             <persName>Lupecines</persName>
@@ -190,20 +190,19 @@
             <birth when="0316">316</birth>
             <death when="0397-11-08">397</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-              <surname type="complex" >Saint Martin de Tours</surname>, né en Hongrie dans
-              la colonie romaine de <placeName ref="#sabarie" >Sabaria</placeName> en 316
-              et mort à <placeName ref="#conde" >Candes</placeName> en France le 8
-              novembre 397.</note>
+              <surname type="complex">Saint Martin de Tours</surname>, né en Hongrie dans la colonie
+              romaine de <placeName ref="#sabarie">Sabaria</placeName> en 316 et mort à <placeName
+                ref="#conde">Candes</placeName> en France le 8 novembre 397.</note>
           </person>
           <person xml:id="maximin">
             <persName>Maximien</persName>
             <birth when="0383">173</birth>
             <death when="0384-08-31">384</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12226174g/PUBLIC"
-              >Maximin, <surname type="complex" >Magnus Clemens Maximus</surname>,
-              officier romain à la tête des légions de Bretagne qui renversèrent en 383 l'<persName
-                ref="#gratien">empereur Gatien</persName>. Il régna sur l'Occident jusqu'en 388, où
-              il fut vaincu et tué par les troupes de Théodose.</note>
+              >Maximin, <surname type="complex">Magnus Clemens Maximus</surname>, officier romain à
+              la tête des légions de Bretagne qui renversèrent en 383 l'<persName ref="#gratien"
+                >empereur Gatien</persName>. Il régna sur l'Occident jusqu'en 388, où il fut vaincu
+              et tué par les troupes de Théodose.</note>
           </person>
           <person xml:id="mercurius">
             <persName>Mercurie</persName>
@@ -225,17 +224,17 @@
             <birth when="0353">353</birth>
             <death when="0431">431</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb12135745b/PUBLIC">
-              <surname type="complex" >Paulin de Nole</surname>, né à Bordeaux vers 353,
-              mort à Nole en 431, est un poète et un ecclésiastique latin contemporain de saint
-              Augustin et de <persName ref="#martin">Martin de Tours</persName> qui l'encouragea
-              dans sa vocation religieuse. Il a été évêque de Nole de 409 à sa mort.</note>
+              <surname type="complex">Paulin de Nole</surname>, né à Bordeaux vers 353, mort à Nole
+              en 431, est un poète et un ecclésiastique latin contemporain de saint Augustin et de
+                <persName ref="#martin">Martin de Tours</persName> qui l'encouragea dans sa vocation
+              religieuse. Il a été évêque de Nole de 409 à sa mort.</note>
           </person>
           <person xml:id="perpetuus">
             <death when="0490">490</death>
             <persName>Perpetuus</persName>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb160004274/PUBLIC"
               >Successeur de <persName ref="#martin">saint Martin</persName>, sixième évêque de
-                <placeName ref="#tours" >Tours</placeName> .</note>
+                <placeName ref="#tours">Tours</placeName> .</note>
           </person>
           <person xml:id="rufus">
             <persName>Rufus</persName>
@@ -250,8 +249,8 @@
             <persName>Severins</persName>
             <death when="0403">403</death>
             <note type="biographical" source="https://www.wikidata.org/wiki/Q569537">
-              <surname type="complex" >Saint Séverin de Cologne</surname>, évêque de
-              Cologne à la fin du <seg type="number">iv</seg>
+              <surname type="complex">Saint Séverin de Cologne</surname>, évêque de Cologne à la fin
+              du <seg type="number">iv</seg>
               <ex>e</ex> siècle.</note>
           </person>
           <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119257472/PUBLIC" xml:id="severus">
@@ -259,10 +258,9 @@
             <birth when="0363">363</birth>
             <death when="0420">420</death>
             <note type="biographical">
-              <surname type="complex" >Sulpice Sévère</surname>, avocat aquitain et
-              disciple de saint Martin. Il est l'auteur d'une Chronique universelle (403), de la <hi
-                rend="italic">Vita Martini</hi> (397) et des <hi rend="italic">Dialogues</hi>
-              (404).</note>
+              <surname type="complex">Sulpice Sévère</surname>, avocat aquitain et disciple de saint
+              Martin. Il est l'auteur d'une Chronique universelle (403), de la <hi rend="italic"
+                >Vita Martini</hi> (397) et des <hi rend="italic">Dialogues</hi> (404).</note>
           </person>
           <person xml:id="thedrades">
             <persName>Thedrades</persName>
@@ -273,7 +271,7 @@
             <birth when="0371">371</birth>
             <death when="0392-05-15">392</death>
             <note type="biographical" source="http://dbpedia.org/page/Valentinian_II">
-              <surname type="complex" >Valentinien <seg type="number">ii</seg>
+              <surname type="complex">Valentinien <seg type="number">ii</seg>
               </surname>, fils de Valentinien <seg type="number">i</seg>
               <ex>er</ex>, empereur romain de 375 à 392.</note>
           </person>
@@ -287,8 +285,8 @@
             <birth when="0315">315</birth>
             <death when="0367">367</death>
             <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119075091/PUBLIC">
-              <surname type="complex" >Hilaire de Poitiers</surname>, évêque de Poitiers,
-              écrivain latin chrétien. Théologien du <seg type="number">iv</seg>
+              <surname type="complex">Hilaire de Poitiers</surname>, évêque de Poitiers, écrivain
+              latin chrétien. Théologien du <seg type="number">iv</seg>
               <ex>e</ex> siècle, il fut un grand défenseur de l'orthodoxie nicéenne face à
               l'arianisme. Saint Martin le rejoignit en 356 et devint alors son élève.</note>
           </person>
@@ -297,7 +295,7 @@
       <settingDesc>
         <listPlace>
           <place corresp="http://pleiades.stoa.org/places/109321" xml:id="amiens">
-            <placeName >Amiens</placeName>
+            <placeName>Amiens</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -306,7 +304,7 @@
             <note>Ville du Nord de la France.</note>
           </place>
           <place corresp="https://pleiades.stoa.org/places/187290 " xml:id="aquile">
-            <placeName >Aquilee</placeName>
+            <placeName>Aquilee</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -315,13 +313,13 @@
             <note>Ville du Nord-Est de l'Italie, près de la Slovénie.</note>
           </place>
           <place xml:id="calitone">
-            <placeName >Calitone</placeName>
+            <placeName>Calitone</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Ville proche de Tours, non-identifiée.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/108751" xml:id="cologne">
-            <placeName >Coloigne</placeName>
+            <placeName>Coloigne</placeName>
             <country type="pays">Allemagne</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -330,7 +328,7 @@
             <note>Ville de Cologne, située en Allemagne de l'Ouest.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138305" xml:id="conde">
-            <placeName >Conde</placeName>
+            <placeName>Conde</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -339,31 +337,31 @@
             <note>Candes, actuelle Candes-Saint-Martin, située dans le Val de Loire.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119312786/PUBLIC" xml:id="espagne">
-            <placeName >Espaigne</placeName>
+            <placeName>Espaigne</placeName>
             <country type="pays">Espagne</country>
             <country type="civilisation">Occident</country>
             <note>Espagne.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb119314762/PUBLIC" xml:id="france">
-            <placeName >France</placeName>
+            <placeName>France</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>France.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11939598k/PUBLIC" xml:id="loire">
-            <placeName >Loire</placeName>
+            <placeName>Loire</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Fleuve français.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
-            <placeName >Lombardie</placeName>
+            <placeName>Lombardie</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <note>Région du Nord de l'Italie</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/383706" xml:id="milan">
-            <placeName >Melans</placeName>
+            <placeName>Melans</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -372,7 +370,7 @@
             <note>Milan, ville du Nord de l'Italie.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/167932" xml:id="saint-bernard">
-            <placeName >Mongiu</placeName>
+            <placeName>Mongiu</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -381,17 +379,17 @@
             <note>Col du Grand-Saint-Bernard dans les Alpes.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC" xml:id="orient">
-            <placeName >Orient</placeName>
+            <placeName>Orient</placeName>
             <country type="civilisation">Orient</country>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11942263m/PUBLIC" xml:id="pannonie">
-            <placeName >Pannone</placeName>
+            <placeName>Pannone</placeName>
             <country type="civilisation">Occident</country>
             <note>Pannonie, province romaine qui s'étend de l'Europe centrale au sud du
               Danube.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/109126" xml:id="paris">
-            <placeName >Paris</placeName>
+            <placeName>Paris</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -400,7 +398,7 @@
             <note>Ville française.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138656" xml:id="poitiers">
-            <placeName >Poitiers</placeName>
+            <placeName>Poitiers</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -409,13 +407,13 @@
             <note>Ville située dans le Centre-Est de la France.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11940201k/PUBLIC" xml:id="poitou">
-            <placeName >Poito</placeName>
+            <placeName>Poito</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Poitou, province française de l'Ouest.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-            <placeName >Rome</placeName>
+            <placeName>Rome</placeName>
             <country type="pays">Italie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -424,13 +422,13 @@
             <note>Ville italienne, capitale de l'empire romain d'occident.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11933501x/PUBLIC" xml:id="touraine">
-            <placeName >Toraine</placeName>
+            <placeName>Toraine</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Touraine, province du centre de la France.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
-            <placeName >Tors</placeName>
+            <placeName>Tors</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -439,7 +437,7 @@
             <note>Tours, ville du centre de la France.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/109410" xml:id="vangione">
-            <placeName >Worms</placeName>
+            <placeName>Worms</placeName>
             <country type="pays">Allemagne</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -449,13 +447,13 @@
           </place>
           <place xml:id="vienne"
             corresp="http://data.bnf.fr/fr/12041265/vienne__france__-_cours_d_eau_/">
-            <placeName >Viane</placeName>
+            <placeName>Viane</placeName>
             <country type="pays">France</country>
             <country type="civilisation">Occident</country>
             <note>Vienne, rivière française du bassin de la Loire.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/236666" xml:id="sabarie">
-            <placeName >Ysabbarie</placeName>
+            <placeName>Ysabbarie</placeName>
             <country type="pays">Hongrie</country>
             <country type="civilisation">Occident</country>
             <location>
@@ -479,8 +477,8 @@
                   <choice>
                     <orig>d</orig>
                     <reg>D</reg>
-                  </choice>e&esp;<persName ref="#martin"
-                    ><pc type="orig" ana="abreviation">.</pc>&s-saint;<pc type="orig" ana="abreviation">.</pc>&esp;<choice>
+                  </choice>e&esp;<persName ref="#martin"><pc type="orig" ana="abreviation"
+                      >.</pc>&s-saint;<pc type="orig" ana="abreviation">.</pc>&esp;<choice>
                       <orig>m</orig>
                       <reg>M</reg>
                     </choice>artin</persName></hi>
@@ -507,8 +505,7 @@
                       <orig>i</orig>
                       <reg>ï</reg>
                     </choice>r&esp;<lb/>&esperluette-et;entendre</lem>
-                  <rdg wit="#M1">Cascuns crestiens doit bien oïr et entendre volontier
-                    le bien</rdg>
+                  <rdg wit="#M1">Cascuns crestiens doit bien oïr et entendre volontier le bien</rdg>
                   <rdg wit="#N1">Cascuns crestiens doit bien entendre et volentiers oïr le
                     bien</rdg>
                 </app><pc type="reg" ana="coordination">,</pc>&#160;<lb/>car <app>
@@ -555,9 +552,9 @@
                   <lem>mal</lem>
                   <rdg wit="#E2" cause="om."/>
                 </app> li maus</lem>
-              <rdg wit="#G1">Chascuns doit volentiers oïr le mouteplïement et le bien entendre
-                qui puet venir de bones paroles, car par le bien savoir et retenir ne puet on
-                s'amender non. De bien nait bien et de mal li maux</rdg>
+              <rdg wit="#G1">Chascuns doit volentiers oïr le mouteplïement et le bien entendre qui
+                puet venir de bones paroles, car par le bien savoir et retenir ne puet on s'amender
+                non. De bien nait bien et de mal li maux</rdg>
             </app> si&esp;com dist l<pc type="reg">&apos;</pc>&e-maj;scri<lb/>ture.&esp;&p-maj;or ce <app>
               <lem>se</lem>
               <rdg wit="#F2" cause="om."/>
@@ -699,11 +696,12 @@
                   <lem>q<pc type="reg">&apos;</pc>il les enmeine</lem>
                   <rdg wit="#C3 #E2 #G1 #M1 #N1">qui les enmeine</rdg>
                 </app> en&esp;<lb/>infer <app>
-                  <lem>le<pc type="reg">&#160;</pc>grant chemin plenier</lem> 
+                  <lem>le<pc type="reg">&#160;</pc>grant chemin plenier</lem>
                   <rdg wit="#G1 #M1 #N1" type="ajout">le grant chemin plenier et la grant voie
-                    batue</rdg></app></lem>
-                <rdg wit="#F2" cause="om."/>
-                </app>&deuxpoints-point;&d-maj;e<pc type="reg">&#160;</pc>ce se&esp;<lb/><app>
+                    batue</rdg>
+                </app></lem>
+              <rdg wit="#F2" cause="om."/>
+            </app>&deuxpoints-point;&d-maj;e<pc type="reg">&#160;</pc>ce se&esp;<lb/><app>
               <lem>gardent</lem>
               <rdg wit="#D" type="temps">garderent</rdg>
               <rdg wit="#G1" type="temps">gardoient</rdg>
@@ -716,7 +714,7 @@
                   type="reg">&#160;</pc>&u-v;eilles
                 &esperluette-et;&pbarre-par;&esp;<lb/>geunes</lem>
               <rdg wit="#F2" cause="om."/>
-              <rdg wit="#G1" type="red.">et par martire</rdg> 
+              <rdg wit="#G1" type="red.">et par martire</rdg>
             </app><pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;par <app>
               <lem>toutes</lem>
               <rdg wit="#E2 #F2" cause="om."/>
@@ -866,7 +864,7 @@
                   <rdg wit="#G1">ce eüst il fait ançois</rdg>
                 </app>&deuxpoints-virg3;mes la<pc type="reg">&#160;</pc>&i-j;o&u-v;enece de<pc
                   type="reg">&#160;</pc>l<pc type="reg">&apos;</pc>aage <app>
-                    <lem>l<pc type="reg">&apos;</pc><app>
+                  <lem>l<pc type="reg">&apos;</pc><app>
                       <lem>en</lem>
                       <rdg wit="#E2" cause="om."/>
                     </app> de<lb/>tint &esperluette-et;<pc type="reg"> </pc>retraist</lem>
@@ -1094,8 +1092,7 @@
             </app>&#160;<app>
               <lem>par&esp;ce</lem>
               <rdg wit="#F2 #M1 #N1" cause="om."/>
-            </app>&#160;
-            <app>
+            </app>&#160; <app>
               <lem>a&u-v;oit <app>
                   <lem>il</lem>
                   <rdg wit="#N1" cause="om." type="proPer"/>
@@ -1440,7 +1437,7 @@
                   <lem>n<pc type="reg">&apos;</pc><app>
                       <lem>a&u-v;oient fait</lem>
                       <rdg wit="#M1" type="temps">faisoient</rdg>
-                    <rdg wit="#N1" type="temps">li faisoient</rdg>
+                      <rdg wit="#N1" type="temps">li faisoient</rdg>
                     </app>&#160;<app>
                       <lem>au po&u-v;re&esp;<lb/><app>
                           <lem>home</lem>
@@ -2266,7 +2263,8 @@
                   </choice>i</lem>
                 <rdg wit="#G1 #N1" type="outil">Et si</rdg>
               </app> sachiez qe &i-j;e <app>
-                <lem>trespercerai<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;<lb/>trespasserai</lem>
+                <lem>trespercerai<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;<lb/>trespasserai</lem>
                 <rdg wit="#E2 #F2">trespasserai</rdg>
                 <rdg wit="#G1">passerai et trespercerai</rdg>
                 <rdg wit="#M1">trespercherai et passerai</rdg>
@@ -3829,7 +3827,8 @@
                 </app>&esp;<app>
                   <lem>ausint</lem>
                   <rdg wit="#G1">assemblé</rdg>
-                  <rdg wit="#M1 #N1" type="ajout">assamblé en rendirent graces a nostre Segneur</rdg>
+                  <rdg wit="#M1 #N1" type="ajout">assamblé en rendirent graces a nostre
+                    Segneur</rdg>
                 </app></lem>
               <rdg wit="#F2" cause="om."/>
             </app>.<lb/></p>
@@ -4400,11 +4399,12 @@
               <lem>cheve&esp;<lb/>estoit</lem>
               <rdg wit="#G1 #M1 #N1" type="inv.">estoit cavee</rdg>
             </app><note>Cheve, chave : adj. creux</note>.&esp;Li seinz hom a&u-v;oit&esp;<app>
-              <lem wit="#G1 #M1"><corr type="add"><seg type="number">.iiii<hi rend="exp">xx</hi>.</seg></corr></lem>
-              <rdg wit="#C1 #C2 #C3 #D #E2 #F2"><seg type="number"><pc ana="number">.</pc>iiii</seg><pc ana="number">.</pc></rdg>
-              <rdg wit="#N1"><seg type="number">.iiii<hi rend="exp"
-                    >c</hi>.</seg></rdg>
-            </app><note>Dans le texte de Sulpice Sévère, saint Martin est accompagné de quatre-vingts disciples.</note>&esp;<app>
+              <lem><seg type="number"><pc ana="number">.</pc>iiii</seg><pc ana="number">.</pc></lem>
+              <rdg wit="#G1 #M1"><seg type="number">.xxiiii.</seg></rdg>
+              <rdg wit="#N1"><seg type="number">.iiii<hi rend="exp">c</hi>.</seg></rdg>
+            </app><note>Dans le texte de Sulpice Sévère, saint Martin est accompagné de
+              quatre-vingts disciples, comme on peut le trouver dans les leçons proposées par G<hi
+                rend="exp">1</hi> et M<hi rend="exp">1</hi>.</note>&esp;<app>
               <lem>freres</lem>
               <rdg wit="#G1 #M1 #N1">desciples</rdg>
             </app> qi&esp;<lb/><app>
@@ -4576,8 +4576,7 @@
                       <rdg wit="#F2">li feïst faire</rdg>
                     </app></lem>
                   <rdg wit="#G1">s'il n'avoit enfermeté</rdg>
-                </app>&#160;
-                <app>
+                </app>&#160; <app>
                   <lem>ou</lem>
                   <rdg wit="#F2" cause="om." type="outil"/>
                 </app>&#160;<app>
@@ -9221,8 +9220,8 @@
             </app>
             <pc type="orig" ana="coordination">.</pc>&esp;<app>
               <lem>&esperluette-et;entra en un ser&i-j;ant de&esp;la meson</lem>
-              <rdg wit="#G1 #M1 #N1" type="ajout">et encontra un sergent de la maison, si li entra el
-                cors</rdg>
+              <rdg wit="#G1 #M1 #N1" type="ajout">et encontra un sergent de la maison, si li entra
+                el cors</rdg>
             </app>&esp;<lb/>por <app>
               <lem>aemplir</lem>
               <rdg wit="#G1">acomplir</rdg>
@@ -9304,8 +9303,8 @@
             </app> rage qe <app>
               <lem>cil</lem>
               <rdg wit="#F2">il</rdg>
-            </app> demenoit&deuxpoints-virg3;<lb/>
-            mes <persName ref="#martin">seinz &m-maj;artins</persName>&#160;<app>
+            </app> demenoit&deuxpoints-virg3;<lb/> mes <persName ref="#martin">seinz
+              &m-maj;artins</persName>&#160;<app>
               <lem>li</lem>
               <rdg wit="#C3">le</rdg>
             </app>&esp;&u-v;int toz seus a&esp;l<pc type="reg">'</pc>en<lb/>contre <app>
@@ -9337,7 +9336,10 @@
             </app> toz coiz &esperluette-et;q<pc type="reg">'</pc>il ne se <app>
               <lem>me&utrem;st</lem>
               <rdg wit="#G1 #M1 #N1" type="ajout">meüst en nule maniere</rdg>
-            </app>&deuxpoints-virg3;<choice><orig>M</orig><reg>m</reg></choice>es&esp;<lb/>cil qi der&u-v;ez <app>
+            </app>&deuxpoints-virg3;<choice>
+              <orig>M</orig>
+              <reg>m</reg>
+            </choice>es&esp;<lb/>cil qi der&u-v;ez <app>
               <lem>ert</lem>
               <rdg wit="#G1 #M1 #N1" type="etym.">estoit</rdg>
             </app> comen&c-ced;a les denz <app>
@@ -11282,8 +11284,8 @@
                 biens</rdg>
               <rdg wit="#M1" type="ajout">car de lui vient trestoz li biens qi sont el siecle
                 terrien et trestous chilx el chiel lassus</rdg>
-              <rdg wit="#N1" type="ajout">car de lui vient tous li biens qui est el siecle terrien et
-                trestot cil del ciel lassus</rdg>
+              <rdg wit="#N1" type="ajout">car de lui vient tous li biens qui est el siecle terrien
+                et trestot cil del ciel lassus</rdg>
             </app>.&esp;<app>
               <lem><lg n="2">
                   <l n="1">Dont cil ser<lb/>ront mat&esp;&esperluette-et;confus<pc type="orig"
@@ -11846,8 +11848,8 @@
             </app> tenoit en&esp;sa&esp;mein une corne de buef&esp;<lb/>
             <cb n="d"/><app>
               <lem>toute sanglante</lem>
-              <rdg wit="#G1 #M1 #N1" type="ajout">toute sanglente. Dont moustra au saint home sa main
-                et son braz tout sanglent</rdg>
+              <rdg wit="#G1 #M1 #N1" type="ajout">toute sanglente. Dont moustra au saint home sa
+                main et son braz tout sanglent</rdg>
             </app><pc type="reg" ana="coordination">,</pc>&esp;<choice>
               <orig>S</orig>
               <reg>s</reg>
@@ -12208,8 +12210,8 @@
                   <rdg wit="#N1">dit et</rdg>
                 </app>&#160;&neuf-con;t&eacc;</lem>
               <rdg wit="#F2" cause="om."/>
-            </app>&esp;<lb/>qe<persName ref="#martin"> seinz &m-maj;artins</persName>
-            sa&u-v;oit les choses <app>
+            </app>&esp;<lb/>qe<persName ref="#martin"> seinz &m-maj;artins</persName> sa&u-v;oit les
+            choses <app>
               <lem><app>
                   <lem>de&u-v;&atilde-an;t</lem>
                   <rdg wit="#F2" type="outil">avant</rdg>
@@ -12230,8 +12232,7 @@
               <lem>car <app>
                   <lem>tout</lem>
                   <rdg wit="#C2 #C3 #D #E2 #F2 #G1 #M1 #N1" cause="om."/>
-                </app>&#160;
-                <app>
+                </app>&#160; <app>
                   <lem>cest afaire</lem>
                   <rdg wit="#F2" type="red.">ce</rdg>
                 </app>&esp;<lb/>a&u-v;oit il&esp;<app>
@@ -12250,8 +12251,7 @@
                   <rdg wit="#N1" type="inv.">dit et conté</rdg>
                 </app></lem>
               <rdg wit="#G1" type="inv.">dit as ses freres et conté</rdg>
-            </app><pc type="orig" ana="segPrep">:</pc>&#160;
-            <app>
+            </app><pc type="orig" ana="segPrep">:</pc>&#160; <app>
               <lem>en&esp;tel ma<lb/>niere <app>
                   <lem>com</lem>
                   <rdg wit="#N1" type="outil">que</rdg>
@@ -13298,8 +13298,7 @@
                 </app>&esp;<app>
                   <lem>mo&u-v;oit</lem>
                   <rdg wit="#E2">esmouvoit</rdg>
-                </app>&#160;
-                <app>
+                </app>&#160; <app>
                   <lem>ou</lem>
                   <rdg wit="#G1">li liex ou</rdg>
                 </app>&esp;il estoient</lem>
@@ -14239,7 +14238,8 @@
                 </app> ce&esp;<lb/>les doit l<pc type="reg">'</pc>en tenir <app>
                   <lem>a&esp;&u-v;eritables</lem>
                   <rdg wit="#G1" type="ajout">a veritables non mie a fables</rdg>
-                  <rdg wit="#M1 #N1" type="ajout">a veritables ne mie a menchoignes ne a fables</rdg>
+                  <rdg wit="#M1 #N1" type="ajout">a veritables ne mie a menchoignes ne a
+                    fables</rdg>
                 </app>&deuxpoints-virg3;<choice>
                   <orig>C</orig>
                   <reg>c</reg>
@@ -16092,7 +16092,8 @@
                   <lem><app>
                       <lem>del</lem>
                       <rdg wit="#N1">de tel</rdg>
-                    </app> tra&u-v;ail sosfrir n<pc type="reg">'</pc>estoit&esp;<lb/>mie&#160;&u-v;eincuz</lem>
+                    </app> tra&u-v;ail sosfrir n<pc type="reg"
+                    >'</pc>estoit&esp;<lb/>mie&#160;&u-v;eincuz</lem>
                   <rdg wit="#G1">n'estoit encor mie lassez de travail soffrir</rdg>
                   <rdg wit="#N1">de tel travail n'estoit mie vencus pour travail souffrir</rdg>
                 </app><pc type="orig" ana="coordination">.</pc>&esp;ne de&esp;la mort <app>
@@ -16275,7 +16276,8 @@
                 </app>&esp;lui <app>
                   <lem>estoit &u-v;enuz li&esp;<lb/>proioit</lem>
                   <rdg wit="#D #E2 #G1 #M1 #N1" type="plur.">estoient venu li prioient</rdg>
-                </app><pc type="orig" ana="completive">.</pc>&esp;q<pc type="reg">'</pc>il se lessast <app>
+                </app><pc type="orig" ana="completive">.</pc>&esp;q<pc type="reg">'</pc>il se
+                lessast <app>
                   <lem>torner</lem>
                   <rdg wit="#M1 #N1">retorner</rdg>
                 </app>&#160;<app>
@@ -16292,9 +16294,10 @@
                   <rdg wit="#M1" type="outil">et il</rdg>
                   <rdg wit="#N1" type="ajout">et il lour</rdg>
                 </app> disoit</lem>
-                <rdg wit="#F2" cause="om."/>
-              </app><pc type="reg"> : </pc>
-                <said who="#martin"><app><lem><choice>
+              <rdg wit="#F2" cause="om."/>
+            </app><pc type="reg"> : </pc>
+            <said who="#martin"><app>
+                <lem><choice>
                     <orig>m</orig>
                     <reg>M</reg>
                   </choice>i <app>
@@ -16319,8 +16322,8 @@
                     <rdg wit="#G1" type="inv.">la voie qu'il doit plus prestement a nostre Seigneur
                       aler</rdg>
                   </app></lem>
-              <rdg wit="#F2" cause="om."/>
-                </app>.</said><lb/>
+                <rdg wit="#F2" cause="om."/>
+              </app>.</said><lb/>
           </p>
         </div>
       </div>
@@ -16433,7 +16436,8 @@
               <rdg wit="#F2" cause="om."/>
             </app>&#160;<app>
               <lem>en&esp;fu &pbarre-par;&esp;les meins des seinz angeles por<lb/>tez</lem>
-              <rdg wit="#D #E2 #G1 #N1" type="inv.">en fu portez par les mains des sainz angles</rdg>
+              <rdg wit="#D #E2 #G1 #N1" type="inv.">en fu portez par les mains des sainz
+                angles</rdg>
               <rdg wit="#F2">par les sains angles fu en paradis portez</rdg>
             </app>.&esp;Cil qi i&esp;furent <app>
               <lem>tesmoignierent</lem>
@@ -17580,10 +17584,12 @@
               <rdg wit="#N1">de ceste mortel vie</rdg>
             </app><pc type="orig" ana="segPrep">.</pc>&esp;ot&esp;<pc ana="number">.</pc><seg
               type="number">cccc</seg><pc ana="number">.</pc>&esp;anz et&esp;<app>
-                <lem wit="#M1 #N1"><corr type="add"><seg type="number">.xii.</seg></corr></lem>
+              <lem><pc ana="number">.</pc><seg type="number">xiii</seg><pc ana="number">.</pc></lem>
               <rdg wit="#G1"><seg type="number">.xxii.</seg></rdg>
-              <rdg wit="#C1 #C2 #C3 #D #E2 #F2"><pc ana="number">.</pc><seg type="number">xiii</seg><pc ana="number">.</pc></rdg>
-              </app><note>Dans la source latine, on trouve le chiffre 412 (voir <hi rend="italic">Historia francorum</hi>, I, 48)</note>&esp;<app>
+              <rdg wit="#M1 #N1"><seg type="number">.xii.</seg></rdg>
+            </app><note>Dans la source latine, on trouve le chiffre 412 (voir <hi rend="italic"
+                >Historia francorum</hi>, I, 48), comme dans les leçons proposées par M<hi
+                rend="exp">1</hi> et N<hi rend="exp">1</hi>.</note>&esp;<app>
               <lem>tout par <app>
                   <lem>nombre</lem>
                   <rdg wit="#M1 #N1">conte</rdg>
@@ -17798,7 +17804,8 @@
             </app>&esp;<app>
               <lem>&esperluette-et;entendi</lem>
               <rdg wit="#F2" cause="om."/>
-            </app>&deuxpoints-virg4;il apela&esp;<lb/>son arcediacre&point-virg3;si li demanda s<pc type="reg">'</pc><app>
+            </app>&deuxpoints-virg4;il apela&esp;<lb/>son arcediacre&point-virg3;si li demanda s<pc
+              type="reg">'</pc><app>
               <lem>il</lem>
               <rdg wit="#N1" cause="om." type="proPer"/>
             </app>&#160;<app>
@@ -17816,8 +17823,8 @@
             </app>&esp;respondi<pc type="orig" ana="completive">:</pc>&esp;<lb/>q<pc type="reg"
               >'</pc>il n<pc type="reg">'</pc>ooit <app>
               <lem>ne entendoit</lem>
-                <rdg wit="#C3 #D #E2 #G1 #M1">ne n'entendoit</rdg>
-                <rdg wit="#F2" cause="om."/>
+              <rdg wit="#C3 #D #E2 #G1 #M1">ne n'entendoit</rdg>
+              <rdg wit="#F2" cause="om."/>
             </app> nule <app>
               <lem>creature</lem>
               <rdg wit="#M1 #N1">cose</rdg>
@@ -18615,15 +18622,15 @@
               <lem>&esperluette-et;</lem>
               <rdg wit="#F2 #N1" type="outil">si</rdg>
             </app><app>
-                  <lem>mout&esp;<lb/><app>
-                      <lem>s<pc type="reg">'</pc>en</lem>
-                      <rdg wit="#E2">se</rdg>
-                    </app>&#160;<app>
-                      <lem>esmer&u-v;ellierent</lem>
-                      <rdg wit="#E2" type="temps">esmerveilloient</rdg>
-                    </app>&point-virg3;si</lem>
-                   <rdg wit="#F2 #N1" cause="om."/>
-                  <rdg wit="#G1">tout droitement</rdg>
+              <lem>mout&esp;<lb/><app>
+                  <lem>s<pc type="reg">'</pc>en</lem>
+                  <rdg wit="#E2">se</rdg>
+                </app>&#160;<app>
+                  <lem>esmer&u-v;ellierent</lem>
+                  <rdg wit="#E2" type="temps">esmerveilloient</rdg>
+                </app>&point-virg3;si</lem>
+              <rdg wit="#F2 #N1" cause="om."/>
+              <rdg wit="#G1">tout droitement</rdg>
             </app>&#160;<app>
               <lem>noterent</lem>
               <rdg wit="#N1">volrent savoir</rdg>
@@ -18720,20 +18727,20 @@
               <rdg wit="#F2 #M1">avec les angeles</rdg>
               <rdg wit="#N1">ensamble les angles</rdg>
             </app><pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;<app>
-                  <lem>la mere nostre &s-maj;ignor&#160;<app>
-                      <lem><persName ref="#jesus"><choice>
-                            <orig>i</orig>
-                            <reg>J</reg>
-                          </choice>esu&esp;&c-maj;rist</persName></lem>
-                      <rdg wit="#F2" cause="om."/>
-                    </app></lem>
-                  <rdg wit="#G1">ma Dame sainte Marie</rdg>
-                  <rdg wit="#M1">la haute Dame me Dame sainte Marie</rdg>
-                  <rdg wit="#N1">la haute Dame sainte Marie</rdg>
-                </app>&#160;<app>
-                  <lem>qi ro&itrem;<lb/>ne est de tote creature</lem>
+              <lem>la mere nostre &s-maj;ignor&#160;<app>
+                  <lem><persName ref="#jesus"><choice>
+                        <orig>i</orig>
+                        <reg>J</reg>
+                      </choice>esu&esp;&c-maj;rist</persName></lem>
                   <rdg wit="#F2" cause="om."/>
-                </app>&#160;<app>
+                </app></lem>
+              <rdg wit="#G1">ma Dame sainte Marie</rdg>
+              <rdg wit="#M1">la haute Dame me Dame sainte Marie</rdg>
+              <rdg wit="#N1">la haute Dame sainte Marie</rdg>
+            </app>&#160;<app>
+              <lem>qi ro&itrem;<lb/>ne est de tote creature</lem>
+              <rdg wit="#F2" cause="om."/>
+            </app>&#160;<app>
               <lem>ensamble o&esp;la&esp;&neuf-con;pagnie&esp;<lb/>des seintes &u-v;irges</lem>
               <rdg wit="#F2 #M1">avec la compaignie des virgenes</rdg>
               <rdg wit="#G1" type="red.">et avec les vierges</rdg>
@@ -18800,8 +18807,8 @@
             <rdg wit="#D #M1 #N1" cause="om."/>
             <rdg wit="#F2">La translation saint Martin</rdg>
           </app>
-          <note>Les manuscrits M<hi rend="exp">1</hi> et N<hi rend="exp">1</hi> ne contiennent pas la
-          translation</note></head>
+          <note>Les manuscrits M<hi rend="exp">1</hi> et N<hi rend="exp">1</hi> ne contiennent pas
+            la translation</note></head>
         <!-- De virtutibus Sancti Martini de Grégoire de Tours I, 6 -->
         <div type="section" n="1">
           <p><app>
@@ -19041,10 +19048,13 @@
                   <lem>me&itrem;sme</lem>
                   <rdg wit="#G1" cause="om."/>
                 </app> nuit <app>
-                      <lem>re&u-v;ellier&etilde-en;t</lem>
-                      <rdg wit="#D #E2 #F2">veillierent</rdg>
-                    <rdg wit="#G1">travaillierent</rdg>
-                    </app>&esp;<lb/><app><lem>il</lem><rdg wit="#G1" cause="om." type="proPer"/></app>&esp;<app>
+                  <lem>re&u-v;ellier&etilde-en;t</lem>
+                  <rdg wit="#D #E2 #F2">veillierent</rdg>
+                  <rdg wit="#G1">travaillierent</rdg>
+                </app>&esp;<lb/><app>
+                  <lem>il</lem>
+                  <rdg wit="#G1" cause="om." type="proPer"/>
+                </app>&esp;<app>
                   <lem>toute</lem>
                   <rdg wit="#D #E2 #F2" cause="om."/>
                 </app>&#160;<app>
@@ -19532,8 +19542,8 @@
                   <reg>n</reg>
                 </choice>.</lem>
               <rdg wit="#M1 #N1" cause="lacune"/>
-            </app><note>Le manuscrit F<hi rend="exp">2</hi> présente à cet endroit en guise d'exciplit la rubrique
-              suivante : "Ci fine la Vie saint Martin".</note><lb/>
+            </app><note>Le manuscrit F<hi rend="exp">2</hi> présente à cet endroit en guise
+              d'exciplit la rubrique suivante : <said>Ci fine la Vie saint Martin</said>.</note><lb/>
           </p>
         </div>
       </div>
