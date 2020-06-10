@@ -227,6 +227,24 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+    
+    <xsl:template match="tei:corr">
+        <xsl:choose>
+            <xsl:when test="@type = 'add'">
+                <xsl:if test="ancestor::tei:l">
+                    <xsl:text>\relax </xsl:text>
+                </xsl:if>
+                <xsl:text>[</xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>]</xsl:text>
+            </xsl:when>
+            <xsl:when test="@type = 'del'">
+                <xsl:text>(</xsl:text>
+                <xsl:apply-templates/>
+                <xsl:text>)</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
 
     <!--
     <xsl:template match="tei:del[@type='exponctué']">\dotuline{<xsl:apply-templates/>}</xsl:template>
@@ -356,7 +374,15 @@
     <xsl:template match="tei:cb" mode="lemma"/>
 
     <xsl:template match="tei:corr" mode="lemma">
-        <xsl:apply-templates mode="#current"/>
+        <xsl:choose>
+            <xsl:when test="@type = 'add'">
+                <xsl:if test="ancestor::tei:l">
+                    <xsl:text>\relax </xsl:text>
+                </xsl:if>
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:when test="@type = 'del'"/>
+        </xsl:choose>
     </xsl:template>
 
     <!-- fin mise en page -->
