@@ -731,10 +731,12 @@
                 <xsl:text>linkapp </xsl:text>
                 <xsl:value-of select="child::node()/replace(@wit, '#', '')"/>
                 <xsl:text> </xsl:text>
-                <xsl:value-of select="translate(tei:rdg/@type, '.', '')"/>
-                <xsl:if test="tei:rdg[not(@type)]">
+                <xsl:for-each select="tei:rdg">
+                <xsl:value-of select="translate(./@type, '.', '')"/>
+                <xsl:if test=".[not(@type)]">
                     <xsl:text> semantique</xsl:text>
                 </xsl:if>
+                </xsl:for-each>
             </xsl:attribute>
             <xsl:attribute name="data-toggle">
                 <xsl:text>note</xsl:text>
