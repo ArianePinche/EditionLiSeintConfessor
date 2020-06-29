@@ -1,0 +1,242 @@
+---
+title: "Stemma_saintMartin"
+author: "JB Camps"
+date: "20/04/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+# Load data
+data = read.csv(file = "SMttms.csv", header = TRUE, row.names = 1, sep=";")
+data = as.matrix(data)
+# Load package
+library(stemmatology)
+cite("stemmatology")
+vignette("stemmatology")
+```
+
+## Expérimentations sur des tranches
+
+```{r}
+# Sampling
+d = data[1:400,]
+# Removing problematic VL
+d = d[-188,]
+PCC(d, layout_as_stemma = TRUE) # treshold 0.025
+
+# Shorter sample
+d = data[1:100,]
+# Removing problematic VL
+# 37 vs. 87
+d = d[-37,]
+PCC(d, layout_as_stemma = FALSE) # treshold, 0.1
+PCC(d, layout_as_stemma = TRUE, threshold = 0.1, ask = FALSE) # treshold, 0.1
+
+# Shorter sample
+d = data[1:200,]
+# Removing problematic VL
+d = d[-37,]
+PCC(d, layout_as_stemma = FALSE) # treshold, 0.058, Witness E2
+PCC(d, layout_as_stemma = TRUE, threshold = 0.1, ask = TRUE) # treshold, 0.058
+```
+
+
+## Autres tranches
+
+```{r}
+# Sampling
+d = data[2200:2400,]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.03
+
+# Sampling
+d = data[2200:2600, !colnames(data) %in% 'E2']
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.02
+
+
+# Sampling
+d = data[2200:2800, !colnames(data) %in% 'E2']
+# Removing problematic VL
+d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.02
+# -> pourrait faire une base pour regarder les modèles
+
+
+# En réinjectant E2
+d = data[2200:2800, ]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.015
+
+d = data[3200:3700, ]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.02
+# VOILÀ UNE AUTRE BASE POSSIBLE POUR REGARDER LA CONFIGURATION DES VARIANTES DES SUBARCHÉTYPES
+```
+
+
+## Sans E2
+
+```{r}
+# Sampling and removing problematic ms. E2
+d = data[1:200, -5]
+# Removing 157
+d = d[-157,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.06
+PCC(d, layout_as_stemma = TRUE, threshold = 0.06, ask = FALSE)
+```
+
+## Sans F2
+
+```{r}
+# Sampling and removing problematic ms. F2
+d = data[1:400, !colnames(data) %in% 'F2']
+# Removing 157
+d = d[-157,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.03
+PCC(d, layout_as_stemma = TRUE, threshold = 0.06, ask = FALSE)
+```
+
+## Sans E2 ni F2, pour affiner la place de D
+
+```{r}
+# Problèmes dans cette portion
+# Test sans E2 et F2, pour avoir une vue de la place de D dans la première famille
+d = data[2200:2800, !colnames(data) %in% c('E2','F2')]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.02, W D
+
+# Pas dans celle-là
+# Test sans E2 et F2, pour avoir une vue de la place de D dans la première famille
+d = data[3200:3700, !colnames(data) %in% c('E2','F2')]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.04
+# VOILÀ UNE BASE QUI POURRAIT SERVIR À AFFINER HAUT ARBRE EN REGARDANT LEÇONS
+
+
+# Du coup, on est gourmands
+# Test sans E2 et F2, pour avoir une vue de la place de D dans la première famille
+d = data[3000:3700, !colnames(data) %in% c('E2','F2')]
+# Removing problematic VL
+#d = d[-188,]
+PCC(d, layout_as_stemma = FALSE) # treshold 0.02
+# VOILÀ UNE BASE QUI POURRAIT SERVIR À AFFINER HAUT ARBRE EN REGARDANT LEÇONS
+
+
+
+```
+
+## Sur une sélection de lieux variants
+
+### Approche globale
+
+```{r}
+# Load data
+data = read.csv(file = "SM_Selection.csv", header = TRUE, row.names = 1, sep=";")
+data = as.matrix(data)
+```
+
+```{r paged.print=TRUE}
+# Récupérons une liste complète des conflits
+prelim = PCC.Exploratory(data)
+prelim$conflictsTotal[order(prelim$conflictsTotal[,1], decreasing = TRUE),]
+# Et c'est parti
+d = data[-303,]
+exploration = PCC.Exploratory(d) # treshold = 0.05
+
+exploration$conflictsTotal[order(exploration$conflictsTotal[,1], decreasing = TRUE),]
+
+
+explor2 = PCC.Exploratory(exploration$database) #threshold 0.11
+# On peut tenter aussi 0.12, qui conserve le LV 629.
+
+#Test sans F2, et sans les LV 548 et 604 (seuls problématiques après le retrait de F2)
+PCC(explor2$database[!rownames(explor2$database) %in% c("548","604"), !colnames(explor2$database)%in% "F2"], layout_as_stemma = FALSE)
+
+# Analyse des conflits impliquant F2
+PCC.Exploratory(explor2$database[!rownames(explor2$database) %in% c("548","604"), ]) # Threshold de 0.10 pour faire ressortir les groupements.
+#Ou 0.09, si on conserve le LV 629
+
+# Analyse avec les lieux variants périphériques
+res = PCC(explor2$database[!rownames(explor2$database) %in% c("548","604"), ], layout_as_stemma = FALSE)
+# Analyse avec les lieux variants centraux
+res2 = PCC(explor2$database[!rownames(explor2$database) %in% 
+                              c("548", "604", "67", "75", "81", "106", "179", "322", "323", "491", "493", "499", "597", "700", "701", "704", "436"), ], layout_as_stemma = TRUE) # et en option 629
+```
+
+```{r}
+# Récupération des leçons des archétypes
+resSansF2 = PCC(explor2$database[!rownames(explor2$database) %in% c("548","604"), !colnames(explor2$database)%in% "F2"], layout_as_stemma = FALSE)
+
+reconstr = resSansF2$models
+# et on ajoute F2
+reconstr = cbind(reconstr, d[rownames(reconstr), "F2"])
+colnames(reconstr)[6] = "F2"
+
+# Et on ne garde que les principaux archétypes et F2
+reconstr_arch = reconstr[, c("{C1C3}", "{C2{DE2}}", "{G1{M1N}}", "F2")]
+subarchs_seuls = reconstr[, c("{C1C3}", "{C2{DE2}}", "{G1{M1N}}")]
+# Et maintenant, on veut virer les lignes où il n'y a pas de divergences entre les principaux archétypes
+# on ignore les NA dans le compte des leçons différentes, ce qui biaise un peu, car il doit y en avoir pas mal dans G1M1N dues à la réécriture massive de G1.
+interesting = vector()
+for (i in 1:nrow(subarchs_seuls)){
+  if(length(levels(as.factor(subarchs_seuls[i,]))) > 1){
+    interesting = c(interesting, rownames(subarchs_seuls)[i])
+  }
+}
+reconstr_arch[interesting,]
+```
+
+```{r}
+selec_VL = reconstr_arch[interesting,]
+# Now let's try to reconstruct automatically
+library("XML")
+doc = xmlParse(file = "SaintMartin_selection/SM_selection_Final.xml")
+#ns = xmlNamespaceDefinitions(doc)
+ns = c(tei = "http://www.tei-c.org/ns/1.0")
+output = list()
+for(i in 1:nrow(selec_VL)){
+  #mon_xpath = paste("//tei:app[@n = ", "'708'" ,"]" )
+  mon_xpath = paste("//tei:app[@n = '", rownames(selec_VL)[i] ,"']/*", sep = "" )
+  VL = as.factor(selec_VL[i,])
+  omissions = VL[VL == "0", drop = TRUE]
+  VL = VL[!VL == "0", drop = TRUE]
+  # get path for each reading
+  mes_paths = paste(mon_xpath, "[not(@cause='om.')][", levels(VL), "]", sep="")
+  # get texts
+  vars = xmlValue(xpathApply(doc, mes_paths, namespaces = ns))
+  # print all
+  sigla = vector()
+  for(j in 1:length(levels(VL))){
+   sigla = c(sigla, paste(labels(VL[VL == levels(VL)[j]]), collapse = " "))
+  }
+  reads = paste(vars, sigla)
+  if(length(omissions) > 0){
+    reads = c(reads, paste("om.", paste(labels(omissions), collapse = " ")))
+  }
+  output[rownames(selec_VL)[i]] = list(reads)
+}
+#write(output, file = "reconstruction.txt")
+cat(capture.output(print(output), file="test.txt"))
+```
+
+
+
+### Tests sans F2 ni G1
+
+```{r}
+d2 = data[!rownames(data) %in% "303", !colnames(data)%in% c("F2", "G1")]
+test = PCC.Exploratory(d2)
+PCC.Stemma(test$database)
+```

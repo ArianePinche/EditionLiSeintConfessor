@@ -1,0 +1,3502 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de saint Martin</title>
+            <author>Wauchier de Denain</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Ariane Pinche</publisher>
+            <availability default="false">
+               <licence>creative commons CC BY-NC-SA 3.0 FR</licence>
+            </availability>
+            <date>2015-2021</date>
+            <idno>jns.915.jns1856.ciham-fro1</idno>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <listWit>
+               <witness xml:id="C1" corresp="#ms412"
+                  facs="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f215.item">Paris, manuscrit
+                  fr. 412, Bibliothèque nationale de France, <date when="1285">1285</date>
+               </witness>
+               <witness xml:id="C2"
+                  facs="https://gallica.bnf.fr/ark:/12148/btv1b107209247/f144.item">Paris, manuscrit
+                  fr. 411, Bibliothèque nationale de France, <date notBefore="1300" notAfter="1400"
+                        >14<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
+                     notBefore="1250" notAfter="1300">13<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="D" facs="https://gallica.bnf.fr/ark:/12148/btv1b9061254h/f128.item"
+                  >Paris, manuscrit fr. 17229, Bibliothèque nationale de France, <date
+                     notBefore="1200" notAfter="1300">13<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="E2"
+                  facs="http://www.e-codices.unifr.ch/fr/bge/cl0102/183r/0/Sequence-1627">Genêve,
+                  Bibliothèque de Genève, comites Latentes 102, début du <date notBefore="1300"
+                     notAfter="1325">14<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="F2" facs="https://gallica.bnf.fr/ark:/12148/btv1b90639749/f314.item"
+                  >Paris, manuscrit fr. 23117, Bibliothèque nationale de France, <date
+                     notBefore="1200" notAfter="1300">13<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="G1">Bruxelles, manuscrit 9225 bibliothèque royale, <date
+                     notBefore="1300" notAfter="1400">14<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="M1" facs="https://gallica.bnf.fr/ark:/12148/btv1b9063234c/f236.item"
+                  >Paris, manuscrit fr. 23112, Bibliothèque nationale de France, <date
+                     notBefore="1200" notAfter="1300">13<hi rend="exp">e</hi> siècle</date>
+               </witness>
+               <witness xml:id="N" facs="https://gallica.bnf.fr/ark:/12148/btv1b9007593v/f97.item"
+                  >PARIS, Bibliothèque nationale de France, français 422, <date notBefore="1275"
+                     notAfter="1300">fin du 13<hi rend="exp">e</hi> siècle</date>
+               </witness>
+            </listWit>
+            <msDesc xml:id="ms412" status="draft">
+               <msIdentifier>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>fr. 00412</idno>
+               </msIdentifier>
+               <head>
+                  <title>De seint Martin</title>
+                  <origDate>1285</origDate>
+                  <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
+                     notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
+                     la base Jonas-IRHT/CNRS (permalink : <ref
+                        target="http://jonas.irht.cnrs.fr/manuscrit/45533"
+                        >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
+                     03/07/2015 </note>
+               </head>
+               <msContents>
+                  <msItemStruct>
+                     <locus>fol.103-fol.114</locus>
+                     <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
+                        entendre</incipit>
+                     <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des
+                        siecles. Amen.</explicit>
+                  </msItemStruct>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2">mout doit on   doucement   et volentiers  
+                  le bien oïr   et entendre ,  car par le   bien savoir   et retenir puet l ' en
+                  sovent a   bien venir.   Qui bien   ne   seit ne   bien n ' entent   de bien faire
+                  n ' a   nul talent. Mes del bien nest sovent li   biens :,  del mal li maus</lem>
+               <rdg wit="#G1">Chascuns doit volentiers oïr le mouteplïement et le bien entendre qui
+                  puet venir de bones paroles, car par le bien savoir et retenir ne puet on
+                  s'amender non. De bien nait bien et de mal li maux</rdg>
+               <rdg wit="#M1 #N">Chascuns crestiens doit bien oïr et entendre le bien volentiers car
+                  par le bien oïr et savoir et retenir puet on souvent a bien venir. Qi bien ne set
+                  ne bien n’entent il n’a nul talent de bien faire. Mais del bien naist sovent li
+                  biens del mal li mau</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">petit avoir  fait</lem>
+               <rdg wit="#N">petit de bien fait</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et aisé de l ' avoir de cest siecle</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">humilité</lem>
+               <rdg wit="#E2" type="ajout">debonnereté ne humilité</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">d ' angoisse et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 ">richesces et avoirs</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1">d'avoir et</rdg>
+               <rdg wit="#N">avoir</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Ce fet li deables qi en tel maniere les a
+                  laciez et pris   q ' il les enmeine en   infer le   grant chemin plenier</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">deables</lem>
+               <rdg wit="#M1 #N">anemi</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 ">et pris</lem>
+               <rdg wit="#E2" type="ajout">et pris en tele maniere</rdg>
+               <rdg wit="#G1" cause="om."/>
+               <rdg wit="#M1 #N">et loiés</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">le   grant chemin plenier</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">le grant chemin plenier et la grant voie
+                  batue</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">et par griez tormenz   et par   veilles et par
+                    geunes</lem>
+               <rdg wit="#G1" type="red.">et par martire</rdg>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">tormenz</lem>
+               <rdg wit="#M1 #N">martires</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">A   ce regarderent</lem>
+               <rdg wit="#G1 #M1 #N">a ce pristrent garde</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">li   seint   confessors   et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">dont ci comence la vie</lem>
+               <rdg wit="#G1">dont je vous dirai la vie</rdg>
+               <rdg wit="#M1">dont je vos conterai ichi la vie</rdg>
+               <rdg wit="#N">dont jou commencerai la vie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">avoit non</lem>
+               <rdg wit="#G1">estoit apelez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">comença il a aler</lem>
+               <rdg wit="#F2" type="red.">et aloit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">.xii.</lem>
+               <rdg wit="#M1 #N">
+                  <seg type="number">.xv.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et a   aler en hermitage   et si eüst il
+                  fait :,  mes la   jovenece de   l ' aage l ' en detint et  retraist de ce q ' il
+                  avoit soventes   foies en sa pensee</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M #N">detint</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">retraist</lem>
+               <rdg wit="#G1 #M1 #N">fist atargier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Et neporqant en sa   jovenece fu   il si
+                  ententis entor seinte   yglisse   q ' il i   porpensa en s ' enfance ce q ' il
+                  aempli mout docement</lem>
+               <rdg wit="#G1">Et nequedent il fu molt entendanz a sainte eglise et pourpensa tres
+                  s'enfance ce qu'il aempli durement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et neporqant en sa   jovenece</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">docement</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#M1 #N">devotement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">viel</lem>
+               <rdg wit="#G1">riche</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et ensamble o   soi un serjant qi le
+                  servoit tant seulement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">chevaliers</lem>
+               <rdg wit="#D #E2" type="ajout">chevaliers fez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">baptiziés</lem>
+               <rdg wit="#M1" type="ajout">crestiens ne baptisiés</rdg>
+               <rdg wit="#N" type="ajout">chevaliers baptisiés ne crestienés</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si douz et si debonaires et si humles a  
+                  totes genz q ' il   n ' avoit en lui vice ne   malvestié   ne   nule   folie.   En
+                  lui avoit amors envers ses compaignons   et douçour   et pitié  
+                  et benigneté et charité   et pacience   et bone volenté   et humilité   si grant q
+                  ' ele trespassoit tote l ' umanité  de cest monde</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">folie</lem>
+               <rdg wit="#G1 #M1 #N">felonnie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si grant q ' ele trespassoit tote l '
+                  umanité  de cest monde</lem>
+               <rdg wit="#G1">avoit en lui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">l ' umanité</lem>
+               <rdg wit="#M1 #N">l'umilité humainne</rdg>
+            </app>
+           <app> <lem wit="#C1 #C2 #C3 #D #G1 #M1 #N ">li seinz   hom</lem>
+            <rdg wit="#E2 #F2">saint Martin</rdg></app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et de bone atemprance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">par la grant simplece c ' on en   lui
+                  veoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #M1 #N ">c'on en lui veoit</lem>
+               <rdg wit="#E2">qu'il avoit en lui</rdg>
+               <rdg wit="#G1">qui en lui estoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si ses conpaignons trestoz   veincuz   q '
+                  il</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">tuit</lem>
+               <rdg wit="#F2" type="ajout">tuit si conpaingnon</rdg>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">l ' oneroient</lem>
+               <rdg wit="#F2" type="ajout">l'amoient et honnouroient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">portoient signorie et reverence</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">signorie et reverence</lem>
+               <rdg wit="#G1">honneur et seignorie</rdg>
+               <rdg wit="#M1 #N">amor et seignorie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Etadonc encore n ' ert il mie rengenerez  
+                  de   la seinte eve de baptesme   et si feisoit   il neporqant les oevres qi del
+                  baptesme   devoient nestre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">neporqant</lem>
+               <rdg wit="#G1 #M1 #N">et ensivoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">et    les   chetis</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1">volentiers as povres et as mendis</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">chetis</lem>
+               <rdg wit="#N">cartriers</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et norrissoit les besoigneus</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">les nuz</lem>
+               <rdg wit="#G1" type="ajout">les nuz qui povreté destraignoit et besoinz</rdg>
+               <rdg wit="#M1 #N" type="ajout">les nus cui povretés et besoigne destraignoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et si ne gardoit de ses sols   ne de ses
+                  gages q ' il avoit a   court si come   chevaliers :,  fors tant solement com il en
+                    avoit mestier le jor a   vivre :,  et l ' autre   departoit et donoit tout as
+                  povres   et a   cels   qi en avoient mestier et besoigneus estoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">sols</lem>
+               <rdg wit="#G1">dons</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">ne de ses gages</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si come   chevaliers</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">donoit tout as povres</lem>
+               <rdg wit="#M1" type="ajout">donnoit por Dieu as povres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">mestier</lem>
+               <rdg wit="#M1 #N">soffraite et besoing</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et besoigneus estoient</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">n ' avoient fait au povre home nul
+                  bien</lem>
+               <rdg wit="#F2" type="red.">n'avoient rien donné</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">aucune chose</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#M1 #N">del sien por s'amor aucune cose</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">n ' autre rien</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">qe son mantel</lem>
+               <rdg wit="#G1" type="ajout">ne nule autre creature que son mantel</rdg>
+               <rdg wit="#M1" type="ajout">ne autre creature qu'il li peüst doner que son
+                  mantel</rdg>
+               <rdg wit="#N" type="ajout">ne autre creature que son mantiel</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">son mantel par mi</lem>
+               <rdg wit="#G1" type="ajout">son mantel parmi le milieu</rdg>
+               <rdg wit="#M1" cert="low" type="ajout">son mantel parmi le moiere</rdg>
+               <rdg wit="#N">le moitié de son mantel</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">moitié</lem>
+               <rdg wit="#M1 #N">partie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D ">partie</lem>
+               <rdg wit="#E2 #M1 #N">moitié</rdg>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">rafubla et mist entor soi</lem>
+               <rdg wit="#F2" type="red.">remit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">a  escharnir</lem>
+               <rdg wit="#G1">a gaber</rdg>
+               <rdg wit="#M1 #N" type="ajout">a gaber et a escarnir</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">l ' afubleüre ert   laide</lem>
+               <rdg wit="#G1">afublé estoit laidement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">com il li avoient veü faire :,  ne n '
+                  avoient onqes povres revestuz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">li beneoiz chevaliers seinz Martins</lem>
+               <rdg wit="#G1">li beneoiz le tres saint chevalier Martin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">li beneoiz chevaliers</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">vestuz estoit et affublez</lem>
+               <rdg type="red." wit="#D #E2 #F2">estoit affublé</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">donee</lem>
+               <rdg wit="#E2" type="ajout">donné au povre home</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">q ' Il   avoit devant dite</lem>
+               <rdg wit="#F2">qui dit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">la bonté</lem>
+               <rdg wit="#M1">le bon amor</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">nostre Signor</lem>
+               <rdg wit="#F2">de Dieu</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">. xviii .</lem>
+               <rdg wit="#N">
+                  <seg type="number">.xv.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">com il   fu baptiziez</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">seulement   par   non   sanz autre oevre de
+                  chevalerie fere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N ">Vangione</lem>
+               <rdg wit="#D">Anglone</rdg>
+               <rdg wit="#E2 #F2">Angione</rdg>
+               <rdg wit="#G1">Mangione</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">sueffre</lem>
+               <rdg wit="#N">soies seürs</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">combatre</lem>
+               <rdg wit="#G1">a combatre moi en tele maniere comme cil autre font</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de corroz et d ' ire</lem>
+               <rdg wit="#M1">d'ire et de maltalent</rdg>
+               <rdg wit="#N">tous de maltalent</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">molt hardiement seinz Martins</lem>
+               <rdg wit="#G1 #M1 #N">saint Martin sanz paour et sanz doutance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qe   je la chevalerie deguerpisse   et non
+                  mie por foi qe je aie envers   nostre Signor</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">volenté</lem>
+               <rdg wit="#C2 #D #E2 #F2">vertu</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">alast desarmez en   la   bataille</lem>
+               <rdg wit="#M1 #N">n'alast a la bataille tos desarmés se ele eüst esté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">encore</lem>
+               <rdg wit="#M1 #N" type="ajout">qui est cil qui doute que</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">soit plus nostre Sires puissanz</lem>
+               <rdg wit="#M1 #N" type="ajout">nostre Sires ne soit pius et misericors et
+                  poissans</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">il vout qe   la   pes fust ensi   faite</lem>
+               <rdg wit="#M1 #N">ja soit che cose que le pais fust ainssi faite par se volenté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi adonc estoit   evesqes de la cité  
+                  et qi   mout estoit preudom et de seinte vie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">en   avision une nuit</lem>
+               <rdg wit="#N">une nuit en volenté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">alast en   son païs</lem>
+               <rdg wit="#N" type="red.">iroit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">de foi et de religion</lem>
+               <rdg wit="#F2">de croire en Jhesu Crist</rdg>
+               <rdg wit="#G1">de la foi et de la relegion</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en la fin qant   il vit q ' il entresait s
+                  ' en iroit, </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">il entresait s ' en iroit</lem>
+               <rdg wit="#M1 #N">que otroier li convenoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">tristres et dolenz :,  por ce   q ' il
+                  deguerpissoit la   compaignie seint Ylaire</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">de   diversitez</lem>
+               <rdg wit="#F2 #G1 #M1 #N">d'aversitez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">les   trespassanz</lem>
+               <rdg wit="#G1">le chemin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">et a   tenir</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">Seinz Martins   li   respondi q ' il   estoit
+                  crestiens</lem>
+               <rdg wit="#C2 #D #E2 #F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #F2 #G1 #M1 #N ">Et cil li demanda   s ' il avoit poor et s ' il
+                  ert en grant dotance</lem>
+               <rdg wit="#C2 #D #E2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">crut</lem>
+               <rdg wit="#M1 #N" type="ajout">fu convertis et crei</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et si fu atornez a   vraie creance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">a   vraie creance</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">a vraie foi et a veraie creance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">droite voie</lem>
+               <rdg wit="#M1 #N" type="ajout">a droit chemin et se droite voie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">tote sa voie</lem>
+               <rdg wit="#G1 #M1 #N">tout son chemin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">son chemin</lem>
+               <rdg wit="#G1 #M1 #N">mi sa voie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N">cest ver del Sautier</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Dominus michi adjuto est, non timebo quid  
+                  faciat michi homo</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">a   sa mere</lem>
+               <rdg wit="#D #E2 #F2" type="ajout">a sa mere et a son pere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">a   seinte loy     et a   la   vraie
+                  creance   del seint   baptesme</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #N ">et a   la   vraie creance</lem>
+               <rdg wit="#G1 #M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #G1 #M1 #N ">les clers</lem>
+               <rdg wit="#D" type="ajout">les clers de cele loi</rdg>
+               <rdg wit="#F2">les chevaliers</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Donc s ' en repaira   il</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi   la malvese loy   ensivoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">la</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #N ">ensivoient</lem>
+               <rdg wit="#D #E2" type="ajout">tenoient et ensivoient</rdg>
+               <rdg wit="#G1">ont</rdg>
+               <rdg wit="#M1">menoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">Seinz Martins</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">s ' en revint adonc</lem>
+               <rdg wit="#M1 #N">Lors s'en revint messires sains Martins</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Si demora entor lui .,  por ce q ' il
+                  voloit estre   ensigniez et apris de sa seinte doctrine</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la   loy nostre Signor   as   genz   qi n '
+                  estoient mie fermement creanz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Et   qant vint au tierz jor et il fu
+                  repairiez</lem>
+               <rdg wit="#G1">qu'il retorna arriere a sa ciaulle</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">vint au tierz jor</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi   le   service fesoient tot em  
+                  plorant</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">bien sachiez q '</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">por   l ' amor nostre   Signor et pour  
+                  ensivre les oevres seint Martin :,  lor   seint pastor et lor bon pere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">les oevres seint Martin</lem>
+               <rdg wit="#D" type="ajout">les fez saint Martin et ses oeuvres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">en   croiz</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de son frere qui   morz estoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">. ii .   heures</lem>
+               <rdg wit="#F2">une heure</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N">movoient</lem>
+               <rdg wit="#G1">trembloient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si esgarderent a   grant merveille   celui
+                  qe il veoient</lem>
+               <rdg wit="#F2" type="red.">et virent celui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2">n ' avoit se pou non devant sans   vie</lem>
+               <rdg wit="#F2 #M1" type="red.">mort</rdg>
+               <rdg wit="#G1">mort un poi devant</rdg>
+               <rdg wit="#N">sans vie mort</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">en meïsmes   l ' eure</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi   Lupecines estoit apelez par non</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de plor et de   cri   et de   pleinte   qe
+                  gent i   demenoient</lem>
+               <rdg wit="#F2" type="red.">liens</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">estranglez</lem>
+               <rdg wit="#F2" type="ajout">estranglez et pendus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">et tolue   la   vie</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+               <rdg wit="#M1 #N">courant</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en   la meson</lem>
+               <rdg wit="#F2" type="red.">la</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #N ">gisoit morz</lem>
+               <rdg wit="#G1">estoit</rdg>
+               <rdg wit="#M1">gisoit qui estoit mors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2">issir toz cels qi en l ' ostel estoient hors</lem>
+               <rdg wit="#F2">les gens issir hors</rdg>
+               <rdg wit="#G1">touz cels issir hors qui laiens estoient</rdg>
+               <rdg wit="#M1">issir hors tous ciax qui en la maison estoient</rdg>
+               <rdg wit="#N">issir hors de l'ostel tous caus qi i estoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">se coucha en   orissons et fist ses
+                  proieres a   nostre Signor</lem>
+               <rdg wit="#F2" type="red.">conmença a ourer</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">avoit esté</lem>
+               <rdg wit="#M1 #N">gisoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si vint toz droiz sus ses piez   en
+                  estant</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">qi la   estoient</lem>
+               <rdg wit="#E2">de la meson</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">ausint</lem>
+               <rdg wit="#G1">assemblé</rdg>
+               <rdg wit="#M1 #N" type="ajout">assamblé en rendirent graces a nostre Segneur</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">evesqe</lem>
+               <rdg wit="#D">arcevesque</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de son mostier</lem>
+               <rdg wit="#F2">d'aveques ses freres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la   ou si frere estoient   por avoir   en
+                  autre leu demorance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">borjois</lem>
+               <rdg wit="#N">preudom</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si s ' ajenoilla en   sa presence :, 
+                  si</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">a   la cité venist</lem>
+               <rdg wit="#F2">alast a la cité</rdg>
+               <rdg wit="#G1">venist avec lui jusques a la cité</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 ">grant</lem>
+               <rdg wit="#G1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">qi a   sa feme iert prise</lem>
+               <rdg wit="#G1">que sa fame avoit prise</rdg>
+               <rdg wit="#M1 #N">qui tenoit se feme</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et non mie de Tors tant seulement :,  mes  
+                  des   proceines citez   et des chasteaus qi en   la   contree estoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">de Tors</lem>
+               <rdg wit="#G1 #M1 #N">de la</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">qi en   la   contree estoient</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et qe l ' eglisse   seroit molt beneüree  
+                  dont il seroit pastor   et governeres</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">seroit molt</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de l ' eveschié qui   estoient apelé a   l
+                  ' eslection et li evesqe   et    presqe   trestuit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">l n ' estoit mie dignes de l '
+                  eveschié tenir ne avoir :,  car</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et de   povre   vesteüre   et vileinement
+                  atornés</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">vileinement</lem>
+               <rdg wit="#G1 #M1 #N">laidement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de   povre persone</lem>
+               <rdg wit="#M1 #N">povre persone avoit en lui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">lut</lem>
+               <rdg wit="#F2">plut</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">as   evesqes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">ordenez   a   evesqe  en   la cité de  
+                  Tors li seinz hom</lem>
+               <rdg wit="#G1" type="red.">li sainz hom ordenez a evesque</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">evesqe</lem>
+               <rdg wit="#D">arcevesque</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et en   abit de   moigne</lem>
+               <rdg wit="#G1 #M1 #N">ainz</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">il l ' eveschié</lem>
+               <rdg wit="#G1">la seignorie en habit de moine</rdg>
+               <rdg wit="#M1 #N">le seignorie del evesquié en abit de moine</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">et por les granz   torbes</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">vousist</lem>
+               <rdg wit="#G1 #M1 #N">desirroit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de   la roche naïve</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">de   la</lem>
+               <rdg wit="#G1">et d'autre part</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la plaigne</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#N">la planete</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et cele voie meïsmes estoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">voie meïsmes</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N "> et   nient   d ' autre chose</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Li   pluiseur de   ses   freres qi
+                  deciple</lem>
+               <rdg wit="#F2" type="red.">et si desciple</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">estoient a   lui   et qi   l '
+                  amoient et sa   doctrine</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">.iiii.</lem>
+               <rdg wit="#G1 #M1">
+                  <seg type="number">.xxiiii.</seg>
+               </rdg>
+               <rdg wit="#N" type="ajout">li sains hom avoit <seg type="number">.iiii<hi rend="exp"
+                        >c</hi>.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">freres</lem>
+               <rdg wit="#G1 #M1 #N">desciples</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">estoient</lem>
+               <rdg wit="#D #E2 #F2">avoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">conmant</lem>
+               <rdg wit="#M1 #N">conmandement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et si erent</lem>
+               <rdg wit="#G1 #M1 #N">li ancien estoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">en orissons</lem>
+               <rdg wit="#N" type="ajout">en orison et en proieres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">envers nostre Signor</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 ">et en   proieres</lem>
+               <rdg wit="#F2 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qant l ' eure estoit venue</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 ">venue</lem>
+               <rdg wit="#D #E2 #N" cause="om."/>
+               <rdg wit="#M1" type="ajout">venue de mengier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">celui qi de vin i   gostast onqes</lem>
+               <rdg wit="#G1">un qui beüst de vin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">s ' enfermetez   ne le destreignoit</lem>
+               <rdg wit="#G1">s'il n'avoit enfermeté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">le destreignoit</lem>
+               <rdg wit="#F2">li feïst faire</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">trop granz maladie</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1">aucune maladie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Tuit estoient</lem>
+               <rdg wit="#G1" type="ajout">Ainz estoient tuit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">chamel</lem>
+               <rdg wit="#G1">cheval</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">lor deliz d ' endroit lor   cors</lem>
+               <rdg wit="#F2 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">lor deliz d ' endroit</lem>
+               <rdg wit="#G1">aese de</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">humilité et a   cele   pacience venu</lem>
+               <rdg wit="#F2">a celle pacience en humilité</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #D #E2 #F2 #G1 #M1 #N ">par   pluiseurs leus et seins   homes.   Et
+                  qele citez fust ce qi ne covoitast   a   avoir evesqe</lem>
+               <rdg wit="#C2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #G1 #M1 #N ">et seins   homes</lem>
+               <rdg wit="#D #F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">qi en son mostier estoient</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">com je voz ai   dite :,  et tout par   l '
+                  example de   lor bon pere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">car   qi   son signeur voit bien   faire  
+                  legierement i   puet example prendre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">example prendre</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">prendre essample de bien</rdg>
+
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">doit governer</lem>
+               <rdg wit="#G1">gouverne</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">s ' avoient   par autel maniere</lem>
+               <rdg wit="#G1">si metent molt de legier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">et a   tel costume</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en cel tens d ' ore   plus qe l ' en ne
+                  feïst adonqes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et va a   honte</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Car chascuns veut trestot avoir</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N "> ou cuident autresle dïent Ne finir cest</lem>
+               <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">la glorieuse vie qi toz tens duerra   ne ja
+                  ne   prendra fin</lem>
+               <rdg wit="#G1">le glorieus siege des sainz ciels</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">la glorieuse vie</lem>
+               <rdg wit="#M1 #N" type="ajout">le glorieuse vie es chiex</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne ja ne   prendra fin</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">lor bon pere   et lor   bon   pasteur</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">pasteur</lem>
+               <rdg wit="#G1 #M1 #N">mestre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">orer</lem>
+               <rdg wit="#G1">aouremenz faire iluec</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">une tombe d ' un home qi   iluec estoit
+                  enfouiz</lem>
+               <rdg wit="#G1">un cors enfoui en une tombe</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et por   ce i   avoient il   fait une
+                  eglyse molt bele   et mout bien atornee</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et mout bien atornee</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">demanda</lem>
+               <rdg wit="#G1">conmanda qu'il li deïssent</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N "> Ce enquist il et   demanda a   toz ceus
+                  del païs</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par grant amor et par   grant
+                  diligense</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">onques n ' en pot creature   reson savoir
+                  por chose q ' il seüst fere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">einz disoient tuit cil qi ancien
+                  estoient</lem>
+               <rdg wit="#F2" type="red.">chascun dist</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">del non   de   lui ne   de   son
+                  martyre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #N ">nule chose</lem>
+               <rdg wit="#G1 #F2">rien</rdg>
+               <rdg wit="#M1">nule verité</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">ne   n ' i   mist   mie grant
+                  auctorité</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #M1 ">qe   ce   vint   a   un jor</lem>
+               <rdg wit="#E2 #G1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">alumee</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">alumee et arse</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">enfoïz</lem>
+               <rdg wit="#M1 #N" type="ajout">desous ensevelis et enfoïs</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">a   feire et a   dire</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ensegnast et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par sa   doçor et par   sa  
+                  misericorde</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">par sa   doçor et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">conment il ert apelez   et si   li
+                  dist</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et de   cele malvese   creance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 ">cele malvese</lem>
+               <rdg wit="#D">cele fole</rdg>
+               <rdg wit="#G1">la fausse</rdg>
+               <rdg wit="#M1 #N">malvaise</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">creance</lem>
+               <rdg wit="#G1" type="ajout">creance qu'il avoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et qant il   vit la   torbe  de loing   qi
+                    venoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">torbe</lem>
+               <rdg wit="#G1">grant assemblee des gens</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et s ' estut coiz   por ce</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et qant il   se fu arrestez tant qe l ' en
+                  peüst avoir alé   grant piece</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #N ">tant qe l ' en peüst avoir alé</lem>
+               <rdg wit="#G1 #M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">qe ce fust autre chose .,  car   il
+                  cuida</lem>
+               <rdg wit="#E2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">environ   les chans</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">environ lor   blés</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Por   ce   si   i   avoient grant
+                  fiance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">cil q ' il avoit encontrez</lem>
+               <rdg wit="#F2 #M1 #N" cause="om."/>
+               <rdg wit="#G1">adonc leur feste</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">trestuit aussi   coiz com se   ce fussent
+                  pierres</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne   ne se   porrent removoir</lem>
+               <rdg wit="#F2">car il ne porent avant aler</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">por chose q ' il peüssent fere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">a   terre</lem>
+               <rdg wit="#F2">jus</rdg>
+               <rdg wit="#G1 #M1 #N" type="ajout">jus a terre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et don conmença li uns   l ' autre a
+                  esgarder .,  si   se porpensoient   qe   lor estoit avenu et esmervelloient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #N ">conmença li uns l ' autre a esgarder</lem>
+               <rdg wit="#D #E2" cause="om."/>
+               <rdg wit="#M1">conmencherent a esgarder li uns l'autre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Ensement   les   fist   il   arrester :, 
+                  qant il vout par   la   vertu de nostre   Signor   et qant il   li plot .,  il  
+                  les en lessa aler   tot a   sa devise</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">qant il vout</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">la  vertu</lem>
+               <rdg wit="#G1" type="ajout">la haute vertu</rdg>
+               <rdg wit="#M1 #N" type="ajout">le volenté et par le vertu</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">tot a   sa devise</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">par la volenté de Deu le   temple aidié a  
+                  destruire</lem>
+               <rdg wit="#G1" cause="om."/>
+               <rdg wit="#M1 #N">souffert par le volenté de Dieu le temple a despechier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">et por   faire pleinement les oevres qi a  
+                  lui apertienent</lem>
+               <rdg wit="#M1" type="red.">pour faire les oevres au deale</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">com tu nos diz et mostres en   ce   Deu   qi
+                  tu aeures</lem>
+               <rdg wit="#M1 #N" type="red.">en ton Dieu com tu dis et moustres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">vendra trebuchant</lem>
+               <rdg wit="#G1">trebuschera par grant ravine</rdg>
+               <rdg wit="#M1 #N">venrra trebuschant de grant ravine</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">sanz mal   avoir   et sanz   grevance</lem>
+               <rdg wit="#G1">sanz avoir paine ne mal</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et sanz   grevance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">oï</lem>
+               <rdg wit="#N" type="ajout">lor oï</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">celui einsi</lem>
+               <rdg wit="#N" type="red.">issi</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">clinoit plus et pendoit</lem>
+               <rdg wit="#F2" type="red.">pendoit plus</rdg>
+               <rdg wit="#M1" type="red.">se clinoit plus</rdg>
+               <rdg wit="#N">se clinoit et plus pendoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">lor arbre a   trenchier   mout liement   et a  
+                  grant joie   por abatre</lem>
+               <rdg wit="#G1">amont grant joie l'arbre a abatre et a trebuschier</rdg>
+               <rdg wit="#M1">par grant amor et par grant joie leur arbre a couper por abatre</rdg>
+               <rdg wit="#N">par grant amor et par grant joie lour arbre detrencier et abatre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">escroller et de cheïr fere samblant</lem>
+               <rdg wit="#F2">a chaoir de la partie ou sainz Martins estoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 ">escroller</lem>
+               <rdg wit="#D #M1 #N">crouller</rdg>
+               <rdg wit="#G1">trembler</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Li moigne qi estoient deciple  
+                  seint Martin   esgardoient   cele grant mervelle de   loing   et si   devenoient
+                  tuit pale et esperdu de   la peor   q ' il en avoient. Et por ce q ' il
+                  estoient si   espoenté :,  avoient il   lor esperance perdue :,  si q ' il   n '
+                  atendoient mes autre chose qe la mort   del seint home.</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">Li moigne qi estoient deciple</lem>
+               <rdg wit="#G1" type="ajout">qu'il estoit granz a desmesure et de grant hautece. Li
+                  pueples qui i estoit avoit grant paor de son trembler.</rdg>
+               <rdg wit="#M1 #N" type="ajout">il estoit molt grans a desmesure et molt estoit haut.
+                  Li moine qui estoient deciple</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">lor esperance perdue</lem>
+               <rdg wit="#D #E2" type="ajout">leur force perdue et leur esperance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">estoit granz et pesanz</lem>
+               <rdg wit="#G1">estoit de grant pesantor</rdg>
+               <rdg wit="#M1 #N">molt pesoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">et de   nule rien n ' ert sostenue</lem>
+               <rdg wit="#F2">et n'estoit de riens soustenue</rdg>
+               <rdg wit="#G1">ne n'estoit de nule chose soustenue</rdg>
+               <rdg wit="#M1 #N">ne n'iert de nule part soustenus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">tant   pesoit</lem>
+               <rdg wit="#G1">si estoit pesanz</rdg>
+               <rdg wit="#M1 #N">qui de si grant pesantume estoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi el plus seür leu   estoient mis por
+                  esgarder</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">moine</lem>
+               <rdg wit="#F2" type="ajout">moine qui compaingnon saint Martin estoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">q ' il avoient de   lor seint pere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">li seint non nostre Signeur JesuCrist a  
+                  anoncier</lem>
+               <rdg wit="#G1">a reclamer le non nostre seigneur</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">de   la   grant torbe de   paiens</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et si se tornerent par   seint Martin a  
+                  vraie creance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">lor felonies et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">fole</lem>
+               <rdg wit="#G1 #N">mauveses</rdg>
+               <rdg wit="#M1">males</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #D #E2 #F2 #G1 ">creance</lem>
+               <rdg wit="#C3">errance</rdg>
+               <rdg wit="#M1 #N">esror</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 ">bien</lem>
+               <rdg wit="#F2 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Mes</lem>
+               <rdg wit="#G1" type="ajout">Mes bien sachiez qu'</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">par ses bones   exemples   et par ses
+                  granz vertuz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">ses bones   exemples</lem>
+               <rdg wit="#D #E2" type="ajout">bone creance et bons essamples</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">ses granz vertuz</lem>
+               <rdg wit="#G1">la vertu nostre Seigneur</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #F2 #G1 #M1 ">granz</lem>
+               <rdg wit="#C2 #D #E2" cause="om."/>
+               <rdg wit="#N">boines</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">nus leus en   la   terre ou   il eüst
+                  chastel   ne vile</lem>
+               <rdg wit="#F2" type="red.">chastel ne vile en la terre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">eglyse</lem>
+               <rdg wit="#G1" type="ajout">chastiaus et eglises</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">et lor   proieres</lem>
+               <rdg wit="#F2 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de crestiens et autieus</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">a   vraie loy   et a   vraie creance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en   cel meïsme tenz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et cil qi en la loy nostre
+                  Signor ne creoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 ">creoient</lem>
+               <rdg wit="#D #E2">tenoient</rdg>
+               <rdg wit="#M1 #N" type="ajout">creoient mie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et a   lor ymages   qi molt   i   estoient
+                  soventes foiz joïes et celebrees</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 ">et la   chaleur desmesuree</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1" type="ajout">granz a plain et la chaleur granz et desmesuree</rdg>
+               <rdg wit="#N" type="ajout">a force et a desmesure</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">mout durement   sor une meson</lem>
+               <rdg wit="#F2">qui tout plainnement descendoient seur la maison</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">se vos le   veïssiez adonques ,  qe   li  
+                  element ,  ce est   li   feus et li   vens</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #N">garantie</lem>
+               <rdg wit="#C2 #C3 #D">guerie</rdg>
+               <rdg wit="#E2 #M1">garie et salvee</rdg>
+               <rdg wit="#F2 #G1">sauvee</rdg>
+            </app>
+            <app><lem wit="#C1 #C2 #C3 #D #M1 #N ">ou temple</lem>
+            <rdg wit="#E2 #F2 #G1" cause="om."/></app>
+            <app><lem wit="#C1 #C2 #C3 #D #N ">et sauvee</lem>
+            <rdg wit="#E2 #F2 #G1 #M1" cause="om."/></app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne ne li   lessoient depecier ne  
+                  abatre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">cel temple depecier par   sa   force</lem>
+               <rdg wit="#M1 #N">cel temple a forche pechoier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">par   sa devine vertu</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">hanstes en   lor meinz .,  escuz a   lor
+                  cous</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">sour granz chevaus   richement coverz de  
+                  molt   beles covertures</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">chevaus</lem>
+               <rdg wit="#M1 #N">destriers</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">richement coverz de   molt   beles
+                  covertures</lem>
+               <rdg wit="#M1 #N">de molt bele faiture</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">a   l ' oevre q ' il avoit   comencie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Et   si   l ' aemplist einsi com il   avoit
+                    entrepris a   fere</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">l ' aemplist</lem>
+               <rdg wit="#F2" type="ajout">aemplist l'euvre qu'il avoit conmencie</rdg>
+               <rdg wit="#M1 #N">l'empreist</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">einsi com il   avoit   entrepris a  
+                  fere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">si   debrisa et destruist</lem>
+               <rdg wit="#F2" type="red.">le destruist</rdg>
+               <rdg wit="#G1">et si le trebuscha</rdg>
+               <rdg wit="#M1 #N">si l'abati et debrisa</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si   q ' il   ne   porent contrester a   l
+                  ' evesqe de nule chose</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et   si crierent a   hautes voiz  
+                  et distrent   qe   celui Deu qe Martins  li evesqes creoit et aoroit   totes genz
+                  doivent aorer et croire   et les ydoles et les   ymages qi   euz meïsmes ne autrui
+                  ne pooient aidier   ne secorre   devoit l ' en deguerpir et despire</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">estoit   alez un temple depecier</lem>
+               <rdg wit="#G1">aloit aprés et estoit alez a un autre temple depecier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si com   il   l ' avoit en   us et en  
+                  costume</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">mout de vileinz</lem>
+               <rdg wit="#G1 #M1 #N">une grant torbe de vilains</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1">evesqe</lem>
+               <rdg wit="#C2 #N #D #F2">home</rdg>
+               <rdg wit="#E2">preudome</rdg>
+               <rdg wit="#M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #C2 #N">evesqe</lem>
+               <rdg wit="#D #F2 #E2" type="ajout">home qi evesques estoit</rdg>
+               <rdg wit="#M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">arriere</lem>
+               <rdg wit="#C2 #D #E2 #F2">a terre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">q ' a   poi q ' il ne fu toz   combrisiez
+                  et maumis</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">q ' a   poi</lem>
+               <rdg wit="#G1">si durement que pres s'en ala</rdg>
+               <rdg wit="#M1 #N">si durement qu'a poi</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">Et   si com il gisoit</lem>
+               <rdg wit="#E2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">miracles qi aprés cestui   vient</lem>
+               <rdg wit="#N">que jou conterai</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">conmença</lem>
+               <rdg wit="#G1">conmença a debrisier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">manoient</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">manoient et habitoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">a   destruire</lem>
+               <rdg wit="#G1" type="ajout">a confraindre l'ymage aus faus diex</rdg>
+               <rdg wit="#M1 #N">a confondre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">por lui ferir   d ' un coutre et ocirre</lem>
+               <rdg wit="#G1" type="ajout">un coutel en sa main pour lui ferir et occire</rdg>
+               <rdg wit="#M1 #N">atout un coltre pour lui ferir et ochirre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">tuer le seint home</lem>
+               <rdg wit="#G1 #M1">pour lui ferir</rdg>
+               <rdg wit="#N">pour ferir le saint homme</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne onques   puis ne sot nus d ' eus qu ' il
+                  devint .,  einz   s ' esvanui de   devant eus par   la volenté de   Deu</lem>
+               <rdg wit="#F2">et la terre l'englouti devant eus tous</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">tuit cil qui   a   lui venoient i   recevoient
+                  santé</lem>
+               <rdg wit="#G1">nus malades ne venoit a lui qui molt tost n'eüst santé receüe</rdg>
+               <rdg wit="#M1 #N">nus malades ne venoit a lui qu'il n'eüst molt tost se santé
+                  recovree</rdg>
+               <rdg wit="#N">nus malades ne venoit a lui qui n'eüst mout tost santé recoiuvree</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">de ses membres</lem>
+               <rdg wit="#N" type="ajout">de ses lés ne de ses membres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et si ert par   la   grant enfermeté si
+                  demenee   q ' il n ' avoit en li fors tant seulement un   petit de   vie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">gardoient</lem>
+               <rdg wit="#F2 #M1 #N">atendoient</rdg>
+               <rdg wit="#G1">esperoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">aussi com   toz esmariz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">toz esmariz</lem>
+               <rdg wit="#G1">s'il fust touz esfreez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">si com li pueples estoit   entor lui
+                  assemblez</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et a   lui venoient por sa seinte  
+                  doctrine retenir et entendre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">par dolereus martyre muert et perist en  
+                  langor</lem>
+               <rdg wit="#G1">se muert par dolereuse maniere de maladie</rdg>
+               <rdg wit="#M1 #N">muert par dolereuse maniere de langueur</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par   cui nostre Sires feïst les signes
+                  de</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">granz vertuz</lem>
+               <rdg wit="#M1 #N" type="ajout">grans vertus por bien ne por diginité qu'en lui
+                  eüst</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">peres a   la damoisele</lem>
+               <rdg wit="#F2">preudons</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">a   terre</lem>
+               <rdg wit="#E2" type="ajout">a genoullons sus terre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">a   nostre Signor et sa   proiere</lem>
+               <rdg wit="#F2" type="red."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">et sa   proiere</lem>
+               <rdg wit="#D">en la meson et sa priere a nostre Seignor</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">par   la   volenté de   nostre  
+                  Signor</lem>
+               <rdg wit="#M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">nostre   Signor</lem>
+               <rdg wit="#F2">Dieu</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">de s ' enfermeté et curee</lem>
+               <rdg wit="#F2">de toute sa maladie</rdg>
+               <rdg wit="#G1 #M1">et sanee de s'enfermeté</rdg>
+               <rdg wit="#N">de s'enferté et reçut santé</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et grevoit molt dolereusement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">li conceles</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+               <rdg wit="#M1 #N">li prevos</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et tant li feïst par   sa proiere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi n ' eüst receü baptesme</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">atornez a   foi ne a   seinte creance</lem>
+               <rdg wit="#F2" type="red.">crestiens</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si qu ' il n ' eüst puissance de lui
+                  traveillier</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">et par   tel covenance</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">le serjant</lem>
+               <rdg wit="#G1" type="ajout">le sergent au consel</rdg>
+               <rdg wit="#M1 #N">le vallet</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et aprés ce n ' ot mie lonc tens ,   si  
+                  fu   il baptiziés</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">toz tens aprés ensivi il par   bones
+                  exemples et par bones oevres seint Martin de quanq ' il pot toz les jorz de sa  
+                  vie</lem>
+               <rdg wit="#F2" type="red.">et fu puiz de molt sainte vie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">en   la partie de   la meson</lem>
+               <rdg wit="#G1">a la porte</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et entra en un serjant de   la meson</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">et encontra un sergent de la maison, si li entra
+                  el cors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">molt dolant   et mout tristre</lem>
+               <rdg wit="#F2 #G1" type="red.">molt dolant</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">entrez el   cors</lem>
+               <rdg wit="#G1 #M1 #N">avoit pris et saisi</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">venoit a   chascun , si   le   voloit
+                  devorer et ocirre as   denz</lem>
+               <rdg wit="#F2">voloit chascun jor occirre la mesnie de liens</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Tote la meson   en ert troublee</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">meüst</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">meüst en nule maniere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">a   fremir   et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">a   estreindre</lem>
+               <rdg wit="#G1" type="ajout">a estraindre l'une a l'autre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et a   ovrir la bouche par   sa grant  
+                  forsenerie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">mengue</lem>
+               <rdg wit="#F2" type="ajout">menje ces doiz</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">seint home</lem>
+               <rdg wit="#N">preudomme</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">tout ardant</lem>
+               <rdg wit="#G1">plain de grant ardure</rdg>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">del   cors de celui par   derriers</lem>
+               <rdg wit="#G1" type="red.">par desriere de celui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">del   cors de celui</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">des oevres au deable</lem>
+               <rdg wit="#G1" type="ajout">par saint Martin des oevres au deable</rdg>
+               <rdg wit="#M1 #N" type="ajout">del deable par les oevres saint Martin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">des messagiers</lem>
+               <rdg wit="#M1 #N" type="ajout">de messaiges par le contree errans</rdg>
+            </app>
+            <app>
+               <lem wit="#C2 #D #E2 #F2 ">qui leur disoient</lem>
+               <rdg wit="#C1 #C3 #M1 #N" cause="om."/>
+               <rdg wit="#G1">et disoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">cez messages</lem>
+               <rdg wit="#M1 #N" type="ajout">ches messaiges et ces nouveles</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">. xvi .</lem>
+               <rdg wit="#N">
+                  <seg type="number">.xv.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">affermez en   la seinte creance</lem>
+               <rdg wit="#G1 #N">en ferme creance ne en vraie</rdg>
+               <rdg wit="#M1">en ferme creance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">le   porsivoient</lem>
+               <rdg wit="#G1">qu'il moustroit et enseignoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et mondez de sa grant maladie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">graces</lem>
+               <rdg wit="#N" type="ajout">graces et loenges</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la santé q ' il avoit receüe</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">vos , signor , qi oez   et entendez la
+                  vie seint Martin</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la   ou il ert en presence por   lui meint
+                  beau   miracle</lem>
+               <rdg wit="#F2">miracles la ou sainz Martins fu en sa personne</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">enfermetez</lem>
+               <rdg wit="#G1" type="ajout">enfermetez qu'il avoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">par   ce qu ' il   a   eus les atouçoient</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1" type="red.">quant il en estoient atouchié</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Ensi estoit li seinz hom envers nostre
+                  Seignor de haute merite</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">car  je ne vous sai dire qe   les lettres
+                  disoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">greveroient</lem>
+               <rdg wit="#F2" type="ajout">greveroient il riens</rdg>
+               <rdg wit="#G1">feroient elles nule grevance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">Arborius</lem>
+               <rdg wit="#D #E2">Arbrius</rdg>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">par   la   volenté</lem>
+               <rdg wit="#M1 #N" type="ajout">par l'umilité et par le volonté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et par   la maladie qi   tant l ' avoit
+                  grevé</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">q ' il avoit molt desirree   et li osta la
+                  doleur q ' il lonc tens avoit   portee</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Par   ce dient cil   qi ceste vie entendent
+                  q ' il   avoit del cuer et del cors la   lumiere receüe</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C2 #C3 #D #E2 #F2 #M1 #N ">cenaill</lem>
+               <rdg wit="#C1">che<choice>
+                     <orig>u</orig>
+                     <reg>v</reg>
+                  </choice>al</rdg>
+               <rdg wit="#G1">solier</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">couchierent</lem>
+               <rdg wit="#G1 #N" type="ajout">couchierent en sa ciaulle</rdg>
+               <rdg wit="#M1" type="ajout">coucherent en son habitacle</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 ">plus</lem>
+               <rdg wit="#D #E2 #F2 #G1">au plus</rdg>
+               <rdg wit="#N">le plus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">car   il sosfroit molt grant doleur del  
+                  chaïement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">toz ses membres qi blecié estoient.</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et si sembloit qu ' il n ' eüst eü ne
+                  doleur ne   bleceüre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">eü ne doleur ne   bleceüre</lem>
+               <rdg wit="#G1">onques eu nule bleceüre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">evesqes</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">pluseurs evesques</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">de diverses   contrees a   lui</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">blandissoient</lem>
+               <rdg wit="#M1 #N">blasmoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #N ">n ' orent poor   de   princes</lem>
+               <rdg wit="#G1">n'avoient nule paour d'espees</rdg>
+               <rdg wit="#M1">n'orent ainc paor de prinches</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">nule doutance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et s ' il   avenoit q ' il eüst mestier de
+                  feire au roi aucune proiere :,  il comandast ançois q ' il   li priast</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">li priast</lem>
+               <rdg wit="#G1" type="ajout">la feïst et qu'il le proiast</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne   ne serroit   a   table en   sa
+                  compaignie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">lor guerissons</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">leur garisons et leur regnes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">car li empereres l ' en avoit tantes resons
+                    mostrees   et tante proiere fete q ' il ne l ' en   pooit escondire</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">Li empereres si   fu molt liez</lem>
+               <rdg wit="#G1" type="ajout">molt fu liez li emperieres de grant maniere</rdg>
+               <rdg wit="#M1 #N" type="ajout">molt fu liés Maximes li empereres de grant
+                  maniere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">et grant feste fere</lem>
+               <rdg wit="#D #E2" type="ajout">et grant joie fere et grant feste</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">s ' agenoilla</lem>
+               <rdg wit="#M1 #N" type="ajout">conme coustume estoit s'agenolla</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">a   celui qi agenoilliez estoit</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">beü</lem>
+               <rdg wit="#M1 #N">le coupe recheüe</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de   haute lignie   et acompliz de   grant
+                  richesce</lem>
+               <rdg wit="#M1 #N">de haute seignorie et de noble lignie et acomblés de grant
+                  richoise</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">acompliz de   grant richesce</lem>
+               <rdg wit="#G1">de haute seignorie et riches</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">de   cui tous li   biens   vient en   terre et el
+                    ciel lassus</lem>
+               <rdg wit="#G1" type="ajout">qui Sires est de toute creature, car de lui vient touz
+                  les biens</rdg>
+               <rdg wit="#M1 #N" type="ajout">car de lui vient trestoz li biens qi sont el siecle
+                  terrien et trestous chilx el chiel lassus</rdg>
+            </app>
+            <app>
+            <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">estoit de</lem>
+            <rdg wit="#F2 #G1">avoit</rdg>
+         </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">averontcomansAverontjoieet tel leescheTel
+                  signorie et tel   hautesce sauroit Ja tant ne s'en entremetroit Riches , povres
+                  Qicel la   venir   ne   pense Estcertesmolt o oisovent doit   nestre li   biens le
+                    malas   ancïens Buer fu   nés qi le bien puet feire osa   gent</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N ">Tel signorie et tel   hautesce sauroit Ja tant ne s'en
+                  entremetroit Riches , povres Qicel la   venir   ne   pense Estcertesmolt o
+                  oisovent doit   nestre li   biens le   malas   ancïens Buer fu   nés qi le bien
+                  puet feire </lem>
+               <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3">Tel signorie et tel   hautesce</lem>
+               <rdg wit="#M1 #N">si grant bien et si grant hautesche</rdg>
+               <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et molt en   demenerent   grant joie par  
+                  le   palés trestoz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par   le   palés trestoz</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 ">trestoz</lem>
+               <rdg wit="#E2" cause="om."/>
+               <rdg wit="#M1 #N" type="ajout">tant com il mengerent et tout cil qui servoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">devant ce qe eles   fussent avenues</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">desirroit molt a   aler  </lem>
+               <rdg wit="#C2 #D #E2">disoit qu'il iroit et molt en avoit grant desirrier</rdg>
+               <rdg wit="#F2">disoit qu'il iroit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">et qi   tout ce vit le   nos raconte</lem>
+               <rdg wit="#G1">le tesmoigne et reconte</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ce q ' eles avenissent :,  car li seinz hom
+                  savoit par   le seint Esperit meintes choses qi devoient avenir</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">muer ne   trestorner en   nule maniere   ne
+                    en   nule forme</lem>
+               <rdg wit="#G1">en cele maniere transfigurer ne muer</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">trestorner ne partir</lem>
+               <rdg wit="#G1" type="ajout">partir ne destorner en nule maniere</rdg>
+               <rdg wit="#M1" type="ajout">quatir ne destorner a nul fuer</rdg>
+               <rdg wit="#N" type="ajout">partir ne destorner en nul fuer</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">par ses aguaiz</lem>
+               <rdg wit="#C2" type="ajout">par ses paroles ne par ses aguez</rdg>
+               <rdg wit="#D" type="ajout">par ses oeuvres ne par ses angins ne par ses aguez</rdg>
+               <rdg wit="#E2 #F2" type="ajout">par ses engins ne par ses agués</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">toute sanglante</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">toute sanglente. Dont moustra au saint home sa
+                  main et son braz tout sanglent</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">demostrer et fere</lem>
+               <rdg wit="#E2" type="ajout">demener et si granz demonstrer et fere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et tolue la   vie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">q ' il par totes les ceailles de lor
+                  freres  qeïssent et cerchassent</lem>
+               <rdg wit="#M1" type="red.">qu'il queïssent par toutes les maisons de leur
+                  freres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">pres de morir en   tel maniere</lem>
+               <rdg wit="#G1">en tel maniere atornez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">desjoins del jou</lem>
+               <rdg wit="#G1">hors de son jou issu et desliez</rdg>
+               <rdg wit="#M1">de son judicion</rdg>
+               <rdg wit="#N">de son liu iscus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">restreindre la   chariole .,  ce   est   la
+                  coroie dont li jous estoit liés as   cornes</lem>
+               <rdg wit="#G1">la corne destraindre dont il estoit desliez as cornes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">la   chariole .,  ce   est   la coroie</lem>
+               <rdg wit="#F2 #M1 #N" type="red.">la courroie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si com vos poez veoir , si   m ' a tolue  
+                  la   vie</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">devant eus toz</lem>
+               <rdg wit="#G1" type="ajout">devant eus et devant les sainz homes qui la estoient
+                  assemblé</rdg>
+               <rdg wit="#M1" type="ajout">devant les sains homes qui la estoient assamblé</rdg>
+               <rdg wit="#N" type="ajout">devant tous les sains homes qui la estoient assamblé</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">vos qi entendez et qi   de retenir avez
+                  science</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">bien poez vos savoir qe   ce</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si   com je vos ai devant conté</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en   tel maniere com il ert avenu</lem>
+               <rdg wit="#F2">devant ce q'il avenist</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">devant ce qe   il   meüssent por celui
+                  qerre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">se   tresmuoit   il et aparoit</lem>
+               <rdg wit="#F2" type="red.">s'aparut</rdg>
+               <rdg wit="#G1">se metoit il et s'aparoit</rdg>
+               <rdg wit="#M1 #N" type="ajout">se mostroit il et aparoit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">les laidenges qe li anemis li disoit a  
+                  hautes voiz</lem>
+               <rdg wit="#F2">les angles parler a lui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Mes li seinz hom   entendoit bien et savoit
+                  qe totes les choses   q ' il disoit  erent  males .,  et por ce ne se  movoit  
+                  il mie dedenz son cuer ne ne trestornoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">de   ses freres</lem>
+               <rdg wit="#N" type="ajout">de ses dessiples et des freres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">vint pluisors foiz a   seint Martin</lem>
+               <rdg wit="#G1" type="ajout">li disoit souventes foiz a haute voiz cruels paroles a
+                  saint Martin et</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">toz les pechiez</lem>
+               <rdg wit="#G1" type="ajout">toutes les choses et les pechiez</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">avoir pardon</lem>
+               <rdg wit="#M1 #N" type="ajout">avoir pardon de nostre Segneur ne nule
+                  indulgence</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">dont il erent devant issu   ne   ne devoit
+                  avoir de   nostre Signor nule indulgense</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">erent</lem>
+               <rdg wit="#N">orent</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #F2 #G1 #M1 ">devant issu</lem>
+               <rdg wit="#C2 #D #E2" type="ajout">devant sailli et eissu</rdg>
+               <rdg wit="#N">devant esté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">ne   ne devoit avoir de   nostre Signor nule
+                  indulgense</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Bien poez savoir qe ses   cuers
+                  estoit verais et sa   parole digne .,  qant   il a   l ' anemi parloit einsi sanz
+                  avoir poor   ne   doutance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">verais</lem>
+               <rdg wit="#N" type="ajout">vrais et dignes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">sa   parole digne</lem>
+               <rdg wit="#M1">dignes en se parole</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">lessa quanq ' il avoit</lem>
+               <rdg wit="#G1 #M1 #N">deguerpi toutes ses choses terrienes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">envers   nostre Signor par   la doctrine
+                  del seint home</lem>
+               <rdg wit="#G1">par la volenté de nostre seigneur et par la doctrine du saint
+                  home</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">merite</lem>
+               <rdg wit="#E2">vie et de bonne merite</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">par   la foi q ' il avoit et par   la  
+                  bone creance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">Anatolius</lem>
+               <rdg wit="#G1">Anathaise</rdg>
+               <rdg wit="#M1 #N">Natholius</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">estoit apelez</lem>
+               <rdg wit="#G1 #M1">apelez par non</rdg>
+               <rdg wit="#N">avoit non</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">Li jovenceaus</lem>
+               <rdg wit="#M1 #N">Clarus li prestres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">de   bone loy   et de seinte vie</lem>
+               <rdg wit="#G1" type="ajout">de bonne foi et de bonne loi et de sainte vie</rdg>
+               <rdg wit="#M1">de bone loy et de bone creance</rdg>
+               <rdg wit="#N">de boine creance et de sainte vie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de   bone loy   et </lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">por ce q ' il voloit qe   l ' en le tenist
+                  en   auctorité aussi com un prophete</lem>
+               <rdg wit="#G1">Quant Anatholius oï et entendi que Clarus ne vouloit que l'en le
+                  tenist en auctorité aussi conme un prophete</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">Quant Antiolus sot et entendi qe   Clarus
+                    ne   le voloit croire</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">Antiolus</lem>
+               <rdg wit="#M1">Natholius</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">au   daerrein qant il ne pot plus
+                  soffrir</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et par grant ire l ' embatroit  en   granz
+                  persecutions</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par grant ire</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">croire son seint   home</lem>
+               <rdg wit="#G1" type="ajout">son saintisme non croire et l'ome qui a lui parloit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">c ' on   i   veoit</lem>
+               <rdg wit="#G1" cause="om."/>
+               <rdg wit="#M1">qi veües i estoient</rdg>
+               <rdg wit="#N">qui venues i estoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">apela un de ses   freres</lem>
+               <rdg wit="#M1" type="ajout">parla a lui un des ses freres, mais Natholius l'apela
+                  ançois</rdg>
+               <rdg wit="#N" type="ajout">parla a lui uns de ses freres, mais il l'apela ainsçois a
+                  lui</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">et molt   blanche</lem>
+               <rdg wit="#E2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">molt   blanche</lem>
+               <rdg wit="#G1 #M1">de grant blanchor</rdg>
+               <rdg wit="#N">de grant dolçor</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">d ' une resplendissant porpre</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">li pluisor</lem>
+               <rdg wit="#M1" type="ajout">li plusor des freres entriaus</rdg>
+               <rdg wit="#N" type="ajout">li pluisour des freres</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">entre eus</lem>
+               <rdg wit="#F2 #G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">pluisors afaires</lem>
+               <rdg wit="#G1">pluisors signes</rdg>
+               <rdg wit="#M1" type="ajout">pluisors signes a faire</rdg>
+               <rdg wit="#N" type="ajout">faire pluisors signes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si com pluiseurs   choses avienent</lem>
+               <rdg wit="#G1">a jugement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">avienent</lem>
+               <rdg wit="#D #E2 #F2" type="ajout">avienent a bon chief</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 ">par   lor folies</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#M1 #N">par le païs</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N ">Rufus</lem>
+               <rdg wit="#D #E2 #F2">Refus</rdg>
+               <rdg wit="#G1">Faifus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si com nos meïsmes veïmes. Et pluisors   de
+                  nos freres nos raconterent</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">De ce poés vos   savoir et veoir   qe li
+                  avenemenz d ' Antecrist   aproce   par les faus prophetes qi dont   venoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">d ' Antecrist</lem>
+               <rdg wit="#G1">de nostre Seignor</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 ">chaucemente</lem>
+               <rdg wit="#G1">ceinture</rdg>
+               <rdg wit="#N">chevalceüre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qe li uns ne parla a   l ' autre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #M1 #N ">Je sui  Crist</lem>
+               <rdg wit="#C2 #D #E2 #F2">Jhesu Crist</rdg>
+               <rdg wit="#G1">Je suis Jhesu Crist</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">fu   si hardiz q ' il</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">corone</lem>
+               <rdg wit="#F2 #G1" type="ajout">coronne d'or</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">resplendissant</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">la forme</lem>
+               <rdg wit="#E2" type="ajout">la fourme et en l'estat</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">mort</lem>
+               <rdg wit="#G1" type="ajout">mort et passion</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N ">fumiere</lem>
+               <rdg wit="#D #E2 #F2 #G1">fumee</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">et la   celle fu raemplie de   si   grant
+                  pueur   qe</lem>
+               <rdg wit="#G1">Si remest la ceaule toute empullentee</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">la   celle</lem>
+               <rdg wit="#M1">li habitacles</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">vraiement</lem>
+               <rdg wit="#G1" type="ajout">ceste chose et sanz doutance</rdg>
+               <rdg wit="#M1 #N" type="ajout">cose sans doutance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et vos toz qi cez choses avez oïes   qe j '
+                  ai contees ne cuidiez mie qe ce soient   fables ne   mençoignes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Por ce   les doit l ' en tenir a  
+                  veritables :,  car li pluiseur en ont cuidié et dit meintes mençoignes   et si  
+                  disoient q ' il estoit ars :,  qant il ooient parler de   ses signes et de   ses
+                  vertus</lem>
+               <rdg cause="om." wit="#F2"/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">a   veritables</lem>
+               <rdg wit="#G1" type="ajout">a veritables non mie a fables</rdg>
+               <rdg wit="#M1 #N" type="ajout">a veritables ne mie a menchoignes ne a fables</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Mes ce ne doit nus croire :,  car je dirai
+                  bien   et raconterai   coment cele cuidance vint   as foles genz .,  si com cil qi
+                    proprement le   vit a   ses euz :,  car je fui ensamble o   le seint   home qi
+                  menoit mout seinte vie. Et par   meintes foiz me dona   il l ' eaue a   mes meins
+                    laver :,  qant je mengoie a   son seint mengier :,  et c ' est une chose qe ja a
+                    peines ose  je   regehir ne   conter. Et qant venoit al   vespre ,   il   nos
+                  lavoit les piez   et si  n ' osions encontre   ester de   chose q ' il nos vousist
+                  feire .,  car il es - - toit de   si   grant auctorité   qe   ce   me
+                  semblast vilenie et pechiés :,  se   je li escondeïsse   ne   ne sousfrisse chose
+                  q ' il me vousist fere</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">son seint mengier</lem>
+               <rdg wit="#M1 #N">se table</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">ester de   chose q ' il nos vousist feire
+                  .,  car il es - - toit de   si   grant auctorité   qe   ce   me semblast vilenie
+                  et pechiés :,  se   je li escondeïsse   ne   ne sousfrisse</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">vilenie et </lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">pechiés</lem>
+               <rdg wit="#M1" type="ajout">pekiés et felonie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">li escondeïsse   ne</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et por   ce qe je ices choses oï au   seint
+                  home dire   et vi pluiseurs seintes oevres faire :,  vos   voel je conter et dire
+                    et dont cele fole opinium vint a   cels qi disoient qe seinzMartins qi   les
+                  deables chaçoit hors des   pluiseurs   et resuscitoit les mors   et avoit  
+                  osté les feus et les flambes de pluiseurs   leus   ne pooit avoir lui meïsmes
+                  garanti :,  mes il   mentent ne   ne sevent   noient de   la   verité. Mes je qi i
+                    fui   et qi   les   vi   le vos voldrai conter et dire. Or   escoutés dont le
+                  beau miracle.</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">ne   ne sevent   noient</lem>
+               <rdg wit="#G1">conme cil qui rien ne savoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de   bones oevres   et de seinte doctrine
+                  .,  si come il est   costume as   evesqes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">oevres</lem>
+               <rdg wit="#G1">mors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">fesoit molt grant froidure</lem>
+               <rdg wit="#F2 #G1" type="red.">faisoit froit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi mout volentiers le   reçurent</lem>
+               <rdg wit="#F2">le reçurent molt liement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 ">en   un secré leu</lem>
+               <rdg wit="#G1">un siege en un des liex</rdg>
+               <rdg wit="#N">un serjant loing</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">de   l ' eglise ou   il   peüst seoir
+                  et gesir</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">seoir et gesir</lem>
+               <rdg wit="#G1" type="ajout">estre plus coiement et bele noeve chambre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si firent</lem>
+               <rdg wit="#G1" type="ajout">aprés li fist on un</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">sor un pavement tenvene qi en   cele   chambre
+                  estoit</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">tenvene</lem>
+               <rdg wit="#D #E2">tendre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">joste le fu   firent il un   beau lit de
+                  fuere a   oés l ' evesqe</lem>
+               <rdg wit="#F2" type="red.">li firent un biau lit</rdg>
+               <rdg wit="#G1" type="red.">puis un haut lit conme a evesque</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #F2 #G1 ">beau</lem>
+               <rdg wit="#C2 #D #E2" type="ajout">molt biau</rdg>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de fuere</lem>
+               <rdg wit="#M1 #N">d'estrain</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">lumiere</lem>
+               <rdg wit="#N">fumiere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">se   seur la   terre non tote nue</lem>
+               <rdg wit="#F2">a la terre dure</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">une seule haire par   deseure</lem>
+               <rdg wit="#F2">n'avoit dessous lui fors une seule haire</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">une seule haire</lem>
+               <rdg wit="#G1">une haire tant seulement</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">ne   n ' avoit autres coutes</lem>
+               <rdg wit="#G1">seur ce avoit acoustumé a gesir</rdg>
+               <rdg wit="#M1 #N" type="ajout">seur che avoit apris a gesir li sains evesques ne
+                  autres kieutes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">n ' autres orelliers   ne autres lincieus</lem>
+               <rdg wit="#G1" type="ajout">li sainz hom n'avoit autres linceus ne autres
+                  oreilliers</rdg>
+               <rdg wit="#M1 #N" type="ajout">ne autres linchex ne autres oreilhers n'avoit li sains
+                  hom</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">por ce si   fu mout   dolenz q ' il estoit
+                  couchiez sor tele molece</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">tele molece</lem>
+               <rdg wit="#M1 #N" type="ajout">tel moleche et si soef</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">flamber</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">faire grant flambe</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">dont il ne se guetoit mie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #F2 #M1 #N ">car   il</lem>
+               <rdg wit="#C2 #D #E2">car il estoit en freeur et</rdg>
+               <rdg wit="#G1">qu'il</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">entendi tant</lem>
+               <rdg wit="#M1 #N" type="ajout">tendi tant se main et entendi</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">la fermeüre desfermer del huis</lem>
+               <rdg wit="#F2" type="red.">defermer huis</rdg>
+               <rdg wit="#G1 #M1 #N" type="red.">la serrure desfremer</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">chaleur</lem>
+               <rdg wit="#F2" type="ajout">chaleur qu'il ne li souvint d'ourer</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qe la   vesteüre en esprist   q ' il avoit
+                  vestue</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 ">signum crucis</lem>
+               <rdg wit="#D #E2 #F2 #G1">le signe de la croiz</rdg>
+               <rdg wit="#M1 #N">le signe de le sainte crois</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Si   moigne et si   deciple</lem>
+               <rdg wit="#G1">Et en mi ses descriples et ses moines</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et si   cuidoient q ' il fust ja toz ars  
+                  par   la   grant chaleur ou   il   avoit si   longuement esté</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Mes a   la   fin qant il ne pot   l ' uis
+                  desfermer .,  et il fist sor lui le signe de   la   croiz   et ses orissons teles
+                  com il   les savoit q ' il   li covenoit a   fere .,  la flambe ne   li feus ne  
+                  li   firent mie autre mal qe feïssent roses qi   del ciel descendissent</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Mes il i   fu bien   provés si com cil   qi
+                  seinz hom estoit et   justes,   car il n ' i   ot ne mal ne peine autre   qe vos
+                  avez oï. Et qi ore voudroit oïr conment li seinz hom defina   et lessa ceste  
+                  mortel vie por aler a   la parmenable gloire .,  si entendez  deci en avant mes  
+                  paroles</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">ne viveroit</lem>
+               <rdg wit="#E2" type="ajout">morroit et qu'il ne vivroit</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">Conde</lem>
+               <rdg wit="#E2">Tonde</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Toraine</lem>
+               <rdg wit="#G1">Tours</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">se descordoient</lem>
+               <rdg wit="#G1" cert="low">qui ainssi les desheritoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">bon l ' assomement</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1" type="ajout">bien estre sens et sauvemenz</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">pissonniaus</lem>
+               <rdg wit="#F2" type="ajout">les poissons de ce fleuve</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 ">sivoient   et chaçoient</lem>
+               <rdg wit="#G1" type="ajout">mengoient et gaitoient en un lieu</rdg>
+               <rdg wit="#N">sovent ençaçoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #G1 #M1 #N ">et chaçoient</lem>
+               <rdg wit="#E2 #F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qant il les   ataignoient .,  si les
+                  devoroient et menjoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">et menjoient</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">cest maniere   de deable</lem>
+               <rdg wit="#F2">ces plunjons</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">deguerpesissent   cel leu   et si</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #M1 #N ">desertes</lem>
+               <rdg wit="#C2 #D #E2 #F2 #G1">diverses</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Or repoez vos   oïr et entendre grant
+                  miracle .,  car aussi com il soloit les deables chacier fors des humeins cors par
+                    autel comandement .,  chaça il les oiseaus fors del flun   ou   il estoient
+                  assamblé :.  Tantost com seinzMartins lor ot de par nostre Signor fet   le  
+                  conmandement .,  tuit li oisel s ' assemblerent ensamble .,  si   deguerpirent la
+                  riviere , si alerent as bois et as montaignes :,  et li pluisor qi ce virent  s '
+                  esmerveillierent   de   la grant vertu qe   nostre Sires avoit   mise en seint
+                  Martin :,  qe   sor oiseaus   meïsmes avoit de   conmander puissance</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">de par nostre Signor fet   le  
+                  conmandement</lem>
+               <rdg wit="#G1" type="red.">conmandé de par nostre Seigneur</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">ensamble</lem>
+               <rdg wit="#M1 #N">en une torbe</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">s ' esmerveillierent   de   la grant vertu
+                  qe   nostre Sires avoit   mise en seint Martin :,  qe   sor oiseaus   meïsmes
+                  avoit de   conmander puissance</lem>
+               <rdg wit="#G1" type="red.">s'en merveilloient mout</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Saces bien qe li leu ravissable   envaïront
+                  ton fouc. Et qi desfendera puis   qe   li pasteur n ' i sera mie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">li pasteur n ' i sera mie</lem>
+               <rdg wit="#G1">tu n'i seras mie</rdg>
+               <rdg wit="#M1" type="ajout">li paistres ne les desfendera mie ne nos sera</rdg>
+               <rdg wit="#N" type="ajout">li paistres ne le deffendra ne n'i serra</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">tuit ti   loier sont sauf   et si   n '
+                  amenuiseront mie</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Aies merci de nous   qe tu ne nos
+                  deguerpisses mie</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">meüs en pitié</lem>
+               <rdg wit="#G1" type="ajout">esmeüz durement pour le duel que li desciple menoient
+                  entr'euls</rdg>
+               <rdg wit="#M1" type="ajout">meüs par le duel que si desciples faisoient</rdg>
+               <rdg wit="#N" type="ajout">meüs par le duel qu'il faisoient</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">car il estoit   toz tens pleins de doçor
+                  et de   misericorde</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">Lors se   torna vers   nostre Signor</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et ce   n ' estoit mie merveille .,  se  
+                  li seinz hom   estoit en doutance .,  car il pensoit a   . ii .   choses , a  
+                  aler a   nostre Signor   et a   l ' amour   de   ses deciples .,  ne ceus ne
+                  voloit il mie volentiers deguerpir :,  ne de   la compaignie de JesuCrist ne  
+                  voloit il mie estre desevrez plus   longuement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">ses deciples</lem>
+               <rdg wit="#N" type="ajout">de son proïsme et de ses disciples</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">volentiers deguerpir</lem>
+               <rdg wit="#M1" type="ajout">volentiers departir ne iaus deguerpir</rdg>
+               <rdg wit="#N" type="ajout">departir volontiers ne aus deguerpir</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Or poez vos oïr del   saint home qi del
+                  travail sosfrir n ' estoit   mie veincuz   ne de   la mort aussint .,  car   il  
+                  ne doutoit mie a   morir   ne   si   ne refusoit   mie a   vivre   por   la
+                  volenté nostre Signor   aemplir et faire</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 ">del travail sosfrir n ' estoit   mie
+                  veincuz</lem>
+               <rdg wit="#G1">n'estoit encor mie lassez de travail soffrir</rdg>
+               <rdg wit="#N">de tel travail n'estoit mie vencus pour travail souffrir</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">Fievres li   estoient prisses :,  ne por
+                  ce ne lessoit il mie l ' oevre nostre Signor a   fere</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">un pou de   vil fuerre desoz lui metre</lem>
+               <rdg wit="#G1">que l'en li meïst un poi d'estrain souz lui</rdg>
+               <rdg wit="#M1 #N">dessous lui metre un peu de vil estrain</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Dont avoit li   seinz hom toz   tens les
+                  iols et les meins vers le ciel .,  et si   ne s ' alaschoit onqes de ses orissons
+                  a   fere.   Et qant li prestres qi   a   lui estoit venuz li   proioit   q ' il se
+                  lessast torner seur costé   por   avoir un pou plus de doçor et de repoz en ses  
+                  membres .,  il disoit : fileinçois   esgarder le   ciels ' en iraplus
+                  aparelliement la   voie qu ' il   doit aler a   nostre Seignor</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">einçois   esgarder le   ciel</lem>
+               <rdg wit="#N">regarder le ciel ains</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">nuisance</lem>
+               <rdg wit="#M1 #N" type="ajout">nuisance ne grever</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">einz me recevera li seinz  
+                  seint Abraham hastivement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">hastivement</lem>
+               <rdg wit="#G1">hui le saint home sanz demorance</rdg>
+               <rdg wit="#M1 #N">sans demoranche</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qe   por   le seint cors qi ja estoit
+                  gloirefiez   lor sambla q ' il virent gloire parmenable</lem>
+               <rdg wit="#F2" type="ajout">que que qant il fu mors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Et qi cuidast q ' il eüst tant  
+                  esté coverz de   heires et tant soffert de   peines . !  Car il estoit plus blans
+                  qe leiz ne   noiz negie. Et ja mostroit la   nature de   la char   qi   estoit
+                  muee   la gloire de   la surrection qi li   estoit a   venir</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Tuit li home de   la cité i   vindrent  
+                  et tuit cil qi estoient as   champaignes et as   voies   et meïsmement les
+                  pluseurs genz   vindrent des   citez procheines :.  O : !  com   grant
+                  pleur tuit demenoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">venuz et assamblez s ' en dolousoient
+                  et jemissoient . !  Ce dura tresq ' au liu de   sa sepouture</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Ce</lem>
+               <rdg wit="#G1" type="ajout">cist plors et ceste plainte</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">i   furent les celestieles ymnes a   hautes
+                  voiz dites et chantees</lem>
+               <rdg wit="#F2" type="red.">qi chantent les ymnes por l'onneur du saint home</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">chantees</lem>
+               <rdg wit="#D #E2" type="ajout">chantees pour l'ennor del seint home</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qi meinz   granz biens avoit fes as  
+                  malades</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">un</lem>
+               <rdg wit="#D #E2 #F2">
+                  <seg type="number">.vii.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">les voiz del ciel</lem>
+               <rdg wit="#M1 #N">le vois del ciel et les angeles</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si com je vous ai plenierement devant conté
+                    et dit. Et qant il   vint premiers a   Conde   et il   comença a   maladir ., 
+                  si   conme la   chose vous est devant   retraite</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">Et qant il   vint premiers a   Conde  
+                  et </lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">la   chose vous est devant  
+                  retraite</lem>
+               <rdg wit="#N">jou vous ai conté devant</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">qant li seinz   hom fu mors</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 #G1 #M1 #N ">une grant tençon leva</lem>
+               <rdg wit="#E2">si i ot une grant contençon</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 ">tençon</lem>
+               <rdg wit="#D #E2 #G1">contençon</rdg>
+               <rdg wit="#M1 #N">tence</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">et une grant dissention</lem>
+               <rdg wit="#F2 #G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #N ">requerons   nos et volons avoir</lem>
+               <rdg wit="#F2 #G1" type="red.">volons nous avoir</rdg>
+               <rdg wit="#M1">requerons nous et le volons avoir</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1 #M1 #N ">et volons avoir</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">oïes ses paroles</lem>
+               <rdg wit="#N" type="ajout">ses paroles oïes et entendues</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">dementieres q ' il a esté au   monde  
+                  et parti a   ses viandes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Totes cez choses vous pueent bien souffire
+                  et doivent</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Beaus signors de   Poitiers</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">cez choses qi sont petites</lem>
+               <rdg wit="#G1">les petites choses en pes</rdg>
+               <rdg wit="#M1">les coses ester qi sont petites</rdg>
+               <rdg wit="#N">ces autres coses ester qi sunt petites</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">n ' en resuscita il qe</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">un</lem>
+               <rdg wit="#N">
+                  <seg type="number">.iiii.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #N ">seul</lem>
+               <rdg wit="#F2 #G1 #M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">Ce est   certeine chose et provee</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">de   par   nostre Signor</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">qu ' il   ot l ' eveschié receüe</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #G1 #M1 #N ">dementieres q ' il fu en   vie</lem>
+               <rdg wit="#E2" cause="om."/>
+               <rdg wit="#F2">en sa vie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">il en   tel maniere</lem>
+               <rdg wit="#M1" type="ajout">li un et li autre en tel maniere et estriverent</rdg>
+               <rdg wit="#N" type="ajout">cil et estriverent en tel maniere</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">son propre patron</lem>
+               <rdg wit="#G1">leur propre patremoine</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">l ' eure de mienuit vint</lem>
+               <rdg wit="#G1 #M1 #N">la nuit fu venue</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">qi de Poitiers estoient</lem>
+               <rdg wit="#F2 #G1 #M1 #N" type="red.">de Poitiers</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ne   n ' i   ot nul qi veillast   de   si
+                  granz genz conme   de   la   cité et de   la   contree d ' environ i   estoient  
+                  assamblé</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et toutes les genz de   la   cité i  
+                  entrerent   aveuqes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si   s ' en vindrent tout aval</lem>
+               <rdg wit="#G1">et si se mistrent contreval</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #F2 ">aval</lem>
+               <rdg wit="#E2 #G1 #M1 #N">contreval</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1 #M1 #N ">de Viane</lem>
+               <rdg wit="#D" type="ajout">du rivage de Viene</rdg>
+               <rdg wit="#E2">du rivage</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #G1 #M1 #N ">li Poitevin</lem>
+               <rdg wit="#E2 #F2">cil de Poitiers</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">tresor</lem>
+               <rdg wit="#F2 #G1">cors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">qi de   Tors estoient</lem>
+               <rdg wit="#F2 #G1 #M1 #N" type="red.">de Tors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">a   grant joie</lem>
+               <rdg wit="#M1 #N">a<pc type="reg" ana="space"> </pc>grant <choice>
+                     <orig>i</orig>
+                     <reg>j</reg>
+                  </choice>oie et a grant leeche</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si com vos devez bien   croire</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">sachiez bien</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1" type="ajout">sachez bien cil qui ce demandez</rdg>
+               <rdg wit="#M1 #N" type="ajout">sache bien qi ce demande</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">ou   il li  feïssent assez sosfrir de paine
+                  et de   doleur</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">. xiii .</lem>
+               <rdg wit="#G1">
+                  <seg type="number">.xxii.</seg>
+               </rdg>
+               <rdg wit="#M1 #N">
+                  <seg type="number">.xii.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">tout par nombre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">nombre</lem>
+               <rdg wit="#M1 #N">conte</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Tant en   trueve l ' en l ' escriture</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1 #M1 #N ">Tout ausiSevrins</lem>
+               <rdg wit="#D #E2 #F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">Tout ausi</lem>
+               <rdg wit="#G1 #M1" type="red.">si</rdg>
+               <rdg wit="#N">tot si</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #M1 #N "> Elqi molt bien l ' a fete leüe </lem>
+               <rdg wit="#D #E2 #F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">si com je voz ai conté</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">  et de ses   clers grant partie ensamble o
+                    lui.   Si com il   aloit einsi com je vos di</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">grant joie et de   grant esleecement</lem>
+               <rdg wit="#G1">grant lieece et de grant joie</rdg>
+               <rdg wit="#M1">de grant joie et de grant leeche</rdg>
+               <rdg wit="#N">de joie et de leece grant</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et de   grant esleecement</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et entendi</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et entendoit</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">Li arcediacres</lem>
+               <rdg wit="#F2 #G1">il</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #N ">li</lem>
+               <rdg wit="#G1 #M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">creature</lem>
+               <rdg wit="#M1 #N">cose</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">Li arcediacres conmença le col a estendre  
+                  et les oreilles a   torner vers le   ciel   por   oïr et por entendre .,  mes il n
+                  ' ooit ne n ' entendoit chose nule.   Et je quiç qe por ce ne pooit   il   oïr les
+                  voiz qi chantoient   q ' il n ' estoit mie   de si   haute merite com li
+                  seinz arcevesqes   qi devant les avoit oïes</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1 #M1 #N ">le col a estendre</lem>
+               <rdg wit="#C2" type="ajout">le col a estendre et le col a torner</rdg>
+               <rdg wit="#D #E2" type="ajout">le col a estendre et la teste</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">li   arcevesqes et li arcedyacres</lem>
+               <rdg wit="#F2 #G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">firent</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1">distrent</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">par sa grant douçor et par sa   grant  
+                  misericorde</lem>
+               <rdg wit="#G1" type="red.">sa bonté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">se releverent  de terre</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">de terre</lem>
+               <rdg wit="#M1 #N" type="ajout">andoi de terre</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">chose</lem>
+               <rdg wit="#G1" type="ajout">creature. Une foiz et autre li demanda s'il ooit neïs ne
+                  entendoit nule chose</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">la   leeche et la   joie estoit   si
+                  granz</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">et la   joie</lem>
+               <rdg wit="#G1 #M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et demeinent joie el   ciel</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">el   ciel</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">qu'il l'enportent lasus el ciel</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">oï et entendu un pou ceste chose</lem>
+               <rdg wit="#G1">un poi entendu ces choses</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">une   si grant torbe de deables vint</lem>
+               <rdg wit="#G1">il oïrent une grant torbe de deables venant aprés</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">si en   voudrent porter</lem>
+               <rdg wit="#G1" type="red.">por</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 ">en lor compaignie</lem>
+               <rdg wit="#F2 #G1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #G1 #M1 #N ">chose</lem>
+               <rdg wit="#E2 #F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N">si com   il meïsmes  bien savoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">l ' ame</lem>
+               <rdg wit="#F2" type="ajout">la sainte ame</rdg>
+               <rdg wit="#G1 #M1 #N" type="ajout">l'ame du saint home</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #M1 #N ">es  cius</lem>
+               <rdg wit="#F2">en paradis</rdg>
+               <rdg wit="#G1" type="ajout">sains ciels</rdg>
+            </app>
+          
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">en   la   gloire parmenable</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app> 
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">s ' en   repairierent dolanz et confuz
+                  et tristres</lem>
+               <rdg wit="#F2" type="red.">furent confus</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #N ">et tristres</lem>
+               <rdg wit="#M1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">Seinz Sevrins li   arcevesqes nota   le
+                  tens et l ' eure   q ' il ceste chose avoit oïe et puis si envoia a   Tors   un
+                  message tost et isnielement   por savoir   se ceste chose estoit einsint avenue.  
+                  Qant   li   messages vint a   la   cité de   Tors ,  il enquist   la   chose par
+                  grant diligense :,  si   sot et entendi bien par les preudomes de   la   cité q '
+                  a cele hore tout droit   qe seinz Sevrins l ' arcevesqes de Coloigne ot les voiz
+                  oïes des   angles :,  estoit seinz Martins trespassés   de ceste mortel vie.   </lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N">ne   l ' en avoit fait  
+                  premiers conmandement ou signe</lem>
+               <rdg wit="#G1" cert="low">n'en donnoit congié, si cuida li saint hom li feïst
+                  signe</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N">. ii .</lem>
+               <rdg wit="#G1">.<seg type="number">iii</seg>.</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">ou de   . iii .</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">. iii .</lem>
+               <rdg wit="#G1">.<seg type="number">iiii</seg>.</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">lassez et ennuiez de   si   longe
+                  demorance</lem>
+               <rdg wit="#G1" type="red.">touz lassez de la demorance</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et ennuiez</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">car</lem>
+               <rdg wit="#G1 #M1 #N" type="ajout">Et bien sachiez que</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">qi   archevesqes estoit de   Tors</lem>
+               <rdg wit="#G1" type="red.">archevesque de Tors</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et encontre cui   ame totes les celestieus
+                  vertuz venoient</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 #M1 ">et la mere nostre Signor JesuCrist qi
+                  roïne est de tote creature</lem>
+               <rdg wit="#N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 ">la mere nostre Signor JesuCrist</lem>
+               <rdg wit="#G1">ma Dame sainte Marie</rdg>
+               <rdg wit="#M1 #N">la haute Dame me Dame sainte Marie</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">ensamble o   la   conpagnie   des seintes virges</lem>
+               <rdg wit="#F2 #M1">avec la compaignie des virgenes</rdg>
+               <rdg wit="#G1" type="red.">et avec les vierges</rdg>
+               <rdg wit="#N" type="ajout">ensamble le compaignie des angles et des virgenes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1 #M1 #N ">et qi   paradiz retient ensamble o   cels
+                  qi i   demeinent grant joie et leesche</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 ">qi   de   tote chose est sires et crieres</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1 #M1 #N">qi<pc type="reg" ana="space"> </pc>Sires est de toute
+                  creature</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #M1 #N ">gloire   ou nos tuit puissons  
+                  parvenir</lem>
+               <rdg wit="#G1">joie sanz fin</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">  Aprés ce qe   li   seinz hom   dont je vos  
+                  ai conté la   vie fu   trespassez de cest   mortel siecle   . lxiiii .   anz tout
+                  droitement fu eslevez a   archevesqes de   Tors uns seinz hom   et de   bone vie  
+                  qi Perpetuus estoit apelez par non.   Qant   il fu en   la dignité et en   la
+                  signorie :,  il porpensa a   fere sor le cors seint Martin plus haute eglisse
+                  et plus bele   q ' ele n ' i estoit faite.   Ce   fist   il par   molt grant
+                  estude   et molt en   aurions a   parler conment l ' oevre fu   parfaite
+                  et consomee :,  se   nous a   plus haute chose raconter et dire   n ' avions
+                  proposé a   metre nostre   entente.   Qant ele fu toute   parfete et consomee ., 
+                  li seinz archevesqes manda   toz les voisins   evesqes et toz les abbés et les
+                  prestres et les   clers de   la   contree por l ' eglisse dedier et beneïr  
+                  et por le   cors de saint Martin oster de   la ou   il estoit enfoïz et metre en  
+                  autre leu a   grant   honeur ,  a   grant joie et a   grant segnorie   si   com
+                  droiz estoit.   Et por ce voloit li   bons   archevesqes qe ceste translation fust
+                  fete   le   jor des premieres kalendes de juignet.   Il veillierent la   nuit
+                  devant   et qant vint   la   matinee,   il conmencierent a   foïr la   terre   qi
+                  estoit deseur le   sarqu :,  et puis si misent   lor meins tot entor por lever le
+                    amont et por   remuer le.   Mes onqes ne sorent tant pener   ne   traveillier q
+                  ' il le peüssent removoir   en   nule maniere. Dont furent molt dolenz   et si  
+                  lessierent trespasser le   jor tresq ' a la nuit   qi   venoit. Et   cele meïsme
+                  nuit revellierent   il   toute tresq ' a la   matinee. Donc si   ressaierent s '
+                  il   poroient le   seint cors atot le   sarqu   removoir ne   amont treire.   Lors
+                  furent   molt dolenz et molt espoentez .,  car il ne   le   pooient movoir ne   ne
+                  savoient q ' il en peüssent fere.   Dont parla uns des clers qi la estoient et si
+                    dist . :  Dontbeaus signorstresq ' a tierz jorserala feste del   jorl '
+                  arcevesqiéPartresq ' a ce jorremueve   Li evesqe et li clergiés qi   la   estoient
+                  assemblez   s ' asistrent a   ces paroles .,  si   i   furent tresq ' au tierz jor
+                  en   jeunes et en   orisons et en vegiles.</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 #G1">la   vie</lem>
+               <rdg wit="#D" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1">de cest   mortel siecle</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 #G1">. lxiiii .</lem>
+               <rdg wit="#D #E2">
+                  <seg type="number">.xiiii.</seg>
+               </rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1">molt grant estude   et molt en   aurions a   parler
+                  conment l ' oevre fu   parfaite et consomee :,  se   nous a   plus haute chose
+                  raconter et dire   n ' avions proposé a   metre nostre   entente</lem>
+               <rdg wit="#F2">molt grant et molt haute et molt bele</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1">et toz les abbés et les prestres</lem>
+               <rdg wit="#F2" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2">juignet</lem>
+               <rdg wit="#G1">juing</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #G1">vint   la   matinee</lem>
+               <rdg wit="#F2">lendemain vint</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2">remuer le</lem>
+               <rdg wit="#G1">esmouvoir plus haut</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 ">amont treire</lem>
+               <rdg wit="#D #E2" type="ajout">amont trere, mes neant ne leur valut</rdg>
+               <rdg wit="#F2">amont traire, mais riens ne leur valut</rdg>
+               <rdg wit="#G1" type="ajout">remouvoir ne amont traire</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #G1">jeunes</lem>
+               <rdg wit="#D #E2 #F2">ymnes</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #E2 #F2 ">et en vegiles</lem>
+               <rdg wit="#D" type="ajout">et en proieres et en vigiles</rdg>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">Et   qant vint au qart jor .,  il   s '
+                  aprochierent au sarqu ou   li cors gisoit del   seint home .,  si i   mistrent toz
+                  les meins por   removoir le et por lever le , mes   il ne porent.   Quant il
+                  virent ce ,   si furent toz espoentez   ne   ne sorent qil peüssent feire .,  et
+                  tant qu ' il se   porpenserent q ' il recoverroient de   terre la sepouture q ' il
+                  avoient descoverte. Si com il estoient en cele doutance :,  uns vielz hom de  
+                  mout   grant beauté ,  aussi blans conme nois   negie :,  s ' aparut a   els  
+                  et il li demanderent qi   il estoit   et il lor dist q ' il estoit uns abbes  
+                  et puis si parla   et lor dist . :  atargiezmaladeset Donta   ceste chosei Dont
+                  osta   li   blans hom qi   la estoit venuz s ' afubleüre   et li   prestre aussi
+                  qi   la estoient et li   vesqe .,  et les   seintes reliqes et les croiz et  . vii
+                  .   cierges i   furent aportez tos ardanz.   Dont conmencierent   l ' antevene a  
+                  chanter   et si   leverent le sarqu   del seint home en haut molt legierement  
+                  par   l ' aïde del viel home .,  si   l ' emporterent et misent el leu ou   il
+                  estoit aorez tresq ' a hui   cest jor. Et qant il fu   mis et assis en   son lieu
+                    a   la volenté de   l ' evesqe qi Perpetuus avoit   non   et la   messe fu
+                  chantee   et il   se   furent assamblé por mengier ensamble si   com   il estoit  
+                  costume adonqes .,  il manderent le viel home qi aidié lor avoit .,  mes il n ' en
+                  troverent   mie   ne il n ' estoit la   nus hom qi l ' eüst veü   issir de   l '
+                  eglisse :. </lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3 #G1">qart</lem>
+               <rdg wit="#C2 #D #E2 #F2">tierz</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2">et les   seintes reliqes et les croiz et  . vii .  
+                  cierges i   furent aportez tos ardanz</lem>
+               <rdg wit="#F2" cause="om."/>
+               <rdg wit="#G1">qui avoit aportees les croiz et les saintes reliques et .<seg
+                     type="number">vii</seg>. cierges ardans</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2">par   l ' aïde del viel home .,  si   l '
+                  emporterent</lem>
+               <rdg wit="#G1" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #F2 ">estoit aorez</lem>
+               <rdg wit="#D #E2" type="ajout">estoit aorez et est encore</rdg>
+               <rdg wit="#G1">a esté</rdg>
+            </app>
+            <app>
+               <lem wit="#C1 #C2 #C3 #D #E2 #F2 #G1 ">Por   ce croi je qe   ce fu aucuns   angeles
+                  qi por le seint hom s ' aparut ilueqes :,  et si ne s ' aparut onqes puis a   nul
+                  d ' eus de cels   de l ' eglisse.   Et en icel leu ou   li cors del seint   home
+                  fu mis avindrent tres   ce jor en avant   meint beau miracle   qi par negligence
+                  sont   lessié en escripture a   metre.   Mes nos en avons   conté et dit   ce qe
+                  nos en avons en nostre tens   veü   et qe nos en   oïmes conter par autrui   et ce
+                  qe nos en deümes veraiement croire   par   l ' aïde nostre Signor   qi vit
+                  et regne par tos   les siecles des siecles.   Amen.</lem>
+               <rdg wit="#M1 #N" cause="om."/>
+            </app>
+            <app>
+               <lem wit="#C1 #C3">des siecles</lem>
+               <rdg wit="#C2 #D #E2 #G1" type="ajout">des siecles sanz fin</rdg>
+               <rdg wit="#F2">sanz fin</rdg>
+            </app>
+         </p>
+      </body>
+   </text>
+</TEI>
