@@ -1146,6 +1146,10 @@
                                         <desc>signale les leçons où la variante consiste en l'ajout
                                             d'un pronom personnel sujet</desc>
                                     </valItem>
+                                    <valItem ident="genre">
+                                        <gloss>genre</gloss>
+                                        <desc>signale les leçons où la variante consiste en un changement de genre</desc>
+                                    </valItem>
                                 </valList>
                             </attDef>
                             <attDef ident="cause" mode="change">

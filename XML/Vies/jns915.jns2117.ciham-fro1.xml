@@ -11,7 +11,7 @@
       </titleStmt>
       <publicationStmt>
         <publisher>Ariane Pinche</publisher>
-        <date>2015</date>
+        <date>2015-2021</date>
       </publicationStmt>
       <sourceDesc>
         <listWit>
@@ -31,7 +31,7 @@
             <idno>fr. 00412</idno>
           </msIdentifier>
           <head>
-            <title>De seint Martin</title>
+            <title>Ci coumence li dialogues que Postumiens et Gallus distrent de seint Martin et des moines d'Egypte si com Severus le raconte qi les oï parle</title>
             <origDate>1285</origDate>
             <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
               notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans la
@@ -1579,15 +1579,12 @@
                 arbres&esp;<lb/>n<pc type="reg">'</pc>a il en l<pc type="reg">'</pc>ermitage<pc
                 type="orig" ana="coordination">.</pc>&esp;&esperluette-et;de ceus me&itrem;smes
               &mlt;&esp;<lb/>petit.&esp;&n-maj;e&nospace;qedent <app>
-                <lem>se</lem>
-                <rdg wit="#C2 #C3">ne sé</rdg>
-              </app><note>graphie fautive du démonstratif neutre qui annonce ce qui va être dit,
-                cette confusion reste toutefois très rare dans le manuscrit</note>&#160;&i-j;e <app>
-                <lem>&u-v;oeil</lem>
-                <rdg wit="#C2 #C3" cause="om."/>
-              </app> dire<note>Il nous semble que la variante proposée par C<hi rend="exp">2</hi> et
-                  C<hi rend="exp">3</hi> est plus aisée à comprendre, à savoir : <said><hi
-                    rend="italic">ne sé je dire</hi></said></note> dont il &u-v;ie<lb/>nent ne coment&point-virg3;<choice>
+                <lem wit="#C2 #C3"><corr type="add">ne</corr> sé</lem>
+                <rdg wit="#C1" type="erreur">se</rdg>
+              </app>&#160;&i-j;e <app>
+                <lem wit="#C2 #C3" cause="om."><corr type="del">&u-v;oeil</corr></lem>
+                <rdg wit="#C1" type="erreur">&u-v;oeil</rdg>
+              </app> dire dont il &u-v;ie<lb/>nent ne coment&point-virg3;<choice>
                 <orig>S</orig>
                 <reg>s</reg>
               </choice>e il naissent de la na&tususcrit-tur;e&esp;<lb/>del soleil &esperluette-et;de

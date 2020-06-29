@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-07T08:37:44Z. .
+Schema generated from ODD source 2020-06-29T12:10:12Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -3292,13 +3292,15 @@ Elements]</a:documentation>
                   <value>etym.</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(etym.) signale les leçons où la variante propose un terme identique avec un changement de base étymologique. Nous avons ainsi signalé les formes du verbe être étymologiques et les formes refaites sur *estare.</a:documentation>
                   <value>casAbs</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(casAbs) signale les leçons où le texte propose une variation sur l'expression du complet du nom avec ou sans l'expression de la préposition "de".</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(casAbs) signale les leçons où le texte propose une variation sur l'expression du complément du nom avec ou sans l'expression de la préposition "de".</a:documentation>
                   <value>erreur</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(erreur) signale les leçons où la variante propose une leçon issue d'une erreur évidente du copiste</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(erreur) signale les leçons où la variante propose une leçon issue d'une erreur évidente de copie</a:documentation>
                   <value>outil</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Mots outils) signale les leçons où la variante consiste en la suppression, l'addition ou le remplacement d'un mot outil de type conjonction de coordination, adverbe de phrase, préposition ou conjonction de subordination et qui n'a pas d'influence majeure sur la syntaxe ou le sens de la phrase</a:documentation>
                   <value>proPer</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pronom personnel) signale les leçons où la variante consiste en l'ajout d'un pronom personnel sujet</a:documentation>
+                  <value>genre</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(genre) signale les leçons où la variante consiste en un changement de genre</a:documentation>
                </choice>
             </attribute>
          </optional>

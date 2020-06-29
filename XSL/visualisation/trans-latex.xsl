@@ -8,7 +8,7 @@
 
 
     <!-- paramètre pour choisir les types d'apparats qu'on ne souhaite pas afficher -->
-  <!--  <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|erreur|proPer'"/> -->
+    <!--  <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|erreur|proPer'"/> -->
     <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/>
 
 
@@ -228,7 +228,7 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="tei:corr">
         <xsl:choose>
             <xsl:when test="@type = 'add'">
@@ -396,7 +396,7 @@
                 test="tei:rdg[matches(@type, $deletedAppType)] and not(tei:rdg[not(matches(@type, $deletedAppType))])">
                 <xsl:apply-templates select="tei:lem"/>
             </xsl:when>
-            <!-- Cas n°2 : pour les apparats qui des leçons avec un type à supprimer et un autre type => suppression uniquement des leçons concernées -->
+            <!-- Cas n°2 : pour les apparats qui a des leçons avec un type à supprimer et un autre type => suppression uniquement des leçons concernées -->
             <xsl:when
                 test="tei:rdg[matches(@type, $deletedAppType)] and tei:rdg[not(matches(@type, $deletedAppType))]">
                 <xsl:for-each select="tei:lem">
@@ -405,8 +405,18 @@
                     <xsl:text>}</xsl:text>
                 </xsl:for-each>
                 <xsl:text>{\lemma{</xsl:text>
-                <xsl:value-of
-                    select="fn:ellipsis(tei:lem, $maxWordsEllipsisDefault, $defaultStartingWordEllipsis, $defaultEndingWordEllipsis)"/>
+                <xsl:choose>
+                    <xsl:when test="tei:lem/@cause">
+                        <xsl:text>~\textit{</xsl:text>
+                        <xsl:value-of select="tei:lem/@cause"/>
+                        <xsl:text>}</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of
+                            select="fn:ellipsis(tei:lem, $maxWordsEllipsisDefault, $defaultStartingWordEllipsis, $defaultEndingWordEllipsis)"
+                        />
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:if test="tei:lem/@wit">
                     <xsl:text>~\textit{</xsl:text>
                     <xsl:for-each select="tokenize(tei:lem/@wit, '\s+')">
@@ -458,11 +468,39 @@
                     <xsl:text>}</xsl:text>
                 </xsl:for-each>
                 <xsl:text>{\lemma{</xsl:text>
-                <xsl:value-of
-                    select="fn:ellipsis(tei:lem, $maxWordsEllipsisDefault, $defaultStartingWordEllipsis, $defaultEndingWordEllipsis)"/>
+                <xsl:choose>
+                    <xsl:when test="tei:lem/@cause">
+                        <xsl:text>~\textit{</xsl:text>
+                        <xsl:value-of select="tei:lem/@cause"/>
+                        <xsl:text>}</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of
+                            select="fn:ellipsis(tei:lem, $maxWordsEllipsisDefault, $defaultStartingWordEllipsis, $defaultEndingWordEllipsis)"
+                        />
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:if test="tei:lem/@wit">
                     <xsl:text>~\textit{</xsl:text>
-                    <xsl:value-of select="fn:witness(./@wit)"/>
+                    <xsl:for-each select="tokenize(tei:lem/@wit, '\s+')">
+                        <xsl:variable name="last" select=".[last()]"/>
+                        <xsl:variable name="witTok">
+                            <xsl:value-of select="replace(., '#', '')"/>
+                        </xsl:variable>
+                        <xsl:variable name="witLet">
+                            <xsl:value-of select="replace($witTok, '\d+', '')"/>
+                        </xsl:variable>
+                        <xsl:variable name="witNum">
+                            <xsl:value-of select="replace($witTok, '\D+', '')"/>
+                        </xsl:variable>
+                        <xsl:value-of select="$witLet"/>
+                        <xsl:text>\up{</xsl:text>
+                        <xsl:value-of select="$witNum"/>
+                        <xsl:text>}</xsl:text>
+                        <xsl:if test="position() != last()">
+                            <xsl:text>&#160;</xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
                     <xsl:text>}</xsl:text>
                 </xsl:if>
                 <xsl:text>}\Afootnote{</xsl:text>

@@ -197,9 +197,9 @@
         <br/>
         <b>folios : </b><xsl:value-of select="."/>, lien vers le manuscrit : <xsl:element name="a">
             <xsl:attribute name="href"><xsl:value-of
-                    select="ancestor::tei:TEI//tei:body/descendant::tei:pb[1]/@facs"
+                    select="ancestor::tei:TEI//tei:teiHeader/descendant::tei:witness[1]/@facs"
                 /></xsl:attribute>
-            <xsl:value-of select="ancestor::tei:TEI//tei:body/descendant::tei:pb[1]/@facs"
+            <xsl:value-of select="ancestor::tei:TEI//tei:teiHeader/descendant::tei:witness[1]/@facs"
             /></xsl:element>
         <br/>
     </xsl:template>
@@ -716,7 +716,6 @@
 
 
     <!-- finir en créant un variable i + 1 -->
-    <!-- rajouter l'xml id à l'apparat pour le pop-up -->
     <!-- fin éléments à afficher pour la visualisation facsimilaire -->
 
 
@@ -838,17 +837,13 @@
             <xsl:when test="@type = 'add'">
                 <xsl:element name="span">
                     <xsl:attribute name="class">reg</xsl:attribute>
-                    <xsl:text>[</xsl:text>
                     <xsl:apply-templates/>
-                    <xsl:text>]</xsl:text>
                 </xsl:element>
             </xsl:when>
             <xsl:when test="@type = 'del'">
                 <xsl:element name="span">
                     <xsl:attribute name="class">orig</xsl:attribute>
-                    <xsl:text>(</xsl:text>
                     <xsl:apply-templates/>
-                    <xsl:text>)</xsl:text>
                 </xsl:element>
             </xsl:when>
         </xsl:choose>
