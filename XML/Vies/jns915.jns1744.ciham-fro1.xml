@@ -3,402 +3,429 @@
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../ODD/out/ODD_wauchier.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" n="8" type="G2">
-<teiHeader>
-  <fileDesc>
-   <titleStmt>
-   <title>Vie de saint Benoit</title>
-   <author>Wauchier de Denain</author>
-   </titleStmt>
-   <publicationStmt>
-   <publisher>Ariane Pinche</publisher>
-   <date>2017</date>
-   </publicationStmt>
-     <sourceDesc>
-        <listWit>
-           <witness xml:id="C1" corresp="#ms412">Paris, manuscrit fr. 412, Bibliothèque nationale de
-              France, <date when="1285">1285</date></witness>
-           <witness xml:id="C2">Paris, manuscrit fr. 411, Bibliothèque nationale de France, <date
-              notBefore="1300" notAfter="1400">14e siècle</date></witness>
-           <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
-              notBefore="1250" notAfter="1300">13e siècle</date></witness>
-        </listWit>
-        <msDesc xml:id="ms412">
-           <msIdentifier>
-              <settlement>Paris</settlement>
-              <repository>Bibliothèque nationale de France</repository>
-              <idno>fr. 00412</idno>
-           </msIdentifier>
-           <head>
-              <title>De seint Martin</title>
-              <origDate>1285</origDate>
-              <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
-                 notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans la
-                 base Jonas-IRHT/CNRS (permalink : <ref
-                    target="http://jonas.irht.cnrs.fr/manuscrit/45533"
-                    >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du 03/07/2015
-              </note>
-           </head>
-           <msContents>
-              <msItemStruct>
-                 <locus>fol.103-fol.114</locus>
-                 <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
-                    entendre</incipit>
-                 <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des siecles.
-                    Amen.</explicit>
-              </msItemStruct>
-           </msContents>
-        </msDesc>
-     </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-   <refsDecl n="CTS">
-   <cRefPattern n="section" matchPattern="(.+).(.+)"
-    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\']/tei:div[@n=\'$2\'])">
-    <p>This pointer pattern extracts chapter and section</p>
-   </cRefPattern>
-   <cRefPattern n="chapter" matchPattern="(.+)"
-    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\'])">
-    <p>This pointer pattern extracts chapter.</p>
-   </cRefPattern>
-   </refsDecl>
-   <variantEncoding method="parallel-segmentation" location="internal"/>
-   <projectDesc>
-   <p/>
-   </projectDesc>
-  </encodingDesc>
-  <profileDesc>
-     <particDesc>
-      <listPerson>
-        <person xml:id="agapites">
-         <persName>Agapites</persName>
-         <note type="biographical">Sous-diacre de <persName ref="#benoit">Saint
-            Benoit</persName>.</note>
-        </person>
-        <person xml:id="apolloine">
-         <persName>Apollin</persName>
-         <note type="biographical">Évêque d'<placeName ref="Excorande" full="yes">Excorande</placeName>.</note>
-        </person>
-        <person xml:id="appollin">
-         <persName>Appollin</persName>
-         <note type="biographical">Dieu du panthéon romain.</note>
-        </person>
-        <person xml:id="benoit">
-         <persName>Beneoit</persName>
-         <birth when="0480">480</birth>
-         <death when="0547">547</death>
-         <note type="biographical"
-            source="http://catalogue.bnf.fr/ark:/12148/cb118911827">Saint Benoit, patriarche et législateur des moines d'Occident, fondateur de
-           l'ordre des bénédictins. Abbé du <placeName ref="#cassin" full="yes">Mont-Cassin</placeName>, il est célèbre pour sa règle de vie monastique,
-           dite « la règle de saint Benoit ».</note>
-        </person>
-        <person xml:id="blidin">
-         <persName>Blidin</persName>
-         <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
-        </person>
-        <person xml:id="costance">
-         <persName>Costances</persName>
-         <note type="biographical">Évêque d'<placeName ref="#aquin" full="yes">Aquino</placeName>.</note>
-        </person>
-        <person xml:id="constentin2">
-         <persName>Costentin</persName>
-         <note type="biographical">Successeur de <persName ref="#benoit">saint
-            Benoit</persName> à la tête du monastère de <placeName ref="#cassin" full="yes">Mont-Cassin</placeName>.</note>
-        </person>
-        <person xml:id="deudone2">
-         <persName>Deudonez</persName>
-         <note type="biographical">Abbé du moine <persName ref="#romein">Romain</persName>.</note>
-        </person>
-        <person xml:id="evitius">
-         <persName>Evitius</persName>
-         <note type="biographical">Noble, père de <persName ref="#maurum">Maurum</persName>.</note>
-        </person>
-        <person xml:id="florentin">
-         <persName>Florences</persName>
-         <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain
-           empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
-        </person>
-        <person xml:id="germein"
-            corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
-         <persName>Germein</persName>
-         <death when="0541">541</death>
-         <note type="biographical">Saint Germain de Capoue, évêque de Capoue en Italie, ami
-           de <persName ref="#benoit">Saint Benoît</persName>.</note>
-        </person>
-        <person xml:id="gotus">
-         <persName>Gotus</persName>
-         <note type="biographical"> Moine de la confrérie de <persName ref="#benoit">saint
-            Benoit</persName>, pauvre d'esprit.</note>
-        </person>
-        <person xml:id="gregoire">
-         <persName>Gregoires</persName>
-         <birth when="0540">540</birth>
-         <death when="0604">604</death>
-         <note type="biographical"
-            source="http://catalogue.bnf.fr/ark:/12148/cb11886472r">Grégoire le grand, pape de Rome de 590 à 604, auteur des <hi rend="italic">Dialogues</hi> dont est issue la <hi rend="italic">Vie de <persName ref="#benoit">saint Benoit</persName>
-           </hi>.</note>
-        </person>
-        <person xml:id="honores">
-         <persName>Honores</persName>
-         <note type="biographical">Abbé du monastère où saint Benoit rentra dans les ordres.</note>
-        </person>
-        <person xml:id="jehan">
-         <persName>Jehan</persName>
-         <birth when="0360">360</birth>
-         <death when="0432">432</death>
-         <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
-           <surname type="complex" full="yes">Jean Cassien ou Jean l'ermite</surname> prêtre et
-           moine, originaire d'<placeName ref="#egypte" full="yes">Égypte</placeName>, il établit sa
-           communauté sur l'île de Chypre.</note>
-        </person>
-        <person xml:id="jeanBaptiste">
-         <persName>Jehan Baptiste</persName>
-         <note type="biographical"
-            source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
-           <surname type="complex" full="yes">Jean le Baptiste</surname>, personnage biblique, prédicateur
-           en Judée.</note>
-        </person>
-        <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
-            xml:id="jesus">
-         <persName>Jesu Crist</persName>
-         <birth when="0001">0</birth>
-         <death when="0030">33</death>
-         <note type="biographical"
-            source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
-           <surname type="complex" full="yes">Jésus-Christ</surname>, messie. Les chrétiens le
-           reconnaissent comme le fils unique de Dieu.</note>
-        </person>
-        <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
-            xml:id="martin">
-         <persName>Martin</persName>
-         <birth when="0316">316</birth>
-         <death when="0397-11-08">397</death>
-         <note type="biographical"
-            source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
-           <surname type="complex" full="yes">Saint Martin de Tours</surname>, né en Hongrie dans
-           la colonie romaine de <placeName ref="#sabarie" full="yes">Sabaria</placeName> en 316 et
-           mort à <placeName ref="#conde" full="yes">Candes</placeName> en France le 8 novembre
-           397.</note>
-        </person>
-        <person xml:id="maurum">
-         <persName>Maurum</persName>
-         <note type="biographical">Disciple de <persName ref="#benoit">saint Benoit</persName> et fils d'<persName ref="#evitius">Evitius</persName>.</note>
-        </person>
-        <person xml:id="pelerins">
-         <persName>Pelerins</persName>
-         <note type="biographical">Moine de <persName ref="#benoit">Saint Benoit</persName>.</note>
-        </person>
-        <person xml:id="pierre">
-         <persName>Pere</persName>
-         <death when="0064">64</death>
-         <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint Pierre de Rome,
-           pêcheur de Galilée, devenu un des douze apôtres de Jésus-Christ. Il est le
-           premier évêque de <placeName ref="#rome" full="yes">Rome</placeName>.</note>
-        </person>
-        <person xml:id="placidum">
-         <persName>Placidus</persName>
-         <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName>
-           et disciple de <persName ref="#benoit">saint Benoit</persName>.</note>
-        </person>
-        <person xml:id="paul">
-         <persName>Pol</persName>
-         <birth when="0228">228</birth>
-         <death when="0341">341</death>
-         <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
-           <surname type="complex" full="yes">Paul de Thèbes ou Paul l'ermite</surname>, figure
-           fondatrice du monachisme avec <persName ref="#antoine">saint
-           Antoine</persName>.</note>
-        </person>
-        <person xml:id="pompeien">
-         <persName>Pompeiens</persName>
-         <note type="biographical">Abbé.</note>
-        </person>
-        <person xml:id="ringo">
-         <persName>Ringoz</persName>
-         <note type="biographical">Serviteur du roi <persName ref="#thotila">Totila</persName>.</note>
-        </person>
-        <person xml:id="romein">
-         <persName>Romeins</persName>
-         <note type="biographical">Moine qui apporte des vivres à saint Benoit pendant sa retraite.</note>
-        </person>
-        <person xml:id="rudich">
-         <persName>Rudrich</persName>
-         <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
-        </person>
-        <person xml:id="scolastica">
-         <persName>Scolastica</persName>
-         <note type="biographical">Nonne, amie de <persName ref="#benoit">saint
-            Benoit</persName>.</note>
-        </person>
-        <person xml:id="sernandu">
-         <persName>Sernanduz</persName>
-         <note type="biographical">Abbé, témoin avec <persName ref="#benoit">saint
-            Benoit</persName> de l'ascension de l'âme de <persName ref="germein">saint
-            Germain de Chaples</persName>.</note>
-        </person>
-        <person xml:id="simplices">
-         <persName>Simplices</persName>
-         <note type="biographical">Troisième successeur de saint Benoit à la tête du
-           monastère de <placeName ref="#cassin" full="yes">Mont-Cassin</placeName>.</note>
-        </person>
-        <person xml:id="theoprobus">
-         <persName>Theoprobus</persName>
-         <note type="biographical">Homme noble, ami de saint Benoit.</note>
-        </person>
-        <person xml:id="theralius">
-         <persName>Theralius</persName>
-         <note type="biographical">Noble, père de Placidum.</note>
-        </person>
-        <person xml:id="thotila" corresp="https://www.wikidata.org/wiki/Q159707">
-         <persName>Thotila</persName>
-         <death when="0552">552</death>
-         <note type="biographical">Totila, roi ostrogoth, élu roi d'Italie en 541.</note>
-        </person>
-        <person xml:id="valentinien3">
-         <persName>Valentiniens</persName>
-         <note type="biographical">Abbé du monastère de <placeName ref="#latran" full="yes">Latran</placeName>, puis moine du monastère du <placeName ref="cassin" full="yes">mont
-            Cassin</placeName> .</note>
-        </person>
-        <person xml:id="vult">
-         <persName>Vult</persName>
-         <note type="biographical">Compagnon du roi <persName ref="#thotila">Totila</persName>.</note>
-        </person>
-        <person xml:id="ylarates">
-         <persName>Ylarates</persName>
-         <note type="biographical">Convers de <placeName ref="#cassin" full="yes">Mont-Cassin</placeName>.</note>
-        </person>
-        <person xml:id="zalla">
-         <persName>Zalla</persName>
-         <note type="biographical">Envoyé du roi dans la région de Mont-Cassin.</note>
-        </person>
-      </listPerson>
-     </particDesc>
-     <settingDesc>
-      <listPlace>
-        <place xml:id="aquin" corresp="https://pleiades.stoa.org/places/432695">
-         <placeName full="yes">Aquinense</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.4407, 13.7</geo>
-         </location>
-         <note>Aquino, ville italienne du Latium.</note>
-        </place>
-        <place xml:id="chaples" corresp="https://pleiades.stoa.org/places/432754">
-         <placeName full="yes">Chaples</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.0860925, 14.250207</geo>
-         </location>
-         <note>Capoue, ville italienne de Campanie.</note>
-        </place>
-        <place xml:id="effide">
-         <placeName full="yes">Effide</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <note>Monastère proche de Rome où séjournent <persName ref="#pierre">saint
-            Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
-         <!-- A vérifer dans les dialogues II de saint Grégoire -->
-        </place>
-        <place corresp="https://pleiades.stoa.org/places/825912337" xml:id="latran">
-         <placeName full="yes">Latran</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.885906, 12.506156</geo>
-         </location>
-         <note>Site religieux de Rome qui réunit, entre autres, la basilique de
-           Saint-Jean-de-Latran et le palais du Latran, lieu de séjour principal des papes
-           entre le IV<ex>e</ex> et le XIV<ex>e</ex> siècle.</note>
-        </place>
-        <place corresp="https://pleiades.stoa.org/places/432764" xml:id="cassin">
-         <placeName full="yes">Montcassin</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.492907, 13.830583</geo>
-         </location>
-         <note>Mont Cassin, situé dans le latium en Italie, désigne également Mont-Cassin, monastère établi par saint Benoît.</note>
-        </place>
-        <place corresp="https://pleiades.stoa.org/places/413229" xml:id="nurse">
-         <placeName full="yes">Nurse</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>42.794246, 13.096435</geo>
-         </location>
-         <note>Nursie, ville d'Italie, lieu de naissance de <persName ref="#benoit">saint
-            Benoit</persName>.</note>
-        </place>
-        <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
-           xml:id="orient">
-         <placeName full="yes">Orient</placeName>
-         <country type="civilisation">Orient</country>
-        </place>
-        <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
-         <placeName full="yes">Rome</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.891775, 12.486137</geo>
-         </location>
-         <note>Ville italienne, capitale de l'empire romain d'occident.</note>
-        </place>
-        <place xml:id="sublacus" corresp="https://pleiades.stoa.org/places/423078">
-         <placeName full="yes">Sublacus</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.926211, 13.094892</geo>
-         </location>
-         <note>Sublaqueum, ville italienne.</note>
-        </place>
-        <place xml:id="sicile" corresp="https://pleiades.stoa.org/places/981549">
-         <placeName full="yes">Sulie</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>37.751645425, 14.6747958 </geo>
-         </location>
-         <note>Sicile, île au large de l'Italie.</note>
-        </place>
-        <place xml:id="tamisse">
-         <placeName full="yes">Tamisse</placeName>
-           <country type="pays">Italie ?</country>
-           <country type="civilisation">Occident</country>
-         <note>Ville non-identifiée. Dans les <hi rend="italic">Dialogues</hi> de Grégoire le Grand, il est fait
-           mention de la ville de Canosa située dans les Pouilles en Italie. La ville de
-           Tamisse, fait peut-être référence à l'actuelle Tamise située dans les Flandres
-           en Belgique, soit dans la région de Wauchier de Denain</note>
-        </place>
-        <place xml:id="teracenence"
-           corresp="http://www.geonames.org/3165762/terracina.html">
-         <placeName full="yes">Teracenense</placeName>
-         <country type="pays">Italie</country>
-         <country type="civilisation">Occident</country>
-         <location>
-           <geo>41.2241, 13.2495</geo>
-         </location>
-         <note>Terracine, ville italienne du Latium.</note>
-        </place>
-      </listPlace>
-     </settingDesc>
-   </profileDesc>
- </teiHeader>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vie de saint Benoit</title>
+            <author>Wauchier de Denain</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Ariane Pinche</publisher>
+            <date>2015-2021</date>
+            <idno>jns.915.jns1744.ciham-fro1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness xml:id="C1" corresp="#ms412"
+                  facs="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f326.item">Paris, manuscrit
+                  fr. 412, Bibliothèque nationale de France, <date when="1285">1285</date></witness>
+               <witness xml:id="C2"
+                  facs="https://gallica.bnf.fr/ark:/12148/btv1b107209247/f214.item">Paris, manuscrit
+                  fr. 411, Bibliothèque nationale de France, <date notBefore="1300" notAfter="1400"
+                        >14<hi rend="exp">e</hi> siècle</date></witness>
+               <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
+                     notBefore="1250" notAfter="1300">13<hi rend="exp">e</hi>
+                  siècle</date></witness>
+            </listWit>
+            <msDesc xml:id="ms412">
+               <msIdentifier>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>fr. 00412</idno>
+               </msIdentifier>
+               <head>
+                  <title>Ci coumence la vie monsigneur seint Beneoit de Montcassin, confessor nostre
+                     Signeur Jesu Crist</title>
+                  <origDate>1285</origDate>
+                  <note>Notice tiré de la base Jonas, Anne-Françoise Leurquin et Marie-Laure Savoye,
+                     notice de "PARIS, Bibliothèque nationale de France, Manuscrits, fr. 00412" dans
+                     la base Jonas-IRHT/CNRS (permalink : <ref
+                        target="http://jonas.irht.cnrs.fr/manuscrit/45533"
+                        >http://jonas.irht.cnrs.fr/manuscrit/45533</ref>). Consultation du
+                     03/07/2015 </note>
+               </head>
+               <msContents>
+                  <msItemStruct>
+                     <locus>fol.158v-fol.167v</locus>
+                     <incipit>Ci coumence la vie monsigneur seint Beneoit de Montcassin, confessor
+                        nostre Signeur Jesu Crist </incipit>
+                     <explicit>Ce nos otroit Cil qi vit et regne par toz les siecles des siecles.
+                        Amen.</explicit>
+                  </msItemStruct>
+               </msContents>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="section" matchPattern="(.+).(.+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\']/tei:div[@n=\'$2\'])">
+               <p>This pointer pattern extracts chapter and section</p>
+            </cRefPattern>
+            <cRefPattern n="chapter" matchPattern="(.+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=\'$1\'])">
+               <p>This pointer pattern extracts chapter.</p>
+            </cRefPattern>
+         </refsDecl>
+         <variantEncoding method="parallel-segmentation" location="internal"/>
+         <projectDesc>
+            <p/>
+         </projectDesc>
+      </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="agapites">
+                  <persName>Agapites</persName>
+                  <note type="biographical">Sous-diacre de <persName ref="#benoit">Saint
+                        Benoit</persName>.</note>
+               </person>
+               <person xml:id="apolloine">
+                  <persName>Apollin</persName>
+                  <note type="biographical">Évêque d'<placeName ref="Excorande" full="yes"
+                        >Excorande</placeName>.</note>
+               </person>
+               <person xml:id="appollin">
+                  <persName>Appollin</persName>
+                  <note type="biographical">Dieu du panthéon romain.</note>
+               </person>
+               <person xml:id="benoit">
+                  <persName>Beneoit</persName>
+                  <birth when="0480">480</birth>
+                  <death when="0547">547</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb118911827"
+                     >Saint Benoit, patriarche et législateur des moines d'Occident, fondateur de
+                     l'ordre des bénédictins. Abbé du <placeName ref="#cassin" full="yes"
+                        >Mont-Cassin</placeName>, il est célèbre pour sa règle de vie monastique,
+                     dite « la règle de saint Benoit ».</note>
+               </person>
+               <person xml:id="blidin">
+                  <persName>Blidin</persName>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                        >Totila</persName>.</note>
+               </person>
+               <person xml:id="costance">
+                  <persName>Costances</persName>
+                  <note type="biographical">Évêque d'<placeName ref="#aquin" full="yes"
+                        >Aquino</placeName>.</note>
+               </person>
+               <person xml:id="constentin2">
+                  <persName>Costentin</persName>
+                  <note type="biographical">Successeur de <persName ref="#benoit">saint
+                        Benoit</persName> à la tête du monastère de <placeName ref="#cassin"
+                        full="yes">Mont-Cassin</placeName>.</note>
+               </person>
+               <person xml:id="deudone2">
+                  <persName>Deudonez</persName>
+                  <note type="biographical">Abbé du moine <persName ref="#romein"
+                     >Romain</persName>.</note>
+               </person>
+               <person xml:id="evitius">
+                  <persName>Evitius</persName>
+                  <note type="biographical">Noble, père de <persName ref="#maurum"
+                     >Maurum</persName>.</note>
+               </person>
+               <person xml:id="florentin">
+                  <persName>Florences</persName>
+                  <note type="biographical">Prêtre qui poussé par la jalousie envoie un pain
+                     empoisonné à <persName ref="#benoit">saint Benoit</persName>.</note>
+               </person>
+               <person xml:id="germein" corresp="http://catalogue.bnf.fr/ark:/12148/cb14471542d">
+                  <persName>Germein</persName>
+                  <death when="0541">541</death>
+                  <note type="biographical">Saint Germain de Capoue, évêque de Capoue en Italie, ami
+                     de <persName ref="#benoit">Saint Benoît</persName>.</note>
+               </person>
+               <person xml:id="gotus">
+                  <persName>Gotus</persName>
+                  <note type="biographical"> Moine de la confrérie de <persName ref="#benoit">saint
+                        Benoit</persName>, pauvre d'esprit.</note>
+               </person>
+               <person xml:id="gregoire">
+                  <persName>Gregoires</persName>
+                  <birth when="0540">540</birth>
+                  <death when="0604">604</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11886472r"
+                     >Grégoire le grand, pape de Rome de 590 à 604, auteur des <hi rend="italic"
+                        >Dialogues</hi> dont est issue la <hi rend="italic">Vie de <persName
+                           ref="#benoit">saint Benoit</persName>
+                     </hi>.</note>
+               </person>
+               <person xml:id="honores">
+                  <persName>Honores</persName>
+                  <note type="biographical">Abbé du monastère où saint Benoit rentra dans les
+                     ordres.</note>
+               </person>
+               <person xml:id="jehan">
+                  <persName>Jehan</persName>
+                  <birth when="0360">360</birth>
+                  <death when="0432">432</death>
+                  <note type="biographical" source="http://data.bnf.fr/12044269/jean_cassien/">
+                     <surname type="complex" full="yes">Jean Cassien ou Jean l'ermite</surname>
+                     prêtre et moine, originaire d'<placeName ref="#egypte" full="yes"
+                        >Égypte</placeName>, il établit sa communauté sur l'île de Chypre.</note>
+               </person>
+               <person xml:id="jeanBaptiste">
+                  <persName>Jehan Baptiste</persName>
+                  <note type="biographical"
+                     source="http://catalogue.bnf.fr/ark:/12148/cb119576305/PUBLIC">
+                     <surname type="complex" full="yes">Jean le Baptiste</surname>, personnage
+                     biblique, prédicateur en Judée.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119392246/PUBLIC"
+                  xml:id="jesus">
+                  <persName>Jesu Crist</persName>
+                  <birth when="0001">0</birth>
+                  <death when="0030">33</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb11932173f">
+                     <surname type="complex" full="yes">Jésus-Christ</surname>, messie. Les
+                     chrétiens le reconnaissent comme le fils unique de Dieu.</note>
+               </person>
+               <person corresp="http://catalogue.bnf.fr/ark:/12148/cb119423647/PUBLIC"
+                  xml:id="martin">
+                  <persName>Martin</persName>
+                  <birth when="0316">316</birth>
+                  <death when="0397-11-08">397</death>
+                  <note type="biographical" source="http://catalogue.bnf.fr/ark:/12148/cb119423647">
+                     <surname type="complex" full="yes">Saint Martin de Tours</surname>, né en
+                     Hongrie dans la colonie romaine de <placeName ref="#sabarie" full="yes"
+                        >Sabaria</placeName> en 316 et mort à <placeName ref="#conde" full="yes"
+                        >Candes</placeName> en France le 8 novembre 397.</note>
+               </person>
+               <person xml:id="maurum">
+                  <persName>Maurum</persName>
+                  <note type="biographical">Disciple de <persName ref="#benoit">saint
+                        Benoit</persName> et fils d'<persName ref="#evitius"
+                     >Evitius</persName>.</note>
+               </person>
+               <person xml:id="pelerins">
+                  <persName>Pelerins</persName>
+                  <note type="biographical">Moine de <persName ref="#benoit">Saint
+                     Benoit</persName>.</note>
+               </person>
+               <person xml:id="pierre">
+                  <persName>Pere</persName>
+                  <death when="0064">64</death>
+                  <note type="biographical" source="http://data.bnf.fr/12002064/pierre/">Saint
+                     Pierre de Rome, pêcheur de Galilée, devenu un des douze apôtres de
+                     Jésus-Christ. Il est le premier évêque de <placeName ref="#rome" full="yes"
+                        >Rome</placeName>.</note>
+               </person>
+               <person xml:id="placidum">
+                  <persName>Placidus</persName>
+                  <note type="biographical">Fils de <persName ref="#theralius">Theralius</persName>
+                     et disciple de <persName ref="#benoit">saint Benoit</persName>.</note>
+               </person>
+               <person xml:id="paul">
+                  <persName>Pol</persName>
+                  <birth when="0228">228</birth>
+                  <death when="0341">341</death>
+                  <note type="biographical" source="http://data.bnf.fr/12531627/paul/">
+                     <surname type="complex" full="yes">Paul de Thèbes ou Paul l'ermite</surname>,
+                     figure fondatrice du monachisme avec <persName ref="#antoine">saint
+                        Antoine</persName>.</note>
+               </person>
+               <person xml:id="pompeien">
+                  <persName>Pompeiens</persName>
+                  <note type="biographical">Abbé.</note>
+               </person>
+               <person xml:id="ringo">
+                  <persName>Ringoz</persName>
+                  <note type="biographical">Serviteur du roi <persName ref="#thotila"
+                        >Totila</persName>.</note>
+               </person>
+               <person xml:id="romein">
+                  <persName>Romeins</persName>
+                  <note type="biographical">Moine qui apporte des vivres à saint Benoit pendant sa
+                     retraite.</note>
+               </person>
+               <person xml:id="rudich">
+                  <persName>Rudrich</persName>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                        >Totila</persName>.</note>
+               </person>
+               <person xml:id="scolastica">
+                  <persName>Scolastica</persName>
+                  <note type="biographical">Nonne, amie de <persName ref="#benoit">saint
+                        Benoit</persName>.</note>
+               </person>
+               <person xml:id="sernandu">
+                  <persName>Sernanduz</persName>
+                  <note type="biographical">Abbé, témoin avec <persName ref="#benoit">saint
+                        Benoit</persName> de l'ascension de l'âme de <persName ref="germein">saint
+                        Germain de Chaples</persName>.</note>
+               </person>
+               <person xml:id="simplices">
+                  <persName>Simplices</persName>
+                  <note type="biographical">Troisième successeur de saint Benoit à la tête du
+                     monastère de <placeName ref="#cassin" full="yes"
+                     >Mont-Cassin</placeName>.</note>
+               </person>
+               <person xml:id="theoprobus">
+                  <persName>Theoprobus</persName>
+                  <note type="biographical">Homme noble, ami de saint Benoit.</note>
+               </person>
+               <person xml:id="theralius">
+                  <persName>Theralius</persName>
+                  <note type="biographical">Noble, père de Placidum.</note>
+               </person>
+               <person xml:id="thotila" corresp="https://www.wikidata.org/wiki/Q159707">
+                  <persName>Thotila</persName>
+                  <death when="0552">552</death>
+                  <note type="biographical">Totila, roi ostrogoth, élu roi d'Italie en 541.</note>
+               </person>
+               <person xml:id="valentinien3">
+                  <persName>Valentiniens</persName>
+                  <note type="biographical">Abbé du monastère de <placeName ref="#latran" full="yes"
+                        >Latran</placeName>, puis moine du monastère du <placeName ref="cassin"
+                        full="yes">mont Cassin</placeName> .</note>
+               </person>
+               <person xml:id="vult">
+                  <persName>Vult</persName>
+                  <note type="biographical">Compagnon du roi <persName ref="#thotila"
+                        >Totila</persName>.</note>
+               </person>
+               <person xml:id="ylarates">
+                  <persName>Ylarates</persName>
+                  <note type="biographical">Convers de <placeName ref="#cassin" full="yes"
+                        >Mont-Cassin</placeName>.</note>
+               </person>
+               <person xml:id="zalla">
+                  <persName>Zalla</persName>
+                  <note type="biographical">Envoyé du roi dans la région de Mont-Cassin.</note>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="aquin" corresp="https://pleiades.stoa.org/places/432695">
+                  <placeName full="yes">Aquinense</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.4407, 13.7</geo>
+                  </location>
+                  <note>Aquino, ville italienne du Latium.</note>
+               </place>
+               <place xml:id="chaples" corresp="https://pleiades.stoa.org/places/432754">
+                  <placeName full="yes">Chaples</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.0860925, 14.250207</geo>
+                  </location>
+                  <note>Capoue, ville italienne de Campanie.</note>
+               </place>
+               <place xml:id="effide">
+                  <placeName full="yes">Effide</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <note>Monastère proche de Rome où séjournent <persName ref="#pierre">saint
+                        Pierre</persName> et <persName ref="#benoit">saint Benoit</persName>.</note>
+                  <!-- A vérifer dans les dialogues II de saint Grégoire -->
+               </place>
+               <place corresp="https://pleiades.stoa.org/places/825912337" xml:id="latran">
+                  <placeName full="yes">Latran</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.885906, 12.506156</geo>
+                  </location>
+                  <note>Site religieux de Rome qui réunit, entre autres, la basilique de
+                     Saint-Jean-de-Latran et le palais du Latran, lieu de séjour principal des papes
+                     entre le IV<ex>e</ex> et le XIV<ex>e</ex> siècle.</note>
+               </place>
+               <place corresp="https://pleiades.stoa.org/places/432764" xml:id="cassin">
+                  <placeName full="yes">Montcassin</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.492907, 13.830583</geo>
+                  </location>
+                  <note>Mont Cassin, situé dans le latium en Italie, désigne également Mont-Cassin,
+                     monastère établi par saint Benoît.</note>
+               </place>
+               <place corresp="https://pleiades.stoa.org/places/413229" xml:id="nurse">
+                  <placeName full="yes">Nurse</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>42.794246, 13.096435</geo>
+                  </location>
+                  <note>Nursie, ville d'Italie, lieu de naissance de <persName ref="#benoit">saint
+                        Benoit</persName>.</note>
+               </place>
+               <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11975539x/PUBLIC"
+                  xml:id="orient">
+                  <placeName full="yes">Orient</placeName>
+                  <country type="civilisation">Orient</country>
+               </place>
+               <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+                  <placeName full="yes">Rome</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.891775, 12.486137</geo>
+                  </location>
+                  <note>Ville italienne, capitale de l'empire romain d'occident.</note>
+               </place>
+               <place xml:id="sublacus" corresp="https://pleiades.stoa.org/places/423078">
+                  <placeName full="yes">Sublacus</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.926211, 13.094892</geo>
+                  </location>
+                  <note>Sublaqueum, ville italienne.</note>
+               </place>
+               <place xml:id="sicile" corresp="https://pleiades.stoa.org/places/981549">
+                  <placeName full="yes">Sulie</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>37.751645425, 14.6747958 </geo>
+                  </location>
+                  <note>Sicile, île au large de l'Italie.</note>
+               </place>
+               <place xml:id="tamisse">
+                  <placeName full="yes">Tamisse</placeName>
+                  <country type="pays">Italie ?</country>
+                  <country type="civilisation">Occident</country>
+                  <note>Ville non-identifiée. Dans les <hi rend="italic">Dialogues</hi> de Grégoire
+                     le Grand, il est fait mention de la ville de Canosa située dans les Pouilles en
+                     Italie. La ville de Tamisse, fait peut-être référence à l'actuelle Tamise
+                     située dans les Flandres en Belgique, soit dans la région de Wauchier de
+                     Denain</note>
+               </place>
+               <place xml:id="teracenence" corresp="http://www.geonames.org/3165762/terracina.html">
+                  <placeName full="yes">Teracenense</placeName>
+                  <country type="pays">Italie</country>
+                  <country type="civilisation">Occident</country>
+                  <location>
+                     <geo>41.2241, 13.2495</geo>
+                  </location>
+                  <note>Terracine, ville italienne du Latium.</note>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
    <text n="edition">
       <body n="urn:cts:froLit:jns915.jns1744.ciham-fro1">
          <div type="chapter" n="1">
-            <head>Ci coumence la&esp;&u-v;ie monsig<lb/>neur <persName ref="#benoit">seint
-                  &b-maj;eneoit</persName> de&esp;<placeName ref="#cassin"
-                  >&m-maj;ontcassin</placeName>,&esp;<lb/>confessor nostre &s-maj;igneur <persName
-                  ref="#jesus">&j-maj;esu&esp;&c-maj;rist</persName></head>
+            <head>Ci coumence la&esp;&u-v;ie <app>
+                  <lem>monsig<lb/>neur</lem>
+                  <rdg wit="#C2" cause="om."/>
+               </app>&#160; <persName ref="#benoit">seint &b-maj;eneoit</persName> de&esp;<placeName
+                  ref="#cassin">&m-maj;ontcassin</placeName>,&esp;<lb/>confessor nostre
+               &s-maj;igneur <persName ref="#jesus">&j-maj;esu&esp;&c-maj;rist</persName></head>
             <div type="section" n="1">
                <!-- traduction du livre II des dialogues de Grégoire de Tours -->
                <p><pb n="158" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f326.item"/><hi
                      rend="rubricated orig">Ci coumence la&esp;&u-v;ie mon sig<lb/>neur <persName
                         ref="#benoit">seint &b-maj;eneoit</persName> de&esp;<placeName ref="#cassin"
-                        >&m-maj;ontcassin</placeName>&esp;<lb/>confessor nostre &s-maj;igneur <persName
-                        ref="#jesus"
+                        >&m-maj;ontcassin</placeName>&esp;<lb/>confessor nostre &s-maj;igneur
+                        <persName ref="#jesus"
                      >&j-maj;esu&esp;&c-maj;rist</persName>&deuxpoints-point;<lb/></hi><cb n="d"
                      /><hi rend="decorated-initial">U</hi><choice>
                      <orig>N</orig>
@@ -410,14 +437,16 @@
                      <persName ref="#gregoire">se&itilde-in;z&esp;<lb/>&g-maj;regoires</persName>
                   nos&esp;<lb/>raconte.&esp;Cil&esp;<lb/>hom estoit&esp;<lb/><persName ref="#benoit"
                      >&b-maj;eneoiz</persName> ape<lb/>lez par non<pc type="orig" ana="relative"
-                     >.</pc>&esp;<lb/>qi&esp;tres s<pc type="reg">'</pc>enfan<lb/>ce a&u-v;oit
-                  en&esp;<lb/>lui&esp;cuer&esp;de&esp;&u-v;iellece science.&esp;&et-maj;ses sens
-                  &esperluette-et;ses&esp;<lb/>meurs trespassoient son aage.&esp;Dont il
-                  a<lb/>&u-v;int q<pc type="reg">'</pc>il onqes ne &u-v;out atorner son
-                  corage&esp;<lb/>as&esp;deliz de cest siecle&deuxpoints-virg3;einz despist le
-                     monde<pc type="orig" ana="coordination">:</pc>&esp;<lb/>&esperluette-et;totes
-                  les oe&u-v;res qi &u-v;eines estoient.&esp;Il fu&esp;<lb/>nez de&esp;la
-                  pro&u-v;ince de&esp;<placeName ref="#nurse">&n-maj;urse</placeName> de haute
+                     >.</pc>&esp;<lb/>qi&esp;tres s<pc type="reg">'</pc>enfan<lb/>ce a&u-v;oit en&esp;<lb/>lui&esp;cuer&esp;de&esp;<app>
+                     <lem wit="#C2">vielle<corr type="del">ece</corr></lem>
+                     <rdg wit="#C1" type="erreur">&u-v;iellece</rdg>
+                  </app> science.&esp;&et-maj;ses sens &esperluette-et;ses&esp;<lb/>meurs
+                  trespassoient son aage.&esp;Dont il a<lb/>&u-v;int q<pc type="reg">'</pc>il onqes
+                  ne &u-v;out atorner son corage&esp;<lb/>as&esp;deliz de cest
+                  siecle&deuxpoints-virg3;einz despist le monde<pc type="orig" ana="coordination"
+                     >:</pc>&esp;<lb/>&esperluette-et;totes les oe&u-v;res qi &u-v;eines
+                  estoient.&esp;Il fu&esp;<lb/>nez de&esp;la pro&u-v;ince de&esp;<placeName
+                     ref="#nurse">&n-maj;urse</placeName> de haute
                   lignie&esp;<lb/>&esperluette-et;en&u-v;oiez a&esp;<placeName ref="#rome"
                      >&r-maj;ome</placeName> a&esp;escole por letres aprendre&point-virg3;<lb/>
                   <choice>
@@ -432,14 +461,15 @@
                   a&esp;&d-maj;eu plere&deuxpoints-point;<lb/>&s-maj;i en&esp;deguerpi sa meson
                   &esperluette-et;les choses son pere&esp;<lb/>&esperluette-et;l<pc type="reg"
                      >'</pc>escole.&esp;Toz ses fez&point-virg8;fait&esp;<persName ref="#gregoire"
-                     >seint&esp;&g-maj;rigoire</persName><pc type="reg" ana="incise">,</pc>
-                  ne&esp;<lb/>sai&esp;mie&deuxpoints-virg3;mes un pou qe &i-j;<pc type="reg"
-                  >'</pc>en ai&esp;apris a&esp;un&esp;<lb/>de&esp;ses deciples qi&esp;le&esp;me
-                  raconterent &u-v;os en&esp;<lb/>reconterai&esp;&i-j;e.&esp;Li&esp;uns ot non
-                     <persName ref="#constentin2">&c-maj;ostentin</persName> qui&esp;<lb/>mout fu
-                  seintismes hom<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;apr&eacc;s lui en&esp;s<pc type="reg"
-                  >'</pc>e<lb/>glisse fu abbes&point-virg7;<choice>
+                     >seint&esp;&g-maj;rigoire</persName><pc type="reg" ana="incise">,</pc> ne&esp;<lb/><app>
+                     <lem>sai</lem>
+                     <rdg wit="#C2" type="proPer">sai je</rdg>
+                  </app>&esp;mie&deuxpoints-virg3;mes un pou qe &i-j;<pc type="reg">'</pc>en
+                  ai&esp;apris a&esp;un&esp;<lb/>de&esp;ses deciples qi&esp;le&esp;me raconterent
+                  &u-v;os en&esp;<lb/>reconterai&esp;&i-j;e.&esp;Li&esp;uns ot non <persName
+                     ref="#constentin2">&c-maj;ostentin</persName> qui&esp;<lb/>mout fu seintismes
+                     hom<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;apr&eacc;s lui
+                     en&esp;s<pc type="reg">'</pc>e<lb/>glisse fu abbes&point-virg7;<choice>
                      <orig>E</orig>
                      <reg>e</reg>
                   </choice>t&esp;<persName ref="#honores">&h-maj;onores</persName> qi&esp;l<pc
@@ -461,7 +491,8 @@
                      meson&esp;qi&esp;<placeName ref="#effide">&e-maj;ffide</placeName> est apelee
                   ou&esp;mout de&esp;sein<lb/>tismes homes &esperluette-et;honestes habitent en l<pc
                      type="reg">'</pc>e<lb/>glisse &m-maj;on<pc type="orig" ana="mot"
-                        > </pc>signeur&esp;<persName ref="#pierre">&s-maj;eint&esp;&p-maj;ierre</persName>&point-virg4;<choice>
+                     > </pc>signeur&esp;<persName ref="#pierre"
+                     >&s-maj;eint&esp;&p-maj;ierre</persName>&point-virg4;<choice>
                      <orig>L</orig>
                      <reg>l</reg>
                   </choice>a&esp;norri<lb/>ce mon<pc type="orig" ana="mot"> </pc>signeur <persName
@@ -486,11 +517,14 @@
                   &u-v;it sa norrice plorer&deuxpoints-virg4;il en fu
                   mout&esp;<lb/>dolenz&point-virg3;si&esp;prist les pieces del
                   &u-v;essel&deuxpoints-virg3;si se coucha&esp;<lb/>en orissons tot plorant
-                  en&u-v;ers nostre &s-maj;ignor.&esp;<lb/> Tantost com il fu redreciez
-                  &esperluette-et;il ot s<pc type="reg">'</pc>orisson
-                  fi<lb/>nee&deuxpoints-virg3;il&esp;tro&u-v;a sein &esperluette-et;entier le
-                  &u-v;essel si&esp;q<pc type="reg">'</pc>il n<pc type="reg">'</pc>i pa<lb/>rut
-                  &i-j;ointure ne trace.&esp;Lors le rendi a&esp;sa&esp;norri<lb/>ce
+                  en&u-v;ers nostre &s-maj;ignor.&esp;<lb/><app>
+                     <lem>Tantost com il fu redreciez &esperluette-et;il ot s<pc type="reg"
+                        >'</pc>orisson fi<lb/>nee</lem>
+                     <rdg wit="#C2" type="inv.">Tantost com il ot s'oroison finee et il fu
+                        redreciez</rdg>
+                  </app>&deuxpoints-virg3;il&esp;tro&u-v;a sein &esperluette-et;entier le &u-v;essel
+                     si&esp;q<pc type="reg">'</pc>il n<pc type="reg">'</pc>i pa<lb/>rut &i-j;ointure
+                  ne trace.&esp;Lors le rendi a&esp;sa&esp;norri<lb/>ce
                   &esperluette-et;si&esp;la&esp;conforta mout docement.&esp;Ceste cho<lb/>se fu la
                   endroit partout se&utrem;e
                   &esperluette-et;cone&utrem;e&deuxpoints-virg3;car&esp;<lb/>cil&esp;qi la
@@ -528,9 +562,10 @@
                   a&esp;seint&esp;<lb/> &b-maj;eneoit ou&esp;il&esp;aloit &esperluette-et;q<pc
                      type="reg">'</pc>il queroit<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;il&esp;li dist to<lb/>te sa pensee.&esp;Qant <persName
-                     ref="#romein">&r-maj;omeins</persName> l<pc type="reg">'</pc>o&itrem;&esp;
-                  &esperluette-et;entendi&deuxpoints-virg4;il&esp;<lb/>li&esp;aida
-                  &esperluette-et;conseilla de&esp;qanq<pc type="reg">'</pc>il
+                     ref="#romein">&r-maj;omeins</persName> l<pc type="reg">'</pc>o&itrem;&esp; &esperluette-et;entendi&deuxpoints-virg4;il&esp;<lb/><app>
+                     <lem>li</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;aida &esperluette-et;conseilla de&esp;qanq<pc type="reg">'</pc>il
                   pot&esp;&esperluette-et;sot benigne<lb/>ment
                   &esperluette-et;docement.&esp;Li&esp;bons&esp;&i-j;o&u-v;enceaus ala&esp;<lb/>
                      tant<pc type="orig" ana="subCorr">.</pc>&esp;qu<pc type="reg">'</pc>il &u-v;int
@@ -538,17 +573,19 @@
                   <placeName ref="#sublacus">&s-maj;ublacus</placeName>
                   apelez.&esp;&et-maj;bien&esp;sachiez qe&esp;ce&esp;estoit une&esp;<lb/>haute roche
                   en un grant desert<pc type="orig" ana="coordination">.</pc>&esp;&esperluette-et;qi
-                  del pi&eacc; de<lb/>soz issoit e&u-v;e si grant dont uns lais estoit
-                  g&nasuscrit-ran;z&esp;<lb/>&esperluette-et;leiz desoz<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;de&esp;cel&esp;lais nessoit une
+                  del pi&eacc; de<lb/>soz issoit e&u-v;e si grant dont uns lais estoit <app>
+                     <lem>g&nasuscrit-ran;z</lem>
+                     <rdg wit="#C2" type="ajout">si granz</rdg>
+                  </app>&esp;<lb/>&esperluette-et;leiz desoz<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;de&esp;cel&esp;lais nessoit une
                   ri&u-v;iere.&esp;En&esp;<lb/>cele&esp;roche se mist <persName ref="#benoit">seinz
                      &b-maj;eneoiz</persName><pc type="orig" ana="CC"
                   >.</pc>&esp;en&esp;une&esp;estroite&esp;<lb/>fosse por&esp;mener &u-v;ie
                      solitaire<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;por&esp;fere&esp;ses&esp;<lb/>orissons a&esp;nostre
                   &s-maj;ignor sanz &u-v;eoir la &u-v;anit&eacc;&esp;<lb/>de&esp;cest
-                  monde&deuxpoints-point;La&esp;fu&esp;il troiz anz qe&esp;onques&esp;<lb/>ne l<pc type="reg">'</pc>i sot
-                  hom ne feme&deuxpoints-virg5;fors tant seulement&esp;<lb/>
+                  monde&deuxpoints-point;La&esp;fu&esp;il troiz anz qe&esp;onques&esp;<lb/>ne l<pc
+                     type="reg">'</pc>i sot hom ne feme&deuxpoints-virg5;fors tant seulement&esp;<lb/>
                   <persName ref="#romein">&r-maj;omeinz</persName> qi&esp;a&esp;lui a&u-v;oit
                   parl&eacc;&deuxpoints-virg4;si&esp;com &i-j;e&esp;&u-v;os&esp;<lb/>
                   ai&esp;de&u-v;ant dit.&esp;Cil &r-maj;omeins manoit iluec en&esp;<lb/>une meson
@@ -573,8 +610,10 @@
                   si&esp;<lb/>haute &esperluette-et;si droite qe nus n<pc type="reg"
                   >'</pc>i&esp;pooit monter de<lb/>&u-v;ers icele partie&point-virg3;mes <persName
                      ref="#benoit">seinz &b-maj;eneoiz</persName> a&u-v;oit une&esp;<lb/> mout
-                  longue&esp;corde qe &r-maj;omeinz li a&u-v;oit a<lb/>portee.&esp;Cele corde
-                  si&esp;estoit atachie a&esp;l<pc type="reg">'</pc>un des&esp;<lb/>cors<pc
+                  longue&esp;corde qe &r-maj;omeinz li a&u-v;oit a<lb/>portee.&esp;Cele corde <app>
+                     <lem>si</lem>
+                     <rdg wit="#C2" type="outil"/>
+                  </app>&esp;estoit atachie a&esp;l<pc type="reg">'</pc>un des&esp;<lb/>cors<pc
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;li autres &u-v;enoit
                   encontre&u-v;al la&esp;roche&esp;<lb/>tresq<pc type="reg"
                   >'</pc>a&esp;terre.&esp;&e-maj;l&esp;mi&esp;leu&esp;a&u-v;oit une cloce
@@ -619,14 +658,15 @@
                   a&esp;un prestre qi&esp;loing&esp;de&esp;<lb/>la manoit.&esp;Cil prestres
                   fesoit&esp;<lb/>apareillier ses &u-v;iandes a&esp;un &i-j;or
                      de&esp;&p-maj;asques<pc type="orig" ana="coordination">.</pc>&esp;<lb/>
-                  &esperluette-et;nostre &s-maj;ires li&esp;dist&point-deuxpointsDial;<said who="#jesus">Tu
-                     apareilles tes bons&esp;<lb/>mengiers a&esp;ton o&eacc;s
-                        &esperluette-et;tes&esp;delices<pc type="orig" ana="coordination"
-                        >:</pc>&esp;&esperluette-et;<persName ref="#benoit"
-                        >&b-maj;eneois</persName><pc type="reg" ana="apposition">,</pc>&esp;<lb/>mes
-                        serz<pc type="reg" ana="apposition">,</pc> muert de feim qi en&esp;cel leu
-                     arre<lb/>ste.</said>&esp;Lors li&esp;noma la&esp;roche coment ele
-                  estoit&esp;<lb/>apelee&deuxpoints-point;Dont se le&u-v;a li
+                  &esperluette-et;nostre &s-maj;ires li&esp;dist&point-deuxpointsDial;<said
+                     who="#jesus">Tu apareilles tes bons&esp;<lb/>mengiers a&esp;ton o&eacc;s &esperluette-et;tes&esp;<app>
+                        <lem>delices</lem>
+                        <rdg wit="#C2">delitees</rdg>
+                     </app><pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;<persName
+                        ref="#benoit">&b-maj;eneois</persName><pc type="reg" ana="apposition"
+                     >,</pc>&esp;<lb/>mes serz<pc type="reg" ana="apposition">,</pc> muert de feim
+                     qi en&esp;cel leu arre<lb/>ste.</said>&esp;Lors li&esp;noma la&esp;roche coment
+                  ele estoit&esp;<lb/>apelee&deuxpoints-point;Dont se le&u-v;a li
                   prestres&esp;&esperluette-et;prist ses&esp;<lb/>&u-v;iandes teles com il&esp;les
                   a&u-v;oit atornees&esp;<lb/>ensemble o&esp;lui<pc type="orig" ana="coordination"
                      >.</pc>&esp;&esperluette-et;ala tant q<pc type="reg">'</pc>il &u-v;int
@@ -639,7 +679,7 @@
                   ensam<lb/>ble&point-virg4;li prestres qi &u-v;enuz estoit parla a&esp;se&itilde-in;t&esp;<lb/>
                   <persName ref="#benoit">&b-maj;eneoit</persName>&#160;
                      &esperluette-et;si&esp;dist&point-deuxpointsDial;<said>Je sai bien qu<pc
-                        type="reg">'</pc>il est &p-maj;asques&point-exclamation;<lb/> Ce&esp;est
+                        type="reg">'</pc>il est &p-maj;asques&point-exclamation;<lb/>Ce&esp;est
                      &i-j;or de&esp;leesce a&esp;moi&deuxpoints-virg4;qant &i-j;e ai
                      deser&u-v;i&esp;<lb/>qe &i-j;e te &u-v;oi en la face.</said>&esp;Adont
                   ne&esp;sa&u-v;oit mie&esp;<lb/><pb n="159"
@@ -659,8 +699,10 @@
                      >:</pc>&esp;&esperluette-et;por&esp;ce ne doit l<pc type="reg">'</pc>en mie
                      abstenir par&esp;<lb/>geunes<pc type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;por ce sui &i-j;e ici en&u-v;oiez
-                     a&esp;toi&point-virg4;qe&esp;<lb/>nos mengons ensamble ce qe nostre
-                     &s-maj;ires&esp;<lb/>nos a&esp;don&eacc;&deuxpoints-point;</said>&esp;Dont
+                     a&esp;toi&point-virg4;qe&esp;<lb/>nos mengons ensamble ce qe <app>
+                        <lem>nostre &s-maj;ires</lem>
+                        <rdg wit="#C2">Dex</rdg>
+                     </app>&esp;<lb/>nos a&esp;don&eacc;&deuxpoints-point;</said>&esp;Dont
                   bene&itrem;rent nostre &s-maj;ignor<pc type="reg" ana="coordination"
                   >,</pc>&esp;<lb/>si&esp;mengierent ensemble.&esp;Apr&eacc;s se departi&esp;<lb/>li
                   prestres de <persName ref="#benoit">seint &b-maj;eneoit</persName><pc type="reg"
@@ -711,17 +753,21 @@
                   >.</pc>&esp;qe&esp;li&esp;malignes esperiz li&esp;<lb/>ramena de&u-v;ant en sa
                      pensee<pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;une si
                   grant&esp;<lb/>&u-v;olentez l<pc type="reg">'</pc>en&esp;&u-v;int por la grant
-                  beaut&eacc; qu<pc type="reg">'</pc>il&esp;<lb/>i&esp;a&u-v;oit &u-v;e&utrem;e q<pc
-                     type="reg">'</pc>il ne&esp;sa&u-v;oit qe fere.&esp;&s-maj;i
+                  beaut&eacc; qu<pc type="reg">'</pc>il&esp;<lb/>i&esp;a&u-v;oit &u-v;e&utrem;e <app>
+                     <lem>q<pc type="reg">'</pc>il</lem>
+                     <rdg wit="#C2" type="outil">si qu'il</rdg>
+                  </app> ne&esp;sa&u-v;oit qe fere.&esp;&s-maj;i
                      fu&esp;es&p-iusucrit-pri;s&esp;<lb/>qu<pc type="reg">'</pc>a&esp;pou&esp;q<pc
                      type="reg">'</pc>il ne&esp;deguerpissoit l<pc type="reg">'</pc>ermitage&point-virg3;<choice>
                      <orig>M</orig>
                      <reg>m</reg>
                   </choice>es&esp;<lb/>par la grace del seint &e-maj;sperit a&u-v;int<pc type="orig"
                      ana="completive">:</pc>&esp;que si&esp;<lb/>com il estoit en cele tres grant
-                  flambe del&esp;<lb/>desirrier q<pc type="reg"
-                     >'</pc>il&esp;i&esp;a&u-v;oit&deuxpoints-virg4;q<pc type="reg">'</pc>il
-                  re&u-v;int en bone pen<lb/>see.&esp;Tantost se&esp;des&u-v;esti toz nuz si com il
+                  flambe del&esp;<lb/>desirrier q<pc type="reg">'</pc>il&esp;<app>
+                     <lem>i</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&esp;a&u-v;oit&deuxpoints-virg4;q<pc type="reg">'</pc>il re&u-v;int en bone
+                  pen<lb/>see.&esp;Tantost se&esp;des&u-v;esti toz nuz si com il
                   che&itrem;&esp;<lb/>de&esp;sa mere<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;&u-v;int a&esp;un buisson qi&esp;toz
                      estoit&esp;<lb/><cb n="d"/><choice>
@@ -737,16 +783,20 @@
                      type="reg">'</pc>il fu toz plaiez &esperluette-et;ortiez<pc type="orig"
                      ana="coordination">.</pc>&esp;&esperluette-et;qe li sans coroit&esp;<lb/>de son
                   cors de&esp;totes parz.&esp;Einsi cha&c-ced;a il &esperluette-et;osta&esp;<lb/>les
-                  plaies q<pc type="reg">'</pc>il a&u-v;oit en&esp;sa pensee par&esp;les
-                  do<lb/>lereuses plaies dont il s<pc type="reg">'</pc>estoit na&u-v;rez
+                  plaies q<pc type="reg">'</pc>il a&u-v;oit en&esp;sa pensee par&esp;<app>
+                     <lem>les</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> do<lb/>lereuses plaies dont il s<pc type="reg">'</pc>estoit na&u-v;rez
                   par&esp;<lb/>defors.&esp;En ceste maniere&esp;&u-v;enqui il&esp;le desir<lb/>rier
                      q<pc type="reg">'</pc>il a&u-v;oit &esperluette-et;mua
                   en&esp;doleur.&esp;Et&esp;tres donc<pc type="reg" ana="incise">,</pc>
                   si&esp;<lb/>com il tesmoignoit a&esp;ses deciples<pc type="reg" ana="incise"
                      >,</pc> fu la temp<lb/>tation de cele &u-v;olent&eacc; en&esp;lui si&esp;dontee
-                  que&esp;<lb/>onqes puis n<pc type="reg">'</pc>en senti rien.&esp;Donc
-                  comencie<lb/>rent pluiseurs genz a&esp;deguerpir le siecle &esperluette-et;<lb/>
-                  alerent a&esp;lui por sa &u-v;ie ensi&u-v;rre
+                  que&esp;<lb/>onqes puis <app>
+                     <lem>n<pc type="reg">'</pc>en</lem>
+                     <rdg wit="#C2" type="red.">ne</rdg>
+                  </app> senti rien.&esp;Donc comencie<lb/>rent pluiseurs genz a&esp;deguerpir le
+                  siecle &esperluette-et;<lb/> alerent a&esp;lui por sa &u-v;ie ensi&u-v;rre
                   &esperluette-et;sa&esp;doctri<lb/>ne.&esp;Qant li seinz hom fu&esp;deli&u-v;rez
                   de&esp;la&esp;t&etilde-em;p<lb/>tation en&esp;tel maniere com&esp;&i-j;e &u-v;os
                   ai&esp;cont&eacc;&point-virg4;<lb/>il comen&c-ced;a fruit a&esp;rendre a&esp;plus
@@ -755,7 +805,10 @@
                      <orig>T</orig>
                      <reg>t</reg>
                   </choice>out&esp;<lb/>aussi com la terre porte mielz qant li char<lb/>don
-                  &esperluette-et;les espines en&esp;sont ostees.&esp;<lb/>
+                  &esperluette-et;les espines en&esp;sont <app>
+                     <lem>ostees</lem>
+                     <rdg wit="#C2" type="ajout">ostees de hors</rdg>
+                  </app>.&esp;<lb/>
                </p>
             </div>
          </div>
@@ -765,7 +818,10 @@
                      <orig>D</orig>
                      <reg>d</reg>
                   </choice>ont a&u-v;int qe li abbes d<pc type="reg">'</pc>une&esp;<lb/>abe&itrem;e
-                  qi la estoit procheine&esp;fu&esp;<lb/>morz &esperluette-et;trespassez de cest
+                  qi la estoit procheine&esp;<app>
+                     <lem>fu</lem>
+                     <rdg wit="#C2" type="outil">et fu</rdg>
+                  </app>&esp;<lb/>morz &esperluette-et;trespassez de cest
                   siecle&deuxpoints-point;<lb/>Qant il fu ense&u-v;eliz &esperluette-et;enfo&itrem;z
                   si com costume&esp;<lb/>est&point-virg4;tuit li frere qi en&esp;cel leu
                      habitoient<pc type="orig" ana="relative">:</pc>&esp;&u-v;in<lb/>drent
@@ -782,20 +838,27 @@
                      <orig>S</orig>
                      <reg>s</reg>
                   </choice>i s<pc type="reg">'</pc>en ala ensemble o&esp;eus en&esp;<lb/>lor
-                  eglisse&deuxpoints-virg3;si les prist a&esp;chastoier<note>avertir, instruire,
-                     enseigner, faire des
-                     remontrances</note>&esp;&esperluette-et;a&esp;doctriner&esp;<lb/>q<pc type="reg"
+                  eglisse&deuxpoints-virg3;si les prist
+                     a&esp;chastoier&esp;&esperluette-et;a&esp;doctriner&esp;<lb/>q<pc type="reg"
                      >'</pc>il menassent seinte &u-v;ie<pc type="orig" ana="coordination"
                   >:</pc>&esp;&esperluette-et;apr&eacc;s lor blas<lb/>ma pluiseurs choses q<pc
                      type="reg">'</pc>il fesoient.&esp;Et puis&esp;<lb/>si lor desfendi q<pc
                      type="reg">'</pc>il n<pc type="reg">'</pc>ississent mie de la droite&esp;<lb/>
                   &u-v;oie&esp;de&esp;con&u-v;ersation.&esp;Dont comen&c-ced;a molt&esp;<lb/>
                   a&esp;anoier les freres&point-virg3;si le&esp;pristrent entr<pc type="reg"
-                  >'</pc>eus a&esp;<lb/>blasmer&point-virg4;por&esp;ce q<pc type="reg">'</pc>il
-                  ne&esp;pooient fere ore ce qu<pc type="reg">'</pc>il&esp;<lb/>
-                  soloient&deuxpoints-virg3;si se porpenserent q<pc type="reg">'</pc>il l<pc
-                     type="reg">'</pc>ocirroient&deuxpoints-point;<lb/>Lors mistrent &u-v;enim
-                  mortel en son boi&u-v;re&esp;<lb/>qi en un seul &u-v;aissel de&esp;&u-v;oirre estoit.&esp;Qant&esp;<lb/>
+                  >'</pc>eus a&esp;<lb/>blasmer&point-virg4;por&esp;ce q<pc type="reg">'</pc>il ne&esp;<app>
+                     <lem>pooient</lem>
+                     <rdg wit="#C2" type="temps">porent</rdg>
+                  </app> fere <app>
+                     <lem>ore</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app> ce qu<pc type="reg">'</pc>il&esp;<lb/> soloient&deuxpoints-virg3;si se
+                  porpenserent q<pc type="reg">'</pc>il l<pc type="reg"
+                  >'</pc>ocirroient&deuxpoints-point;<lb/>Lors mistrent &u-v;enim mortel en son
+                  boi&u-v;re&esp;<lb/>qi en <app>
+                     <lem>un seul</lem>
+                     <rdg wit="#C2" cause="om."/>
+                  </app>&#160;&u-v;aissel de&esp;&u-v;oirre estoit.&esp;Qant&esp;<lb/>
                   <persName ref="#benoit">seinz &b-maj;eneoiz</persName> fu assis au&esp;mengier si
                   com&esp;<lb/>il a&u-v;oit a&esp;costume&deuxpoints-virg4;l<pc type="reg">'</pc>en
                   li aporta cel &u-v;essel&esp;<lb/>de&u-v;ant<pc type="orig" ana="coordination"
@@ -813,16 +876,20 @@
                   &c-maj;roiz.&esp;<lb/>Lors se&esp;le&u-v;a ne n<pc type="reg">'</pc>en fist nul
                   samblant&deuxpoints-virg4;einz&esp;<lb/>apela ses freres<pc type="reg">,</pc> si
                   parla a&esp;eus mout docement&esp;<lb/>&esperluette-et;si&esp;lor
-                     dist&point-deuxpointsDial;<said who="#benoit">Beaus freres<pc type="reg" ana="apostrophe"
-                        >,</pc>&#160;&d-maj;ex li toz puissanz ait&esp;<lb/>merci
+                     dist&point-deuxpointsDial;<said who="#benoit">Beaus freres<pc type="reg"
+                        ana="apostrophe">,</pc>&#160;&d-maj;ex li toz puissanz ait&esp;<lb/>merci
                      de&esp;&u-v;os&deuxpoints-exclamation;&p-maj;or&esp;qoi me &u-v;ousistes
-                     &u-v;os tel&esp;<lb/>chose fere&deuxpoints-interrogation;Donc ne &u-v;os disoie
-                     &i-j;e an&c-ced;ois que&esp;<lb/>&u-v;os m<pc type="reg">'</pc>amenissiez
-                     &c-ced;a dedenz qe mes meurs&esp;<lb/>&esperluette-et;les &u-v;ostres ne s<pc
-                        type="reg">'</pc>acorderoient mie&point-interrogation;Alez<pc type="reg"
-                        ana="coordination">,</pc> si qe<lb/>rez pere solonc &u-v;os
-                     costumes&deuxpoints-virg3;car moi &u-v;o&sexp-s;&esp;ne&esp;<lb/>poez plus
-                     a&u-v;oir en nule maniere.</said>&esp;<lb/>
+                     &u-v;os tel&esp;<lb/>chose fere&deuxpoints-interrogation;Donc ne &u-v;os <app>
+                        <lem>disoie</lem>
+                        <rdg wit="#C2" type="temps">dis</rdg>
+                     </app>&#160; &i-j;e an&c-ced;ois que&esp;<lb/>&u-v;os m<pc type="reg"
+                     >'</pc>amenissiez &c-ced;a dedenz qe mes meurs&esp;<lb/>&esperluette-et;les
+                     &u-v;ostres ne s<pc type="reg">'</pc>acorderoient
+                        mie&point-interrogation;Alez<pc type="reg" ana="coordination">,</pc> si
+                     qe<lb/>rez pere solonc &u-v;os costumes&deuxpoints-virg3;car moi <app>
+                        <lem>&u-v;o&sexp-s;&esp;ne&esp;<lb/>poez</lem>
+                        <rdg wit="#C2" type="inv.">ne poez vos</rdg>
+                     </app> plus a&u-v;oir en nule maniere.</said>&esp;<lb/>
                </p>
             </div>
          </div>
@@ -833,9 +900,11 @@
                      <reg>o</reg>
                   </choice>nt se departi <persName ref="#benoit">seinz &b-maj;eneois</persName>
                      de&esp;<lb/>la<pc type="reg" ana="coordination">,</pc> si s<pc type="reg"
-                     >'</pc>en rala a&esp;son leu en&esp;la roche&esp;<lb/>qu<pc type="reg">'</pc>il
-                  mout amoit.&esp;Et la ou il con<lb/>&u-v;ersoit<pc type="reg" ana="subordonnee"
-                     >,</pc>&#160;&u-v;enoient molt de&esp;genz a&esp;lui
+                     >'</pc>en rala a&esp;son leu en&esp;la roche&esp;<lb/><app>
+                     <lem>qu<pc type="reg">'</pc>il</lem>
+                     <rdg wit="#C2" type="erreur">qi</rdg>
+                  </app> mout amoit.&esp;Et la ou il con<lb/>&u-v;ersoit<pc type="reg"
+                     ana="subordonnee">,</pc>&#160;&u-v;enoient molt de&esp;genz a&esp;lui
                   &esperluette-et;repe<lb/>roient por les miracles qe nostre &s-maj;ires fe<lb/>soit
                   por lui<pc type="reg" ana="finPhrase">.</pc>&#160;&et-maj;par ceus qui a&esp;lui
                      repairoient<pc type="orig" ana="coordination"
@@ -852,12 +921,16 @@
                   aprendre&esp;&esperluette-et;por retenir<pc type="orig" ana="COD"
                   >.</pc>&esp;<lb/>sa doctrine &esperluette-et;ses seintes paroles.&esp;Li
                   haut&esp;<lb/>home de <placeName ref="#rome">&r-maj;ome</placeName> qi relegieus
-                     estoient<pc type="orig" ana="relative">:</pc>&esp;&u-v;in<lb/>drent a&esp;lui
-                  &esperluette-et;si&esp;li&esp;baillierent lor enfanz por&esp;<lb/>norrir
-                  &esperluette-et;por ensignier a&esp;o&eacc;s nostre&esp;&s-maj;ignor.&esp;<lb/>
+                     estoient<pc type="orig" ana="relative">:</pc>&esp;<app>
+                     <lem>&u-v;in<lb/>drent</lem>
+                     <rdg wit="#C2" type="ajout">vindrent la</rdg>
+                  </app> a&esp;lui &esperluette-et;si&esp;li&esp;baillierent lor enfanz
+                  por&esp;<lb/>norrir &esperluette-et;por ensignier a&esp;o&eacc;s nostre&esp;&s-maj;ignor.&esp;<lb/>
                   <persName ref="#evitius">E&u-v;itius</persName> qi hauz hom estoit<pc type="orig"
-                     ana="relative">.</pc>&esp;i&esp;en&u-v;oi<corr type="add">a</corr><note>Correction d'après
-                     ms.411</note>&#160;<persName ref="#maurum"
+                     ana="relative">.</pc>&esp;i&esp;<app>
+                     <lem wit="#C2">en&u-v;oi<corr type="add">a</corr></lem>
+                     <rdg wit="#C1">envoi</rdg>
+                  </app>&#160;<persName ref="#maurum"
                      >&m-maj;au<lb/>rum</persName>&esp;son&esp;fil<pc type="orig" ana="coordination"
                      >.</pc>&esp;&esperluette-et;<persName ref="#theralius"
                      >&t-maj;heralius</persName> i&esp;en&u-v;oia <persName ref="#placidum"
@@ -880,18 +953,20 @@
                   </choice>es tantost com il s<pc type="reg">'</pc>aclinoi<lb/>ent&esp;por
                   orer&deuxpoints-virg4;il issoit de&esp;l<pc type="reg">'</pc>eglisse fors<pc
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;si
-                  cou<lb/>men&c-ced;oit aucunes choses a&esp;fere qi preut<note>adv.
-                  beaucoup</note>&esp;<lb/>ne &u-v;aloient.&esp;Ses&esp;abbes le&esp;chastia
-                     pluiseurs&esp;<lb/>foiz<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;amonesta de ce fere qe li autre frere&esp;<lb/>
-                  fesoient&deuxpoints-virg3;mes cil ne&esp;s<pc type="reg">'</pc>en &u-v;out onqes
-                     amen<lb/>der<pc type="orig" ana="CC">.</pc>&esp;por chose c<pc type="reg"
-                     >'</pc>on li pe&utrem;st dire.&esp;Qant ce &u-v;it&esp;<lb/>li
-                  abbes&point-virg4;il prist le&esp;frere<pc type="reg" ana="coordination">,</pc> si
-                  le mena a&esp;seint <persName ref="#benoit">&b-maj;e<lb/>neoit</persName><pc
-                     type="reg" ana="coordination">,</pc> si li conta&esp;&esperluette-et;dist tote
-                  ceste chose.&esp;<persName ref="#benoit">Seinz&esp;<lb/>&b-maj;eneoiz</persName>
-                  chastoia mout le moine &esperluette-et;blasma&esp;<lb/><cb n="b"/>
+                  cou<lb/>men&c-ced;oit aucunes choses a&esp;fere qi preut&esp;<lb/>ne
+                  &u-v;aloient.&esp;Ses&esp;abbes le&esp;chastia pluiseurs&esp;<lb/>foiz<pc
+                     type="orig" ana="coordination">.</pc>&esp;&esperluette-et;amonesta de ce fere
+                  qe li autre frere&esp;<lb/>fesoient&deuxpoints-virg3;mes cil <app>
+                     <lem>ne&esp;s<pc type="reg">'</pc>en</lem>
+                     <rdg wit="#C2" type="red.">n'en</rdg>
+                  </app>&#160;&u-v;out onqes amen<lb/>der<pc type="orig" ana="CC">.</pc>&esp;por
+                  chose c<pc type="reg">'</pc>on li pe&utrem;st dire.&esp;Qant ce
+                  &u-v;it&esp;<lb/>li abbes&point-virg4;il prist le&esp;frere<pc type="reg"
+                     ana="coordination">,</pc> si le mena a&esp;seint <persName ref="#benoit"
+                     >&b-maj;e<lb/>neoit</persName><pc type="reg" ana="coordination">,</pc> si li
+                  conta&esp;&esperluette-et;dist tote ceste chose.&esp;<persName ref="#benoit"
+                     >Seinz&esp;<lb/>&b-maj;eneoiz</persName> chastoia mout le moine
+                     &esperluette-et;blasma&esp;<lb/><cb n="b"/>
                   <choice>
                      <orig>S</orig>
                      <reg>s</reg>
@@ -929,15 +1004,18 @@
                   estoit preudom q<pc type="reg">'</pc>il&esp;a&u-v;oit ensam<lb/>ble o&esp;lui
                      amen&eacc;&point-virg5;<persName ref="#maurum">&m-maj;aurus</persName>
                   a&u-v;oit non<pc type="reg" ana="coordination">,</pc> si leur&esp;<lb/>
-                     dist&point-deuxpointsDial;<said who="#benoit">Dont ne &u-v;eez &u-v;os qi&esp;cil est
-                     qi&esp;cest moi<lb/>ne tret fors
-                  de&esp;ceenz&point-interrogation;</said>&esp;Il respondirent<pc ana="coordination"
-                     type="reg">,</pc> si&esp;distr&etilde-en;t&point-deuxpointsDial;<lb/><said who="#maurum #pompeien">Nos
-                        n<pc type="reg">'</pc>en&esp;&u-v;eons mie.</said>&esp;<persName
-                     ref="#benoit">Seinz &b-maj;eneoiz</persName> lor dist<pc type="reg" ana="DD">
-                     :</pc>&esp;<lb/>
-                  <said who="#benoit">&p-maj;roions nostre &s-maj;ignor qe&esp;&u-v;os puissiez &u-v;e<lb/>oir
-                     celui qi&esp;cest moine en&esp;meine.</said>&esp;Qant&esp;<lb/>il orent
+                     dist&point-deuxpointsDial;<said who="#benoit">Dont ne &u-v;eez &u-v;os
+                     qi&esp;cil est qi&esp;cest moi<lb/>ne tret fors
+                     de&esp;ceenz&point-interrogation;</said>&esp;Il respondirent<pc
+                     ana="coordination" type="reg">,</pc>
+                     si&esp;distr&etilde-en;t&point-deuxpointsDial;<lb/><said
+                     who="#maurum #pompeien">Nos n<pc type="reg">'</pc>en&esp;&u-v;eons
+                     mie.</said>&esp;<persName ref="#benoit">Seinz &b-maj;eneoiz</persName> lor
+                     dist<pc type="reg" ana="DD"> :</pc>&esp;<lb/>
+                  <said who="#benoit">&p-maj;roions nostre &s-maj;ignor qe&esp;&u-v;os puissiez <app>
+                        <lem>&u-v;e<lb/>oir celui</lem>
+                        <rdg wit="#C2" type="inv.">celui veoir</rdg>
+                     </app> qi&esp;cest moine en&esp;meine.</said>&esp;Qant&esp;<lb/>il orent
                      par&esp;<pc ana="number">.</pc><seg type="number">ii</seg><pc ana="number"
                      >.</pc>&esp;&i-j;orz fetes lor orissons&point-virg4;<persName ref="#maurum"
                      >&m-maj;au<lb/>rus</persName>&#160;&u-v;it coment li&esp;noirs enfes
@@ -961,6 +1039,7 @@
                   o&esp;ses freres.<lb/></p>
             </div>
          </div>
+         <!-- fin collation C2, col. 1 : https://gallica.bnf.fr/ark:/12148/btv1b107209247/f216.item.zoom -->
          <div n="8" type="chapter">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">A</hi><choice>
@@ -1013,8 +1092,8 @@
                   sorent cil des trois eglisses.&esp;Qant &u-v;int a&esp;l&etilde-en;<lb/>demein<pc
                      type="reg" ana="subordonnee">,</pc> li&esp;frere re&u-v;indrent a&esp;lui
                   complein<lb/>dre de&esp;la&esp;destrece de&esp;l<pc type="reg">'</pc>e&u-v;e
-                     &esperluette-et;il&esp;lor&esp;dist&point-deuxpointsDial;<said who="#benoit">Alez
-                     &esperluette-et;si&esp;<lb/>cha&u-v;ez la&esp;roche deseure
+                     &esperluette-et;il&esp;lor&esp;dist&point-deuxpointsDial;<said who="#benoit"
+                     >Alez &esperluette-et;si&esp;<lb/>cha&u-v;ez la&esp;roche deseure
                      la&esp;ou&esp;&u-v;os&esp;tro&u-v;eroiz&esp;<lb/>trois pierres mises
                      ensemble.&esp;&n-maj;ostre &s-maj;ires&esp;<lb/>est bien si puissanz qu<pc
                         type="reg">'</pc>il puet e&u-v;e fere &u-v;e<lb/>nir
@@ -1092,9 +1171,9 @@
                   li fers&esp;<lb/>de&esp;la parfondece<pc type="reg" ana="coordination">,</pc> si
                   rentra el manche&point-virg4;si com&esp;<lb/>il a&u-v;oit est&eacc;
                   de&u-v;ant.&esp;Lors le rendi au con<lb/>&u-v;ers &esperluette-et;si&esp;li
-                     dist&point-deuxpointsDial;<said who="#benoit">Beaus frere<pc type="reg" ana="apostrophe"
-                        >,</pc> or o&u-v;rez<pc type="reg">,</pc> si&esp;ne&esp;<lb/>demenez dolor
-                     ne&esp;tristece.</said><lb/>
+                     dist&point-deuxpointsDial;<said who="#benoit">Beaus frere<pc type="reg"
+                        ana="apostrophe">,</pc> or o&u-v;rez<pc type="reg">,</pc>
+                     si&esp;ne&esp;<lb/>demenez dolor ne&esp;tristece.</said><lb/>
                </p>
             </div>
          </div>
@@ -1192,12 +1271,12 @@
                   li corbeaus si com il soloit&esp;&esperluette-et;<persName ref="#benoit">seinz
                      &b-maj;e<lb/>neoiz</persName> li&esp;geta le&esp;pein de&u-v;ant qe li
                   prestres&esp;<lb/>li a&u-v;oit en&u-v;oi&eacc;&#160;&esperluette-et;si li
-                     dist&point-deuxpointsDial;<said who="#benoit">Je&esp;te coman&c-ced; el&esp;<lb/>non nostre
-                     &s-maj;ignor &j-maj;esu&esp;&c-maj;rist<pc type="orig" ana="completive"
-                     >:</pc>&esp;qe tu emportes&esp;<lb/>cest pein<pc type="orig" ana="coordination"
-                        >:</pc>&esp;&esperluette-et;si le met en&esp;tel leu qe nus hom&esp;<lb/>ne
-                     le puisse tro&u-v;er.</said>&esp;Qant li corbeaus o&itrem; la&esp;<lb/>parole
-                  del seint home&deuxpoints-virg3;il tendi ses eles
+                     dist&point-deuxpointsDial;<said who="#benoit">Je&esp;te coman&c-ced;
+                     el&esp;<lb/>non nostre &s-maj;ignor &j-maj;esu&esp;&c-maj;rist<pc type="orig"
+                        ana="completive">:</pc>&esp;qe tu emportes&esp;<lb/>cest pein<pc type="orig"
+                        ana="coordination">:</pc>&esp;&esperluette-et;si le met en&esp;tel leu qe
+                     nus hom&esp;<lb/>ne le puisse tro&u-v;er.</said>&esp;Qant li corbeaus o&itrem;
+                  la&esp;<lb/>parole del seint home&deuxpoints-virg3;il tendi ses eles
                   &esperluette-et;si&esp;<lb/>comen&c-ced;a tout en&u-v;iron le&esp;pein
                      a&esp;corre<pc type="orig" ana="coordination"
                   >.</pc>&esp;&esperluette-et;si&esp;<lb/>crioit mout durement en&esp;sa maniere
@@ -1264,14 +1343,14 @@
                      &b-maj;eneoit</persName><pc type="orig" ana="relative">.</pc>&esp;qi encore
                      n<pc type="reg">'</pc>estoit mie alez&esp;<lb/>loing de&esp;la&esp;<pc
                      ana="number">.</pc><seg type="number">x</seg><pc ana="number">.</pc>&esp;liues
-                  &esperluette-et;si li dist&point-deuxpointsDial;<said who="#maurum">Seinz peres<pc type="reg"
-                        ana="apostrophe">,</pc>&esp;<lb/>retorne<pc type="reg" ana="coordination"
-                        >,</pc> car li prestres qui te haoit est morz.</said>&esp;<lb/>Qant
-                     <persName ref="#benoit">seinz &b-maj;eneoiz</persName> o&itrem; ceste
-                  chose&deuxpoints-virg4;il se co<lb/>men&c-ced;a a&esp;doloser mout durement
-                  &esperluette-et;a&esp;com<lb/>pleindre&deuxpoints-virg5;&i-j;e ne sai se ce fu por
-                  ce qe ses enemis&esp;<lb/>estoit ocis<pc ana="coordination" type="orig"
-                  >:</pc>&esp;ou por ce qe ses deciples s<pc type="reg"
+                  &esperluette-et;si li dist&point-deuxpointsDial;<said who="#maurum">Seinz peres<pc
+                        type="reg" ana="apostrophe">,</pc>&esp;<lb/>retorne<pc type="reg"
+                        ana="coordination">,</pc> car li prestres qui te haoit est
+                  morz.</said>&esp;<lb/>Qant <persName ref="#benoit">seinz &b-maj;eneoiz</persName>
+                  o&itrem; ceste chose&deuxpoints-virg4;il se co<lb/>men&c-ced;a a&esp;doloser mout
+                  durement &esperluette-et;a&esp;com<lb/>pleindre&deuxpoints-virg5;&i-j;e ne sai se
+                  ce fu por ce qe ses enemis&esp;<lb/>estoit ocis<pc ana="coordination" type="orig"
+                     >:</pc>&esp;ou por ce qe ses deciples s<pc type="reg"
                   >'</pc>eslee&c-ced;oit&esp;<lb/>de sa mort<pc type="reg" ana="finPhrase"
                   >.</pc>&#160;&et-maj;por ce l<pc type="reg">'</pc>en charcha il
                      peneance&esp;<lb/>q<pc type="reg">'</pc>il&esp;li manda tel chose<pc
@@ -1361,9 +1440,10 @@
                         ana="apostrophe"> !</pc>&#160;<persName ref="#benoit"
                         >&b-maj;eneoit</persName><pc type="reg" ana="apostrophe"> !</pc></said><pc
                      type="reg" ana="subordonnee">,</pc>&#160;&esperluette-et;<persName
-                     ref="#benoit">seinz &b-maj;eneoiz</persName> ne respon<lb/>doit mie. Li deables li disoit tantost <pc type="reg">:</pc>
-                  <said>&m-maj;ale<lb/>oiz <pc type="reg" ana="finPhrase">!</pc> &n-maj;on mie beneoiz<pc
-                        type="reg" ana="apostrophe">!</pc>&#160;&q-maj;e me demandes
+                     ref="#benoit">seinz &b-maj;eneoiz</persName> ne respon<lb/>doit mie. Li deables
+                  li disoit tantost <pc type="reg">:</pc>
+                  <said>&m-maj;ale<lb/>oiz <pc type="reg" ana="finPhrase">!</pc> &n-maj;on mie
+                        beneoiz<pc type="reg" ana="apostrophe">!</pc>&#160;&q-maj;e me demandes
                      tu&deuxpoints-interrogation;<lb/>Et por qoi me fez tu
                      gre&u-v;ance&deuxpoints-interrogation;</said>&esp;Or &u-v;os con<lb/>terai des
                   estors qui furent entre le seint&esp;<lb/>home &esperluette-et;le
@@ -1531,16 +1611,16 @@
                   &u-v;indrent a&esp;<persName ref="#benoit">seint &b-maj;ene<lb/>oit</persName> por
                   sa&esp;bene&itrem;&c-ced;on a&u-v;oir si&esp;com il a&u-v;oient&esp;<lb/>
                   a&esp;costume.&esp;Li seinz hom ne lor &u-v;out mie&esp;<lb/>
-                  doner&deuxpoints-virg3;einz dist<pc type="reg" ana="DD">
-                     :</pc>&esp;&#160;<said who="#benoit">&o-maj;u mengastes
+                  doner&deuxpoints-virg3;einz dist<pc type="reg" ana="DD"> :</pc>&esp;&#160;<said
+                     who="#benoit">&o-maj;u mengastes
                   &u-v;ous&point-interrogation;</said>&esp;&et-maj;il&esp;<lb/>respondirent
                      &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>&n-maj;ul
                      leu.</said>&esp;<persName ref="#benoit">Seinz&esp;<lb/>&b-maj;eneoiz</persName>
-                     lor&esp;dist&point-deuxpointsDial;<said who="#benoit">&p-maj;or qoi ment&eacc;s &u-v;os en
-                     tel&esp;<lb/>maniere&deuxpoints-interrogation;&d-maj;ont ne fustes &u-v;os
-                     a&esp;la meson&esp;<lb/>a&esp;cele feme &esperluette-et;dont n<pc type="reg"
-                        >'</pc>i e&utrem;stes &u-v;os teles &u-v;ian<lb/>des &esperluette-et;dont
-                        n<pc type="reg">'</pc>i be&utrem;stes &u-v;os tantes
+                     lor&esp;dist&point-deuxpointsDial;<said who="#benoit">&p-maj;or qoi ment&eacc;s
+                     &u-v;os en tel&esp;<lb/>maniere&deuxpoints-interrogation;&d-maj;ont ne fustes
+                     &u-v;os a&esp;la meson&esp;<lb/>a&esp;cele feme &esperluette-et;dont n<pc
+                        type="reg">'</pc>i e&utrem;stes &u-v;os teles &u-v;ian<lb/>des
+                     &esperluette-et;dont n<pc type="reg">'</pc>i be&utrem;stes &u-v;os tantes
                      foiz&deuxpoints-interrogation;</said>&esp;Q&nasuscrit-an;t&esp;<lb/>li frere
                   orent o&itrem; ce&esp;qe&esp;lor pere&esp;lor contoit <pc type="reg"
                      ana="apposition">—</pc> ensi&esp;<lb/>l<pc type="reg">'</pc>ostel
@@ -1632,20 +1712,20 @@
                      <orig>A</orig>
                      <reg>a</reg>
                   </choice>&u-v;oit fet en la &u-v;oie<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;si li dist&point-deuxpointsDial;<said who="#benoit">Que&esp;<lb/>est
-                        ce<pc type="reg" ana="apostrophe">,</pc> beaus freres<pc type="reg"
-                        ana="apostrophe">,</pc> li malignes esperiz qui&esp;<lb/>a&esp;toi parla
-                     en&esp;la&esp;&u-v;oie par ton compaignon&esp;<lb/>ne&esp;te pot mie
-                     &etilde-en;orter qe tu fe&itrem;sses sa&esp;&u-v;olent&eacc;&esp;<lb/>a la
-                     premiere foiz<pc type="orig" ana="coordination">:</pc>&esp;ne a&esp;la
-                     seconde&point-virg3;mes a&esp;la&esp;<lb/>tierce sormonta il a&esp;ce qu<pc
-                        type="reg">'</pc>il &u-v;out fere.</said>&esp;Dont&esp;<lb/>reconut cil ce
-                     q<pc type="reg">'</pc>il a&u-v;oit fet&point-virg3;si se lessa
-                  cheoir&esp;<lb/>as&esp;piez <persName ref="#benoit">seint
-                  &b-maj;eneoit</persName>&#160;&esperluette-et;comen&c-ced;a a&esp;plorer
-                  &esperluette-et;a&esp;<lb/>rendre sa&esp;coupe<pc type="orig" ana="coordination"
-                     >.</pc>&esp;&esperluette-et;bien sot qe <persName ref="#benoit">seinz
-                     &b-maj;eneoiz</persName> a<lb/>&u-v;oit &u-v;e&utrem; son
+                  >.</pc>&esp;&esperluette-et;si li dist&point-deuxpointsDial;<said who="#benoit"
+                     >Que&esp;<lb/>est ce<pc type="reg" ana="apostrophe">,</pc> beaus freres<pc
+                        type="reg" ana="apostrophe">,</pc> li malignes esperiz
+                     qui&esp;<lb/>a&esp;toi parla en&esp;la&esp;&u-v;oie par ton
+                     compaignon&esp;<lb/>ne&esp;te pot mie &etilde-en;orter qe tu fe&itrem;sses
+                     sa&esp;&u-v;olent&eacc;&esp;<lb/>a la premiere foiz<pc type="orig"
+                        ana="coordination">:</pc>&esp;ne a&esp;la seconde&point-virg3;mes
+                     a&esp;la&esp;<lb/>tierce sormonta il a&esp;ce qu<pc type="reg">'</pc>il
+                     &u-v;out fere.</said>&esp;Dont&esp;<lb/>reconut cil ce q<pc type="reg">'</pc>il
+                  a&u-v;oit fet&point-virg3;si se lessa cheoir&esp;<lb/>as&esp;piez <persName
+                     ref="#benoit">seint &b-maj;eneoit</persName>&#160;&esperluette-et;comen&c-ced;a
+                  a&esp;plorer &esperluette-et;a&esp;<lb/>rendre sa&esp;coupe<pc type="orig"
+                     ana="coordination">.</pc>&esp;&esperluette-et;bien sot qe <persName
+                     ref="#benoit">seinz &b-maj;eneoiz</persName> a<lb/>&u-v;oit &u-v;e&utrem; son
                   meffet&point-virg4;&i-j;a fust ce q<pc type="reg">'</pc>il n<pc type="reg">'</pc>i
                   eust est&eacc;&esp;<lb/>en&esp;presence.&esp;Einsi sa&u-v;oit li seinz hom
                   par&esp;la&esp;<lb/>grace de&esp;&d-maj;eu les&esp;choses aussint bien celes
@@ -1705,9 +1785,9 @@
                   <persName ref="#benoit">seinz &b-maj;eneoiz</persName> se&esp;pensa q<pc
                      type="reg">'</pc>il orroit bien &esperluette-et;enten<lb/>deroit sa
                   parole&point-virg4;il li comen&c-ced;a a&esp;crier &esperluette-et;a&esp;dire&point-deuxpointsDial;<lb/>
-                  <said who="#benoit">&b-maj;eaus fiuz<pc type="reg" ana="apostrophe">,</pc> oste ce qe tu
-                        portes<pc type="reg" ana="coordination">,</pc> car ce n<pc type="reg"
-                     >'</pc>est mie&esp;<lb/>tien&point-exclamation;</said>&esp;Qant <persName
+                  <said who="#benoit">&b-maj;eaus fiuz<pc type="reg" ana="apostrophe">,</pc> oste ce
+                     qe tu portes<pc type="reg" ana="coordination">,</pc> car ce n<pc type="reg"
+                        >'</pc>est mie&esp;<lb/>tien&point-exclamation;</said>&esp;Qant <persName
                      ref="#ringo">&r-maj;inggoz</persName> o&itrem;&esp;la&esp;parole<pc type="reg"
                      ana="subordonnee">,</pc> il&esp;se&esp;lessa che<pc type="reg">-</pc><lb/><cb
                      n="d"/><pc type="reg">-</pc>oir a&esp;terre&point-virg3;<choice>
@@ -1740,8 +1820,8 @@
                   mout le blasma&esp;<lb/>des choses qu<pc type="reg">'</pc>il a&u-v;oit fetes<pc
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;a&esp;mout
                   petit&esp;<lb/>de&esp;paroles li&esp;dist ce&esp;qe a&esp;a&u-v;enir li&esp;estoit
-                  en&esp;<lb/>tel maniere&point-deuxpointsDial;<said who="#benoit">Rois<pc type="reg"
-                        ana="apostrophe">,</pc> tu as mout fet de
+                  en&esp;<lb/>tel maniere&point-deuxpointsDial;<said who="#benoit">Rois<pc
+                        type="reg" ana="apostrophe">,</pc> tu as mout fet de
                      maus&deuxpoints-point;<lb/>&o-maj;r soies sages tres ceste ore en a&u-v;ant<pc
                         type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;si&esp;lai&esp;<lb/>ester tes
@@ -1800,8 +1880,8 @@
                      i&esp;habite.</said>&esp;<persName ref="#benoit">Seinz &b-maj;eneoiz</persName>
                   respondi au&esp;prestre<lb/><pb n="163"
                      facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f335.item.zoom"/><cb n="a"
-                  /> &esperluette-et;si li dist <pc type="reg" ana="DD">: </pc><said who="#benoit">Rome ne sera
-                     &i-j;a&esp;desertee par paien<choice>
+                  /> &esperluette-et;si li dist <pc type="reg" ana="DD">: </pc><said who="#benoit"
+                     >Rome ne sera &i-j;a&esp;desertee par paien<choice>
                         <orig>S</orig>
                         <reg>s</reg>
                      </choice>&esp;<lb/>ne par &s-maj;arrazinz&deuxpoints-virg3;mes ele anoientira
@@ -1847,9 +1927,9 @@
                      ana="coordination">:</pc>&esp;&esperluette-et;gueriz de sa&esp;<lb/>male
                   a&u-v;enture.&esp;Qant li&esp;clers fu sanez de&esp;<lb/>son
                      meschief&deuxpoints-virg4;<persName ref="#benoit">seinz
-                     &b-maj;eneoiz</persName> li dist&point-deuxpointsDial;<said who="#benoit">&v-maj;a&esp;t<pc
-                        type="reg">'</pc>en &esperluette-et;si&esp;<lb/>garde qe &i-j;am&eacc;s ne
-                     men&i-j;uces de char<pc type="orig" ana="coordination"
+                     &b-maj;eneoiz</persName> li dist&point-deuxpointsDial;<said who="#benoit"
+                        >&v-maj;a&esp;t<pc type="reg">'</pc>en &esperluette-et;si&esp;<lb/>garde qe
+                     &i-j;am&eacc;s ne men&i-j;uces de char<pc type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;si&esp;gar<lb/>de qe &i-j;am&eacc;s n<pc type="reg"
                         >'</pc>aproces a&esp;seintes ordres&point-virg3;car bi&etilde-en;&esp;<lb/>
                         saces<pc type="reg" ana="subordonnee">,</pc> se&esp;tu ordener te
@@ -1910,7 +1990,8 @@
                   seinz hom de&utrem;st lessier le plorer&point-virg3;<choice>
                      <orig>M</orig>
                      <reg>m</reg>
-                  </choice>es il&esp;<lb/>ne la<note>proposer correction en le, issue de 411 - vérifier si dialectal</note> lessa mie adonques tost.&esp;<persName
+                  </choice>es il&esp;<lb/>ne la<note>proposer correction en le, issue de 411 -
+                     vérifier si dialectal</note> lessa mie adonques tost.&esp;<persName
                      ref="#theoprobus">&t-maj;heoprobus</persName>&esp;<lb/>s<pc type="reg">'</pc>en
                   esmer&u-v;eilla durement&point-virg3;car <persName ref="#benoit">seinz
                      &b-maj;ene<lb/>oiz</persName> n<pc type="reg">'</pc>a&u-v;oit mie a&esp;costume
@@ -1921,19 +2002,20 @@
                      >.</pc>&esp;&esperluette-et;si li demanda dont&esp;<lb/>ceste doleur
                   li&esp;&u-v;enoit &esperluette-et;ceste pesance.&esp;<persName ref="#benoit"
                      >Se&itilde-in;z&esp;<lb/>&b-maj;eneoiz</persName> respondi isnelement
-                  &esperluette-et;si li dist&point-deuxpointsDial;<said who="#benoit">Bea&apos-us;&esp;<lb/>
-                        frere<pc type="reg" ana="apostrophe">,</pc>&#160;&i-j;e ai ceste doleur
-                     por&esp;ce qe ceste abe&itrem;e<pc type="orig" ana="relative">.</pc>&esp;<lb/>
-                     qe&esp;&i-j;e ai fete &esperluette-et;estoree &esperluette-et;totes les choses
-                     que&esp;<lb/>&i-j;e a&u-v;oie a&esp;o&eacc;s mes freres apareillies
-                        seront&esp;<lb/>tresq<pc type="reg">'</pc>a brief tens destruites.&esp;Et
-                     par la &u-v;olen<lb/>t&eacc; nostre &s-maj;ignor seront totes choses en
-                     ces&esp;<lb/>parties mises es meins de&esp;paiens<pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;a&esp;poi<lb/>nes m<pc
-                        type="reg">'</pc>a nostre &s-maj;ires otroi&eacc;&esp;&esperluette-et;qe
-                     &i-j;e &esperluette-et;mi frere&esp;<lb/>en eschapons.</said>&esp;Qant
-                     <persName ref="#theoprobus">&t-maj;heoprobus</persName> o&itrem;
-                  ce&point-virg4;il&esp;li &u-v;&itilde-in;t&esp;<lb/>a&esp;grant mer&u-v;elle&point-virg3;<choice>
+                  &esperluette-et;si li dist&point-deuxpointsDial;<said who="#benoit"
+                     >Bea&apos-us;&esp;<lb/> frere<pc type="reg" ana="apostrophe">,</pc>&#160;&i-j;e
+                     ai ceste doleur por&esp;ce qe ceste abe&itrem;e<pc type="orig" ana="relative"
+                        >.</pc>&esp;<lb/> qe&esp;&i-j;e ai fete &esperluette-et;estoree
+                     &esperluette-et;totes les choses que&esp;<lb/>&i-j;e a&u-v;oie a&esp;o&eacc;s
+                     mes freres apareillies seront&esp;<lb/>tresq<pc type="reg">'</pc>a brief tens
+                     destruites.&esp;Et par la &u-v;olen<lb/>t&eacc; nostre &s-maj;ignor seront
+                     totes choses en ces&esp;<lb/>parties mises es meins de&esp;paiens<pc
+                        type="orig" ana="coordination">.</pc>&esp;&esperluette-et;a&esp;poi<lb/>nes
+                        m<pc type="reg">'</pc>a nostre &s-maj;ires
+                     otroi&eacc;&esp;&esperluette-et;qe &i-j;e &esperluette-et;mi frere&esp;<lb/>en
+                     eschapons.</said>&esp;Qant <persName ref="#theoprobus"
+                     >&t-maj;heoprobus</persName> o&itrem; ce&point-virg4;il&esp;li
+                  &u-v;&itilde-in;t&esp;<lb/>a&esp;grant mer&u-v;elle&point-virg3;<choice>
                      <orig>M</orig>
                      <reg>m</reg>
                   </choice>es l<pc type="reg">'</pc>abe&itrem;e fu destruite&esp;<lb/>apr&eacc;s par
@@ -1998,14 +2080,15 @@
                         <orig>S</orig>
                         <reg>s</reg>
                      </choice>einz&esp;<lb/>&b-maj;eneoiz</persName> parla a&esp;lui mout belement
-                     &esperluette-et;si&esp;li&esp;<lb/>dist&point-deuxpointsDial;<said who="#benoit">Beaus
-                        fiuz<pc type="reg" ana="apostrophe">,</pc> garde qe tu a&esp;ce baril
-                     qe&esp;tu&esp;<lb/>as repost &i-j;am&eacc;s ne boi&u-v;es&deuxpoints-virg3;mes
-                     qant tu&esp;i&esp;<lb/>&u-v;endras &esperluette-et;tu le
-                     tro&u-v;eras&deuxpoints-virg3;si &u-v;erse fors &esperluette-et;res<lb/>pant
-                        ce&esp;qu<pc type="reg">'</pc>il a&esp;dedenz.</said>&esp;Qant cil o&itrem;
-                  einsint&esp;<lb/>parler le seint home<pc type="reg" ana="coordination">,</pc> si
-                  ot grant honte&deuxpoints-virg3;mes&esp;<lb/>neqedent se departi il de <persName
+                     &esperluette-et;si&esp;li&esp;<lb/>dist&point-deuxpointsDial;<said
+                     who="#benoit">Beaus fiuz<pc type="reg" ana="apostrophe">,</pc> garde qe tu
+                     a&esp;ce baril qe&esp;tu&esp;<lb/>as repost &i-j;am&eacc;s ne
+                     boi&u-v;es&deuxpoints-virg3;mes qant tu&esp;i&esp;<lb/>&u-v;endras
+                     &esperluette-et;tu le tro&u-v;eras&deuxpoints-virg3;si &u-v;erse fors
+                     &esperluette-et;res<lb/>pant ce&esp;qu<pc type="reg">'</pc>il
+                     a&esp;dedenz.</said>&esp;Qant cil o&itrem; einsint&esp;<lb/>parler le seint
+                     home<pc type="reg" ana="coordination">,</pc> si ot grant
+                  honte&deuxpoints-virg3;mes&esp;<lb/>neqedent se departi il de <persName
                      ref="#benoit">seint &b-maj;eneoit</persName>&#160;&esperluette-et;<lb/>ala tant
                      q<pc type="reg">'</pc>il &u-v;int a&esp;son baril<pc type="reg"
                      ana="coordination">,</pc> si se pensa q<pc type="reg"
@@ -2056,8 +2139,8 @@
                   </choice>e qoi li seinz hom le reprenoit&point-virg4;<lb/>por ce q<pc type="reg"
                      >'</pc>il a&u-v;oit en&esp;son&esp;sein oubli&eacc; ce que les&esp;<lb/>
                   noneins don&eacc; li a&u-v;oient.&esp;<persName ref="#benoit">Seinz
-                     &b-maj;eneoiz</persName> li&esp;<lb/>dist&esp;<pc type="reg"
-                     >:</pc>&#160;<said who="#benoit">&c-maj;uides tu qe &i-j;e ne fusse en
+                     &b-maj;eneoiz</persName> li&esp;<lb/>dist&esp;<pc type="reg">:</pc>&#160;<said
+                     who="#benoit">&c-maj;uides tu qe &i-j;e ne fusse en
                      presence&deuxpoints-virg4;q&nasuscrit-an;t&esp;<lb/>tu pre&itrem;s les choses
                      qe&esp;les anceles &d-maj;eu te&esp;<lb/>donerent &esperluette-et;tu les
                      me&itrem;s en&esp;ton
@@ -2145,9 +2228,10 @@
                      <orig>S</orig>
                      <reg>s</reg>
                   </choice>i dolenz&point-virg3;<lb/>il parla a&esp;eus &esperluette-et;si&esp;lor
-                     dist&point-deuxpointsDial;<said who="#benoit">&p-maj;or qoi estes &u-v;oz&esp;<lb/>si tristes
-                     en &u-v;os corages por ceste besoigne&deuxpoints-interrogation;<lb/>Soffrez hui
-                     tant seulement<pc type="orig" ana="coordination"
+                     dist&point-deuxpointsDial;<said who="#benoit">&p-maj;or qoi estes
+                     &u-v;oz&esp;<lb/>si tristes en &u-v;os corages por ceste
+                     besoigne&deuxpoints-interrogation;<lb/>Soffrez hui tant seulement<pc
+                        type="orig" ana="coordination"
                      >:</pc>&esp;&esperluette-et;demein&esp;a<lb/>uroiz &u-v;os a&esp;grant
                      plent&eacc; ce qe mestiers&esp;<lb/>&u-v;os sera.</said>&esp;Einsint passa cis
                   &i-j;orz &esperluette-et;la&esp;nuiz.&esp;<lb/>Et lendemein a&esp;la matinee
@@ -2187,15 +2271,14 @@
                   >,</pc>&#160;&esperluette-et;li queus seroit
                   lor&esp;pre&u-v;oz&esp;<lb/>por&esp;garder lor&esp;aferes.&esp;Qant il ot
                   einsint&esp;<lb/>la&esp;chose ordenee &esperluette-et;de&u-v;isee<pc type="reg"
-                     ana="subordonnee">,</pc> il&esp;lor
-                     dist&point-deuxpointsDial;<said who="#benoit">Alez&esp;<lb/>&u-v;os en<pc type="orig"
-                        ana="coordination">.</pc>&esp;&esperluette-et;bien saciez q<pc type="reg"
-                        >'</pc>a ce &i-j;or &u-v;endrai&esp;&i-j;e
-                     a&esp;&u-v;os&esp;<lb/>&esperluette-et;si &u-v;os ensegnerai en&esp;quel leu
-                     &u-v;os feroiz&esp;<lb/>le&esp;mostier &esperluette-et;le refectoir
-                     as&esp;freres ou&esp;il&esp;men<lb/>geront<pc type="orig" ana="coordination"
-                        >.</pc>&esp;&esperluette-et;l<pc type="reg">'</pc>ostel por&esp;les ostes
-                        re&c-ced;oi&u-v;re<pc type="orig"
+                     ana="subordonnee">,</pc> il&esp;lor dist&point-deuxpointsDial;<said
+                     who="#benoit">Alez&esp;<lb/>&u-v;os en<pc type="orig" ana="coordination"
+                     >.</pc>&esp;&esperluette-et;bien saciez q<pc type="reg">'</pc>a ce &i-j;or
+                     &u-v;endrai&esp;&i-j;e a&esp;&u-v;os&esp;<lb/>&esperluette-et;si &u-v;os
+                     ensegnerai en&esp;quel leu &u-v;os feroiz&esp;<lb/>le&esp;mostier
+                     &esperluette-et;le refectoir as&esp;freres ou&esp;il&esp;men<lb/>geront<pc
+                        type="orig" ana="coordination">.</pc>&esp;&esperluette-et;l<pc type="reg"
+                        >'</pc>ostel por&esp;les ostes re&c-ced;oi&u-v;re<pc type="orig"
                      >.</pc>&esp;&esperluette-et;les&esp;<lb/>autres edefices qu<pc type="reg"
                         >'</pc>il &u-v;os co&u-v;endra.</said>&esp;Dont&esp;<lb/>pristrent li frere
                   qi aler s<pc type="reg">'</pc>en de&u-v;oient
@@ -2230,24 +2313,24 @@
                   >.</pc>&esp;&esperluette-et;molt s<pc type="reg"
                   >'</pc>esmer&u-v;elloient&esp;<lb/>por qoi&esp;il ne&esp;&u-v;enoit.&esp;Et qant
                   il &u-v;irent&esp;<lb/>qu<pc type="reg">'</pc>il ne &u-v;endroit
-                  mie&deuxpoints-virg4;il repairierent <corr type="del">a</corr>&esp;<lb/>a&esp;lui toz dolenz
-                     &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Seinz peres<pc
-                        type="reg" ana="apostrophe">,</pc>&esp;<lb/>nos gardions ta &u-v;enue si com
-                     tu nos a<lb/>&u-v;oies promis&point-virg4;por ce qe tu nos enseigna<lb/>sces
-                     &esperluette-et;demostrasses coment &esperluette-et;ou
+                  mie&deuxpoints-virg4;il repairierent <corr type="del">a</corr>&esp;<lb/>a&esp;lui
+                  toz dolenz &esperluette-et;si&esp;distrent&point-deuxpointsDial;<said>Seinz
+                        peres<pc type="reg" ana="apostrophe">,</pc>&esp;<lb/>nos gardions ta
+                     &u-v;enue si com tu nos a<lb/>&u-v;oies promis&point-virg4;por ce qe tu nos
+                     enseigna<lb/>sces &esperluette-et;demostrasses coment &esperluette-et;ou
                      nous&esp;<lb/>fe&itrem;ssons nos edefices<pc type="reg" ana="coordination"
                         >,</pc> mes tu ne &u-v;enis&esp;<lb/>mie.</said>&esp;<persName ref="#benoit"
-                     >Seint &b-maj;eneoiz</persName> lor
-                        respondi&point-deuxpointsDial;<said who="#benoit">Bea&apos-us;&esp;<lb/>freres<pc
-                        type="reg" ana="apostrophe">,</pc> por qoi dites &u-v;os tieus
+                     >Seint &b-maj;eneoiz</persName> lor respondi&point-deuxpointsDial;<said
+                     who="#benoit">Bea&apos-us;&esp;<lb/>freres<pc type="reg" ana="apostrophe"
+                        >,</pc> por qoi dites &u-v;os tieus
                         paroles&point-interrogation;<lb/>&n-maj;<pc type="reg">'</pc>alai &i-j;e mie
                      a&esp;&u-v;os einsi com &i-j;e &u-v;os pro<lb/>mis
                      &esperluette-et;dis&point-interrogation;</said>&esp;Li frere respondirent <pc
                      type="reg" ana="DD">: </pc>&esp;<said>&q-maj;ant&esp;<lb/>fu&esp;ce qe &u-v;os
                      i&esp;&u-v;enistes&deuxpoints-interrogation;</said>&esp;Il&esp;lor
-                     dist&point-deuxpointsDial;<said who="#benoit">&d-maj;ont&esp;<lb/>ne m<pc type="reg"
-                     >'</pc>aparu &i-j;e a&esp;&u-v;os&esp;<pc ana="number">.</pc><seg type="number"
-                        >ii</seg><pc ana="number"
+                     dist&point-deuxpointsDial;<said who="#benoit">&d-maj;ont&esp;<lb/>ne m<pc
+                        type="reg">'</pc>aparu &i-j;e a&esp;&u-v;os&esp;<pc ana="number">.</pc><seg
+                        type="number">ii</seg><pc ana="number"
                      >.</pc>&esp;en&esp;dormant&esp;&esperluette-et;de<lb/>mostrai chascun leu
                         &esperluette-et;ensignai&point-interrogation;&esp;Alez<pc type="reg"
                         ana="apposition">,</pc> re<lb/>tornez arriere &esperluette-et;si&esp;fetes
@@ -2308,7 +2391,8 @@
                      <l n="1">Car femes tencent &u-v;olentiers&point-virg5;</l>
                      <l n="2">Ce&esp;leur&esp;<lb/>samble mout bons mestiers.</l>
                      <l n="3">Puis qe tences&esp;<lb/>ont entreprisses&point-virg4;</l>
-                     <l n="4">Eles n<pc type="reg">'</pc>en erent &i-j;a souprises&point-virg3;<lb/></l>
+                     <l n="4">Eles n<pc type="reg">'</pc>en erent &i-j;a
+                        souprises&point-virg3;<lb/></l>
                      <l n="5">Ainz liment tant qe mal lor &u-v;aut.</l>
                      <l n="6">Dex qi&esp;<lb/>les fist si&esp;les consaut&point-virg3;</l>
                      <l n="7">Et nos ausint<pc type="reg" ana="coordination">,</pc> car
@@ -2413,8 +2497,8 @@
                   grace si qu<pc type="reg">'</pc>il&esp;<lb/>pe&utrem;st demorer en&esp;sa
                   sepouture.&esp;Li seinz hom&esp;<lb/>lor dona a&esp;ses propres meins une oublee
                   be<lb/>neoite &esperluette-et;sacree<pc type="reg" ana="coordination">,</pc> si
-                  lor dist&point-deuxpointsDial;<said who="#benoit">Or en alez &esperluette-et;si li me<lb/>tez
-                     ceste choses seu<note>seu, graphie de sus</note> le piz par grant
+                  lor dist&point-deuxpointsDial;<said who="#benoit">Or en alez &esperluette-et;si li
+                     me<lb/>tez ceste choses seu<note>seu, graphie de sus</note> le piz par grant
                      re&u-v;erence&esp;<lb/>&esperluette-et;puis si le remetez en sa
                      sepouture&deuxpoints-point;</said>&esp;Li peres&esp;<lb/> &esperluette-et;la
                   mere firent einsint<pc type="orig" ana="coordination">:</pc>&esp;ne onqes puis
@@ -2503,7 +2587,7 @@
                      >.</pc><seg type="number">xii</seg><pc ana="number">.</pc>&esp;soulz en nule
                   maniere&point-virg3;<lb/>mes ne<pc type="orig" ana="mot">&#160;</pc>porqant le
                   conforta il par bele parole<pc type="reg" ana="coordination">,</pc>&esp;<lb/>si li
-                        dist&point-deuxpointsDial;<said who="#benoit">Va&esp;t<pc type="reg">'</pc>en
+                     dist&point-deuxpointsDial;<said who="#benoit">Va&esp;t<pc type="reg">'</pc>en
                      &esperluette-et;si repere a&esp;moi au tierz &i-j;or<pc type="reg"
                         ana="coordination">,</pc>&esp;<lb/>car &i-j;e n<pc type="reg">'</pc>ai hui
                      nule chose qe &i-j;e doner te doie.</said>&esp;<lb/>Li preudom se departi
@@ -2616,15 +2700,15 @@
                   fors&esp;<lb/>de&esp;leenz par&esp;les fenestres&deuxpoints-virg3;car
                   il&esp;ne&esp;&u-v;oloit&esp;<lb/>mie qe&esp;aucune chose remansist en l<pc
                      type="reg">'</pc>abe&itrem;e par&esp;<lb/>inobedience.&esp;&e-maj;insint&esp;le
-                  firent.&esp;Desoz la&esp;fe[ne]stre<note>Correction d'après le manusrit 411</note>&esp;<lb/>a&u-v;oit une mout grant
-                  parfondece&point-virg3;car la&esp;<lb/>meson estoit haut assise sour
-                  la&esp;na&itrem;&u-v;e roche.&esp;<lb/>Li &u-v;esseaus de&esp;&u-v;oirre
-                  qi&esp;contre&u-v;al fu&esp;getez&esp;<lb/> seur&esp;les pierres<pc type="orig"
-                     ana="relative">:</pc>&esp;ne brisa mie ne ne respan<lb/>di&esp;mie<pc
-                     type="orig" ana="subCorr">.</pc>&esp;noient plus qe&esp;s<pc type="reg"
-                  >'</pc>il fust assis seur&esp;<lb/>bele terre pleine.&esp;Qant <persName
-                     ref="#benoit">seinz
-                  &b-maj;eneoiz</persName>&#160;&u-v;it&esp;ce&point-virg4;<lb/>il&esp;le comanda
+                  firent.&esp;Desoz la&esp;fe[ne]stre<note>Correction d'après le manusrit
+                  411</note>&esp;<lb/>a&u-v;oit une mout grant parfondece&point-virg3;car
+                  la&esp;<lb/>meson estoit haut assise sour la&esp;na&itrem;&u-v;e
+                  roche.&esp;<lb/>Li &u-v;esseaus de&esp;&u-v;oirre qi&esp;contre&u-v;al
+                  fu&esp;getez&esp;<lb/> seur&esp;les pierres<pc type="orig" ana="relative"
+                  >:</pc>&esp;ne brisa mie ne ne respan<lb/>di&esp;mie<pc type="orig" ana="subCorr"
+                     >.</pc>&esp;noient plus qe&esp;s<pc type="reg">'</pc>il fust assis
+                  seur&esp;<lb/>bele terre pleine.&esp;Qant <persName ref="#benoit">seinz
+                     &b-maj;eneoiz</persName>&#160;&u-v;it&esp;ce&point-virg4;<lb/>il&esp;le comanda
                   a&esp;raporter amont &esperluette-et;a&esp;donner&esp;<lb/>tout entier a&esp;celui
                      qi&esp;l<pc type="reg">'</pc>a&u-v;oit demand&eacc;.&esp;Si<lb/><pb n="165"
                      facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f340.item.zoom"/><cb n="c"
@@ -2681,23 +2765,24 @@
                      <orig>N</orig>
                      <reg>n</reg>
                   </choice>e autre foiz a&u-v;int qe <persName ref="#benoit">seinz
-                     &b-maj;e<lb/>neoiz</persName> aloit a&esp;l<pc type="reg">'</pc>eglisse &m-maj;on<pc
-                        type="orig" ana="mot">&#160;</pc>signor&esp;<lb/><persName ref="#jehan">&s-maj;eint &j-maj;ehan</persName> qi en&esp;som
+                     &b-maj;e<lb/>neoiz</persName> aloit a&esp;l<pc type="reg">'</pc>eglisse
+                     &m-maj;on<pc type="orig" ana="mot">&#160;</pc>signor&esp;<lb/><persName
+                     ref="#jehan">&s-maj;eint &j-maj;ehan</persName> qi en&esp;som
                   la&esp;montag<lb/>ne estoit fete &esperluette-et;estoree.&esp;&s-maj;i com il
                   aloit tote&esp;<lb/>la&esp;&u-v;oie&point-virg4;<choice>
                      <orig>l</orig>
                      <reg>l</reg>
                   </choice>i&esp;deables li&esp;&u-v;int a&esp;l<pc type="reg">'</pc>encontre
-                  en&esp;s&atilde-an;<lb/>blance d<pc type="reg">'</pc>un mire&point-virg3;si portoit en
-                  sa mein une&esp;<lb/>corne.&esp;&l-maj;i seinz hom li&esp;demanda ou il
-                     aloit.&esp;&l-maj;i&esp;<lb/>dables li&esp;respondi q<pc type="reg">'</pc>il aloit as freres
-                  &esperluette-et;si lor&esp;<lb/>&u-v;oloit doner poison&deuxpoints-virg3;car il
-                  estoit fusiciens&esp;<lb/>mestres &esperluette-et;mout sa&u-v;oit de
-                  medecines.&esp;Lors&esp;<lb/>le&esp;trespassa li seinz hom<pc type="reg"
-                     ana="coordination">,</pc> si ala en&esp;l<pc type="reg">'</pc>eglise orer<pc
-                     type="reg" ana="finPhrase">.</pc>&esp;<lb/> Et&esp;tantost com il ot ses
-                  orissons fetes&deuxpoints-virg4;il re<lb/>paira mout isnelement
-                  arriere&deuxpoints-point;Et&esp;li deable&sexp-s;&esp;<lb/>a&u-v;oit
+                  en&esp;s&atilde-an;<lb/>blance d<pc type="reg">'</pc>un mire&point-virg3;si
+                  portoit en sa mein une&esp;<lb/>corne.&esp;&l-maj;i seinz hom li&esp;demanda ou il
+                  aloit.&esp;&l-maj;i&esp;<lb/>dables li&esp;respondi q<pc type="reg">'</pc>il aloit
+                  as freres &esperluette-et;si lor&esp;<lb/>&u-v;oloit doner
+                  poison&deuxpoints-virg3;car il estoit fusiciens&esp;<lb/>mestres
+                  &esperluette-et;mout sa&u-v;oit de medecines.&esp;Lors&esp;<lb/>le&esp;trespassa
+                  li seinz hom<pc type="reg" ana="coordination">,</pc> si ala en&esp;l<pc type="reg"
+                     >'</pc>eglise orer<pc type="reg" ana="finPhrase">.</pc>&esp;<lb/>
+                  Et&esp;tantost com il ot ses orissons fetes&deuxpoints-virg4;il re<lb/>paira mout
+                  isnelement arriere&deuxpoints-point;Et&esp;li deable&sexp-s;&esp;<lb/>a&u-v;oit
                   tro&u-v;&eacc; un &u-v;iel&esp;home<pc type="orig" ana="relative">.</pc>&esp;qi
                   aportoit e&u-v;e&esp;<lb/>a&esp;o&eacc;s une de lor officines<pc type="reg"
                      ana="coordination">,</pc> si li entra ou cors&esp;<lb/>&esperluette-et;lors le
@@ -2709,8 +2794,9 @@
                   </choice>i seinz hom le &u-v;it<pc type="reg" ana="coordination">,</pc> si s<pc
                      type="reg">'</pc>apro&c-ced;a de&esp;lui<pc type="reg" ana="coordination"
                      >,</pc> si li do<lb/>na une &i-j;oee<pc type="orig" ana="coordination"
-                  >.</pc>&esp;&esperluette-et;a&esp;cel coup en cha<corr type="add">ça</corr><note>correction d'après le manuscrit 411</note> il le&esp;deable&esp;<lb/><cb
-                     n="d"/>
+                  >.</pc>&esp;&esperluette-et;a&esp;cel coup en cha<corr type="add"
+                     >ça</corr><note>correction d'après le manuscrit 411</note> il
+                     le&esp;deable&esp;<lb/><cb n="d"/>
                   <choice>
                      <orig>C</orig>
                      <reg>c</reg>
@@ -2768,11 +2854,10 @@
                   paroles&esp;<lb/>espoenter aussint com il soloit les autres&point-virg3;<lb/><choice>
                      <orig>S</orig>
                      <reg>s</reg>
-                  </choice>i li dist meintenant a&esp;hautes
-                        &u-v;oiz&point-deuxpointsDial;<said who="#zalla">Lie&u-v;e&esp;<lb/>sus&esp;<pc
-                        type="reg" ana="finPhrase">!</pc>&#160;&l-maj;ie&u-v;e
-                     sus&deuxpoints-exclamation;&s-maj;i me rent les choses
-                     a&esp;cest&esp;<lb/>&u-v;ilein qe&esp;tu as prises
+                  </choice>i li dist meintenant a&esp;hautes &u-v;oiz&point-deuxpointsDial;<said
+                     who="#zalla">Lie&u-v;e&esp;<lb/>sus&esp;<pc type="reg" ana="finPhrase"
+                     >!</pc>&#160;&l-maj;ie&u-v;e sus&deuxpoints-exclamation;&s-maj;i me rent les
+                     choses a&esp;cest&esp;<lb/>&u-v;ilein qe&esp;tu as prises
                      &esperluette-et;rece&utrem;es.</said>&esp;Qant li&esp;<lb/>seinz hom o&itrem;
                   sa parole<pc type="reg" ana="subordonnee">,</pc> si lessa son lire<pc type="reg"
                      ana="coordination">,</pc> si le&esp;<lb/>resgarda &esperluette-et;puis le
@@ -2856,16 +2941,17 @@
                      &esperluette-et;a&esp;dire&point-deuxpointsDial;<said>Rent&esp;<lb/>moi
                      mon&esp;fil&point-exclamation;Rent moi
                   mon&esp;fil&point-exclamation;</said>&esp;Li seinz hom&esp;<lb/>arresta
-                  a&esp;ceste parole &esperluette-et;si dist&point-deuxpointsDial;<said who="#benoit">T<pc
-                        type="reg">'</pc>ai&esp;&i-j;e donc ton&esp;<lb/>fil tolu qi le&esp;me
-                     demandes&point-interrogation;</said>&esp;Li &u-v;ileins respon<lb/>di
+                  a&esp;ceste parole &esperluette-et;si dist&point-deuxpointsDial;<said
+                     who="#benoit">T<pc type="reg">'</pc>ai&esp;&i-j;e donc ton&esp;<lb/>fil tolu qi
+                     le&esp;me demandes&point-interrogation;</said>&esp;Li &u-v;ileins respon<lb/>di
                   &esperluette-et;si dist&esp;:&esp;<said>Il est
                         morz&point-exclamation;&v-maj;iens<pc type="reg" ana="coordination">,</pc>
                      si le me resuscite&sexp-s;&point-exclamation;</said>&esp;<lb/>Qant li seinz hom
                   o&itrem; ce&point-virg4;si fu molt corrociez<pc type="reg" ana="coordination"
-                     >,</pc>&esp;<lb/>si dist&point-deuxpointsDial;<said who="#benoit">Retorne<pc type="reg"
-                        ana="apostrophe">,</pc> beaus frere<pc type="reg" ana="apostrophe">,</pc>
-                     retorne&point-exclamation;&c-maj;e ne&esp;<lb/><cb n="b"/> poons nos <choice>
+                     >,</pc>&esp;<lb/>si dist&point-deuxpointsDial;<said who="#benoit">Retorne<pc
+                        type="reg" ana="apostrophe">,</pc> beaus frere<pc type="reg"
+                        ana="apostrophe">,</pc> retorne&point-exclamation;&c-maj;e ne&esp;<lb/><cb
+                        n="b"/> poons nos <choice>
                         <orig>P</orig>
                         <reg>p</reg>
                      </choice>as fere&point-virg3;einz font teu<choice>
@@ -2880,19 +2966,20 @@
                      type="orig" ana="subordonnee">:</pc>&esp;tresq<pc type="reg">'</pc>atant q<pc
                      type="reg">'</pc>il auroit&esp;<lb/>son fil resuscit&eacc;.&esp;Seinz
                   &b-maj;eneoiz li&esp;deman<lb/>da &esperluette-et;dist <pc type="reg" ana="DD"
-                     >:</pc>&esp;<said who="#benoit">&o-maj;u est tes fiuz&point-interrogation;&esp;<pc type="reg"
-                        ana="DD">-</pc>&esp;Seinz hom<pc type="reg" ana="apostrophe">,</pc>&#160;
+                     >:</pc>&esp;<said who="#benoit">&o-maj;u est tes
+                        fiuz&point-interrogation;&esp;<pc type="reg" ana="DD">-</pc>&esp;Seinz
+                        hom<pc type="reg" ana="apostrophe">,</pc>&#160;
                      &u-v;ois&esp;<lb/>&c-ced;a&esp;le cors ou&esp;il gist a&esp;la
                   porte.</said>&esp;Tantost c&otilde-om;&esp;<lb/>
                   <persName ref="#benoit">seinz &b-maj;eneoiz</persName> i&esp;fu &u-v;enuz ensemble
                      o&esp;ses&esp;<lb/>freres&deuxpoints-virg4;s<pc type="reg">'</pc>a&i-j;enoilla
                   il &esperluette-et;coucha seur le cors<pc type="reg" ana="coordination"
                   >,</pc>&esp;<lb/>puis si&esp;tendi il ses meins &u-v;ers le ciel
-                  &esperluette-et;<lb/> si&esp;dist&point-deuxpointsDial;<said who="#benoit">Beaus &s-maj;ire
-                        &d-maj;ex<pc type="reg" ana="apposition">,</pc>&#160;&p-maj;eres del ciel<pc
-                        type="reg" ana="apposition">,</pc> ne&esp;<lb/>pren mie garde a&esp;mes
-                     pechiez&deuxpoints-virg3;mes a&esp;la&esp;<lb/>foi de cest home qi rue&u-v;e
-                     son fil resusci<choice>
+                  &esperluette-et;<lb/> si&esp;dist&point-deuxpointsDial;<said who="#benoit">Beaus
+                     &s-maj;ire &d-maj;ex<pc type="reg" ana="apposition">,</pc>&#160;&p-maj;eres del
+                        ciel<pc type="reg" ana="apposition">,</pc> ne&esp;<lb/>pren mie garde
+                     a&esp;mes pechiez&deuxpoints-virg3;mes a&esp;la&esp;<lb/>foi de cest home qi
+                     rue&u-v;e son fil resusci<choice>
                         <abbr>&#x1E6B;</abbr>
                         <expan>t<ex>é</ex></expan>
                      </choice>&esp;<lb/>&esperluette-et;si rent l<pc type="reg">'</pc>ame a&esp;cest
@@ -2922,13 +3009,14 @@
                      ana="apposition">,</pc>&#160;<persName ref="#scolastica"
                      >&s-maj;colastica</persName> estoit apelee par&esp;<lb/>non.&esp;A nostre
                   &s-maj;ignor s<pc type="reg">'</pc>estoit do<lb/>nee &esperluette-et;atornee tres
-                     s<pc type="reg">'</pc>enfance &esperluette-et;otro&itrem;e.&esp;&et-maj;<lb/>por
-                  manoir en &u-v;irginit&eacc;<pc type="orig" ana="coordination"
-                  >:</pc>&esp;&esperluette-et;por plus en<lb/>tierement entendre as oe&u-v;res
-                  nostre&esp;<lb/>&s-maj;ignor par qoi ele pe&utrem;st pleire a&esp;&d-maj;eu<pc
-                     type="reg" ana="CC">,</pc> es<lb/>toit ele de&u-v;enue none<pc type="orig"
-                     ana="coordination">.</pc>&esp;&esperluette-et;a&u-v;oit deguerpies&esp;<lb/>
-                  totes les&esp;&u-v;anitez de&esp;cest siecle.&esp;Cele damoi<lb/>sele a&u-v;oit
+                     s<pc type="reg">'</pc>enfance
+                  &esperluette-et;otro&itrem;e.&esp;&et-maj;<lb/>por manoir en &u-v;irginit&eacc;<pc
+                     type="orig" ana="coordination">:</pc>&esp;&esperluette-et;por plus
+                  en<lb/>tierement entendre as oe&u-v;res nostre&esp;<lb/>&s-maj;ignor par qoi ele
+                  pe&utrem;st pleire a&esp;&d-maj;eu<pc type="reg" ana="CC">,</pc> es<lb/>toit ele
+                  de&u-v;enue none<pc type="orig" ana="coordination"
+                  >.</pc>&esp;&esperluette-et;a&u-v;oit deguerpies&esp;<lb/> totes
+                  les&esp;&u-v;anitez de&esp;cest siecle.&esp;Cele damoi<lb/>sele a&u-v;oit
                   a&esp;costume de&esp;&u-v;enir chascun &i-j;or&esp;<lb/>une foiz a&esp;<persName
                      ref="#benoit">seint &b-maj;eneoit</persName> son frere.&esp;&et-maj;li
                   se&itilde-in;z&esp;<lb/>hom qi mout en&esp;estoit liez<pc type="orig"
@@ -2948,16 +3036,16 @@
                      facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f342.item.zoom"/><cb n="c"
                   /> seintes paroles.&esp;La&esp;seinte damoisele par<lb/>la a&esp;<persName
                      ref="#benoit">seint &b-maj;eneoit</persName> son&esp;frere
-                     &esperluette-et;si&esp;li&esp;dist&point-deuxpointsDial;<said who="#scolastica">&b-maj;eaus&esp;<lb/>
-                        frere<pc type="reg" ana="apostrophe">,</pc>&#160;&i-j;e te pri&esp;qe tu
-                     en&esp;tote ceste nuit ne&esp;<lb/>me deguerpisses&point-virg3;einz parlerons
-                     aucunes&esp;<lb/>choses des celestieus &i-j;oies tresq<pc type="reg">'</pc>a
-                     demein a&esp;<lb/>la matinee.</said>&esp;<persName ref="#benoit">Seinz
-                     &b-maj;eneoiz</persName> li&esp;respondi &esperluette-et;dist&esp;<pc
-                     type="reg" ana="DD">:</pc>&esp;<lb/>
-                  <said who="#benoit">&b-maj;ele suer<pc type="reg" ana="apostrophe">,</pc> qe est ce qe &u-v;os
-                     dites&point-interrogation;Dont ne sa&u-v;ez&esp;<lb/>&u-v;os bien qe &i-j;e ne
-                     puis fors de ma celle de<lb/>morer en nule
+                     &esperluette-et;si&esp;li&esp;dist&point-deuxpointsDial;<said who="#scolastica"
+                     >&b-maj;eaus&esp;<lb/> frere<pc type="reg" ana="apostrophe">,</pc>&#160;&i-j;e
+                     te pri&esp;qe tu en&esp;tote ceste nuit ne&esp;<lb/>me
+                     deguerpisses&point-virg3;einz parlerons aucunes&esp;<lb/>choses des celestieus
+                     &i-j;oies tresq<pc type="reg">'</pc>a demein a&esp;<lb/>la
+                     matinee.</said>&esp;<persName ref="#benoit">Seinz &b-maj;eneoiz</persName>
+                  li&esp;respondi &esperluette-et;dist&esp;<pc type="reg" ana="DD">:</pc>&esp;<lb/>
+                  <said who="#benoit">&b-maj;ele suer<pc type="reg" ana="apostrophe">,</pc> qe est
+                     ce qe &u-v;os dites&point-interrogation;Dont ne sa&u-v;ez&esp;<lb/>&u-v;os bien
+                     qe &i-j;e ne puis fors de ma celle de<lb/>morer en nule
                      maniere&deuxpoints-interrogation;</said>&esp;Adonc estoit li&esp;<lb/>airs si
                   clers &esperluette-et;si purs &esperluette-et;la nuit si serie
                      &esperluette-et;si&esp;<lb/>coie<pc type="orig" ana="subCorr">:</pc>&esp;qe nue
@@ -2970,10 +3058,10 @@
                   enclina&esp;<lb/>son chief seur ses paumes&point-virg3;si fist
                   a&esp;nostre&esp;<lb/>&s-maj;ignor une mout corte
                   orisson.&esp;Et&esp;tantost&esp;<lb/>come ele mist &esperluette-et;rele&u-v;a son
-                  chief amont&point-virg4;<lb/>tonoire &esperluette-et;espart &u-v;indrent de&esp;totes
-                     parz&esp;<lb/>en&esp;l<pc type="reg">'</pc>eir si grant &esperluette-et;si
-                     orrible<pc type="orig" ana="subCorr">.</pc>&esp;q<pc type="reg">'</pc>il
-                  sembloit me&itilde-in;<lb/>tenant qe foudre de&utrem;st tot le monde
+                  chief amont&point-virg4;<lb/>tonoire &esperluette-et;espart &u-v;indrent
+                  de&esp;totes parz&esp;<lb/>en&esp;l<pc type="reg">'</pc>eir si grant
+                  &esperluette-et;si orrible<pc type="orig" ana="subCorr">.</pc>&esp;q<pc type="reg"
+                     >'</pc>il sembloit me&itilde-in;<lb/>tenant qe foudre de&utrem;st tot le monde
                      acra<lb/>&u-v;enter<pc type="orig" ana="coordination"
                   >:</pc>&esp;&esperluette-et;une si grant habundance d<pc type="reg"
                   >'</pc>u<lb/>nes grosses goutes de pluie &u-v;int ensam<lb/>ble o&esp;cez
@@ -2995,14 +3083,15 @@
                      <orig>E</orig>
                      <reg>e</reg>
                   </choice>t si dist&esp;<pc type="reg" ana="DD">:</pc>&esp;<lb/>
-                  <said who="#benoit">&b-maj;ele suer<pc type="reg" ana="apostrophe">,</pc> nostre &s-maj;ires te
-                     bene&itrem;e&point-exclamation;&q-maj;e est ce qe&esp;<lb/>tu&esp;as
-                     fet&point-interrogation;</said>&esp;Ele respondi a&esp;<persName ref="#benoit"
-                     >seint &b-maj;eneoit</persName>&esp;&esperluette-et;si li&esp;<lb/>
-                     dist&point-deuxpointsDial;<said who="#scolastica">Beaus frere<pc type="reg" ana="apostrophe"
-                        >,</pc>&#160;&i-j;e te pri&eacc;&#160;&esperluette-et;tu ne &u-v;ousis
-                     o&itrem;r&esp;<lb/>ma proiere.&esp;Je priai a&esp;nostre &s-maj;ignor
-                     &esperluette-et;il m<pc type="reg">'</pc>o&itrem;&esp;<lb/>
+                  <said who="#benoit">&b-maj;ele suer<pc type="reg" ana="apostrophe">,</pc> nostre
+                     &s-maj;ires te bene&itrem;e&point-exclamation;&q-maj;e est ce
+                     qe&esp;<lb/>tu&esp;as fet&point-interrogation;</said>&esp;Ele respondi
+                     a&esp;<persName ref="#benoit">seint
+                  &b-maj;eneoit</persName>&esp;&esperluette-et;si li&esp;<lb/>
+                     dist&point-deuxpointsDial;<said who="#scolastica">Beaus frere<pc type="reg"
+                        ana="apostrophe">,</pc>&#160;&i-j;e te pri&eacc;&#160;&esperluette-et;tu ne
+                     &u-v;ousis o&itrem;r&esp;<lb/>ma proiere.&esp;Je priai a&esp;nostre
+                     &s-maj;ignor &esperluette-et;il m<pc type="reg">'</pc>o&itrem;&esp;<lb/>
                      &esperluette-et;entendi.&esp;Or t<pc type="reg">'</pc>en &u-v;a se tu puez
                      &esperluette-et;si me de<lb/>guerpiz<pc type="reg" ana="coordination">,</pc> si
                      repeire a&esp;t<pc type="reg">'</pc>abe&itrem;e.</said>&esp;<persName
@@ -3088,7 +3177,9 @@
                      n="167" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f343.item.zoom"
                      /><cb n="a"/>
                   <persName ref="#germein"><choice>
-                        <orig>S</orig><reg>s</reg></choice>aint Germein </persName>de&esp;<placeName ref="#chaples"
+                        <orig>S</orig>
+                        <reg>s</reg>
+                     </choice>aint Germein </persName>de&esp;<placeName ref="#chaples"
                      >&c-maj;haples</placeName> qe&esp;<choice>
                      <orig>L</orig>
                      <reg>l</reg>
@@ -3171,7 +3262,8 @@
                   comen&c-ced;a mout a&esp;agre&u-v;er
                   &esperluette-et;a&esp;afe<lb/>bloier.&esp;Et&esp;qant &u-v;int au&esp;sissime
                      &i-j;or<pc type="reg" ana="subordonnee">,</pc> il se&esp;<lb/><cb n="b"/> fist
-                  porter en l<pc type="reg">'</pc>oratoire.&esp;La s<pc type="reg">'</pc>acommenia&esp;il&esp;<lb/>&esperluette-et;re&c-ced;ut le cors nostre
+                  porter en l<pc type="reg">'</pc>oratoire.&esp;La s<pc type="reg"
+                  >'</pc>acommenia&esp;il&esp;<lb/>&esperluette-et;re&c-ced;ut le cors nostre
                      &s-maj;ignor<pc type="orig" ana="intensif"
                   >:</pc>&esp;si&esp;seintement&esp;<lb/>com il de&u-v;oit&point-virg7;<choice>
                      <orig>E</orig>
@@ -3277,8 +3369,10 @@
                   dolentes&esp;<lb/>&esperluette-et;esgarees&point-virg4;si q<pc type="reg"
                   >'</pc>eles aient par &l-maj;ui socors qi&esp;<lb/>les fist &esperluette-et;cria
                   qant elles n<pc type="reg">'</pc>estoient.&esp;Ce nos&esp;<lb/>otroit &c-maj;il qi
-                  &u-v;it &esperluette-et;regne par toz les
-                  siecles&esp;<lb/>des&esp;siecles.&esp;Ame<choice><orig>N</orig><reg>n</reg></choice>.</p>
+                  &u-v;it &esperluette-et;regne par toz les siecles&esp;<lb/>des&esp;siecles.&esp;Ame<choice>
+                     <orig>N</orig>
+                     <reg>n</reg>
+                  </choice>.</p>
             </div>
          </div>
       </body>
