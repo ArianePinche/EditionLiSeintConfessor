@@ -1886,7 +1886,6 @@
                </p>
             </div>
          </div>
-         <!-- fin collation 137, col.1 -->
          <div n="16" type="chapter">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">A</hi><choice>
@@ -1940,8 +1939,10 @@
                   <persName ref="#benoit">seinz &b-maj;eneoiz</persName> se&esp;pensa q<pc
                      type="reg">'</pc>il orroit bien &esperluette-et;enten<lb/>deroit sa
                   parole&point-virg4;il li comen&c-ced;a a&esp;crier &esperluette-et;a&esp;dire&point-deuxpointsDial;<lb/>
-                  <said who="#benoit">&b-maj;eaus fiuz<pc type="reg" ana="apostrophe">,</pc> oste ce
-                     qe tu <app>
+                  <said who="#benoit">&b-maj;eaus fiuz<pc type="reg" ana="apostrophe">,</pc>&#160;<app>
+                        <lem>oste</lem>
+                        <rdg wit="#C3" type="erreur">oste oste</rdg>
+                     </app> ce qe tu <app>
                         <lem>portes</lem>
                         <rdg wit="#C2">aportes</rdg>
                      </app><pc type="reg" ana="coordination">,</pc> car ce n<pc type="reg">'</pc>est
@@ -1960,7 +1961,7 @@
                      <rdg wit="#C2">le</rdg>
                   </app> seint home.&esp;Et tuit cil qi la&esp;<lb/>estoient <app>
                      <lem>assembl&eacc;</lem>
-                     <rdg wit="#C2">ensemble</rdg>
+                     <rdg wit="#C2 #C3">ensemble</rdg>
                   </app> o&esp;lui se&esp;lessierent cheoir&esp;<lb/>a&esp;terre por&esp;encliner
                      <persName ref="#benoit">seint &b-maj;eneoit</persName><pc type="orig"
                      ana="coordination">.</pc>&esp;&esperluette-et;puis si&esp;<lb/>s<pc type="reg"
@@ -1987,6 +1988,7 @@
                      type="orig" ana="coordination">.</pc>&esp;&esperluette-et;a&esp;mout <app>
                      <lem>petit</lem>
                      <rdg wit="#C2" type="genre">petites</rdg>
+                     <rdg wit="#C3">de petit</rdg>
                   </app>&esp;<lb/>de&esp;paroles li&esp;dist ce&esp;qe a&esp;a&u-v;enir
                   li&esp;estoit en&esp;<lb/>tel maniere&point-deuxpointsDial;<said who="#benoit"
                         >Rois<pc type="reg" ana="apostrophe">,</pc> tu as mout fet de
@@ -1997,9 +1999,11 @@
                      bien qe tu&esp;iras en brief terme a&esp;<placeName ref="#rome"
                         >&r-maj;ome</placeName><pc type="orig" ana="coordination">.</pc>&esp;<lb/>
                      &esperluette-et;apr&eacc;s passeras la mer por aler en <placeName ref="#sicile"
-                        >&s-maj;ulie</placeName>.&esp;Tu&esp;<lb/>&u-v;i&u-v;eras encore&esp;<pc
-                        ana="number">.</pc><seg type="number">ix</seg><pc ana="number"
-                     >.</pc>&esp;anz en&esp;ta
+                        >&s-maj;ulie</placeName>.&esp;Tu&esp;<lb/><app>
+                        <lem>&u-v;i&u-v;eras</lem>
+                        <rdg wit="#C3" type="ajout">i viveras</rdg>
+                     </app> encore&esp;<pc ana="number">.</pc><seg type="number">ix</seg><pc
+                        ana="number">.</pc>&esp;anz en&esp;ta
                         poest&eacc;&#160;&esperluette-et;en&esp;ta&esp;sig<lb/>norie<pc type="orig"
                         ana="coordination">.</pc>&esp;&esperluette-et;au&esp;disieme an morras sanz
                      dotance.</said>&esp;<lb/>Qant li rois o&itrem; ce<pc type="reg"
@@ -2020,6 +2024,7 @@
                   &esperluette-et;issi de ceste mortel &u-v;ie.&esp;<lb/></p>
             </div>
          </div>
+         <!-- fin collation C3, 138, col.1 -->
          <div n="17" type="chapter">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">A</hi><choice>
