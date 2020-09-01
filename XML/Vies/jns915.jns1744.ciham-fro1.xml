@@ -2303,7 +2303,6 @@
                      >'</pc>il a&u-v;oit mau&u-v;ese oe&u-v;re fete.&esp;<lb/></p>
             </div>
          </div>
-         <!-- fin collation, C3 - 138 -->
          <div n="21" type="chapter">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">N</hi>on mie granment ensus de&esp;l<pc type="reg"
@@ -2359,7 +2358,10 @@
                   </app> q<pc type="reg">'</pc>il a&u-v;oit fete<pc type="orig" ana="coordination"
                      >.</pc>&esp;&esperluette-et;si geta les toailles fors&esp;<lb/>de&esp;son
                      sein<pc type="orig" ana="relative">.</pc>&esp;c<pc type="reg">'</pc>on li
-                  a&u-v;oit donees&point-virg3;si&esp;fu as<lb/>sous del seint home.&esp;<lb/>
+                  a&u-v;oit <app>
+                     <lem>donees</lem>
+                     <rdg wit="#C3" type="ajout">donees a terre</rdg>
+                  </app>&point-virg3;si&esp;fu as<lb/>sous del seint home.&esp;<lb/>
                </p>
             </div>
          </div>
@@ -2450,14 +2452,14 @@
                   tro&u-v;erent il&esp;<lb/>de&u-v;ant lor&esp;portes&esp;<pc ana="number"
                      >.</pc><seg type="number">cc</seg><pc ana="number">.</pc>&esp;muis de ferine
                   molt&esp;<lb/>belement atornee en&esp;sas <app>
-                     <lem>mise</lem>
-                     <rdg wit="#C2" type="ajout">et mise</rdg>
-                  </app><note>Proposer correction d'après C2 ?</note><pc type="orig"
-                     ana="coordination">:</pc>&esp;ne ne so<lb/>rent onqes li frere dont ele estoit
-                     &u-v;enue<pc type="orig" ana="coordination">:</pc>&esp;<lb/>ne par quel maniere
-                  nostre &s-maj;ires lor a<lb/>&u-v;oit donee &esperluette-et;en&u-v;oie.&esp;Li
-                  frere rendirent&esp;<lb/>graces a&esp;nostre &s-maj;ignor<pc type="orig"
-                     ana="coordination">:</pc>&esp;&esperluette-et;par&esp;ce <app>
+                     <lem wit="#C2 #C3">et mise</lem>
+                     <rdg wit="#C1" type="erreur">mise</rdg>
+                  </app><pc type="orig" ana="coordination">:</pc>&esp;ne ne so<lb/>rent onqes li
+                  frere dont ele estoit &u-v;enue<pc type="orig" ana="coordination"
+                  >:</pc>&esp;<lb/>ne par quel maniere nostre &s-maj;ires lor a<lb/>&u-v;oit donee
+                  &esperluette-et;en&u-v;oie.&esp;Li frere rendirent&esp;<lb/>graces a&esp;nostre
+                     &s-maj;ignor<pc type="orig" ana="coordination"
+                  >:</pc>&esp;&esperluette-et;par&esp;ce <app>
                      <lem>apristrent&esp;<lb/>il &esperluette-et;sorent bien</lem>
                      <rdg wit="#C2" type="inv.">apristrent il bien et sorent</rdg>
                   </app> c<pc type="reg">'</pc>on&esp;ne de&u-v;oit mie
@@ -2466,6 +2468,7 @@
                </p>
             </div>
          </div>
+         <!-- fin collation C3, 140, col.2 -->
          <div n="24" type="chapter">
             <div type="section" n="1">
                <p><hi rend="decorated-initial">U</hi><choice>
