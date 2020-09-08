@@ -266,7 +266,10 @@
     <xsl:template match="tei:pc[@type = 'orig']" mode="#all"/>
     <xsl:template match="tei:pc[not(@type = 'orig')]" mode="#all">
         <xsl:choose>
-            <xsl:when test="text() = '-'"/>
+            <xsl:when test="not(@ana) and text() = '-'"/>
+            <xsl:when test="@ana and text()= '—'">
+                <xsl:text>--</xsl:text>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
