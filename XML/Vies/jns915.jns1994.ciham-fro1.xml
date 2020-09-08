@@ -15,12 +15,14 @@
    </publicationStmt>
    <sourceDesc>
     <listWit>
-     <witness xml:id="C1" corresp="#ms412">Paris, manuscrit fr. 412, Bibliothèque nationale de
-      France, <date when="1285">1285</date></witness>
-     <witness xml:id="C2">Paris, manuscrit fr. 411, Bibliothèque nationale de France, <date
-      notBefore="1300" notAfter="1400">14e siècle</date></witness>
+     <witness xml:id="C1" corresp="#ms412"
+      facs="https://gallica.bnf.fr/ark:/12148/btv1b84259980/f344.item">Paris, manuscrit fr.
+      412, Bibliothèque nationale de France, <date when="1285">1285</date></witness>
+     <witness xml:id="C2" facs="https://gallica.bnf.fr/ark:/12148/btv1b107209247/f224.item"
+      >Paris, manuscrit fr. 411, Bibliothèque nationale de France, <date notBefore="1300"
+       notAfter="1400">14<hi rend="exp">e</hi> siècle</date></witness>
      <witness xml:id="C3">London, manuscrit, Royal 20.D.VI, British Library, <date
-      notBefore="1250" notAfter="1300">13e siècle</date></witness>
+      notBefore="1250" notAfter="1300">13<hi rend="exp">e</hi> siècle</date></witness>
     </listWit>
     <msDesc xml:id="ms412">
      <msIdentifier>
@@ -41,10 +43,8 @@
      <msContents>
       <msItemStruct>
        <locus>fol.103-fol.114</locus>
-       <incipit>De seint Martin mout doit on doucement et volentiers le bien oïr et
-        entendre</incipit>
-       <explicit>par l'aïde nostre Signor qi vit et regne par tos les siecles des siecles.
-        Amen.</explicit>
+       <incipit>Ici coumence la vie monsigneur seint Alexis</incipit>
+       <explicit>la nos doinst parvenir nostre Sires Jesu Criz qi vit et regne parmenablement par tout le siecle des siecles sanz fin. Amen.</explicit>
       </msItemStruct>
      </msContents>
     </msDesc>
