@@ -202,8 +202,11 @@
  <text n="edition">
   <body n="urn:cts:froLit:jns915.jns1994.ciham-fro1">
    <div type="chapter" n="1">
-    <head>Ici coumence la&esp;<lb/>&u-v;ie monsigneur <persName ref="#saintalexis">seint
-      &a-maj;lexis</persName>.</head>
+    <head>Ici coumence la&esp;<lb/>&u-v;ie <app>
+      <lem>monsigneur</lem>
+      <rdg wit="#C3" cause="om."/>
+     </app>
+     <persName ref="#saintalexis">seint &a-maj;lexis</persName>.</head>
     <div type="section" n="1">
      <p><pb n="167" facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f344.item.zoom"/><cb n="c"
        /><hi rend="rubricated orig">Ici coumence la&esp;<lb/>&u-v;ie mon signeur <persName
@@ -250,7 +253,7 @@
       &esperluette-et;dont&esp;<lb/>a&u-v;oit en son pal&eacc;s fet metre trois tables&esp;<lb/>ou
       il asseoit les orphenins <app>
        <lem>&esperluette-et;</lem>
-       <rdg wit="#C2" type="outil" cause="om."/>
+       <rdg wit="#C2 #C3" type="outil" cause="om."/>
       </app>les &u-v;e&u-v;es<pc type="orig" ana="coordination"
       >.</pc>&esp;&esperluette-et;les&esp;<lb/>pelerins&point-virg7;les malades &esperluette-et;les
       po&u-v;res.&esp;Et qant&esp;<lb/>il a&u-v;oient tuit mengi&eacc;<pc type="orig"
@@ -261,9 +264,11 @@
        qi&esp;l<pc type="reg">'</pc>a&u-v;oit <app>
        <lem>a</lem>
        <rdg wit="#C2" type="outil">en</rdg>
-      </app> us &esperluette-et;en costume &esperluette-et;chas<lb/>cuns fesoit ses orissons
-      a&esp;nostre &s-maj;ignor <persName ref="#jesus">&j-maj;e<lb/>su
-      &c-maj;rist</persName>&#160;&esperluette-et;si disoit&point-deuxpointsDial;<said
+      </app> us &esperluette-et;en costume &esperluette-et;<app>
+       <lem>chas<lb/>cuns</lem>
+       <rdg wit="#C3">chascun jor</rdg>
+      </app> fesoit ses orissons a&esp;nostre &s-maj;ignor <persName ref="#jesus">&j-maj;e<lb/>su
+       &c-maj;rist</persName>&#160;&esperluette-et;si disoit&point-deuxpointsDial;<said
        who="#aglaise">Beaus &s-maj;ire &d-maj;ex<pc type="reg" ana="apostrophe">,</pc>
        so&u-v;iegne&esp;<lb/>toi de&esp;moi qe &i-j;e sui t<pc type="reg">'</pc>ancele
        &esperluette-et;si&esp;me done tel&esp;<lb/>fruit de&esp;mon mari<pc type="orig"
@@ -296,10 +301,15 @@
       &esperluette-et;amenda&esp;<lb/>si&esp;com a&esp;&d-maj;eu plot&point-virg4;<choice>
        <orig>T</orig>
        <reg>t</reg>
-      </choice>ant q<pc type="reg">'</pc>il &u-v;int en aage&esp;<lb/>de metre a&esp;escole.&esp;Li
-      peres &esperluette-et;la&esp;mere le&esp;fir&etilde-en;t&esp;<lb/>aprendre par grant cure
-      &esperluette-et;par grant di<lb/>ligense&point-virg3;car il l<pc type="reg">'</pc>amoient plus
-      qe chose qi&esp;<lb/>soit el monde.&esp;Il sot gramaire &esperluette-et;rectori<lb/>que
+      </choice>ant q<pc type="reg">'</pc>il &u-v;int <app>
+       <lem>en</lem>
+       <rdg wit="#C3" type="outil" cause="om."/>
+      </app> aage&esp;<lb/>de metre a&esp;escole.&esp;Li peres &esperluette-et;la&esp;mere
+      le&esp;fir&etilde-en;t&esp;<lb/>aprendre par grant cure &esperluette-et;par grant
+      di<lb/>ligense&point-virg3;car il l<pc type="reg">'</pc>amoient plus qe <app>
+       <lem>chose</lem>
+       <rdg wit="#C3" type="ajout">chose nule</rdg>
+      </app> qi&esp;<lb/>soit el monde.&esp;Il sot gramaire &esperluette-et;rectori<lb/>que
       &esperluette-et;di&u-v;init&eacc;&deuxpoints-virg4;tant q<pc type="reg">'</pc>il fu sages
       enfes&esp;<lb/>&esperluette-et;bien doctrinez de&esp;totes bones costumes.&esp;<lb/>Il cremi
       &d-maj;eu &esperluette-et;ama si come son &c-maj;reatour&esp;<lb/>&esperluette-et;son
@@ -312,6 +322,7 @@
      </p>
     </div>
    </div>
+   <!--fin collation C3 0149, col.1--> 
    <div n="3" type="chapter">
     <div n="1" type="section">
      <p><hi rend="decorated-initial">Q</hi><choice>
