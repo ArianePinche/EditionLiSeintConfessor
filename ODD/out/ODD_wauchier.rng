@@ -5,10 +5,10 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-06-29T12:10:12Z. .
-TEI Edition: Version 4.0.0. Last updated on
-	13th February 2020, revision ccd19b0ba
-TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
+Schema generated from ODD source 2020-10-06T09:49:18Z. .
+TEI Edition: Version 4.1.0. Last updated on
+	19th August 2020, revision b414ba550
+TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
   
 --><!---->
    <define name="macro.paraContent">
@@ -29,7 +29,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
          <choice>
             <text/>
             <ref name="model.gLike"/>
-            <ref name="model.qLike"/>
+            <ref name="model.attributable"/>
             <ref name="model.phrase"/>
             <ref name="model.global"/>
          </choice>
@@ -401,6 +401,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.datable.w3c-att-datable-w3c-when-constraint-rule-1">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -411,6 +412,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.datable.w3c-att-datable-w3c-from-constraint-rule-2">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -421,6 +423,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.datable.w3c-att-datable-w3c-to-constraint-rule-3">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -446,6 +449,7 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.datable-calendar-calendar-constraint-rule-4">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -934,6 +938,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.typed-subtypeTyped-constraint-rule-5">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -964,6 +969,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.pointing-targetLang-targetLang-constraint-rule-6">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1070,6 +1076,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
             id="oddbyexample-att.spanning-spanTo-spanTo-2-constraint-rule-7">
       <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:s="http://purl.oclc.org/dsdl/schematron"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1922,23 +1929,23 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
    <define name="model.quoteLike_sequenceRepeatable">
       <notAllowed/>
    </define>
-   <define name="model.qLike">
+   <define name="model.attributable">
       <choice>
          <ref name="model.quoteLike"/>
          <ref name="said"/>
       </choice>
    </define>
-   <define name="model.qLike_alternation">
+   <define name="model.attributable_alternation">
       <choice>
          <ref name="model.quoteLike_alternation"/>
          <ref name="said"/>
       </choice>
    </define>
-   <define name="model.qLike_sequence">
+   <define name="model.attributable_sequence">
       <ref name="model.quoteLike_sequence"/>
       <ref name="said"/>
    </define>
-   <define name="model.qLike_sequenceOptional">
+   <define name="model.attributable_sequenceOptional">
       <optional>
          <ref name="model.quoteLike_sequenceOptional"/>
       </optional>
@@ -1946,7 +1953,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="said"/>
       </optional>
    </define>
-   <define name="model.qLike_sequenceOptionalRepeatable">
+   <define name="model.attributable_sequenceOptionalRepeatable">
       <zeroOrMore>
          <ref name="model.quoteLike_sequenceOptionalRepeatable"/>
       </zeroOrMore>
@@ -1954,7 +1961,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="said"/>
       </zeroOrMore>
    </define>
-   <define name="model.qLike_sequenceRepeatable">
+   <define name="model.attributable_sequenceRepeatable">
       <oneOrMore>
          <ref name="model.quoteLike_sequenceRepeatable"/>
       </oneOrMore>
@@ -2150,7 +2157,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="model.labelLike"/>
          <ref name="model.listLike"/>
          <ref name="model.stageLike"/>
-         <ref name="model.qLike"/>
+         <ref name="model.attributable"/>
       </choice>
    </define>
    <define name="model.common">
@@ -2650,6 +2657,8 @@ Normalization 12. Critical Apparatus]</a:documentation>
                </report>
             </rule>
          </pattern>
+         <ref name="att.cReferencing.attributes"/>
+         <ref name="att.declaring.attributes"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -2662,11 +2671,9 @@ Normalization 12. Critical Apparatus]</a:documentation>
          <ref name="att.global.responsibility.attribute.cert"/>
          <ref name="att.global.responsibility.attribute.resp"/>
          <ref name="att.global.source.attribute.source"/>
-         <ref name="att.pointing.attributes"/>
          <ref name="att.internetMedia.attributes"/>
+         <ref name="att.pointing.attributes"/>
          <ref name="att.typed.attribute.subtype"/>
-         <ref name="att.declaring.attributes"/>
-         <ref name="att.cReferencing.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5139,7 +5146,28 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          <empty/>
       </element>
    </define>
+   <define name="att.lexicographic.normalized.attributes">
+      <ref name="att.lexicographic.normalized.attribute.norm"/>
+      <ref name="att.lexicographic.normalized.attribute.orig"/>
+   </define>
+   <define name="att.lexicographic.normalized.attribute.norm">
+      <optional>
+         <attribute name="norm">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(normalized) provides the normalized/standardized form of information present in the source text in a non-normalized form</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.lexicographic.normalized.attribute.orig">
+      <optional>
+         <attribute name="orig">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(original) gives the original string or is the empty string when the element does not appear in the source text.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
    <define name="att.linguistic.attributes">
+      <ref name="att.lexicographic.normalized.attributes"/>
       <ref name="att.linguistic.attribute.lemma"/>
       <ref name="att.linguistic.attribute.lemmaRef"/>
       <ref name="att.linguistic.attribute.pos"/>
@@ -5584,7 +5612,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
                     xmlns:s="http://purl.oclc.org/dsdl/schematron"
                     xmlns:rng="http://relaxng.org/ns/structure/1.0"
                     context="tei:div[@type='section']">
-               <s:assert test="tei:p and not(tei:div)"> div[@type='section']
+               <s:assert test="(tei:p or tei:lg) and not(tei:div)"> div[@type='section']
                                         only includes p </s:assert>
             </s:rule>
          </pattern>
