@@ -749,7 +749,7 @@
                             <constraint>
                                 <s:rule context="tei:div[@type='section']">
                                     <s:assert test="(tei:p or tei:lg) and not(tei:div)"> div[@type='section']
-                                        only includes p </s:assert>
+                                        only includes p or lg </s:assert>
                                 </s:rule>
                             </constraint>
                         </constraintSpec>
