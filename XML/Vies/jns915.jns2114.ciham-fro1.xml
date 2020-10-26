@@ -5191,12 +5191,14 @@
             nostre&esp;<lb/>&s-maj;ignor &esperluette-et;loerent si com il durent.</p>
         </div>
       </div>
-      <!-- fin collation C3, 120 col.2 -->
       <div n="31" type="chapter">
-        <head><choice>
-            <orig>.<seg type="number">i</seg>.</orig>
-            <reg>Uns</reg>
-          </choice> autre&esp;<lb/>miracle<lb/></head>
+        <head><app>
+            <lem><choice>
+                <orig>.<seg type="number">i</seg>.</orig>
+                <reg>Uns</reg>
+              </choice> autre&esp;<lb/>miracle<lb/></lem>
+            <rdg wit="#C3" cause="om."/>
+          </app></head>
         <div n="1" type="section">
           <p><hi rend="rubricated orig"><choice>
                 <orig>.<seg type="number">i</seg>.</orig>
@@ -5263,7 +5265,7 @@
             sanz&esp;<lb/>demorance&point-virg3;car li &s-maj;ires en&esp;cui ser&u-v;ice il
             a<lb/>&u-v;oit est&eacc; ocis ne <app>
               <lem>&u-v;out</lem>
-              <rdg wit="#C2" type="temps">voloit</rdg>
+              <rdg wit="#C2 #C3" type="temps">voloit</rdg>
             </app> mie q<pc type="reg">'</pc>il einsi per<lb/>dist la &u-v;ie.&esp;Et dont
             comen&c-ced;a&esp;li &i-j;o&u-v;enceaus&esp;<lb/>a&esp;conter a&esp;ceus qi&esp;la
             estoient &neuf-con;ment ses com<lb/>peinz l<pc type="reg">'</pc>a&u-v;oit ocis par
@@ -5272,7 +5274,7 @@
               type="reg">'</pc>ot mie mout al&eacc; q&nasuscrit-an;t&esp;<lb/>li deables li entra el
             cors&deuxpoints-virg3;si&esp;le co&u-v;int par&esp;<lb/>destrece <app>
               <lem>raler</lem>
-              <rdg wit="#C2">reperier</rdg>
+              <rdg wit="#C2 #C3">reperier</rdg>
             </app> arriere.&esp;La fu il gueriz en&esp;l<pc type="reg">'</pc>e<lb/>glisse
               meesmement<pc type="orig" ana="CC">.</pc>&esp;par la&esp;grace &esperluette-et;par
             la&esp;<lb/>proiere mon&nospace;signeur <persName ref="#nicolas">seint
@@ -5287,7 +5289,10 @@
         </div>
       </div>
       <div n="32" type="chapter">
-        <head>Uns&esp;<lb/>autres miracles<lb/></head>
+        <head><app>
+            <lem>Uns&esp;<lb/>autres miracles<lb/></lem>
+            <rdg wit="#C3" cause="om."/>
+          </app></head>
         <div n="1" type="section">
           <p><hi rend="rubricated orig">Uns</hi><lb/>
             <hi rend="decorated-initial">A</hi><choice>
@@ -5312,10 +5317,12 @@
               <orig>L</orig>
               <reg>l</reg>
             </choice>i seint ho<lb/>me de&esp;la&esp;contree qi&esp;molt so&u-v;ent en
-            reclamoi<lb/>ent la&esp;misericorde de&esp;&d-maj;eu&deuxpoints-virg3;car
-            &i-j;a&esp;si&esp;tost <app>
+            reclamoi<lb/>ent la&esp;misericorde <app>
+              <lem>de&esp;&d-maj;eu</lem>
+              <rdg wit="#C3" type="casAbs">Deu</rdg>
+            </app>&deuxpoints-virg3;car &i-j;a&esp;si&esp;tost <app>
               <lem>hom</lem>
-              <rdg wit="#C2" type="outil">li hom</rdg>
+              <rdg wit="#C2 #C3" type="outil">li hom</rdg>
             </app> ne&esp;<lb/>se couchast ou&esp;la feme malade<pc type="orig" ana="subCorr"
             >.</pc>&esp;com&esp;il a&u-v;oit&esp;<lb/>perdu de&esp;<app>
               <lem>guerir</lem>
@@ -5342,7 +5349,7 @@
                 sire<pc type="reg" ana="apostrophe">,</pc> sa<lb/>ches qe <persName ref="#nicolas"
                 >seinz &n-maj;icholas</persName> est de <app>
                 <lem>tres</lem>
-                <rdg wit="#C2">trop</rdg>
+                <rdg wit="#C2 #C3">trop</rdg>
               </app>&esp;grant me<lb/>rite a&esp;nostre &s-maj;ignor<pc type="orig"
                 ana="coordination">:</pc>&esp;&esperluette-et;se&esp;tu a&esp;lui t<pc type="reg"
                 >'</pc>otroioies&esp;<lb/>par bone de&u-v;otion&point-virg4;il est bien poissanz
@@ -5350,7 +5357,10 @@
               doute&esp;<lb/>mie de&esp;sa misericorde&deuxpoints-virg3;si &neuf-con;mande un
                 cierge&esp;<lb/>a&esp;feire<pc type="orig" ana="relative">:</pc>&esp;qi anuit puisse
               ardoir tote la&esp;nuit&esp;<lb/>en l<pc type="reg">'</pc>oneur de&esp;lui de&u-v;ant
-              un seint autel en&esp;<lb/>quel c<pc type="reg">'</pc>onques eglisse il te
+              un seint autel en&esp;<lb/><app>
+                <lem>quel</lem>
+                <rdg wit="#C3">que</rdg>
+              </app> c<pc type="reg">'</pc>onques eglisse il te
               plera&deuxpoints-virg4;qe&esp;tu&esp;puis<lb/>ses a&u-v;oir par sa proiere secors
               &esperluette-et;a&itrem;de.</said>&esp;Cil&esp;<lb/>qi&esp;rien nule ne &u-v;oloit
             lessier a&esp;fere<pc type="orig" ana="relative">.</pc>&esp;dont il&esp;<lb/>cuidast
@@ -5361,19 +5371,24 @@
               <rdg wit="#C2">li avoit</rdg>
             </app> de&u-v;is&eacc;.&esp;En cele me&itrem;s<lb/>me&esp;nuit s<pc type="reg"
             >'</pc>aparut au clerc uns &u-v;ielz hom&esp;<lb/>de&esp;mout bele
-            forme&point-virg3;si&esp;le regarda moult pi<lb/>teusement
-              &esperluette-et;si&esp;dist&point-deuxpointsDial;<said who="#nicolas">La grace
-                de&esp;<persName ref="#nicolas">seint &n-maj;i<lb/>chola</persName>s t<pc type="reg"
-                >'</pc>otroie qe tu &u-v;i&u-v;es seinz &esperluette-et;gueriz&esp;<lb/>de&esp;ta
-              grant maladie.</said>&esp;Dont s<pc type="reg">'</pc>es&u-v;ella li clers<pc
-              type="reg" ana="coordination">,</pc>&esp;<lb/>si&esp;senti qe la granz sant&eacc;s li
-            &u-v;enoit &i-j;a par&esp;<lb/>tout son cors&deuxpoints-point;&i-maj;l fu mout liez
-            de&esp;la celestiel&esp;<lb/>a&u-v;ision q<pc type="reg">'</pc>il ot
-            &u-v;e&utrem;e.&esp;Lors conta a&esp;la feme&esp;<lb/>coment <persName ref="#nicolas"
-              >seinz &n-maj;icholas</persName> li estoit aparuz<pc type="orig" ana="coordination"
-              >:</pc>&esp;&esperluette-et;<lb/>qu<pc type="reg">'</pc>il bien creoit q<pc type="reg"
-              >'</pc>il respasseroit par sa&esp;g&nasuscrit-ran;t&esp;<lb/>grace<pc type="orig"
-              ana="coordination">:</pc>&esp;&esperluette-et;il&esp;li fist sanz demorance.&esp;Tuit
+            forme&point-virg3;si&esp;le regarda moult <app>
+              <lem>pi<lb/>teusement</lem>
+              <rdg wit="#C3">piement</rdg>
+            </app>&#160;&esperluette-et;si&esp;dist&point-deuxpointsDial;<said who="#nicolas">La
+              grace de&esp;<persName ref="#nicolas">seint &n-maj;i<lb/>chola</persName>s t<pc
+                type="reg">'</pc>otroie qe tu &u-v;i&u-v;es seinz
+              &esperluette-et;gueriz&esp;<lb/>de&esp;ta grant maladie.</said>&esp;Dont s<pc
+              type="reg">'</pc>es&u-v;ella li clers<pc type="reg" ana="coordination"
+            >,</pc>&esp;<lb/>si&esp;senti qe la granz sant&eacc;s li &u-v;enoit &i-j;a
+            par&esp;<lb/>tout son cors&deuxpoints-point;&i-maj;l fu mout liez de&esp;la celestiel&esp;<lb/><app>
+              <lem>a&u-v;ision</lem>
+              <rdg wit="#C3">vision</rdg>
+            </app> q<pc type="reg">'</pc>il ot &u-v;e&utrem;e.&esp;Lors conta a&esp;la
+            feme&esp;<lb/>coment <persName ref="#nicolas">seinz &n-maj;icholas</persName> li estoit
+              aparuz<pc type="orig" ana="coordination">:</pc>&esp;&esperluette-et;<lb/>qu<pc
+              type="reg">'</pc>il bien creoit q<pc type="reg">'</pc>il respasseroit par
+              sa&esp;g&nasuscrit-ran;t&esp;<lb/>grace<pc type="orig" ana="coordination"
+            >:</pc>&esp;&esperluette-et;il&esp;li fist sanz demorance.&esp;Tuit
             cil&esp;<lb/>qi&esp;la estoient entrepris de&esp;cele maladie d&otilde-on;t&esp;<lb/>il
             moroient par la contree<pc type="reg" ana="subordonnee">,</pc> qant il
             o&itrem;rent&esp;<lb/>ceste no&u-v;ele<pc type="reg" ana="subordonnee">,</pc>
@@ -5399,6 +5414,7 @@
           <lb/>
         </div>
       </div>
+      <!-- fin colletion C3, 122 col.1 -->
       <div n="33" type="chapter">
         <head>Uns autres miracles de <persName ref="#getron">&g-maj;etron</persName><pc type="orig"
             ana="titre">.</pc><lb/></head>
