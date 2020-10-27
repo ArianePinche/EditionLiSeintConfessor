@@ -348,7 +348,7 @@
 
     <xsl:template match="tei:seg[@type = 'number']" mode="#all">
         <xsl:text>\textsc{</xsl:text>
-        <xsl:apply-templates mode="#current"/>
+        <xsl:apply-templates/>
         <xsl:text>}</xsl:text>
     </xsl:template>
     <xsl:template match="tei:said" mode="#all">
