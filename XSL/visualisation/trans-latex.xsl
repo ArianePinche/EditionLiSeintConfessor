@@ -8,8 +8,8 @@
 
 
     <!-- paramètre pour choisir les types d'apparats qu'on ne souhaite pas afficher -->
-    <!--  <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|erreur|proPer'"/> -->
-    <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/>
+    <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|proPer'"/> 
+   <!-- <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/> -->
 
 
     <!-- paramètre pour le nombre de mots maximal dans le lemme de l'apparat critique -->

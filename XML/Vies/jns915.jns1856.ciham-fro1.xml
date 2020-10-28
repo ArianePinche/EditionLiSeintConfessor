@@ -577,7 +577,7 @@
               <rdg wit="#E2 #G1 #M1 #N1" type="inv.">les vies et les oevres</rdg>
             </app>&#160; <app>
               <lem wit="#C2 #C3 #D #F2"><corr type="add">es</corr> escriptures</lem>
-              <rdg wit="#C1">escriptures</rdg>
+              <rdg wit="#C1" type="erreur">escriptures</rdg>
               <rdg wit="#E2" cause="om."/>
               <rdg wit="#G1">et les escriptures</rdg>
               <rdg wit="#M1">escrites</rdg>
@@ -3000,7 +3000,7 @@
                           <sic>z</sic>
                           <corr type="add">r</corr>
                         </choice></lem>
-                      <rdg wit="#C1">adjutoz</rdg>
+                      <rdg wit="#C1" type="erreur">adjutoz</rdg>
                     </app>&#160;<app>
                       <lem>est</lem>
                       <rdg wit="#M1 #N1" cause="om."/>
@@ -4398,7 +4398,7 @@
             >.</pc>&esp;qi <app>
               <lem>cheve&esp;<lb/>estoit</lem>
               <rdg wit="#G1 #M1 #N1" type="inv.">estoit cavee</rdg>
-            </app><note>Cheve, chave : adj. creux</note>.&esp;Li seinz hom a&u-v;oit&esp;<app>
+            </app>.&esp;Li seinz hom a&u-v;oit&esp;<app>
               <lem><seg type="number"><pc ana="number">.</pc>iiii</seg><pc ana="number">.</pc></lem>
               <rdg wit="#G1 #M1"><seg type="number">.xxiiii.</seg></rdg>
               <rdg wit="#N1"><seg type="number">.iiii<hi rend="exp">c</hi>.</seg></rdg>
@@ -4608,7 +4608,7 @@
               <rdg wit="#G1" cause="om."/>
             </app>&esp;<app>
               <lem wit="#C2 #C3 #D #F2 #M1"><corr type="add">por</corr> plus</lem>
-              <rdg wit="#C1 #E2 #G1 #N1">plus</rdg>
+              <rdg wit="#C1 #E2 #G1 #N1" type="erreur">plus</rdg>
             </app>&#160;&u-v;i&apos-us;&esp;<lb/>tenues. <app>
               <lem>Si</lem>
               <rdg wit="#G1" cause="om."/>
@@ -6663,7 +6663,7 @@
               <rdg wit="#E2 #F2" type="outil">et</rdg>
             </app> fist <app>
               <lem wit="#C2 #C3 #D #E2 #F2 #G1 #M1 #N1"><corr type="add">le</corr></lem>
-              <rdg wit="#C1">la</rdg>
+              <rdg wit="#C1" type="erreur">la</rdg>
             </app>&esp;signe de&esp;la <app>
               <lem>seinte</lem>
               <rdg wit="#D">voire</rdg>
@@ -19122,8 +19122,7 @@
                   </app> ne sa&u-v;ez &u-v;os<pc type="reg" ana="apostrophe">, </pc>
                   <app>
                     <lem><app>
-                        <lem wit="#C2 #C3 #D">beau<corr type="add">s</corr></lem>
-                        <rdg wit="#C1 #E2" type="sing.">beau</rdg>
+                        <lem>beau</lem>
                         <rdg wit="#G1">bien</rdg>
                       </app> sig<lb/>nors</lem>
                     <rdg wit="#F2" cause="om."/>
