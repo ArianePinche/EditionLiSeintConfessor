@@ -152,7 +152,10 @@
 \section*{</xsl:text>
         <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
         <xsl:text>}
-\end{center}</xsl:text> \beginnumbering <xsl:apply-templates/> \endnumbering </xsl:template>
+\end{center}</xsl:text>
+        \beginnumbering 
+        <xsl:apply-templates/>
+        \endnumbering </xsl:template>
 
     <xsl:template match="tei:div"><xsl:text>
 \paragraph*{}</xsl:text>
