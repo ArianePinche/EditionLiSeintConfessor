@@ -2217,7 +2217,6 @@
                 >'</pc>obedience.&esp;<lb/></said></p>
         </div>
       </div>
-      <!-- fin ajout des notes -->
       <div type="chapter" n="13"
         facs="http://gallica.bnf.fr/ark:/12148/btv1b84259980/f244, http://gallica.bnf.fr/ark:/12148/btv1b84259980/f245"
         corresp="urn:cts:latinLit:stoa0270.stoa003:1.19">
@@ -4117,9 +4116,17 @@
                   >Seinte&esp;<lb/>&a-maj;gni&eacc;s</persName>&#160;&esperluette-et;<persName
                   ref="#cecile">seinte <app>
                     <lem>&c-maj;ecile</lem>
-                    <rdg wit="#C2 #C3" type="erreur">Tecle</rdg>
+                    <rdg wit="#C2 #C3">Tecle</rdg>
                   </app></persName>&#160;&esperluette-et;<persName ref="#madeleine">seinte
-                  &m-maj;arie &m-maj;ag<lb/>dalene</persName><pc type="orig" ana="sujet">.</pc>&esp;<app>
+                  &m-maj;arie &m-maj;ag<lb/>dalene</persName><note>On peut noter que les saintes
+                  présentes dans le texte de C<hi rend="exp">1</hi> ne sont pas les mêmes que dans
+                  le texte latin. Sulpice Sévère évoque sainte Agnès, sainte Thècle, martyre de
+                  Séleucie d’Isaurie et la Vierge Marie, mère de Dieu. Sainte Thècle est présente
+                  dans le texte de C<hi rend="exp">2</hi> et C<hi rend="exp">3</hi> à la place de
+                  sainte Cécile, mais pas la Vierge Marie. On notera que sainte Agnès et sainte
+                  Cécile sont deux saintes qui appartiennent à la compilation B des légendiers
+                  français, voir <hi rend="italic">II.1 Les légendiers de la famille
+                  C</hi>.</note><pc type="orig" ana="sujet">.</pc>&esp;<app>
                   <lem>resnierent</lem>
                   <rdg wit="#C2">erent</rdg>
                   <rdg wit="#C3">furent</rdg>
@@ -4184,14 +4191,19 @@
                 <orig>N</orig>
                 <reg>n</reg>
               </choice>&#160;&i-j;or a&u-v;int q<pc type="reg">'</pc>a la cit&eacc;&#160; del
-                <placeName ref="#mans">&m-maj;ans</placeName> ot&esp;<lb/>assambl&eacc;&#160; un
-              concile grant &esperluette-et;mer<lb/>&u-v;eilleus<pc type="orig" ana="CDN"
-                >.</pc>&esp;d<pc type="reg">'</pc>e&u-v;esqes<pc type="reg" ana="enumeration">,</pc>
-                d<pc type="reg">'</pc>abb&eacc;s<pc type="reg" ana="enumeration">,</pc> de
-                pres&t-eexp-tre;s<pc type="reg" ana="enumeration">,</pc>&esp;<lb/>de clers<pc
-                type="orig" ana="relative">.</pc>&esp;qi &u-v;enuz i&esp;estoient de totes parz<pc
-                type="orig" ana="coordination">.</pc>&esp;&esperluette-et;<lb/>a cel senne ne
-              &u-v;out mie aler li seinz hom&point-virg3;<lb/><choice>
+                <placeName ref="#mans">&m-maj;ans</placeName><note>Dans le texte latin, le synode se
+                tient à Nîmes. Il fait référence, d’après Jacques Fontaine, au concile de 394 et a
+                réuni les ennemis les plus obstinés du priscillianisme, d’où la répugnance de Martin
+                à se rendre à ce concile, voir Sulpice Sévère, <hi rend="italic">Gallus: dialogues
+                  sur les « vertus » de saint Martin</hi>, éd. Jacques Fontaine, Paris, Les Éditions
+                du Cerf, 2006, p. 280.</note> ot&esp;<lb/>assambl&eacc;&#160; un concile grant
+                &esperluette-et;mer<lb/>&u-v;eilleus<pc type="orig" ana="CDN">.</pc>&esp;d<pc
+                type="reg">'</pc>e&u-v;esqes<pc type="reg" ana="enumeration">,</pc> d<pc type="reg"
+                >'</pc>abb&eacc;s<pc type="reg" ana="enumeration">,</pc> de pres&t-eexp-tre;s<pc
+                type="reg" ana="enumeration">,</pc>&esp;<lb/>de clers<pc type="orig" ana="relative"
+                >.</pc>&esp;qi &u-v;enuz i&esp;estoient de totes parz<pc type="orig"
+                ana="coordination">.</pc>&esp;&esperluette-et;<lb/>a cel senne ne &u-v;out mie aler
+              li seinz hom&point-virg3;<lb/><choice>
                 <orig>M</orig>
                 <reg>m</reg>
               </choice>es neqedent <app>
@@ -4397,9 +4409,10 @@
                 <rdg wit="#C2 #C3">ensemble</rdg>
               </app>&#160;o&esp;lui<pc type="orig">.</pc>&esp;dont&esp;<lb/>li uns a&u-v;oit non
                 <persName ref="#valentinien2">&v-maj;alentiniens</persName>&#160;&esperluette-et;li
-                autres&esp;<lb/><persName ref="#victricus">&v-maj;ictricus</persName><pc type="orig"
-                >:</pc>&esp;proiast &esperluette-et;reqe&itrem;st ceste
-              chose.&esp;Q&nasuscrit-an;t&esp;<lb/>ce o&itrem;rent li e&u-v;esqe&point-virg4;<app>
+                autres&esp;<lb/><persName ref="#victricus">&v-maj;ictricus</persName><note>Évêque de
+                Rouen. de Rouen.</note><pc type="orig">:</pc>&esp;proiast
+              &esperluette-et;reqe&itrem;st ceste chose.&esp;Q&nasuscrit-an;t&esp;<lb/>ce
+              o&itrem;rent li e&u-v;esqe&point-virg4;<app>
                 <lem>il</lem>
                 <rdg wit="#C2 #C3">q'il</rdg>
               </app>&esp;li comencierent a&esp;proier&esp;<lb/>par douce parole ensamble o&esp;le
@@ -4598,8 +4611,13 @@
                 <orig>N</orig>
                 <reg>n</reg>
               </choice>e autre foiz a&u-v;int q<pc type="reg">'</pc><persName ref="#avicien"
-                >&a-maj;&u-v;iciens</persName> li&esp;<lb/>cuens qi molt estoit
-              cruiels&point-virg4;si com&esp;<lb/>&u-v;os a&u-v;ez o&itrem; conter
+                >&a-maj;&u-v;iciens</persName><note> Jacques Fontaine suppose qu’il s’agirait du
+                vicarius Africae, connu sous ce nom-là de 362 à 363. Il apparaitrait ici dans les
+                fonctions d’un commissaire impérial chargé par Maxime de traquer en Gaule, et
+                notamment à Tours, les partisans de Gratien ou les priscillianistes. Voir Sulpice
+                Sévère, <hi rend="italic">Gallus: dialogues sur les vertus de saint Martin</hi>, ed.
+                Jacques Fontaine, Paris, Éditions du Cerf, 2006, p. 301.</note> li&esp;<lb/>cuens qi
+              molt estoit cruiels&point-virg4;si com&esp;<lb/>&u-v;os a&u-v;ez o&itrem; conter
                 &esperluette-et;dire&deuxpoints-virg4;s<pc type="reg">'</pc>en ala&esp;<lb/>sor ceus
               de&esp;la cit&eacc;&#160;de <placeName ref="#tours"
               >&t-maj;ors</placeName>&point-virg3;si emprist pluiseurs&esp;<lb/>q<pc type="reg"
@@ -5071,8 +5089,16 @@
                 <rdg wit="#C2" type="inv.">molt haute et molt grande avoit</rdg>
               </app> en un chastel<pc type="orig" ana="coordination"
               >.</pc>&esp;&esperluette-et;deseu<lb/>re cele colombe si a&u-v;oit un
-              &ypoint;dre.&esp;<lb/>&c-maj;e&esp;est une &ypoint;mage de &s-maj;arrazinz ou&esp;il
-              a&u-v;oi<lb/>ent grant fiance.&esp;Qant <persName ref="#martin">seinz
+                &ypoint;dre<note> Il est possible que le texte évoque ici les colonnes de Gaule
+                romaine surmontées d’un Jupiter à l’anguipède qui avait une signification à la fois
+                religieuse, politique et militaire. Voir Henri Lavagne, « Les ambivalences d’une
+                image du pouvoir impérial : le cavalier à l'anguipède en Gaule romaine », <hi
+                  rend="italic">Images et représentations du pouvoir et de l’ordre social dans
+                  l’Antiquité, actes du colloque d’Anger</hi>, Paris, 2001, p. 37‑43 et Christèle
+                Hervé, « Yzeures-sur-Creuse », <hi rend="italic">Supplément à la Revue archéologique
+                  du centre de la France</hi>, vol. 17 / 1, 1999, p.
+              155‑158.</note>.&esp;<lb/>&c-maj;e&esp;est une &ypoint;mage de &s-maj;arrazinz
+              ou&esp;il a&u-v;oi<lb/>ent grant fiance.&esp;Qant <persName ref="#martin">seinz
                 &m-maj;artins</persName>&esp;<lb/>l<pc type="reg">'</pc>aper&c-ced;ut
               &esperluette-et;&u-v;it&deuxpoints-virg4;il se pensa coment il le por<lb/>roit abatre&point-virg3;<choice>
                 <orig>M</orig>
@@ -5084,7 +5110,9 @@
               grant &esperluette-et;mer&u-v;eilleuse &u-v;int de&u-v;ers&esp;<lb/>le ciel trebuchant
               seur cele me&itrem;sme colombe&esp;<lb/>&esperluette-et;seur l<pc type="reg"
               >'</pc>&ypoint;mage si q<pc type="reg">'</pc>ele l<pc type="reg">'</pc>abati
-              &esperluette-et;debrisa tresto<lb/>te en poudre.&esp;Et ce &u-v;irent cil qi&esp;la
+              &esperluette-et;debrisa tresto<lb/>te en poudre<note>Cette colonne dévastatrice
+                descendue du ciel est assimilée par Jacques Fontaine « à la trombe descendante d’un
+                cyclone ».</note>.&esp;Et ce &u-v;irent cil qi&esp;la
               estoient&deuxpoints-virg8;<lb/>fet <persName ref="#gallus">&g-maj;allus</persName><pc
                 type="reg" ana="incise">,&#160;</pc>&esperluette-et;<persName ref="#refrigerius"
                 >&r-maj;efrigerius</persName> li prestres qi ci m<pc type="reg">'</pc>es<lb/>coute
@@ -5151,10 +5179,11 @@
               >'</pc>o&itrem;&esp;<lb/>parler&point-virg4;il&esp;li respondi &esperluette-et;si
                 dist&point-deuxpointsDial;<said who="#martin">Or
                 &u-v;a&esp;&esperluette-et;si&esp;met&esp;<lb/>ta&esp;roiz en&esp;l<pc type="reg"
-                  >'</pc>e&u-v;e&point-virg4;tu prenderas aucune chose.</said>&esp;<lb/>Dont s<pc
-                type="reg">'</pc>en&esp;ala li ser&i-j;anz&deuxpoints-virg3;si&esp;fist si com
-              li&esp;seinz&esp;<lb/>hom li a&u-v;oit dit&deuxpoints-point;Et nos alames
-                apr&eacc;s&esp;por&esp;<lb/><cb n="b"/>&u-v;eoir <choice>
+                  >'</pc>e&u-v;e&point-virg4;tu prenderas aucune chose.</said><note>Les paroles de
+                Martin rappellent les paroles du Christ à Pierre avant sa pêche miraculeuse, Luc 5,
+                4-7.</note>&esp;<lb/>Dont s<pc type="reg">'</pc>en&esp;ala li
+              ser&i-j;anz&deuxpoints-virg3;si&esp;fist si com li&esp;seinz&esp;<lb/>hom li a&u-v;oit
+              dit&deuxpoints-point;Et nos alames apr&eacc;s&esp;por&esp;<lb/><cb n="b"/>&u-v;eoir <choice>
                 <orig>L</orig>
                 <reg>l</reg>
               </choice><pc type="reg">'</pc>a&u-v;enture&point-virg3;car li habitacles <choice>
@@ -5208,16 +5237,20 @@
               &esperluette-et;entendre qe li angele&esp;<lb/>nostre &s-maj;ignor parla a&esp;lui
               face a&esp;face.&esp;Me&itrem;s<lb/>mes li empereres de&esp;<placeName ref="#rome"
                 >&r-maj;ome</placeName><pc type="orig" ana="sujet">:</pc>&esp;fist en cel
-                tenz&esp;<lb/><persName ref="#ithace">&y-maj;tace</persName><note>Il n'existe aucun
-                eveque Itache ou Itace pour cette ville</note> e&u-v;esqe de&esp;<placeName
-                ref="#treves">&t-maj;rie&u-v;es</placeName> apr&eacc;s la mort <persName
-                ref="#priscillien">&p-maj;ris<lb/>cillien</persName> qi e&u-v;esqes en a&u-v;oit
-              est&eacc;.&esp;Et cil <persName ref="#ithace"
-              >&y-maj;ta<lb/>ces</persName>&#160;&esperluette-et;si compaignon dont il n<pc
-                type="reg">'</pc>est encore del&esp;<lb/>nomer besoing<pc type="orig" ana="relative"
-                >:</pc>&esp;a&u-v;oient toz &i-j;orz est&eacc; en<lb/>contre <persName
-                ref="#priscillien">&p-maj;riscillien</persName> cui l<pc type="reg">'</pc>en
-              a&u-v;oit tenu a&esp;<lb/>seint home&deuxpoints-virg3;<choice>
+                tenz&esp;<lb/><persName ref="#ithace">&y-maj;tace</persName> e&u-v;esqe
+                de&esp;<placeName ref="#treves">&t-maj;rie&u-v;es</placeName> apr&eacc;s la mort
+                <persName ref="#priscillien">&p-maj;ris<lb/>cillien</persName> qi e&u-v;esqes en
+              a&u-v;oit est&eacc;.&esp;Et cil <persName ref="#ithace"
+                >&y-maj;ta<lb/>ces</persName><note>Évèque d’Ossonoba, meneur du parti épiscopal
+                hostile à Priscillien, voir Henry Chadwick, <hi rend="italic">Priscillian of Avila:
+                  the occult and the charismatic in the early Church</hi>, Oxford, Clarendon press,
+                1976, p. 51-55. Il n'est pas évêque de Trèves dans la source latine. Par ailleurs
+                aucun évêque du nom Itache n’est connu pour la ville de Trèves.
+              </note>&#160;&esperluette-et;si compaignon dont il n<pc type="reg">'</pc>est encore
+              del&esp;<lb/>nomer besoing<pc type="orig" ana="relative">:</pc>&esp;a&u-v;oient toz
+              &i-j;orz est&eacc; en<lb/>contre <persName ref="#priscillien"
+                >&p-maj;riscillien</persName> cui l<pc type="reg">'</pc>en a&u-v;oit tenu
+              a&esp;<lb/>seint home&deuxpoints-virg3;<choice>
                 <orig>M</orig>
                 <reg>m</reg>
               </choice>es toz tens estoient tenu al&esp;<lb/>empereor<pc type="orig"
@@ -5359,13 +5392,18 @@
                 ref="#martin">seinz &m-maj;artins</persName>&#160;<app>
                 <lem>estoit</lem>
                 <rdg wit="#C2" cause="om." type="erreur"/>
-              </app> de&u-v;ers&esp;<lb/><persName ref="#theognitus">&t-maj;heoniste</persName>
-              qi&esp;toz seus les blasmoit aperte<lb/>ment<pc type="orig" ana="coordination"
-              >.</pc>&esp;&esperluette-et;tel home ne de&u-v;roit l<pc type="reg">'</pc>en mie
-              re<lb/>&c-ced;oi&u-v;re dedenz les murs qi la chose porroit&esp;<lb/>faire a&esp;mal
-              torner a&esp;cest afaire<pc type="orig" ana="coordination"
-              >:</pc>&esp;&esperluette-et;si&esp;distrent&esp;<lb/>encore qe la mors
-                de&esp;<persName ref="#priscillien">&p-maj;riscillien</persName>
+              </app> de&u-v;ers&esp;<lb/><persName ref="#theognitus"
+                >&t-maj;heoniste</persName><note>Théoniste est un évêque gallo-romain. Il est le
+                seul des Ithaciens qui ait eu le courage de rompre avec cette faction pour en
+                condamner les manœuvres, voir Sulpice Sévère, <hi rend="italic">op. cit.</hi>, p.
+                336.</note> qi&esp;toz seus les blasmoit aperte<lb/>ment<pc type="orig"
+                ana="coordination">.</pc>&esp;&esperluette-et;tel home ne de&u-v;roit l<pc
+                type="reg">'</pc>en mie re<lb/>&c-ced;oi&u-v;re dedenz les murs qi la chose
+              porroit&esp;<lb/>faire a&esp;mal torner a&esp;cest afaire<pc type="orig"
+                ana="coordination">:</pc>&esp;&esperluette-et;si&esp;distrent&esp;<lb/>encore qe la
+              mors de&esp;<persName ref="#priscillien"
+                >&p-maj;riscillien</persName><note>Priscillien, évêque d’Avilla, meurt à Trèves en
+                385, condamné par l’Église de Rome pour hérésie.</note>
               qi&esp;encontre&esp;<lb/>eus&esp;estoit ne &u-v;aloit nule rien&deuxpoints-virg4;se
                 <persName ref="#martin">&m-maj;artins</persName>&esp;<lb/>se&esp;penoit de&esp;lui
               &u-v;engier.&esp;Qant il&esp;orent tot&esp;<lb/>ce dit a&esp;l<pc type="reg"
@@ -5892,7 +5930,7 @@
                 ana="subordonnee">,</pc>&#160;&i-j;e t<pc type="reg">'</pc>en<lb/>&i-j;oing
                 &esperluette-et;proi<pc type="orig" ana="completive">:</pc>&esp;qe<pc type="reg"
                 ana="subordonnee">,</pc>&esp;se tu ari&u-v;es au port de <placeName
-                ref="#cholomaide">&c-maj;holo<lb/>maide</placeName>&point-virg4;qe tu &u-v;oises
+                  ref="#cholomaide">&c-maj;holo<lb/>maide</placeName><note>Le texte latin fait référence à Ptolémaïs, actuelle Acre en Israël.</note>&point-virg4;qe tu &u-v;oises
               a&esp;la sepouture <persName ref="#pomponie">&p-maj;omponie</persName>&esp;<lb/>nostre
               compaignon qi&esp;la fu ense&u-v;eliz<pc type="reg" ana="subordonnee">,</pc> si
                 com&esp;<lb/>l<pc type="reg">'</pc>en m<pc type="reg">'</pc>a dit
