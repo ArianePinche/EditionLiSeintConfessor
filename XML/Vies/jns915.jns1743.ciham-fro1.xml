@@ -123,11 +123,15 @@
             <location>
               <geo>47.5, 0.5</geo>
             </location>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
             <note>Ancien vicus de Laudiacum, mentionné dans le texte de Grégoire de Tours, actuelle
               ville de Montlouis-sur-Loire.</note>
           </place>
           <place corresp="http://catalogue.bnf.fr/ark:/12148/cb11935190r/PUBLIC" xml:id="lombardie">
             <placeName>Lombardie</placeName>
+            <country type="pays">Italie</country>
+            <country type="civilisation">Occident</country>
             <note>Région du Nord de l'Italie</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
@@ -135,6 +139,8 @@
             <location>
               <geo>41.891775, 12.486137</geo>
             </location>
+            <country type="pays">Italie</country>
+            <country type="civilisation">Occident</country>
             <note>Ville italienne, capitale de l'empire romain d'occident.</note>
           </place>
           <place corresp="http://pleiades.stoa.org/places/138255" xml:id="tours">
@@ -142,6 +148,8 @@
             <location>
               <geo>47.3925295, 0.691471</geo>
             </location>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
             <note>Tours, ville du centre de la France.</note>
           </place>
           <place xml:id="vercelles" corresp="https://pleiades.stoa.org/places/383815">
@@ -149,6 +157,8 @@
             <location>
               <geo>45.321094, 8.426374</geo>
             </location>
+            <country type="pays">France</country>
+            <country type="civilisation">Occident</country>
             <note>Vercelles, ville de la Gaule Transpadane, située près du lac de Côme.</note>
           </place>
         </listPlace>

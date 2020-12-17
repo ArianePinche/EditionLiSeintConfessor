@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Attention à rajouter dans l'établissement du text les del et corr / finir explicarion sur les noms de lieux et de personnages-->
+<!-- Attention à rajouter dans l'établissement du text les del et corr -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"
     xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
     <teiHeader>
@@ -236,14 +236,16 @@
                             </p>
                             <p>Quand le lieu est une ville identifiée, ses coordonnées sont ajoutées
                                 afin de pouvoir à terme faire une carte des lieux cités dans le
-                                corpus. <att>ref</att>. </p>
+                                corpus.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                                <place corresp="http://pleiades.stoa.org/places/423025"
-                                    xml:id="rome">
-                                    <placeName>Rome</placeName>
+                                <place corresp="http://pleiades.stoa.org/places/423025" xml:id="rome">
+                                    <placeName full="yes">Rome</placeName>
+                                    <country type="pays">Italie</country>
+                                    <country type="civilisation">Occident</country>
                                     <location>
-                                        <geo>41.8919300 12.5113300</geo>
+                                        <geo>41.891775, 12.486137</geo>
                                     </location>
+                                    <note>Ville italienne, capitale de l'empire romain d'occident.</note>
                                 </place>
                             </egXML>
                             <p>Pour assurer la bonne identification du lien, nous avons ajouté avec

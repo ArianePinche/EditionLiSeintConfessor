@@ -84,7 +84,7 @@
         <xsl:text>&#10;Calcul de pays représentés dans chaque Vies en fonction des occurrences de noms de lieux&#10;</xsl:text>
         <xsl:apply-templates select="TEI"/>
         
-        <xsl:text>&#10;Calcul des pays représentés en fonction de la séries&#10;</xsl:text>
+        <xsl:text>&#10;Calcul des pays représentés en fonction de la série&#10;</xsl:text>
        
         <xsl:text>Pays&#09;serie&#09;Nb_Occurences&#09;%&#09;serie&#09;Nb_Occurences&#09;%</xsl:text>
         <xsl:text>&#10;</xsl:text>
