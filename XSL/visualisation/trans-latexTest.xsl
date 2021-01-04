@@ -92,7 +92,7 @@
     </xsl:function>
 
     <!-- Template général du document LateX -->
-    <xsl:template match="tei:TEI">
+    <xsl:template match="tei:teiCorpus">
         <xsl:variable name="witfile">
             <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
             <!-- récupération du nom du fichier courant -->
@@ -102,7 +102,7 @@
             <xsl:variable name="title">
                 <xsl:value-of select=".//tei:titleStmt/tei:title"/>
             </xsl:variable>
-            <xsl:text>\documentclass[12pt,a4paper]{book}
+            <xsl:text>﻿\documentclass[12pt,a4paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -112,21 +112,28 @@
 \usepackage{lettrine}
 \usepackage{setspace}
 \usepackage{lineno}
+
 \usepackage{ulem}
 \usepackage{color}
 \usepackage{sectsty}
 \usepackage{fancyhdr}
 \usepackage{reledmac}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}
+  {40pt}
+  {\Huge}
+\titlespacing{\chapter}{10pt}{*30}{*45}
 \paragraphfont{\mdseries\itshape}
-\author{Ariane Pinche}
-\title{}
-
-\begin{document}
+\author{Wauchier de Denain}
+\title{Li Seint Confessor}
+\date{}
 \pagestyle{fancy}
 \fancyhead[LE,RO]{ \thepage}
-\fancyhead[RE, LO]{\textsc{</xsl:text><xsl:value-of
-                select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
-\fancyfoot[C]{}
+\fancyhead[RO]{\rightmark}		% Nom des sections
+\fancyhead[LE]{\leftmark}		% Nom des chapitres
+\fancyhead[RE,LO]{}
 \Xmaxhnotes{.33\textheight}
 \renewcommand{\footfudgefiddle}{68}
 \Xbeforenotes[A]{10pt}
@@ -137,7 +144,20 @@
 \Xparafootsep{$\parallel$~}
 \lineation{page}
 \linenummargin{outer}
-\begin{spacing}{1,5}
+
+\begin{document}
+\maketitle
+\begin{center}
+\chapter*{Dialogues sur les vertus de saint Martin}
+\markboth{Dialogues sur les vertus de saint Martin}{Li Seint Confessor} 
+\end{center}
+\begin{spacing}{1,25}
+\include{Vies/jns915.jns2117.ciham-fro1}
+\begin{center}
+\chapter*{Vie de saint Brice}
+\end{center}
+\end{spacing}
+\end{document}
 </xsl:text>
             <xsl:apply-templates/> \end{spacing} \end{document} </xsl:result-document>
     </xsl:template>
