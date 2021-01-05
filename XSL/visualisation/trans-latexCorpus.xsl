@@ -8,8 +8,8 @@
 
 
     <!-- paramètre pour choisir les types d'apparats qu'on ne souhaite pas afficher -->
-    <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|proPer'"/> 
-   <!-- <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/> -->
+    <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|proPer'"/>
+    <!-- <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/> -->
 
 
     <!-- paramètre pour le nombre de mots maximal dans le lemme de l'apparat critique -->
@@ -93,21 +93,16 @@
 
     <!-- Template général du document LateX -->
     <xsl:template match="tei:teiCorpus">
-        <xsl:variable name="witfile">
-            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
-            <!-- récupération du nom du fichier courant -->
-        </xsl:variable>
+        <!-- Mise en place du document maître Latex -->
         <xsl:result-document
-            href="/Users/arianepinche//Dropbox/these/corpus/latex/{concat(LiSeintConfessor,'.tex')}">
-            <xsl:variable name="title">
-                <xsl:value-of select=".//tei:titleStmt/tei:title"/>
-            </xsl:variable>
-            <xsl:text>﻿\documentclass[12pt,a4paper]{book}
+            href="/Users/arianepinche//Dropbox/these/corpus/latex/{concat('LiSeintConfessor','.tex')}">
+            <xsl:text>\documentclass[12pt,a4paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage[french]{babel}
+\usepackage{xspace}
 \usepackage{times}
 \usepackage{lettrine}
 \usepackage{setspace}
@@ -124,18 +119,18 @@
   {\chaptertitlename\ \thechapter}
   {40pt}
   {\Huge}
-\titlespacing{\chapter}{10pt}{*30}{*45}
 \paragraphfont{\mdseries\itshape}
 \author{Wauchier de Denain}
 \title{Li Seint Confessor}
 \date{}
 \pagestyle{fancy}
-\fancyhead[LE,RO]{ \thepage}
-\fancyhead[RO]{\rightmark}		% Nom des sections
-\fancyhead[LE]{\leftmark}		% Nom des chapitres
-\fancyhead[RE,LO]{}
-\Xmaxhnotes{.33\textheight}
-\renewcommand{\footfudgefiddle}{68}
+\fancyhead[CO]{\rightmark}		% Nom des sections
+\fancyhead[CE]{\leftmark}		% Nom des chapitres
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO,RE]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{}
+\fancyfoot[L]{}
 \Xbeforenotes[A]{10pt}
 \Xafterrule[A]{5pt}
 \Xnotefontsize[A]{\scriptsize}
@@ -146,20 +141,42 @@
 \linenummargin{outer}
 
 \begin{document}
-\maketitle
-\begin{center}
-\chapter*{Dialogues sur les vertus de saint Martin}
-\markboth{Dialogues sur les vertus de saint Martin}{Li Seint Confessor} 
-\end{center}
+\maketitle</xsl:text>
+            <xsl:for-each select="tei:TEI">
+                <xsl:variable name="title" select=".//tei:titleStmt/tei:title"/>
+                <xsl:variable name="witfile">
+                    <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
+                    <!-- récupération du nom du fichier courant -->
+                </xsl:variable>
+                <xsl:text>
+\chapter*{</xsl:text><xsl:value-of
+                    select="$title"
+                /><xsl:text>}
+\markboth{</xsl:text><xsl:value-of select="$title"/><xsl:text>}{Li Seint Confessor}
 \begin{spacing}{1,25}
-\include{Vies/jns915.jns2117.ciham-fro1}
-\begin{center}
-\chapter*{Vie de saint Brice}
-\end{center}
-\end{spacing}
+\include{</xsl:text><xsl:value-of select="concat('Vies/',$witfile)"/><xsl:text>}
+\end{spacing}</xsl:text>
+            </xsl:for-each>
+            <xsl:text>
 \end{document}
 </xsl:text>
-            <xsl:apply-templates/> \end{spacing} \end{document} </xsl:result-document>
+        </xsl:result-document>
+        <xsl:apply-templates select="tei:TEI"/>
+    </xsl:template>
+
+    <!-- Template général du document LateX -->
+    <xsl:template match="tei:TEI">
+        <xsl:variable name="witfile">
+            <xsl:value-of select="tokenize(replace(base-uri(.), '.xml', ''), '/')[last()]"/>
+            <!-- récupération du nom du fichier courant -->
+        </xsl:variable>
+        <xsl:result-document
+            href="/Users/arianepinche//Dropbox/these/corpus/latex/Vies/{concat($witfile,'.tex')}">
+            <xsl:variable name="title">
+                <xsl:value-of select=".//tei:titleStmt/tei:title"/>
+            </xsl:variable>
+            <xsl:apply-templates/>
+        </xsl:result-document>
     </xsl:template>
 
     <!-- suppression des metadonnées -->
@@ -167,24 +184,18 @@
 
     <!-- Structure générale du texte -->
     <xsl:template match="tei:text">
-        <xsl:text>
-\begin{center}
-\section*{</xsl:text>
-        <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
-        <xsl:text>}
-\end{center}</xsl:text>
-        \beginnumbering 
+        <xsl:text>\beginnumbering </xsl:text>
         <xsl:apply-templates/>
-        \endnumbering </xsl:template>
+        <xsl:text>\endnumbering</xsl:text>
+    </xsl:template>
 
-    <xsl:template match="tei:div"><xsl:text>
-\paragraph*{}</xsl:text>
-        <xsl:apply-templates select="./tei:div"/> \vspace{-20pt} </xsl:template>
+    <xsl:template match="tei:div">
+        <xsl:apply-templates select="./tei:div"/></xsl:template>
 
     <xsl:template match="tei:div[@type = 'section']">
         <xsl:text>
-\subparagraph*{}
-      </xsl:text>
+\paragraph*{}
+        </xsl:text>
         <xsl:if test="./preceding-sibling::tei:head">
             <xsl:if test="./@n = '1'">
                 <xsl:text>
@@ -199,7 +210,6 @@
         <xsl:apply-templates/>
         <xsl:text>
 \pend
-\vspace{-30pt}
 </xsl:text>
     </xsl:template>
 
@@ -290,7 +300,7 @@
     <xsl:template match="tei:pc[not(@type = 'orig')]" mode="#all">
         <xsl:choose>
             <xsl:when test="not(@ana) and text() = '-'"/>
-            <xsl:when test="@ana and text()= '—'">
+            <xsl:when test="@ana and text() = '—'">
                 <xsl:text>--</xsl:text>
             </xsl:when>
             <xsl:otherwise>

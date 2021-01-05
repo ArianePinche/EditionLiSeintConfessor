@@ -98,37 +98,45 @@
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
         <xsl:result-document
-            href="/Users/arianepinche//Dropbox/these/corpus/latex/{concat(LiSeintConfessor,'.tex')}">
+            href="/Users/arianepinche//Dropbox/these/corpus/latex/{concat($witfile,'.tex')}">
             <xsl:variable name="title">
                 <xsl:value-of select=".//tei:titleStmt/tei:title"/>
             </xsl:variable>
-            <xsl:text>\documentclass[12pt,a4paper]{book}
+            <xsl:text>﻿\documentclass[12pt,a4paper]{book}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage[french]{babel}
+\usepackage{xspace}
 \usepackage{times}
 \usepackage{lettrine}
 \usepackage{setspace}
 \usepackage{lineno}
+
 \usepackage{ulem}
 \usepackage{color}
 \usepackage{sectsty}
 \usepackage{fancyhdr}
 \usepackage{reledmac}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}
+  {40pt}
+  {\Huge}
 \paragraphfont{\mdseries\itshape}
-\author{Ariane Pinche}
-\title{}
-
-\begin{document}
+\author{Wauchier de Denain}
+\title{Li Seint Confessor}
+\date{}
 \pagestyle{fancy}
-\fancyhead[LE,RO]{ \thepage}
-\fancyhead[RE, LO]{\textsc{</xsl:text><xsl:value-of
-                select="$title"/>}} <xsl:text>\renewcommand{\headrule}{}
+\fancyhead[CO]{\rightmark}		% Nom des sections
+\fancyhead[CE]{\leftmark}		% Nom des chapitres
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO,RE]{}
 \fancyfoot[C]{}
-\Xmaxhnotes{.33\textheight}
-\renewcommand{\footfudgefiddle}{68}
+\fancyfoot[R]{}
+\fancyfoot[L]{}
 \Xbeforenotes[A]{10pt}
 \Xafterrule[A]{5pt}
 \Xnotefontsize[A]{\scriptsize}
@@ -137,10 +145,13 @@
 \Xparafootsep{$\parallel$~}
 \lineation{page}
 \linenummargin{outer}
-\begin{spacing}{1,5}
+\begin{document}
+\begin{spacing}{1,25}
 </xsl:text>
-            <xsl:apply-templates/> \end{spacing} \end{document} </xsl:result-document>
-    </xsl:template>
+<xsl:apply-templates/>
+<xsl:text>\end{spacing}
+    \end{document}</xsl:text></xsl:result-document>
+</xsl:template>
 
     <!-- suppression des metadonnées -->
     <xsl:template match="tei:teiHeader"/>
@@ -149,7 +160,7 @@
     <xsl:template match="tei:text">
         <xsl:text>
 \begin{center}
-\section*{</xsl:text>
+\chapter*{</xsl:text>
         <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
         <xsl:text>}
 \end{center}</xsl:text>
@@ -157,13 +168,13 @@
         <xsl:apply-templates/>
         \endnumbering </xsl:template>
 
-    <xsl:template match="tei:div"><xsl:text>
-\paragraph*{}</xsl:text>
-        <xsl:apply-templates select="./tei:div"/> \vspace{-20pt} </xsl:template>
+    <xsl:template match="tei:div">
+        <xsl:apply-templates select="./tei:div"/>
+    </xsl:template>
 
     <xsl:template match="tei:div[@type = 'section']">
         <xsl:text>
-\subparagraph*{}
+\paragraph*{}
       </xsl:text>
         <xsl:if test="./preceding-sibling::tei:head">
             <xsl:if test="./@n = '1'">
@@ -179,7 +190,6 @@
         <xsl:apply-templates/>
         <xsl:text>
 \pend
-\vspace{-30pt}
 </xsl:text>
     </xsl:template>
 
