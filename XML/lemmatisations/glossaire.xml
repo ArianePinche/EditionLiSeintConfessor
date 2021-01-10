@@ -3,31 +3,97 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Glossaire</title>
             <title type="sub">Li Seint confessor</title>
          </titleStmt>
          <publicationStmt>
-               <publisher>Ariane Pinche</publisher>
-               <date>2015-2021</date>
+            <publisher>Ariane Pinche</publisher>
+            <date>2015-2021</date>
          </publicationStmt>
          <sourceDesc>
-            <p>Glossaire constitué pour l'édition du recueil 
-               <hi rend="italic">Li Seint Confessor</hi> de Wauchier de Denain. Les différentes de chacun des termes ont été récupéré à partir des fichiers XML des Vies lemmatisées.</p>
+            <p>Glossaire constitué pour l'édition du recueil <hi rend="italic">Li Seint
+                  Confessor</hi> de Wauchier de Denain. Les différentes de chacun des termes ont été
+               récupéré à partir des fichiers XML des Vies lemmatisées.</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
          <div n="glossary">
-            <entry xml:id="aaiser">
-               <form type="lemma">aaisier</form>
-               <form type="TL">aaisier</form>
+            <!-- type d'entrée pour un verbe -->
+            <entry xml:id="acraventer"> <!-- w/@lemma -->
+               <form type="lemma">acraventer</form><!-- Mettre la forme de l'infinitif si présente dans le texte, à la main dans la cas contraire -->
+               <form type="TL">acraventer</form>  <!-- w/@lemma -->
                <gramGrp>
-                  <gram type="pos">vb</gram>
+                  <gram type="pos">v.</gram> <!-- v. = w/@pos qui commence par VER -->
+                  <gram type="constr.">tr.</gram><!-- à remplir à la main-->
                </gramGrp>
+               <sense>
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>écraser, briser</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>acraventer</quote><!-- classer par forme graphique -->
+                     <gramGrp>
+                        <gram type="mode">inf</gram> <!--= w/@pos après VER -->
+                        <!-- si inf ou ppe ou ppa pas d'autres catégorie -->
+                     </gramGrp>
+                     <bibl>
+                        <biblScope unit="text">Benoît</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 267</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 23</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <!-- rajouter un bibl. pour chaque occurrence différente -->
+                     <bibl> 
+                        <biblScope unit="text"/>
+                        <biblScope unit="page">p. </biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. </biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+                  <cit type="example">
+                     <quote>acraventa</quote><!-- classer par forme graphique -->
+                     <gramGrp>
+                        <gram type="mode">ind.</gram> <!-- = w/@msd[1] (tokeniser avec |, récupérer chaîne après =)-->
+                        <gram type="tense">impft</gram> <!-- = w/@msd[2] -->
+                        <gram type="pers.">3</gram> <!-- = w/@msd[3] -->
+                        <gram type="pers.NB">sing</gram> <!-- = w/@msd[4] -->
+                     </gramGrp>
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 24</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 13</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <!-- rajouter un bibl. pour chaque occurrence différente -->
+                     <bibl> 
+                        <biblScope unit="text"/>
+                        <biblScope unit="page">p. </biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. </biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
+               <cit type="example">
+                  <quote>acraventez</quote><!-- classer par forme graphique -->
+                  <gramGrp>
+                     <gram type="mode">part. passé</gram> <!-- = w/@pos après VER - ppe : part. passé, ppa : participe présent -->
+                  </gramGrp>
+                  <bibl>
+                     <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                     <biblScope unit="page">p. 23</biblScope> <!-- à remplir à la main-->
+                     <biblScope unit="l.">l. 16</biblScope> <!-- à remplir à la main-->
+                  </bibl>
+                  <!-- rajouter un bibl. pour chaque occurrence différente -->
+                  <bibl> 
+                     <biblScope unit="text"/>
+                     <biblScope unit="page">p. </biblScope> <!-- à remplir à la main-->
+                     <biblScope unit="l.">l. </biblScope> <!-- à remplir à la main-->
+                  </bibl>
+               </cit>
+               <!-- multipliable si nécessaire 
                <sense>
                   <cit type="translationEquivalent" xml:lang="fr">
                      <form>
@@ -45,10 +111,149 @@
                      </bibl>
                   </cit>
                </sense>
+               -->
+            </entry>
+            <!-- type d'entrée pour un nom -->
+            <entry xml:id="afublëure">
+               <form type="lemma">afubleüre</form><!-- Mettre la forme de l'infinitif si présente dans le texte, à la main dans la cas contraire -->
+               <form type="TL">afublëure</form>
+               <gramGrp>
+                  <gram type="pos">n.</gram> <!-- v. = w/@pos-->
+                  <gram type="genre">f.</gram><!-- w/@pos[2]-->
+               </gramGrp>
+               <sense>
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>manteau</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>afubleüre</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 7</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 11</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <!-- rajouter un bibl. pour chaque occurrence différente -->
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 28</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 2</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 65</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 17</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <bibl>
+                        <biblScope unit="text">Marcel</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 143</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 23</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+                  <cit type="example">
+                     <quote>affubleüre</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Dialogues</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 87</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 16</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
+            </entry>
+            <!-- type d'entrée pour un adjectif -->
+            <entry xml:id="besoignos">
+               <form type="lemma">besoigneus</form><!-- Mettre la forme de l'infinitif si présente dans le texte, à la main dans la cas contraire -->
+               <form type="TL">besoignos</form>
+               <gramGrp>
+                  <gram type="pos">adj.</gram> <!-- v. = w/@pos-->
+               </gramGrp>
+               <sense>
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>dans le besoin</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>besoigneus</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 6</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 8</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <!-- rajouter un bibl. pour chaque occurrence différente -->
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 6</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 12</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <bibl>
+                        <biblScope unit="text">Martin</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 7</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 2</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                     <bibl>
+                        <biblScope unit="text">Gilles</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 122</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 28</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
+            </entry>
+            <!-- type d'entrée pour un adverbe -->
+            <entry xml:id="tempre2">
+               <form type="lemma">tempre</form><!-- Mettre la forme de l'infinitif si présente dans le texte, à la main dans la cas contraire -->
+               <form type="TL">tempre2</form>
+               <gramGrp>
+                  <gram type="pos">adv.</gram> <!-- v. = w/@pos-->
+               </gramGrp>
+               <sense> <!-- si besoin de plus d'un à modifier à la main -->
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>tôt</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>tempre</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Gille</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 128</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 11</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
+               <sense> <!-- si besoin de plus d'un à modifier à la main -->
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>bientôt</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>tempre</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Marcel</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 171</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 15</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
+               <sense> <!-- si besoin de plus d'un à modifier à la main -->
+                  <cit type="translationEquivalent" xml:lang="fr">
+                     <form>
+                        <orth>prématurément</orth><!-- à remplir à la main-->
+                     </form>
+                  </cit>
+                  <cit type="example">
+                     <quote>tempre</quote><!-- classer par forme graphique -->
+                     <bibl>
+                        <biblScope unit="text">Marcel</biblScope> <!-- //titleStmt/title (mot après saint) -->
+                        <biblScope unit="page">p. 178</biblScope> <!-- à remplir à la main-->
+                        <biblScope unit="l.">l. 21</biblScope> <!-- à remplir à la main-->
+                     </bibl>
+                  </cit>
+               </sense>
             </entry>
          </div>
-           
-         
-      </body>
-  </text>
+     </body>
+   </text>
 </TEI>
