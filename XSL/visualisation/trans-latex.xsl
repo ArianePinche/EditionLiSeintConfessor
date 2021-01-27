@@ -8,8 +8,8 @@
 
 
     <!-- paramètre pour choisir les types d'apparats qu'on ne souhaite pas afficher -->
-    <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|proPer'"/> 
-   <!-- <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/> -->
+    <xsl:param name="deletedAppType" select="'etym.|casAbs|inv.|outil|proPer'"/>
+    <!-- <xsl:param name="deletedAppType" select="'etym.|casAbs|proPer'"/> -->
 
 
     <!-- paramètre pour le nombre de mots maximal dans le lemme de l'apparat critique -->
@@ -148,10 +148,11 @@
 \begin{document}
 \begin{spacing}{1,25}
 </xsl:text>
-<xsl:apply-templates/>
-<xsl:text>\end{spacing}
-    \end{document}</xsl:text></xsl:result-document>
-</xsl:template>
+            <xsl:apply-templates/>
+            <xsl:text>\end{spacing}
+    \end{document}</xsl:text>
+        </xsl:result-document>
+    </xsl:template>
 
     <!-- suppression des metadonnées -->
     <xsl:template match="tei:teiHeader"/>
@@ -163,10 +164,7 @@
 \chapter*{</xsl:text>
         <xsl:value-of select="preceding-sibling::node()//tei:titleStmt/tei:title"/>
         <xsl:text>}
-\end{center}</xsl:text>
-        \beginnumbering 
-        <xsl:apply-templates/>
-        \endnumbering </xsl:template>
+\end{center}</xsl:text> \beginnumbering <xsl:apply-templates/> \endnumbering </xsl:template>
 
     <xsl:template match="tei:div">
         <xsl:apply-templates select="./tei:div"/>
@@ -280,7 +278,7 @@
     <xsl:template match="tei:pc[not(@type = 'orig')]" mode="#all">
         <xsl:choose>
             <xsl:when test="not(@ana) and text() = '-'"/>
-            <xsl:when test="@ana and text()= '—'">
+            <xsl:when test="@ana and text() = '—'">
                 <xsl:text>--</xsl:text>
             </xsl:when>
             <xsl:otherwise>
@@ -313,7 +311,8 @@
     <!-- Mise en page des vers -->
     <xsl:template match="tei:lg" mode="#all">
         <xsl:text>\noindent
-</xsl:text>
+            \\
+        </xsl:text>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     <xsl:template match="tei:l" mode="#all">

@@ -333,7 +333,8 @@
     <!-- Mise en page des vers -->
     <xsl:template match="tei:lg" mode="#all">
         <xsl:text>\noindent
-</xsl:text>
+            \\
+        </xsl:text>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     <xsl:template match="tei:l" mode="#all">

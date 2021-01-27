@@ -46,32 +46,8 @@
             <!-- récupération du nom du fichier courant -->
         </xsl:variable>
         <xsl:result-document
-            href="/Users/arianepinche//Dropbox/these/corpus/latex/Index.tex">
-            ﻿\documentclass[12pt,a4paper]{book}
-            \usepackage[utf8x]{inputenc}
-            \usepackage[T1]{fontenc}
-            \usepackage{lmodern}
-            \usepackage{graphicx}
-            \usepackage[french]{babel}
-            \usepackage{times}
-            \usepackage{lettrine}
-            \usepackage{setspace}
-            \usepackage{lineno}
-            \usepackage{ulem}
-            \usepackage{color}
-            \usepackage{sectsty}
-            \usepackage{fancyhdr}
-            \usepackage{reledmac}
-            \paragraphfont{\mdseries\itshape}
-            
-            \begin{document}
-            \pagestyle{fancy}
-            \fancyhead[LE,RO]{ \thepage}
-            \fancyhead[RE, LO]{\textsc{Index}}
-            \renewcommand{\headrule}{} \fancyfoot[C]{}
-            ﻿ \setlength{\parindent}{-1em}
-            
-            ﻿\chapter*{Index}           
+            href="/Users/arianepinche//Dropbox/these/corpus/latex/Vies/Index.tex">
+                  
             ﻿ ﻿\paragraph*{}
             Cet index a pour objectif de permettre l'identification des noms propres et des toponymes qui apparaissent dans le recueil des \textit{Seint Confessor}. Ainsi pour un nom donné, on trouvera successivement :
             \begin{list}{-}{}
@@ -81,16 +57,16 @@
             \subitem Exemple : Martins :  [Martin] 1,  2,  3,
             \item En italique, les notes permettant l'identification du personnage et du lieu. 
             \end{list}
-            \begin{center}
-            \section*{Index des noms propres}
-            \end{center}
+            ﻿section*{Index des noms de personnages}
+            \addcontentsline{toc}{section}{Index des noms de personnages}
+            ﻿ \setlength{\parindent}{-1em}
             <xsl:call-template name="NomPropre"/>
-            \newpage
-            \begin{center}
+            ﻿ \newpage
+            
             \section*{Index des toponymes}
-            \end{center}
+            \addcontentsline{toc}{section}{Index des toponymes}
             <xsl:call-template name="NomLieu"/>
-            \end{document}    
+             
             
         </xsl:result-document>
     </xsl:template>
@@ -144,7 +120,7 @@
                     </xsl:call-template>
                 </xsl:if>
             </xsl:for-each-group>
-            \textit{<xsl:apply-templates select="tei:note"/>}\\
+            \textit{<xsl:apply-templates select="tei:note"/>}
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="GraphiePersNames">
@@ -200,7 +176,7 @@
                     </xsl:call-template>
                 </xsl:if>
             </xsl:for-each-group>
-            \textit{<xsl:apply-templates select="tei:note"/>}\\
+            \textit{<xsl:apply-templates select="tei:note"/>}
         </xsl:for-each>
     </xsl:template>
     
