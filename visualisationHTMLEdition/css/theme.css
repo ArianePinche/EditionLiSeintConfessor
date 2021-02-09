@@ -1,0 +1,766 @@
+/*insertion de la police junicode pour lire les caractères spéciaux */
+@font-face {
+  font-family: Junicode;
+  src: url(./fonts/Junicode.ttf);
+  /*Ne marche sous Firefox pas avec le chemin relatif */
+}
+
+/*barre de navigation noire -- haut de la page*/
+#ahn-nav{
+  background-color:#000000;
+  width:100%;
+  }
+
+ul.ahn-nav, #primary-nav ul, #footer ul{
+  text-align: center;
+  padding: 0;
+}
+
+ul.ahn-nav li, #primary-nav ul li, #footer ul li{
+  display: inline;
+  list-style-type: none;
+}
+
+ul.ahn-nav li a{
+  color:#fff;
+  font-size:14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 0.5em; /* Espace entre les rubriques */
+  padding: 0 0.5em;
+}
+
+/*fin barre de navigation haut de la page */
+
+
+/*mise en forme du header (logo + bandeau )*/
+#header {
+  margin-top: 10px;
+}
+
+/*logo hyperdonat */
+#site-logo  { 
+  margin-bottom: 0;
+  margin-top: 10px;
+  height:auto;
+ 
+}
+
+/*text*/
+#site-title{ 
+  font-size:16px;
+  background-color:#FFF;
+  margin-bottom: 0;
+  margin-top: 10px;
+  vertical-align: bottom;
+  padding-left:10%;
+
+}
+
+/*logo Lyon 3*/
+#logo-partenaire-principal {
+  height:auto;
+  margin-left: 5%;
+}
+
+/*bandeau*/
+#header-image {
+   margin-top: 10px;
+   margin-bottom: 0;
+  display: block;
+  height: auto;
+}
+/*fin mise en forme du header*/
+
+/*mise en forme du footer*/
+#footer{
+  clear:both;
+  width:100%;
+  height:auto;
+  display:block;
+  background-color: #000;
+  color:#fff;
+}
+
+#footer-text {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 0.9em;
+  color: #CCC;
+  padding-bottom: 2em;
+   }
+   
+.footer-logo{  
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:2em;
+  padding-bottom:2em;}   
+   
+#footer ul li {
+  padding-right: 2em;
+  padding-left:2em;
+}
+  
+.footer-logo img  { /* Attention : lors du découpage des logos, veiller à leur donner LA MÊME LARGEUR */
+  width:10%;
+  }
+     
+     
+#footer li a {
+  text-decoration:none;
+  font-weight:bold;  
+}
+    
+#footer li.nav-home a {    
+    width: 100%;
+}
+   
+#footer a:visited {color:#fff;}
+/*fin mise en forme du footer*/
+
+
+/* barre de navigation verte */
+
+#primary-nav {
+  text-align:center;
+  width:100%;
+  height:2em;
+  background-color: #6699cc; /* AHN */
+  float: left;
+  margin-top: 0;
+}
+
+
+/* gestion des dropdown */
+
+#primary-nav > span > a {
+  color:#000;
+  padding-bottom: 1.5em;
+  width:auto;
+  padding-bottom:8px;
+  text-transform: uppercase;
+}
+#primary-nav > span > a:hover
+  color:white;
+  text-decoration: none;
+}
+
+#primary-nav > span > a:after {
+  color:white;
+  text-decoration: none;
+}
+
+#primary-nav > span {
+
+  text-align:center; 
+  margin: 0 0.5em; /*Espace entre les onglets*/ 
+  padding: 0 0.5em; 
+
+  }
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left:-1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu> a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    color: #6699cc;
+    background-color: white;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+li.dropdown-submenu> a:hover {
+  color: white;
+  background-color:#6699cc;
+
+}
+
+.dropdown li>a:hover {
+  color: white;
+  background-color:#6699cc;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>ul.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+/*fin de la barre de navigation verte*/
+
+
+
+/* bloc-navigation entre les différentes pages des phases d'édition */
+
+.secondary  li {
+   display: block;
+  list-style: none;
+  font-size: 14px;
+}
+.secondary  a:hover {
+   color: #88888f;
+}
+
+.secondary li.comparaison > a {
+  color:#6699cc;
+}
+
+.secondary li.comparaison > a:hover {
+  color:white;
+  background-color: #6699cc;
+}
+
+.secondary{
+  float: right;
+  margin-top: 40px;
+  background-color: #fff;
+  padding:10px;
+  
+}
+
+.secondary > ul {
+  margin-bottom : 10px;
+  margin-top :10px;
+  padding-left: 0;
+  padding: 5px;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  font-size: 16px;
+  color: #88888f;
+
+}
+
+#seeWitness li {
+ display: none;
+}
+
+#seeWitness li.wit {
+  
+   display: block;
+  list-style: none;
+  font-size: 14px;
+}
+
+#seeWitness li.wit a:hover {  
+  display: block;
+  list-style: none;
+  font-size: 14px;
+  color: white;
+  background-color: #ccc;
+  text-decoration: none;
+  
+}
+
+
+.secondary  li  a {
+
+  font-size: 16px;
+  color: #88888f;
+}
+.secondary  li   a:hover {
+ 
+  font-size: 16px;
+  background-color: #ccc;
+  text-decoration: none;
+   color: white;
+
+}
+
+/* fin du bloc navigation entre les différentes pages des phases d'édition */
+
+
+/* mise en forme du bloc de navigation dans le corpus*/
+#nav-text {
+  margin: 0;
+  padding: 10px;
+
+}
+ul#nav-text  {
+ margin-top: 30px;
+
+}
+#nav-text li {
+  font-size: 14px;
+  list-style: none;
+
+}
+#nav-text > li > a:hover {
+ color: #88888f;
+}
+
+#nav-text hr {
+  margin: 5px;
+}
+/* fin bloc de navigation dans le corpus */
+
+
+/* mise en place des principaux blocs*/
+
+body {
+  font-family: Junicode;
+  font-size: 14px;
+  background-position: 0em 13em;
+}
+
+h1:first-letter {
+  text-transform: uppercase; 
+}
+
+h2:first-letter {
+  text-transform: uppercase;
+  
+
+}
+
+h2{
+	font-size: 16px;
+  font-style: italic;
+}
+h3:first-letter {
+  text-transform: uppercase; 
+}
+p:first-letter {
+  text-transform: uppercase;
+}
+
+a {
+   color: #88888f
+}
+
+a:hover{
+
+   color:#6699cc;
+}
+
+
+/* règles propres à la page d'accueil*/
+
+.accueil h1 {
+  margin-bottom: 30px;
+}
+
+div.accueil {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.accueil div.btn-group  {
+ margin-right:10px; 
+}
+
+.accueil button:hover {
+  background-color: #6699cc;
+  color: white;
+}
+
+.accueil button.open {
+  background-color: #6699cc;
+  color: white;
+}
+
+li.comparaison > a {
+  color:#6699cc;
+}
+
+ul.accueil {
+
+  font-family: Junicode;
+  color: black;
+
+}
+
+ul.accueil  li{
+  display: list-item;
+  list-style: none;
+}
+
+ul.accueil > li{
+  
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+
+ul.accueil > li{  
+  font-size: 20px;
+  margin-bottom: 10px; 
+
+}
+
+ul.accueil > li > ul {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.accueil ul > li > a:hover{
+  background-color: #6699cc;
+  color: white;
+}
+
+ul.accueil > li > ul  li{
+   padding: 1px 0;
+  font-size: 16px;
+   margin-top: 10px;
+  
+}
+
+li.wit{
+  margin-left: 10px;
+}
+
+.wit a:hover {
+  text-decoration: none;
+  background-color: #6699cc;
+  color: white;
+  padding: 2px;
+}
+
+/*fin règles spécifiques à la page d'accueil*/
+
+/*bloc contenu pour la visualisation de la collation */
+article {
+  padding: 5px;
+}
+
+#notice {
+  background-color: white;
+  padding-left: O;
+  padding-right: O;
+}
+
+div#contenu {
+padding-left:15px;
+}
+
+ .tab-content{
+  background-color: white;
+ }
+
+ #text {
+  background-color: white;
+
+}
+
+article footer {
+  padding: 5px;
+}
+
+
+/*bloc ac le button fac/norm */
+aside {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/*mise en forme en place de convention pour répérer les différents apparats*/
+
+a.nom {
+  color: inherit;
+}
+a.persName.active {
+  color: #6699cc;
+  background-color: #DEDEDE; 
+}
+a.placeName.active {
+  color: #79797F; 
+  background-color: #DEDEDE; 
+}
+
+/* mise en forme de apparatus.html */
+
+.linkapp {
+   font-size: 12px;
+
+}
+
+.linkapp.active {
+   background-color: #91B7CC;
+}
+
+.note-id {
+  color: #79797F;
+}
+
+.note {
+  margin-top: 10px;
+  margin-right: 15px;
+  padding:5px;
+  background-color: #DEDEDE;
+  border-radius: 10px 0;
+  font-family: Junicode;
+  font-size: 12px;
+}
+
+.app {
+  display:none;
+}
+
+.wit {
+  font-style : italic;
+}
+
+/* fin */
+
+/* Affichage indeX noms lieux / personnes */`
+ul.list-occurences, ul.list-occurences > li  {
+  padding:0;
+  margin:0;
+}
+ul.list-occurences > li {
+  font-style: italic;  
+  display: inline;
+}
+ul.list-occurences > li.par:after {
+  display:inline;
+  content: ", ";
+  font-style: normal;
+}
+ul.list-occurences > li.par:last-child:after {
+  content: "";
+}
+
+/* mise en forme de la numérotation de vers */
+
+ol {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+
+ol > li {
+  display: inline;
+  font-family: Junicode;
+  color: black;
+  font-size: 14px;
+}
+
+ol.norm > li {
+  display: list-item;
+  list-style: none;
+}
+
+span {
+  display: inline;
+  margin-left: 2px;
+}
+span.norm {
+  display: inline-block;
+}
+
+span.norm.rubricated {
+  display: inline;
+}
+
+span.abbr
+{
+  margin-left:0;
+}
+span.expan {
+  margin-left:0;
+}
+
+span.expan span.ex{
+  background-color: #6699cc;
+  opacity: 80%;
+}
+
+/* mise en forme de div type gloss */
+div.inline {
+  display: inline;
+  border: 1px;
+}
+div.above {
+  display: inline;
+  vertical-align: 10px;
+  font-size: 100%;
+  border: 1px;
+}
+.corrabove {
+  display: inline;
+  vertical-align: 8px;
+  font-size: 60%;
+  border: 1px;
+}
+div.below {
+  display: inline;
+  vertical-align: -15px;
+  font-size: 100%;
+  border: 1px;
+}
+.corrbelow {
+  display: inline;
+  vertical-align: -8px;
+  font-size: 60%;
+  border: 1px;
+}
+
+div.inline.norm {
+  display: inline;
+}
+div.above.norm {
+  display: inline;
+  vertical-align: 0;
+  font-size: 100%;
+  border: 0;
+}
+.corrabove.norm {
+  display: inline;
+  vertical-align: 0;
+  font-size: 100%;
+  border: 0;
+}
+div.below.norm {
+  display: inline;
+  vertical-align: 0;
+  font-size: 100%;
+  border: 0px;
+}
+.corrbelow.norm {
+  display: inline;
+  vertical-align: 0;
+  font-size: 100%;
+  border: 0;
+}
+
+/* j'ai mis other place ici pour définir une convention */
+div.margin-right,
+div.other-place,
+div.margin-top,
+div.margin-left,
+div.margin-bottom {
+  display: block;
+  float:right;
+  font-size: 80%;
+  border: 1px;
+  border-style: dotted;
+  padding: 2px;
+  margin: 0;
+  margin-left: 10px;
+}
+div.margin-right.norm,
+div.other-place.norm,
+div.margin-top.norm,
+div.margin-left.norm,
+div.margin-bottom.norm {
+  display: none;
+}
+
+/* mise en forme des span pour un affichage normalisé*/
+.reg {
+  display: none;
+}
+span.expan {
+  display: none;
+  font-style: bold;
+}
+
+/* mise en forme position du texte et effets de caractères */
+span.above {
+  vertical-align: 15px;
+  font-size: 90%;
+  color: #000000;
+}
+span.below {
+  vertical-align: -15px;
+  font-size: 90%;
+  color: #000000;
+}
+span.decorated-initial {
+  color: red;
+  font-size: 150%;
+}
+span.decorated-initialblue {
+  color: blue;
+  font-size: 150%;
+}
+
+span.decorated-initial.norm {
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+span.decorated-initialblue.norm {
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+span.number.norm{
+  font-variant: small-caps;
+}
+span.underline {
+  text-decoration: underline;
+}
+span.rubricated {
+  color: red;
+}
+
+span.rubricated.title.norm {
+  display:none;
+}
+
+span.italic.norm {
+  font-style: italic;
+}
+span.green.norm {
+  color: green;
+}
+
+span.exponc {
+  text-decoration: line-through;
+}
+
+span.rat {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.spacer {
+  margin-bottom: 2em;
+}
+
+
+
+
