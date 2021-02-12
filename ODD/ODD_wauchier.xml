@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Attention à rajouter dans l'établissement du text les del et corr -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"
     xmlns:s="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Édition nativement numérique du recueil hagiographique <hi rend="italic">Li
-                        Seint Confessor</hi> de Wauchier de Denain d'après le manuscrit 412 de la
+                        Seint Confessor</hi> de Wauchier de Denain d'après le manuscrit fr. 412 de la
                     BnF</title>
                 <author>Ariane Pinche</author>
             </titleStmt>
@@ -114,11 +113,11 @@
                                 </msItemStruct>
                             </egXML>
                             <p>Pour permettre l'établissement de l'apparat critique, l'ensemble des
-                                temoins de la tradition est déclaré dans le <gi>sourceDesc</gi> dans
+                                témoins de la tradition est déclaré dans le <gi>sourceDesc</gi> dans
                                 un élément <gi>listWit</gi>. Chaque témoin est contenu dans un
                                 élément <gi>witness</gi> auquel est attribué un identifiant pour
-                                identifier dans l'apparat le manuscrit auquel se réfère les
-                                differentes leçons. Cet identfiant est ajouté grâce à l'attribut
+                                identifier dans l'apparat le manuscrit auquel se réfèrent les
+                                différentes leçons. Cet identifiant est ajouté grâce à l'attribut
                                     <att>xml:id</att>. <egXML
                                     xmlns="http://www.tei-c.org/ns/Examples">
                                     <listWit>
@@ -186,8 +185,7 @@
                                 apparitions du lieu ou du personnage dans la Vie. Cette méthode
                                 permet de générer automatiquement à partir des fichiers XML les
                                 index des noms de lieux et des noms propres.</p>
-                            <!-- Explication a relire et finir -->
-                            <p>Les notices de nom de personnage, regroupées dans le <gi>particDesc</gi> et <gi>listPerson</gi>.
+                            <p>Les notices de nom de personnage sont regroupées dans le <gi>particDesc</gi> et <gi>listPerson</gi>.
                               Afin de constituer les notices des noms de lieux nous avons utilisé les balises
                                     suivantes : <specList>
                                         <specDesc key="person"/>
@@ -197,8 +195,8 @@
                                         <specDesc key="note"/>
                                     </specList>
                             </p>
-                            <p> Quand cela est possible, les 
-                                contiennent un renvoi.
+                            <p> Elles 
+                                contiennent un renvoi
                                 vers la notice
                                 BnF du personnage concerné quand elle existe, le nom du personnage
                                 et une courte notice explicative. Si le personnage est un personnage
@@ -256,11 +254,11 @@
                                     rend="italic"><ref target="http://data.bnf.fr"
                                     >data.bnf</ref></hi></p>
                             <p>Enfin, afin de pouvoir classer les différents lieux cités par pays,
-                                mais aussi en fontion de leur rattachement à l'Orient ou à
+                                mais aussi en fonction de leur rattachement à l'Orient ou à
                                 l'Occident nous avons utilisé l'élément <gi>country</gi> avec
-                                    <att>type</att> de <val>pays</val> pour signaler le pays et
-                                    <att>type</att> de <val>civilisation</val> pour indiquer
-                                l'appatenance à l'Orient ou à l'Occident.</p>
+                                    <att>type</att> de valeur <val>pays</val> pour signaler le pays et
+                                    <att>type</att> de valeur <val>civilisation</val> pour indiquer
+                                l'appartenance à l'Orient ou à l'Occident.</p>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <place corresp="http://pleiades.stoa.org/places/109321"
                                     xml:id="amiens">
@@ -345,7 +343,7 @@
                                 <said who="#benoit">Proions nostre Signor qe vos puissiez ve<lb/>oir
                                 celui qi cest moine en meine.</said>
                         </egXML>
-                        <p>Les élements du texte dans une langue étrangère, latin ou grec dans notre
+                        <p>Les éléments du texte dans une langue étrangère, latin ou grec dans notre
                             cas, sont signalés à l'aide de l'élément <gi>seg</gi> et de son attribut
                                 <att>xml:lang</att>
                             <egXML xmlns="http://www.tei-c.org/ns/Examples"> Si fist <seg
@@ -404,7 +402,7 @@
                             balise <hi>hi</hi> et de la valeur <hi rend="italic">rubricated</hi> de
                             l'attribut <att>rend</att>, le fait que le titre est en rouge, mais nous
                             ajoutons également la valeur d'attritbut <hi rend="italic">orig</hi>
-                            pour indiquer que c'est une graphie du manuscrit afin que le texte
+                            pour indiquer que c'est un élément du manuscrit afin que le texte
                             rubriqué n'apparaisse pas dans l'édition normalisée. Toutefois, la
                             rubrique du manuscrit est copiée comme titre du chapitre dans la balise
                                 <gi>head</gi> qui précède la <gi>div</gi> concernée. <egXML
@@ -448,7 +446,7 @@
                                     </choice>rance</placeName>
                             </egXML>
                         </p>
-                        <p>Le signalement et le développement des abrévations fonctionnent sur le
+                        <p>Le signalement et le développement des abréviations fonctionnent sur le
                             même principe. Les caractères spéciaux des abréviations sont signalés
                             par le <hi>Numerical Character Reference Decimal</hi> du signe
                                 concerné.<egXML xmlns="http://www.tei-c.org/ns/Examples"
@@ -513,10 +511,7 @@
                 </div2>
                 <div2>
                     <head>L'apparat critique</head>
-                    <p>Cette édition est un texte constitué à partir d’un texte de base qui est le
-                        manuscrit C1. Cette démarche induit de notre part un grand respect du
-                        modèle, sans prétendre à la reconstitution du texte d’un original perdu.
-                        Cette édition propose un apparat critique afin de montrer les lieux de
+                    <p>Cette édition propose un apparat critique afin de montrer les lieux de
                         variance entre les différents témoins de la tradition et rendre compte de la
                         modularité du texte au Moyen Âge. L’intégralité du corpus est accompagnée du
                         relevé des variantes qui apparaissent dans les manuscrits de la famille C.
@@ -586,8 +581,7 @@
                                 >parallel segmentation</ref> a été choisie pour encoder l'apparat,
                             méthode qui présente l’avantage d’être simple et lisible directement
                             dans le code, car l’apparat est signalé dans la linéarité du texte. Elle
-                            permet également d’aisément comparer les leçons entre elles, comme on
-                            peut le voir dans l’exemple suivant.</p>
+                            permet également d’aisément comparer les leçons entre elles.</p>
                         <p>Cette édition fait apparaître dans l’apparat une hiérarchie entre deux
                             types de variantes textuelles de la tradition : le lemme et les leçons.
                             Le lemme correspond au texte édité, la plupart du temps équivalent au
@@ -630,9 +624,9 @@
                             attribut <att>wit</att> permet de déclarer le ou les manuscrits
                             proposant le même texte que celui de la variante concernée. Il se réfère
                             à l'identifiant déclarer dans le <gi>listWit</gi>.Quand un manuscrit
-                            présente une omission à l’emplacement où devrait se trouve le lemme, le
-                            manque est signalé par un <att>cause</att> de valeur <val>om.</val> pour
-                            une omission simple et par <val>lacune</val> pour une omission qui s'étant sur plusieurs vers ou un paragraphe.
+                            présente une omission à l’emplacement où devrait se trouver le lemme, le
+                            manque est signalé par un attribut <att>cause</att> de valeur <val>om.</val> pour
+                            une omission simple et de valeur <val>lacune</val> pour une omission qui s'étant sur plusieurs vers ou un paragraphe.
                             <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
                                     <lem> De seint Martin </lem>
@@ -684,7 +678,7 @@
                         </p>
                         <p> Les leçons rejetées, très peu nombreuses, sont toujours signalées dans
                             le texte comme des corrections ou des suppressions. La graphie fautive
-                            présente dans C1 est alors présenté dans l'apparat comme une leçon qui
+                            présente dans C1 est alors présentée dans l'apparat comme une leçon qui
                             apparaît toujours en tête des variantes<egXML
                                 xmlns="http://www.tei-c.org/ns/Examples">
                                 <app>
